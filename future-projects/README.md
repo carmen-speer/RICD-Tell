@@ -14,7 +14,7 @@ than asserted.
   application, prepared for grant application documentation. The revenue
   from these four adapters is intended to fund Plurimo (below) without
   seeking Plurimo's own, much larger, funding directly.
-- [`RICD Ongoing Projects Roadmap.pdf`](<RICD Ongoing Projects Roadmap.pdf>) —
+- [`RICD Ongoing Projects Roadmap.docx`](<RICD Ongoing Projects Roadmap.docx>) —
   the broader roadmap of further RICD-based trackers planned beyond the
   four adapters above and the higher-ed tracker in this repository.
 - [`Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf`](<Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf>) —
