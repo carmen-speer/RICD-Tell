@@ -62,7 +62,7 @@ engineers working with the RICD adapter contract directly).
 banking, hospitals, public schools, and nursing homes/long-term care --
 chosen for having both large public datasets and realistic commercial
 application, prepared for grant application documentation),
-[`RICD Ongoing Projects Roadmap.pdf`](<future-projects/RICD Ongoing Projects Roadmap.pdf>)
+[`RICD Ongoing Projects Roadmap.docx`](<future-projects/RICD Ongoing Projects Roadmap.docx>)
 (the broader roadmap of further RICD-based trackers planned beyond the four
 adapters and the higher-ed tracker in this repository),
 [`Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf`](<future-projects/Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf>)
@@ -988,7 +988,7 @@ future-projects/
   Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf         Seed note for a mechanism-layer (agent) tracker, planned for later
   Next Project for RICD - Four Adapter Build Roadmap.pdf      One-year build plan for four new tracker adapters (banking, hospitals, public schools, nursing homes/long-term care)
   Plurimo Vision Document.pdf                                  Vision document for Plurimo, a teaching-optimization platform that uses RICD in its own algorithm
-  RICD Ongoing Projects Roadmap.pdf                            Broader roadmap of further planned RICD-based trackers
+  RICD Ongoing Projects Roadmap.docx                            Broader roadmap of further planned RICD-based trackers
   Web–Field Model of Cognitive Trait Distributions and Social Evolution.pdf   CMTR working theory (see above)
 .github/workflows/
   rescore.yml                     Scheduled re-scoring workflow (score_batch.py + score_institution.py + render_dashboard.py)
