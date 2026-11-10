@@ -25,7 +25,7 @@ drops meaningfully toward 1.0 relative to diagnose_sigma_fin_split.py's
 1.0605/1.0983, that's real, direct confirmation the funnel geometry was
 the actual cause and the fix works -- and the same reparameterization
 should then be considered for model.py's real build_model_stage2 (a
-production change, to be confirmed with Carmen first per CLAUDE.md,
+production change, to be confirmed with the maintainer first per CLAUDE.md,
 same as any other consequential edit). If it doesn't move, or moves only
 slightly, report that plainly -- this diagnostic-driven approach has
 already surfaced two real, useful negative results in this investigation
