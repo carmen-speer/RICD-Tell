@@ -38,30 +38,12 @@ does.
 Everything in this repository's code implements a real subset of that
 framework (Parts 6, 7, 8, and 10.5b specifically) against U.S. higher-education
 data; the manuscript itself is domain-independent and covers considerably more
-than the tracker uses. The manuscript's own
-[Integration Manifest](<reports/RICD Integration Manifest.docx>) records
-every mechanism confirmed built into the framework, section by section, with
-the exact manuscript text shown for each -- a standing verification record kept
-specifically to be checked against the manuscript, not trusted on its own.
+than the tracker uses.
 
-**The original source documents RICD was built from live in
-[`source-documents/`](source-documents/):** the quartet of poems, the
-Pentagonal Theorem of the Mathematical Nature of Evil, and Shaking Bowls —
-Carmen Speer's own original creative and theoretical writing, which became
-FDFM and RICS respectively, then nested into RICS-FDFM, then RICD, before
-further revisions arrived at the manuscript above. The poems and their
-interlinear math live together in
-**[`The Poetry Quartet - Source Poems of RICD.pdf`](<source-documents/The Poetry Quartet - Source Poems of RICD.pdf>)**,
-which sets RICD's own mathematics directly alongside the four original
-poems it was built from, line by line (poems first, for a clean read;
-ledger with mathematical-literary explanation inlaid following), so the
-connection between the source material and the formal framework is
-checkable rather than asserted. The folder's `intermediate-development/` subfolder holds real,
-surviving milestones from
-that path: an early FDFM application proposing a justice-system tracker
-(directly cited by RICD 5.0's own editorial notes, not a lost document), the
-expanded RICS-FDFM formalization, and earlier RICD versions (5.0
-through 5.6). See that folder's own README for the full lineage.
+**Provenance materials** -- the framework's original source documents, its
+earlier versions, and the full verification record (an integration manifest
+quoting the exact manuscript text for every mechanism confirmed built into the
+framework) -- are archived separately and available on request.
 
 **The narrative, findings, and process record of how this tracker was built
 live in [`reports/`](reports/):** [`RICD Tracker Findings Final.pdf`](<reports/RICD Tracker Findings Final.pdf>),
@@ -71,13 +53,8 @@ the findings document, the narrative account of how each result was actually
 reached, and the consolidated process log -- alongside
 [`Higher Ed Sector Findings.pdf`](<reports/Higher Ed Sector Findings.pdf>) (a
 separate analysis of what the results imply about the U.S. higher-education
-sector as a whole), [`Claude's Account of Carmen's Role in Building RICD and the higher-ed tracker.pdf`](<reports/Claude's Account of Carmen's Role in Building RICD and the higher-ed tracker.pdf>)
-and [`ChatGPT's Account of Its Own Role in the Early Development of FDFM, RICS, and RICD.pdf`](<reports/ChatGPT's Account of Its Own Role in the Early Development of FDFM, RICS, and RICD.pdf>)
-(each AI collaborator's own account of working with Carmen on the framework and
-the tracker, asked for and included so the actual division of labor is checkable
-rather than asserted), [`RICD Adapter Instructional Manual.pdf`](<reports/RICD Adapter Instructional Manual.pdf>) (an instructional manual for
-engineers working with the RICD adapter contract directly), and the
-complete [`RICD Integration Manifest.docx`](<reports/RICD Integration Manifest.docx>) described above.
+sector as a whole), and [`RICD Adapter Instructional Manual.pdf`](<reports/RICD Adapter Instructional Manual.pdf>) (an instructional manual for
+engineers working with the RICD adapter contract directly).
 
 **Not-yet-built or not-yet-funded work lives in [`future-projects/`](future-projects/):**
 [`Next Project for RICD - Four Adapter Build Roadmap.pdf`](<future-projects/Next Project for RICD - Four Adapter Build Roadmap.pdf>)
@@ -495,8 +472,8 @@ everything below is complete:
   automatically to `nces.ed.gov/ipeds/datacenter/data/<table>.zip` for
   older years -- both confirmed directly against NCES's own live pages
   on 2026-09-15, via GitHub Actions (the only environment used on this
-  project that can actually reach nces.ed.gov; every sandboxed AI
-  environment used to develop this code is blocked from it). A live
+  project that can actually reach nces.ed.gov; every sandboxed
+  development environment used for this code is blocked from it). A live
   run that same day downloaded all 11 real fiscal years for a real
   institution and produced a real classification. NCES has changed
   this mechanism multiple times before across this project's history
@@ -540,14 +517,14 @@ everything below is complete:
   Moody's Aa1/Fitch AA+ stable, neither on negative outlook) directly
   contradicting high-risk scores driven substantially by this same
   feature.
-  **Carmen identified the shape of this problem before it was formally
-  diagnosed.** She recognized it as the same kind of ambivalent signal
+  **The shape of this problem was identified before it was formally
+  diagnosed**, as the same kind of ambivalent signal
   the project had already encountered once before, in the
   facilities-and-athletics-spending and online-enrollment-share proxies
   tested (and rejected) during original feature selection — a magnitude
   that can mean either health or sickness depending on what's actually
   driving it, and that only resolves against corroborating evidence,
-  never read alone. Her own real-time diagnosis, stated directly in the
+  never read alone. The real-time diagnosis, stated directly in the
   project record before Houston's specific mechanism (the state
   windfall) was confirmed: "I bet it's that massive grant, that this is
   just like what happened with sports-and-facilities and
@@ -557,12 +534,12 @@ everything below is complete:
   tuition and quality of education (which predicts drop in enrollment);
   the signal reads that as noise (could go either way) unless you check
   it against other signs... read alone, it's an ambivalent signal."
-  That hypothesis was confirmed correct, and the two of us formally
-  named the underlying failure mode **sign blindness**: the math
+  That hypothesis was confirmed correct, and the underlying failure mode
+  was formally named **sign blindness**: the math
   correctly detects that a system has been shaken — a real, large
   disturbance in the data — but, from magnitude alone, has no way to
-  tell which direction the shake is pushing the system in. Carmen
-  proposed the fix concept directly from that diagnosis: grade positive
+  tell which direction the shake is pushing the system in. The fix
+  concept followed directly from that diagnosis: grade positive
   shocks back down toward zero instead of treating every large swing as
   equally alarming, regardless of which way it points — what became, in
   the code, the shift from symmetric variance to a genuinely
@@ -628,14 +605,12 @@ everything below is complete:
   real 2023 financial crisis and program/faculty cuts) — whether the
   new downside-only entropy measure has swung too far the other
   direction for these two, suppressing a real signal it used to
-  (over)detect, was the open question at the time. Carmen and Claude
-  suspected an overcorrection — a false positive produced by the fix
-  itself rather than a genuine result — so Claude designed and wrote a
-  two-step diagnostic (`src/diagnose_clemson_wvu.py`) to test that
-  directly; Carmen committed it and triggered the GitHub Actions run
-  herself, since this development environment has no push access and
-  no live network reach to NCES/College Scorecard — the same division
-  of labor used throughout this project. **Executed 2026-09-20, and the
+  (over)detect, was the open question at the time. An overcorrection
+  was suspected — a false positive produced by the fix itself rather
+  than a genuine result — so a two-step diagnostic
+  (`src/diagnose_clemson_wvu.py`) was written to test that directly and
+  run through GitHub Actions, the only environment used on this project
+  with live network reach to NCES/College Scorecard. **Executed 2026-09-20, and the
   two institutions resolved differently, not identically.** Step 1
   ruled out MCMC non-convergence as a confound for BOTH: re-run at 4x
   sampling precision (1000 draws/1000 tune/4 chains/target_accept=0.95,
@@ -660,7 +635,7 @@ everything below is complete:
   of Clemson's four stable comparisons), with a second real closure
   (Lourdes University) also nearby (1.30). That does not clear the bar
   for "overwhelmingly stable" the way Clemson's does, so it is not being
-  closed out the same way. In Carmen's own framing, West Virginia sits
+  closed out the same way. Framed plainly, West Virginia sits
   between two close cousins — one thriving (Wisconsin), one that
   actually collapsed (Trinity Christian) — and until that tie breaks
   further, it doesn't get the same clean resolution Clemson's evidence
@@ -866,7 +841,7 @@ everything below is complete:
   calibration gap above: a genuine, confirmed public four-year
   closure driven by financial distress — not yet usable, but this is
   the concrete path being watched, not a hypothetical one.** Checked
-  against three other candidates an AI search surfaced (2026-09-20) —
+  against three other candidates a broader search surfaced (2026-09-20) —
   IUPUI's 2024 split into IU Indianapolis and Purdue Indianapolis, and
   UT Brownsville's 2015 dissolution into UT Rio Grande Valley, were
   both ruled out on the merits: IUPUI's own announcement frames the
@@ -1001,26 +976,13 @@ docs/
   index.html                      Public results dashboard (GitHub Pages)
   data/panel.json                  Validated 54-institution panel data
   data/live_scores.json            Real institutions scored live by score_institution.py / score_batch.py
-source-documents/
-  The Poetry Quartet - Source Poems of RICD.pdf                        Original poems, with RICD's math set line-by-line alongside them
-  The Pentagonal Theorem of the Mathematical Nature of Evil.pdf       Became FDFM
-  Shaking Bowls Thought Experiment.pdf                                 Became RICS
-  README.md                                                               Full lineage
-  intermediate-development/
-    Feedback Divergence Field Model FDFM U.S. justice system application and research proposal.docx               Early FDFM justice-tracker proposal
-    RICS FDFM Multiscale Information Geometric Model.pdf                    Expanded nested RICS-FDFM
-    RICD 5.0.pdf, RICD 5.3.pdf, RICD 5.4.pdf,                              Earlier RICD versions
-    RICD 5.5.pdf, RICD 5.6.pdf, RICD 1.2 or 1.3 early version.pdf
 reports/
   RICD Tracker Findings Final.pdf        Final findings document
   RICD Tracker Narrative Final.pdf       Narrative account of how results were reached
   RICD Tracker Process Log Final.pdf     Consolidated process record
   Higher Ed Sector Findings.pdf           What the results imply about the sector
-  Claude's Account of Carmen's Role in Building RICD and the higher-ed tracker.pdf   Claude's own account of the collaboration
-  ChatGPT's Account of Its Own Role in the Early Development of FDFM, RICS, and RICD.pdf   ChatGPT's own account of the collaboration
   Collapse-Causal Tracker (C-CT) Description Document.pdf   What a collapse-causal tracker is as a category, and how it differs from C-CAT
   RICD Adapter Instructional Manual.pdf  Adapter-contract implementation guide, for engineers
-  RICD Integration Manifest.docx  Every mechanism confirmed built into RICD, with the manuscript text shown for each
   readme.md                                Guide to this folder's contents
 future-projects/
   Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf         Seed note for a mechanism-layer (agent) tracker, planned for later
