@@ -11,10 +11,7 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
   the full, domain-independent RICD theory. This repository's code
   implements a real subset of it (Parts 6, 7, 8, and 10.5b specifically)
   against U.S. higher-education data; the manuscript itself covers
-  considerably more than the tracker uses. Checked against the
-  [Integration Manifest](<../../reports/RICD Integration Manifest.docx>)
-  in `reports/`, which records every mechanism confirmed built into the
-  framework against the exact manuscript text.
+  considerably more than the tracker uses.
 - [`index.html`](<../index.html>) — the public results dashboard, served via
   GitHub Pages at
   [carmen-speer.github.io/Recursive-Information-Container-Dynamics](https://carmen-speer.github.io/Recursive-Information-Container-Dynamics/).
@@ -30,6 +27,5 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
 
 This folder is the one place in the repository built to be viewed
 directly by someone who isn't reading the code — everything here should
-stay checkable against `reports/RICD Integration Manifest.docx` and the
-root README rather than drifting into its own separate account of
-what's true.
+stay checkable against the root README rather than drifting into its own
+separate account of what's true.
