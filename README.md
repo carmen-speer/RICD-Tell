@@ -33,8 +33,8 @@ prediction of an outcome -- is the more accurate description of what it
 does.
 
 **The full RICD manuscript (the complete, domain-independent theory) lives at
-[`docs/RICD 16.0 manuscript.docx`](<docs/RICD 16.0 manuscript.docx>)
-(also available as [`.tex`](<docs/RICD 16.0 manuscript.tex>)).**
+[`docs/RICD 16.1 manuscript.docx`](<docs/RICD 16.1 manuscript.docx>)
+(also available as [`.tex`](<docs/RICD 16.1 manuscript.tex>)).**
 Everything in this repository's code implements a real subset of that
 framework (Parts 6, 7, 8, and 10.5b specifically) against U.S. higher-education
 data; the manuscript itself is domain-independent and covers considerably more
@@ -70,28 +70,26 @@ adapters and the higher-ed tracker in this repository),
 investigating the specific real decisions and agents behind a collapse --
 board minutes, depositions, investigative findings -- rather than the
 aggregate financial and enrollment effects the higher-ed tracker measures),
-[`Plurimo Vision Document.pdf`](<future-projects/Plurimo Vision Document.pdf>)
-(a teaching-optimization software platform for private tutors and
-independent educators that uses RICD directly in its own algorithm -- for
-site-health monitoring and its anti-capture/anti-trolling detection system
--- which is exactly why RICD needs to be pressure-tested and refined
-against real, adversarial data across new domains, via the four adapters
-above, before it's trusted to run Plurimo's systems; Plurimo is planned to
-be funded by revenue from those same four adapters rather than sought
-directly), and
-[`Web–Field Model of Cognitive Trait Distributions and Social Evolution.pdf`](<future-projects/Web–Field Model of Cognitive Trait Distributions and Social Evolution.pdf>)
-(RICD's mathematics applied to a second, unrelated domain: modeling human
-cognitive traits as regions on a continuous manifold rather than discrete
-types, and deriving from it a proposed learning-style metric, the Cognitive
-Trait Manifold Ratio, or CMTR -- a working theory, at an earlier stage than
-anything else in this repository, included so its actual state is checkable
-rather than asserted after the fact once, or if, it's validated), and
+and
 [`Anchor-Quantification Sensor - Seed Note.md`](<future-projects/Anchor-Quantification Sensor - Seed Note.md>)
 (a proposed quantification of anchor-eligibility -- external support
 capable of preventing collapse without appearing in the classifier's own
 math -- planned to run alongside the validated 8-feature panel and
 cross-reference against it rather than merge into it; see "Tell's
-Upcoming Project" above for the full summary).
+Upcoming Project" below for the full summary).
+
+**Two related projects live in their own repositories**, since they draw on
+RICD but are not part of Tell:
+[Plurimo](https://github.com/carmen-speer/plurimo), a teaching-optimization
+platform for private tutors and independent educators whose site-health
+monitoring and anti-capture/anti-trolling detection are designed around RICD,
+and which would depend on RICD first being tested against real data in further
+domains; and the
+[Web–Field Model of Cognitive Trait Distributions and Social Evolution](https://github.com/carmen-speer/web-field-model),
+an early-stage application of RICD's mathematics to human cognitive traits,
+modeling them as regions on a continuous manifold rather than discrete types
+and proposing a learning-style metric, the Cognitive Trait Manifold Ratio
+(CMTR).
 
 The planned future tracker mentioned above is an
 **agent tracker**, which would investigate the specific real decisions and
@@ -972,7 +970,7 @@ data/
   confirmatory/draw log.csv     Every institution the confirmatory draw touched, and why each was kept or skipped
   confirmatory/draw slots.json  The 300 drawn institutions, with frame size, step size, source checksum, and 25 ordered backups per slot
 docs/
-  RICD 16.0 manuscript.docx, .tex    The full, domain-independent RICD theory
+  RICD 16.1 manuscript.docx, .tex    The full, domain-independent RICD theory
   index.html                      Public results dashboard (GitHub Pages)
   data/panel.json                  Validated 54-institution panel data
   data/live_scores.json            Real institutions scored live by score_institution.py / score_batch.py
@@ -987,9 +985,7 @@ reports/
 future-projects/
   Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf         Seed note for a mechanism-layer (agent) tracker, planned for later
   Next Project for RICD - Four Adapter Build Roadmap.pdf      One-year build plan for four new tracker adapters (banking, hospitals, public schools, nursing homes/long-term care)
-  Plurimo Vision Document.pdf                                  Vision document for Plurimo, a teaching-optimization platform that uses RICD in its own algorithm
   RICD Ongoing Projects Roadmap.docx                            Broader roadmap of further planned RICD-based trackers
-  Web–Field Model of Cognitive Trait Distributions and Social Evolution.pdf   CMTR working theory (see above)
 .github/workflows/
   rescore.yml                     Scheduled re-scoring workflow (score_batch.py + score_institution.py + render_dashboard.py)
   claude.yml                       Claude Code GitHub Action (handles @claude-triggered edits made directly on GitHub)
