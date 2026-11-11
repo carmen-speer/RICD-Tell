@@ -8,10 +8,10 @@ than asserted.
 ## Contents
 
 - [`Next Project for RICD - Four Adapter Build Roadmap.pdf`](<Next Project for RICD - Four Adapter Build Roadmap.pdf>) —
-  a proposed one-year build plan for four new RICD tracker adapters —
+  a proposed build plan for four new RICD tracker adapters —
   banking, hospitals, public schools, and nursing homes/long-term care —
   chosen for having both large public datasets and realistic commercial
-  application, prepared for grant application documentation.
+  application.
 - [`RICD Ongoing Projects Roadmap.docx`](<RICD Ongoing Projects Roadmap.docx>) —
   the broader roadmap of further RICD-based trackers planned beyond the
   four adapters above and the higher-ed tracker in this repository.
