@@ -6,8 +6,8 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
 
 ## Contents
 
-- [`RICD 16.0 manuscript.docx`](<../RICD 16.0 manuscript.docx>)
-  (also [`RICD 16.0 manuscript.tex`](<../RICD 16.0 manuscript.tex>)) —
+- [`RICD 16.1 manuscript.docx`](<../RICD 16.1 manuscript.docx>)
+  (also [`RICD 16.1 manuscript.tex`](<../RICD 16.1 manuscript.tex>)) —
   the full, domain-independent RICD theory. This repository's code
   implements a real subset of it (Parts 6, 7, 8, and 10.5b specifically)
   against U.S. higher-education data; the manuscript itself covers
