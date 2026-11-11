@@ -33,5 +33,5 @@ than asserted.
 
 Two related projects that draw on RICD but are not part of Tell live in
 their own repositories:
-[Plurimo](https://github.com/carmen-speer/plurimo) and the
-[Web–Field Model of Cognitive Trait Distributions and Social Evolution](https://github.com/carmen-speer/web-field-model).
+[Plurimo](https://github.com/carmen-speer/RICD-Plurimo) and the
+[Web–Field Model of Cognitive Trait Distributions and Social Evolution](https://github.com/carmen-speer/RICD-Web-Field-Model-Systems-Cognition).
