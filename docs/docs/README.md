@@ -14,7 +14,7 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
   considerably more than the tracker uses.
 - [`index.html`](<../index.html>) — the public results dashboard, served via
   GitHub Pages at
-  [carmen-speer.github.io/Recursive-Information-Container-Dynamics](https://carmen-speer.github.io/Recursive-Information-Container-Dynamics/).
+  [carmen-speer.github.io/RICD-Tell](https://carmen-speer.github.io/RICD-Tell/).
   Shows the validated 54-institution panel and, separately, real
   institutions scored live by the tracker pipeline (see the root
   README's Known Gaps section for what each live score does and doesn't
