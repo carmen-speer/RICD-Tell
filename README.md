@@ -58,10 +58,10 @@ engineers working with the RICD adapter contract directly).
 
 **Not-yet-built or not-yet-funded work lives in [`future-projects/`](future-projects/):**
 [`Next Project for RICD - Four Adapter Build Roadmap.pdf`](<future-projects/Next Project for RICD - Four Adapter Build Roadmap.pdf>)
-(a proposed one-year build plan for four new RICD tracker adapters --
+(a proposed build plan for four new RICD tracker adapters --
 banking, hospitals, public schools, and nursing homes/long-term care --
 chosen for having both large public datasets and realistic commercial
-application, prepared for grant application documentation),
+application),
 [`RICD Ongoing Projects Roadmap.docx`](<future-projects/RICD Ongoing Projects Roadmap.docx>)
 (the broader roadmap of further RICD-based trackers planned beyond the four
 adapters and the higher-ed tracker in this repository),
@@ -984,7 +984,7 @@ reports/
   readme.md                                Guide to this folder's contents
 future-projects/
   Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf         Seed note for a mechanism-layer (agent) tracker, planned for later
-  Next Project for RICD - Four Adapter Build Roadmap.pdf      One-year build plan for four new tracker adapters (banking, hospitals, public schools, nursing homes/long-term care)
+  Next Project for RICD - Four Adapter Build Roadmap.pdf      Proposed build plan for four new tracker adapters (banking, hospitals, public schools, nursing homes/long-term care)
   RICD Ongoing Projects Roadmap.docx                            Broader roadmap of further planned RICD-based trackers
 .github/workflows/
   rescore.yml                     Scheduled re-scoring workflow (score_batch.py + score_institution.py + render_dashboard.py)
