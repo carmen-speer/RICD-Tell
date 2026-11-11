@@ -80,12 +80,12 @@ Upcoming Project" below for the full summary).
 
 **Two related projects live in their own repositories**, since they draw on
 RICD but are not part of Tell:
-[Plurimo](https://github.com/carmen-speer/plurimo), a teaching-optimization
+[Plurimo](https://github.com/carmen-speer/RICD-Plurimo), a teaching-optimization
 platform for private tutors and independent educators whose site-health
 monitoring and anti-capture/anti-trolling detection are designed around RICD,
 and which would depend on RICD first being tested against real data in further
 domains; and the
-[Web–Field Model of Cognitive Trait Distributions and Social Evolution](https://github.com/carmen-speer/web-field-model),
+[Web–Field Model of Cognitive Trait Distributions and Social Evolution](https://github.com/carmen-speer/RICD-Web-Field-Model-Systems-Cognition),
 an early-stage application of RICD's mathematics to human cognitive traits,
 modeling them as regions on a continuous manifold rather than discrete types
 and proposing a learning-style metric, the Cognitive Trait Manifold Ratio
@@ -146,7 +146,7 @@ print(f'Misclassified: {misclassified}')
 **What that 100% figure is actually a statement about, checked directly rather than left implicit:** of the panel's 23 confirmed closures, only 2 (Northland College, King's College NY) are classified via the direct External Governance Attestation override described above — the other 21 are correctly classified by the fitted statistical model itself, not exempted from it. So the 100% accuracy claim is overwhelmingly a statement about the classifier, not about the override rule doing the real work. Separately, `reserve_adequacy`'s coefficient — the largest-magnitude one in the model — is stable across all 52 real leave-one-out refits that actually pass through the fitted model (the 2 override folds never do): it stays in a tight -1.79 to -1.93 band around its full-panel value of -1.88, and none of the eight features flip sign in any of the 52 folds. No single institution's removal is quietly driving the result. This is a real answer to "is the panel too small/one feature too dominant for this to be trustworthy," not a claim that it resolves the separate, still-open gap below: coefficient stability says the fit isn't fragile to which institution gets held out; it says nothing about whether `reserve_adequacy` is well-calibrated against real public-sector distress, which it structurally is not (see Known Gaps).
 
 **A live public dashboard is at
-[carmen-speer.github.io/Recursive-Information-Container-Dynamics](https://carmen-speer.github.io/Recursive-Information-Container-Dynamics/)**
+[carmen-speer.github.io/RICD-Tell](https://carmen-speer.github.io/RICD-Tell/)**
 (built from [`docs/index.html`](docs/index.html) via GitHub Pages), showing
 both the validated 54-institution panel ([`docs/data/panel.json`](docs/data/panel.json))
 and, in a separate section below it, real institutions scored live by the
@@ -457,7 +457,7 @@ everything below is complete:
   College Scorecard API, not from any pre-downloaded local file). Its
   result is saved to [`docs/data/live_scores.json`](docs/data/live_scores.json)
   and shown in a "Live-scored institutions" section on the
-  [public dashboard](https://carmen-speer.github.io/Recursive-Information-Container-Dynamics/).
+  [public dashboard](https://carmen-speer.github.io/RICD-Tell/).
   It still only scores one hardcoded institution per run, as a smoke
   test -- turning this into a tracker that scores a real, broader list
   of institutions on its own schedule is the next real step, genuine
