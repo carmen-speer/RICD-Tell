@@ -15,7 +15,7 @@ in the files, including NULL and PrivacySuppressed, which the pipeline
 reads as missing. A JSON note next to the output records the download
 URL, its SHA-256 hash and when it was downloaded.
 
-Usage (GitHub Actions; needs network access to the Scorecard download site):
+Usage (GitHub Actions; downloads the copy kept in this repository's release):
     cd src
     python build_scorecard_compact.py --out ../work/scorecard_compact.csv
 """
@@ -45,6 +45,10 @@ RELEASE_URL = ("https://github.com/carmen-speer/RICD-Tell/releases/download/"
 # Original link, from https://collegescorecard.ed.gov/data/ (checked 2026-11-12);
 # tried second, and recorded in the output note as the file's origin.
 ORIGINAL_URL = "https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_11022026.zip"
+# SHA-256 of the release asset (561,612,763 bytes), computed 2026-11-12 and
+# fixed in "sampling protocol.md". The script stops if the file it downloads
+# is not byte-for-byte this file.
+EXPECTED_SHA256 = "ec66842e4c788a77818b81f23f2262020127d0524cc7132cf96e3207da463ec7"
 COLUMNS = ["UGDS", "C150_4", "TUITIONFEE_IN", "ADM_RATE"]
 NAME_RE = re.compile(r"MERGED(\d{4})_\d{2}_PP\.csv$", re.I)
 # A browser-style User-Agent, used for both addresses.
@@ -80,6 +84,10 @@ def main():
     if url is None:
         raise SystemExit("Could not download the College Scorecard file. " + " | ".join(failures)
                          + " | Check that the release asset exists at the first address.")
+    if sha.hexdigest() != EXPECTED_SHA256:
+        raise SystemExit(f"Downloaded file's SHA-256 is {sha.hexdigest()}, not the "
+                         f"protocol's {EXPECTED_SHA256}. Not building.")
+    print(f"SHA-256 verified: {EXPECTED_SHA256}", flush=True)
 
     n_rows, years = 0, []
     with zipfile.ZipFile(zpath) as zf, open(out, "w", newline="") as fo:
@@ -87,7 +95,9 @@ def main():
         w.writerow(["UNITID", "YEAR"] + COLUMNS)
         for name in sorted(zf.namelist()):
             m = NAME_RE.search(name)
-            if not m:
+            # The archive also holds macOS metadata copies of each file
+            # (__MACOSX/._MERGED...); those are not data and are skipped.
+            if not m or name.startswith("__MACOSX") or "/._" in name or name.startswith("._"):
                 continue
             year = int(m.group(1))
             years.append(year)
