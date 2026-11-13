@@ -1,0 +1,36 @@
+name: Diagnose finance form (why some candidates have no parsed finance data)
+
+# Manual-only. For every confirmatory candidate recorded as failing the
+# data check on finance data, reports its HD2019 finance parent/child
+# fields and which IPEDS finance file (F1A, F2 or F3) actually holds its
+# rows in each year of the scoring window. Fits no model, changes
+# nothing, commits nothing, looks up no outcome. See
+# src/diagnose_finance_form.py's own docstring.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check which finance form each candidate files
+        run: |
+          cd src
+          python diagnose_finance_form.py
+
+      - name: Upload the results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: finance_form
+          path: reports/finance_form/
