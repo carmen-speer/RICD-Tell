@@ -1,0 +1,93 @@
+{
+  "about": "Evaluations recorded in a committed batch that are void, with the reason for each. score_confirmatory.py ignores a voided evaluation and evaluates that candidate again. Only evaluations whose slots had not yet been finalized can be voided, so no finalized slot is changed. The batch files themselves are never edited.",
+  "voided": [
+    {
+      "unitid": "134608",
+      "name": "Indian River State College",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "5 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2014, 2015, 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391218 log"
+    },
+    {
+      "unitid": "131283",
+      "name": "The Catholic University of America",
+      "batch": 1,
+      "recorded result": "fail (data check)",
+      "reason": "3 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391288 log"
+    },
+    {
+      "unitid": "142294",
+      "name": "The College of Idaho",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "2 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391388 log"
+    },
+    {
+      "unitid": "190725",
+      "name": "Daemen College",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "3 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391263 log"
+    },
+    {
+      "unitid": "145637",
+      "name": "University of Illinois at Urbana-Champaign",
+      "batch": 1,
+      "recorded result": "fail (stability check)",
+      "reason": "8 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391261 log"
+    },
+    {
+      "unitid": "117557",
+      "name": "Lincoln University",
+      "batch": 1,
+      "recorded result": "fail (data check)",
+      "reason": "2 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391274 log"
+    },
+    {
+      "unitid": "180692",
+      "name": "The University of Montana-Western",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "8 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391320 log"
+    },
+    {
+      "unitid": "220701",
+      "name": "Martin Methodist College",
+      "batch": 1,
+      "recorded result": "fail (data check)",
+      "reason": "1 NCES finance download failed while this candidate was being evaluated (pipeline year labels 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391222 log"
+    },
+    {
+      "unitid": "221519",
+      "name": "The University of the South",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "7 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2012, 2013, 2014, 2015, 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391303 log"
+    },
+    {
+      "unitid": "196200",
+      "name": "SUNY College at Potsdam",
+      "batch": 1,
+      "recorded result": "fail (data check)",
+      "reason": "4 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2015, 2016, 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391298 log"
+    },
+    {
+      "unitid": "153278",
+      "name": "University of Dubuque",
+      "batch": 1,
+      "recorded result": "pass",
+      "reason": "2 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
+      "evidence": "GitHub Actions run 43365428954, job 131689391297 log"
+    }
+  ]
+}
