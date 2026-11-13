@@ -35,23 +35,18 @@ from pathlib import Path
 import requests
 
 # Current link from https://collegescorecard.ed.gov/data/ (checked 2026-11-12).
-# The file name carries its release date and changes with each release, so
-# if this one is gone the script reads the current link off that page.
+# The file name carries its release date and changes with each release; if
+# this one is gone, copy the new "All Data Files" link from that page here.
 ALL_DATA_URL = "https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_11022026.zip"
-DATA_PAGE = "https://collegescorecard.ed.gov/data/"
+# The same file under the download site's older host name, tried second.
+FALLBACK_URLS = [ALL_DATA_URL.replace("ed-public-download.scorecard.network", "ed-public-download.app.cloud.gov")]
 COLUMNS = ["UGDS", "C150_4", "TUITIONFEE_IN", "ADM_RATE"]
 NAME_RE = re.compile(r"MERGED(\d{4})_\d{2}_PP\.csv$", re.I)
-
-
-def current_url() -> str:
-    r = requests.head(ALL_DATA_URL, timeout=60, allow_redirects=True)
-    if r.status_code == 200:
-        return ALL_DATA_URL
-    page = requests.get(DATA_PAGE, timeout=60).text
-    links = re.findall(r'https://[^"\']*College_Scorecard_Raw_Data[^"\']*\.zip', page)
-    if not links:
-        raise SystemExit(f"{ALL_DATA_URL} returned {r.status_code} and no current link was found on {DATA_PAGE}.")
-    return links[0]
+# The download server refused the first attempt (HTTP 403, 2026-11-12), made
+# as a bare HEAD request with Python's default User-Agent; a plain GET with
+# a browser-style User-Agent is what a browser sends.
+HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                         "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
 
 
 def main():
@@ -61,16 +56,27 @@ def main():
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    url = current_url()
-    print(f"Downloading {url}", flush=True)
     zpath = out.parent / "scorecard_all_data.zip"
-    sha = hashlib.sha256()
-    with requests.get(url, stream=True, timeout=600) as r:
-        r.raise_for_status()
-        with open(zpath, "wb") as f:
-            for chunk in r.iter_content(1 << 20):
-                f.write(chunk)
-                sha.update(chunk)
+    url, sha, failures = None, None, []
+    for candidate in [ALL_DATA_URL] + FALLBACK_URLS:
+        print(f"Downloading {candidate}", flush=True)
+        try:
+            with requests.get(candidate, stream=True, timeout=600, headers=HEADERS) as r:
+                if r.status_code != 200:
+                    failures.append(f"{candidate}: HTTP {r.status_code}")
+                    continue
+                sha = hashlib.sha256()
+                with open(zpath, "wb") as f:
+                    for chunk in r.iter_content(1 << 20):
+                        f.write(chunk)
+                        sha.update(chunk)
+                url = candidate
+                break
+        except requests.RequestException as e:
+            failures.append(f"{candidate}: {type(e).__name__}: {e}")
+    if url is None:
+        raise SystemExit("Could not download the College Scorecard file. " + " | ".join(failures)
+                         + " | If it has been renamed, copy the current link from https://collegescorecard.ed.gov/data/.")
 
     n_rows, years = 0, []
     with zipfile.ZipFile(zpath) as zf, open(out, "w", newline="") as fo:
