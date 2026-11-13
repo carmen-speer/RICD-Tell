@@ -2,6 +2,8 @@
 
 This protocol is committed before any confirmatory institution is drawn or scored. Its purpose is to fix every decision about which institutions are tested, how they are scored, and how results are judged, so that the test's outcome cannot be shaped after the fact.
 
+It was amended once, on 2026-11-12, after the draw and before any confirmatory institution was scored; the amendment, what it changed and the evidence for each change are set out under "Amendment before scoring" at the end of this file.
+
 ## Purpose
 
 The tracker reached 100% leave-one-out accuracy on its 54-institution validation panel. That panel was designed to be representative, not random, so leave-one-out accuracy shows the classifier is internally consistent but does not show how it performs on institutions nobody chose. This test scores 300 institutions selected by a fixed, mechanical rule, using only data available in fiscal year 2019, and then checks the scores against what actually happened to those institutions afterward.
@@ -37,11 +39,12 @@ If replacements reach the end of the ordered frame, selection continues from the
 
 ## Insufficient-data rule
 
-An institution is classified as having insufficient data, and is skipped and replaced, if it fails any one of these three checks.
+An institution is classified as having insufficient data, and is skipped and replaced, if it fails either of these two checks.
 
-1. **Data check.** It lacks at least five consecutive fiscal years of complete finance data ending in fiscal year 2019.
-2. **Convergence check.** Its model fit shows any divergent transitions, or any parameter with R-hat above 1.01. This catches the funnel geometry that data-scarce institutions produce.
-3. **Stability check.** Fits run with three different random seeds do not all agree on the institution's risk flag.
+1. **Data check.** It lacks at least five consecutive fiscal years of complete finance data ending in fiscal year 2019, or the pipeline cannot build its complete College Scorecard series (enrollment, completion rate and in-state tuition in every year of the scoring window) or its debt series.
+2. **Stability check.** Fits run with three different random seeds do not all agree on the institution's risk flag.
+
+Divergent transitions and R-hat are recorded for every fit, but neither causes a skip. The original rule's convergence check (no divergent transitions and no R-hat above 1.01) was removed by the amendment, because on the validation panel it skipped every institution at production settings and, at higher sampling effort, skipped every closure while keeping most surviving institutions; see "Amendment before scoring." The stability check is the test of whether a fit is reliable enough to score: it asks directly whether the flag, which is the quantity being tested, depends on the sampler's random seed.
 
 Institutions that fail are never debugged, refit, reparameterized or otherwise rescued. They are skipped and replaced, and the skip is logged along with the type of data gap that caused it.
 
@@ -49,7 +52,7 @@ Skipped institutions are not discarded from the analysis. Their later outcomes a
 
 ## Scoring rules
 
-- Institutions are scored using fiscal year 2019 data and earlier only.
+- Institutions are scored using fiscal year 2019 data and earlier only, over an 11-year window covering fiscal years 2009 through 2019 (the pipeline's `start_year` 2008 and `end_year` 2019).
 - The classifier is frozen in its current validated form. No feature, threshold, prior or setting is changed during or after the confirmatory run.
 - All scores are committed to this repository, with a timestamp, before any institution's outcome is looked up.
 
@@ -63,9 +66,12 @@ The classifier and feature pipeline are frozen at the following file versions (g
 - `src/dynamics.py`: 0fb853c22972a9ccdfd2a44de82fcbf7513c81f8
 - `src/real_adapter.py`: 7bcd88039d990d131e0ef0ac31b16531fd9defc8
 - `src/score_institution.py`: 30d65337f8e45cc88e84a48a99250a2943e0a765
-- `src/fetch_live_data.py`: 4c93cb61998d834b25dea502f17b7698154497a1
+- `src/fetch_live_data.py`: d56d8231e6dd82bcd10a061f676ea40bd5e1ba76
+- `src/build_scorecard_compact.py`: ce3683908488ecd8f590a9a4021df255a3416352
 
 The confirmatory scoring script checks these hashes before scoring each batch and stops if any file differs.
+
+Enrollment, completion rate, in-state tuition and admission rate come from one fixed copy of the U.S. Department of Education's College Scorecard "All Data Files" download (`College_Scorecard_Raw_Data_11022026.zip`, 561,612,763 bytes, SHA-256 ec66842e4c788a77818b81f23f2262020127d0524cc7132cf96e3207da463ec7), kept unchanged as an asset of this repository's release `scorecard-raw-data-2026-11-02`. `src/build_scorecard_compact.py` refuses any file whose SHA-256 differs. They do not come from the College Scorecard API, which has no record for institutions that have since closed.
 
 Every fit uses the production sampler settings: 300 draws, 300 tuning steps, 2 chains, target_accept 0.9, cores 1, and the Numba backend. The three seeds for the stability check are 7 (the production seed), 101 and 202; the score and flag reported for an institution are those from seed 7. The exact version of every installed package is recorded with each committed batch of scores.
 
@@ -132,3 +138,19 @@ The draw is recorded in a log committed to this repository. For every institutio
 - the commit timestamp of the scores.
 
 The log records N, k and the final count of scored and skipped institutions.
+
+## Amendment before scoring (2026-11-12)
+
+This amendment was made after the draw and before any confirmatory institution was scored or any outcome was looked up. Every change below rests on measurements of the 54-institution validation panel only, which is excluded from the confirmatory sample by the collision rule, and on the completeness of the drawn institutions' pre-2019 College Scorecard data. No confirmatory institution was fitted, and no confirmatory outcome was consulted.
+
+**1. Convergence check removed as a skip rule.** `check_panel_convergence.yml` fitted the panel under the confirmatory conditions. At production settings (300 draws, 300 tuning steps, 2 chains), 0 of 34 fitted institutions met R-hat ≤ 1.01, so the rule as committed would have skipped every confirmatory institution. At 1000 draws, 1000 tuning steps and 4 chains, 25 of 27 surviving institutions met it but 0 of 3 closures did, all three with divergent transitions; across the two settings the flag was the same for all 30 institutions fitted at both. A rule that removes closures specifically would bias the test's sensitivity in a direction the scores could not reveal. Divergent transitions and R-hat are now recorded for every fit and do not cause a skip; the three-seed stability check remains.
+
+**2. College Scorecard data taken from a fixed bulk file, not the API.** `diagnose_window_data.yml` found that the College Scorecard API returns no record at all for 20 of the panel's 23 closures, so under the original pipeline almost every institution that closed after 2019 would have failed the data check, and closures would have gathered in the skipped group instead of being scored. The Department of Education's bulk "All Data Files" download keeps closed institutions for the years they reported. `diagnose_window_choice.yml` compared the two sources wherever the API has a record: 1,897 values across 34 institutions, with 0 mismatches, so the change alters where the numbers come from, not what they are. The file used is fixed by its SHA-256 under "Frozen scoring configuration." It is kept as a release asset because the Department's download site refuses requests from GitHub Actions.
+
+**3. Scoring window set to fiscal years 2009-2019.** The original configuration's window began in 2013, giving six fiscal years ending in FY2019. At that window the classifier flagged every panel institution it scored (53 of 53, Harvard and Princeton included). That is consistent with several features depending on series length while the classifier was trained on longer series (the panel's own features cover 2005-06 through 2022-23), and the longer windows below behave accordingly. `diagnose_window_choice.yml` scored the panel at three windows ending in FY2019, chosen before that run: from 2005 (14 years), 2008 (11 years) and 2013 (6 years). Results: from 2005, 14 of 18 scored closures and 2 of 30 scored surviving institutions flagged (42 of 48 correct); from 2008, 19 of 19 closures and 2 of 30 surviving institutions flagged (47 of 49 correct); from 2013, every institution flagged (22 of 53 correct). The window from 2008 was chosen. Two cautions apply. These accuracies are in-sample, because the classifier was trained on these institutions, so they show that the six-year window is broken; they do not validate the chosen one. And the choice among the three windows was made with the panel's outcomes in view; the confirmatory sample played no part in it. The window from 2008 is also the 11-year length the weekly live scoring already uses.
+
+**4. Admission rate no longer required.** Admission rate is not a model input anywhere in the live pipeline; it was only ever a gate, and the pipeline already exempted for-profit institutions from it. Open-admission public and private colleges do not report it. Among the 300 drawn institutions, 160 had complete College Scorecard series for the scoring window under the original gate; admission rate was missing in at least one year for 105 of them and was the only gap for 38. With the gate removed for every sector, 198 of the 300 have complete series before backups. No institution that already passed scores differently, since the value is never read.
+
+**5. Frozen-file hashes updated.** `src/fetch_live_data.py` changed (items 2 and 4) and `src/build_scorecard_compact.py` was added (item 2); their hashes above replace the originals. No other frozen file changed.
+
+**Known consequence.** Even after these changes, roughly a third of the drawn institutions will lack complete data for an 11-year window (missing completion rate, tuition or enrollment in some year, or not appearing in some years at all, often because they opened after 2008) and will be replaced by backups. The scored sample therefore leans toward institutions with complete reporting over 2009-2019. Every skipped institution and the reason for its skip are recorded, and their later outcomes are compared with the scored institutions' outcomes under the "institutional broken window" analysis.
