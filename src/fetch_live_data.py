@@ -43,6 +43,57 @@ import requests
 
 SCORECARD_API_BASE = "https://api.data.gov/ed/collegescorecard/v1/schools"
 
+# OPTIONAL BULK SOURCE (2026-11-12, confirmatory-test preparation): the
+# College Scorecard API returns no record at all for an institution that
+# has since closed (confirmed by src/diagnose_window_data.py: 20 of the
+# panel's 23 closures have no API record), so any pipeline run that must
+# see closed institutions -- the confirmatory out-of-sample test above
+# all -- cannot take its enrollment, completion and tuition series from
+# the API. The Department of Education's own "All Data Files" download
+# keeps one file per year (MERGEDyyyy_yy_PP.csv) holding every
+# institution that reported that year, closed ones included, with the
+# same underlying values the API serves (UGDS = student.size, C150_4 =
+# completion.completion_rate_4yr_150nt, TUITIONFEE_IN =
+# cost.tuition.in_state, ADM_RATE = admissions.admission_rate.overall).
+# src/build_scorecard_compact.py reduces those files to the four columns
+# used here. Calling use_bulk_scorecard(path) switches build_live_series
+# to that file; nothing calls it unless asked, so the weekly re-score and
+# every existing caller keep using the API exactly as before.
+_BULK_SCORECARD: dict | None = None
+BULK_TO_API = {
+    "UGDS": "student.size",
+    "C150_4": "completion.completion_rate_4yr_150nt",
+    "TUITIONFEE_IN": "cost.tuition.in_state",
+    "ADM_RATE": "admissions.admission_rate.overall",
+}
+
+
+def use_bulk_scorecard(path: str | Path) -> None:
+    """Load the compact bulk Scorecard file and route build_live_series to it."""
+    import csv
+    global _BULK_SCORECARD
+    data = {}
+    with open(path, newline="") as f:
+        for row in csv.DictReader(f):
+            data[(row["UNITID"], int(row["YEAR"]))] = row
+    _BULK_SCORECARD = data
+
+
+def _bulk_scorecard_fields(unitid: str, year: int) -> dict:
+    """The same year-prefixed keys fetch_scorecard_fields returns, from the bulk file.
+    Missing or suppressed values come back as None, exactly as the API returns them."""
+    row = _BULK_SCORECARD.get((unitid, year))
+    if row is None:
+        raise KeyError(f"No bulk College Scorecard row for UNITID {unitid}, year {year}.")
+    out = {}
+    for col, api_name in BULK_TO_API.items():
+        v = (row.get(col) or "").strip()
+        try:
+            out[f"{year}.{api_name}"] = float(v)
+        except ValueError:
+            out[f"{year}.{api_name}"] = None  # NULL / PrivacySuppressed / blank
+    return out
+
 # Real field codes, confirmed directly against the actual IPEDS form
 # documentation during this project's original build -- not assumed.
 PRIVATE_FINANCE_FIELDS = {
@@ -221,7 +272,10 @@ def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str 
             f"{year}.cost.tuition.in_state",
         ]
         try:
-            result = fetch_scorecard_fields(unitid, fields, api_key)
+            if _BULK_SCORECARD is not None:
+                result = _bulk_scorecard_fields(unitid, year)
+            else:
+                result = fetch_scorecard_fields(unitid, fields, api_key)
             n_undergrads.append(float(result[f"{year}.student.size"]))
             completion.append(float(result[f"{year}.completion.completion_rate_4yr_150nt"]))
             tuition.append(float(result[f"{year}.cost.tuition.in_state"]))
