@@ -262,6 +262,18 @@ def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str 
     was rejecting real, usable data for no modeling reason. Every other
     sector, and every other required field, keeps the original
     zero-tolerance behavior unchanged.
+
+    2026-11-12 (confirmatory-test amendment): the same exemption now
+    applies to every sector. Admission rate is not a model input
+    anywhere in the live pipeline (score_institution.py never calls
+    real_adapter.compute_P_m_proxy, the only reader of it), and
+    open-admission public and private colleges do not report it, so
+    requiring it skipped institutions for a number that never enters
+    their score: in the confirmatory draw it was the only Scorecard gap
+    for 38 of the 300 selected institutions. A missing admission rate is
+    kept as NaN. Completion, tuition and enrollment keep the original
+    zero-tolerance rule, and no institution that already passed scores
+    differently, since the value is never read.
     """
     completion, tuition, admit_rate, n_undergrads = [], [], [], []
     for year in range(start_year, end_year):
@@ -282,12 +294,10 @@ def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str 
             try:
                 admit_rate.append(float(result[f"{year}.admissions.admission_rate.overall"]))
             except (KeyError, TypeError, ValueError):
-                if sector == "forprofit":
-                    # Real, structural gap, not a fabricated value -- NaN,
-                    # not a guess, and never read by compute_O_o_O_p anyway.
-                    admit_rate.append(float("nan"))
-                else:
-                    raise
+                # Real, structural gap (for-profit and open-admission
+                # institutions), not a fabricated value -- NaN, not a
+                # guess, and never read by the live pipeline anyway.
+                admit_rate.append(float("nan"))
         except (KeyError, TypeError, ValueError):
             return None  # a real, honest gap year -- matches the local extractor's all-or-nothing behavior
     import numpy as np
