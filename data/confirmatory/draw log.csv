@@ -322,3 +322,7 @@ slot,frame position,unitid,name,sector,state,status,reason
 7,55,106342,Lyon College,private,AR,scored,"probability 0.5841, flag high_risk; batch 1"
 8,64,107044,Harding University,private,AR,scored,"probability 0.6972, flag high_risk; batch 1"
 9,73,108092,University of Arkansas-Fort Smith,public,AR,scored,"probability 0.7943, flag high_risk; batch 1"
+10,82,109819,Bakersfield College,public,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 2
+10,83,110060,Bethesda University,private,CA,scored,"probability 1.0000, flag high_risk; batch 2"
+11,91,110413,California Lutheran University,private,CA,scored,"probability 0.7784, flag high_risk; batch 2"
+12,100,110556,California State University-Fresno,public,CA,scored,"probability 0.9669, flag high_risk; batch 2"
