@@ -63,12 +63,35 @@ flag. This is the only check on the fit itself: under the protocol's
 amendment of 2026-11-12, divergent transitions and R-hat are recorded
 for every fit but do not cause a skip (see the protocol for why).
 
+FINANCE FILES. The pipeline downloads NCES's whole-sector IPEDS finance
+files (one per sector and fiscal year) for every fit. In the first batch
+(2026-11-13), 20 parallel jobs doing that three times per candidate led
+NCES's server to drop connections, and 112 of the 300 selected
+institutions could not be evaluated (each was correctly held for retry,
+not recorded as a skip). So the planning job now downloads each of the
+33 files the window needs (3 sectors x 11 fiscal years) once, with
+patient retries, and every evaluation job reads from that copy: the
+pipeline's own download function is pointed at the copy, so the files
+it parses are byte-for-byte the files it would have downloaded. Each
+file's SHA-256 is recorded in the batch.
+
+The same dropped connections also hit 11 candidates partway through,
+after some of their finance files had arrived, so their batch-1 records
+(6 passes, 4 data-check failures, 1 stability failure) were computed
+from incomplete downloads. None had been assigned to a slot. They are
+listed with the log evidence in "data/confirmatory/voided evaluations.json";
+this script ignores a voided evaluation and evaluates that candidate
+again. Batch files are never edited, and a candidate in a finalized
+slot's record is never voided. Any evaluation whose log shows a failed
+finance download is now held for retry instead of being recorded.
+
 Usage (GitHub Actions only, via score_confirmatory.yml):
     cd src
     python score_confirmatory.py plan --out ../work/plan.json
+    python score_confirmatory.py prefetch --out ../work/finance
     python build_scorecard_compact.py --out ../work/scorecard_compact.csv
-    python score_confirmatory.py evaluate --plan ../work/plan.json --shard 0 --of 20 --minutes 300 --out ../work/eval --compact ../work/scorecard_compact.csv
-    python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv
+    python score_confirmatory.py evaluate --plan ../work/plan.json --shard 0 --of 20 --minutes 300 --out ../work/eval --compact ../work/scorecard_compact.csv --finance ../work/finance
+    python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv --finance ../work/finance
 """
 
 from __future__ import annotations
@@ -81,6 +104,7 @@ import hashlib
 import io
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -89,6 +113,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SLOTS_PATH = ROOT / "data" / "confirmatory" / "draw slots.json"
 DRAW_LOG_PATH = ROOT / "data" / "confirmatory" / "draw log.csv"
+VOIDED_PATH = ROOT / "data" / "confirmatory" / "voided evaluations.json"
 SCORES_DIR = ROOT / "data" / "confirmatory" / "scores"
 README_PATH = ROOT / "README.md"
 PANEL_PATH = ROOT / "data" / "panel" / "panel.json"
@@ -153,10 +178,20 @@ def candidates_for(slot: dict) -> list[dict]:
     return [slot["selected"]] + list(slot["backups in order"])
 
 
+def load_voided() -> set[tuple[str, int]]:
+    if not VOIDED_PATH.exists():
+        return set()
+    return {(v["unitid"], int(v["batch"])) for v in json.loads(VOIDED_PATH.read_text())["voided"]}
+
+
 def load_evaluations() -> dict[str, dict]:
+    voided = load_voided()
     evals = {}
     for p in sorted(SCORES_DIR.glob("batch_*.json")):
-        for e in json.loads(p.read_text()).get("evaluations", []):
+        d = json.loads(p.read_text())
+        for e in d.get("evaluations", []):
+            if (e["unitid"], int(d["batch"])) in voided:
+                continue
             evals.setdefault(e["unitid"], e)
     return evals
 
@@ -300,6 +335,12 @@ def evaluate_one(cand: dict, clf) -> dict:
             return None
         log = buf.getvalue()
         diag = parse_fit_log(log)
+        if "real IPEDS download failed" in log:
+            # Any failed finance download means the fit (or the data
+            # check) saw incomplete files through no fault of the
+            # institution, so nothing is recorded; it is tried again.
+            print("RETRY NEXT BATCH: an NCES finance download failed during this fit.")
+            return None
         if feats is None and "INSUFFICIENT FINANCE DATA: only" in log:
             # The download stage fetches whole-sector bulk files from NCES;
             # failing there is a download problem, not this institution's
@@ -347,6 +388,60 @@ def evaluate_one(cand: dict, clf) -> dict:
     return rec
 
 
+# ---------------------------------------------------------- finance files
+
+SECTORS = ("private", "public", "forprofit")
+
+
+def cmd_prefetch(out: str) -> None:
+    """Download every finance file the window needs, once, with patient retries."""
+    verify_frozen()
+    import fetch_live_data as fld
+    base = Path(out)
+    manifest, missing = {}, []
+    for sector in SECTORS:
+        for year in range(START_YEAR, END_YEAR):
+            got = None
+            for attempt in range(1, 7):
+                got = fld.download_ipeds_finance_bulk(year, dest_dir=base / sector, sector=sector)
+                if got is not None:
+                    break
+                wait = 30 * attempt
+                print(f"Retrying {sector} {year} in {wait} s (attempt {attempt} of 6 failed)", flush=True)
+                time.sleep(wait)
+            if got is None:
+                missing.append(f"{sector} {year}")
+                continue
+            for f in sorted(Path(got).glob("*.csv")):
+                manifest[f"{sector}/{year}/{f.name}"] = hashlib.sha256(f.read_bytes()).hexdigest()
+            time.sleep(2)  # be gentle with NCES between files
+    (base / "manifest.json").write_text(json.dumps(manifest, indent=2))
+    if missing:
+        raise SystemExit("Could not download these NCES finance files after 6 attempts each: "
+                         + ", ".join(missing) + ". Not scoring this batch; run it again later.")
+    print(f"All {len(manifest)} finance files downloaded and recorded in {base / 'manifest.json'}.")
+
+
+def use_finance_cache(finance_dir: str) -> None:
+    """Point the pipeline's own download function at the planning job's copies."""
+    import fetch_live_data as fld
+    original = fld.download_ipeds_finance_bulk
+    base = Path(finance_dir)
+
+    def cached(year, dest_dir, sector="private"):
+        src = base / sector / str(year)
+        files = sorted(src.glob("*.csv")) if src.exists() else []
+        if not files:
+            return original(year, dest_dir=dest_dir, sector=sector)
+        year_dir = Path(dest_dir) / str(year)
+        year_dir.mkdir(parents=True, exist_ok=True)
+        for f in files:
+            shutil.copyfile(f, year_dir / f.name)
+        return year_dir
+
+    fld.download_ipeds_finance_bulk = cached
+
+
 # --------------------------------------------------------------- commands
 
 def cmd_plan(out: str) -> None:
@@ -358,10 +453,12 @@ def cmd_plan(out: str) -> None:
     print(f"Plan: {len(frontier)} candidates to evaluate this batch.")
 
 
-def cmd_evaluate(plan: str, shard: int, of: int, minutes: float, out: str, compact: str) -> None:
+def cmd_evaluate(plan: str, shard: int, of: int, minutes: float, out: str, compact: str,
+                 finance: str) -> None:
     verify_frozen()
     import fetch_live_data as fld
     fld.use_bulk_scorecard(compact)
+    use_finance_cache(finance)
     from classifier import RICDClassifier, load_panel
     clf = RICDClassifier()
     clf.fit(load_panel(PANEL_PATH))
@@ -403,7 +500,7 @@ def update_readme(n_scored: int, n_unfilled: int) -> None:
     README_PATH.write_text("\n".join(lines))
 
 
-def cmd_merge(evals_dir: str, compact: str | None) -> None:
+def cmd_merge(evals_dir: str, compact: str | None, finance: str | None) -> None:
     global SCORECARD_NOTE
     SCORECARD_NOTE = str(Path(compact).with_suffix(".json")) if compact else None
     frozen = verify_frozen()
@@ -432,6 +529,8 @@ def cmd_merge(evals_dir: str, compact: str | None) -> None:
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "frozen file hashes": frozen,
         "scorecard file": json.loads(Path(SCORECARD_NOTE).read_text()) if SCORECARD_NOTE else None,
+        "finance files (sha256)": (json.loads((Path(finance) / "manifest.json").read_text())
+                                   if finance and (Path(finance) / "manifest.json").exists() else None),
         "environment": sorted({pkg for env in envs for pkg in env}),
         "evaluations": new_evals,
         "finalized slots": newly,
@@ -467,14 +566,19 @@ def main():
     e.add_argument("--plan", required=True); e.add_argument("--shard", type=int, required=True)
     e.add_argument("--of", type=int, required=True); e.add_argument("--minutes", type=float, default=300)
     e.add_argument("--out", required=True); e.add_argument("--compact", required=True)
+    e.add_argument("--finance", required=True)
+    f = sub.add_parser("prefetch"); f.add_argument("--out", required=True)
     m = sub.add_parser("merge"); m.add_argument("--evals", required=True); m.add_argument("--compact")
+    m.add_argument("--finance")
     a = ap.parse_args()
     if a.cmd == "plan":
         cmd_plan(a.out)
+    elif a.cmd == "prefetch":
+        cmd_prefetch(a.out)
     elif a.cmd == "evaluate":
-        cmd_evaluate(a.plan, a.shard, a.of, a.minutes, a.out, a.compact)
+        cmd_evaluate(a.plan, a.shard, a.of, a.minutes, a.out, a.compact, a.finance)
     else:
-        cmd_merge(a.evals, a.compact)
+        cmd_merge(a.evals, a.compact, a.finance)
 
 
 if __name__ == "__main__":
