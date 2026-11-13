@@ -85,6 +85,21 @@ again. Batch files are never edited, and a candidate in a finalized
 slot's record is never voided. Any evaluation whose log shows a failed
 finance download is now held for retry instead of being recorded.
 
+FINANCE FORM. IPEDS finance comes on three forms: F1A (public, GASB),
+F2 (private nonprofit, FASB) and F3 (for-profit). The pipeline chooses
+the form from the sector it is given. Some public institutions --
+Pennsylvania's state-related universities among them -- file F2, so
+under the original rule their complete finance data was never found
+(diagnose_finance_form.yml, 2026-11-13). Under the protocol's second
+amendment, the pipeline is now given the sector whose form holds the
+institution's own FY2019 finance row, which for an F2 filer means it is
+measured exactly as every private institution is. Institutions whose
+rows sit on different forms in different years of the window are not
+changed and fail the data check if their data is incomplete. The form
+used is recorded with each evaluation. The seven evaluations recorded
+under the old rule for F2-filing public institutions are listed in
+"data/confirmatory/voided evaluations.json" and are evaluated again.
+
 Usage (GitHub Actions only, via score_confirmatory.yml):
     cd src
     python score_confirmatory.py plan --out ../work/plan.json
@@ -139,7 +154,7 @@ SEEDS = (7, 101, 202)
 # following LOOKAHEAD candidates, after every needed one, so a batch with
 # spare time does not end early. Those extra evaluations are kept but
 # only count if the slot actually reaches them.
-LOOKAHEAD = 2
+LOOKAHEAD = 25  # a waiting slot's whole backup list (raised from 2 on 2026-11-13; pacing only)
 TARGET = 300
 PROGRESS_PREFIX = "**Confirmatory test:**"
 SCORECARD_NOTE: str | None = None  # set from --compact in merge, for the batch record
@@ -316,8 +331,11 @@ def finance_years_complete(unitid: str, sector: str) -> list[bool]:
 
 def evaluate_one(cand: dict, clf) -> dict:
     from score_institution import compute_features_for_institution
-    u, name, sector = cand["unitid"], cand["name"], cand["sector"]
-    rec = {"unitid": u, "name": name, "sector": sector, "fits": []}
+    u, name = cand["unitid"], cand["name"]
+    sector = finance_sector(u, cand["sector"])
+    rec = {"unitid": u, "name": name, "sector": cand["sector"], "fits": []}
+    if sector != cand["sector"]:
+        rec["finance form sector"] = sector
 
     for seed in SEEDS:
         buf = io.StringIO()
@@ -391,6 +409,26 @@ def evaluate_one(cand: dict, clf) -> dict:
 # ---------------------------------------------------------- finance files
 
 SECTORS = ("private", "public", "forprofit")
+FINANCE_DIR: str | None = None  # set by cmd_evaluate
+_FY2019_ROWS: dict[str, set[str]] = {}
+
+
+def finance_sector(unitid: str, default: str) -> str:
+    """The sector whose IPEDS finance form holds this institution's FY2019 row."""
+    if FINANCE_DIR is None:
+        return default
+    if not _FY2019_ROWS:
+        for sector in SECTORS:
+            ids = set()
+            for f in (Path(FINANCE_DIR) / sector / str(END_YEAR - 1)).glob("*.csv"):
+                with open(f, encoding="latin-1") as fh:
+                    for row in csv.DictReader(fh):
+                        ids.add((row.get("UNITID") or "").strip())
+            _FY2019_ROWS[sector] = ids
+    if unitid in _FY2019_ROWS.get(default, set()):
+        return default
+    others = [s for s in SECTORS if s != default and unitid in _FY2019_ROWS.get(s, set())]
+    return others[0] if len(others) == 1 else default
 
 
 def cmd_prefetch(out: str) -> None:
@@ -459,6 +497,8 @@ def cmd_evaluate(plan: str, shard: int, of: int, minutes: float, out: str, compa
     import fetch_live_data as fld
     fld.use_bulk_scorecard(compact)
     use_finance_cache(finance)
+    global FINANCE_DIR
+    FINANCE_DIR = finance
     from classifier import RICDClassifier, load_panel
     clf = RICDClassifier()
     clf.fit(load_panel(PANEL_PATH))
