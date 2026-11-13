@@ -88,6 +88,62 @@
       "recorded result": "pass",
       "reason": "2 NCES finance downloads failed while this candidate was being evaluated (pipeline year labels 2017, 2018); the server dropped the connection, so the record reflects a download failure, not the institution's data. Voided before its slot was finalized; the candidate is evaluated again from the cached finance files.",
       "evidence": "GitHub Actions run 43365428954, job 131689391297 log"
+    },
+    {
+      "unitid": "213598",
+      "name": "Lincoln University",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "366252",
+      "name": "Pennsylvania College of Technology",
+      "batch": 1,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "214777",
+      "name": "Pennsylvania State University-Main Campus",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "231837",
+      "name": "Radford University-Carilion",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "219374",
+      "name": "Sinte Gleska University",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "216339",
+      "name": "Temple University",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" because the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2), where its complete FY2009-FY2019 data is reported. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
+    },
+    {
+      "unitid": "215266",
+      "name": "University of Pittsburgh-Bradford",
+      "batch": 2,
+      "recorded result": "fail (data check)",
+      "reason": "Recorded as \"insufficient parsed finance data\" after the pipeline looked for this public institution's finance on the public form (F1A), while the institution files the private-sector form (F2). On F2 its total revenue and total expenses are flagged not applicable by IPEDS, so it is expected to fail the data check again, but for the correct reason. Voided under the protocol's second amendment (finance form chosen from where the institution's own FY2019 row is filed) before its slot was finalized; the candidate is evaluated again.",
+      "evidence": "GitHub Actions run 43413050092 (diagnose_finance_form.yml) log"
     }
   ]
 }
