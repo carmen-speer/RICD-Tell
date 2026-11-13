@@ -1,0 +1,102 @@
+name: Diagnose window choice (bulk Scorecard source, three FY2019 windows)
+
+# Manual-only. Panel only. Builds the compact bulk College Scorecard
+# file once, then scores every panel institution through the live
+# pipeline with that bulk source at three windows ending in FY2019
+# (from 2005, 2008 and 2013), checks the bulk values against the API
+# wherever the API has a record, and prints one combined table. Changes
+# nothing and commits nothing. See src/diagnose_window_choice.py's own
+# docstring.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the compact bulk College Scorecard file
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scorecard_compact
+          path: |
+            work/scorecard_compact.csv
+            work/scorecard_compact.json
+
+  fit:
+    needs: compact
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: scorecard_compact
+          path: work
+
+      - name: Score this shard of the panel at three FY2019 windows
+        env:
+          COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
+        run: |
+          cd src
+          python diagnose_window_choice.py --compact ../work/scorecard_compact.csv --shard ${{ matrix.shard }} --of 18
+
+      - name: Upload this shard's results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: window_choice_shard_${{ matrix.shard }}
+          path: reports/window_choice/
+
+  summarize:
+    needs: fit
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download all shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: window_choice_shard_*
+          path: reports/window_choice_all
+
+      - name: Print the combined summary
+        run: |
+          cd src
+          python diagnose_window_choice.py --summarize ../reports/window_choice_all
+
+      - name: Upload the combined summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: window_choice_summary
+          path: reports/window_choice_all/summary.json
