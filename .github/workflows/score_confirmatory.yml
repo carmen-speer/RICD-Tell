@@ -1,0 +1,118 @@
+name: Score confirmatory sample (one batch)
+
+# Manual-only. Each run is one batch of the 300-institution confirmatory
+# test under "sampling protocol.md": it works out which candidates need
+# evaluating next, evaluates them across 20 parallel jobs within a time
+# budget, assigns passing candidates to slots in slot order, and commits
+# the batch to data/confirmatory/scores/ together with the updated draw
+# log and the README progress line. Run it again to continue; each run
+# resumes where the last one stopped. See src/score_confirmatory.py's
+# own docstring for the full procedure. No outcome is looked up here.
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Minutes each job may spend starting new evaluations (jobs stop at 350)"
+        required: false
+        default: "300"
+
+concurrency:
+  group: score-confirmatory
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Work out which candidates this batch evaluates
+        run: |
+          cd src
+          python score_confirmatory.py plan --out ../work/plan.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: confirmatory_plan
+          path: work/plan.json
+
+  evaluate:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: confirmatory_plan
+          path: work
+
+      - name: Evaluate this shard's candidates (data, convergence and stability checks)
+        env:
+          COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
+        run: |
+          cd src
+          python score_confirmatory.py evaluate --plan ../work/plan.json --shard ${{ matrix.shard }} --of 20 --minutes ${{ inputs.minutes || '300' }} --out ../work/eval
+
+      - name: Upload this shard's evaluations
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: confirmatory_eval_${{ matrix.shard }}
+          path: work/eval/
+          if-no-files-found: ignore
+
+  commit:
+    needs: [plan, evaluate]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: confirmatory_eval_*
+          path: work/evals
+
+      - name: Assign candidates to slots and write the batch
+        run: |
+          mkdir -p work/evals
+          cd src
+          python score_confirmatory.py merge --evals ../work/evals
+
+      - name: Commit the batch
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/confirmatory/scores "data/confirmatory/draw log.csv" README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit -- nothing new from this batch."
+          else
+            git commit -m "Confirmatory test: scoring batch (scores fixed before any outcome is looked up)"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
