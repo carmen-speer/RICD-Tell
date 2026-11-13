@@ -46,6 +46,11 @@ jobs:
           cd src
           python score_confirmatory.py plan --out ../work/plan.json
 
+      - name: Download each NCES finance file the window needs, once
+        run: |
+          cd src
+          python score_confirmatory.py prefetch --out ../work/finance
+
       - uses: actions/upload-artifact@v4
         with:
           name: confirmatory_plan
@@ -53,6 +58,7 @@ jobs:
             work/plan.json
             work/scorecard_compact.csv
             work/scorecard_compact.json
+            work/finance/
 
   evaluate:
     needs: plan
@@ -82,7 +88,7 @@ jobs:
           COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
         run: |
           cd src
-          python score_confirmatory.py evaluate --plan ../work/plan.json --shard ${{ matrix.shard }} --of 20 --minutes ${{ inputs.minutes || '300' }} --out ../work/eval --compact ../work/scorecard_compact.csv
+          python score_confirmatory.py evaluate --plan ../work/plan.json --shard ${{ matrix.shard }} --of 20 --minutes ${{ inputs.minutes || '300' }} --out ../work/eval --compact ../work/scorecard_compact.csv --finance ../work/finance
 
       - name: Upload this shard's evaluations
         if: always()
@@ -117,7 +123,7 @@ jobs:
         run: |
           mkdir -p work/evals
           cd src
-          python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv
+          python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv --finance ../work/finance
 
       - name: Commit the batch
         run: |
