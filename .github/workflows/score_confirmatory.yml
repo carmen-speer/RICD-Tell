@@ -33,6 +33,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
       - name: Work out which candidates this batch evaluates
         run: |
           cd src
@@ -41,7 +49,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: confirmatory_plan
-          path: work/plan.json
+          path: |
+            work/plan.json
+            work/scorecard_compact.csv
+            work/scorecard_compact.json
 
   evaluate:
     needs: plan
@@ -66,12 +77,12 @@ jobs:
           name: confirmatory_plan
           path: work
 
-      - name: Evaluate this shard's candidates (data, convergence and stability checks)
+      - name: Evaluate this shard's candidates (data and stability checks)
         env:
           COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
         run: |
           cd src
-          python score_confirmatory.py evaluate --plan ../work/plan.json --shard ${{ matrix.shard }} --of 20 --minutes ${{ inputs.minutes || '300' }} --out ../work/eval
+          python score_confirmatory.py evaluate --plan ../work/plan.json --shard ${{ matrix.shard }} --of 20 --minutes ${{ inputs.minutes || '300' }} --out ../work/eval --compact ../work/scorecard_compact.csv
 
       - name: Upload this shard's evaluations
         if: always()
@@ -97,11 +108,16 @@ jobs:
           pattern: confirmatory_eval_*
           path: work/evals
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: confirmatory_plan
+          path: work
+
       - name: Assign candidates to slots and write the batch
         run: |
           mkdir -p work/evals
           cd src
-          python score_confirmatory.py merge --evals ../work/evals
+          python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv
 
       - name: Commit the batch
         run: |
