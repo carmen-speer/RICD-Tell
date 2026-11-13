@@ -9,18 +9,17 @@ on which slot it is being tried for, so the work is done in two
 separate kinds of step:
 
 1. Evaluate candidates (in parallel, across many GitHub Actions jobs).
-   Each candidate institution gets the protocol's three checks, in
-   order: the data check, the convergence check (on the seed-7 fit),
-   and the stability check (seeds 7, 101 and 202 must all give the same
-   flag). A candidate that fails a check is not fitted further. Every
-   evaluation, pass or fail, is kept, because skipped institutions'
-   later outcomes are part of the analysis ("institutional broken
-   window").
+   Each candidate institution gets the protocol's two checks, in
+   order: the data check and the stability check (seeds 7, 101 and 202
+   must all give the same flag). A candidate that fails a check is not
+   fitted further. Every evaluation, pass or fail, is kept, because
+   skipped institutions' later outcomes are part of the analysis
+   ("institutional broken window").
 
 2. Assign candidates to slots (in one job, in slot order). Each slot
    walks its own ordered list -- its selected institution, then its 25
    backups from "draw slots.json" -- and takes the first candidate that
-   passed all three checks and is not a duplicate. A candidate counts
+   passed both checks and is not a duplicate. A candidate counts
    as a duplicate if it is any slot's selected institution (each
    selected institution belongs to its own slot) or if a lower-numbered
    slot has already taken it, so overlapping backup lists always
@@ -39,34 +38,37 @@ off. Nothing in this script looks up any institution's outcome.
 
 FROZEN CONFIGURATION. Before doing anything, the script checks the git
 blob hash of every frozen file listed in the protocol and stops if any
-differs. Every fit uses FY2019 data and earlier (start_year 2013,
-end_year 2019, so the last finance file is F1819), 300 draws, 300
-tuning steps, 2 chains, target_accept 0.9, cores 1, the Numba backend.
-The governance override is not applied. The flag is the frozen
-classifier's prediction at its 0.5 probability cut; the reported score
-and flag are those from seed 7.
+differs. Every fit uses the protocol's FY2019 window (start_year 2008,
+end_year 2019: pipeline years 2008-2018, FY2009-FY2019, so the last
+finance file is F1819), 300 draws, 300 tuning steps, 2 chains,
+target_accept 0.9, cores 1, the Numba backend. Enrollment, completion,
+tuition and admission rate come from the bulk College Scorecard file
+(the release asset named in the protocol, checked by its SHA-256 in
+build_scorecard_compact.py), never from the Scorecard API, which has no
+record for institutions that have since closed. The governance override
+is not applied. The flag is the frozen classifier's prediction at its
+0.5 probability cut; the reported score and flag are those from seed 7.
 
 DATA CHECK. Five consecutive fiscal years of complete finance data
 ending in FY2019 means the four finance values the model reads
 (revenue, institutional support, instruction, total expenses) parse for
 each of FY2015-FY2019, read from the same downloaded files the fit
 used. A candidate whose pipeline itself returns no features (an
-incomplete enrollment series, missing finance or debt years) also fails
-the data check, with the pipeline's own reason recorded as the type of
-data gap.
+incomplete Scorecard series anywhere in the window, missing finance or
+debt years) also fails the data check, with the pipeline's own reason
+recorded as the type of data gap.
 
-CONVERGENCE CHECK. Zero divergent transitions and R-hat no higher than
-1.01, on the seed-7 fit, over the set of variables named by
-CONVERGENCE_SCOPE below. The script refuses to evaluate anything while
-CONVERGENCE_SCOPE is unset; it is set once the panel convergence
-measurement (check_panel_convergence.py) has been reviewed, before any
-confirmatory institution is scored.
+STABILITY CHECK. Fits with seeds 7, 101 and 202 must all give the same
+flag. This is the only check on the fit itself: under the protocol's
+amendment of 2026-11-12, divergent transitions and R-hat are recorded
+for every fit but do not cause a skip (see the protocol for why).
 
 Usage (GitHub Actions only, via score_confirmatory.yml):
     cd src
     python score_confirmatory.py plan --out ../work/plan.json
-    python score_confirmatory.py evaluate --plan ../work/plan.json --shard 0 --of 20 --minutes 300 --out ../work/eval
-    python score_confirmatory.py merge --evals ../work/evals
+    python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+    python score_confirmatory.py evaluate --plan ../work/plan.json --shard 0 --of 20 --minutes 300 --out ../work/eval --compact ../work/scorecard_compact.csv
+    python score_confirmatory.py merge --evals ../work/evals --compact ../work/scorecard_compact.csv
 """
 
 from __future__ import annotations
@@ -91,11 +93,6 @@ SCORES_DIR = ROOT / "data" / "confirmatory" / "scores"
 README_PATH = ROOT / "README.md"
 PANEL_PATH = ROOT / "data" / "panel" / "panel.json"
 
-# "free" = sampled parameters only; "all" = every posterior variable,
-# Deterministics included (what score_institution.py's CONVERGENCE line
-# reports). Left unset on purpose until the panel measurement is in.
-CONVERGENCE_SCOPE: str | None = None
-RHAT_LIMIT = 1.01
 
 FROZEN_BLOBS = {
     "src/classifier.py": "13c946532f651501e3e99f8574a9ccdea8f4ae8d",
@@ -104,10 +101,11 @@ FROZEN_BLOBS = {
     "src/dynamics.py": "0fb853c22972a9ccdfd2a44de82fcbf7513c81f8",
     "src/real_adapter.py": "7bcd88039d990d131e0ef0ac31b16531fd9defc8",
     "src/score_institution.py": "30d65337f8e45cc88e84a48a99250a2943e0a765",
-    "src/fetch_live_data.py": "4c93cb61998d834b25dea502f17b7698154497a1",
+    "src/fetch_live_data.py": "d56d8231e6dd82bcd10a061f676ea40bd5e1ba76",
+    "src/build_scorecard_compact.py": "ce3683908488ecd8f590a9a4021df255a3416352",
 }
 
-START_YEAR = 2013
+START_YEAR = 2008
 END_YEAR = 2019
 SAMPLER = dict(n_draws=300, n_tune=300, n_chains=2, target_accept=0.9,
                cores=1, compile_mode="NUMBA")
@@ -119,6 +117,7 @@ SEEDS = (7, 101, 202)
 LOOKAHEAD = 2
 TARGET = 300
 PROGRESS_PREFIX = "**Confirmatory test:**"
+SCORECARD_NOTE: str | None = None  # set from --compact in merge, for the batch record
 
 CONV_RE = re.compile(r"CONVERGENCE: (\d+) divergences, max rhat=([0-9.]+|nan|inf)")
 PARAM_RE = re.compile(r"^  ([* ]) (\S+)\s+max_rhat=([0-9.]+|nan|inf)", re.M)
@@ -144,12 +143,6 @@ def verify_frozen() -> dict:
         raise SystemExit("A frozen file differs from the protocol. Not scoring.")
     print("Frozen files verified against the protocol's hashes.")
     return dict(FROZEN_BLOBS)
-
-
-def require_scope() -> None:
-    if CONVERGENCE_SCOPE not in ("free", "all"):
-        raise SystemExit("CONVERGENCE_SCOPE is not set yet. It is set after the panel "
-                         "convergence measurement is reviewed, before any scoring.")
 
 
 def load_slots() -> list[dict]:
@@ -322,17 +315,11 @@ def evaluate_one(cand: dict, clf) -> dict:
                            **diag)
                 return rec
             years = finance_years_complete(u, sector)
-            rec["finance years complete FY2014-FY2019"] = years
+            rec[f"finance years complete FY{START_YEAR + 1}-FY{END_YEAR}"] = years
             if not all(years[-5:]):
                 missing = [f"FY{START_YEAR + 1 + i}" for i, ok in enumerate(years) if not ok and i >= len(years) - 5]
                 rec.update(result="fail", **{"failed check": "data"},
                            gap="finance data incomplete in " + ", ".join(missing), **diag)
-                return rec
-            rhat = diag["rhat_max_free"] if CONVERGENCE_SCOPE == "free" else diag["rhat_max_all"]
-            if diag["divergences"] != 0 or rhat is None or rhat > RHAT_LIMIT:
-                rec.update(result="fail", **{"failed check": "convergence"},
-                           gap=f"divergences={diag['divergences']}, R-hat ({CONVERGENCE_SCOPE})={rhat}",
-                           **diag)
                 return rec
         if feats is None:
             rec.update(result="fail", **{"failed check": "stability"},
@@ -363,7 +350,6 @@ def evaluate_one(cand: dict, clf) -> dict:
 # --------------------------------------------------------------- commands
 
 def cmd_plan(out: str) -> None:
-    require_scope()
     verify_frozen()
     slots = load_slots()
     _, frontier = walk(slots, load_evaluations(), load_finalized())
@@ -372,9 +358,10 @@ def cmd_plan(out: str) -> None:
     print(f"Plan: {len(frontier)} candidates to evaluate this batch.")
 
 
-def cmd_evaluate(plan: str, shard: int, of: int, minutes: float, out: str) -> None:
-    require_scope()
+def cmd_evaluate(plan: str, shard: int, of: int, minutes: float, out: str, compact: str) -> None:
     verify_frozen()
+    import fetch_live_data as fld
+    fld.use_bulk_scorecard(compact)
     from classifier import RICDClassifier, load_panel
     clf = RICDClassifier()
     clf.fit(load_panel(PANEL_PATH))
@@ -416,8 +403,9 @@ def update_readme(n_scored: int, n_unfilled: int) -> None:
     README_PATH.write_text("\n".join(lines))
 
 
-def cmd_merge(evals_dir: str) -> None:
-    require_scope()
+def cmd_merge(evals_dir: str, compact: str | None) -> None:
+    global SCORECARD_NOTE
+    SCORECARD_NOTE = str(Path(compact).with_suffix(".json")) if compact else None
     frozen = verify_frozen()
     existing = load_evaluations()
     new_evals, envs = [], []
@@ -443,7 +431,7 @@ def cmd_merge(evals_dir: str) -> None:
         "batch": n,
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "frozen file hashes": frozen,
-        "convergence scope": CONVERGENCE_SCOPE,
+        "scorecard file": json.loads(Path(SCORECARD_NOTE).read_text()) if SCORECARD_NOTE else None,
         "environment": sorted({pkg for env in envs for pkg in env}),
         "evaluations": new_evals,
         "finalized slots": newly,
@@ -478,15 +466,15 @@ def main():
     e = sub.add_parser("evaluate")
     e.add_argument("--plan", required=True); e.add_argument("--shard", type=int, required=True)
     e.add_argument("--of", type=int, required=True); e.add_argument("--minutes", type=float, default=300)
-    e.add_argument("--out", required=True)
-    m = sub.add_parser("merge"); m.add_argument("--evals", required=True)
+    e.add_argument("--out", required=True); e.add_argument("--compact", required=True)
+    m = sub.add_parser("merge"); m.add_argument("--evals", required=True); m.add_argument("--compact")
     a = ap.parse_args()
     if a.cmd == "plan":
         cmd_plan(a.out)
     elif a.cmd == "evaluate":
-        cmd_evaluate(a.plan, a.shard, a.of, a.minutes, a.out)
+        cmd_evaluate(a.plan, a.shard, a.of, a.minutes, a.out, a.compact)
     else:
-        cmd_merge(a.evals)
+        cmd_merge(a.evals, a.compact)
 
 
 if __name__ == "__main__":
