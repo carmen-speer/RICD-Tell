@@ -203,6 +203,7 @@ def summarize(directory: str) -> None:
     closed = [r for r in rows if r["panel_outcome"] == 1]
     print(f"Closures with bulk data in an unbroken run ending 2018: {sum(1 for r in closed if r['bulk run start'])} / {len(closed)}")
 
+    Path(directory).mkdir(parents=True, exist_ok=True)
     (Path(directory) / "summary.json").write_text(json.dumps(rows, indent=2))
 
 
