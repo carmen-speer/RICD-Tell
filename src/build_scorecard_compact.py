@@ -34,17 +34,20 @@ from pathlib import Path
 
 import requests
 
-# Current link from https://collegescorecard.ed.gov/data/ (checked 2026-11-12).
-# The file name carries its release date and changes with each release; if
-# this one is gone, copy the new "All Data Files" link from that page here.
-ALL_DATA_URL = "https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_11022026.zip"
-# The same file under the download site's older host name, tried second.
-FALLBACK_URLS = [ALL_DATA_URL.replace("ed-public-download.scorecard.network", "ed-public-download.app.cloud.gov")]
+# The Department of Education's download site refuses requests from GitHub
+# Actions (HTTP 403 on 2026-11-12, even with a browser-style request), so the
+# exact file is kept as an asset of this repository's release
+# "scorecard-raw-data-2026-11-02", downloaded from the original link below and
+# attached unchanged. That also fixes the confirmatory test's input: the run
+# reads this one dated file, not whatever the Department publishes next.
+RELEASE_URL = ("https://github.com/carmen-speer/RICD-Tell/releases/download/"
+               "scorecard-raw-data-2026-11-02/College_Scorecard_Raw_Data_11022026.zip")
+# Original link, from https://collegescorecard.ed.gov/data/ (checked 2026-11-12);
+# tried second, and recorded in the output note as the file's origin.
+ORIGINAL_URL = "https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_11022026.zip"
 COLUMNS = ["UGDS", "C150_4", "TUITIONFEE_IN", "ADM_RATE"]
 NAME_RE = re.compile(r"MERGED(\d{4})_\d{2}_PP\.csv$", re.I)
-# The download server refused the first attempt (HTTP 403, 2026-11-12), made
-# as a bare HEAD request with Python's default User-Agent; a plain GET with
-# a browser-style User-Agent is what a browser sends.
+# A browser-style User-Agent, used for both addresses.
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                          "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
 
@@ -58,7 +61,7 @@ def main():
 
     zpath = out.parent / "scorecard_all_data.zip"
     url, sha, failures = None, None, []
-    for candidate in [ALL_DATA_URL] + FALLBACK_URLS:
+    for candidate in [RELEASE_URL, ORIGINAL_URL]:
         print(f"Downloading {candidate}", flush=True)
         try:
             with requests.get(candidate, stream=True, timeout=600, headers=HEADERS) as r:
@@ -76,7 +79,7 @@ def main():
             failures.append(f"{candidate}: {type(e).__name__}: {e}")
     if url is None:
         raise SystemExit("Could not download the College Scorecard file. " + " | ".join(failures)
-                         + " | If it has been renamed, copy the current link from https://collegescorecard.ed.gov/data/.")
+                         + " | Check that the release asset exists at the first address.")
 
     n_rows, years = 0, []
     with zipfile.ZipFile(zpath) as zf, open(out, "w", newline="") as fo:
@@ -97,7 +100,7 @@ def main():
             print(f"  {name}: done", flush=True)
     zpath.unlink()
 
-    note = {"source url": url, "sha256": sha.hexdigest(),
+    note = {"downloaded from": url, "original source": ORIGINAL_URL, "sha256": sha.hexdigest(),
             "downloaded at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "years": sorted(years), "rows": n_rows, "columns": ["UNITID", "YEAR"] + COLUMNS}
     out.with_suffix(".json").write_text(json.dumps(note, indent=2))
