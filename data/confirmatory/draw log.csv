@@ -312,3 +312,13 @@ slot,frame position,unitid,name,sector,state,status,reason
 298,2674,480790,Rocky Vista University,forprofit,CO,selected,primary selection
 299,2683,481438,Yeshiva Yesodei Hatorah,private,NJ,selected,primary selection
 300,2692,482370,National American University-Indianapolis,forprofit,IN,selected,primary selection
+1,1,100654,Alabama A & M University,public,AL,scored,"probability 0.9999, flag high_risk; batch 1"
+2,11,101116,South University-Montgomery,forprofit,AL,scored,"probability 1.0000, flag high_risk; batch 1"
+3,19,101675,Miles College,private,AL,scored,"probability 0.9224, flag high_risk; batch 1"
+4,28,102270,Stillman College,private,AL,scored,"probability 0.9415, flag high_risk; batch 1"
+5,37,102669,Alaska Pacific University,private,AK,scored,"probability 0.2510, flag stable; batch 1"
+6,46,105297,Dine College,public,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 1
+6,47,105330,Northern Arizona University,public,AZ,scored,"probability 0.9780, flag high_risk; batch 1"
+7,55,106342,Lyon College,private,AR,scored,"probability 0.5841, flag high_risk; batch 1"
+8,64,107044,Harding University,private,AR,scored,"probability 0.6972, flag high_risk; batch 1"
+9,73,108092,University of Arkansas-Fort Smith,public,AR,scored,"probability 0.7943, flag high_risk; batch 1"
