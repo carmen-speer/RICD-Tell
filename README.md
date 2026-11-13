@@ -694,7 +694,7 @@ everything below is complete:
   general obligations of the university, alongside an otherwise-stable
   overall institutional bond rating (Florida Board of Governors filing,
   2/27/26). Cal State Long Beach (currently 95.59%, previously 95.8%)
-  and Sweet Briar (currently 79.55%, previously 80.1%) remain `high_risk`;
+  and Sweet Briar (currently 79.26%, previously 80.1%) remain `high_risk`;
   Sweet Briar's case is
   still believed to be the separate reset/recovery gap below, not this
   one. University of Phoenix-Arizona remains `high_risk` at effectively
@@ -737,7 +737,7 @@ everything below is complete:
   can't fetch) is that the model is reading the *aftermath* of a
   completed reset as ongoing collapse, because both look identical to
   every feature currently computed only over the tail window. Sweet
-  Briar College (52.4%) is the panel's own version of this same
+  Briar College (currently 79.26%) is the pilot's own version of this same
   question, and the reason it's the more useful test case: it had a
   real, documented near-closure and recovery in 2015, so a real
   post-recovery time series already exists for it, unlike Phoenix.
