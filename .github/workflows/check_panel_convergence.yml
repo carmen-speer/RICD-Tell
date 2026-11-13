@@ -1,0 +1,74 @@
+name: Check panel convergence (pre-scoring measurement for the confirmatory test)
+
+# Manual-only. Measures how often the sampling protocol's convergence
+# check (no divergences, R-hat <= 1.01) passes on the 54-institution
+# validation panel, under the confirmatory run's exact conditions
+# (FY2019 window, production sampler settings, Numba backend, seed 7).
+# Touches no confirmatory institution and looks up no outcome. See
+# src/check_panel_convergence.py's own docstring for why.
+#
+# The panel is split across three parallel jobs to stay well inside
+# GitHub's six-hour job limit; a final job combines them and prints
+# the summary table at the end of its log.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fit this shard of the panel at FY2019, production settings
+        env:
+          COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
+        run: |
+          cd src
+          python check_panel_convergence.py --shard ${{ matrix.shard }} --of 3
+
+      - name: Upload this shard's results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: panel_convergence_shard_${{ matrix.shard }}
+          path: reports/panel_convergence/
+
+  summarize:
+    needs: fit
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download all shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: panel_convergence_shard_*
+          path: reports/panel_convergence_all
+
+      - name: Print the combined summary
+        run: |
+          cd src
+          python check_panel_convergence.py --summarize ../reports/panel_convergence_all
+
+      - name: Upload the combined summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: panel_convergence_summary
+          path: reports/panel_convergence_all/summary.json
