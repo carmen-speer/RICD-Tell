@@ -896,3 +896,612 @@ slot,frame position,unitid,name,sector,state,status,reason
 277,2505,449481,Dragon Rises College of Oriental Medicine,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 3
 277,2506,449658,Bais Medrash Toras Chesed,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 3
 277,2507,449764,Visible Music College,private,TN,scored,"probability 0.9999, flag high_risk; batch 3"
+278,2494,448673,Rasmussen College-Illinois,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2495,448691,International Institute for Restorative Practices,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2496,448752,CollegeAmerica-Colorado Springs,private,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2497,448761,CollegeAmerica-Fort Collins,private,CO,skipped at scoring,duplicate (taken by a lower-numbered slot); batch 4
+278,2498,448840,University of South Florida-St Petersburg,public,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2499,448886,Arizona State University-Downtown Phoenix,public,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2500,449038,Strayer University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2501,449135,Dewey University-Juana Díaz,private,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2502,449339,American Public University System,forprofit,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2504,449384,Gnomon,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2505,449481,Dragon Rises College of Oriental Medicine,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2506,449658,Bais Medrash Toras Chesed,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2507,449764,Visible Music College,private,TN,skipped at scoring,duplicate (taken by a lower-numbered slot); batch 4
+278,2508,449834,Virginia Beach Theological Seminary,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+278,2509,449870,University of the West,private,CA,scored,"probability 0.5832, flag high_risk; batch 4"
+279,2503,449348,Huntsville Bible College,private,AL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2504,449384,Gnomon,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2505,449481,Dragon Rises College of Oriental Medicine,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2506,449658,Bais Medrash Toras Chesed,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2507,449764,Visible Music College,private,TN,skipped at scoring,duplicate (taken by a lower-numbered slot); batch 4
+279,2508,449834,Virginia Beach Theological Seminary,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2509,449870,University of the West,private,CA,skipped at scoring,duplicate (taken by a lower-numbered slot); batch 4
+279,2510,449889,American College of Education,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2511,449898,South University-Tampa,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2513,449931,Averett University-Non-Traditional Programs,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2514,450298,Strayer University-Delaware,forprofit,DE,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2515,450304,Brite Divinity School,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2516,450377,Strayer University-Alabama,forprofit,AL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2517,450571,Rasmussen College-Wisconsin,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2518,450933,Columbia Southern University,forprofit,AL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2519,450979,Trident University International,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2520,451079,Academy for Five Element Acupuncture,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2522,451370,Yeshivas Be'er Yitzchok,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2523,451398,Yeshiva Toras Chaim,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2524,451404,Talmudical Seminary of Bobov,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2525,451510,Charleston School of Law,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2526,451556,Southwest University at El Paso,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2527,451671,University of South Florida-Sarasota-Manatee,public,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2528,451741,CEM College-Bayamon,forprofit,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2529,451750,Bryant & Stratton College-Wauwatosa,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,2531,451866,Remington College-Shreveport Campus,private,LA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+279,,,,,,unfilled,all 25 backups used; batch 4
+280,2512,449922,Appalachian College of Pharmacy,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2513,449931,Averett University-Non-Traditional Programs,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2514,450298,Strayer University-Delaware,forprofit,DE,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2515,450304,Brite Divinity School,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2516,450377,Strayer University-Alabama,forprofit,AL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2517,450571,Rasmussen College-Wisconsin,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2518,450933,Columbia Southern University,forprofit,AL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2519,450979,Trident University International,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2520,451079,Academy for Five Element Acupuncture,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2522,451370,Yeshivas Be'er Yitzchok,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2523,451398,Yeshiva Toras Chaim,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2524,451404,Talmudical Seminary of Bobov,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2525,451510,Charleston School of Law,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2526,451556,Southwest University at El Paso,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2527,451671,University of South Florida-Sarasota-Manatee,public,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2528,451741,CEM College-Bayamon,forprofit,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2529,451750,Bryant & Stratton College-Wauwatosa,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2531,451866,Remington College-Shreveport Campus,private,LA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2532,451875,National American University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2533,451884,National American University-Wichita,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2534,451927,Patrick Henry College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2535,452948,Galen College of Nursing-Cincinnati,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2536,453163,Strayer University-North Carolina,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2537,453215,Strayer University-New Jersey,forprofit,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2540,454236,Chamberlain University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,2541,454245,Chamberlain University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+280,,,,,,unfilled,all 25 backups used; batch 4
+281,2521,451103,Miami Regional University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2522,451370,Yeshivas Be'er Yitzchok,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2523,451398,Yeshiva Toras Chaim,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2524,451404,Talmudical Seminary of Bobov,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2525,451510,Charleston School of Law,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2526,451556,Southwest University at El Paso,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2527,451671,University of South Florida-Sarasota-Manatee,public,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2528,451741,CEM College-Bayamon,forprofit,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2529,451750,Bryant & Stratton College-Wauwatosa,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2531,451866,Remington College-Shreveport Campus,private,LA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2532,451875,National American University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2533,451884,National American University-Wichita,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2534,451927,Patrick Henry College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2535,452948,Galen College of Nursing-Cincinnati,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2536,453163,Strayer University-North Carolina,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2537,453215,Strayer University-New Jersey,forprofit,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2540,454236,Chamberlain University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2541,454245,Chamberlain University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2542,454582,Ottawa University-Online,private,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2543,454616,Institute of Production and Recording,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2544,454689,Taft University System,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2545,454786,Laurus College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2546,454829,Aspen University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2547,454838,Institute of Taoist Education and Acupuncture,private,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2549,454865,Cambridge College of Healthcare & Technology,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,2550,455099,Urshan Graduate School of Theology,private,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+281,,,,,,unfilled,all 25 backups used; batch 4
+282,2530,451820,The Art Institute of Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2531,451866,Remington College-Shreveport Campus,private,LA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2532,451875,National American University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2533,451884,National American University-Wichita,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2534,451927,Patrick Henry College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2535,452948,Galen College of Nursing-Cincinnati,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2536,453163,Strayer University-North Carolina,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2537,453215,Strayer University-New Jersey,forprofit,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2540,454236,Chamberlain University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2541,454245,Chamberlain University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2542,454582,Ottawa University-Online,private,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2543,454616,Institute of Production and Recording,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2544,454689,Taft University System,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2545,454786,Laurus College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2546,454829,Aspen University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2547,454838,Institute of Taoist Education and Acupuncture,private,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2549,454865,Cambridge College of Healthcare & Technology,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2550,455099,Urshan Graduate School of Theology,private,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2551,455178,Daoist Traditions College of Chinese Medical Arts,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2552,455257,Yeshiva of Machzikai Hadas,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2553,455406,Pacific Northwest University of Health Sciences,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2554,455433,The Chicago School of Professional Psychology at Irvine,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2555,455664,The Chicago School of Professional Psychology at Los Angeles,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2556,455770,Providence Christian College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2558,455813,Pontifical John Paul II Institute for Studies on Marriage and Family,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,2559,455992,Vermont College of Fine Arts,private,VT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+282,,,,,,unfilled,all 25 backups used; batch 4
+283,2539,454227,Chamberlain University-Illinois,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2540,454236,Chamberlain University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2541,454245,Chamberlain University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2542,454582,Ottawa University-Online,private,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2543,454616,Institute of Production and Recording,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2544,454689,Taft University System,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2545,454786,Laurus College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2546,454829,Aspen University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2547,454838,Institute of Taoist Education and Acupuncture,private,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2549,454865,Cambridge College of Healthcare & Technology,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2550,455099,Urshan Graduate School of Theology,private,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2551,455178,Daoist Traditions College of Chinese Medical Arts,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2552,455257,Yeshiva of Machzikai Hadas,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2553,455406,Pacific Northwest University of Health Sciences,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2554,455433,The Chicago School of Professional Psychology at Irvine,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2555,455664,The Chicago School of Professional Psychology at Los Angeles,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2556,455770,Providence Christian College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2558,455813,Pontifical John Paul II Institute for Studies on Marriage and Family,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2559,455992,Vermont College of Fine Arts,private,VT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2560,456481,Polytechnic University of Puerto Rico-Miami,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2561,456490,Polytechnic University of Puerto Rico-Orlando,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2562,456542,Geisinger Commonwealth School of Medicine,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2563,456621,Strayer University-West Virginia,forprofit,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2564,456959,University of Minnesota-Rochester,public,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2565,457022,Herzing University-Toledo,private,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,2567,457129,Chamberlain University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+283,,,,,,unfilled,all 25 backups used; batch 4
+284,2548,454856,Denver College of Nursing,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2549,454865,Cambridge College of Healthcare & Technology,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2550,455099,Urshan Graduate School of Theology,private,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2551,455178,Daoist Traditions College of Chinese Medical Arts,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2552,455257,Yeshiva of Machzikai Hadas,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2553,455406,Pacific Northwest University of Health Sciences,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2554,455433,The Chicago School of Professional Psychology at Irvine,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2555,455664,The Chicago School of Professional Psychology at Los Angeles,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2556,455770,Providence Christian College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2558,455813,Pontifical John Paul II Institute for Studies on Marriage and Family,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2559,455992,Vermont College of Fine Arts,private,VT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2560,456481,Polytechnic University of Puerto Rico-Miami,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2561,456490,Polytechnic University of Puerto Rico-Orlando,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2562,456542,Geisinger Commonwealth School of Medicine,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2563,456621,Strayer University-West Virginia,forprofit,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2564,456959,University of Minnesota-Rochester,public,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2565,457022,Herzing University-Toledo,private,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2567,457129,Chamberlain University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2568,457226,Horizon University,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2569,457271,Academy for Jewish Religion-California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2570,457299,Angeles College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2571,457402,University of Fort Lauderdale,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2572,457484,Pacific Rim Christian University,private,HI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2573,457527,Ambria College of Nursing,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2574,457688,American Business and Technology University,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,2576,458113,Bethel College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+284,,,,,,unfilled,all 25 backups used; batch 4
+285,2557,455804,Institute of World Politics,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2558,455813,Pontifical John Paul II Institute for Studies on Marriage and Family,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2559,455992,Vermont College of Fine Arts,private,VT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2560,456481,Polytechnic University of Puerto Rico-Miami,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2561,456490,Polytechnic University of Puerto Rico-Orlando,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2562,456542,Geisinger Commonwealth School of Medicine,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2563,456621,Strayer University-West Virginia,forprofit,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2564,456959,University of Minnesota-Rochester,public,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2565,457022,Herzing University-Toledo,private,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2567,457129,Chamberlain University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2568,457226,Horizon University,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2569,457271,Academy for Jewish Religion-California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2570,457299,Angeles College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2571,457402,University of Fort Lauderdale,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2572,457484,Pacific Rim Christian University,private,HI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2573,457527,Ambria College of Nursing,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2574,457688,American Business and Technology University,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2576,458113,Bethel College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2577,458210,West Coast University-Orange County,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2578,458229,West Coast University-Ontario,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2579,458496,The Art Institute of Virginia Beach,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2580,458502,Bryant & Stratton College-Bayshore,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2581,458575,Zaytuna College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2582,458885,Strayer University-Arkansas,forprofit,AR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2583,458919,Strayer University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,2585,458964,Strayer University-South Carolina,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+285,,,,,,unfilled,all 25 backups used; batch 4
+286,2566,457086,Homestead Schools,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2567,457129,Chamberlain University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2568,457226,Horizon University,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2569,457271,Academy for Jewish Religion-California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2570,457299,Angeles College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2571,457402,University of Fort Lauderdale,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2572,457484,Pacific Rim Christian University,private,HI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2573,457527,Ambria College of Nursing,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2574,457688,American Business and Technology University,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2576,458113,Bethel College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2577,458210,West Coast University-Orange County,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2578,458229,West Coast University-Ontario,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2579,458496,The Art Institute of Virginia Beach,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2580,458502,Bryant & Stratton College-Bayshore,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2581,458575,Zaytuna College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2582,458885,Strayer University-Arkansas,forprofit,AR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2583,458919,Strayer University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2585,458964,Strayer University-South Carolina,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2586,458973,Strayer University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2587,458982,The Art Institute of San Antonio,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2588,459082,Virginia Polytechnic Institute & State University,public,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2589,459107,Bryant & Stratton College-Hampton,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2590,459204,Unitek College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2591,459213,Gurnick Academy of Medical Arts,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2592,459259,South University-Richmond,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,2594,459417,Compass College of Cinematic Arts,private,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+286,,,,,,unfilled,all 25 backups used; batch 4
+287,2575,457697,City Vision University,private,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2576,458113,Bethel College,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2577,458210,West Coast University-Orange County,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2578,458229,West Coast University-Ontario,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2579,458496,The Art Institute of Virginia Beach,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2580,458502,Bryant & Stratton College-Bayshore,forprofit,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2581,458575,Zaytuna College,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2582,458885,Strayer University-Arkansas,forprofit,AR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2583,458919,Strayer University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2585,458964,Strayer University-South Carolina,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2586,458973,Strayer University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2587,458982,The Art Institute of San Antonio,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2588,459082,Virginia Polytechnic Institute & State University,public,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2589,459107,Bryant & Stratton College-Hampton,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2590,459204,Unitek College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2591,459213,Gurnick Academy of Medical Arts,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2592,459259,South University-Richmond,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2594,459417,Compass College of Cinematic Arts,private,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2595,459727,Touro University Worldwide,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2596,459736,Touro University California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2597,459745,The Chicago School of Professional Psychology at Washington DC,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2598,459824,Touro University Nevada,private,NV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2599,459842,Herzing University-Kenosha,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2600,459851,Herzing University-Brookfield,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2601,459949,Texas A&M University-San Antonio,public,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,2603,460075,California University of Management and Sciences,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+287,,,,,,unfilled,all 25 backups used; batch 4
+288,2584,458955,Strayer University-Mississippi,forprofit,MS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2585,458964,Strayer University-South Carolina,forprofit,SC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2586,458973,Strayer University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2587,458982,The Art Institute of San Antonio,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2588,459082,Virginia Polytechnic Institute & State University,public,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2589,459107,Bryant & Stratton College-Hampton,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2590,459204,Unitek College,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2591,459213,Gurnick Academy of Medical Arts,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2592,459259,South University-Richmond,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2594,459417,Compass College of Cinematic Arts,private,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2595,459727,Touro University Worldwide,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2596,459736,Touro University California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2597,459745,The Chicago School of Professional Psychology at Washington DC,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2598,459824,Touro University Nevada,private,NV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2599,459842,Herzing University-Kenosha,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2600,459851,Herzing University-Brookfield,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2601,459949,Texas A&M University-San Antonio,public,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2603,460075,California University of Management and Sciences,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2604,460349,Johnson & Wales University-Online,private,RI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2605,460376,Fairfax University of America,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2606,460738,American Sentinel University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2607,460783,Remington College-Heathrow Campus,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2608,460871,Chamberlain University-Virginia,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2609,460899,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2610,461023,National Paralegal College,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,2612,461120,Omega Graduate School,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+288,,,,,,unfilled,all 25 backups used; batch 4
+289,2593,459268,South University-Virginia Beach,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2594,459417,Compass College of Cinematic Arts,private,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2595,459727,Touro University Worldwide,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2596,459736,Touro University California,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2597,459745,The Chicago School of Professional Psychology at Washington DC,private,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2598,459824,Touro University Nevada,private,NV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2599,459842,Herzing University-Kenosha,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2600,459851,Herzing University-Brookfield,private,WI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2601,459949,Texas A&M University-San Antonio,public,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2603,460075,California University of Management and Sciences,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2604,460349,Johnson & Wales University-Online,private,RI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2605,460376,Fairfax University of America,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2606,460738,American Sentinel University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2607,460783,Remington College-Heathrow Campus,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2608,460871,Chamberlain University-Virginia,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2609,460899,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2610,461023,National Paralegal College,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2612,461120,Omega Graduate School,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2613,461139,Jung Tao School of Classical Chinese Medicine,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2614,461148,New York Film Academy,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2615,461281,Jose Maria Vargas University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2616,461485,Shepherds Theological Seminary,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2617,461528,Grace College of Divinity,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2618,461643,Bergin University of Canine Studies,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2619,461759,Simmons College of Kentucky,private,KY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,2621,461847,Keser Torah-Mayan Hatalmud,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+289,,,,,,unfilled,all 25 backups used; batch 4
+290,2602,459994,Strayer University-Global Region,forprofit,DC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2603,460075,California University of Management and Sciences,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2604,460349,Johnson & Wales University-Online,private,RI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2605,460376,Fairfax University of America,private,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2606,460738,American Sentinel University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2607,460783,Remington College-Heathrow Campus,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2608,460871,Chamberlain University-Virginia,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2609,460899,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2610,461023,National Paralegal College,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2612,461120,Omega Graduate School,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2613,461139,Jung Tao School of Classical Chinese Medicine,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2614,461148,New York Film Academy,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2615,461281,Jose Maria Vargas University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2616,461485,Shepherds Theological Seminary,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2617,461528,Grace College of Divinity,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2618,461643,Bergin University of Canine Studies,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2619,461759,Simmons College of Kentucky,private,KY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2621,461847,Keser Torah-Mayan Hatalmud,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2622,461883,Millennia Atlantic University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2623,462044,Institute for Doctoral Studies in the Visual Arts,private,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2624,462354,John Paul the Great Catholic University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2625,463056,University of Connecticut-Hartford Campus,public,CT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2626,464226,Ottawa University-Surprise,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2627,465812,Independence University,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2628,466152,National American University-Tulsa,forprofit,OK,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,2630,466189,National American University-Colorado Springs South,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+290,,,,,,unfilled,all 25 backups used; batch 4
+291,2611,461032,Carolina College of Biblical Studies,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2612,461120,Omega Graduate School,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2613,461139,Jung Tao School of Classical Chinese Medicine,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2614,461148,New York Film Academy,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2615,461281,Jose Maria Vargas University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2616,461485,Shepherds Theological Seminary,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2617,461528,Grace College of Divinity,private,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2618,461643,Bergin University of Canine Studies,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2619,461759,Simmons College of Kentucky,private,KY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2621,461847,Keser Torah-Mayan Hatalmud,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2622,461883,Millennia Atlantic University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2623,462044,Institute for Doctoral Studies in the Visual Arts,private,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2624,462354,John Paul the Great Catholic University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2625,463056,University of Connecticut-Hartford Campus,public,CT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2626,464226,Ottawa University-Surprise,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2627,465812,Independence University,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2628,466152,National American University-Tulsa,forprofit,OK,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2630,466189,National American University-Colorado Springs South,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2631,466921,Chamberlain University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2632,466930,Chamberlain University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2633,468024,South University-Novi,forprofit,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2634,469416,Dewey University-Manati,private,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2635,474863,Los Angeles Pacific University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2636,474890,CollegeAmerica-Phoenix,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2637,474906,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,2639,475121,South University-Savannah Online,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+291,,,,,,unfilled,all 25 backups used; batch 4
+292,2620,461795,North American University,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2621,461847,Keser Torah-Mayan Hatalmud,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2622,461883,Millennia Atlantic University,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2623,462044,Institute for Doctoral Studies in the Visual Arts,private,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2624,462354,John Paul the Great Catholic University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2625,463056,University of Connecticut-Hartford Campus,public,CT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2626,464226,Ottawa University-Surprise,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2627,465812,Independence University,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2628,466152,National American University-Tulsa,forprofit,OK,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2630,466189,National American University-Colorado Springs South,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2631,466921,Chamberlain University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2632,466930,Chamberlain University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2633,468024,South University-Novi,forprofit,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2634,469416,Dewey University-Manati,private,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2635,474863,Los Angeles Pacific University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2636,474890,CollegeAmerica-Phoenix,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2637,474906,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2639,475121,South University-Savannah Online,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2640,475200,Whitworth University-Adult Degree Programs,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2641,475228,The Santa Barbara and Ventura Colleges of Law at Santa Barbara,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2642,475237,The University of America,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2643,475273,"Springfield College-Regional, Online, and Continuing Education",private,MA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2644,475398,Catholic Distance University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2645,475495,Rocky Mountain University of Health Professions,forprofit,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2646,475510,Christie's Education,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,2648,475635,Beverly Hills Design Institute,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+292,,,,,,unfilled,all 25 backups used; batch 4
+293,2629,466161,National American University-Centennial,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2630,466189,National American University-Colorado Springs South,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2631,466921,Chamberlain University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2632,466930,Chamberlain University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2633,468024,South University-Novi,forprofit,MI,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2634,469416,Dewey University-Manati,private,PR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2635,474863,Los Angeles Pacific University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2636,474890,CollegeAmerica-Phoenix,private,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2637,474906,Stevens-Henager College,private,ID,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2639,475121,South University-Savannah Online,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2640,475200,Whitworth University-Adult Degree Programs,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2641,475228,The Santa Barbara and Ventura Colleges of Law at Santa Barbara,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2642,475237,The University of America,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2643,475273,"Springfield College-Regional, Online, and Continuing Education",private,MA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2644,475398,Catholic Distance University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2645,475495,Rocky Mountain University of Health Professions,forprofit,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2646,475510,Christie's Education,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2648,475635,Beverly Hills Design Institute,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2649,475699,Bryant & Stratton College-Akron,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2650,475732,Chamberlain University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2651,475741,Chamberlain University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2652,476595,Medical Allied Career Center,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2653,476601,Bais HaMedrash and Mesivta of Baltimore,private,MD,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2654,476692,Yeshiva Gedolah Zichron Leyma,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2655,476717,Be'er Yaakov Talmudic Seminary,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,2657,477039,West Coast University-Dallas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+293,,,,,,unfilled,all 25 backups used; batch 4
+294,2638,475033,Relay Graduate School of Education,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2639,475121,South University-Savannah Online,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2640,475200,Whitworth University-Adult Degree Programs,private,WA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2641,475228,The Santa Barbara and Ventura Colleges of Law at Santa Barbara,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2642,475237,The University of America,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2643,475273,"Springfield College-Regional, Online, and Continuing Education",private,MA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2644,475398,Catholic Distance University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2645,475495,Rocky Mountain University of Health Professions,forprofit,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2646,475510,Christie's Education,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2648,475635,Beverly Hills Design Institute,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2649,475699,Bryant & Stratton College-Akron,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2650,475732,Chamberlain University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2651,475741,Chamberlain University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2652,476595,Medical Allied Career Center,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2653,476601,Bais HaMedrash and Mesivta of Baltimore,private,MD,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2654,476692,Yeshiva Gedolah Zichron Leyma,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2655,476717,Be'er Yaakov Talmudic Seminary,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2657,477039,West Coast University-Dallas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2658,477996,National American University-Bellevue,forprofit,NE,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2659,478014,National American University-Mesquite,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2660,478634,California College San Diego,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2661,479956,Pennsylvania State University-World Campus,public,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2662,480064,Purdue University Global-Augusta,public,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2663,480073,South University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2664,480082,South University-Cleveland,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,2666,480134,Elizabethtown College School of Continuing and Professional Studies,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+294,,,,,,unfilled,all 25 backups used; batch 4
+295,2647,475608,Criswell College,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2648,475635,Beverly Hills Design Institute,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2649,475699,Bryant & Stratton College-Akron,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2650,475732,Chamberlain University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2651,475741,Chamberlain University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2652,476595,Medical Allied Career Center,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2653,476601,Bais HaMedrash and Mesivta of Baltimore,private,MD,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2654,476692,Yeshiva Gedolah Zichron Leyma,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2655,476717,Be'er Yaakov Talmudic Seminary,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2657,477039,West Coast University-Dallas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2658,477996,National American University-Bellevue,forprofit,NE,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2659,478014,National American University-Mesquite,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2660,478634,California College San Diego,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2661,479956,Pennsylvania State University-World Campus,public,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2662,480064,Purdue University Global-Augusta,public,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2663,480073,South University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2664,480082,South University-Cleveland,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2666,480134,Elizabethtown College School of Continuing and Professional Studies,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2667,480198,Warner Pacific University Professional and Graduate Studies,private,OR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2668,480204,Platt College-Riverside,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2669,480301,Savannah Law School,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2670,480499,Shiloh University,private,IA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2671,480569,Florida Institute of Technology-Online,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2672,480657,Rasmussen College-Kansas,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2673,480781,California Miramar University,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,2675,480912,Gemini School of Visual Arts & Communication,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+295,,,,,,unfilled,all 25 backups used; batch 4
+296,2656,476975,Colorado State University-Global Campus,public,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2657,477039,West Coast University-Dallas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2658,477996,National American University-Bellevue,forprofit,NE,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2659,478014,National American University-Mesquite,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2660,478634,California College San Diego,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2661,479956,Pennsylvania State University-World Campus,public,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2662,480064,Purdue University Global-Augusta,public,ME,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2663,480073,South University-Austin,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2664,480082,South University-Cleveland,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2666,480134,Elizabethtown College School of Continuing and Professional Studies,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2667,480198,Warner Pacific University Professional and Graduate Studies,private,OR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2668,480204,Platt College-Riverside,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2669,480301,Savannah Law School,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2670,480499,Shiloh University,private,IA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2671,480569,Florida Institute of Technology-Online,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2672,480657,Rasmussen College-Kansas,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2673,480781,California Miramar University,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2675,480912,Gemini School of Visual Arts & Communication,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2676,480985,Midwives College of Utah,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2677,481030,Future Generations University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2678,481058,Grace Mission University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2679,481094,Sotheby's Institute of Art-NY,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2680,481225,Mid-South Christian College,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2681,481401,Grace School of Theology,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2682,481410,Yeshiva Gedolah Kesser Torah,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,2684,481720,South University-High Point,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+296,,,,,,unfilled,all 25 backups used; batch 4
+297,2665,480091,Bryant & Stratton College-Online,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2666,480134,Elizabethtown College School of Continuing and Professional Studies,private,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2667,480198,Warner Pacific University Professional and Graduate Studies,private,OR,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2668,480204,Platt College-Riverside,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2669,480301,Savannah Law School,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2670,480499,Shiloh University,private,IA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2671,480569,Florida Institute of Technology-Online,private,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2672,480657,Rasmussen College-Kansas,forprofit,KS,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2673,480781,California Miramar University,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2675,480912,Gemini School of Visual Arts & Communication,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2676,480985,Midwives College of Utah,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2677,481030,Future Generations University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2678,481058,Grace Mission University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2679,481094,Sotheby's Institute of Art-NY,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2680,481225,Mid-South Christian College,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2681,481401,Grace School of Theology,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2682,481410,Yeshiva Gedolah Kesser Torah,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2684,481720,South University-High Point,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2685,482024,College of Business and Technology-Miami Gardens,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2686,482149,Augusta University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2687,482158,Middle Georgia State University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2688,482228,Veritas Baptist College,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2689,482325,National American University-Georgetown,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2690,482334,National American University-Richardson,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2691,482343,National American University-Rochester,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,2693,482413,DeVry College of New York,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+297,,,,,,unfilled,all 25 backups used; batch 4
+298,2674,480790,Rocky Vista University,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2675,480912,Gemini School of Visual Arts & Communication,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2676,480985,Midwives College of Utah,private,UT,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2677,481030,Future Generations University,private,WV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2678,481058,Grace Mission University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2679,481094,Sotheby's Institute of Art-NY,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2680,481225,Mid-South Christian College,private,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2681,481401,Grace School of Theology,private,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2682,481410,Yeshiva Gedolah Kesser Torah,private,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2684,481720,South University-High Point,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2685,482024,College of Business and Technology-Miami Gardens,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2686,482149,Augusta University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2687,482158,Middle Georgia State University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2688,482228,Veritas Baptist College,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2689,482325,National American University-Georgetown,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2690,482334,National American University-Richardson,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2691,482343,National American University-Rochester,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2693,482413,DeVry College of New York,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2694,482422,DeVry University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2695,482431,DeVry University-California,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2696,482440,DeVry University-Colorado,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2697,482459,DeVry University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2698,482468,DeVry University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2699,482477,DeVry University-Illinois,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2700,482486,DeVry University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,2701,482538,DeVry University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+298,,,,,,unfilled,all 25 backups used; batch 4
+299,2683,481438,Yeshiva Yesodei Hatorah,private,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2684,481720,South University-High Point,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2685,482024,College of Business and Technology-Miami Gardens,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2686,482149,Augusta University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2687,482158,Middle Georgia State University,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2688,482228,Veritas Baptist College,private,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2689,482325,National American University-Georgetown,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2690,482334,National American University-Richardson,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2691,482343,National American University-Rochester,forprofit,MN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2693,482413,DeVry College of New York,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2694,482422,DeVry University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2695,482431,DeVry University-California,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2696,482440,DeVry University-Colorado,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2697,482459,DeVry University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2698,482468,DeVry University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2699,482477,DeVry University-Illinois,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2700,482486,DeVry University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2701,482538,DeVry University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2702,482547,DeVry University-Nevada,forprofit,NV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2703,482556,DeVry University-New Jersey,forprofit,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2704,482565,DeVry University-North Carolina,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2705,482574,DeVry University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2706,482608,DeVry University-Pennsylvania,forprofit,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2707,482617,DeVry University-Tennessee,forprofit,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2708,482635,DeVry University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,2709,482653,DeVry University-Virginia,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+299,,,,,,unfilled,all 25 backups used; batch 4
+300,2692,482370,National American University-Indianapolis,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2693,482413,DeVry College of New York,forprofit,NY,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2694,482422,DeVry University-Arizona,forprofit,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2695,482431,DeVry University-California,forprofit,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2696,482440,DeVry University-Colorado,forprofit,CO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2697,482459,DeVry University-Florida,forprofit,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2698,482468,DeVry University-Georgia,forprofit,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2699,482477,DeVry University-Illinois,forprofit,IL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2700,482486,DeVry University-Indiana,forprofit,IN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2701,482538,DeVry University-Missouri,forprofit,MO,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2702,482547,DeVry University-Nevada,forprofit,NV,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2703,482556,DeVry University-New Jersey,forprofit,NJ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2704,482565,DeVry University-North Carolina,forprofit,NC,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2705,482574,DeVry University-Ohio,forprofit,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2706,482608,DeVry University-Pennsylvania,forprofit,PA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2707,482617,DeVry University-Tennessee,forprofit,TN,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2708,482635,DeVry University-Texas,forprofit,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2709,482653,DeVry University-Virginia,forprofit,VA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2710,482680,University of North Georgia,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2711,482699,South Georgia State College,public,GA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2712,482705,Northeastern University Lifelong Learning Network,private,MA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2713,482936,Florida Polytechnic University,public,FL,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2714,483018,Antioch College,private,OH,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2715,483036,Texas A&M University-Central Texas,public,TX,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2716,483124,Arizona State University-Skysong,public,AZ,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,2717,483586,California International Business University,private,CA,skipped at scoring,insufficient data: data check (insufficient enrollment data); batch 4
+300,,,,,,unfilled,all 25 backups used; batch 4

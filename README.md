@@ -1,6 +1,6 @@
 # Tell
 
-**Confirmatory test:** 277 / 300 scored, outcomes not yet checked.
+**Confirmatory test:** 278 / 300 scored, outcomes not yet checked; 22 slots unfilled after all backups.
 
 Built to measure feedback divergence (an institution's official metrics versus its operational reality), Tell tracks institutional distress -- financial distress, upheaval, recovery, and the anchoring metrics which determine distress risk vs. collapse risk -- in higher ed institutions.
 

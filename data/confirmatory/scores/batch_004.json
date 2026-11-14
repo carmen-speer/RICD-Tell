@@ -1,0 +1,5693 @@
+{
+  "protocol": "sampling protocol.md",
+  "batch": 4,
+  "written at (UTC)": "2026-11-14T08:01:32.297395+00:00",
+  "frozen file hashes": {
+    "src/classifier.py": "13c946532f651501e3e99f8574a9ccdea8f4ae8d",
+    "data/panel/panel.json": "8d1f5e4135ee278f80c4af937611ab68ff4b3f78",
+    "src/model.py": "ec8aac432fd772def527ca8d7db4dfa4c2e1aaf5",
+    "src/dynamics.py": "0fb853c22972a9ccdfd2a44de82fcbf7513c81f8",
+    "src/real_adapter.py": "7bcd88039d990d131e0ef0ac31b16531fd9defc8",
+    "src/score_institution.py": "30d65337f8e45cc88e84a48a99250a2943e0a765",
+    "src/fetch_live_data.py": "d56d8231e6dd82bcd10a061f676ea40bd5e1ba76",
+    "src/build_scorecard_compact.py": "ce3683908488ecd8f590a9a4021df255a3416352"
+  },
+  "scorecard file": {
+    "downloaded from": "https://github.com/carmen-speer/RICD-Tell/releases/download/scorecard-raw-data-2026-11-02/College_Scorecard_Raw_Data_11022026.zip",
+    "original source": "https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_11022026.zip",
+    "sha256": "ec66842e4c788a77818b81f23f2262020127d0524cc7132cf96e3207da463ec7",
+    "downloaded at (UTC)": "2026-11-14T07:56:59.366521+00:00",
+    "years": [
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "rows": 208758,
+    "columns": [
+      "UNITID",
+      "YEAR",
+      "UGDS",
+      "C150_4",
+      "TUITIONFEE_IN",
+      "ADM_RATE"
+    ]
+  },
+  "finance files (sha256)": {
+    "private/2008/F0809_F2.csv": "d91dd15c5bf9ae8fdcdea20ececc73df1bda6a231e9d820380e61c5ac28aa0f1",
+    "private/2009/F0910_F2.csv": "c00a1988c5341c4283d2e5aa3637bfa1cf77cce649405ef07b079434128a5154",
+    "private/2010/F1011_F2.csv": "6ecae70dd1736deffde049770bdb8a52960fc8491a1b4eeebab686afe5d1a711",
+    "private/2011/F1112_F2.csv": "1e0a365dc6bc9f4364ca404b3a553b1d26b75ea0d86d48b1b8f3a924691b1296",
+    "private/2012/F1213_F2.csv": "12b0f65ccd6aeae09782e6eddf0cb23ade49f4d42cb33365b5ff4ab9cd34802f",
+    "private/2013/F1314_F2.csv": "5f5f4a2e17bb21e2c73ca1cf81301e25accb314d31fa59a89d4adf5810e2f95d",
+    "private/2014/F1415_F2.csv": "37abf641e0a391daa773dda99129d734379566a2cad7cbb67030a770f1616d33",
+    "private/2015/F1516_F2.csv": "4749aa58a534b95156fedf9d12b1cae12f11000976de64f8425f165ae83b1145",
+    "private/2016/F1617_F2.csv": "27f6e05e62c8bf02017a691fb520a1b99b76b1eeecfa214a9b9e584b8cc9171e",
+    "private/2017/F1718_F2.csv": "920e41c8b57d621f7eb8219699efe8832b8beccc7d7dbb51ad71dff8faa3af8b",
+    "private/2018/F1819_F2.csv": "b79b8483d4746254202b1f4159bdb10b73ce05bf7bf28647e52a6cfefc516570",
+    "public/2008/F0809_F1A.csv": "c8c7e04b368242a9d5673b43c3651d77021d8eee858a0bb645373ee0ca820af6",
+    "public/2009/F0910_F1A.csv": "09c786d36f2f82e5491db5a2c73e4d2b10b206499d9935c014c330330e70d13b",
+    "public/2010/F1011_F1A.csv": "b200251bef0b9c4e9069779e9e6e3773ef1ff8aeb066ae65850f90ec9b50b90c",
+    "public/2011/F1112_F1A.csv": "0c071c5b30791907d0a35cff1a30fdc2c969e1ec982550ba60ecb3115296fd76",
+    "public/2012/F1213_F1A.csv": "b1c3e873c5d74d1c6548317a0a612347537c795c8358fc41fa293b02fa777e11",
+    "public/2013/F1314_F1A.csv": "e8644bae7d81a66972b26fbceb0aef8a2b10f3158b2d0c5f2c34f441621021a8",
+    "public/2014/F1415_F1A.csv": "2aae5ad8452c97f039789d5767cd9f9f337fbc284dac313bd527783080f1961e",
+    "public/2015/F1516_F1A.csv": "fdb258fd5bfa6e6799436d4a30f63e847075a575f373df2cbd18fe011a80f7b2",
+    "public/2016/F1617_F1A.csv": "75909dd163826e3c9040143e8b03bdb61d29110bd2e5c386cc50e0f629168490",
+    "public/2017/F1718_F1A.csv": "c53c8d0da0f0ee8146b994567c16b89493ae5fde85cb6057cd41f1ca3dcc6d36",
+    "public/2018/F1819_F1A.csv": "081ee6a4a5209358436f972f35574039d00139b618d745ba8e2594d3d52ffce4",
+    "forprofit/2008/F0809_F3.csv": "a016122aee0dc346692d2fc708a2bc1e797ed7daa96645f4c3530e72c213159e",
+    "forprofit/2009/F0910_F3.csv": "2f600f95a5995b7419f69dc8807ecd46abc7f74b4de4b1078583746329f83046",
+    "forprofit/2010/F1011_F3.csv": "08d4b6346d6730600b35ce464a7a412db0ebb7587a0db97ef1fa0c172dfb0bd8",
+    "forprofit/2011/F1112_F3.csv": "0e2c205b62c2995e3e4c418cb98b63feba265f9e64da32e54d79fecee504a2e1",
+    "forprofit/2012/F1213_F3.csv": "3fca18ef3733793971212f37f4bd496b8f57947688b09263f1a95fe1bb481be5",
+    "forprofit/2013/F1314_F3.csv": "10a09eee7cc650703d39dc83317f2603439fb8b33891050471d13fb3180b4257",
+    "forprofit/2014/F1415_F3.csv": "06bec73dd9a25fd657f3bf5c161e87c5e32eef91c57a1a51153fc779523b8e36",
+    "forprofit/2015/F1516_F3.csv": "978ab9119bf219fa8bcac5bc2ec8a6b74831d9dba56faa3ad0d610842f3c77f0",
+    "forprofit/2016/F1617_F3.csv": "0f999a2d60206ee988b4dc157faec2e72c74a794eb8656f3b8cedfd1083fc7fb",
+    "forprofit/2017/F1718_F3.csv": "daee045a0d84a7b296b96ed08131b69fc224a54131a8b08695042fa5049ecf1b",
+    "forprofit/2018/F1819_F3.csv": "85d3ef8b920e589087e9aaa271a2f1b2a037d6a649ebe0eea86f9bfaf82671ce"
+  },
+  "environment": [
+    "Pygments==2.21.0",
+    "arviz==0.23.4",
+    "cachetools==6.2.6",
+    "certifi==2026.10.23",
+    "charset-normalizer==3.5.2",
+    "cloudpickle==3.1.2",
+    "cons==0.4.7",
+    "contourpy==1.3.3",
+    "cycler==0.12.1",
+    "etuples==0.3.10",
+    "filelock==4.2.10",
+    "fonttools==4.68.0",
+    "h5netcdf==1.8.3",
+    "h5py==3.16.0",
+    "idna==3.20",
+    "joblib==1.6.0",
+    "kiwisolver==1.5.1",
+    "llvmlite==0.47.0",
+    "logical-unification==0.4.7",
+    "markdown-it-py==4.3.0",
+    "matplotlib==3.11.2",
+    "mdurl==0.1.2",
+    "miniKanren==1.0.5",
+    "multipledispatch==1.0.0",
+    "narwhals==2.28.0",
+    "numba==0.65.1",
+    "numpy==2.4.6",
+    "packaging==26.3",
+    "pandas==3.1.1",
+    "pillow==13.0.0",
+    "platformdirs==4.14.5",
+    "pymc==5.28.5",
+    "pyparsing==3.3.3",
+    "pytensor==2.38.3",
+    "python-dateutil==4.0.0",
+    "requests==2.34.2",
+    "rich==15.0.0",
+    "scikit-learn==1.9.1",
+    "scipy==1.17.1",
+    "threadpoolctl==3.8.0",
+    "toolz==1.2.0",
+    "typing_extensions==4.16.0",
+    "tzdata==2026.6",
+    "urllib3==2.8.0",
+    "xarray-einstats==0.9.1",
+    "xarray==2026.9.0"
+  ],
+  "evaluations": [
+    {
+      "unitid": "449870",
+      "name": "University of the West",
+      "sector": "private",
+      "fits": [
+        {
+          "seed": 7,
+          "probability": 0.5832434222784705,
+          "flag": "high_risk",
+          "features": {
+            "d_A_trend": -0.1480974259276402,
+            "d_A_final": 0.27862268995898687,
+            "delta_R_final": 0.9059868030619335,
+            "frac_high_entropy": 0.0,
+            "debt_spike": 0.0031863447329807393,
+            "delta_R_trend": 0.4160648143035946,
+            "reserve_adequacy": 10.661851374001605,
+            "research_ratio": 0.017253021281396476
+          },
+          "divergences": 0,
+          "rhat_max_all": 1.1915,
+          "rhat_max_free": 1.1915
+        },
+        {
+          "seed": 101,
+          "probability": 0.5710711166497169,
+          "flag": "high_risk",
+          "features": {
+            "d_A_trend": -0.14782273194368195,
+            "d_A_final": 0.2796541346371806,
+            "delta_R_final": 0.9756416423586901,
+            "frac_high_entropy": 0.0,
+            "debt_spike": 0.0031863447329807393,
+            "delta_R_trend": 0.44728851970264305,
+            "reserve_adequacy": 10.661851374001605,
+            "research_ratio": 0.017253021281396476
+          },
+          "divergences": 0,
+          "rhat_max_all": 1.1674,
+          "rhat_max_free": 1.1674
+        },
+        {
+          "seed": 202,
+          "probability": 0.5088872629546243,
+          "flag": "high_risk",
+          "features": {
+            "d_A_trend": -0.13497224526556717,
+            "d_A_final": 0.26586723932759143,
+            "delta_R_final": 0.944887328662144,
+            "frac_high_entropy": 0.0,
+            "debt_spike": 0.0031863447329807393,
+            "delta_R_trend": 0.4331366464916739,
+            "reserve_adequacy": 10.661851374001605,
+            "research_ratio": 0.017253021281396476
+          },
+          "divergences": 0,
+          "rhat_max_all": 1.2361,
+          "rhat_max_free": 1.2361
+        }
+      ],
+      "finance years complete FY2009-FY2019": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "result": "pass",
+      "probability": 0.5832434222784705,
+      "flag": "high_risk",
+      "evaluated at (UTC)": "2026-11-14T08:01:15.583455+00:00"
+    },
+    {
+      "unitid": "449889",
+      "name": "American College of Education",
+      "sector": "forprofit",
+      "fits": [],
+      "result": "fail",
+      "failed check": "data",
+      "gap": "insufficient enrollment data",
+      "divergences": null,
+      "rhat_max_all": null,
+      "rhat_max_free": null,
+      "evaluated at (UTC)": "2026-11-14T07:59:55.795054+00:00"
+    },
+    {
+      "unitid": "449898",
+      "name": "South University-Tampa",
+      "sector": "forprofit",
+      "fits": [],
+      "result": "fail",
+      "failed check": "data",
+      "gap": "insufficient enrollment data",
+      "divergences": null,
+      "rhat_max_all": null,
+      "rhat_max_free": null,
+      "evaluated at (UTC)": "2026-11-14T07:59:53.973657+00:00"
+    }
+  ],
+  "finalized slots": [
+    {
+      "slot": 278,
+      "trail": [
+        {
+          "unitid": "448673",
+          "name": "Rasmussen College-Illinois",
+          "frame position": 2494,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "448691",
+          "name": "International Institute for Restorative Practices",
+          "frame position": 2495,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "448752",
+          "name": "CollegeAmerica-Colorado Springs",
+          "frame position": 2496,
+          "sector": "private",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "448761",
+          "name": "CollegeAmerica-Fort Collins",
+          "frame position": 2497,
+          "sector": "private",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "duplicate (taken by a lower-numbered slot)"
+        },
+        {
+          "unitid": "448840",
+          "name": "University of South Florida-St Petersburg",
+          "frame position": 2498,
+          "sector": "public",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "448886",
+          "name": "Arizona State University-Downtown Phoenix",
+          "frame position": 2499,
+          "sector": "public",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449038",
+          "name": "Strayer University-Florida",
+          "frame position": 2500,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449135",
+          "name": "Dewey University-Juana D\u00edaz",
+          "frame position": 2501,
+          "sector": "private",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449339",
+          "name": "American Public University System",
+          "frame position": 2502,
+          "sector": "forprofit",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449384",
+          "name": "Gnomon",
+          "frame position": 2504,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449481",
+          "name": "Dragon Rises College of Oriental Medicine",
+          "frame position": 2505,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449658",
+          "name": "Bais Medrash Toras Chesed",
+          "frame position": 2506,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449764",
+          "name": "Visible Music College",
+          "frame position": 2507,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "duplicate (taken by a lower-numbered slot)"
+        },
+        {
+          "unitid": "449834",
+          "name": "Virginia Beach Theological Seminary",
+          "frame position": 2508,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": "449870",
+      "name": "University of the West",
+      "frame position": 2509,
+      "sector": "private",
+      "state": "CA",
+      "probability": 0.5832434222784705,
+      "flag": "high_risk"
+    },
+    {
+      "slot": 279,
+      "trail": [
+        {
+          "unitid": "449348",
+          "name": "Huntsville Bible College",
+          "frame position": 2503,
+          "sector": "private",
+          "state": "AL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449384",
+          "name": "Gnomon",
+          "frame position": 2504,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449481",
+          "name": "Dragon Rises College of Oriental Medicine",
+          "frame position": 2505,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449658",
+          "name": "Bais Medrash Toras Chesed",
+          "frame position": 2506,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449764",
+          "name": "Visible Music College",
+          "frame position": 2507,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "duplicate (taken by a lower-numbered slot)"
+        },
+        {
+          "unitid": "449834",
+          "name": "Virginia Beach Theological Seminary",
+          "frame position": 2508,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449870",
+          "name": "University of the West",
+          "frame position": 2509,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "duplicate (taken by a lower-numbered slot)"
+        },
+        {
+          "unitid": "449889",
+          "name": "American College of Education",
+          "frame position": 2510,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449898",
+          "name": "South University-Tampa",
+          "frame position": 2511,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449931",
+          "name": "Averett University-Non-Traditional Programs",
+          "frame position": 2513,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450298",
+          "name": "Strayer University-Delaware",
+          "frame position": 2514,
+          "sector": "forprofit",
+          "state": "DE",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450304",
+          "name": "Brite Divinity School",
+          "frame position": 2515,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450377",
+          "name": "Strayer University-Alabama",
+          "frame position": 2516,
+          "sector": "forprofit",
+          "state": "AL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450571",
+          "name": "Rasmussen College-Wisconsin",
+          "frame position": 2517,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450933",
+          "name": "Columbia Southern University",
+          "frame position": 2518,
+          "sector": "forprofit",
+          "state": "AL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450979",
+          "name": "Trident University International",
+          "frame position": 2519,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451079",
+          "name": "Academy for Five Element Acupuncture",
+          "frame position": 2520,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451370",
+          "name": "Yeshivas Be'er Yitzchok",
+          "frame position": 2522,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451398",
+          "name": "Yeshiva Toras Chaim",
+          "frame position": 2523,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451404",
+          "name": "Talmudical Seminary of Bobov",
+          "frame position": 2524,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451510",
+          "name": "Charleston School of Law",
+          "frame position": 2525,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451556",
+          "name": "Southwest University at El Paso",
+          "frame position": 2526,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451671",
+          "name": "University of South Florida-Sarasota-Manatee",
+          "frame position": 2527,
+          "sector": "public",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451741",
+          "name": "CEM College-Bayamon",
+          "frame position": 2528,
+          "sector": "forprofit",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451750",
+          "name": "Bryant & Stratton College-Wauwatosa",
+          "frame position": 2529,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451866",
+          "name": "Remington College-Shreveport Campus",
+          "frame position": 2531,
+          "sector": "private",
+          "state": "LA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 280,
+      "trail": [
+        {
+          "unitid": "449922",
+          "name": "Appalachian College of Pharmacy",
+          "frame position": 2512,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "449931",
+          "name": "Averett University-Non-Traditional Programs",
+          "frame position": 2513,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450298",
+          "name": "Strayer University-Delaware",
+          "frame position": 2514,
+          "sector": "forprofit",
+          "state": "DE",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450304",
+          "name": "Brite Divinity School",
+          "frame position": 2515,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450377",
+          "name": "Strayer University-Alabama",
+          "frame position": 2516,
+          "sector": "forprofit",
+          "state": "AL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450571",
+          "name": "Rasmussen College-Wisconsin",
+          "frame position": 2517,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450933",
+          "name": "Columbia Southern University",
+          "frame position": 2518,
+          "sector": "forprofit",
+          "state": "AL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "450979",
+          "name": "Trident University International",
+          "frame position": 2519,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451079",
+          "name": "Academy for Five Element Acupuncture",
+          "frame position": 2520,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451370",
+          "name": "Yeshivas Be'er Yitzchok",
+          "frame position": 2522,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451398",
+          "name": "Yeshiva Toras Chaim",
+          "frame position": 2523,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451404",
+          "name": "Talmudical Seminary of Bobov",
+          "frame position": 2524,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451510",
+          "name": "Charleston School of Law",
+          "frame position": 2525,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451556",
+          "name": "Southwest University at El Paso",
+          "frame position": 2526,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451671",
+          "name": "University of South Florida-Sarasota-Manatee",
+          "frame position": 2527,
+          "sector": "public",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451741",
+          "name": "CEM College-Bayamon",
+          "frame position": 2528,
+          "sector": "forprofit",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451750",
+          "name": "Bryant & Stratton College-Wauwatosa",
+          "frame position": 2529,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451866",
+          "name": "Remington College-Shreveport Campus",
+          "frame position": 2531,
+          "sector": "private",
+          "state": "LA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451875",
+          "name": "National American University-Austin",
+          "frame position": 2532,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451884",
+          "name": "National American University-Wichita",
+          "frame position": 2533,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451927",
+          "name": "Patrick Henry College",
+          "frame position": 2534,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "452948",
+          "name": "Galen College of Nursing-Cincinnati",
+          "frame position": 2535,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453163",
+          "name": "Strayer University-North Carolina",
+          "frame position": 2536,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453215",
+          "name": "Strayer University-New Jersey",
+          "frame position": 2537,
+          "sector": "forprofit",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454236",
+          "name": "Chamberlain University-Ohio",
+          "frame position": 2540,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454245",
+          "name": "Chamberlain University-Arizona",
+          "frame position": 2541,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 281,
+      "trail": [
+        {
+          "unitid": "451103",
+          "name": "Miami Regional University",
+          "frame position": 2521,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451370",
+          "name": "Yeshivas Be'er Yitzchok",
+          "frame position": 2522,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451398",
+          "name": "Yeshiva Toras Chaim",
+          "frame position": 2523,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451404",
+          "name": "Talmudical Seminary of Bobov",
+          "frame position": 2524,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451510",
+          "name": "Charleston School of Law",
+          "frame position": 2525,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451556",
+          "name": "Southwest University at El Paso",
+          "frame position": 2526,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451671",
+          "name": "University of South Florida-Sarasota-Manatee",
+          "frame position": 2527,
+          "sector": "public",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451741",
+          "name": "CEM College-Bayamon",
+          "frame position": 2528,
+          "sector": "forprofit",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451750",
+          "name": "Bryant & Stratton College-Wauwatosa",
+          "frame position": 2529,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451866",
+          "name": "Remington College-Shreveport Campus",
+          "frame position": 2531,
+          "sector": "private",
+          "state": "LA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451875",
+          "name": "National American University-Austin",
+          "frame position": 2532,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451884",
+          "name": "National American University-Wichita",
+          "frame position": 2533,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451927",
+          "name": "Patrick Henry College",
+          "frame position": 2534,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "452948",
+          "name": "Galen College of Nursing-Cincinnati",
+          "frame position": 2535,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453163",
+          "name": "Strayer University-North Carolina",
+          "frame position": 2536,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453215",
+          "name": "Strayer University-New Jersey",
+          "frame position": 2537,
+          "sector": "forprofit",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454236",
+          "name": "Chamberlain University-Ohio",
+          "frame position": 2540,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454245",
+          "name": "Chamberlain University-Arizona",
+          "frame position": 2541,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454582",
+          "name": "Ottawa University-Online",
+          "frame position": 2542,
+          "sector": "private",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454616",
+          "name": "Institute of Production and Recording",
+          "frame position": 2543,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454689",
+          "name": "Taft University System",
+          "frame position": 2544,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454786",
+          "name": "Laurus College",
+          "frame position": 2545,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454829",
+          "name": "Aspen University",
+          "frame position": 2546,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454838",
+          "name": "Institute of Taoist Education and Acupuncture",
+          "frame position": 2547,
+          "sector": "private",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454865",
+          "name": "Cambridge College of Healthcare & Technology",
+          "frame position": 2549,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455099",
+          "name": "Urshan Graduate School of Theology",
+          "frame position": 2550,
+          "sector": "private",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 282,
+      "trail": [
+        {
+          "unitid": "451820",
+          "name": "The Art Institute of Austin",
+          "frame position": 2530,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451866",
+          "name": "Remington College-Shreveport Campus",
+          "frame position": 2531,
+          "sector": "private",
+          "state": "LA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451875",
+          "name": "National American University-Austin",
+          "frame position": 2532,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451884",
+          "name": "National American University-Wichita",
+          "frame position": 2533,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "451927",
+          "name": "Patrick Henry College",
+          "frame position": 2534,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "452948",
+          "name": "Galen College of Nursing-Cincinnati",
+          "frame position": 2535,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453163",
+          "name": "Strayer University-North Carolina",
+          "frame position": 2536,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "453215",
+          "name": "Strayer University-New Jersey",
+          "frame position": 2537,
+          "sector": "forprofit",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454236",
+          "name": "Chamberlain University-Ohio",
+          "frame position": 2540,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454245",
+          "name": "Chamberlain University-Arizona",
+          "frame position": 2541,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454582",
+          "name": "Ottawa University-Online",
+          "frame position": 2542,
+          "sector": "private",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454616",
+          "name": "Institute of Production and Recording",
+          "frame position": 2543,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454689",
+          "name": "Taft University System",
+          "frame position": 2544,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454786",
+          "name": "Laurus College",
+          "frame position": 2545,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454829",
+          "name": "Aspen University",
+          "frame position": 2546,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454838",
+          "name": "Institute of Taoist Education and Acupuncture",
+          "frame position": 2547,
+          "sector": "private",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454865",
+          "name": "Cambridge College of Healthcare & Technology",
+          "frame position": 2549,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455099",
+          "name": "Urshan Graduate School of Theology",
+          "frame position": 2550,
+          "sector": "private",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455178",
+          "name": "Daoist Traditions College of Chinese Medical Arts",
+          "frame position": 2551,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455257",
+          "name": "Yeshiva of Machzikai Hadas",
+          "frame position": 2552,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455406",
+          "name": "Pacific Northwest University of Health Sciences",
+          "frame position": 2553,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455433",
+          "name": "The Chicago School of Professional Psychology at Irvine",
+          "frame position": 2554,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455664",
+          "name": "The Chicago School of Professional Psychology at Los Angeles",
+          "frame position": 2555,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455770",
+          "name": "Providence Christian College",
+          "frame position": 2556,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455813",
+          "name": "Pontifical John Paul II Institute for Studies on Marriage and Family",
+          "frame position": 2558,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455992",
+          "name": "Vermont College of Fine Arts",
+          "frame position": 2559,
+          "sector": "private",
+          "state": "VT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 283,
+      "trail": [
+        {
+          "unitid": "454227",
+          "name": "Chamberlain University-Illinois",
+          "frame position": 2539,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454236",
+          "name": "Chamberlain University-Ohio",
+          "frame position": 2540,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454245",
+          "name": "Chamberlain University-Arizona",
+          "frame position": 2541,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454582",
+          "name": "Ottawa University-Online",
+          "frame position": 2542,
+          "sector": "private",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454616",
+          "name": "Institute of Production and Recording",
+          "frame position": 2543,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454689",
+          "name": "Taft University System",
+          "frame position": 2544,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454786",
+          "name": "Laurus College",
+          "frame position": 2545,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454829",
+          "name": "Aspen University",
+          "frame position": 2546,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454838",
+          "name": "Institute of Taoist Education and Acupuncture",
+          "frame position": 2547,
+          "sector": "private",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454865",
+          "name": "Cambridge College of Healthcare & Technology",
+          "frame position": 2549,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455099",
+          "name": "Urshan Graduate School of Theology",
+          "frame position": 2550,
+          "sector": "private",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455178",
+          "name": "Daoist Traditions College of Chinese Medical Arts",
+          "frame position": 2551,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455257",
+          "name": "Yeshiva of Machzikai Hadas",
+          "frame position": 2552,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455406",
+          "name": "Pacific Northwest University of Health Sciences",
+          "frame position": 2553,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455433",
+          "name": "The Chicago School of Professional Psychology at Irvine",
+          "frame position": 2554,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455664",
+          "name": "The Chicago School of Professional Psychology at Los Angeles",
+          "frame position": 2555,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455770",
+          "name": "Providence Christian College",
+          "frame position": 2556,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455813",
+          "name": "Pontifical John Paul II Institute for Studies on Marriage and Family",
+          "frame position": 2558,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455992",
+          "name": "Vermont College of Fine Arts",
+          "frame position": 2559,
+          "sector": "private",
+          "state": "VT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456481",
+          "name": "Polytechnic University of Puerto Rico-Miami",
+          "frame position": 2560,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456490",
+          "name": "Polytechnic University of Puerto Rico-Orlando",
+          "frame position": 2561,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456542",
+          "name": "Geisinger Commonwealth School of Medicine",
+          "frame position": 2562,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456621",
+          "name": "Strayer University-West Virginia",
+          "frame position": 2563,
+          "sector": "forprofit",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456959",
+          "name": "University of Minnesota-Rochester",
+          "frame position": 2564,
+          "sector": "public",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457022",
+          "name": "Herzing University-Toledo",
+          "frame position": 2565,
+          "sector": "private",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457129",
+          "name": "Chamberlain University-Florida",
+          "frame position": 2567,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 284,
+      "trail": [
+        {
+          "unitid": "454856",
+          "name": "Denver College of Nursing",
+          "frame position": 2548,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "454865",
+          "name": "Cambridge College of Healthcare & Technology",
+          "frame position": 2549,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455099",
+          "name": "Urshan Graduate School of Theology",
+          "frame position": 2550,
+          "sector": "private",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455178",
+          "name": "Daoist Traditions College of Chinese Medical Arts",
+          "frame position": 2551,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455257",
+          "name": "Yeshiva of Machzikai Hadas",
+          "frame position": 2552,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455406",
+          "name": "Pacific Northwest University of Health Sciences",
+          "frame position": 2553,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455433",
+          "name": "The Chicago School of Professional Psychology at Irvine",
+          "frame position": 2554,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455664",
+          "name": "The Chicago School of Professional Psychology at Los Angeles",
+          "frame position": 2555,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455770",
+          "name": "Providence Christian College",
+          "frame position": 2556,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455813",
+          "name": "Pontifical John Paul II Institute for Studies on Marriage and Family",
+          "frame position": 2558,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455992",
+          "name": "Vermont College of Fine Arts",
+          "frame position": 2559,
+          "sector": "private",
+          "state": "VT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456481",
+          "name": "Polytechnic University of Puerto Rico-Miami",
+          "frame position": 2560,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456490",
+          "name": "Polytechnic University of Puerto Rico-Orlando",
+          "frame position": 2561,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456542",
+          "name": "Geisinger Commonwealth School of Medicine",
+          "frame position": 2562,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456621",
+          "name": "Strayer University-West Virginia",
+          "frame position": 2563,
+          "sector": "forprofit",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456959",
+          "name": "University of Minnesota-Rochester",
+          "frame position": 2564,
+          "sector": "public",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457022",
+          "name": "Herzing University-Toledo",
+          "frame position": 2565,
+          "sector": "private",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457129",
+          "name": "Chamberlain University-Florida",
+          "frame position": 2567,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457226",
+          "name": "Horizon University",
+          "frame position": 2568,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457271",
+          "name": "Academy for Jewish Religion-California",
+          "frame position": 2569,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457299",
+          "name": "Angeles College",
+          "frame position": 2570,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457402",
+          "name": "University of Fort Lauderdale",
+          "frame position": 2571,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457484",
+          "name": "Pacific Rim Christian University",
+          "frame position": 2572,
+          "sector": "private",
+          "state": "HI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457527",
+          "name": "Ambria College of Nursing",
+          "frame position": 2573,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457688",
+          "name": "American Business and Technology University",
+          "frame position": 2574,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458113",
+          "name": "Bethel College",
+          "frame position": 2576,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 285,
+      "trail": [
+        {
+          "unitid": "455804",
+          "name": "Institute of World Politics",
+          "frame position": 2557,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455813",
+          "name": "Pontifical John Paul II Institute for Studies on Marriage and Family",
+          "frame position": 2558,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "455992",
+          "name": "Vermont College of Fine Arts",
+          "frame position": 2559,
+          "sector": "private",
+          "state": "VT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456481",
+          "name": "Polytechnic University of Puerto Rico-Miami",
+          "frame position": 2560,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456490",
+          "name": "Polytechnic University of Puerto Rico-Orlando",
+          "frame position": 2561,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456542",
+          "name": "Geisinger Commonwealth School of Medicine",
+          "frame position": 2562,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456621",
+          "name": "Strayer University-West Virginia",
+          "frame position": 2563,
+          "sector": "forprofit",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "456959",
+          "name": "University of Minnesota-Rochester",
+          "frame position": 2564,
+          "sector": "public",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457022",
+          "name": "Herzing University-Toledo",
+          "frame position": 2565,
+          "sector": "private",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457129",
+          "name": "Chamberlain University-Florida",
+          "frame position": 2567,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457226",
+          "name": "Horizon University",
+          "frame position": 2568,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457271",
+          "name": "Academy for Jewish Religion-California",
+          "frame position": 2569,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457299",
+          "name": "Angeles College",
+          "frame position": 2570,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457402",
+          "name": "University of Fort Lauderdale",
+          "frame position": 2571,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457484",
+          "name": "Pacific Rim Christian University",
+          "frame position": 2572,
+          "sector": "private",
+          "state": "HI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457527",
+          "name": "Ambria College of Nursing",
+          "frame position": 2573,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457688",
+          "name": "American Business and Technology University",
+          "frame position": 2574,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458113",
+          "name": "Bethel College",
+          "frame position": 2576,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458210",
+          "name": "West Coast University-Orange County",
+          "frame position": 2577,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458229",
+          "name": "West Coast University-Ontario",
+          "frame position": 2578,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458496",
+          "name": "The Art Institute of Virginia Beach",
+          "frame position": 2579,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458502",
+          "name": "Bryant & Stratton College-Bayshore",
+          "frame position": 2580,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458575",
+          "name": "Zaytuna College",
+          "frame position": 2581,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458885",
+          "name": "Strayer University-Arkansas",
+          "frame position": 2582,
+          "sector": "forprofit",
+          "state": "AR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458919",
+          "name": "Strayer University-Georgia",
+          "frame position": 2583,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458964",
+          "name": "Strayer University-South Carolina",
+          "frame position": 2585,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 286,
+      "trail": [
+        {
+          "unitid": "457086",
+          "name": "Homestead Schools",
+          "frame position": 2566,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457129",
+          "name": "Chamberlain University-Florida",
+          "frame position": 2567,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457226",
+          "name": "Horizon University",
+          "frame position": 2568,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457271",
+          "name": "Academy for Jewish Religion-California",
+          "frame position": 2569,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457299",
+          "name": "Angeles College",
+          "frame position": 2570,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457402",
+          "name": "University of Fort Lauderdale",
+          "frame position": 2571,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457484",
+          "name": "Pacific Rim Christian University",
+          "frame position": 2572,
+          "sector": "private",
+          "state": "HI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457527",
+          "name": "Ambria College of Nursing",
+          "frame position": 2573,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "457688",
+          "name": "American Business and Technology University",
+          "frame position": 2574,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458113",
+          "name": "Bethel College",
+          "frame position": 2576,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458210",
+          "name": "West Coast University-Orange County",
+          "frame position": 2577,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458229",
+          "name": "West Coast University-Ontario",
+          "frame position": 2578,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458496",
+          "name": "The Art Institute of Virginia Beach",
+          "frame position": 2579,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458502",
+          "name": "Bryant & Stratton College-Bayshore",
+          "frame position": 2580,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458575",
+          "name": "Zaytuna College",
+          "frame position": 2581,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458885",
+          "name": "Strayer University-Arkansas",
+          "frame position": 2582,
+          "sector": "forprofit",
+          "state": "AR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458919",
+          "name": "Strayer University-Georgia",
+          "frame position": 2583,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458964",
+          "name": "Strayer University-South Carolina",
+          "frame position": 2585,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458973",
+          "name": "Strayer University-Texas",
+          "frame position": 2586,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458982",
+          "name": "The Art Institute of San Antonio",
+          "frame position": 2587,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459082",
+          "name": "Virginia Polytechnic Institute & State University",
+          "frame position": 2588,
+          "sector": "public",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459107",
+          "name": "Bryant & Stratton College-Hampton",
+          "frame position": 2589,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459204",
+          "name": "Unitek College",
+          "frame position": 2590,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459213",
+          "name": "Gurnick Academy of Medical Arts",
+          "frame position": 2591,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459259",
+          "name": "South University-Richmond",
+          "frame position": 2592,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459417",
+          "name": "Compass College of Cinematic Arts",
+          "frame position": 2594,
+          "sector": "private",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 287,
+      "trail": [
+        {
+          "unitid": "457697",
+          "name": "City Vision University",
+          "frame position": 2575,
+          "sector": "private",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458113",
+          "name": "Bethel College",
+          "frame position": 2576,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458210",
+          "name": "West Coast University-Orange County",
+          "frame position": 2577,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458229",
+          "name": "West Coast University-Ontario",
+          "frame position": 2578,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458496",
+          "name": "The Art Institute of Virginia Beach",
+          "frame position": 2579,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458502",
+          "name": "Bryant & Stratton College-Bayshore",
+          "frame position": 2580,
+          "sector": "forprofit",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458575",
+          "name": "Zaytuna College",
+          "frame position": 2581,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458885",
+          "name": "Strayer University-Arkansas",
+          "frame position": 2582,
+          "sector": "forprofit",
+          "state": "AR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458919",
+          "name": "Strayer University-Georgia",
+          "frame position": 2583,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458964",
+          "name": "Strayer University-South Carolina",
+          "frame position": 2585,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458973",
+          "name": "Strayer University-Texas",
+          "frame position": 2586,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458982",
+          "name": "The Art Institute of San Antonio",
+          "frame position": 2587,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459082",
+          "name": "Virginia Polytechnic Institute & State University",
+          "frame position": 2588,
+          "sector": "public",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459107",
+          "name": "Bryant & Stratton College-Hampton",
+          "frame position": 2589,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459204",
+          "name": "Unitek College",
+          "frame position": 2590,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459213",
+          "name": "Gurnick Academy of Medical Arts",
+          "frame position": 2591,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459259",
+          "name": "South University-Richmond",
+          "frame position": 2592,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459417",
+          "name": "Compass College of Cinematic Arts",
+          "frame position": 2594,
+          "sector": "private",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459727",
+          "name": "Touro University Worldwide",
+          "frame position": 2595,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459736",
+          "name": "Touro University California",
+          "frame position": 2596,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459745",
+          "name": "The Chicago School of Professional Psychology at Washington DC",
+          "frame position": 2597,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459824",
+          "name": "Touro University Nevada",
+          "frame position": 2598,
+          "sector": "private",
+          "state": "NV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459842",
+          "name": "Herzing University-Kenosha",
+          "frame position": 2599,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459851",
+          "name": "Herzing University-Brookfield",
+          "frame position": 2600,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459949",
+          "name": "Texas A&M University-San Antonio",
+          "frame position": 2601,
+          "sector": "public",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460075",
+          "name": "California University of Management and Sciences",
+          "frame position": 2603,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 288,
+      "trail": [
+        {
+          "unitid": "458955",
+          "name": "Strayer University-Mississippi",
+          "frame position": 2584,
+          "sector": "forprofit",
+          "state": "MS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458964",
+          "name": "Strayer University-South Carolina",
+          "frame position": 2585,
+          "sector": "forprofit",
+          "state": "SC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458973",
+          "name": "Strayer University-Texas",
+          "frame position": 2586,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "458982",
+          "name": "The Art Institute of San Antonio",
+          "frame position": 2587,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459082",
+          "name": "Virginia Polytechnic Institute & State University",
+          "frame position": 2588,
+          "sector": "public",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459107",
+          "name": "Bryant & Stratton College-Hampton",
+          "frame position": 2589,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459204",
+          "name": "Unitek College",
+          "frame position": 2590,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459213",
+          "name": "Gurnick Academy of Medical Arts",
+          "frame position": 2591,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459259",
+          "name": "South University-Richmond",
+          "frame position": 2592,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459417",
+          "name": "Compass College of Cinematic Arts",
+          "frame position": 2594,
+          "sector": "private",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459727",
+          "name": "Touro University Worldwide",
+          "frame position": 2595,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459736",
+          "name": "Touro University California",
+          "frame position": 2596,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459745",
+          "name": "The Chicago School of Professional Psychology at Washington DC",
+          "frame position": 2597,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459824",
+          "name": "Touro University Nevada",
+          "frame position": 2598,
+          "sector": "private",
+          "state": "NV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459842",
+          "name": "Herzing University-Kenosha",
+          "frame position": 2599,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459851",
+          "name": "Herzing University-Brookfield",
+          "frame position": 2600,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459949",
+          "name": "Texas A&M University-San Antonio",
+          "frame position": 2601,
+          "sector": "public",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460075",
+          "name": "California University of Management and Sciences",
+          "frame position": 2603,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460349",
+          "name": "Johnson & Wales University-Online",
+          "frame position": 2604,
+          "sector": "private",
+          "state": "RI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460376",
+          "name": "Fairfax University of America",
+          "frame position": 2605,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460738",
+          "name": "American Sentinel University",
+          "frame position": 2606,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460783",
+          "name": "Remington College-Heathrow Campus",
+          "frame position": 2607,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460871",
+          "name": "Chamberlain University-Virginia",
+          "frame position": 2608,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460899",
+          "name": "Stevens-Henager College",
+          "frame position": 2609,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461023",
+          "name": "National Paralegal College",
+          "frame position": 2610,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461120",
+          "name": "Omega Graduate School",
+          "frame position": 2612,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 289,
+      "trail": [
+        {
+          "unitid": "459268",
+          "name": "South University-Virginia Beach",
+          "frame position": 2593,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459417",
+          "name": "Compass College of Cinematic Arts",
+          "frame position": 2594,
+          "sector": "private",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459727",
+          "name": "Touro University Worldwide",
+          "frame position": 2595,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459736",
+          "name": "Touro University California",
+          "frame position": 2596,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459745",
+          "name": "The Chicago School of Professional Psychology at Washington DC",
+          "frame position": 2597,
+          "sector": "private",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459824",
+          "name": "Touro University Nevada",
+          "frame position": 2598,
+          "sector": "private",
+          "state": "NV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459842",
+          "name": "Herzing University-Kenosha",
+          "frame position": 2599,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459851",
+          "name": "Herzing University-Brookfield",
+          "frame position": 2600,
+          "sector": "private",
+          "state": "WI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "459949",
+          "name": "Texas A&M University-San Antonio",
+          "frame position": 2601,
+          "sector": "public",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460075",
+          "name": "California University of Management and Sciences",
+          "frame position": 2603,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460349",
+          "name": "Johnson & Wales University-Online",
+          "frame position": 2604,
+          "sector": "private",
+          "state": "RI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460376",
+          "name": "Fairfax University of America",
+          "frame position": 2605,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460738",
+          "name": "American Sentinel University",
+          "frame position": 2606,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460783",
+          "name": "Remington College-Heathrow Campus",
+          "frame position": 2607,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460871",
+          "name": "Chamberlain University-Virginia",
+          "frame position": 2608,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460899",
+          "name": "Stevens-Henager College",
+          "frame position": 2609,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461023",
+          "name": "National Paralegal College",
+          "frame position": 2610,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461120",
+          "name": "Omega Graduate School",
+          "frame position": 2612,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461139",
+          "name": "Jung Tao School of Classical Chinese Medicine",
+          "frame position": 2613,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461148",
+          "name": "New York Film Academy",
+          "frame position": 2614,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461281",
+          "name": "Jose Maria Vargas University",
+          "frame position": 2615,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461485",
+          "name": "Shepherds Theological Seminary",
+          "frame position": 2616,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461528",
+          "name": "Grace College of Divinity",
+          "frame position": 2617,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461643",
+          "name": "Bergin University of Canine Studies",
+          "frame position": 2618,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461759",
+          "name": "Simmons College of Kentucky",
+          "frame position": 2619,
+          "sector": "private",
+          "state": "KY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461847",
+          "name": "Keser Torah-Mayan Hatalmud",
+          "frame position": 2621,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 290,
+      "trail": [
+        {
+          "unitid": "459994",
+          "name": "Strayer University-Global Region",
+          "frame position": 2602,
+          "sector": "forprofit",
+          "state": "DC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460075",
+          "name": "California University of Management and Sciences",
+          "frame position": 2603,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460349",
+          "name": "Johnson & Wales University-Online",
+          "frame position": 2604,
+          "sector": "private",
+          "state": "RI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460376",
+          "name": "Fairfax University of America",
+          "frame position": 2605,
+          "sector": "private",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460738",
+          "name": "American Sentinel University",
+          "frame position": 2606,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460783",
+          "name": "Remington College-Heathrow Campus",
+          "frame position": 2607,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460871",
+          "name": "Chamberlain University-Virginia",
+          "frame position": 2608,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "460899",
+          "name": "Stevens-Henager College",
+          "frame position": 2609,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461023",
+          "name": "National Paralegal College",
+          "frame position": 2610,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461120",
+          "name": "Omega Graduate School",
+          "frame position": 2612,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461139",
+          "name": "Jung Tao School of Classical Chinese Medicine",
+          "frame position": 2613,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461148",
+          "name": "New York Film Academy",
+          "frame position": 2614,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461281",
+          "name": "Jose Maria Vargas University",
+          "frame position": 2615,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461485",
+          "name": "Shepherds Theological Seminary",
+          "frame position": 2616,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461528",
+          "name": "Grace College of Divinity",
+          "frame position": 2617,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461643",
+          "name": "Bergin University of Canine Studies",
+          "frame position": 2618,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461759",
+          "name": "Simmons College of Kentucky",
+          "frame position": 2619,
+          "sector": "private",
+          "state": "KY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461847",
+          "name": "Keser Torah-Mayan Hatalmud",
+          "frame position": 2621,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461883",
+          "name": "Millennia Atlantic University",
+          "frame position": 2622,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462044",
+          "name": "Institute for Doctoral Studies in the Visual Arts",
+          "frame position": 2623,
+          "sector": "private",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462354",
+          "name": "John Paul the Great Catholic University",
+          "frame position": 2624,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "463056",
+          "name": "University of Connecticut-Hartford Campus",
+          "frame position": 2625,
+          "sector": "public",
+          "state": "CT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "464226",
+          "name": "Ottawa University-Surprise",
+          "frame position": 2626,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "465812",
+          "name": "Independence University",
+          "frame position": 2627,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466152",
+          "name": "National American University-Tulsa",
+          "frame position": 2628,
+          "sector": "forprofit",
+          "state": "OK",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466189",
+          "name": "National American University-Colorado Springs South",
+          "frame position": 2630,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 291,
+      "trail": [
+        {
+          "unitid": "461032",
+          "name": "Carolina College of Biblical Studies",
+          "frame position": 2611,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461120",
+          "name": "Omega Graduate School",
+          "frame position": 2612,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461139",
+          "name": "Jung Tao School of Classical Chinese Medicine",
+          "frame position": 2613,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461148",
+          "name": "New York Film Academy",
+          "frame position": 2614,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461281",
+          "name": "Jose Maria Vargas University",
+          "frame position": 2615,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461485",
+          "name": "Shepherds Theological Seminary",
+          "frame position": 2616,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461528",
+          "name": "Grace College of Divinity",
+          "frame position": 2617,
+          "sector": "private",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461643",
+          "name": "Bergin University of Canine Studies",
+          "frame position": 2618,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461759",
+          "name": "Simmons College of Kentucky",
+          "frame position": 2619,
+          "sector": "private",
+          "state": "KY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461847",
+          "name": "Keser Torah-Mayan Hatalmud",
+          "frame position": 2621,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461883",
+          "name": "Millennia Atlantic University",
+          "frame position": 2622,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462044",
+          "name": "Institute for Doctoral Studies in the Visual Arts",
+          "frame position": 2623,
+          "sector": "private",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462354",
+          "name": "John Paul the Great Catholic University",
+          "frame position": 2624,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "463056",
+          "name": "University of Connecticut-Hartford Campus",
+          "frame position": 2625,
+          "sector": "public",
+          "state": "CT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "464226",
+          "name": "Ottawa University-Surprise",
+          "frame position": 2626,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "465812",
+          "name": "Independence University",
+          "frame position": 2627,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466152",
+          "name": "National American University-Tulsa",
+          "frame position": 2628,
+          "sector": "forprofit",
+          "state": "OK",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466189",
+          "name": "National American University-Colorado Springs South",
+          "frame position": 2630,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466921",
+          "name": "Chamberlain University-Missouri",
+          "frame position": 2631,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466930",
+          "name": "Chamberlain University-Texas",
+          "frame position": 2632,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "468024",
+          "name": "South University-Novi",
+          "frame position": 2633,
+          "sector": "forprofit",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "469416",
+          "name": "Dewey University-Manati",
+          "frame position": 2634,
+          "sector": "private",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474863",
+          "name": "Los Angeles Pacific University",
+          "frame position": 2635,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474890",
+          "name": "CollegeAmerica-Phoenix",
+          "frame position": 2636,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474906",
+          "name": "Stevens-Henager College",
+          "frame position": 2637,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475121",
+          "name": "South University-Savannah Online",
+          "frame position": 2639,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 292,
+      "trail": [
+        {
+          "unitid": "461795",
+          "name": "North American University",
+          "frame position": 2620,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461847",
+          "name": "Keser Torah-Mayan Hatalmud",
+          "frame position": 2621,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "461883",
+          "name": "Millennia Atlantic University",
+          "frame position": 2622,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462044",
+          "name": "Institute for Doctoral Studies in the Visual Arts",
+          "frame position": 2623,
+          "sector": "private",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "462354",
+          "name": "John Paul the Great Catholic University",
+          "frame position": 2624,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "463056",
+          "name": "University of Connecticut-Hartford Campus",
+          "frame position": 2625,
+          "sector": "public",
+          "state": "CT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "464226",
+          "name": "Ottawa University-Surprise",
+          "frame position": 2626,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "465812",
+          "name": "Independence University",
+          "frame position": 2627,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466152",
+          "name": "National American University-Tulsa",
+          "frame position": 2628,
+          "sector": "forprofit",
+          "state": "OK",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466189",
+          "name": "National American University-Colorado Springs South",
+          "frame position": 2630,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466921",
+          "name": "Chamberlain University-Missouri",
+          "frame position": 2631,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466930",
+          "name": "Chamberlain University-Texas",
+          "frame position": 2632,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "468024",
+          "name": "South University-Novi",
+          "frame position": 2633,
+          "sector": "forprofit",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "469416",
+          "name": "Dewey University-Manati",
+          "frame position": 2634,
+          "sector": "private",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474863",
+          "name": "Los Angeles Pacific University",
+          "frame position": 2635,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474890",
+          "name": "CollegeAmerica-Phoenix",
+          "frame position": 2636,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474906",
+          "name": "Stevens-Henager College",
+          "frame position": 2637,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475121",
+          "name": "South University-Savannah Online",
+          "frame position": 2639,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475200",
+          "name": "Whitworth University-Adult Degree Programs",
+          "frame position": 2640,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475228",
+          "name": "The Santa Barbara and Ventura Colleges of Law at Santa Barbara",
+          "frame position": 2641,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475237",
+          "name": "The University of America",
+          "frame position": 2642,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475273",
+          "name": "Springfield College-Regional, Online, and Continuing Education",
+          "frame position": 2643,
+          "sector": "private",
+          "state": "MA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475398",
+          "name": "Catholic Distance University",
+          "frame position": 2644,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475495",
+          "name": "Rocky Mountain University of Health Professions",
+          "frame position": 2645,
+          "sector": "forprofit",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475510",
+          "name": "Christie's Education",
+          "frame position": 2646,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475635",
+          "name": "Beverly Hills Design Institute",
+          "frame position": 2648,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 293,
+      "trail": [
+        {
+          "unitid": "466161",
+          "name": "National American University-Centennial",
+          "frame position": 2629,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466189",
+          "name": "National American University-Colorado Springs South",
+          "frame position": 2630,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466921",
+          "name": "Chamberlain University-Missouri",
+          "frame position": 2631,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "466930",
+          "name": "Chamberlain University-Texas",
+          "frame position": 2632,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "468024",
+          "name": "South University-Novi",
+          "frame position": 2633,
+          "sector": "forprofit",
+          "state": "MI",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "469416",
+          "name": "Dewey University-Manati",
+          "frame position": 2634,
+          "sector": "private",
+          "state": "PR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474863",
+          "name": "Los Angeles Pacific University",
+          "frame position": 2635,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474890",
+          "name": "CollegeAmerica-Phoenix",
+          "frame position": 2636,
+          "sector": "private",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "474906",
+          "name": "Stevens-Henager College",
+          "frame position": 2637,
+          "sector": "private",
+          "state": "ID",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475121",
+          "name": "South University-Savannah Online",
+          "frame position": 2639,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475200",
+          "name": "Whitworth University-Adult Degree Programs",
+          "frame position": 2640,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475228",
+          "name": "The Santa Barbara and Ventura Colleges of Law at Santa Barbara",
+          "frame position": 2641,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475237",
+          "name": "The University of America",
+          "frame position": 2642,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475273",
+          "name": "Springfield College-Regional, Online, and Continuing Education",
+          "frame position": 2643,
+          "sector": "private",
+          "state": "MA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475398",
+          "name": "Catholic Distance University",
+          "frame position": 2644,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475495",
+          "name": "Rocky Mountain University of Health Professions",
+          "frame position": 2645,
+          "sector": "forprofit",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475510",
+          "name": "Christie's Education",
+          "frame position": 2646,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475635",
+          "name": "Beverly Hills Design Institute",
+          "frame position": 2648,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475699",
+          "name": "Bryant & Stratton College-Akron",
+          "frame position": 2649,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475732",
+          "name": "Chamberlain University-Georgia",
+          "frame position": 2650,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475741",
+          "name": "Chamberlain University-Indiana",
+          "frame position": 2651,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476595",
+          "name": "Medical Allied Career Center",
+          "frame position": 2652,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476601",
+          "name": "Bais HaMedrash and Mesivta of Baltimore",
+          "frame position": 2653,
+          "sector": "private",
+          "state": "MD",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476692",
+          "name": "Yeshiva Gedolah Zichron Leyma",
+          "frame position": 2654,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476717",
+          "name": "Be'er Yaakov Talmudic Seminary",
+          "frame position": 2655,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477039",
+          "name": "West Coast University-Dallas",
+          "frame position": 2657,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 294,
+      "trail": [
+        {
+          "unitid": "475033",
+          "name": "Relay Graduate School of Education",
+          "frame position": 2638,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475121",
+          "name": "South University-Savannah Online",
+          "frame position": 2639,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475200",
+          "name": "Whitworth University-Adult Degree Programs",
+          "frame position": 2640,
+          "sector": "private",
+          "state": "WA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475228",
+          "name": "The Santa Barbara and Ventura Colleges of Law at Santa Barbara",
+          "frame position": 2641,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475237",
+          "name": "The University of America",
+          "frame position": 2642,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475273",
+          "name": "Springfield College-Regional, Online, and Continuing Education",
+          "frame position": 2643,
+          "sector": "private",
+          "state": "MA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475398",
+          "name": "Catholic Distance University",
+          "frame position": 2644,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475495",
+          "name": "Rocky Mountain University of Health Professions",
+          "frame position": 2645,
+          "sector": "forprofit",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475510",
+          "name": "Christie's Education",
+          "frame position": 2646,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475635",
+          "name": "Beverly Hills Design Institute",
+          "frame position": 2648,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475699",
+          "name": "Bryant & Stratton College-Akron",
+          "frame position": 2649,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475732",
+          "name": "Chamberlain University-Georgia",
+          "frame position": 2650,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475741",
+          "name": "Chamberlain University-Indiana",
+          "frame position": 2651,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476595",
+          "name": "Medical Allied Career Center",
+          "frame position": 2652,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476601",
+          "name": "Bais HaMedrash and Mesivta of Baltimore",
+          "frame position": 2653,
+          "sector": "private",
+          "state": "MD",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476692",
+          "name": "Yeshiva Gedolah Zichron Leyma",
+          "frame position": 2654,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476717",
+          "name": "Be'er Yaakov Talmudic Seminary",
+          "frame position": 2655,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477039",
+          "name": "West Coast University-Dallas",
+          "frame position": 2657,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477996",
+          "name": "National American University-Bellevue",
+          "frame position": 2658,
+          "sector": "forprofit",
+          "state": "NE",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478014",
+          "name": "National American University-Mesquite",
+          "frame position": 2659,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478634",
+          "name": "California College San Diego",
+          "frame position": 2660,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "479956",
+          "name": "Pennsylvania State University-World Campus",
+          "frame position": 2661,
+          "sector": "public",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480064",
+          "name": "Purdue University Global-Augusta",
+          "frame position": 2662,
+          "sector": "public",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480073",
+          "name": "South University-Austin",
+          "frame position": 2663,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480082",
+          "name": "South University-Cleveland",
+          "frame position": 2664,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480134",
+          "name": "Elizabethtown College School of Continuing and Professional Studies",
+          "frame position": 2666,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 295,
+      "trail": [
+        {
+          "unitid": "475608",
+          "name": "Criswell College",
+          "frame position": 2647,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475635",
+          "name": "Beverly Hills Design Institute",
+          "frame position": 2648,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475699",
+          "name": "Bryant & Stratton College-Akron",
+          "frame position": 2649,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475732",
+          "name": "Chamberlain University-Georgia",
+          "frame position": 2650,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "475741",
+          "name": "Chamberlain University-Indiana",
+          "frame position": 2651,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476595",
+          "name": "Medical Allied Career Center",
+          "frame position": 2652,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476601",
+          "name": "Bais HaMedrash and Mesivta of Baltimore",
+          "frame position": 2653,
+          "sector": "private",
+          "state": "MD",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476692",
+          "name": "Yeshiva Gedolah Zichron Leyma",
+          "frame position": 2654,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "476717",
+          "name": "Be'er Yaakov Talmudic Seminary",
+          "frame position": 2655,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477039",
+          "name": "West Coast University-Dallas",
+          "frame position": 2657,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477996",
+          "name": "National American University-Bellevue",
+          "frame position": 2658,
+          "sector": "forprofit",
+          "state": "NE",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478014",
+          "name": "National American University-Mesquite",
+          "frame position": 2659,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478634",
+          "name": "California College San Diego",
+          "frame position": 2660,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "479956",
+          "name": "Pennsylvania State University-World Campus",
+          "frame position": 2661,
+          "sector": "public",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480064",
+          "name": "Purdue University Global-Augusta",
+          "frame position": 2662,
+          "sector": "public",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480073",
+          "name": "South University-Austin",
+          "frame position": 2663,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480082",
+          "name": "South University-Cleveland",
+          "frame position": 2664,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480134",
+          "name": "Elizabethtown College School of Continuing and Professional Studies",
+          "frame position": 2666,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480198",
+          "name": "Warner Pacific University Professional and Graduate Studies",
+          "frame position": 2667,
+          "sector": "private",
+          "state": "OR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480204",
+          "name": "Platt College-Riverside",
+          "frame position": 2668,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480301",
+          "name": "Savannah Law School",
+          "frame position": 2669,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480499",
+          "name": "Shiloh University",
+          "frame position": 2670,
+          "sector": "private",
+          "state": "IA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480569",
+          "name": "Florida Institute of Technology-Online",
+          "frame position": 2671,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480657",
+          "name": "Rasmussen College-Kansas",
+          "frame position": 2672,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480781",
+          "name": "California Miramar University",
+          "frame position": 2673,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480912",
+          "name": "Gemini School of Visual Arts & Communication",
+          "frame position": 2675,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 296,
+      "trail": [
+        {
+          "unitid": "476975",
+          "name": "Colorado State University-Global Campus",
+          "frame position": 2656,
+          "sector": "public",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477039",
+          "name": "West Coast University-Dallas",
+          "frame position": 2657,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "477996",
+          "name": "National American University-Bellevue",
+          "frame position": 2658,
+          "sector": "forprofit",
+          "state": "NE",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478014",
+          "name": "National American University-Mesquite",
+          "frame position": 2659,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "478634",
+          "name": "California College San Diego",
+          "frame position": 2660,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "479956",
+          "name": "Pennsylvania State University-World Campus",
+          "frame position": 2661,
+          "sector": "public",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480064",
+          "name": "Purdue University Global-Augusta",
+          "frame position": 2662,
+          "sector": "public",
+          "state": "ME",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480073",
+          "name": "South University-Austin",
+          "frame position": 2663,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480082",
+          "name": "South University-Cleveland",
+          "frame position": 2664,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480134",
+          "name": "Elizabethtown College School of Continuing and Professional Studies",
+          "frame position": 2666,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480198",
+          "name": "Warner Pacific University Professional and Graduate Studies",
+          "frame position": 2667,
+          "sector": "private",
+          "state": "OR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480204",
+          "name": "Platt College-Riverside",
+          "frame position": 2668,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480301",
+          "name": "Savannah Law School",
+          "frame position": 2669,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480499",
+          "name": "Shiloh University",
+          "frame position": 2670,
+          "sector": "private",
+          "state": "IA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480569",
+          "name": "Florida Institute of Technology-Online",
+          "frame position": 2671,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480657",
+          "name": "Rasmussen College-Kansas",
+          "frame position": 2672,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480781",
+          "name": "California Miramar University",
+          "frame position": 2673,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480912",
+          "name": "Gemini School of Visual Arts & Communication",
+          "frame position": 2675,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480985",
+          "name": "Midwives College of Utah",
+          "frame position": 2676,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481030",
+          "name": "Future Generations University",
+          "frame position": 2677,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481058",
+          "name": "Grace Mission University",
+          "frame position": 2678,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481094",
+          "name": "Sotheby's Institute of Art-NY",
+          "frame position": 2679,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481225",
+          "name": "Mid-South Christian College",
+          "frame position": 2680,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481401",
+          "name": "Grace School of Theology",
+          "frame position": 2681,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481410",
+          "name": "Yeshiva Gedolah Kesser Torah",
+          "frame position": 2682,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481720",
+          "name": "South University-High Point",
+          "frame position": 2684,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 297,
+      "trail": [
+        {
+          "unitid": "480091",
+          "name": "Bryant & Stratton College-Online",
+          "frame position": 2665,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480134",
+          "name": "Elizabethtown College School of Continuing and Professional Studies",
+          "frame position": 2666,
+          "sector": "private",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480198",
+          "name": "Warner Pacific University Professional and Graduate Studies",
+          "frame position": 2667,
+          "sector": "private",
+          "state": "OR",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480204",
+          "name": "Platt College-Riverside",
+          "frame position": 2668,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480301",
+          "name": "Savannah Law School",
+          "frame position": 2669,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480499",
+          "name": "Shiloh University",
+          "frame position": 2670,
+          "sector": "private",
+          "state": "IA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480569",
+          "name": "Florida Institute of Technology-Online",
+          "frame position": 2671,
+          "sector": "private",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480657",
+          "name": "Rasmussen College-Kansas",
+          "frame position": 2672,
+          "sector": "forprofit",
+          "state": "KS",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480781",
+          "name": "California Miramar University",
+          "frame position": 2673,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480912",
+          "name": "Gemini School of Visual Arts & Communication",
+          "frame position": 2675,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480985",
+          "name": "Midwives College of Utah",
+          "frame position": 2676,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481030",
+          "name": "Future Generations University",
+          "frame position": 2677,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481058",
+          "name": "Grace Mission University",
+          "frame position": 2678,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481094",
+          "name": "Sotheby's Institute of Art-NY",
+          "frame position": 2679,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481225",
+          "name": "Mid-South Christian College",
+          "frame position": 2680,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481401",
+          "name": "Grace School of Theology",
+          "frame position": 2681,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481410",
+          "name": "Yeshiva Gedolah Kesser Torah",
+          "frame position": 2682,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481720",
+          "name": "South University-High Point",
+          "frame position": 2684,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482024",
+          "name": "College of Business and Technology-Miami Gardens",
+          "frame position": 2685,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482149",
+          "name": "Augusta University",
+          "frame position": 2686,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482158",
+          "name": "Middle Georgia State University",
+          "frame position": 2687,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482228",
+          "name": "Veritas Baptist College",
+          "frame position": 2688,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482325",
+          "name": "National American University-Georgetown",
+          "frame position": 2689,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482334",
+          "name": "National American University-Richardson",
+          "frame position": 2690,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482343",
+          "name": "National American University-Rochester",
+          "frame position": 2691,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482413",
+          "name": "DeVry College of New York",
+          "frame position": 2693,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 298,
+      "trail": [
+        {
+          "unitid": "480790",
+          "name": "Rocky Vista University",
+          "frame position": 2674,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480912",
+          "name": "Gemini School of Visual Arts & Communication",
+          "frame position": 2675,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "480985",
+          "name": "Midwives College of Utah",
+          "frame position": 2676,
+          "sector": "private",
+          "state": "UT",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481030",
+          "name": "Future Generations University",
+          "frame position": 2677,
+          "sector": "private",
+          "state": "WV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481058",
+          "name": "Grace Mission University",
+          "frame position": 2678,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481094",
+          "name": "Sotheby's Institute of Art-NY",
+          "frame position": 2679,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481225",
+          "name": "Mid-South Christian College",
+          "frame position": 2680,
+          "sector": "private",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481401",
+          "name": "Grace School of Theology",
+          "frame position": 2681,
+          "sector": "private",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481410",
+          "name": "Yeshiva Gedolah Kesser Torah",
+          "frame position": 2682,
+          "sector": "private",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481720",
+          "name": "South University-High Point",
+          "frame position": 2684,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482024",
+          "name": "College of Business and Technology-Miami Gardens",
+          "frame position": 2685,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482149",
+          "name": "Augusta University",
+          "frame position": 2686,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482158",
+          "name": "Middle Georgia State University",
+          "frame position": 2687,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482228",
+          "name": "Veritas Baptist College",
+          "frame position": 2688,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482325",
+          "name": "National American University-Georgetown",
+          "frame position": 2689,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482334",
+          "name": "National American University-Richardson",
+          "frame position": 2690,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482343",
+          "name": "National American University-Rochester",
+          "frame position": 2691,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482413",
+          "name": "DeVry College of New York",
+          "frame position": 2693,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482422",
+          "name": "DeVry University-Arizona",
+          "frame position": 2694,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482431",
+          "name": "DeVry University-California",
+          "frame position": 2695,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482440",
+          "name": "DeVry University-Colorado",
+          "frame position": 2696,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482459",
+          "name": "DeVry University-Florida",
+          "frame position": 2697,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482468",
+          "name": "DeVry University-Georgia",
+          "frame position": 2698,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482477",
+          "name": "DeVry University-Illinois",
+          "frame position": 2699,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482486",
+          "name": "DeVry University-Indiana",
+          "frame position": 2700,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482538",
+          "name": "DeVry University-Missouri",
+          "frame position": 2701,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 299,
+      "trail": [
+        {
+          "unitid": "481438",
+          "name": "Yeshiva Yesodei Hatorah",
+          "frame position": 2683,
+          "sector": "private",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "481720",
+          "name": "South University-High Point",
+          "frame position": 2684,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482024",
+          "name": "College of Business and Technology-Miami Gardens",
+          "frame position": 2685,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482149",
+          "name": "Augusta University",
+          "frame position": 2686,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482158",
+          "name": "Middle Georgia State University",
+          "frame position": 2687,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482228",
+          "name": "Veritas Baptist College",
+          "frame position": 2688,
+          "sector": "private",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482325",
+          "name": "National American University-Georgetown",
+          "frame position": 2689,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482334",
+          "name": "National American University-Richardson",
+          "frame position": 2690,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482343",
+          "name": "National American University-Rochester",
+          "frame position": 2691,
+          "sector": "forprofit",
+          "state": "MN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482413",
+          "name": "DeVry College of New York",
+          "frame position": 2693,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482422",
+          "name": "DeVry University-Arizona",
+          "frame position": 2694,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482431",
+          "name": "DeVry University-California",
+          "frame position": 2695,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482440",
+          "name": "DeVry University-Colorado",
+          "frame position": 2696,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482459",
+          "name": "DeVry University-Florida",
+          "frame position": 2697,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482468",
+          "name": "DeVry University-Georgia",
+          "frame position": 2698,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482477",
+          "name": "DeVry University-Illinois",
+          "frame position": 2699,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482486",
+          "name": "DeVry University-Indiana",
+          "frame position": 2700,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482538",
+          "name": "DeVry University-Missouri",
+          "frame position": 2701,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482547",
+          "name": "DeVry University-Nevada",
+          "frame position": 2702,
+          "sector": "forprofit",
+          "state": "NV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482556",
+          "name": "DeVry University-New Jersey",
+          "frame position": 2703,
+          "sector": "forprofit",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482565",
+          "name": "DeVry University-North Carolina",
+          "frame position": 2704,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482574",
+          "name": "DeVry University-Ohio",
+          "frame position": 2705,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482608",
+          "name": "DeVry University-Pennsylvania",
+          "frame position": 2706,
+          "sector": "forprofit",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482617",
+          "name": "DeVry University-Tennessee",
+          "frame position": 2707,
+          "sector": "forprofit",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482635",
+          "name": "DeVry University-Texas",
+          "frame position": 2708,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482653",
+          "name": "DeVry University-Virginia",
+          "frame position": 2709,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    },
+    {
+      "slot": 300,
+      "trail": [
+        {
+          "unitid": "482370",
+          "name": "National American University-Indianapolis",
+          "frame position": 2692,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482413",
+          "name": "DeVry College of New York",
+          "frame position": 2693,
+          "sector": "forprofit",
+          "state": "NY",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482422",
+          "name": "DeVry University-Arizona",
+          "frame position": 2694,
+          "sector": "forprofit",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482431",
+          "name": "DeVry University-California",
+          "frame position": 2695,
+          "sector": "forprofit",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482440",
+          "name": "DeVry University-Colorado",
+          "frame position": 2696,
+          "sector": "forprofit",
+          "state": "CO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482459",
+          "name": "DeVry University-Florida",
+          "frame position": 2697,
+          "sector": "forprofit",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482468",
+          "name": "DeVry University-Georgia",
+          "frame position": 2698,
+          "sector": "forprofit",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482477",
+          "name": "DeVry University-Illinois",
+          "frame position": 2699,
+          "sector": "forprofit",
+          "state": "IL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482486",
+          "name": "DeVry University-Indiana",
+          "frame position": 2700,
+          "sector": "forprofit",
+          "state": "IN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482538",
+          "name": "DeVry University-Missouri",
+          "frame position": 2701,
+          "sector": "forprofit",
+          "state": "MO",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482547",
+          "name": "DeVry University-Nevada",
+          "frame position": 2702,
+          "sector": "forprofit",
+          "state": "NV",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482556",
+          "name": "DeVry University-New Jersey",
+          "frame position": 2703,
+          "sector": "forprofit",
+          "state": "NJ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482565",
+          "name": "DeVry University-North Carolina",
+          "frame position": 2704,
+          "sector": "forprofit",
+          "state": "NC",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482574",
+          "name": "DeVry University-Ohio",
+          "frame position": 2705,
+          "sector": "forprofit",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482608",
+          "name": "DeVry University-Pennsylvania",
+          "frame position": 2706,
+          "sector": "forprofit",
+          "state": "PA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482617",
+          "name": "DeVry University-Tennessee",
+          "frame position": 2707,
+          "sector": "forprofit",
+          "state": "TN",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482635",
+          "name": "DeVry University-Texas",
+          "frame position": 2708,
+          "sector": "forprofit",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482653",
+          "name": "DeVry University-Virginia",
+          "frame position": 2709,
+          "sector": "forprofit",
+          "state": "VA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482680",
+          "name": "University of North Georgia",
+          "frame position": 2710,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482699",
+          "name": "South Georgia State College",
+          "frame position": 2711,
+          "sector": "public",
+          "state": "GA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482705",
+          "name": "Northeastern University Lifelong Learning Network",
+          "frame position": 2712,
+          "sector": "private",
+          "state": "MA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "482936",
+          "name": "Florida Polytechnic University",
+          "frame position": 2713,
+          "sector": "public",
+          "state": "FL",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "483018",
+          "name": "Antioch College",
+          "frame position": 2714,
+          "sector": "private",
+          "state": "OH",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "483036",
+          "name": "Texas A&M University-Central Texas",
+          "frame position": 2715,
+          "sector": "public",
+          "state": "TX",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "483124",
+          "name": "Arizona State University-Skysong",
+          "frame position": 2716,
+          "sector": "public",
+          "state": "AZ",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        },
+        {
+          "unitid": "483586",
+          "name": "California International Business University",
+          "frame position": 2717,
+          "sector": "private",
+          "state": "CA",
+          "status": "skipped",
+          "reason": "insufficient data: data check (insufficient enrollment data)"
+        }
+      ],
+      "unitid": null,
+      "status": "unfilled (all 25 backups used)"
+    }
+  ]
+}
