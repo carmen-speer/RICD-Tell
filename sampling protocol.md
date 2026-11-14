@@ -128,6 +128,27 @@ If E is below 10, the test cannot estimate sensitivity usefully. The result is r
 
 The confirmatory test is reported as passed only if E is at least 10, the lower bound of J's interval is above 0, S is at least 0.50, and F is at most 0.30. Precision is reported together with the sample's closure rate and the lift (precision divided by that rate); because the panel's closure rate (23 of 54) is far above the population's, a fall in precision relative to the panel is expected and is not on its own evidence for or against the classifier. No subset of the confirmatory sample (by sector, size or state) is reported as the headline result.
 
+## Critical-slowing-down comparator: flag rule
+
+This section was committed on 2026-11-14, after scoring finished and before any outcome was looked up, as trigger R4 requires. Nothing in it is changed after any outcome has been looked up.
+
+**Series.** The primary series is each institution's operating margin, (total revenue − total expenses) / total expenses, for fiscal years 2009-2019, built from the same finance values the pipeline parsed for that institution, on the same IPEDS form (per the second amendment). A secondary series, undergraduate enrollment from the same fixed College Scorecard file, is reported alongside it but plays no part in trigger R4.
+
+**Missing years.** The indicators are computed on the years present, with no interpolation. An institution needs at least 8 of the 11 years; otherwise the comparator is recorded as not computable for it.
+
+**Computation**, following Dakos et al. (2012), "Methods for detecting early warnings of critical transitions in time series illustrated using simulated ecological data," *PLoS ONE* 7(7): e41010:
+
+1. remove a straight-line trend fitted by least squares over the whole window;
+2. slide a 6-year window along the detrended series, one year at a time;
+3. in each window, compute the variance and the lag-1 autocorrelation;
+4. measure the trend of each indicator across the windows with Kendall's τ.
+
+**Flag.** An institution is flagged when both τ for variance and τ for lag-1 autocorrelation are greater than zero, that is, when both indicators rose across the window. This is the standard critical-slowing-down signature, with no threshold tuned to any outcome.
+
+**Comparison for R4.** J is computed for the comparator and for the tracker over the same institutions: the scored institutions for which the comparator is computable. If any scored institution is not computable, the tracker's J on the full scored set is also reported.
+
+**Stated limitation.** Eleven annual observations are very short for these indicators, which were developed for long series, so the comparator is expected to be noisy. That is a limitation of applying critical-slowing-down indicators to annual institutional data, stated here in advance; it is not a reason to change the comparator after outcomes are known.
+
 ## Draw log
 
 The draw is recorded in a log committed to this repository. For every institution the draw touches, the log records:
