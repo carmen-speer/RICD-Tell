@@ -99,7 +99,15 @@ jobs:
             echo "Nothing to commit."
           else
             git commit -m "v2 phase 2: training scores batch (no outcome looked up)"
-            git fetch origin main
-            git rebase origin/main
-            git push
+            # Up to five tries, so that a commit landing on main at the same
+            # moment does not throw away hours of scoring.
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            echo "Could not push after five tries. The shard results are saved as this run's artifacts; re-run only the merge job."
+            exit 1
           fi
