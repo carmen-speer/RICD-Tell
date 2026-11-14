@@ -35,8 +35,8 @@ prediction of an outcome -- is the more accurate description of what it
 does.
 
 **The full RICD manuscript (the complete, domain-independent theory) lives at
-[`docs/RICD 16.1 manuscript.docx`](<docs/RICD 16.1 manuscript.docx>)
-(also available as [`.tex`](<docs/RICD 16.1 manuscript.tex>)).**
+[`docs/RICD 16.3 manuscript.docx`](<docs/RICD 16.3 manuscript.docx>)
+(also available as [`.tex`](<docs/RICD 16.3 manuscript.tex>)).**
 Everything in this repository's code implements a real subset of that
 framework (Parts 6, 7, 8, and 10.5b specifically) against U.S. higher-education
 data; the manuscript itself is domain-independent and covers considerably more
@@ -972,7 +972,7 @@ data/
   confirmatory/draw log.csv     Every institution the confirmatory draw touched, and why each was kept or skipped
   confirmatory/draw slots.json  The 300 drawn institutions, with frame size, step size, source checksum, and 25 ordered backups per slot
 docs/
-  RICD 16.1 manuscript.docx, .tex    The full, domain-independent RICD theory
+  RICD 16.3 manuscript.docx, .tex    The full, domain-independent RICD theory
   index.html                      Public results dashboard (GitHub Pages)
   data/panel.json                  Validated 54-institution panel data
   data/live_scores.json            Real institutions scored live by score_institution.py / score_batch.py
