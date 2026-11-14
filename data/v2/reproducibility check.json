@@ -1,0 +1,491 @@
+{
+  "protocol": "sampling protocol v2.md, third amendment (cross-machine reproducibility)",
+  "written at (UTC)": "2026-11-14T23:40:41.935768+00:00",
+  "verdict": "passed",
+  "processors": [
+    "AMD EPYC 9V74 80-Core Processor",
+    "Intel(R) Xeon(R) 6975P-C"
+  ],
+  "settings": {
+    "NUMBA_CPU_NAME": "generic",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTENSOR_FLAGS": null,
+    "NUMBA_CACHE_DIR": null
+  },
+  "institutions": [
+    {
+      "unitid": "100654",
+      "name": "Alabama A & M University",
+      "replica a": {
+        "d_A_trend": -0.12769661428154272,
+        "d_A_final": 0.2820057559601616,
+        "delta_R_final": 0.8863755967400717,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.3757889616709624,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.12769661428154272,
+        "d_A_final": 0.2820057559601616,
+        "delta_R_final": 0.8863755967400717,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.3757889616709624,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "101116",
+      "name": "South University-Montgomery",
+      "replica a": {
+        "d_A_trend": -0.15850897032699623,
+        "d_A_final": 0.2710474468366016,
+        "delta_R_final": 1.0734597068731813,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.49678585354838745,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.15850897032699623,
+        "d_A_final": 0.2710474468366016,
+        "delta_R_final": 1.0734597068731813,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.49678585354838745,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "101675",
+      "name": "Miles College",
+      "replica a": {
+        "d_A_trend": -0.13979205328804278,
+        "d_A_final": 0.2830786254433562,
+        "delta_R_final": 1.070844075643696,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.48768072317828437,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.13979205328804278,
+        "d_A_final": 0.2830786254433562,
+        "delta_R_final": 1.070844075643696,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.48768072317828437,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "102270",
+      "name": "Stillman College",
+      "replica a": {
+        "d_A_trend": -0.13816417756965838,
+        "d_A_final": 0.2772821166859426,
+        "delta_R_final": 1.0402706922366631,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4717706399848154,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.13816417756965838,
+        "d_A_final": 0.2772821166859426,
+        "delta_R_final": 1.0402706922366631,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4717706399848154,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "102669",
+      "name": "Alaska Pacific University",
+      "replica a": {
+        "d_A_trend": -0.13732815855743197,
+        "d_A_final": 0.2633543786729891,
+        "delta_R_final": 0.94018209654277,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.4260905037330141,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "replica b": {
+        "d_A_trend": -0.13732815855743197,
+        "d_A_final": 0.2633543786729891,
+        "delta_R_final": 0.94018209654277,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.4260905037330141,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "105330",
+      "name": "Northern Arizona University",
+      "replica a": {
+        "d_A_trend": -0.16987524700416212,
+        "d_A_final": 0.2927838871937548,
+        "delta_R_final": 0.7103294464951334,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.3648199008769641,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.16987524700416212,
+        "d_A_final": 0.2927838871937548,
+        "delta_R_final": 0.7103294464951334,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.3648199008769641,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "106342",
+      "name": "Lyon College",
+      "replica a": {
+        "d_A_trend": -0.13288551424831596,
+        "d_A_final": 0.2735561326978032,
+        "delta_R_final": 0.8701632902322151,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.38275221762042566,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.13288551424831596,
+        "d_A_final": 0.2735561326978032,
+        "delta_R_final": 0.8701632902322151,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.38275221762042566,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "107044",
+      "name": "Harding University",
+      "replica a": {
+        "d_A_trend": -0.1162879491823095,
+        "d_A_final": 0.2875524230504267,
+        "delta_R_final": 0.6601320140603131,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.2844866971750402,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.1162879491823095,
+        "d_A_final": 0.2875524230504267,
+        "delta_R_final": 0.6601320140603131,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.2844866971750402,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "108092",
+      "name": "University of Arkansas-Fort Smith",
+      "replica a": {
+        "d_A_trend": -0.12405546501740194,
+        "d_A_final": 0.26284951901396864,
+        "delta_R_final": 0.9918982036180038,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.4305978933190851,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "replica b": {
+        "d_A_trend": -0.12405546501740194,
+        "d_A_final": 0.26284951901396864,
+        "delta_R_final": 0.9918982036180038,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.4305978933190851,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    },
+    {
+      "unitid": "110060",
+      "name": "Bethesda University",
+      "replica a": {
+        "d_A_trend": -0.13806241992659213,
+        "d_A_final": 0.2733256134819581,
+        "delta_R_final": 0.9058649358225728,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.4096509466282092,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "replica b": {
+        "d_A_trend": -0.13806241992659213,
+        "d_A_final": 0.2733256134819581,
+        "delta_R_final": 0.9058649358225728,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.4096509466282092,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "differences": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true
+    }
+  ],
+  "machines": {
+    "a": {
+      "cpu": "AMD EPYC 9V74 80-Core Processor",
+      "python": "3.11.18",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+      "environment variables": {
+        "NUMBA_CPU_NAME": "generic",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTENSOR_FLAGS": null,
+        "NUMBA_CACHE_DIR": null
+      },
+      "packages": [
+        "arviz==0.23.4",
+        "cachetools==6.2.6",
+        "certifi==2026.10.23",
+        "charset-normalizer==3.5.2",
+        "cloudpickle==3.1.2",
+        "cons==0.4.7",
+        "contourpy==1.3.3",
+        "cycler==0.12.1",
+        "etuples==0.3.10",
+        "filelock==4.2.10",
+        "fonttools==4.68.0",
+        "h5netcdf==1.8.3",
+        "h5py==3.16.0",
+        "idna==3.20",
+        "joblib==1.6.0",
+        "kiwisolver==1.5.1",
+        "llvmlite==0.47.0",
+        "logical-unification==0.4.7",
+        "markdown-it-py==4.3.0",
+        "matplotlib==3.11.2",
+        "mdurl==0.1.2",
+        "miniKanren==1.0.5",
+        "multipledispatch==1.0.0",
+        "narwhals==2.28.0",
+        "numba==0.65.1",
+        "numpy==2.4.6",
+        "packaging==26.3",
+        "pandas==3.1.1",
+        "pillow==13.0.0",
+        "platformdirs==4.14.5",
+        "Pygments==2.21.0",
+        "pymc==5.28.5",
+        "pyparsing==3.3.3",
+        "pytensor==2.38.3",
+        "python-dateutil==4.0.0",
+        "requests==2.34.2",
+        "rich==15.0.0",
+        "scikit-learn==1.9.1",
+        "scipy==1.17.1",
+        "threadpoolctl==3.8.0",
+        "toolz==1.2.0",
+        "typing_extensions==4.16.0",
+        "tzdata==2026.6",
+        "urllib3==2.8.0",
+        "xarray==2026.9.0",
+        "xarray-einstats==0.9.1"
+      ]
+    },
+    "b": {
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
+      "python": "3.11.18",
+      "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+      "environment variables": {
+        "NUMBA_CPU_NAME": "generic",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTENSOR_FLAGS": null,
+        "NUMBA_CACHE_DIR": null
+      },
+      "packages": [
+        "arviz==0.23.4",
+        "cachetools==6.2.6",
+        "certifi==2026.10.23",
+        "charset-normalizer==3.5.2",
+        "cloudpickle==3.1.2",
+        "cons==0.4.7",
+        "contourpy==1.3.3",
+        "cycler==0.12.1",
+        "etuples==0.3.10",
+        "filelock==4.2.10",
+        "fonttools==4.68.0",
+        "h5netcdf==1.8.3",
+        "h5py==3.16.0",
+        "idna==3.20",
+        "joblib==1.6.0",
+        "kiwisolver==1.5.1",
+        "llvmlite==0.47.0",
+        "logical-unification==0.4.7",
+        "markdown-it-py==4.3.0",
+        "matplotlib==3.11.2",
+        "mdurl==0.1.2",
+        "miniKanren==1.0.5",
+        "multipledispatch==1.0.0",
+        "narwhals==2.28.0",
+        "numba==0.65.1",
+        "numpy==2.4.6",
+        "packaging==26.3",
+        "pandas==3.1.1",
+        "pillow==13.0.0",
+        "platformdirs==4.14.5",
+        "Pygments==2.21.0",
+        "pymc==5.28.5",
+        "pyparsing==3.3.3",
+        "pytensor==2.38.3",
+        "python-dateutil==4.0.0",
+        "requests==2.34.2",
+        "rich==15.0.0",
+        "scikit-learn==1.9.1",
+        "scipy==1.17.1",
+        "threadpoolctl==3.8.0",
+        "toolz==1.2.0",
+        "typing_extensions==4.16.0",
+        "tzdata==2026.6",
+        "urllib3==2.8.0",
+        "xarray==2026.9.0",
+        "xarray-einstats==0.9.1"
+      ]
+    }
+  },
+  "earlier runs": []
+}
