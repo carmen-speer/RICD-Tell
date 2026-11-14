@@ -6,12 +6,16 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
 
 ## Contents
 
-- [`RICD 16.3 manuscript.docx`](<../RICD 16.3 manuscript.docx>)
-  (also [`RICD 16.3 manuscript.tex`](<../RICD 16.3 manuscript.tex>)) —
-  the full, domain-independent RICD theory. This repository's code
-  implements a real subset of it (Parts 6, 7, 8, and 10.5b specifically)
-  against U.S. higher-education data; the manuscript itself covers
-  considerably more than the tracker uses.
+- [`RICD 17.3 Spine.docx`](<../RICD 17.3 Spine.docx>)
+  (also [`RICD 17.3 Spine.tex`](<../RICD 17.3 Spine.tex>)) and
+  [`RICD 17.3 Catalog.docx`](<../RICD 17.3 Catalog.docx>)
+  (also [`RICD 17.3 Catalog.tex`](<../RICD 17.3 Catalog.tex>)) —
+  the full, domain-independent RICD theory, in two documents: the Spine
+  holds the core engine, and the Catalog of Mechanisms holds every
+  further mechanism, edge case and audit protocol, under the same section
+  numbers. This repository's code implements a real subset of it (Parts
+  6, 7, 8, and 10.5b specifically) against U.S. higher-education data;
+  the manuscript itself covers considerably more than the tracker uses.
 - [`index.html`](<../index.html>) — the public results dashboard, served via
   GitHub Pages at
   [carmen-speer.github.io/RICD-Tell](https://carmen-speer.github.io/RICD-Tell/).
