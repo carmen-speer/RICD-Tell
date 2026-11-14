@@ -1,0 +1,56 @@
+# Exact package versions for every run under "sampling protocol v2.md"
+# (third amendment). These are the versions GitHub Actions installed for
+# the first confirmatory test and for every phase 0 check, recorded by
+# pip freeze in data/v2/equivalence control.json, so pinning to them
+# changes nothing about the software those runs used; it only stops a
+# later run from silently installing something newer. Python is pinned
+# separately, to 3.11.18, in each v2 workflow.
+#
+# requirements.txt (with its looser minimum versions) is unchanged and
+# still used by the live dashboard's weekly re-scoring.
+arviz==0.23.4
+cachetools==6.2.6
+certifi==2026.10.23
+charset-normalizer==3.5.2
+cloudpickle==3.1.2
+cons==0.4.7
+contourpy==1.3.3
+cycler==0.12.1
+etuples==0.3.10
+filelock==4.2.10
+fonttools==4.68.0
+h5netcdf==1.8.3
+h5py==3.16.0
+idna==3.20
+joblib==1.6.0
+kiwisolver==1.5.1
+llvmlite==0.47.0
+logical-unification==0.4.7
+markdown-it-py==4.3.0
+matplotlib==3.11.2
+mdurl==0.1.2
+miniKanren==1.0.5
+multipledispatch==1.0.0
+narwhals==2.28.0
+numba==0.65.1
+numpy==2.4.6
+packaging==26.3
+pandas==3.1.1
+pillow==13.0.0
+platformdirs==4.14.5
+Pygments==2.21.0
+pymc==5.28.5
+pyparsing==3.3.3
+pytensor==2.38.3
+python-dateutil==4.0.0
+requests==2.34.2
+rich==15.0.0
+scikit-learn==1.9.1
+scipy==1.17.1
+threadpoolctl==3.8.0
+toolz==1.2.0
+typing_extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0
+xarray-einstats==0.9.1
+xarray==2026.9.0
