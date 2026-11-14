@@ -1,0 +1,3179 @@
+{
+  "protocol": "sampling protocol v2.md, phase 0 (equivalence check)",
+  "written at (UTC)": "2026-11-14T15:49:56.386264+00:00",
+  "passed": false,
+  "every value equals the committed seed-7 value exactly": false,
+  "finance files identical to the first test's (by SHA-256)": true,
+  "finance files not recorded by the first test": [],
+  "finance files that differ from the first test's": [],
+  "institutions": [
+    {
+      "slot": 1,
+      "unitid": "100654",
+      "name": "Alabama A & M University",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13145427853467523,
+          "v1 seeds 7, 101, 202": [
+            -0.1270653687391715,
+            -0.12886432565042827,
+            -0.12297600806602788
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2813114275026961,
+          "v1 seeds 7, 101, 202": [
+            0.26823515329651876,
+            0.2772572691906441,
+            0.282015942054398
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.9387881189251696,
+          "v1 seeds 7, 101, 202": [
+            0.9752736778580856,
+            0.9413339009544148,
+            0.941562423469208
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.26283135948948594,
+          "v1 seeds 7, 101, 202": [
+            0.26283135948948594,
+            0.26283135948948594,
+            0.26283135948948594
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.39891358144891653,
+          "v1 seeds 7, 101, 202": [
+            0.41653518494330155,
+            0.40140113602171495,
+            0.4012700778514753
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 2,
+      "unitid": "101116",
+      "name": "South University-Montgomery",
+      "finance form sector": "forprofit",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1691947044201575,
+          "v1 seeds 7, 101, 202": [
+            -0.15576278810332728,
+            -0.1534334557947719,
+            -0.14920886400493338
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.26202596828982455,
+          "v1 seeds 7, 101, 202": [
+            0.2715183748891979,
+            0.28685623027357304,
+            0.26887611736372335
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 1.2368380011891713,
+          "v1 seeds 7, 101, 202": [
+            1.0004669520358802,
+            1.1231291336859994,
+            1.0884374093980431
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 1.0,
+          "v1 seeds 7, 101, 202": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.12403906452903135,
+          "v1 seeds 7, 101, 202": [
+            0.12403906452903135,
+            0.12403906452903135,
+            0.12403906452903135
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.594536236152275,
+          "v1 seeds 7, 101, 202": [
+            0.4632498870835867,
+            0.5187087377768927,
+            0.4971843383531885
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 3,
+      "unitid": "101675",
+      "name": "Miles College",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1375472566969212,
+          "v1 seeds 7, 101, 202": [
+            -0.1375472566969212,
+            -0.13627022493434,
+            -0.13881457905524297
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2737676768536254,
+          "v1 seeds 7, 101, 202": [
+            0.2737676768536254,
+            0.2882074879029318,
+            0.28780537776917714
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 1.029132772909399,
+          "v1 seeds 7, 101, 202": [
+            1.029132772909399,
+            0.9815446119882468,
+            1.0216703169610286
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.3200994076832874,
+          "v1 seeds 7, 101, 202": [
+            0.3200994076832874,
+            0.3200994076832874,
+            0.3200994076832874
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.4691024032266239,
+          "v1 seeds 7, 101, 202": [
+            0.4691024032266239,
+            0.447681432973566,
+            0.46557229789904214
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 8.818161489397413,
+          "v1 seeds 7, 101, 202": [
+            8.818161489397413,
+            8.818161489397413,
+            8.818161489397413
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 4,
+      "unitid": "102270",
+      "name": "Stillman College",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13959603509742557,
+          "v1 seeds 7, 101, 202": [
+            -0.14445136678097997,
+            -0.14016036671506715,
+            -0.13281408254901766
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2670835893057826,
+          "v1 seeds 7, 101, 202": [
+            0.2667257400343894,
+            0.2794141084612203,
+            0.28688032993758394
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 1.0441048840283147,
+          "v1 seeds 7, 101, 202": [
+            1.0104135223848836,
+            1.0273881056389083,
+            1.0406473153199742
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.4,
+          "v1 seeds 7, 101, 202": [
+            0.6,
+            0.6,
+            0.4
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.03569002512789715,
+          "v1 seeds 7, 101, 202": [
+            0.03569002512789715,
+            0.03569002512789715,
+            0.03569002512789715
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.4736589983227575,
+          "v1 seeds 7, 101, 202": [
+            0.4583584572790969,
+            0.465949882485846,
+            0.47199191967825466
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 9.583672178851483,
+          "v1 seeds 7, 101, 202": [
+            9.583672178851483,
+            9.583672178851483,
+            9.583672178851483
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 5,
+      "unitid": "102669",
+      "name": "Alaska Pacific University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1358550550679028,
+          "v1 seeds 7, 101, 202": [
+            -0.1358550550679028,
+            -0.1367407849414295,
+            -0.12699651882026536
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2693098828149092,
+          "v1 seeds 7, 101, 202": [
+            0.2693098828149092,
+            0.2805215601289267,
+            0.2781162565141052
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.8983146942387618,
+          "v1 seeds 7, 101, 202": [
+            0.8983146942387618,
+            0.9013484940689568,
+            0.8849209425633895
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.07812393762517245,
+          "v1 seeds 7, 101, 202": [
+            0.07812393762517245,
+            0.07812393762517245,
+            0.07812393762517245
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.4072667912311215,
+          "v1 seeds 7, 101, 202": [
+            0.4072667912311215,
+            0.4087197887047038,
+            0.40138197284720234
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 11.531363188144454,
+          "v1 seeds 7, 101, 202": [
+            11.531363188144454,
+            11.531363188144454,
+            11.531363188144454
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.3569136987859701,
+          "v1 seeds 7, 101, 202": [
+            0.3569136987859701,
+            0.3569136987859701,
+            0.3569136987859701
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 6,
+      "unitid": "105330",
+      "name": "Northern Arizona University",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.16598662836613648,
+          "v1 seeds 7, 101, 202": [
+            -0.17068728588696347,
+            -0.18120831099758167,
+            -0.19129592333437373
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.28775633471319995,
+          "v1 seeds 7, 101, 202": [
+            0.29081730081577123,
+            0.2750908684837716,
+            0.278510820779802
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.7117136155558974,
+          "v1 seeds 7, 101, 202": [
+            0.7307555512387673,
+            0.7284645954483845,
+            0.6811504684500153
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.23286884052160467,
+          "v1 seeds 7, 101, 202": [
+            0.23286884052160467,
+            0.23286884052160467,
+            0.23286884052160467
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.36728985400539704,
+          "v1 seeds 7, 101, 202": [
+            0.3798615025412345,
+            0.3897195448011011,
+            0.38020955911104526
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 7.966431193514864,
+          "v1 seeds 7, 101, 202": [
+            7.966431193514864,
+            7.966431193514864,
+            7.966431193514864
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 7,
+      "unitid": "106342",
+      "name": "Lyon College",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1325706564109289,
+          "v1 seeds 7, 101, 202": [
+            -0.1325706564109289,
+            -0.1259004716952663,
+            -0.1218834537092563
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2687235881887903,
+          "v1 seeds 7, 101, 202": [
+            0.2687235881887903,
+            0.28262563940978924,
+            0.2621144475411145
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.8865226908940861,
+          "v1 seeds 7, 101, 202": [
+            0.8865226908940861,
+            0.845354756440465,
+            0.8588224232052277
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.2171162609710409,
+          "v1 seeds 7, 101, 202": [
+            0.2171162609710409,
+            0.2171162609710409,
+            0.2171162609710409
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.3901290350011449,
+          "v1 seeds 7, 101, 202": [
+            0.3901290350011449,
+            0.37221757868743627,
+            0.3780795688299432
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 11.079632981140506,
+          "v1 seeds 7, 101, 202": [
+            11.079632981140506,
+            11.079632981140506,
+            11.079632981140506
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 8,
+      "unitid": "107044",
+      "name": "Harding University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.11848830992854326,
+          "v1 seeds 7, 101, 202": [
+            -0.11848830992854326,
+            -0.1268960814467377,
+            -0.11291022059207584
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2738195687674448,
+          "v1 seeds 7, 101, 202": [
+            0.2738195687674448,
+            0.2998122856580116,
+            0.2934371758313926
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.6427467064511184,
+          "v1 seeds 7, 101, 202": [
+            0.6427467064511184,
+            0.5666014060715027,
+            0.6143763300049384
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.11009980606830927,
+          "v1 seeds 7, 101, 202": [
+            0.11009980606830927,
+            0.11009980606830927,
+            0.11009980606830927
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.27687292654654083,
+          "v1 seeds 7, 101, 202": [
+            0.27687292654654083,
+            0.24221731571054522,
+            0.2637562032338502
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 9.80537738954529,
+          "v1 seeds 7, 101, 202": [
+            9.80537738954529,
+            9.80537738954529,
+            9.80537738954529
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 9,
+      "unitid": "108092",
+      "name": "University of Arkansas-Fort Smith",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.12842067294120219,
+          "v1 seeds 7, 101, 202": [
+            -0.12842067294120219,
+            -0.1313109991065527,
+            -0.12714226255968375
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.28098922880475047,
+          "v1 seeds 7, 101, 202": [
+            0.28098922880475047,
+            0.2823678504128449,
+            0.2974135921859305
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 1.0271574800153103,
+          "v1 seeds 7, 101, 202": [
+            1.0271574800153103,
+            1.0653492229148627,
+            1.0322514934508105
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.05427405256552453,
+          "v1 seeds 7, 101, 202": [
+            0.05427405256552453,
+            0.05427405256552453,
+            0.05427405256552453
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.44614885817308747,
+          "v1 seeds 7, 101, 202": [
+            0.44614885817308747,
+            0.4632175362756602,
+            0.44850666448545906
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 8.964313903626232,
+          "v1 seeds 7, 101, 202": [
+            8.964313903626232,
+            8.964313903626232,
+            8.964313903626232
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 10,
+      "unitid": "110060",
+      "name": "Bethesda University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13904700879038695,
+          "v1 seeds 7, 101, 202": [
+            -0.1374280774314025,
+            -0.14239158969818083,
+            -0.13411545029121436
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2801080511300989,
+          "v1 seeds 7, 101, 202": [
+            0.27491901379068473,
+            0.288834653534995,
+            0.2940424442115648
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.8813908495227876,
+          "v1 seeds 7, 101, 202": [
+            0.8828552440283767,
+            0.9321706250416798,
+            0.8567042732996147
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.6,
+          "v1 seeds 7, 101, 202": [
+            0.8,
+            0.6,
+            1.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.32226141603286645,
+          "v1 seeds 7, 101, 202": [
+            0.32226141603286645,
+            0.32226141603286645,
+            0.32226141603286645
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.3983974767256325,
+          "v1 seeds 7, 101, 202": [
+            0.39905111309131236,
+            0.42122947824476953,
+            0.38736562797743757
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.00033874496544179805,
+          "v1 seeds 7, 101, 202": [
+            0.00033874496544179805,
+            0.00033874496544179805,
+            0.00033874496544179805
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 11,
+      "unitid": "110413",
+      "name": "California Lutheran University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.12721618661031225,
+          "v1 seeds 7, 101, 202": [
+            -0.1250363333992996,
+            -0.1262018492156441,
+            -0.12461583392417536
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.26993068488116717,
+          "v1 seeds 7, 101, 202": [
+            0.2728360569512606,
+            0.2815362288171215,
+            0.28725982596318894
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.49110858362434034,
+          "v1 seeds 7, 101, 202": [
+            0.44802239906212415,
+            0.4971740828648589,
+            0.4849818175730136
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.08760770414096541,
+          "v1 seeds 7, 101, 202": [
+            0.08760770414096541,
+            0.08760770414096541,
+            0.08760770414096541
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.22519531105036755,
+          "v1 seeds 7, 101, 202": [
+            0.2060380312755356,
+            0.2276911515623838,
+            0.22219013798483053
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 9.523293068096734,
+          "v1 seeds 7, 101, 202": [
+            9.523293068096734,
+            9.523293068096734,
+            9.523293068096734
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 12,
+      "unitid": "110556",
+      "name": "California State University-Fresno",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13976716940894057,
+          "v1 seeds 7, 101, 202": [
+            -0.13715266133248555,
+            -0.1386864942646982,
+            -0.1305076684293705
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.26724350019244025,
+          "v1 seeds 7, 101, 202": [
+            0.26703678370736816,
+            0.2844706157555314,
+            0.2850934336003119
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 1.1838510799559954,
+          "v1 seeds 7, 101, 202": [
+            1.2193494496909052,
+            1.1534235022350527,
+            1.2269544416010065
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.5767795410394647,
+          "v1 seeds 7, 101, 202": [
+            0.5767795410394647,
+            0.5767795410394647,
+            0.5767795410394647
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.556271209935049,
+          "v1 seeds 7, 101, 202": [
+            0.5708671702050264,
+            0.5430372449343931,
+            0.5747157138678236
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 8.498989989389939,
+          "v1 seeds 7, 101, 202": [
+            8.498989989389939,
+            8.498989989389939,
+            8.498989989389939
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 13,
+      "unitid": "111081",
+      "name": "California Institute of the Arts",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1514930647348825,
+          "v1 seeds 7, 101, 202": [
+            -0.1531131764601204,
+            -0.15353022666669341,
+            -0.14763911891565712
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2725849247031134,
+          "v1 seeds 7, 101, 202": [
+            0.27982514154908067,
+            0.31568823020060194,
+            0.28692646114160647
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.5397574714685125,
+          "v1 seeds 7, 101, 202": [
+            0.5022001067519034,
+            0.5909702115655401,
+            0.513661474424776
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.4,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.1891304927761786,
+          "v1 seeds 7, 101, 202": [
+            0.1891304927761786,
+            0.1891304927761786,
+            0.1891304927761786
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.24565564483377794,
+          "v1 seeds 7, 101, 202": [
+            0.22895720392869723,
+            0.26857996210645285,
+            0.23388941913795563
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 11.40003570067126,
+          "v1 seeds 7, 101, 202": [
+            11.40003570067126,
+            11.40003570067126,
+            11.40003570067126
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 14,
+      "unitid": "111188",
+      "name": "California State University Maritime Academy",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13500602456114935,
+          "v1 seeds 7, 101, 202": [
+            -0.12801559328940498,
+            -0.12818382325810146,
+            -0.12819365620671003
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2588581229914787,
+          "v1 seeds 7, 101, 202": [
+            0.2780352521655707,
+            0.2824712716212523,
+            0.26673976416508377
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.9096750666970994,
+          "v1 seeds 7, 101, 202": [
+            0.8498355871017383,
+            0.8876789730234776,
+            0.9142186845438218
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.4740133795039197,
+          "v1 seeds 7, 101, 202": [
+            0.4740133795039197,
+            0.4740133795039197,
+            0.4740133795039197
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.4217809389864615,
+          "v1 seeds 7, 101, 202": [
+            0.39509174487356513,
+            0.41201336494334845,
+            0.42380723089868033
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 7.625487987279504,
+          "v1 seeds 7, 101, 202": [
+            7.625487987279504,
+            7.625487987279504,
+            7.625487987279504
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 15,
+      "unitid": "112394",
+      "name": "Cogswell College",
+      "finance form sector": "forprofit",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.15074327852684322,
+          "v1 seeds 7, 101, 202": [
+            -0.15074327852684322,
+            -0.1445202918849922,
+            -0.14018220343494026
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.29018233585012304,
+          "v1 seeds 7, 101, 202": [
+            0.29018233585012304,
+            0.28139763712233856,
+            0.28754423377343485
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.9597275994441143,
+          "v1 seeds 7, 101, 202": [
+            0.9597275994441143,
+            0.9533560670706962,
+            0.9794998839261113
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 1.0,
+          "v1 seeds 7, 101, 202": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.17335408987576362,
+          "v1 seeds 7, 101, 202": [
+            0.17335408987576362,
+            0.17335408987576362,
+            0.17335408987576362
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.43122501605075786,
+          "v1 seeds 7, 101, 202": [
+            0.43122501605075786,
+            0.43099447917893585,
+            0.4397538938413145
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 16,
+      "unitid": "113698",
+      "name": "Dominican University of California",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1251090439990799,
+          "v1 seeds 7, 101, 202": [
+            -0.1251090439990799,
+            -0.11825816376597509,
+            -0.11493911463201706
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.27249015632237267,
+          "v1 seeds 7, 101, 202": [
+            0.27249015632237267,
+            0.2800454696428336,
+            0.2548858040176296
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.643882850397529,
+          "v1 seeds 7, 101, 202": [
+            0.643882850397529,
+            0.6751191234973487,
+            0.7159417386604068
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.026391720119708473,
+          "v1 seeds 7, 101, 202": [
+            0.026391720119708473,
+            0.026391720119708473,
+            0.026391720119708473
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.29413955789214896,
+          "v1 seeds 7, 101, 202": [
+            0.29413955789214896,
+            0.3083852569650559,
+            0.3271723172547729
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 9.262185816893851,
+          "v1 seeds 7, 101, 202": [
+            9.262185816893851,
+            9.262185816893851,
+            9.262185816893851
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 17,
+      "unitid": "114813",
+      "name": "Fresno Pacific University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1554744310185649,
+          "v1 seeds 7, 101, 202": [
+            -0.1541935043855765,
+            -0.15549715919033968,
+            -0.14387380460546434
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.26974456240582534,
+          "v1 seeds 7, 101, 202": [
+            0.2867224011913824,
+            0.2742491400377157,
+            0.2856276035096227
+          ],
+          "within v1 seed range": false,
+          "equals v1 seed 7": false
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.7734188872303546,
+          "v1 seeds 7, 101, 202": [
+            0.7756943338636944,
+            0.7293493075742561,
+            0.7977658794363925
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.0026586252142329903,
+          "v1 seeds 7, 101, 202": [
+            0.0026586252142329903,
+            0.0026586252142329903,
+            0.0026586252142329903
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.3558567550352858,
+          "v1 seeds 7, 101, 202": [
+            0.3567077724190175,
+            0.3359212890074796,
+            0.3664450478218215
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": false
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 7.970069412532411,
+          "v1 seeds 7, 101, 202": [
+            7.970069412532411,
+            7.970069412532411,
+            7.970069412532411
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "OUTSIDE RANGE"
+    },
+    {
+      "slot": 18,
+      "unitid": "115755",
+      "name": "Humboldt State University",
+      "finance form sector": "public",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.14703251052352667,
+          "v1 seeds 7, 101, 202": [
+            -0.14703251052352667,
+            -0.14122222773029952,
+            -0.14148954533650354
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.26665001418518774,
+          "v1 seeds 7, 101, 202": [
+            0.26665001418518774,
+            0.2789948740457171,
+            0.2932138600080508
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.9825348437373943,
+          "v1 seeds 7, 101, 202": [
+            0.9825348437373943,
+            0.953549271661542,
+            1.0291731504470263
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.5916194941390392,
+          "v1 seeds 7, 101, 202": [
+            0.5916194941390392,
+            0.5916194941390392,
+            0.5916194941390392
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.4396101839066795,
+          "v1 seeds 7, 101, 202": [
+            0.4396101839066795,
+            0.42698259359132157,
+            0.4609336563401635
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 7.719223092249866,
+          "v1 seeds 7, 101, 202": [
+            7.719223092249866,
+            7.719223092249866,
+            7.719223092249866
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 19,
+      "unitid": "117557",
+      "name": "Lincoln University",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.13962648529887384,
+          "v1 seeds 7, 101, 202": [
+            -0.13962648529887384,
+            -0.1366869415427256,
+            -0.1267755600236134
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.2680241811081463,
+          "v1 seeds 7, 101, 202": [
+            0.2680241811081463,
+            0.2836192391298868,
+            0.2825225513643458
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.8548998340380982,
+          "v1 seeds 7, 101, 202": [
+            0.8548998340380982,
+            0.8155506725353927,
+            0.85695636375
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.11585583123213017,
+          "v1 seeds 7, 101, 202": [
+            0.11585583123213017,
+            0.11585583123213017,
+            0.11585583123213017
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.3833747308533756,
+          "v1 seeds 7, 101, 202": [
+            0.3833747308533756,
+            0.3656506889972494,
+            0.38414777063292305
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    },
+    {
+      "slot": 20,
+      "unitid": "118693",
+      "name": "Menlo College",
+      "finance form sector": "private",
+      "features": {
+        "d_A_trend": {
+          "v2 seed 7": -0.1500773124158073,
+          "v1 seeds 7, 101, 202": [
+            -0.1500773124158073,
+            -0.14623866697333399,
+            -0.1486214939262021
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "d_A_final": {
+          "v2 seed 7": 0.27905195383274256,
+          "v1 seeds 7, 101, 202": [
+            0.27905195383274256,
+            0.25376114245044484,
+            0.28237024653554416
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_final": {
+          "v2 seed 7": 0.746447926342988,
+          "v1 seeds 7, 101, 202": [
+            0.746447926342988,
+            0.7043113538468007,
+            0.7848910791450124
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "frac_high_entropy": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "debt_spike": {
+          "v2 seed 7": 0.04809728650100495,
+          "v1 seeds 7, 101, 202": [
+            0.04809728650100495,
+            0.04809728650100495,
+            0.04809728650100495
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "delta_R_trend": {
+          "v2 seed 7": 0.3550994497748115,
+          "v1 seeds 7, 101, 202": [
+            0.3550994497748115,
+            0.33489332986599973,
+            0.37305829988872163
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "reserve_adequacy": {
+          "v2 seed 7": 9.019400294176107,
+          "v1 seeds 7, 101, 202": [
+            9.019400294176107,
+            9.019400294176107,
+            9.019400294176107
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        },
+        "research_ratio": {
+          "v2 seed 7": 0.0,
+          "v1 seeds 7, 101, 202": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "within v1 seed range": true,
+          "equals v1 seed 7": true
+        }
+      },
+      "availability": {
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "enrollment": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "completion": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tuition": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "finance": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "result": "within range"
+    }
+  ],
+  "environment": [
+    "arviz==0.23.4",
+    "cachetools==6.2.6",
+    "certifi==2026.10.23",
+    "charset-normalizer==3.5.2",
+    "cloudpickle==3.1.2",
+    "cons==0.4.7",
+    "contourpy==1.3.3",
+    "cycler==0.12.1",
+    "etuples==0.3.10",
+    "filelock==4.2.10",
+    "fonttools==4.68.0",
+    "h5netcdf==1.8.3",
+    "h5py==3.16.0",
+    "idna==3.20",
+    "joblib==1.6.0",
+    "kiwisolver==1.5.1",
+    "llvmlite==0.47.0",
+    "logical-unification==0.4.7",
+    "markdown-it-py==4.3.0",
+    "matplotlib==3.11.2",
+    "mdurl==0.1.2",
+    "miniKanren==1.0.5",
+    "multipledispatch==1.0.0",
+    "narwhals==2.28.0",
+    "numba==0.65.1",
+    "numpy==2.4.6",
+    "packaging==26.3",
+    "pandas==3.1.1",
+    "pillow==13.0.0",
+    "platformdirs==4.14.5",
+    "Pygments==2.21.0",
+    "pymc==5.28.5",
+    "pyparsing==3.3.3",
+    "pytensor==2.38.3",
+    "python-dateutil==4.0.0",
+    "requests==2.34.2",
+    "rich==15.0.0",
+    "scikit-learn==1.9.1",
+    "scipy==1.17.1",
+    "threadpoolctl==3.8.0",
+    "toolz==1.2.0",
+    "typing_extensions==4.16.0",
+    "tzdata==2026.6",
+    "urllib3==2.8.0",
+    "xarray==2026.9.0",
+    "xarray-einstats==0.9.1"
+  ]
+}
