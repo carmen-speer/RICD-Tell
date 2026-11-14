@@ -1,0 +1,58 @@
+name: v2 phase 0 - equivalence control check
+
+# Manual-only. Runs src/check_v2_equivalence_control.py under "sampling
+# protocol v2.md", phase 0, first amendment: on one machine, fits each of
+# the first 20 institutions the first confirmatory test scored with the
+# pipeline as it was before the v2 changes, with the changed pipeline,
+# and with the changed pipeline again, and compares them. Commits
+# data/v2/equivalence control.json. No outcome is looked up.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v2-equivalence-control
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - name: Run the controlled equivalence check
+        run: |
+          cd src
+          python check_v2_equivalence_control.py --compact ../work/scorecard_compact.csv --finance ../work/finance
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v2/equivalence control.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v2 phase 0: controlled equivalence check (no outcome looked up)"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
