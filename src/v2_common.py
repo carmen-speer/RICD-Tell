@@ -62,6 +62,7 @@ def prefetch_finance(out: str | Path, start_year: int, end_year: int,
                 continue
             for f in sorted(Path(got).glob("*.csv")):
                 manifest[f"{sector}/{year}/{f.name}"] = hashlib.sha256(f.read_bytes()).hexdigest()
+                normalize_finance_csv(f, sector)   # after the raw file's hash is recorded
             time.sleep(2)
     if missing and required:
         raise SystemExit("Could not download these NCES finance files: " + ", ".join(missing)
@@ -84,9 +85,81 @@ def use_finance_cache(finance_dir: str | Path) -> None:
         year_dir.mkdir(parents=True, exist_ok=True)
         for f in files:
             shutil.copyfile(f, year_dir / f.name)
+            normalize_finance_csv(year_dir / f.name, sector)   # a no-op on an already normalized copy
         return year_dir
 
     fld.download_ipeds_finance_bulk = cached
+
+
+# ---------------------------------------------------------------------------
+# Finance-file rules of the fourth amendment ("sampling protocol v2.md").
+# They apply only inside v2: the live pipeline's own files and field codes
+# are unchanged until the results are published.
+#
+# 1. Column headings are trimmed of surrounding whitespace and upper-cased
+#    before any column is looked up. Some NCES files carry whitespace in
+#    their headings (the endowment heading in most public years and in the
+#    private years 2011-2014), which made an exact lookup fail silently.
+# 2. For-profit (F3) files gain two columns the pipeline reads in place of
+#    its for-profit institutional-support and instruction codes:
+#      V2_MAINT  academic support + student services + institutional
+#                support: the combined line F3E03 on the form used before
+#                fiscal year 2014, and F3E03A1 + F3E03B1 + F3E03C1 on the
+#                form used from 2014, so the series means the same thing
+#                on both sides of the change of form;
+#      V2_INSTR  instruction: F3E01 before 2014, F3E011 from 2014.
+#    The code the live pipeline reads as for-profit institutional support,
+#    F3E061, is "Other expenses - Total amount" in NCES's own dictionary.
+# ---------------------------------------------------------------------------
+V2_MAINT, V2_INSTR = "V2_MAINT", "V2_INSTR"
+
+
+def _num(v):
+    try:
+        return float(str(v).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def normalize_finance_csv(path: str | Path, sector: str) -> None:
+    """Rewrite one finance CSV under the fourth amendment's rules, in place."""
+    path = Path(path)
+    with open(path, encoding="latin-1", newline="") as fh:
+        rows = list(csv.reader(fh))
+    if not rows:
+        return
+    header = [h.strip().upper() for h in rows[0]]
+    if sector == "forprofit" and V2_MAINT not in header:
+        idx = {h: i for i, h in enumerate(header)}
+        new_form = "F3E03C1" in idx
+
+        def get(r, code):
+            i = idx.get(code)
+            return _num(r[i]) if i is not None and i < len(r) else None
+
+        header += [V2_MAINT, V2_INSTR]
+        for r in rows[1:]:
+            if new_form:
+                parts = [get(r, c) for c in ("F3E03A1", "F3E03B1", "F3E03C1")]
+                parts = [x for x in parts if x is not None]
+                maint = sum(parts) if parts else None
+                instr = get(r, "F3E011")
+            else:
+                maint, instr = get(r, "F3E03"), get(r, "F3E01")
+            r += ["" if maint is None else repr(maint), "" if instr is None else repr(instr)]
+    rows[0] = header
+    with open(path, "w", encoding="latin-1", newline="") as fh:
+        csv.writer(fh).writerows(rows)
+
+
+def apply_finance_rules() -> None:
+    """Point the pipeline's for-profit field codes at the v2 columns (v2 processes only)."""
+    import fetch_live_data as fld
+    fld.FORPROFIT_FINANCE_FIELDS["institutional_support"] = V2_MAINT
+    fld.FORPROFIT_FINANCE_FIELDS["instruction"] = V2_INSTR
+
+
+apply_finance_rules()
 
 
 _ROWS: dict = {}
