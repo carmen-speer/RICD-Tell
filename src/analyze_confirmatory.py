@@ -427,4 +427,69 @@ def cmd_outcomes() -> None:
 
     skip_rows = [r for r in rows if r["group"].startswith("skipped")]
     broken = {"scored": rate(sr), "all skipped for insufficient data": rate(skip_rows),
-              "skipped:
+              "skipped: data check": rate([r for r in skip_rows if "data check" in r["group"]]),
+              "skipped: stability check": rate([r for r in skip_rows if "stability" in r["group"]])}
+    try:
+        from scipy.stats import fisher_exact
+        a, b = broken["all skipped for insufficient data"], broken["scored"]
+        broken["Fisher exact p, skipped vs scored (descriptive)"] = float(fisher_exact(
+            [[a["closed or merged"], a["N"] - a["closed or merged"]],
+             [b["closed or merged"], b["N"] - b["closed or merged"]]])[1])
+    except Exception:
+        pass
+
+    by_sector = {}
+    for sec in ("public", "private", "forprofit"):
+        g = [r for r in sr if r["sector"] == sec]
+        by_sector[sec] = {"N": len(g), "closed or merged": sum(r["closed or merged"] for r in g),
+                          "flagged": sum(r["tracker flag"] == "high_risk" for r in g)}
+
+    keep = ("slot", "unitid", "name", "sector", "state", "tracker probability", "evidence",
+            "last HD file present")
+    results = {
+        "protocol": "sampling protocol.md",
+        "written at (UTC)": datetime.now(timezone.utc).isoformat(),
+        "comparator flags committed (commit, time)": comp_commit,
+        "header files": files,
+        "outcome definition": "closed or merged if any post-2019 HD file shows CLOSEDAT, DEATHYR or MERGEID",
+        "tracker (all scored institutions)": tracker,
+        "comparator (institutions where computable)": comparator,
+        "tracker on the comparator's institutions": tracker_same_set,
+        "comparator not computable": [r["unitid"] for r in sr if r["comparator"] == "not computable"],
+        "triggers": triggers,
+        "passed": passed,
+        "insufficient-data (broken window) comparison": broken,
+        "by sector (descriptive, not a headline result)": by_sector,
+        "flagged survivors (anchor analysis list)": [
+            {k: r[k] for k in keep} for r in sr if r["tracker flag"] == "high_risk" and not r["closed or merged"]],
+        "missed closures (closed or merged, not flagged)": [
+            {k: r[k] for k in keep} for r in sr if r["tracker flag"] != "high_risk" and r["closed or merged"]],
+        "vanished without a closure, deletion or merger record (counted as surviving)": [
+            {**{k: r[k] for k in keep}, "group": r["group"], "tracker flag": r["tracker flag"]}
+            for r in rows if r["vanished without a closure, deletion or merger record"]],
+        "effective population": "Institutions with at least 11 years of reporting history by FY2019: "
+                                "22 of 300 slots were unfilled because every candidate in their "
+                                "backup lists, mostly young institutions at the top of the UNITID "
+                                "order, lacked complete data for the 11-year window.",
+    }
+    RESULTS_PATH.write_text(json.dumps(results, indent=1))
+    print(json.dumps({k: results[k] for k in ("tracker (all scored institutions)", "triggers", "passed",
+                                              "insufficient-data (broken window) comparison")}, indent=1))
+
+
+def main():
+    p = argparse.ArgumentParser()
+    sub = p.add_subparsers(dest="cmd", required=True)
+    c = sub.add_parser("comparator")
+    c.add_argument("--compact", required=True)
+    c.add_argument("--finance", required=True)
+    sub.add_parser("outcomes")
+    a = p.parse_args()
+    if a.cmd == "comparator":
+        cmd_comparator(a.compact, a.finance)
+    else:
+        cmd_outcomes()
+
+
+if __name__ == "__main__":
+    main()
