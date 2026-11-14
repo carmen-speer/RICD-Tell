@@ -1,0 +1,1610 @@
+{
+  "protocol": "sampling protocol v2.md, phase 0 (equivalence check, second amendment: cold cache)",
+  "written at (UTC)": "2026-11-14T22:37:32.221458+00:00",
+  "old code": "the four changed files from commit 8a1608d; all other files identical",
+  "every fit started from an empty compile cache": true,
+  "machine reproduces its own result exactly": true,
+  "largest repeat difference per feature": {
+    "d_A_trend": 0.0,
+    "d_A_final": 0.0,
+    "delta_R_final": 0.0,
+    "frac_high_entropy": 0.0,
+    "debt_spike": 0.0,
+    "delta_R_trend": 0.0,
+    "reserve_adequacy": 0.0,
+    "research_ratio": 0.0
+  },
+  "passed": true,
+  "failures": [],
+  "cold old-code fits reproducing the committed v1 seed-7 values exactly (institutions)": 5,
+  "institutions": [
+    {
+      "slot": 1,
+      "unitid": "100654",
+      "name": "Alabama A & M University",
+      "finance form sector": "public",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.13215243541318888,
+        "d_A_final": 0.27948686814750695,
+        "delta_R_final": 0.902181050366442,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.3842953643445134,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.13215243541318888,
+        "d_A_final": 0.27948686814750695,
+        "delta_R_final": 0.902181050366442,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.3842953643445134,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.13215243541318888,
+        "d_A_final": 0.27948686814750695,
+        "delta_R_final": 0.902181050366442,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.3842953643445134,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1270653687391715,
+        "d_A_final": 0.26823515329651876,
+        "delta_R_final": 0.9752736778580856,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.26283135948948594,
+        "delta_R_trend": 0.41653518494330155,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.005087066674017371,
+        "d_A_final": 0.011251714850988193,
+        "delta_R_final": 0.07309262749164358,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.03223982059878816,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 2,
+      "unitid": "101116",
+      "name": "South University-Montgomery",
+      "finance form sector": "forprofit",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.1694458257263708,
+        "d_A_final": 0.2564438960348667,
+        "delta_R_final": 1.0345181630706994,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.47350286538574415,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1694458257263708,
+        "d_A_final": 0.2564438960348667,
+        "delta_R_final": 1.0345181630706994,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.47350286538574415,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1694458257263708,
+        "d_A_final": 0.2564438960348667,
+        "delta_R_final": 1.0345181630706994,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.47350286538574415,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.15576278810332728,
+        "d_A_final": 0.2715183748891979,
+        "delta_R_final": 1.0004669520358802,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.12403906452903135,
+        "delta_R_trend": 0.4632498870835867,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.013683037623043515,
+        "d_A_final": 0.015074478854331164,
+        "delta_R_final": 0.03405121103481923,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.010252978302157434,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 3,
+      "unitid": "101675",
+      "name": "Miles College",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.14770727081288504,
+        "d_A_final": 0.2768384835744913,
+        "delta_R_final": 0.993823208018724,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.45316658297902723,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.14770727081288504,
+        "d_A_final": 0.2768384835744913,
+        "delta_R_final": 0.993823208018724,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.45316658297902723,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.14770727081288504,
+        "d_A_final": 0.2768384835744913,
+        "delta_R_final": 0.993823208018724,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.45316658297902723,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1375472566969212,
+        "d_A_final": 0.2737676768536254,
+        "delta_R_final": 1.029132772909399,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.3200994076832874,
+        "delta_R_trend": 0.4691024032266239,
+        "reserve_adequacy": 8.818161489397413,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.010160014115963845,
+        "d_A_final": 0.003070806720865904,
+        "delta_R_final": 0.03530956489067505,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.015935820247596655,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 4,
+      "unitid": "102270",
+      "name": "Stillman College",
+      "finance form sector": "private",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.14445136678097997,
+        "d_A_final": 0.2667257400343894,
+        "delta_R_final": 1.0104135223848836,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4583584572790969,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.14445136678097997,
+        "d_A_final": 0.2667257400343894,
+        "delta_R_final": 1.0104135223848836,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4583584572790969,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.14445136678097997,
+        "d_A_final": 0.2667257400343894,
+        "delta_R_final": 1.0104135223848836,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4583584572790969,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.14445136678097997,
+        "d_A_final": 0.2667257400343894,
+        "delta_R_final": 1.0104135223848836,
+        "frac_high_entropy": 0.6,
+        "debt_spike": 0.03569002512789715,
+        "delta_R_trend": 0.4583584572790969,
+        "reserve_adequacy": 9.583672178851483,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 5,
+      "unitid": "102669",
+      "name": "Alaska Pacific University",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1342930902804914,
+        "d_A_final": 0.2669898217155661,
+        "delta_R_final": 0.8808314651574605,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.3993929155368056,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "changed code": {
+        "d_A_trend": -0.1342930902804914,
+        "d_A_final": 0.2669898217155661,
+        "delta_R_final": 0.8808314651574605,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.3993929155368056,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1342930902804914,
+        "d_A_final": 0.2669898217155661,
+        "delta_R_final": 0.8808314651574605,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.3993929155368056,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1358550550679028,
+        "d_A_final": 0.2693098828149092,
+        "delta_R_final": 0.8983146942387618,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.07812393762517245,
+        "delta_R_trend": 0.4072667912311215,
+        "reserve_adequacy": 11.531363188144454,
+        "research_ratio": 0.3569136987859701
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0015619647874113851,
+        "d_A_final": 0.0023200610993430737,
+        "delta_R_final": 0.017483229081301288,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.007873875694315913,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 6,
+      "unitid": "105330",
+      "name": "Northern Arizona University",
+      "finance form sector": "public",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.1631248292147257,
+        "d_A_final": 0.28630518656198584,
+        "delta_R_final": 0.7177286421355201,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.36986067697159675,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1631248292147257,
+        "d_A_final": 0.28630518656198584,
+        "delta_R_final": 0.7177286421355201,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.36986067697159675,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1631248292147257,
+        "d_A_final": 0.28630518656198584,
+        "delta_R_final": 0.7177286421355201,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.36986067697159675,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.17068728588696347,
+        "d_A_final": 0.29081730081577123,
+        "delta_R_final": 0.7307555512387673,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.23286884052160467,
+        "delta_R_trend": 0.3798615025412345,
+        "reserve_adequacy": 7.966431193514864,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.007562456672237761,
+        "d_A_final": 0.004512114253785393,
+        "delta_R_final": 0.01302690910324722,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.010000825569637772,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 7,
+      "unitid": "106342",
+      "name": "Lyon College",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1269738305149109,
+        "d_A_final": 0.2696582609846418,
+        "delta_R_final": 0.8962794330720556,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.3943968077407264,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1269738305149109,
+        "d_A_final": 0.2696582609846418,
+        "delta_R_final": 0.8962794330720556,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.3943968077407264,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1269738305149109,
+        "d_A_final": 0.2696582609846418,
+        "delta_R_final": 0.8962794330720556,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.3943968077407264,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1325706564109289,
+        "d_A_final": 0.2687235881887903,
+        "delta_R_final": 0.8865226908940861,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.2171162609710409,
+        "delta_R_trend": 0.3901290350011449,
+        "reserve_adequacy": 11.079632981140506,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0055968258960180095,
+        "d_A_final": 0.0009346727958515211,
+        "delta_R_final": 0.009756742177969513,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.00426777273958151,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 8,
+      "unitid": "107044",
+      "name": "Harding University",
+      "finance form sector": "private",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.12198269577739768,
+        "d_A_final": 0.28482466752515506,
+        "delta_R_final": 0.6337410043494978,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.27248907578095827,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.12198269577739768,
+        "d_A_final": 0.28482466752515506,
+        "delta_R_final": 0.6337410043494978,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.27248907578095827,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.12198269577739768,
+        "d_A_final": 0.28482466752515506,
+        "delta_R_final": 0.6337410043494978,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.27248907578095827,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.11848830992854326,
+        "d_A_final": 0.2738195687674448,
+        "delta_R_final": 0.6427467064511184,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11009980606830927,
+        "delta_R_trend": 0.27687292654654083,
+        "reserve_adequacy": 9.80537738954529,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.00349438584885442,
+        "d_A_final": 0.011005098757710274,
+        "delta_R_final": 0.00900570210162066,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.004383850765582564,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 9,
+      "unitid": "108092",
+      "name": "University of Arkansas-Fort Smith",
+      "finance form sector": "public",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.12628539636998426,
+        "d_A_final": 0.2747350220855508,
+        "delta_R_final": 0.9633193204510817,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.41734361149085636,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.12628539636998426,
+        "d_A_final": 0.2747350220855508,
+        "delta_R_final": 0.9633193204510817,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.41734361149085636,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.12628539636998426,
+        "d_A_final": 0.2747350220855508,
+        "delta_R_final": 0.9633193204510817,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.41734361149085636,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.12842067294120219,
+        "d_A_final": 0.28098922880475047,
+        "delta_R_final": 1.0271574800153103,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.05427405256552453,
+        "delta_R_trend": 0.44614885817308747,
+        "reserve_adequacy": 8.964313903626232,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0021352765712179256,
+        "d_A_final": 0.006254206719199684,
+        "delta_R_final": 0.06383815956422856,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.02880524668223111,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 10,
+      "unitid": "110060",
+      "name": "Bethesda University",
+      "finance form sector": "private",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.1374280774314025,
+        "d_A_final": 0.27491901379068473,
+        "delta_R_final": 0.8828552440283767,
+        "frac_high_entropy": 0.8,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.39905111309131236,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "changed code": {
+        "d_A_trend": -0.1374280774314025,
+        "d_A_final": 0.27491901379068473,
+        "delta_R_final": 0.8828552440283767,
+        "frac_high_entropy": 0.8,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.39905111309131236,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1374280774314025,
+        "d_A_final": 0.27491901379068473,
+        "delta_R_final": 0.8828552440283767,
+        "frac_high_entropy": 0.8,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.39905111309131236,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1374280774314025,
+        "d_A_final": 0.27491901379068473,
+        "delta_R_final": 0.8828552440283767,
+        "frac_high_entropy": 0.8,
+        "debt_spike": 0.32226141603286645,
+        "delta_R_trend": 0.39905111309131236,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.00033874496544179805
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 11,
+      "unitid": "110413",
+      "name": "California Lutheran University",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.12472480927403706,
+        "d_A_final": 0.3029317509507787,
+        "delta_R_final": 0.4875682802492879,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.08760770414096541,
+        "delta_R_trend": 0.2233879006652838,
+        "reserve_adequacy": 9.523293068096734,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.12472480927403706,
+        "d_A_final": 0.3029317509507787,
+        "delta_R_final": 0.4875682802492879,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.08760770414096541,
+        "delta_R_trend": 0.2233879006652838,
+        "reserve_adequacy": 9.523293068096734,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.12472480927403706,
+        "d_A_final": 0.3029317509507787,
+        "delta_R_final": 0.4875682802492879,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.08760770414096541,
+        "delta_R_trend": 0.2233879006652838,
+        "reserve_adequacy": 9.523293068096734,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1250363333992996,
+        "d_A_final": 0.2728360569512606,
+        "delta_R_final": 0.44802239906212415,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.08760770414096541,
+        "delta_R_trend": 0.2060380312755356,
+        "reserve_adequacy": 9.523293068096734,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.00031152412526253004,
+        "d_A_final": 0.03009569399951806,
+        "delta_R_final": 0.039545881187163734,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.017349869389748196,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 12,
+      "unitid": "110556",
+      "name": "California State University-Fresno",
+      "finance form sector": "public",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.13496673469090947,
+        "d_A_final": 0.2800254226889361,
+        "delta_R_final": 1.154598451287252,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5767795410394647,
+        "delta_R_trend": 0.5398417800323353,
+        "reserve_adequacy": 8.498989989389939,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.13496673469090947,
+        "d_A_final": 0.2800254226889361,
+        "delta_R_final": 1.154598451287252,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5767795410394647,
+        "delta_R_trend": 0.5398417800323353,
+        "reserve_adequacy": 8.498989989389939,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.13496673469090947,
+        "d_A_final": 0.2800254226889361,
+        "delta_R_final": 1.154598451287252,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5767795410394647,
+        "delta_R_trend": 0.5398417800323353,
+        "reserve_adequacy": 8.498989989389939,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.13715266133248555,
+        "d_A_final": 0.26703678370736816,
+        "delta_R_final": 1.2193494496909052,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5767795410394647,
+        "delta_R_trend": 0.5708671702050264,
+        "reserve_adequacy": 8.498989989389939,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0021859266415760747,
+        "d_A_final": 0.012988638981567935,
+        "delta_R_final": 0.06475099840365317,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.031025390172691125,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 13,
+      "unitid": "111081",
+      "name": "California Institute of the Arts",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1531131764601204,
+        "d_A_final": 0.27982514154908067,
+        "delta_R_final": 0.5022001067519034,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.1891304927761786,
+        "delta_R_trend": 0.22895720392869723,
+        "reserve_adequacy": 11.40003570067126,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1531131764601204,
+        "d_A_final": 0.27982514154908067,
+        "delta_R_final": 0.5022001067519034,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.1891304927761786,
+        "delta_R_trend": 0.22895720392869723,
+        "reserve_adequacy": 11.40003570067126,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1531131764601204,
+        "d_A_final": 0.27982514154908067,
+        "delta_R_final": 0.5022001067519034,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.1891304927761786,
+        "delta_R_trend": 0.22895720392869723,
+        "reserve_adequacy": 11.40003570067126,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1531131764601204,
+        "d_A_final": 0.27982514154908067,
+        "delta_R_final": 0.5022001067519034,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.1891304927761786,
+        "delta_R_trend": 0.22895720392869723,
+        "reserve_adequacy": 11.40003570067126,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 14,
+      "unitid": "111188",
+      "name": "California State University Maritime Academy",
+      "finance form sector": "public",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.12801559328940498,
+        "d_A_final": 0.2780352521655707,
+        "delta_R_final": 0.8498355871017383,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.4740133795039197,
+        "delta_R_trend": 0.39509174487356513,
+        "reserve_adequacy": 7.625487987279504,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.12801559328940498,
+        "d_A_final": 0.2780352521655707,
+        "delta_R_final": 0.8498355871017383,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.4740133795039197,
+        "delta_R_trend": 0.39509174487356513,
+        "reserve_adequacy": 7.625487987279504,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.12801559328940498,
+        "d_A_final": 0.2780352521655707,
+        "delta_R_final": 0.8498355871017383,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.4740133795039197,
+        "delta_R_trend": 0.39509174487356513,
+        "reserve_adequacy": 7.625487987279504,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.12801559328940498,
+        "d_A_final": 0.2780352521655707,
+        "delta_R_final": 0.8498355871017383,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.4740133795039197,
+        "delta_R_trend": 0.39509174487356513,
+        "reserve_adequacy": 7.625487987279504,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 15,
+      "unitid": "112394",
+      "name": "Cogswell College",
+      "finance form sector": "forprofit",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1468769858801805,
+        "d_A_final": 0.27009961927467446,
+        "delta_R_final": 0.9624397562208634,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.17335408987576362,
+        "delta_R_trend": 0.4320589032247778,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1468769858801805,
+        "d_A_final": 0.27009961927467446,
+        "delta_R_final": 0.9624397562208634,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.17335408987576362,
+        "delta_R_trend": 0.4320589032247778,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1468769858801805,
+        "d_A_final": 0.27009961927467446,
+        "delta_R_final": 0.9624397562208634,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.17335408987576362,
+        "delta_R_trend": 0.4320589032247778,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.15074327852684322,
+        "d_A_final": 0.29018233585012304,
+        "delta_R_final": 0.9597275994441143,
+        "frac_high_entropy": 1.0,
+        "debt_spike": 0.17335408987576362,
+        "delta_R_trend": 0.43122501605075786,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0038662926466627168,
+        "d_A_final": 0.020082716575448578,
+        "delta_R_final": 0.002712156776749075,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0008338871740199427,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 16,
+      "unitid": "113698",
+      "name": "Dominican University of California",
+      "finance form sector": "private",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.12604510524409474,
+        "d_A_final": 0.2824709589335939,
+        "delta_R_final": 0.6268203262804927,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.026391720119708473,
+        "delta_R_trend": 0.2866429808742426,
+        "reserve_adequacy": 9.262185816893851,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.12604510524409474,
+        "d_A_final": 0.2824709589335939,
+        "delta_R_final": 0.6268203262804927,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.026391720119708473,
+        "delta_R_trend": 0.2866429808742426,
+        "reserve_adequacy": 9.262185816893851,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.12604510524409474,
+        "d_A_final": 0.2824709589335939,
+        "delta_R_final": 0.6268203262804927,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.026391720119708473,
+        "delta_R_trend": 0.2866429808742426,
+        "reserve_adequacy": 9.262185816893851,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1251090439990799,
+        "d_A_final": 0.27249015632237267,
+        "delta_R_final": 0.643882850397529,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.026391720119708473,
+        "delta_R_trend": 0.29413955789214896,
+        "reserve_adequacy": 9.262185816893851,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0009360612450148298,
+        "d_A_final": 0.009980802611221251,
+        "delta_R_final": 0.01706252411703635,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.007496577017906347,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 17,
+      "unitid": "114813",
+      "name": "Fresno Pacific University",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1541935043855765,
+        "d_A_final": 0.2867224011913824,
+        "delta_R_final": 0.7756943338636944,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0026586252142329903,
+        "delta_R_trend": 0.3567077724190175,
+        "reserve_adequacy": 7.970069412532411,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1541935043855765,
+        "d_A_final": 0.2867224011913824,
+        "delta_R_final": 0.7756943338636944,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0026586252142329903,
+        "delta_R_trend": 0.3567077724190175,
+        "reserve_adequacy": 7.970069412532411,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1541935043855765,
+        "d_A_final": 0.2867224011913824,
+        "delta_R_final": 0.7756943338636944,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0026586252142329903,
+        "delta_R_trend": 0.3567077724190175,
+        "reserve_adequacy": 7.970069412532411,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1541935043855765,
+        "d_A_final": 0.2867224011913824,
+        "delta_R_final": 0.7756943338636944,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0026586252142329903,
+        "delta_R_trend": 0.3567077724190175,
+        "reserve_adequacy": 7.970069412532411,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 18,
+      "unitid": "115755",
+      "name": "Humboldt State University",
+      "finance form sector": "public",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.14868465822434268,
+        "d_A_final": 0.25711097408797423,
+        "delta_R_final": 0.967181885292737,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5916194941390392,
+        "delta_R_trend": 0.4332775407406103,
+        "reserve_adequacy": 7.719223092249866,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.14868465822434268,
+        "d_A_final": 0.25711097408797423,
+        "delta_R_final": 0.967181885292737,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5916194941390392,
+        "delta_R_trend": 0.4332775407406103,
+        "reserve_adequacy": 7.719223092249866,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.14868465822434268,
+        "d_A_final": 0.25711097408797423,
+        "delta_R_final": 0.967181885292737,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5916194941390392,
+        "delta_R_trend": 0.4332775407406103,
+        "reserve_adequacy": 7.719223092249866,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.14703251052352667,
+        "d_A_final": 0.26665001418518774,
+        "delta_R_final": 0.9825348437373943,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.5916194941390392,
+        "delta_R_trend": 0.4396101839066795,
+        "reserve_adequacy": 7.719223092249866,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.001652147700816009,
+        "d_A_final": 0.009539040097213514,
+        "delta_R_final": 0.015352958444657339,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.006332643166069185,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 19,
+      "unitid": "117557",
+      "name": "Lincoln University",
+      "finance form sector": "private",
+      "fitted first": "old code",
+      "old code": {
+        "d_A_trend": -0.1314220354100456,
+        "d_A_final": 0.2714252383804096,
+        "delta_R_final": 0.8565367263987792,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11585583123213017,
+        "delta_R_trend": 0.3840736099938684,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.1314220354100456,
+        "d_A_final": 0.2714252383804096,
+        "delta_R_final": 0.8565367263987792,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11585583123213017,
+        "delta_R_trend": 0.3840736099938684,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.1314220354100456,
+        "d_A_final": 0.2714252383804096,
+        "delta_R_final": 0.8565367263987792,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11585583123213017,
+        "delta_R_trend": 0.3840736099938684,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.13962648529887384,
+        "d_A_final": 0.2680241811081463,
+        "delta_R_final": 0.8548998340380982,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.11585583123213017,
+        "delta_R_trend": 0.3833747308533756,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.008204449888828236,
+        "d_A_final": 0.003401057272263308,
+        "delta_R_final": 0.001636892360680986,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0006988791404928252,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "slot": 20,
+      "unitid": "118693",
+      "name": "Menlo College",
+      "finance form sector": "private",
+      "fitted first": "changed code",
+      "old code": {
+        "d_A_trend": -0.14551807082391127,
+        "d_A_final": 0.28362458546710634,
+        "delta_R_final": 0.7654017987336983,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.04809728650100495,
+        "delta_R_trend": 0.36398614132619145,
+        "reserve_adequacy": 9.019400294176107,
+        "research_ratio": 0.0
+      },
+      "changed code": {
+        "d_A_trend": -0.14551807082391127,
+        "d_A_final": 0.28362458546710634,
+        "delta_R_final": 0.7654017987336983,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.04809728650100495,
+        "delta_R_trend": 0.36398614132619145,
+        "reserve_adequacy": 9.019400294176107,
+        "research_ratio": 0.0
+      },
+      "changed code, repeat": {
+        "d_A_trend": -0.14551807082391127,
+        "d_A_final": 0.28362458546710634,
+        "delta_R_final": 0.7654017987336983,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.04809728650100495,
+        "delta_R_trend": 0.36398614132619145,
+        "reserve_adequacy": 9.019400294176107,
+        "research_ratio": 0.0
+      },
+      "committed v1 seed 7": {
+        "d_A_trend": -0.1500773124158073,
+        "d_A_final": 0.27905195383274256,
+        "delta_R_final": 0.746447926342988,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.04809728650100495,
+        "delta_R_trend": 0.3550994497748115,
+        "reserve_adequacy": 9.019400294176107,
+        "research_ratio": 0.0
+      },
+      "old vs changed": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "changed vs repeat": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "old vs committed v1": {
+        "d_A_trend": 0.004559241591896024,
+        "d_A_final": 0.004572631634363777,
+        "delta_R_final": 0.018953872390710336,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.008886691551379944,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    }
+  ],
+  "environment": [
+    "arviz==0.23.4",
+    "cachetools==6.2.6",
+    "certifi==2026.10.23",
+    "charset-normalizer==3.5.2",
+    "cloudpickle==3.1.2",
+    "cons==0.4.7",
+    "contourpy==1.3.3",
+    "cycler==0.12.1",
+    "etuples==0.3.10",
+    "filelock==4.2.10",
+    "fonttools==4.68.0",
+    "h5netcdf==1.8.3",
+    "h5py==3.16.0",
+    "idna==3.20",
+    "joblib==1.6.0",
+    "kiwisolver==1.5.1",
+    "llvmlite==0.47.0",
+    "logical-unification==0.4.7",
+    "markdown-it-py==4.3.0",
+    "matplotlib==3.11.2",
+    "mdurl==0.1.2",
+    "miniKanren==1.0.5",
+    "multipledispatch==1.0.0",
+    "narwhals==2.28.0",
+    "numba==0.65.1",
+    "numpy==2.4.6",
+    "packaging==26.3",
+    "pandas==3.1.1",
+    "pillow==13.0.0",
+    "platformdirs==4.14.5",
+    "Pygments==2.21.0",
+    "pymc==5.28.5",
+    "pyparsing==3.3.3",
+    "pytensor==2.38.3",
+    "python-dateutil==4.0.0",
+    "requests==2.34.2",
+    "rich==15.0.0",
+    "scikit-learn==1.9.1",
+    "scipy==1.17.1",
+    "threadpoolctl==3.8.0",
+    "toolz==1.2.0",
+    "typing_extensions==4.16.0",
+    "tzdata==2026.6",
+    "urllib3==2.8.0",
+    "xarray==2026.9.0",
+    "xarray-einstats==0.9.1"
+  ]
+}
