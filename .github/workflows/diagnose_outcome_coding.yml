@@ -1,0 +1,40 @@
+name: Diagnose confirmatory outcome coding
+
+# Manual-only. Records the raw IPEDS header values behind the
+# confirmatory test's outcome coding (merger IDs, deletion years,
+# vanished institutions) and commits them to
+# "data/confirmatory/outcome coding diagnostic.json". Changes no
+# committed score, flag, outcome or result.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Record the raw outcome-coding values
+        run: |
+          cd src
+          python diagnose_outcome_coding.py
+
+      - name: Commit the diagnostic
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/confirmatory/outcome coding diagnostic.json"
+          git commit -m "Confirmatory test: outcome-coding diagnostic (no committed result changed)"
+          git fetch origin main
+          git rebase origin/main
+          git push
