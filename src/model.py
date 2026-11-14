@@ -202,8 +202,24 @@ def build_model_stage2(obs_Oo, obs_Op, obs_types_Oo, obs_types_Op,
 
         sigma_Oo = sigma_for(obs_types_Oo, sigma_obs, sigma_est, sigma_rec)
         sigma_Op = sigma_for(obs_types_Op, sigma_obs, sigma_est, sigma_rec)
-        pm.Normal("obs_Oo", mu=O_o_true, sigma=sigma_Oo, observed=obs_Oo)
-        pm.Normal("obs_Op", mu=O_p_true, sigma=sigma_Op, observed=obs_Op)
+        # Missing years (2026-11-14, "sampling protocol v2.md", phase 0):
+        # a NaN in obs_Oo or obs_Op marks a year with no observation. The
+        # channel is then fitted only at its observed years, the same
+        # masking already used for the finance channels below. When every
+        # year is observed, the original two lines run unchanged, so the
+        # model built for a complete series is exactly the model it was.
+        oo_seen = ~np.isnan(np.asarray(obs_Oo, dtype=float))
+        op_seen = ~np.isnan(np.asarray(obs_Op, dtype=float))
+        if oo_seen.all() and op_seen.all():
+            pm.Normal("obs_Oo", mu=O_o_true, sigma=sigma_Oo, observed=obs_Oo)
+            pm.Normal("obs_Op", mu=O_p_true, sigma=sigma_Op, observed=obs_Op)
+        else:
+            oo_idx = np.where(oo_seen)[0]
+            op_idx = np.where(op_seen)[0]
+            pm.Normal("obs_Oo", mu=O_o_true[oo_idx], sigma=sigma_Oo[oo_idx],
+                      observed=np.asarray(obs_Oo, dtype=float)[oo_idx])
+            pm.Normal("obs_Op", mu=O_p_true[op_idx], sigma=sigma_Op[op_idx],
+                      observed=np.asarray(obs_Op, dtype=float)[op_idx])
         pm.Deterministic("O_o_true", O_o_true)
         pm.Deterministic("O_p_true", O_p_true)
 

@@ -241,7 +241,7 @@ def fetch_enrollment_series(unitid: str, start_year: int, end_year: int, api_key
 
 
 def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str | None = None,
-                       sector: str = "private") -> dict | None:
+                       sector: str = "private", allow_gaps: bool = False) -> dict | None:
     """
     Real, live equivalent of real_adapter.extract_institution_series --
     produces the identical dict format (completion, tuition, admit_rate,
@@ -274,6 +274,15 @@ def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str 
     kept as NaN. Completion, tuition and enrollment keep the original
     zero-tolerance rule, and no institution that already passed scores
     differently, since the value is never read.
+
+    allow_gaps (2026-11-14, "sampling protocol v2.md", phase 0): defaults
+    to False, which keeps every behavior above exactly as it was. With
+    allow_gaps=True, a year whose enrollment, completion or tuition is
+    missing (or a year with no Scorecard row at all) is recorded as NaN
+    for that field instead of rejecting the institution; nothing is
+    filled in. The caller applies the protocol's minimum-record rule, and
+    the model fits the official and operational channels only at the
+    years where they are observed (model.build_model_stage2).
     """
     completion, tuition, admit_rate, n_undergrads = [], [], [], []
     for year in range(start_year, end_year):
@@ -283,6 +292,26 @@ def build_live_series(unitid: str, start_year: int, end_year: int, api_key: str 
             f"{year}.completion.completion_rate_4yr_150nt",
             f"{year}.cost.tuition.in_state",
         ]
+        if allow_gaps:
+            try:
+                if _BULK_SCORECARD is not None:
+                    result = _bulk_scorecard_fields(unitid, year)
+                else:
+                    result = fetch_scorecard_fields(unitid, fields, api_key)
+            except (KeyError, ValueError):
+                result = {}  # no record for this year: every field missing, none invented
+
+            def _value(key):
+                try:
+                    return float(result[key])
+                except (KeyError, TypeError, ValueError):
+                    return float("nan")
+
+            n_undergrads.append(_value(f"{year}.student.size"))
+            completion.append(_value(f"{year}.completion.completion_rate_4yr_150nt"))
+            tuition.append(_value(f"{year}.cost.tuition.in_state"))
+            admit_rate.append(_value(f"{year}.admissions.admission_rate.overall"))
+            continue
         try:
             if _BULK_SCORECARD is not None:
                 result = _bulk_scorecard_fields(unitid, year)

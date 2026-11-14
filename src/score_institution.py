@@ -43,6 +43,7 @@ def compute_features_for_institution(
     target_accept: float = 0.9, cores: int | None = None,
     debug_per_chain: bool = False, compile_mode: str | None = None,
     random_seed: int = 7, debug_param_rhat: bool = False,
+    allow_gaps: bool = False,
 ) -> InstitutionFeatures | None:
     """
     Real, live scoring pipeline for one institution, replicating
@@ -138,7 +139,20 @@ def compute_features_for_institution(
     window_years = [f"{y}-{str(y + 1)[2:]}" for y in range(start_year, end_year)]
 
     # --- Real, live enrollment/admissions/completion series ---
-    series = fld.build_live_series(unitid, start_year, end_year, sector=sector)
+    series = fld.build_live_series(unitid, start_year, end_year, sector=sector, allow_gaps=allow_gaps)
+    if series is not None and allow_gaps:
+        # Minimum record ("sampling protocol v2.md"): at least three years
+        # with enrollment, completion and tuition all present. Missing
+        # years are not filled in; the model fits only the observed ones.
+        complete_years = int(np.sum(~np.isnan(series["n_undergrads"])
+                                    & ~np.isnan(series["completion"])
+                                    & ~np.isnan(series["tuition"])))
+        if complete_years < 3:
+            print(f"INSUFFICIENT ENROLLMENT DATA: only {complete_years} years with "
+                  f"enrollment, completion and tuition all present for {name} ({unitid}) "
+                  f"across {start_year}-{end_year} (the minimum is 3). Not scoring rather "
+                  f"than guessing.")
+            return None
     if series is None:
         print(f"INSUFFICIENT ENROLLMENT DATA: could not build a complete real "
               f"series for {name} ({unitid}) across {start_year}-{end_year}. "
@@ -328,7 +342,9 @@ def compute_features_for_institution(
     diffs = np.diff(vals_norm)
     debt_spike = float(np.max(diffs) - np.median(np.abs(diffs))) if len(diffs) > 0 else 0.0
 
-    peak_enrollment = float(np.max(series["n_undergrads"])) if len(series["n_undergrads"]) else None
+    # nanmax (2026-11-14, "sampling protocol v2.md"): peak over observed
+    # years only; identical to max for a complete series.
+    peak_enrollment = float(np.nanmax(series["n_undergrads"])) if len(series["n_undergrads"]) else None
     if endowment_val is not None and peak_enrollment:
         reserve_adequacy = float(np.log1p(endowment_val / peak_enrollment))
     else:
@@ -375,13 +391,25 @@ def compute_features_for_institution(
           f"frac_high_entropy (old, symmetric, for comparison only)="
           f"{frac_high_entropy_old_symmetric:.4f}")
 
-    return InstitutionFeatures(
+    feats = InstitutionFeatures(
         unitid=unitid, name=name,
         d_A_trend=d_A_trend, d_A_final=d_A_final, delta_R_final=delta_R_final,
         frac_high_entropy=frac_high_entropy, debt_spike=debt_spike,
         delta_R_trend=delta_R_trend, reserve_adequacy=reserve_adequacy,
         research_ratio=research_ratio, outcome=None,
     )
+    if allow_gaps:
+        # Which years were actually present, for the missing-data features
+        # computed by the v2 scripts ("sampling protocol v2.md"). Recorded
+        # only; nothing here changes any of the eight features above.
+        feats.availability = {
+            "years": [int(y) + 1 for y in range(start_year, end_year)],  # fiscal years
+            "enrollment": [bool(x) for x in ~np.isnan(series["n_undergrads"])],
+            "completion": [bool(x) for x in ~np.isnan(series["completion"])],
+            "tuition": [bool(x) for x in ~np.isnan(series["tuition"])],
+            "finance": [bool(x) for x in np.asarray(mask, dtype=bool)],
+        }
+    return feats
 
 
 def save_live_score(result: dict, path: str = "../docs/data/live_scores.json") -> None:

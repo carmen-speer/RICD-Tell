@@ -151,7 +151,12 @@ def compute_O_o_O_p(series):
     O_o(t), O_p(t) in [0,1] -- both normalized against a fixed reference
     range, not each institution's own trailing range.
     """
-    O_p = np.clip(series["completion"] / 100.0, 0, 1) if series["completion"].max() > 1 else \
+    # nanmax (2026-11-14, "sampling protocol v2.md", phase 0): the
+    # percentage test reads the largest observed value, so a missing
+    # (NaN) year cannot silently send a percentage series down the wrong
+    # branch. For a complete series nanmax equals max; missing years stay
+    # NaN through np.clip.
+    O_p = np.clip(series["completion"] / 100.0, 0, 1) if np.nanmax(series["completion"]) > 1 else \
           np.clip(series["completion"], 0, 1)
     O_o = np.clip(series["tuition"] / 60000.0, 0, 1)
     return O_o, O_p
