@@ -1,0 +1,60 @@
+name: v2 - draw a sample
+
+# Manual-only. Runs src/draw v2 sample.py under "sampling protocol v2.md":
+# "training" is phase 1 (600 institutions from the 2014 frame);
+# "training-second" is the one second pass the event floor may require;
+# "test" is phase 5 (300 institutions from the 2019 frame, allowed only
+# after classifier v2 is frozen). Commits the draw and its log to data/v2/.
+# No finance data, score or outcome is read.
+on:
+  workflow_dispatch:
+    inputs:
+      draw:
+        description: "Which draw"
+        required: true
+        type: choice
+        options:
+          - training
+          - training-second
+          - test
+
+concurrency:
+  group: v2-draw
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Draw
+        run: |
+          cd src
+          python "draw v2 sample.py" "${{ inputs.draw }}"
+
+      - name: Commit the draw
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/v2/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v2: ${{ inputs.draw }} draw (no outcome looked up)"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
