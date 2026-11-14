@@ -1,0 +1,52 @@
+name: v2 - finance field-code diagnostic
+
+# Manual-only. Runs src/diagnose_v2_finance_codes.py under "sampling
+# protocol v2.md", before phase 2: for every finance form and fiscal year
+# 2004-2019 it lists the files in each NCES download, every expense and
+# endowment column with how often it holds a number, and the column's
+# title in NCES's own dictionary. Commits
+# data/v2/finance codes diagnostic.json. No institution or outcome is read.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v2-finance-codes
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the diagnostic
+        run: |
+          cd src
+          python diagnose_v2_finance_codes.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v2/finance codes diagnostic.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v2: finance field-code diagnostic (no outcome looked up)"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
