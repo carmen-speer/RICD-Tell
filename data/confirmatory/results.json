@@ -1,0 +1,3327 @@
+{
+ "protocol": "sampling protocol.md",
+ "written at (UTC)": "2026-11-14T10:56:15.103632+00:00",
+ "comparator flags committed (commit, time)": "8e61b203a0b683a38e13d1ce3032edb372e0c949 2026-11-14T10:55:26Z",
+ "header files": [
+  {
+   "table": "HD2020",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "file": "hd2020.csv",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 729
+  },
+  {
+   "table": "HD2021",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "file": "hd2021.csv",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 691
+  },
+  {
+   "table": "HD2022",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "file": "hd2022.csv",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 687
+  },
+  {
+   "table": "HD2023",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "file": "HD2023.csv",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 669
+  },
+  {
+   "table": "HD2024",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "file": "HD2024.csv",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 646
+  },
+  {
+   "table": "HD2025",
+   "found": true,
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "file": "hd2025.csv",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "outcome columns present": [
+    "CLOSEDAT",
+    "DEATHYR"
+   ],
+   "sample institutions in it": 637
+  },
+  {
+   "table": "HD2026",
+   "found": false
+  }
+ ],
+ "outcome definition": "closed or merged if any post-2019 HD file shows CLOSEDAT, DEATHYR or MERGEID",
+ "tracker (all scored institutions)": {
+  "N": 278,
+  "E (closed or merged)": 13,
+  "flagged": 253,
+  "true positives": 12,
+  "false positives": 241,
+  "sensitivity S": 0.9230769230769231,
+  "S 95% Wilson": [
+   0.6668604907890041,
+   0.9862895787574435
+  ],
+  "false-alarm rate F": 0.909433962264151,
+  "F 95% Wilson": [
+   0.8687824575720593,
+   0.9383847143064783
+  ],
+  "precision": 0.04743083003952569,
+  "precision 95% Wilson": [
+   0.027337622829546118,
+   0.0810617724570644
+  ],
+  "closure rate": 0.046762589928057555,
+  "lift": 1.0142900577683185,
+  "J": 0.013642960812772165,
+  "J 95% bootstrap": [
+   -0.17222222222222228,
+   0.11698113207547167
+  ],
+  "bootstrap resamples dropped (no J)": 0
+ },
+ "comparator (institutions where computable)": {
+  "N": 254,
+  "E (closed or merged)": 7,
+  "flagged": 56,
+  "true positives": 0,
+  "false positives": 56,
+  "sensitivity S": 0.0,
+  "S 95% Wilson": [
+   5.551115123125783e-17,
+   0.35433043506668743
+  ],
+  "false-alarm rate F": 0.22672064777327935,
+  "F 95% Wilson": [
+   0.17892119444486249,
+   0.2828902595520609
+  ],
+  "precision": 0.0,
+  "precision 95% Wilson": [
+   6.938893903907228e-18,
+   0.06419393671876342
+  ],
+  "closure rate": 0.027559055118110236,
+  "lift": 0.0,
+  "J": -0.22672064777327935,
+  "J 95% bootstrap": [
+   -0.2793522267206478,
+   -0.17551020408163265
+  ],
+  "bootstrap resamples dropped (no J)": 16
+ },
+ "tracker on the comparator's institutions": {
+  "N": 254,
+  "E (closed or merged)": 7,
+  "flagged": 229,
+  "true positives": 6,
+  "false positives": 223,
+  "sensitivity S": 0.8571428571428571,
+  "S 95% Wilson": [
+   0.4868721707256811,
+   0.9743203756552565
+  ],
+  "false-alarm rate F": 0.902834008097166,
+  "F 95% Wilson": [
+   0.8594963503434943,
+   0.9338334322832631
+  ],
+  "precision": 0.026200873362445413,
+  "precision 95% Wilson": [
+   0.012062205106850094,
+   0.055973182151624654
+  ],
+  "closure rate": 0.027559055118110236,
+  "lift": 0.9507174048658764,
+  "J": -0.04569115095430887,
+  "J 95% bootstrap": [
+   -0.4007936507936508,
+   0.1255060728744939
+  ],
+  "bootstrap resamples dropped (no J)": 16
+ },
+ "comparator not computable": [
+  "101116",
+  "112394",
+  "119775",
+  "126827",
+  "139579",
+  "154022",
+  "154518",
+  "172866",
+  "210076",
+  "224776",
+  "230366",
+  "232797",
+  "242972",
+  "247065",
+  "251312",
+  "368452",
+  "377546",
+  "404338",
+  "408844",
+  "430485",
+  "438151",
+  "438498",
+  "443410",
+  "448761"
+ ],
+ "triggers": {
+  "underpowered (E below 10)": false,
+  "R1 no discrimination (J lower bound <= 0)": true,
+  "R2 low sensitivity (S < 0.50)": false,
+  "R3 excess false alarms (F > 0.30)": true,
+  "R4 no advantage over critical slowing down (comparator J >= tracker J)": false
+ },
+ "passed": false,
+ "insufficient-data (broken window) comparison": {
+  "scored": {
+   "N": 278,
+   "closed or merged": 13,
+   "rate": 0.046762589928057555,
+   "95% Wilson": [
+    0.027529036762430924,
+    0.07835126539595055
+   ]
+  },
+  "all skipped for insufficient data": {
+   "N": 476,
+   "closed or merged": 54,
+   "rate": 0.1134453781512605,
+   "95% Wilson": [
+    0.08799614113683767,
+    0.14508388303524364
+   ]
+  },
+  "skipped: data check": {
+   "N": 470,
+   "closed or merged": 54,
+   "rate": 0.1148936170212766,
+   "95% Wilson": [
+    0.08913354326382025,
+    0.14689784811980272
+   ]
+  },
+  "skipped: stability check": {
+   "N": 6,
+   "closed or merged": 0,
+   "rate": 0.0,
+   "95% Wilson": [
+    2.7755575615628914e-17,
+    0.3903342879021653
+   ]
+  },
+  "Fisher exact p, skipped vs scored (descriptive)": 0.002061643159016996
+ },
+ "by sector (descriptive, not a headline result)": {
+  "public": {
+   "N": 77,
+   "closed or merged": 2,
+   "flagged": 74
+  },
+  "private": {
+   "N": 179,
+   "closed or merged": 7,
+   "flagged": 157
+  },
+  "forprofit": {
+   "N": 22,
+   "closed or merged": 4,
+   "flagged": 22
+  }
+ },
+ "flagged survivors (anchor analysis list)": [
+  {
+   "slot": 1,
+   "unitid": "100654",
+   "name": "Alabama A & M University",
+   "sector": "public",
+   "state": "AL",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 2,
+   "unitid": "101116",
+   "name": "South University-Montgomery",
+   "sector": "forprofit",
+   "state": "AL",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 3,
+   "unitid": "101675",
+   "name": "Miles College",
+   "sector": "private",
+   "state": "AL",
+   "tracker probability": 0.9224,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 4,
+   "unitid": "102270",
+   "name": "Stillman College",
+   "sector": "private",
+   "state": "AL",
+   "tracker probability": 0.9415,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 6,
+   "unitid": "105330",
+   "name": "Northern Arizona University",
+   "sector": "public",
+   "state": "AZ",
+   "tracker probability": 0.978,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 7,
+   "unitid": "106342",
+   "name": "Lyon College",
+   "sector": "private",
+   "state": "AR",
+   "tracker probability": 0.5841,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 8,
+   "unitid": "107044",
+   "name": "Harding University",
+   "sector": "private",
+   "state": "AR",
+   "tracker probability": 0.6972,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 9,
+   "unitid": "108092",
+   "name": "University of Arkansas-Fort Smith",
+   "sector": "public",
+   "state": "AR",
+   "tracker probability": 0.7943,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 10,
+   "unitid": "110060",
+   "name": "Bethesda University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 11,
+   "unitid": "110413",
+   "name": "California Lutheran University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.7784,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 12,
+   "unitid": "110556",
+   "name": "California State University-Fresno",
+   "sector": "public",
+   "state": "CA",
+   "tracker probability": 0.9669,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 13,
+   "unitid": "111081",
+   "name": "California Institute of the Arts",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.6626,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 14,
+   "unitid": "111188",
+   "name": "California State University Maritime Academy",
+   "sector": "public",
+   "state": "CA",
+   "tracker probability": 0.9767,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 15,
+   "unitid": "112394",
+   "name": "Cogswell College",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 16,
+   "unitid": "113698",
+   "name": "Dominican University of California",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.7647,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 17,
+   "unitid": "114813",
+   "name": "Fresno Pacific University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.9392,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 18,
+   "unitid": "115755",
+   "name": "Humboldt State University",
+   "sector": "public",
+   "state": "CA",
+   "tracker probability": 0.9884,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 19,
+   "unitid": "117557",
+   "name": "Lincoln University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 20,
+   "unitid": "118693",
+   "name": "Menlo College",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.8761,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 21,
+   "unitid": "119775",
+   "name": "Newschool of Architecture and Design",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 22,
+   "unitid": "120865",
+   "name": "Pacific Union College",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.798,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 26,
+   "unitid": "123457",
+   "name": "Simpson University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.8971,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 27,
+   "unitid": "123952",
+   "name": "Southern California Institute of Architecture",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 28,
+   "unitid": "125727",
+   "name": "Westmont College",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.7455,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 29,
+   "unitid": "126562",
+   "name": "University of Colorado Denver/Anschutz Medical Campus",
+   "sector": "public",
+   "state": "CO",
+   "tracker probability": 0.9996,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 30,
+   "unitid": "126827",
+   "name": "Colorado Technical University-Colorado Springs",
+   "sector": "forprofit",
+   "state": "CO",
+   "tracker probability": 0.9997,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 31,
+   "unitid": "127653",
+   "name": "Naropa University",
+   "sector": "private",
+   "state": "CO",
+   "tracker probability": 0.9878,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 32,
+   "unitid": "128106",
+   "name": "Colorado State University-Pueblo",
+   "sector": "public",
+   "state": "CO",
+   "tracker probability": 0.9569,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 33,
+   "unitid": "129020",
+   "name": "University of Connecticut",
+   "sector": "public",
+   "state": "CT",
+   "tracker probability": 0.6834,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 34,
+   "unitid": "129941",
+   "name": "University of New Haven",
+   "sector": "private",
+   "state": "CT",
+   "tracker probability": 0.8725,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 37,
+   "unitid": "131876",
+   "name": "Trinity Washington University",
+   "sector": "private",
+   "state": "DC",
+   "tracker probability": 0.9796,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 39,
+   "unitid": "133553",
+   "name": "Embry-Riddle Aeronautical University-Daytona Beach",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.6942,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 40,
+   "unitid": "133979",
+   "name": "Florida Memorial University",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.9867,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 41,
+   "unitid": "134608",
+   "name": "Indian River State College",
+   "sector": "public",
+   "state": "FL",
+   "tracker probability": 0.9883,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 42,
+   "unitid": "135717",
+   "name": "Miami Dade College",
+   "sector": "public",
+   "state": "FL",
+   "tracker probability": 0.9033,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 43,
+   "unitid": "136774",
+   "name": "Ringling College of Art and Design",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.8977,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 44,
+   "unitid": "137272",
+   "name": "St. John Vianney College Seminary",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.6705,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 45,
+   "unitid": "137847",
+   "name": "The University of Tampa",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.6943,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 47,
+   "unitid": "139153",
+   "name": "Beulah Heights University",
+   "sector": "private",
+   "state": "GA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 48,
+   "unitid": "139579",
+   "name": "South University-Savannah",
+   "sector": "forprofit",
+   "state": "GA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 49,
+   "unitid": "139931",
+   "name": "Georgia Southern University",
+   "sector": "public",
+   "state": "GA",
+   "tracker probability": 0.9816,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 50,
+   "unitid": "140696",
+   "name": "Oglethorpe University",
+   "sector": "private",
+   "state": "GA",
+   "tracker probability": 0.8105,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 51,
+   "unitid": "141167",
+   "name": "Thomas University",
+   "sector": "private",
+   "state": "GA",
+   "tracker probability": 0.9913,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 52,
+   "unitid": "141565",
+   "name": "University of Hawaii at Hilo",
+   "sector": "public",
+   "state": "HI",
+   "tracker probability": 0.9981,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 54,
+   "unitid": "143118",
+   "name": "Aurora University",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.9229,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 55,
+   "unitid": "144005",
+   "name": "Chicago State University",
+   "sector": "public",
+   "state": "IL",
+   "tracker probability": 0.9982,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 56,
+   "unitid": "144971",
+   "name": "Eureka College",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.853,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 57,
+   "unitid": "145637",
+   "name": "University of Illinois at Urbana-Champaign",
+   "sector": "public",
+   "state": "IL",
+   "tracker probability": 0.5227,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 58,
+   "unitid": "146481",
+   "name": "Lake Forest College",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.6926,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 59,
+   "unitid": "147013",
+   "name": "McKendree University",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.9307,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 60,
+   "unitid": "147660",
+   "name": "North Central College",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.8007,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 61,
+   "unitid": "148131",
+   "name": "Quincy University",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.8589,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 62,
+   "unitid": "148627",
+   "name": "Saint Xavier University",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.9062,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 63,
+   "unitid": "149329",
+   "name": "Telshe Yeshiva-Chicago",
+   "sector": "private",
+   "state": "IL",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 64,
+   "unitid": "150145",
+   "name": "Bethel University",
+   "sector": "private",
+   "state": "IN",
+   "tracker probability": 0.926,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 65,
+   "unitid": "150677",
+   "name": "Grace College and Theological Seminary",
+   "sector": "private",
+   "state": "IN",
+   "tracker probability": 0.9557,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 66,
+   "unitid": "151306",
+   "name": "University of Southern Indiana",
+   "sector": "public",
+   "state": "IN",
+   "tracker probability": 0.9166,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 67,
+   "unitid": "151786",
+   "name": "Marian University",
+   "sector": "private",
+   "state": "IN",
+   "tracker probability": 0.9907,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 68,
+   "unitid": "152381",
+   "name": "Saint Mary-of-the-Woods College",
+   "sector": "private",
+   "state": "IN",
+   "tracker probability": 0.9279,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 69,
+   "unitid": "152992",
+   "name": "Briar Cliff University",
+   "sector": "private",
+   "state": "IA",
+   "tracker probability": 0.8978,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 70,
+   "unitid": "153278",
+   "name": "University of Dubuque",
+   "sector": "private",
+   "state": "IA",
+   "tracker probability": 0.6567,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 72,
+   "unitid": "154022",
+   "name": "Ashford University",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 73,
+   "unitid": "154518",
+   "name": "Waldorf University",
+   "sector": "forprofit",
+   "state": "IA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 74,
+   "unitid": "155007",
+   "name": "Donnelly College",
+   "sector": "private",
+   "state": "KS",
+   "tracker probability": 0.9989,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 75,
+   "unitid": "155335",
+   "name": "Newman University",
+   "sector": "private",
+   "state": "KS",
+   "tracker probability": 0.6727,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 76,
+   "unitid": "155681",
+   "name": "Pittsburg State University",
+   "sector": "public",
+   "state": "KS",
+   "tracker probability": 0.854,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 77,
+   "unitid": "156286",
+   "name": "Bellarmine University",
+   "sector": "private",
+   "state": "KY",
+   "tracker probability": 0.8669,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 78,
+   "unitid": "156620",
+   "name": "Eastern Kentucky University",
+   "sector": "public",
+   "state": "KY",
+   "tracker probability": 0.9905,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 79,
+   "unitid": "157216",
+   "name": "Lindsey Wilson College",
+   "sector": "private",
+   "state": "KY",
+   "tracker probability": 0.8492,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 80,
+   "unitid": "157748",
+   "name": "The Southern Baptist Theological Seminary",
+   "sector": "private",
+   "state": "KY",
+   "tracker probability": 0.7699,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 81,
+   "unitid": "159009",
+   "name": "Grambling State University",
+   "sector": "public",
+   "state": "LA",
+   "tracker probability": 0.9672,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 82,
+   "unitid": "159939",
+   "name": "University of New Orleans",
+   "sector": "public",
+   "state": "LA",
+   "tracker probability": 0.9856,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 83,
+   "unitid": "160621",
+   "name": "Southern University and A & M College",
+   "sector": "public",
+   "state": "LA",
+   "tracker probability": 0.9854,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 84,
+   "unitid": "161217",
+   "name": "University of Maine at Augusta",
+   "sector": "public",
+   "state": "ME",
+   "tracker probability": 0.9977,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 85,
+   "unitid": "161341",
+   "name": "University of Maine at Presque Isle",
+   "sector": "public",
+   "state": "ME",
+   "tracker probability": 0.989,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 86,
+   "unitid": "162061",
+   "name": "Capitol Technology University",
+   "sector": "private",
+   "state": "MD",
+   "tracker probability": 0.8867,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 87,
+   "unitid": "163204",
+   "name": "University of Maryland Global Campus",
+   "sector": "public",
+   "state": "MD",
+   "tracker probability": 0.9979,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 88,
+   "unitid": "163578",
+   "name": "Notre Dame of Maryland University",
+   "sector": "private",
+   "state": "MD",
+   "tracker probability": 0.9717,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 89,
+   "unitid": "164270",
+   "name": "McDaniel College",
+   "sector": "private",
+   "state": "MD",
+   "tracker probability": 0.639,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 90,
+   "unitid": "164614",
+   "name": "Boston Baptist College",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 92,
+   "unitid": "165644",
+   "name": "Eastern Nazarene College",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.9112,
+   "evidence": "",
+   "last HD file present": "HD2024"
+  },
+  {
+   "slot": 94,
+   "unitid": "166513",
+   "name": "University of Massachusetts-Lowell",
+   "sector": "public",
+   "state": "MA",
+   "tracker probability": 0.9424,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 95,
+   "unitid": "166850",
+   "name": "Merrimack College",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.8432,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 96,
+   "unitid": "167288",
+   "name": "Massachusetts College of Liberal Arts",
+   "sector": "public",
+   "state": "MA",
+   "tracker probability": 0.9307,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 97,
+   "unitid": "167792",
+   "name": "Bard College at Simon's Rock",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.7291,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 98,
+   "unitid": "168254",
+   "name": "Western New England University",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.868,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 99,
+   "unitid": "168740",
+   "name": "Andrews University",
+   "sector": "private",
+   "state": "MI",
+   "tracker probability": 0.8818,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 100,
+   "unitid": "169442",
+   "name": "College for Creative Studies",
+   "sector": "private",
+   "state": "MI",
+   "tracker probability": 0.7368,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 101,
+   "unitid": "170000",
+   "name": "Grace Christian University",
+   "sector": "private",
+   "state": "MI",
+   "tracker probability": 0.9799,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 102,
+   "unitid": "170639",
+   "name": "Lake Superior State University",
+   "sector": "public",
+   "state": "MI",
+   "tracker probability": 0.9467,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 103,
+   "unitid": "171137",
+   "name": "University of Michigan-Dearborn",
+   "sector": "public",
+   "state": "MI",
+   "tracker probability": 0.9677,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 104,
+   "unitid": "172051",
+   "name": "Saginaw Valley State University",
+   "sector": "public",
+   "state": "MI",
+   "tracker probability": 0.9102,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 105,
+   "unitid": "172866",
+   "name": "Academy College",
+   "sector": "forprofit",
+   "state": "MN",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 106,
+   "unitid": "173328",
+   "name": "Concordia University-Saint Paul",
+   "sector": "private",
+   "state": "MN",
+   "tracker probability": 0.8119,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 107,
+   "unitid": "174020",
+   "name": "Metropolitan State University",
+   "sector": "public",
+   "state": "MN",
+   "tracker probability": 0.9972,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 108,
+   "unitid": "174437",
+   "name": "North Central University",
+   "sector": "private",
+   "state": "MN",
+   "tracker probability": 0.9275,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 109,
+   "unitid": "174862",
+   "name": "Crown College",
+   "sector": "private",
+   "state": "MN",
+   "tracker probability": 0.8808,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 110,
+   "unitid": "175342",
+   "name": "Alcorn State University",
+   "sector": "public",
+   "state": "MS",
+   "tracker probability": 0.9734,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 111,
+   "unitid": "176044",
+   "name": "Mississippi Valley State University",
+   "sector": "public",
+   "state": "MS",
+   "tracker probability": 0.9911,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 112,
+   "unitid": "176628",
+   "name": "Avila University",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.9341,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 113,
+   "unitid": "177065",
+   "name": "Columbia College",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.9706,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 114,
+   "unitid": "177542",
+   "name": "Hannibal-LaGrange University",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.9565,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 115,
+   "unitid": "178059",
+   "name": "Maryville University of Saint Louis",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.8114,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 116,
+   "unitid": "178411",
+   "name": "Missouri University of Science and Technology",
+   "sector": "public",
+   "state": "MO",
+   "tracker probability": 0.9121,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 117,
+   "unitid": "178891",
+   "name": "Ranken Technical College",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.7433,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 118,
+   "unitid": "179548",
+   "name": "Stephens College",
+   "sector": "private",
+   "state": "MO",
+   "tracker probability": 0.7882,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 119,
+   "unitid": "180106",
+   "name": "Carroll College",
+   "sector": "private",
+   "state": "MT",
+   "tracker probability": 0.6855,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 120,
+   "unitid": "180692",
+   "name": "The University of Montana-Western",
+   "sector": "public",
+   "state": "MT",
+   "tracker probability": 0.9559,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 121,
+   "unitid": "181215",
+   "name": "University of Nebraska at Kearney",
+   "sector": "public",
+   "state": "NE",
+   "tracker probability": 0.9994,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 122,
+   "unitid": "181464",
+   "name": "University of Nebraska-Lincoln",
+   "sector": "public",
+   "state": "NE",
+   "tracker probability": 0.603,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 123,
+   "unitid": "182281",
+   "name": "University of Nevada-Las Vegas",
+   "sector": "public",
+   "state": "NV",
+   "tracker probability": 0.8884,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 124,
+   "unitid": "182980",
+   "name": "New England College",
+   "sector": "private",
+   "state": "NH",
+   "tracker probability": 0.9977,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 125,
+   "unitid": "183239",
+   "name": "Saint Anselm College",
+   "sector": "private",
+   "state": "NH",
+   "tracker probability": 0.7032,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 126,
+   "unitid": "184603",
+   "name": "Fairleigh Dickinson University-Metropolitan Campus",
+   "sector": "private",
+   "state": "NJ",
+   "tracker probability": 0.8258,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 127,
+   "unitid": "185590",
+   "name": "Montclair State University",
+   "sector": "public",
+   "state": "NJ",
+   "tracker probability": 0.9598,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 128,
+   "unitid": "186380",
+   "name": "Rutgers University-New Brunswick",
+   "sector": "public",
+   "state": "NJ",
+   "tracker probability": 0.614,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 129,
+   "unitid": "187134",
+   "name": "The College of New Jersey",
+   "sector": "public",
+   "state": "NJ",
+   "tracker probability": 0.923,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 130,
+   "unitid": "188058",
+   "name": "Northern New Mexico College",
+   "sector": "public",
+   "state": "NM",
+   "tracker probability": 0.9704,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 131,
+   "unitid": "188854",
+   "name": "American Musical and Dramatic Academy",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 132,
+   "unitid": "189413",
+   "name": "Boricua College",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.9931,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 133,
+   "unitid": "189857",
+   "name": "Central Yeshiva Tomchei Tmimim Lubavitz",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 135,
+   "unitid": "190594",
+   "name": "CUNY Hunter College",
+   "sector": "public",
+   "state": "NY",
+   "tracker probability": 0.9054,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 136,
+   "unitid": "190725",
+   "name": "Daemen College",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.9145,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 137,
+   "unitid": "191533",
+   "name": "Hartwick College",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.8972,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 139,
+   "unitid": "192712",
+   "name": "Manhattan School of Music",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.7561,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 140,
+   "unitid": "193070",
+   "name": "Mesivtha Tifereth Jerusalem of America",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 141,
+   "unitid": "193654",
+   "name": "The New School",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.7062,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 142,
+   "unitid": "194116",
+   "name": "New York School of Interior Design",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.9589,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 143,
+   "unitid": "194666",
+   "name": "Rabbinical College Bobover Yeshiva Bnei Zion",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 144,
+   "unitid": "195128",
+   "name": "Russell Sage College",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.7894,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 145,
+   "unitid": "195474",
+   "name": "Siena College",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.8415,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 146,
+   "unitid": "196024",
+   "name": "SUNY College of Technology at Delhi",
+   "sector": "public",
+   "state": "NY",
+   "tracker probability": 0.9867,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 147,
+   "unitid": "196121",
+   "name": "SUNY College at Brockport",
+   "sector": "public",
+   "state": "NY",
+   "tracker probability": 0.9901,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 148,
+   "unitid": "196200",
+   "name": "SUNY College at Potsdam",
+   "sector": "public",
+   "state": "NY",
+   "tracker probability": 0.9225,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 150,
+   "unitid": "197018",
+   "name": "United Talmudical Seminary",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 152,
+   "unitid": "197744",
+   "name": "Yeshivath Zichron Moshe",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 153,
+   "unitid": "198303",
+   "name": "Chowan University",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": 0.9976,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 154,
+   "unitid": "198613",
+   "name": "Guilford College",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": 0.9177,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 155,
+   "unitid": "198969",
+   "name": "Methodist University",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": 0.8805,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 156,
+   "unitid": "199157",
+   "name": "North Carolina Central University",
+   "sector": "public",
+   "state": "NC",
+   "tracker probability": 0.9696,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 157,
+   "unitid": "199458",
+   "name": "Mid-Atlantic Christian University",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": 0.8268,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 158,
+   "unitid": "199999",
+   "name": "Winston-Salem State University",
+   "sector": "public",
+   "state": "NC",
+   "tracker probability": 0.9642,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 159,
+   "unitid": "200226",
+   "name": "Mayville State University",
+   "sector": "public",
+   "state": "ND",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 160,
+   "unitid": "200800",
+   "name": "University of Akron Main Campus",
+   "sector": "public",
+   "state": "OH",
+   "tracker probability": 0.9843,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 161,
+   "unitid": "201195",
+   "name": "Baldwin Wallace University",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.8925,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 163,
+   "unitid": "202134",
+   "name": "Cleveland State University",
+   "sector": "public",
+   "state": "OH",
+   "tracker probability": 0.9897,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 164,
+   "unitid": "202903",
+   "name": "Gods Bible School and College",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 165,
+   "unitid": "203517",
+   "name": "Kent State University at Kent",
+   "sector": "public",
+   "state": "OH",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 166,
+   "unitid": "203775",
+   "name": "Malone University",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.8599,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 167,
+   "unitid": "204176",
+   "name": "Mount Carmel College of Nursing",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 169,
+   "unitid": "204857",
+   "name": "Ohio University-Main Campus",
+   "sector": "public",
+   "state": "OH",
+   "tracker probability": 0.7543,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 170,
+   "unitid": "205124",
+   "name": "Rabbinical College Telshe",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.966,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 171,
+   "unitid": "206279",
+   "name": "Union Institute & University",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.999,
+   "evidence": "",
+   "last HD file present": "HD2023"
+  },
+  {
+   "slot": 173,
+   "unitid": "206914",
+   "name": "Cameron University",
+   "sector": "public",
+   "state": "OK",
+   "tracker probability": 0.9785,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 174,
+   "unitid": "207324",
+   "name": "Oklahoma Christian University",
+   "sector": "private",
+   "state": "OK",
+   "tracker probability": 0.7377,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 175,
+   "unitid": "207582",
+   "name": "Oral Roberts University",
+   "sector": "private",
+   "state": "OK",
+   "tracker probability": 0.8741,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 176,
+   "unitid": "208725",
+   "name": "New Hope Christian College-Eugene",
+   "sector": "private",
+   "state": "OR",
+   "tracker probability": 0.9922,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 177,
+   "unitid": "209506",
+   "name": "Oregon Institute of Technology",
+   "sector": "public",
+   "state": "OR",
+   "tracker probability": 0.9282,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 179,
+   "unitid": "210571",
+   "name": "Albright College",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.9586,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 181,
+   "unitid": "211583",
+   "name": "Chestnut Hill College",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.9102,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 182,
+   "unitid": "212115",
+   "name": "East Stroudsburg University of Pennsylvania",
+   "sector": "public",
+   "state": "PA",
+   "tracker probability": 0.9646,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 184,
+   "unitid": "213251",
+   "name": "Juniata College",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.635,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 185,
+   "unitid": "213507",
+   "name": "Lebanon Valley College",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.7284,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 186,
+   "unitid": "213826",
+   "name": "Marywood University",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.9005,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 187,
+   "unitid": "214272",
+   "name": "Neumann University",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.8597,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 188,
+   "unitid": "214883",
+   "name": "Peirce College",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.9993,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 190,
+   "unitid": "215114",
+   "name": "Cairn University-Langhorne",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.8464,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 191,
+   "unitid": "215442",
+   "name": "Point Park University",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 0.8008,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 193,
+   "unitid": "216311",
+   "name": "Talmudical Yeshiva of Philadelphia",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 195,
+   "unitid": "217040",
+   "name": "Yeshivath Beth Moshe",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 197,
+   "unitid": "217776",
+   "name": "Southern Wesleyan University",
+   "sector": "private",
+   "state": "SC",
+   "tracker probability": 0.9145,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 198,
+   "unitid": "217961",
+   "name": "Converse College",
+   "sector": "private",
+   "state": "SC",
+   "tracker probability": 0.5827,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 199,
+   "unitid": "218414",
+   "name": "Newberry College",
+   "sector": "private",
+   "state": "SC",
+   "tracker probability": 0.9104,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 200,
+   "unitid": "218919",
+   "name": "Voorhees College",
+   "sector": "private",
+   "state": "SC",
+   "tracker probability": 0.9278,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 201,
+   "unitid": "219198",
+   "name": "Mount Marty College",
+   "sector": "private",
+   "state": "SD",
+   "tracker probability": 0.8408,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 202,
+   "unitid": "219374",
+   "name": "Sinte Gleska University",
+   "sector": "public",
+   "state": "SD",
+   "tracker probability": 0.9974,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 203,
+   "unitid": "219806",
+   "name": "Carson-Newman University",
+   "sector": "private",
+   "state": "TN",
+   "tracker probability": 0.7402,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 204,
+   "unitid": "220215",
+   "name": "Freed-Hardeman University",
+   "sector": "private",
+   "state": "TN",
+   "tracker probability": 0.6667,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 205,
+   "unitid": "220701",
+   "name": "Martin Methodist College",
+   "sector": "private",
+   "state": "TN",
+   "tracker probability": 0.987,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 207,
+   "unitid": "221892",
+   "name": "Trevecca Nazarene University",
+   "sector": "private",
+   "state": "TN",
+   "tracker probability": 0.9077,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 208,
+   "unitid": "222983",
+   "name": "Austin College",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.6351,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 209,
+   "unitid": "224004",
+   "name": "Concordia University Texas",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.8536,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 211,
+   "unitid": "225432",
+   "name": "University of Houston-Downtown",
+   "sector": "public",
+   "state": "TX",
+   "tracker probability": 0.9829,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 212,
+   "unitid": "226152",
+   "name": "Texas A & M International University",
+   "sector": "public",
+   "state": "TX",
+   "tracker probability": 0.8677,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 213,
+   "unitid": "227216",
+   "name": "University of North Texas",
+   "sector": "public",
+   "state": "TX",
+   "tracker probability": 0.8086,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 214,
+   "unitid": "227881",
+   "name": "Sam Houston State University",
+   "sector": "public",
+   "state": "TX",
+   "tracker probability": 0.7719,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 215,
+   "unitid": "228468",
+   "name": "Southwestern Adventist University",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.9711,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 216,
+   "unitid": "228769",
+   "name": "The University of Texas at Arlington",
+   "sector": "public",
+   "state": "TX",
+   "tracker probability": 0.8235,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 217,
+   "unitid": "228981",
+   "name": "Texas Lutheran University",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.644,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 218,
+   "unitid": "229780",
+   "name": "Wayland Baptist University",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.9732,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 219,
+   "unitid": "230366",
+   "name": "Eagle Gate College-Murray",
+   "sector": "forprofit",
+   "state": "UT",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 220,
+   "unitid": "230807",
+   "name": "Westminster College",
+   "sector": "private",
+   "state": "UT",
+   "tracker probability": 0.7966,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 222,
+   "unitid": "231174",
+   "name": "University of Vermont",
+   "sector": "public",
+   "state": "VT",
+   "tracker probability": 0.6646,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 225,
+   "unitid": "232797",
+   "name": "American National University",
+   "sector": "forprofit",
+   "state": "VA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 226,
+   "unitid": "233426",
+   "name": "Roanoke College",
+   "sector": "private",
+   "state": "VA",
+   "tracker probability": 0.6543,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 227,
+   "unitid": "234030",
+   "name": "Virginia Commonwealth University",
+   "sector": "public",
+   "state": "VA",
+   "tracker probability": 0.7269,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 228,
+   "unitid": "234827",
+   "name": "Central Washington University",
+   "sector": "public",
+   "state": "WA",
+   "tracker probability": 0.9757,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 229,
+   "unitid": "235167",
+   "name": "The Evergreen State College",
+   "sector": "public",
+   "state": "WA",
+   "tracker probability": 0.9815,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 230,
+   "unitid": "236133",
+   "name": "Northwest University",
+   "sector": "private",
+   "state": "WA",
+   "tracker probability": 0.8207,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 231,
+   "unitid": "236452",
+   "name": "Saint Martin's University",
+   "sector": "private",
+   "state": "WA",
+   "tracker probability": 0.8247,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 232,
+   "unitid": "236896",
+   "name": "Walla Walla University",
+   "sector": "private",
+   "state": "WA",
+   "tracker probability": 0.8241,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 234,
+   "unitid": "237385",
+   "name": "Glenville State College",
+   "sector": "public",
+   "state": "WV",
+   "tracker probability": 0.9088,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 235,
+   "unitid": "237932",
+   "name": "West Liberty University",
+   "sector": "public",
+   "state": "WV",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 237,
+   "unitid": "239080",
+   "name": "Marian University",
+   "sector": "private",
+   "state": "WI",
+   "tracker probability": 0.9876,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 238,
+   "unitid": "239716",
+   "name": "Saint Norbert College",
+   "sector": "private",
+   "state": "WI",
+   "tracker probability": 0.8078,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 239,
+   "unitid": "240338",
+   "name": "Wisconsin Lutheran College",
+   "sector": "private",
+   "state": "WI",
+   "tracker probability": 0.6766,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 240,
+   "unitid": "240471",
+   "name": "University of Wisconsin-River Falls",
+   "sector": "public",
+   "state": "WI",
+   "tracker probability": 0.9536,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 241,
+   "unitid": "241216",
+   "name": "Atlantic University College",
+   "sector": "private",
+   "state": "PR",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 242,
+   "unitid": "241614",
+   "name": "Universidad Teologica del Caribe",
+   "sector": "private",
+   "state": "PR",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 243,
+   "unitid": "242972",
+   "name": "National University College",
+   "sector": "forprofit",
+   "state": "PR",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 244,
+   "unitid": "243106",
+   "name": "University of Puerto Rico-Aguadilla",
+   "sector": "public",
+   "state": "PR",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 245,
+   "unitid": "243188",
+   "name": "University of Puerto Rico-Utuado",
+   "sector": "public",
+   "state": "PR",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 246,
+   "unitid": "243577",
+   "name": "Universidad Politecnica de Puerto Rico",
+   "sector": "private",
+   "state": "PR",
+   "tracker probability": 0.9698,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 247,
+   "unitid": "245652",
+   "name": "St. John's College",
+   "sector": "private",
+   "state": "NM",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 248,
+   "unitid": "247065",
+   "name": "Beckfield College-Florence",
+   "sector": "forprofit",
+   "state": "KY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 249,
+   "unitid": "251312",
+   "name": "South University-Columbia",
+   "sector": "forprofit",
+   "state": "SC",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 250,
+   "unitid": "262129",
+   "name": "New College of Florida",
+   "sector": "public",
+   "state": "FL",
+   "tracker probability": 0.7053,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 251,
+   "unitid": "366252",
+   "name": "Pennsylvania College of Technology",
+   "sector": "public",
+   "state": "PA",
+   "tracker probability": 0.9574,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 252,
+   "unitid": "368452",
+   "name": "Nossi College of Art",
+   "sector": "forprofit",
+   "state": "TN",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 253,
+   "unitid": "372958",
+   "name": "Remington College-Honolulu Campus",
+   "sector": "private",
+   "state": "HI",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "none after HD2019"
+  },
+  {
+   "slot": 254,
+   "unitid": "377546",
+   "name": "Northwest College of Art & Design",
+   "sector": "forprofit",
+   "state": "WA",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 255,
+   "unitid": "384254",
+   "name": "Beacon College",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 256,
+   "unitid": "385619",
+   "name": "Everglades University",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 257,
+   "unitid": "404338",
+   "name": "Schiller International University",
+   "sector": "forprofit",
+   "state": "FL",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 258,
+   "unitid": "408844",
+   "name": "Florida National University-Main Campus",
+   "sector": "forprofit",
+   "state": "FL",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 259,
+   "unitid": "409698",
+   "name": "California State University-Monterey Bay",
+   "sector": "public",
+   "state": "CA",
+   "tracker probability": 0.9791,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 260,
+   "unitid": "417752",
+   "name": "Messenger College",
+   "sector": "private",
+   "state": "TX",
+   "tracker probability": 0.9989,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 262,
+   "unitid": "431983",
+   "name": "Yeshiva of the Telshe Alumni",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 263,
+   "unitid": "433387",
+   "name": "Western Governors University",
+   "sector": "private",
+   "state": "UT",
+   "tracker probability": 0.9998,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 264,
+   "unitid": "436614",
+   "name": "International Baptist College and Seminary",
+   "sector": "private",
+   "state": "AZ",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 267,
+   "unitid": "439862",
+   "name": "Pacific Islands University",
+   "sector": "private",
+   "state": "GU",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 268,
+   "unitid": "440651",
+   "name": "Atenas College",
+   "sector": "private",
+   "state": "PR",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 269,
+   "unitid": "441690",
+   "name": "Universidad Pentecostal Mizpa",
+   "sector": "private",
+   "state": "PR",
+   "tracker probability": 0.9935,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 270,
+   "unitid": "443058",
+   "name": "Family of Faith Christian University",
+   "sector": "private",
+   "state": "OK",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 271,
+   "unitid": "444413",
+   "name": "Beis Medrash Heichal Dovid",
+   "sector": "private",
+   "state": "NY",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 272,
+   "unitid": "443410",
+   "name": "DigiPen Institute of Technology",
+   "sector": "forprofit",
+   "state": "WA",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 273,
+   "unitid": "444778",
+   "name": "Charlotte Christian College and Theological Seminary",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 274,
+   "unitid": "446233",
+   "name": "Ecclesia College",
+   "sector": "private",
+   "state": "AR",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 275,
+   "unitid": "447953",
+   "name": "SUM Bible College and Theological Seminary",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 1.0,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 277,
+   "unitid": "449764",
+   "name": "Visible Music College",
+   "sector": "private",
+   "state": "TN",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  },
+  {
+   "slot": 278,
+   "unitid": "449870",
+   "name": "University of the West",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": 0.5832,
+   "evidence": "",
+   "last HD file present": "HD2025"
+  }
+ ],
+ "missed closures (closed or merged, not flagged)": [
+  {
+   "slot": 189,
+   "unitid": "214777",
+   "name": "Pennsylvania State University-Main Campus",
+   "sector": "public",
+   "state": "PA",
+   "tracker probability": 0.1252,
+   "evidence": "HD2020 DEATHYR=2020",
+   "last HD file present": "HD2025"
+  }
+ ],
+ "vanished without a closure, deletion or merger record (counted as surviving)": [
+  {
+   "slot": 92,
+   "unitid": "165644",
+   "name": "Eastern Nazarene College",
+   "sector": "private",
+   "state": "MA",
+   "tracker probability": 0.9112,
+   "evidence": "",
+   "last HD file present": "HD2024",
+   "group": "scored",
+   "tracker flag": "high_risk"
+  },
+  {
+   "slot": 171,
+   "unitid": "206279",
+   "name": "Union Institute & University",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": 0.999,
+   "evidence": "",
+   "last HD file present": "HD2023",
+   "group": "scored",
+   "tracker flag": "high_risk"
+  },
+  {
+   "slot": 253,
+   "unitid": "372958",
+   "name": "Remington College-Honolulu Campus",
+   "sector": "private",
+   "state": "HI",
+   "tracker probability": 0.9999,
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "scored",
+   "tracker flag": "high_risk"
+  },
+  {
+   "slot": 19,
+   "unitid": "117548",
+   "name": "Lincoln Law School of Sacramento",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 20,
+   "unitid": "118541",
+   "name": "Marymount California University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 25,
+   "unitid": "122834",
+   "name": "Santa Barbara Business College-Bakersfield",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 160,
+   "unitid": "200624",
+   "name": "The Art Institute of Cincinnati-AIC College of Design",
+   "sector": "forprofit",
+   "state": "OH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 162,
+   "unitid": "201858",
+   "name": "Cincinnati Christian University",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 258,
+   "unitid": "407009",
+   "name": "Arizona State University-West",
+   "sector": "public",
+   "state": "AZ",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 260,
+   "unitid": "417318",
+   "name": "College of Business and Technology-Miami Campus",
+   "sector": "forprofit",
+   "state": "FL",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 261,
+   "unitid": "420574",
+   "name": "Arizona State University-Polytechnic",
+   "sector": "public",
+   "state": "AZ",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 262,
+   "unitid": "429094",
+   "name": "AOMA Graduate School of Integrative Medicine",
+   "sector": "forprofit",
+   "state": "TX",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2024",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 262,
+   "unitid": "430810",
+   "name": "New Hampshire Institute of Art",
+   "sector": "private",
+   "state": "NH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 269,
+   "unitid": "441238",
+   "name": "Irell & Manella Graduate School of Biological Sciences at City of Hope",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2023",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 269,
+   "unitid": "441511",
+   "name": "Apex School of Theology",
+   "sector": "private",
+   "state": "NC",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 270,
+   "unitid": "442718",
+   "name": "National American University-Overland Park",
+   "sector": "forprofit",
+   "state": "KS",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 271,
+   "unitid": "443128",
+   "name": "International Technological University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 275,
+   "unitid": "446394",
+   "name": "Maple Springs Baptist Bible College and Seminary",
+   "sector": "private",
+   "state": "MD",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 275,
+   "unitid": "446613",
+   "name": "W L Bonner College",
+   "sector": "private",
+   "state": "SC",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2021",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 276,
+   "unitid": "448284",
+   "name": "Doane University-Graduate and Professional Studies",
+   "sector": "private",
+   "state": "NE",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 277,
+   "unitid": "448886",
+   "name": "Arizona State University-Downtown Phoenix",
+   "sector": "public",
+   "state": "AZ",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 280,
+   "unitid": "451875",
+   "name": "National American University-Austin",
+   "sector": "forprofit",
+   "state": "TX",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 280,
+   "unitid": "451884",
+   "name": "National American University-Wichita",
+   "sector": "forprofit",
+   "state": "KS",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 283,
+   "unitid": "457022",
+   "name": "Herzing University-Toledo",
+   "sector": "private",
+   "state": "OH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 284,
+   "unitid": "457688",
+   "name": "American Business and Technology University",
+   "sector": "forprofit",
+   "state": "MO",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 285,
+   "unitid": "458502",
+   "name": "Bryant & Stratton College-Bayshore",
+   "sector": "forprofit",
+   "state": "WI",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 285,
+   "unitid": "458575",
+   "name": "Zaytuna College",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2021",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 286,
+   "unitid": "459082",
+   "name": "Virginia Polytechnic Institute & State University",
+   "sector": "public",
+   "state": "VA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 286,
+   "unitid": "459107",
+   "name": "Bryant & Stratton College-Hampton",
+   "sector": "forprofit",
+   "state": "VA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 287,
+   "unitid": "460075",
+   "name": "California University of Management and Sciences",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 288,
+   "unitid": "460376",
+   "name": "Fairfax University of America",
+   "sector": "private",
+   "state": "VA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2023",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 289,
+   "unitid": "461643",
+   "name": "Bergin University of Canine Studies",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2023",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 290,
+   "unitid": "466152",
+   "name": "National American University-Tulsa",
+   "sector": "forprofit",
+   "state": "OK",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 290,
+   "unitid": "466189",
+   "name": "National American University-Colorado Springs South",
+   "sector": "forprofit",
+   "state": "CO",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 291,
+   "unitid": "468024",
+   "name": "South University-Novi",
+   "sector": "forprofit",
+   "state": "MI",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 292,
+   "unitid": "475237",
+   "name": "The University of America",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2024",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 292,
+   "unitid": "475510",
+   "name": "Christie's Education",
+   "sector": "forprofit",
+   "state": "NY",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 292,
+   "unitid": "475635",
+   "name": "Beverly Hills Design Institute",
+   "sector": "forprofit",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2023",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 293,
+   "unitid": "466161",
+   "name": "National American University-Centennial",
+   "sector": "forprofit",
+   "state": "CO",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 293,
+   "unitid": "475699",
+   "name": "Bryant & Stratton College-Akron",
+   "sector": "forprofit",
+   "state": "OH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 294,
+   "unitid": "477996",
+   "name": "National American University-Bellevue",
+   "sector": "forprofit",
+   "state": "NE",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 294,
+   "unitid": "478014",
+   "name": "National American University-Mesquite",
+   "sector": "forprofit",
+   "state": "TX",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 294,
+   "unitid": "480064",
+   "name": "Purdue University Global-Augusta",
+   "sector": "public",
+   "state": "ME",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 294,
+   "unitid": "480082",
+   "name": "South University-Cleveland",
+   "sector": "forprofit",
+   "state": "OH",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 294,
+   "unitid": "480134",
+   "name": "Elizabethtown College School of Continuing and Professional Studies",
+   "sector": "private",
+   "state": "PA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 295,
+   "unitid": "480499",
+   "name": "Shiloh University",
+   "sector": "private",
+   "state": "IA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2021",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 295,
+   "unitid": "480569",
+   "name": "Florida Institute of Technology-Online",
+   "sector": "private",
+   "state": "FL",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2024",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 295,
+   "unitid": "480912",
+   "name": "Gemini School of Visual Arts & Communication",
+   "sector": "forprofit",
+   "state": "TX",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2022",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 297,
+   "unitid": "482024",
+   "name": "College of Business and Technology-Miami Gardens",
+   "sector": "forprofit",
+   "state": "FL",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 297,
+   "unitid": "482334",
+   "name": "National American University-Richardson",
+   "sector": "forprofit",
+   "state": "TX",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 297,
+   "unitid": "482343",
+   "name": "National American University-Rochester",
+   "sector": "forprofit",
+   "state": "MN",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "none after HD2019",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 300,
+   "unitid": "482370",
+   "name": "National American University-Indianapolis",
+   "sector": "forprofit",
+   "state": "IN",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  },
+  {
+   "slot": 300,
+   "unitid": "483586",
+   "name": "California International Business University",
+   "sector": "private",
+   "state": "CA",
+   "tracker probability": "",
+   "evidence": "",
+   "last HD file present": "HD2020",
+   "group": "skipped (data check)",
+   "tracker flag": ""
+  }
+ ],
+ "effective population": "Institutions with at least 11 years of reporting history by FY2019: 22 of 300 slots were unfilled because every candidate in their backup lists, mostly young institutions at the top of the UNITID order, lacked complete data for the 11-year window."
+}

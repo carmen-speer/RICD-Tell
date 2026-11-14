@@ -1,0 +1,755 @@
+group,slot,unitid,name,sector,state,tracker probability,tracker flag,comparator,skip reason,closed or merged,evidence,last HD file present,"vanished without a closure, deletion or merger record"
+scored,1,100654,Alabama A & M University,public,AL,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,2,101116,South University-Montgomery,forprofit,AL,1.0,high_risk,not computable,,False,,HD2025,False
+scored,3,101675,Miles College,private,AL,0.9224,high_risk,not flagged,,False,,HD2025,False
+scored,4,102270,Stillman College,private,AL,0.9415,high_risk,not flagged,,False,,HD2025,False
+scored,5,102669,Alaska Pacific University,private,AK,0.251,stable,not flagged,,False,,HD2025,False
+scored,6,105330,Northern Arizona University,public,AZ,0.978,high_risk,not flagged,,False,,HD2025,False
+scored,7,106342,Lyon College,private,AR,0.5841,high_risk,flagged,,False,,HD2025,False
+scored,8,107044,Harding University,private,AR,0.6972,high_risk,not flagged,,False,,HD2025,False
+scored,9,108092,University of Arkansas-Fort Smith,public,AR,0.7943,high_risk,not flagged,,False,,HD2025,False
+scored,10,110060,Bethesda University,private,CA,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,11,110413,California Lutheran University,private,CA,0.7784,high_risk,not flagged,,False,,HD2025,False
+scored,12,110556,California State University-Fresno,public,CA,0.9669,high_risk,not flagged,,False,,HD2025,False
+scored,13,111081,California Institute of the Arts,private,CA,0.6626,high_risk,not flagged,,False,,HD2025,False
+scored,14,111188,California State University Maritime Academy,public,CA,0.9767,high_risk,flagged,,False,,HD2025,False
+scored,15,112394,Cogswell College,forprofit,CA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,16,113698,Dominican University of California,private,CA,0.7647,high_risk,not flagged,,False,,HD2025,False
+scored,17,114813,Fresno Pacific University,private,CA,0.9392,high_risk,not flagged,,False,,HD2025,False
+scored,18,115755,Humboldt State University,public,CA,0.9884,high_risk,not flagged,,False,,HD2025,False
+scored,19,117557,Lincoln University,private,CA,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,20,118693,Menlo College,private,CA,0.8761,high_risk,not flagged,,False,,HD2025,False
+scored,21,119775,Newschool of Architecture and Design,forprofit,CA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,22,120865,Pacific Union College,private,CA,0.798,high_risk,not flagged,,False,,HD2025,False
+scored,23,121691,University of Redlands,private,CA,0.4804,stable,not flagged,,False,,HD2025,False
+scored,24,122454,San Francisco Art Institute,private,CA,0.9912,high_risk,not flagged,,True,HD2022 CLOSEDAT=07/15/2022; HD2022 DEATHYR=2022,HD2022,False
+scored,25,122931,Santa Clara University,private,CA,0.1199,stable,not flagged,,False,,HD2025,False
+scored,26,123457,Simpson University,private,CA,0.8971,high_risk,flagged,,False,,HD2025,False
+scored,27,123952,Southern California Institute of Architecture,private,CA,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,28,125727,Westmont College,private,CA,0.7455,high_risk,not flagged,,False,,HD2025,False
+scored,29,126562,University of Colorado Denver/Anschutz Medical Campus,public,CO,0.9996,high_risk,flagged,,False,,HD2025,False
+scored,30,126827,Colorado Technical University-Colorado Springs,forprofit,CO,0.9997,high_risk,not computable,,False,,HD2025,False
+scored,31,127653,Naropa University,private,CO,0.9878,high_risk,not flagged,,False,,HD2025,False
+scored,32,128106,Colorado State University-Pueblo,public,CO,0.9569,high_risk,not flagged,,False,,HD2025,False
+scored,33,129020,University of Connecticut,public,CT,0.6834,high_risk,flagged,,False,,HD2025,False
+scored,34,129941,University of New Haven,private,CT,0.8725,high_risk,flagged,,False,,HD2025,False
+scored,35,130697,Wesleyan University,private,CT,0.066,stable,not flagged,,False,,HD2025,False
+scored,36,131159,American University,private,DC,0.1271,stable,not flagged,,False,,HD2025,False
+scored,37,131876,Trinity Washington University,private,DC,0.9796,high_risk,not flagged,,False,,HD2025,False
+scored,38,132879,Johnson University Florida,private,FL,0.9236,high_risk,not flagged,,True,HD2024 CLOSEDAT=06/30/2024; HD2024 DEATHYR=2024,HD2024,False
+scored,39,133553,Embry-Riddle Aeronautical University-Daytona Beach,private,FL,0.6942,high_risk,not flagged,,False,,HD2025,False
+scored,40,133979,Florida Memorial University,private,FL,0.9867,high_risk,not flagged,,False,,HD2025,False
+scored,41,134608,Indian River State College,public,FL,0.9883,high_risk,not flagged,,False,,HD2025,False
+scored,42,135717,Miami Dade College,public,FL,0.9033,high_risk,not flagged,,False,,HD2025,False
+scored,43,136774,Ringling College of Art and Design,private,FL,0.8977,high_risk,flagged,,False,,HD2025,False
+scored,44,137272,St. John Vianney College Seminary,private,FL,0.6705,high_risk,not flagged,,False,,HD2025,False
+scored,45,137847,The University of Tampa,private,FL,0.6943,high_risk,flagged,,False,,HD2025,False
+scored,46,138600,Agnes Scott College,private,GA,0.197,stable,not flagged,,False,,HD2025,False
+scored,47,139153,Beulah Heights University,private,GA,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,48,139579,South University-Savannah,forprofit,GA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,49,139931,Georgia Southern University,public,GA,0.9816,high_risk,not flagged,,False,,HD2025,False
+scored,50,140696,Oglethorpe University,private,GA,0.8105,high_risk,not flagged,,False,,HD2025,False
+scored,51,141167,Thomas University,private,GA,0.9913,high_risk,flagged,,False,,HD2025,False
+scored,52,141565,University of Hawaii at Hilo,public,HI,0.9981,high_risk,not flagged,,False,,HD2025,False
+scored,53,142294,The College of Idaho,private,ID,0.499,stable,not flagged,,False,,HD2025,False
+scored,54,143118,Aurora University,private,IL,0.9229,high_risk,not flagged,,False,,HD2025,False
+scored,55,144005,Chicago State University,public,IL,0.9982,high_risk,not flagged,,False,,HD2025,False
+scored,56,144971,Eureka College,private,IL,0.853,high_risk,not flagged,,False,,HD2025,False
+scored,57,145637,University of Illinois at Urbana-Champaign,public,IL,0.5227,high_risk,flagged,,False,,HD2025,False
+scored,58,146481,Lake Forest College,private,IL,0.6926,high_risk,not flagged,,False,,HD2025,False
+scored,59,147013,McKendree University,private,IL,0.9307,high_risk,not flagged,,False,,HD2025,False
+scored,60,147660,North Central College,private,IL,0.8007,high_risk,flagged,,False,,HD2025,False
+scored,61,148131,Quincy University,private,IL,0.8589,high_risk,not flagged,,False,,HD2025,False
+scored,62,148627,Saint Xavier University,private,IL,0.9062,high_risk,flagged,,False,,HD2025,False
+scored,63,149329,Telshe Yeshiva-Chicago,private,IL,0.9998,high_risk,not flagged,,False,,HD2025,False
+scored,64,150145,Bethel University,private,IN,0.926,high_risk,flagged,,False,,HD2025,False
+scored,65,150677,Grace College and Theological Seminary,private,IN,0.9557,high_risk,not flagged,,False,,HD2025,False
+scored,66,151306,University of Southern Indiana,public,IN,0.9166,high_risk,not flagged,,False,,HD2025,False
+scored,67,151786,Marian University,private,IN,0.9907,high_risk,not flagged,,False,,HD2025,False
+scored,68,152381,Saint Mary-of-the-Woods College,private,IN,0.9279,high_risk,not flagged,,False,,HD2025,False
+scored,69,152992,Briar Cliff University,private,IA,0.8978,high_risk,not flagged,,False,,HD2025,False
+scored,70,153278,University of Dubuque,private,IA,0.6567,high_risk,not flagged,,False,,HD2025,False
+scored,71,153658,University of Iowa,public,IA,0.2842,stable,not flagged,,False,,HD2025,False
+scored,72,154022,Ashford University,forprofit,CA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,73,154518,Waldorf University,forprofit,IA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,74,155007,Donnelly College,private,KS,0.9989,high_risk,flagged,,False,,HD2025,False
+scored,75,155335,Newman University,private,KS,0.6727,high_risk,flagged,,False,,HD2025,False
+scored,76,155681,Pittsburg State University,public,KS,0.854,high_risk,not flagged,,False,,HD2025,False
+scored,77,156286,Bellarmine University,private,KY,0.8669,high_risk,not flagged,,False,,HD2025,False
+scored,78,156620,Eastern Kentucky University,public,KY,0.9905,high_risk,not flagged,,False,,HD2025,False
+scored,79,157216,Lindsey Wilson College,private,KY,0.8492,high_risk,not flagged,,False,,HD2025,False
+scored,80,157748,The Southern Baptist Theological Seminary,private,KY,0.7699,high_risk,not flagged,,False,,HD2025,False
+scored,81,159009,Grambling State University,public,LA,0.9672,high_risk,not flagged,,False,,HD2025,False
+scored,82,159939,University of New Orleans,public,LA,0.9856,high_risk,not flagged,,False,,HD2025,False
+scored,83,160621,Southern University and A & M College,public,LA,0.9854,high_risk,not flagged,,False,,HD2025,False
+scored,84,161217,University of Maine at Augusta,public,ME,0.9977,high_risk,not flagged,,False,,HD2025,False
+scored,85,161341,University of Maine at Presque Isle,public,ME,0.989,high_risk,not flagged,,False,,HD2025,False
+scored,86,162061,Capitol Technology University,private,MD,0.8867,high_risk,not flagged,,False,,HD2025,False
+scored,87,163204,University of Maryland Global Campus,public,MD,0.9979,high_risk,not flagged,,False,,HD2025,False
+scored,88,163578,Notre Dame of Maryland University,private,MD,0.9717,high_risk,not flagged,,False,,HD2025,False
+scored,89,164270,McDaniel College,private,MD,0.639,high_risk,not flagged,,False,,HD2025,False
+scored,90,164614,Boston Baptist College,private,MA,0.9998,high_risk,flagged,,False,,HD2025,False
+scored,91,164988,Boston University,private,MA,0.1101,stable,not flagged,,False,,HD2025,False
+scored,92,165644,Eastern Nazarene College,private,MA,0.9112,high_risk,not flagged,,False,,HD2024,True
+scored,93,166054,Hellenic College-Holy Cross Greek Orthodox School of Theology,private,MA,0.2944,stable,not flagged,,False,,HD2025,False
+scored,94,166513,University of Massachusetts-Lowell,public,MA,0.9424,high_risk,not flagged,,False,,HD2025,False
+scored,95,166850,Merrimack College,private,MA,0.8432,high_risk,not flagged,,False,,HD2025,False
+scored,96,167288,Massachusetts College of Liberal Arts,public,MA,0.9307,high_risk,not flagged,,False,,HD2025,False
+scored,97,167792,Bard College at Simon's Rock,private,MA,0.7291,high_risk,not flagged,,False,,HD2025,False
+scored,98,168254,Western New England University,private,MA,0.868,high_risk,not flagged,,False,,HD2025,False
+scored,99,168740,Andrews University,private,MI,0.8818,high_risk,not flagged,,False,,HD2025,False
+scored,100,169442,College for Creative Studies,private,MI,0.7368,high_risk,not flagged,,False,,HD2025,False
+scored,101,170000,Grace Christian University,private,MI,0.9799,high_risk,not flagged,,False,,HD2025,False
+scored,102,170639,Lake Superior State University,public,MI,0.9467,high_risk,flagged,,False,,HD2025,False
+scored,103,171137,University of Michigan-Dearborn,public,MI,0.9677,high_risk,flagged,,False,,HD2025,False
+scored,104,172051,Saginaw Valley State University,public,MI,0.9102,high_risk,not flagged,,False,,HD2025,False
+scored,105,172866,Academy College,forprofit,MN,1.0,high_risk,not computable,,False,,HD2025,False
+scored,106,173328,Concordia University-Saint Paul,private,MN,0.8119,high_risk,not flagged,,False,,HD2025,False
+scored,107,174020,Metropolitan State University,public,MN,0.9972,high_risk,flagged,,False,,HD2025,False
+scored,108,174437,North Central University,private,MN,0.9275,high_risk,not flagged,,False,,HD2025,False
+scored,109,174862,Crown College,private,MN,0.8808,high_risk,not flagged,,False,,HD2025,False
+scored,110,175342,Alcorn State University,public,MS,0.9734,high_risk,flagged,,False,,HD2025,False
+scored,111,176044,Mississippi Valley State University,public,MS,0.9911,high_risk,flagged,,False,,HD2025,False
+scored,112,176628,Avila University,private,MO,0.9341,high_risk,not flagged,,False,,HD2025,False
+scored,113,177065,Columbia College,private,MO,0.9706,high_risk,flagged,,False,,HD2025,False
+scored,114,177542,Hannibal-LaGrange University,private,MO,0.9565,high_risk,not flagged,,False,,HD2025,False
+scored,115,178059,Maryville University of Saint Louis,private,MO,0.8114,high_risk,not flagged,,False,,HD2025,False
+scored,116,178411,Missouri University of Science and Technology,public,MO,0.9121,high_risk,not flagged,,False,,HD2025,False
+scored,117,178891,Ranken Technical College,private,MO,0.7433,high_risk,not flagged,,False,,HD2025,False
+scored,118,179548,Stephens College,private,MO,0.7882,high_risk,flagged,,False,,HD2025,False
+scored,119,180106,Carroll College,private,MT,0.6855,high_risk,not flagged,,False,,HD2025,False
+scored,120,180692,The University of Montana-Western,public,MT,0.9559,high_risk,not flagged,,False,,HD2025,False
+scored,121,181215,University of Nebraska at Kearney,public,NE,0.9994,high_risk,not flagged,,False,,HD2025,False
+scored,122,181464,University of Nebraska-Lincoln,public,NE,0.603,high_risk,flagged,,False,,HD2025,False
+scored,123,182281,University of Nevada-Las Vegas,public,NV,0.8884,high_risk,flagged,,False,,HD2025,False
+scored,124,182980,New England College,private,NH,0.9977,high_risk,flagged,,False,,HD2025,False
+scored,125,183239,Saint Anselm College,private,NH,0.7032,high_risk,not flagged,,False,,HD2025,False
+scored,126,184603,Fairleigh Dickinson University-Metropolitan Campus,private,NJ,0.8258,high_risk,flagged,,False,,HD2025,False
+scored,127,185590,Montclair State University,public,NJ,0.9598,high_risk,flagged,,False,,HD2025,False
+scored,128,186380,Rutgers University-New Brunswick,public,NJ,0.614,high_risk,not flagged,,False,,HD2025,False
+scored,129,187134,The College of New Jersey,public,NJ,0.923,high_risk,flagged,,False,,HD2025,False
+scored,130,188058,Northern New Mexico College,public,NM,0.9704,high_risk,not flagged,,False,,HD2025,False
+scored,131,188854,American Musical and Dramatic Academy,private,NY,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,132,189413,Boricua College,private,NY,0.9931,high_risk,not flagged,,False,,HD2025,False
+scored,133,189857,Central Yeshiva Tomchei Tmimim Lubavitz,private,NY,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,134,190372,Cooper Union for the Advancement of Science and Art,private,NY,0.154,stable,not flagged,,False,,HD2025,False
+scored,135,190594,CUNY Hunter College,public,NY,0.9054,high_risk,not flagged,,False,,HD2025,False
+scored,136,190725,Daemen College,private,NY,0.9145,high_risk,not flagged,,False,,HD2025,False
+scored,137,191533,Hartwick College,private,NY,0.8972,high_risk,not flagged,,False,,HD2025,False
+scored,138,192110,The Juilliard School,private,NY,0.045,stable,not flagged,,False,,HD2025,False
+scored,139,192712,Manhattan School of Music,private,NY,0.7561,high_risk,not flagged,,False,,HD2025,False
+scored,140,193070,Mesivtha Tifereth Jerusalem of America,private,NY,1.0,high_risk,flagged,,False,,HD2025,False
+scored,141,193654,The New School,private,NY,0.7062,high_risk,not flagged,,False,,HD2025,False
+scored,142,194116,New York School of Interior Design,private,NY,0.9589,high_risk,not flagged,,False,,HD2025,False
+scored,143,194666,Rabbinical College Bobover Yeshiva Bnei Zion,private,NY,0.9998,high_risk,not flagged,,False,,HD2025,False
+scored,144,195128,Russell Sage College,private,NY,0.7894,high_risk,not flagged,,False,,HD2025,False
+scored,145,195474,Siena College,private,NY,0.8415,high_risk,not flagged,,False,,HD2025,False
+scored,146,196024,SUNY College of Technology at Delhi,public,NY,0.9867,high_risk,flagged,,False,,HD2025,False
+scored,147,196121,SUNY College at Brockport,public,NY,0.9901,high_risk,not flagged,,False,,HD2025,False
+scored,148,196200,SUNY College at Potsdam,public,NY,0.9225,high_risk,flagged,,False,,HD2025,False
+scored,149,196413,Syracuse University,private,NY,0.2148,stable,not flagged,,False,,HD2025,False
+scored,150,197018,United Talmudical Seminary,private,NY,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,151,197230,Wells College,private,NY,0.657,high_risk,not flagged,,True,HD2024 CLOSEDAT=05/10/2024; HD2024 DEATHYR=2024,HD2024,False
+scored,152,197744,Yeshivath Zichron Moshe,private,NY,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,153,198303,Chowan University,private,NC,0.9976,high_risk,not flagged,,False,,HD2025,False
+scored,154,198613,Guilford College,private,NC,0.9177,high_risk,flagged,,False,,HD2025,False
+scored,155,198969,Methodist University,private,NC,0.8805,high_risk,flagged,,False,,HD2025,False
+scored,156,199157,North Carolina Central University,public,NC,0.9696,high_risk,not flagged,,False,,HD2025,False
+scored,157,199458,Mid-Atlantic Christian University,private,NC,0.8268,high_risk,not flagged,,False,,HD2025,False
+scored,158,199999,Winston-Salem State University,public,NC,0.9642,high_risk,flagged,,False,,HD2025,False
+scored,159,200226,Mayville State University,public,ND,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,160,200800,University of Akron Main Campus,public,OH,0.9843,high_risk,not flagged,,False,,HD2025,False
+scored,161,201195,Baldwin Wallace University,private,OH,0.8925,high_risk,not flagged,,False,,HD2025,False
+scored,162,201885,University of Cincinnati-Main Campus,public,OH,0.3821,stable,not flagged,,False,,HD2025,False
+scored,163,202134,Cleveland State University,public,OH,0.9897,high_risk,flagged,,False,,HD2025,False
+scored,164,202903,Gods Bible School and College,private,OH,0.9998,high_risk,not flagged,,False,,HD2025,False
+scored,165,203517,Kent State University at Kent,public,OH,0.9998,high_risk,flagged,,False,,HD2025,False
+scored,166,203775,Malone University,private,OH,0.8599,high_risk,not flagged,,False,,HD2025,False
+scored,167,204176,Mount Carmel College of Nursing,private,OH,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,168,204501,Oberlin College,private,OH,0.1014,stable,not flagged,,False,,HD2025,False
+scored,169,204857,Ohio University-Main Campus,public,OH,0.7543,high_risk,not flagged,,False,,HD2025,False
+scored,170,205124,Rabbinical College Telshe,private,OH,0.966,high_risk,not flagged,,False,,HD2025,False
+scored,171,206279,Union Institute & University,private,OH,0.999,high_risk,not flagged,,False,,HD2023,True
+scored,172,206589,The College of Wooster,private,OH,0.3625,stable,not flagged,,False,,HD2025,False
+scored,173,206914,Cameron University,public,OK,0.9785,high_risk,not flagged,,False,,HD2025,False
+scored,174,207324,Oklahoma Christian University,private,OK,0.7377,high_risk,not flagged,,False,,HD2025,False
+scored,175,207582,Oral Roberts University,private,OK,0.8741,high_risk,flagged,,False,,HD2025,False
+scored,176,208725,New Hope Christian College-Eugene,private,OR,0.9922,high_risk,not flagged,,False,,HD2025,False
+scored,177,209506,Oregon Institute of Technology,public,OR,0.9282,high_risk,not flagged,,False,,HD2025,False
+scored,178,210076,Pioneer Pacific College,forprofit,OR,0.9999,high_risk,not computable,,True,HD2020 CLOSEDAT=05/08/2020; HD2020 DEATHYR=2020,HD2020,False
+scored,179,210571,Albright College,private,PA,0.9586,high_risk,not flagged,,False,,HD2025,False
+scored,180,211273,Bryn Mawr College,private,PA,0.1282,stable,not flagged,,False,,HD2025,False
+scored,181,211583,Chestnut Hill College,private,PA,0.9102,high_risk,not flagged,,False,,HD2025,False
+scored,182,212115,East Stroudsburg University of Pennsylvania,public,PA,0.9646,high_risk,not flagged,,False,,HD2025,False
+scored,183,212674,Gettysburg College,private,PA,0.2879,stable,not flagged,,False,,HD2025,False
+scored,184,213251,Juniata College,private,PA,0.635,high_risk,not flagged,,False,,HD2025,False
+scored,185,213507,Lebanon Valley College,private,PA,0.7284,high_risk,not flagged,,False,,HD2025,False
+scored,186,213826,Marywood University,private,PA,0.9005,high_risk,not flagged,,False,,HD2025,False
+scored,187,214272,Neumann University,private,PA,0.8597,high_risk,not flagged,,False,,HD2025,False
+scored,188,214883,Peirce College,private,PA,0.9993,high_risk,not flagged,,False,,HD2025,False
+scored,189,214777,Pennsylvania State University-Main Campus,public,PA,0.1252,stable,not flagged,,True,HD2020 DEATHYR=2020,HD2025,False
+scored,190,215114,Cairn University-Langhorne,private,PA,0.8464,high_risk,flagged,,False,,HD2025,False
+scored,191,215442,Point Park University,private,PA,0.8008,high_risk,not flagged,,False,,HD2025,False
+scored,192,215770,Saint Joseph's University,private,PA,0.472,stable,not flagged,,False,,HD2025,False
+scored,193,216311,Talmudical Yeshiva of Philadelphia,private,PA,1.0,high_risk,flagged,,False,,HD2025,False
+scored,194,216597,Villanova University,private,PA,0.212,stable,not flagged,,False,,HD2025,False
+scored,195,217040,Yeshivath Beth Moshe,private,PA,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,196,217493,Rhode Island School of Design,private,RI,0.2972,stable,not flagged,,False,,HD2025,False
+scored,197,217776,Southern Wesleyan University,private,SC,0.9145,high_risk,not flagged,,False,,HD2025,False
+scored,198,217961,Converse College,private,SC,0.5827,high_risk,not flagged,,False,,HD2025,False
+scored,199,218414,Newberry College,private,SC,0.9104,high_risk,not flagged,,False,,HD2025,False
+scored,200,218919,Voorhees College,private,SC,0.9278,high_risk,not flagged,,False,,HD2025,False
+scored,201,219198,Mount Marty College,private,SD,0.8408,high_risk,not flagged,,False,,HD2025,False
+scored,202,219374,Sinte Gleska University,public,SD,0.9974,high_risk,not flagged,,False,,HD2025,False
+scored,203,219806,Carson-Newman University,private,TN,0.7402,high_risk,flagged,,False,,HD2025,False
+scored,204,220215,Freed-Hardeman University,private,TN,0.6667,high_risk,flagged,,False,,HD2025,False
+scored,205,220701,Martin Methodist College,private,TN,0.987,high_risk,flagged,,False,,HD2025,False
+scored,206,221519,The University of the South,private,TN,0.3361,stable,not flagged,,False,,HD2025,False
+scored,207,221892,Trevecca Nazarene University,private,TN,0.9077,high_risk,not flagged,,False,,HD2025,False
+scored,208,222983,Austin College,private,TX,0.6351,high_risk,not flagged,,False,,HD2025,False
+scored,209,224004,Concordia University Texas,private,TX,0.8536,high_risk,flagged,,False,,HD2025,False
+scored,210,224776,Miami International University of Art & Design-Art Institute Dallas,forprofit,TX,1.0,high_risk,not computable,,True,HD2023 CLOSEDAT=09/22/2023; HD2023 DEATHYR=2023,HD2023,False
+scored,211,225432,University of Houston-Downtown,public,TX,0.9829,high_risk,not flagged,,False,,HD2025,False
+scored,212,226152,Texas A & M International University,public,TX,0.8677,high_risk,flagged,,False,,HD2025,False
+scored,213,227216,University of North Texas,public,TX,0.8086,high_risk,not flagged,,False,,HD2025,False
+scored,214,227881,Sam Houston State University,public,TX,0.7719,high_risk,not flagged,,False,,HD2025,False
+scored,215,228468,Southwestern Adventist University,private,TX,0.9711,high_risk,not flagged,,False,,HD2025,False
+scored,216,228769,The University of Texas at Arlington,public,TX,0.8235,high_risk,flagged,,False,,HD2025,False
+scored,217,228981,Texas Lutheran University,private,TX,0.644,high_risk,not flagged,,False,,HD2025,False
+scored,218,229780,Wayland Baptist University,private,TX,0.9732,high_risk,not flagged,,False,,HD2025,False
+scored,219,230366,Eagle Gate College-Murray,forprofit,UT,1.0,high_risk,not computable,,False,,HD2025,False
+scored,220,230807,Westminster College,private,UT,0.7966,high_risk,not flagged,,False,,HD2025,False
+scored,221,230995,Norwich University,private,VT,0.3628,stable,not flagged,,False,,HD2025,False
+scored,222,231174,University of Vermont,public,VT,0.6646,high_risk,not flagged,,False,,HD2025,False
+scored,223,231837,Radford University-Carilion,public,VA,0.9414,high_risk,not flagged,,True,HD2020 DEATHYR=2020,HD2020,False
+scored,224,232308,Hollins University,private,VA,0.4549,stable,not flagged,,False,,HD2025,False
+scored,225,232797,American National University,forprofit,VA,1.0,high_risk,not computable,,False,,HD2025,False
+scored,226,233426,Roanoke College,private,VA,0.6543,high_risk,not flagged,,False,,HD2025,False
+scored,227,234030,Virginia Commonwealth University,public,VA,0.7269,high_risk,not flagged,,False,,HD2025,False
+scored,228,234827,Central Washington University,public,WA,0.9757,high_risk,not flagged,,False,,HD2025,False
+scored,229,235167,The Evergreen State College,public,WA,0.9815,high_risk,flagged,,False,,HD2025,False
+scored,230,236133,Northwest University,private,WA,0.8207,high_risk,not flagged,,False,,HD2025,False
+scored,231,236452,Saint Martin's University,private,WA,0.8247,high_risk,not flagged,,False,,HD2025,False
+scored,232,236896,Walla Walla University,private,WA,0.8241,high_risk,not flagged,,False,,HD2025,False
+scored,233,237118,Alderson Broaddus University,private,WV,0.9602,high_risk,not flagged,,True,HD2023 CLOSEDAT=05/03/2023; HD2023 DEATHYR=2023,HD2023,False
+scored,234,237385,Glenville State College,public,WV,0.9088,high_risk,not flagged,,False,,HD2025,False
+scored,235,237932,West Liberty University,public,WV,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,236,238430,Cardinal Stritch University,private,WI,0.883,high_risk,not flagged,,True,HD2023 CLOSEDAT=08/20/2023; HD2023 DEATHYR=2023,HD2023,False
+scored,237,239080,Marian University,private,WI,0.9876,high_risk,not flagged,,False,,HD2025,False
+scored,238,239716,Saint Norbert College,private,WI,0.8078,high_risk,not flagged,,False,,HD2025,False
+scored,239,240338,Wisconsin Lutheran College,private,WI,0.6766,high_risk,not flagged,,False,,HD2025,False
+scored,240,240471,University of Wisconsin-River Falls,public,WI,0.9536,high_risk,flagged,,False,,HD2025,False
+scored,241,241216,Atlantic University College,private,PR,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,242,241614,Universidad Teologica del Caribe,private,PR,1.0,high_risk,flagged,,False,,HD2025,False
+scored,243,242972,National University College,forprofit,PR,1.0,high_risk,not computable,,False,,HD2025,False
+scored,244,243106,University of Puerto Rico-Aguadilla,public,PR,1.0,high_risk,flagged,,False,,HD2025,False
+scored,245,243188,University of Puerto Rico-Utuado,public,PR,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,246,243577,Universidad Politecnica de Puerto Rico,private,PR,0.9698,high_risk,not flagged,,False,,HD2025,False
+scored,247,245652,St. John's College,private,NM,0.9999,high_risk,flagged,,False,,HD2025,False
+scored,248,247065,Beckfield College-Florence,forprofit,KY,1.0,high_risk,not computable,,False,,HD2025,False
+scored,249,251312,South University-Columbia,forprofit,SC,1.0,high_risk,not computable,,False,,HD2025,False
+scored,250,262129,New College of Florida,public,FL,0.7053,high_risk,not flagged,,False,,HD2025,False
+scored,251,366252,Pennsylvania College of Technology,public,PA,0.9574,high_risk,not flagged,,False,,HD2025,False
+scored,252,368452,Nossi College of Art,forprofit,TN,0.9999,high_risk,not computable,,False,,HD2025,False
+scored,253,372958,Remington College-Honolulu Campus,private,HI,0.9999,high_risk,flagged,,False,,none after HD2019,True
+scored,254,377546,Northwest College of Art & Design,forprofit,WA,0.9999,high_risk,not computable,,False,,HD2025,False
+scored,255,384254,Beacon College,private,FL,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,256,385619,Everglades University,private,FL,0.9999,high_risk,flagged,,False,,HD2025,False
+scored,257,404338,Schiller International University,forprofit,FL,1.0,high_risk,not computable,,False,,HD2025,False
+scored,258,408844,Florida National University-Main Campus,forprofit,FL,0.9999,high_risk,not computable,,False,,HD2025,False
+scored,259,409698,California State University-Monterey Bay,public,CA,0.9791,high_risk,flagged,,False,,HD2025,False
+scored,260,417752,Messenger College,private,TX,0.9989,high_risk,not flagged,,False,,HD2025,False
+scored,261,430485,The Creative Center,forprofit,NE,0.9999,high_risk,not computable,,True,HD2021 CLOSEDAT=07/21/2021; HD2021 DEATHYR=2021,HD2021,False
+scored,262,431983,Yeshiva of the Telshe Alumni,private,NY,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,263,433387,Western Governors University,private,UT,0.9998,high_risk,not flagged,,False,,HD2025,False
+scored,264,436614,International Baptist College and Seminary,private,AZ,0.9999,high_risk,flagged,,False,,HD2025,False
+scored,265,438151,Stevens-Henager College,private,UT,1.0,high_risk,not computable,,True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+scored,266,438498,Stratford University,forprofit,VA,1.0,high_risk,not computable,,True,HD2022 CLOSEDAT=10/07/2022; HD2022 DEATHYR=2022,HD2022,False
+scored,267,439862,Pacific Islands University,private,GU,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,268,440651,Atenas College,private,PR,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,269,441690,Universidad Pentecostal Mizpa,private,PR,0.9935,high_risk,not flagged,,False,,HD2025,False
+scored,270,443058,Family of Faith Christian University,private,OK,0.9999,high_risk,flagged,,False,,HD2025,False
+scored,271,444413,Beis Medrash Heichal Dovid,private,NY,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,272,443410,DigiPen Institute of Technology,forprofit,WA,0.9999,high_risk,not computable,,False,,HD2025,False
+scored,273,444778,Charlotte Christian College and Theological Seminary,private,NC,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,274,446233,Ecclesia College,private,AR,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,275,447953,SUM Bible College and Theological Seminary,private,CA,1.0,high_risk,not flagged,,False,,HD2025,False
+scored,276,448761,CollegeAmerica-Fort Collins,private,CO,1.0,high_risk,not computable,,True,HD2020 CLOSEDAT=09/13/2020; HD2020 DEATHYR=2020,HD2020,False
+scored,277,449764,Visible Music College,private,TN,0.9999,high_risk,not flagged,,False,,HD2025,False
+scored,278,449870,University of the West,private,CA,0.5832,high_risk,not flagged,,False,,HD2025,False
+skipped (data check),6,105297,Dine College,public,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),10,109819,Bakersfield College,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),13,110653,University of California-Irvine,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110662,University of California-Los Angeles,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110671,University of California-Riverside,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110680,University of California-San Diego,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110699,University of California-San Francisco,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),13,110705,University of California-Santa Barbara,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110714,University of California-Santa Cruz,public,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),13,110778,Sofia University,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),13,110918,California Christian College,private,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=06/25/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),14,111045,California Graduate School of Theology,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),15,112127,Church Divinity School of the Pacific,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),15,112251,Claremont Graduate University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),17,114716,Foothill College,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),17,114734,Franciscan School of Theology,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),18,115746,Pacifica Graduate Institute,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),19,117520,Life Chiropractic College West,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),19,117548,Lincoln Law School of Sacramento,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),20,118541,Marymount California University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),21,119678,Naval Postgraduate School,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),22,120795,Pacific School of Religion,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),22,120838,Pacific States University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),23,121619,Santa Ana College,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),23,121628,Pardee RAND Graduate School,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),25,122834,Santa Barbara Business College-Bakersfield,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),25,122852,Santa Barbara Business College-Santa Maria,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),27,123943,Marshall B Ketchum University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),28,125471,West Los Angeles College,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),28,125718,Westminster Theological Seminary in California,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),29,126289,Arapahoe Community College,public,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),31,127617,Morgan Community College,public,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),38,132851,College of Central Florida,public,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),40,133960,The College of the Florida Keys,public,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),43,136473,Pensacola State College,public,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),43,136516,Polk State College,public,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),43,136701,Saint Vincent de Paul Regional Seminary,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),50,140562,Morehouse School of Medicine,private,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),59,146977,McCormick Theological Seminary,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),60,147536,National Louis University,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),60,147590,National University of Health Sciences,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),61,148016,Principia College,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),62,148593,St. John's College-Department of Nursing,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (stability check),65,150668,Goshen College,private,IN,,,,"insufficient data: stability check (seeds disagree: 7=high_risk, 101=high_risk, 202=stable)",False,,HD2025,False
+skipped (stability check),71,153603,Iowa State University,public,IA,,,,"insufficient data: stability check (seeds disagree: 7=stable, 101=high_risk, 202=high_risk)",False,,HD2025,False
+skipped (stability check),75,155317,University of Kansas,public,KS,,,,"insufficient data: stability check (seeds disagree: 7=stable, 101=high_risk, 202=stable)",False,,HD2025,False
+skipped (data check),77,156222,Asbury Theological Seminary,private,KY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),79,157207,Lexington Theological Seminary,private,KY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),84,161022,Maine College of Health Professions,private,ME,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),84,161086,Colby College,private,ME,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),93,165945,Gordon-Conwell Theological Seminary,private,MA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),93,166045,Hebrew College,private,MA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),99,168607,Alpena Community College,public,MI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),100,169363,Concordia University-Ann Arbor,private,MI,,,,insufficient data: data check (finance data incomplete in FY2019),False,,HD2025,False
+skipped (data check),100,169424,Cranbrook Academy of Art,private,MI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),102,170620,Lake Michigan College,public,MI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),105,172705,Western Theological Seminary,private,MI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),110,175281,Mitchell Hamline School of Law,private,MN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),112,176600,Aquinas Institute of Theology,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),115,177986,Logan University,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),124,182829,University of New Hampshire-Franklin Pierce School of Law,public,NH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),124,182917,Magdalen College,private,NH,,,,insufficient data: data check (insufficient enrollment data),True,HD2024 CLOSEDAT=05/31/2024; HD2024 DEATHYR=2024,HD2024,False
+skipped (data check),131,188580,Albany Medical College,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (stability check),131,188641,Alfred University,private,NY,,,,"insufficient data: stability check (seeds disagree: 7=high_risk, 101=high_risk, 202=stable)",False,,HD2025,False
+skipped (data check),132,189273,Beth Hamedrash Shaarei Yosher Institute,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),132,189282,Phillips School of Nursing at Mount Sinai Beth Israel,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (stability check),138,192040,Jewish Theological Seminary of America,private,NY,,,,"insufficient data: stability check (seeds disagree: 7=high_risk, 101=stable, 202=stable)",False,,HD2025,False
+skipped (data check),147,196112,SUNY Polytechnic Institute,public,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),150,196884,Union Theological Seminary in the City of New York,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),151,197221,Webb Institute,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),158,199971,Carolina Christian College,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),160,200624,The Art Institute of Cincinnati-AIC College of Design,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),160,200697,Air Force Institute of Technology-Graduate School of Engineering & Management,public,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),160,200785,Herzing University-Akron,private,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),162,201821,The Christ College of Nursing and Health Sciences,private,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),162,201858,Cincinnati Christian University,private,OH,,,,insufficient data: data check (finance data incomplete in FY2019),False,,none after HD2019,True
+skipped (data check),162,201867,Cincinnati College of Mortuary Science,private,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (stability check),163,202073,Cleveland Institute of Music,private,OH,,,,"insufficient data: stability check (seeds disagree: 7=high_risk, 101=stable, 202=stable)",False,,HD2025,False
+skipped (data check),165,203465,Kent State University at Stark,public,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),165,203474,Kent State University at Trumbull,public,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),165,203483,Kent State University at Tuscarawas,public,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),165,203492,Kent State University at Salem,public,OH,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),166,203748,Lorain County Community College,public,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),169,204820,Ohio University-Chillicothe Campus,public,OH,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),169,204839,Ohio University-Southern Campus,public,OH,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),169,204848,Ohio University-Lancaster Campus,public,OH,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),185,213446,Lancaster Theological Seminary,private,PA,,,,insufficient data: data check (insufficient enrollment data),True,HD2025 DEATHYR=2025,HD2025,False
+skipped (data check),188,214670,Pennsylvania State University-Penn State Lehigh Valley,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214689,Pennsylvania State University-Penn State Altoona,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214698,Pennsylvania State University-Penn State Beaver,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214704,Pennsylvania State University-Penn State Berks,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214713,Pennsylvania State University-Penn State Harrisburg,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214731,Pennsylvania State University-Penn State Brandywine,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214740,Pennsylvania State University-Penn State DuBois,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214759,Pennsylvania State University-Penn State Fayette- Eberly,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214768,Pennsylvania State University-Penn State Hazleton,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214786,Pennsylvania State University-Penn State Greater Allegheny,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214795,Pennsylvania State University-Penn State Mont Alto,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214801,Pennsylvania State University-Penn State Abington,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214810,Pennsylvania State University-Penn State Schuylkill,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),188,214829,Pennsylvania State University-Penn State York,public,PA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),191,215415,Pittsburgh Technical College,private,PA,,,,insufficient data: data check (insufficient enrollment data),True,HD2024 CLOSEDAT=06/07/2024; HD2024 DEATHYR=2024,HD2024,False
+skipped (data check),191,215424,Pittsburgh Theological Seminary,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),200,218751,Sherman College of Chiropractic,private,SC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),200,218821,Spartanburg Methodist College,private,SC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),210,224660,Western Technical College,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),210,224679,Western Technical College,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),210,224712,Episcopal Theological Seminary of the Southwest,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),211,225414,University of Houston-Clear Lake,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),212,226134,Laredo College,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),218,229337,Texas Tech University Health Sciences Center,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),218,229355,Tyler Junior College,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),221,230977,New England Culinary Institute,forprofit,VT,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=04/23/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),228,234696,Bellingham Technical College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),229,235103,Edmonds Community College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),230,235699,Lake Washington Institute of Technology,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),230,235750,Lower Columbia College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),230,236072,North Seattle College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),232,236887,Walla Walla Community College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),233,237109,Yakima Valley College,public,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),238,239637,Sacred Heart Seminary and School of Theology,private,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),243,242617,Inter American University of Puerto Rico-San German,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242626,Inter American University of Puerto Rico-Aguadilla,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242635,Inter American University of Puerto Rico-Arecibo,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242644,Inter American University of Puerto Rico-Barranquitas,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242653,Inter American University of Puerto Rico-Metro,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242662,Inter American University of Puerto Rico-Ponce,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242680,Inter American University of Puerto Rico-Fajardo,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242699,Inter American University of Puerto Rico-Guayama,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),243,242705,Inter American University of Puerto Rico-Bayamon,private,PR,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),244,242723,Inter American University of Puerto Rico-School of Law,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),244,243081,Ponce Health Sciences University,forprofit,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),248,246789,Unification Theological Seminary,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),252,367954,University of St. Augustine for Health Sciences,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),252,368443,Hussian College-Daymar College Clarksville,forprofit,TN,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=05/26/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),254,377342,Vista College-Online,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=10/08/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),255,380465,University of Phoenix-Utah,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=01/21/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),255,381352,Colorado School of Traditional Chinese Medicine,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),255,381459,Phoenix Seminary,private,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),255,383020,Midwest College of Oriental Medicine-Racine,forprofit,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),257,401250,Yo San University of Traditional Chinese Medicine,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),257,402776,Southwest University of Visual Arts-Albuquerque,forprofit,NM,,,,insufficient data: data check (insufficient parsed finance data),True,HD2021 CLOSEDAT=05/05/2020; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),257,404055,Brookline College-Tempe,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),257,404222,Inter American University of Puerto Rico-School of Optometry,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),258,405997,University of Phoenix-New Mexico,forprofit,NM,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=04/26/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),258,406024,Galen College of Nursing-Tampa Bay,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),258,406033,Galen College of Nursing-San Antonio,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),258,406547,City College-Gainesville,private,FL,,,,insufficient data: data check (insufficient parsed finance data),True,HD2023 CLOSEDAT=08/15/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),258,407009,Arizona State University-West,public,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),258,407629,Lake Erie College of Osteopathic Medicine,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),259,409616,Roger Williams University School of Law,private,RI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),260,416801,The University of Texas MD Anderson Cancer Center,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),260,417318,College of Business and Technology-Miami Campus,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),260,417734,Southeast Missouri Hospital College of Nursing and Health Sciences,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,420574,Arizona State University-Polytechnic,public,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),261,420705,Bakke Graduate University,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,421832,Living Arts College,forprofit,NC,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=12/13/2022; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),261,421878,Eastern International College-Jersey City,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,422695,Pacific College,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,423643,Midwestern University-Glendale,private,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,426314,Embry-Riddle Aeronautical University-Worldwide,private,FL,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),261,428259,Ottawa University-Milwaukee,private,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,429085,American College of Acupuncture and Oriental Med,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),261,430184,Strayer University-Maryland,forprofit,MD,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),262,429094,AOMA Graduate School of Integrative Medicine,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2024,True
+skipped (data check),262,430670,San Juan Bautista School of Medicine,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),262,430704,Texas Health and Science University,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),262,430810,New Hampshire Institute of Art,private,NH,,,,insufficient data: data check (finance data incomplete in FY2019),False,,none after HD2019,True
+skipped (data check),263,432384,Platt College-Ontario,forprofit,CA,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),263,433004,American University of Health Sciences,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),263,433013,Career Networks Institute,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),263,433174,Carolinas College of Health Sciences,public,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),264,434539,City College-Miami,private,FL,,,,insufficient data: data check (insufficient parsed finance data),True,HD2023 CLOSEDAT=04/01/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),264,434584,Ilisagvik College,public,AK,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),264,434715,Florida Coastal School of Law,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=07/30/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),264,434900,Dewey University-Carolina,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),264,434937,Yeshiva College of the Nations Capital,private,MD,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),264,435000,Louisiana State University Health Sciences Center-Shreveport,public,LA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),264,436261,Southwest Acupuncture College-Boulder,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=07/31/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),264,436429,Los Angeles Film School,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),265,436818,University of Connecticut-Waterbury Campus,public,CT,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),265,436827,University of Connecticut-Avery Point,public,CT,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),265,436836,University of Connecticut-Stamford,public,CT,,,,insufficient data: data check (insufficient parsed finance data),False,,HD2025,False
+skipped (data check),265,437097,University of Management and Technology,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),265,437316,Linfield College-School of Nursing,private,OR,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),265,437325,Linfield College-Online and Continuing Education,private,OR,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),265,437732,Dallas Nursing Institute,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),267,439783,New York College of Traditional Chinese Medicine,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),267,439817,Northeastern Seminary,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),269,441238,Irell & Manella Graduate School of Biological Sciences at City of Hope,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2023,True
+skipped (data check),269,441511,Apex School of Theology,private,NC,,,,insufficient data: data check (finance data incomplete in FY2019),False,,none after HD2019,True
+skipped (data check),269,441609,Yeshiva Shaarei Torah of Rockland,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),269,441636,American Institute of Alternative Medicine,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442161,University of Phoenix-Illinois,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=06/13/2019; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),270,442295,Ave Maria School of Law,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442356,Pennsylvania College of Health Sciences,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442392,Antioch University-PhD Program in Leadership and Change,private,OH,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),270,442426,St Louis College of Health Careers-Fenton,forprofit,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442569,Grantham University,forprofit,KS,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442639,University of the Potomac-VA Campus,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442718,National American University-Overland Park,forprofit,KS,,,,insufficient data: data check (insufficient parsed finance data),False,,none after HD2019,True
+skipped (data check),270,442806,Edward Via College of Osteopathic Medicine,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),270,442930,University of Antelope Valley,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2024 CLOSEDAT=02/29/2024; HD2024 DEATHYR=2024,HD2024,False
+skipped (data check),270,442949,Birthingway College of Midwifery,private,OR,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=06/30/2022; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),270,443049,Faith International University,private,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,442842,Pacific College of Health Science-Chicago,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443076,Hood Theological Seminary,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443128,International Technological University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),271,443331,West Coast University-Los Angeles,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443340,Williamson Christian College,private,TN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443562,Dewey University-Hato Rey,private,PR,,,,"insufficient data: data check (finance data incomplete in FY2015, FY2016)",False,,HD2025,False
+skipped (data check),271,443599,American College of Healthcare Sciences,forprofit,OR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443702,"Bexley Hall Seabury Western Theological Seminary Federation, Inc.",private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443766,Strayer University-Tennessee,forprofit,TN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,443784,Strayer University-Pennsylvania,forprofit,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,444088,Brookline College-Albuquerque,forprofit,NM,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,444103,Byzantine Catholic Seminary of Saints Cyril and Methodius,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,444130,Northcentral University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,444325,ATI College-Norwalk,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),271,444398,Baptist University of the Americas,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),273,444255,Hussian College-Daymar College Murfreesboro,forprofit,TN,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=05/26/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),273,444699,Institute of Clinical Acupuncture & Oriental Med,forprofit,HI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445054,Toyota Technological Institute at Chicago,private,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445133,American InterContinental University-Houston,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445188,University of California-Merced,public,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445203,Remington College-North Houston Campus,private,TX,,,,insufficient data: data check (insufficient enrollment data),True,HD2025 CLOSEDAT=05/29/2025; HD2025 DEATHYR=2025,HD2025,False
+skipped (data check),274,445267,Central Methodist University-College of Graduate and Extended Studies,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445300,University of Phoenix-New Jersey,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/09/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),274,445692,Neumont College of Computer Science,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445708,Johnson & Wales University-Charlotte,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,445735,Roseman University of Health Sciences,private,NV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,446002,American Academy of Acupuncture and Oriental Medicine,forprofit,MN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,446039,Arizona School of Acupuncture and Oriental Medicine,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,446048,Ave Maria University,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,446109,Cambridge Institute of Allied Health & Technology,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),274,446224,Eastern School of Acupuncture and Traditional Medicine,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,445869,Divine Mercy University,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,446385,Los Angeles College of Music,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,446394,Maple Springs Baptist Bible College and Seminary,private,MD,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),275,446561,Stanbridge University,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,446604,Uta Mesivta of Kiryas Joel,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,446613,W L Bonner College,private,SC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2021,True
+skipped (data check),275,446640,Harrisburg University of Science and Technology,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,446677,Stevens-Henager College,private,UT,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=09/13/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),275,447014,Daytona College,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,447050,United States University,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,447263,AmeriTech College-Draper,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,447458,SAE Expression College,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=12/15/2022; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),275,447689,Georgia Gwinnett College,public,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,447698,Phoenix Institute of Herbal Medicine & Acupuncture,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),275,447801,University of East-West Medicine,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),276,446525,SAE Institute of Technology-Nashville,forprofit,TN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),276,448239,Careers Unlimited,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),276,448284,Doane University-Graduate and Professional Studies,private,NE,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),276,448354,Eastern International College-Belleville,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=06/22/2022; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),276,448691,International Institute for Restorative Practices,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),276,448752,CollegeAmerica-Colorado Springs,private,CO,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=09/13/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),277,447421,Eagle Gate College-Layton,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,448840,University of South Florida-St Petersburg,public,FL,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),277,448886,Arizona State University-Downtown Phoenix,public,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),277,449038,Strayer University-Florida,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,449135,Dewey University-Juana Díaz,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,449339,American Public University System,forprofit,WV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,449384,Gnomon,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,449481,Dragon Rises College of Oriental Medicine,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),277,449658,Bais Medrash Toras Chesed,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),278,448673,Rasmussen College-Illinois,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),278,449834,Virginia Beach Theological Seminary,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,449348,Huntsville Bible College,private,AL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,449889,American College of Education,forprofit,IN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,449898,South University-Tampa,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,449931,Averett University-Non-Traditional Programs,private,VA,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),279,450298,Strayer University-Delaware,forprofit,DE,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,450304,Brite Divinity School,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,450377,Strayer University-Alabama,forprofit,AL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,450571,Rasmussen College-Wisconsin,forprofit,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,450933,Columbia Southern University,forprofit,AL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,450979,Trident University International,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=03/02/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),279,451079,Academy for Five Element Acupuncture,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451370,Yeshivas Be'er Yitzchok,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451398,Yeshiva Toras Chaim,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451404,Talmudical Seminary of Bobov,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451510,Charleston School of Law,forprofit,SC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451556,Southwest University at El Paso,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451671,University of South Florida-Sarasota-Manatee,public,FL,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),279,451741,CEM College-Bayamon,forprofit,PR,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=04/29/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),279,451750,Bryant & Stratton College-Wauwatosa,forprofit,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),279,451866,Remington College-Shreveport Campus,private,LA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,449922,Appalachian College of Pharmacy,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,451875,National American University-Austin,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),280,451884,National American University-Wichita,forprofit,KS,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),280,451927,Patrick Henry College,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,452948,Galen College of Nursing-Cincinnati,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,453163,Strayer University-North Carolina,forprofit,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,453215,Strayer University-New Jersey,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,454236,Chamberlain University-Ohio,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),280,454245,Chamberlain University-Arizona,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,451103,Miami Regional University,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454582,Ottawa University-Online,private,KS,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454616,Institute of Production and Recording,forprofit,MN,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=03/17/2023; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),281,454689,Taft University System,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454786,Laurus College,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454829,Aspen University,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454838,Institute of Taoist Education and Acupuncture,private,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,454865,Cambridge College of Healthcare & Technology,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),281,455099,Urshan Graduate School of Theology,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,451820,The Art Institute of Austin,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=09/22/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),282,455178,Daoist Traditions College of Chinese Medical Arts,forprofit,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455257,Yeshiva of Machzikai Hadas,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455406,Pacific Northwest University of Health Sciences,private,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455433,The Chicago School of Professional Psychology at Irvine,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455664,The Chicago School of Professional Psychology at Los Angeles,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455770,Providence Christian College,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455813,Pontifical John Paul II Institute for Studies on Marriage and Family,private,DC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),282,455992,Vermont College of Fine Arts,private,VT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,454227,Chamberlain University-Illinois,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,456481,Polytechnic University of Puerto Rico-Miami,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,456490,Polytechnic University of Puerto Rico-Orlando,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,456542,Geisinger Commonwealth School of Medicine,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,456621,Strayer University-West Virginia,forprofit,WV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,456959,University of Minnesota-Rochester,public,MN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),283,457022,Herzing University-Toledo,private,OH,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),283,457129,Chamberlain University-Florida,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,454856,Denver College of Nursing,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457226,Horizon University,private,IN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457271,Academy for Jewish Religion-California,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457299,Angeles College,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457402,University of Fort Lauderdale,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457484,Pacific Rim Christian University,private,HI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457527,Ambria College of Nursing,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),284,457688,American Business and Technology University,forprofit,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),284,458113,Bethel College,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,455804,Institute of World Politics,private,DC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,458210,West Coast University-Orange County,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,458229,West Coast University-Ontario,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,458496,The Art Institute of Virginia Beach,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=09/22/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),285,458502,Bryant & Stratton College-Bayshore,forprofit,WI,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),285,458575,Zaytuna College,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2021,True
+skipped (data check),285,458885,Strayer University-Arkansas,forprofit,AR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,458919,Strayer University-Georgia,forprofit,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),285,458964,Strayer University-South Carolina,forprofit,SC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,457086,Homestead Schools,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,458973,Strayer University-Texas,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,458982,The Art Institute of San Antonio,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=09/22/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),286,459082,Virginia Polytechnic Institute & State University,public,VA,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),286,459107,Bryant & Stratton College-Hampton,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),286,459204,Unitek College,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,459213,Gurnick Academy of Medical Arts,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,459259,South University-Richmond,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),286,459417,Compass College of Cinematic Arts,private,MI,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=08/04/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),287,457697,City Vision University,private,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459727,Touro University Worldwide,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459736,Touro University California,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459745,The Chicago School of Professional Psychology at Washington DC,private,DC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459824,Touro University Nevada,private,NV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459842,Herzing University-Kenosha,private,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459851,Herzing University-Brookfield,private,WI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,459949,Texas A&M University-San Antonio,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),287,460075,California University of Management and Sciences,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),288,458955,Strayer University-Mississippi,forprofit,MS,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),288,460349,Johnson & Wales University-Online,private,RI,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),288,460376,Fairfax University of America,private,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2023,True
+skipped (data check),288,460738,American Sentinel University,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),288,460783,Remington College-Heathrow Campus,private,FL,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=01/29/2021; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),288,460871,Chamberlain University-Virginia,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),288,460899,Stevens-Henager College,private,ID,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),288,461023,National Paralegal College,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),288,461120,Omega Graduate School,private,TN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,459268,South University-Virginia Beach,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461139,Jung Tao School of Classical Chinese Medicine,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461148,New York Film Academy,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461281,Jose Maria Vargas University,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461485,Shepherds Theological Seminary,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461528,Grace College of Divinity,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461643,Bergin University of Canine Studies,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2023,True
+skipped (data check),289,461759,Simmons College of Kentucky,private,KY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),289,461847,Keser Torah-Mayan Hatalmud,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,459994,Strayer University-Global Region,forprofit,DC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,461883,Millennia Atlantic University,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,462044,Institute for Doctoral Studies in the Visual Arts,private,ME,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,462354,John Paul the Great Catholic University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,463056,University of Connecticut-Hartford Campus,public,CT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,464226,Ottawa University-Surprise,private,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),290,465812,Independence University,private,UT,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),290,466152,National American University-Tulsa,forprofit,OK,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),290,466189,National American University-Colorado Springs South,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),291,461032,Carolina College of Biblical Studies,private,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),291,466921,Chamberlain University-Missouri,forprofit,MO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),291,466930,Chamberlain University-Texas,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),291,468024,South University-Novi,forprofit,MI,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),291,469416,Dewey University-Manati,private,PR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),291,474863,Los Angeles Pacific University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),291,474890,CollegeAmerica-Phoenix,private,AZ,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),291,474906,Stevens-Henager College,private,ID,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=09/13/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),291,475121,South University-Savannah Online,forprofit,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,461795,North American University,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475200,Whitworth University-Adult Degree Programs,private,WA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475228,The Santa Barbara and Ventura Colleges of Law at Santa Barbara,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475237,The University of America,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2024,True
+skipped (data check),292,475273,"Springfield College-Regional, Online, and Continuing Education",private,MA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475398,Catholic Distance University,private,WV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475495,Rocky Mountain University of Health Professions,forprofit,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),292,475510,Christie's Education,forprofit,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),292,475635,Beverly Hills Design Institute,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2023,True
+skipped (data check),293,466161,National American University-Centennial,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),293,475699,Bryant & Stratton College-Akron,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),293,475732,Chamberlain University-Georgia,forprofit,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,475741,Chamberlain University-Indiana,forprofit,IN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,476595,Medical Allied Career Center,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,476601,Bais HaMedrash and Mesivta of Baltimore,private,MD,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,476692,Yeshiva Gedolah Zichron Leyma,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,476717,Be'er Yaakov Talmudic Seminary,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),293,477039,West Coast University-Dallas,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),294,475033,Relay Graduate School of Education,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),294,477996,National American University-Bellevue,forprofit,NE,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),294,478014,National American University-Mesquite,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),294,478634,California College San Diego,private,CA,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=08/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),294,479956,Pennsylvania State University-World Campus,public,PA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),294,480064,Purdue University Global-Augusta,public,ME,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),294,480073,South University-Austin,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),294,480082,South University-Cleveland,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),294,480134,Elizabethtown College School of Continuing and Professional Studies,private,PA,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),295,475608,Criswell College,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),295,480198,Warner Pacific University Professional and Graduate Studies,private,OR,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),295,480204,Platt College-Riverside,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),295,480301,Savannah Law School,forprofit,GA,,,,insufficient data: data check (insufficient enrollment data),True,HD2020 CLOSEDAT=05/16/2020; HD2020 DEATHYR=2020,HD2020,False
+skipped (data check),295,480499,Shiloh University,private,IA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2021,True
+skipped (data check),295,480569,Florida Institute of Technology-Online,private,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2024,True
+skipped (data check),295,480657,Rasmussen College-Kansas,forprofit,KS,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),295,480781,California Miramar University,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),295,480912,Gemini School of Visual Arts & Communication,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2022,True
+skipped (data check),296,476975,Colorado State University-Global Campus,public,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,480985,Midwives College of Utah,private,UT,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481030,Future Generations University,private,WV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481058,Grace Mission University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481094,Sotheby's Institute of Art-NY,forprofit,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481225,Mid-South Christian College,private,TN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481401,Grace School of Theology,private,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481410,Yeshiva Gedolah Kesser Torah,private,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),296,481720,South University-High Point,forprofit,NC,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),297,480091,Bryant & Stratton College-Online,forprofit,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),297,482024,College of Business and Technology-Miami Gardens,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),297,482149,Augusta University,public,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),297,482158,Middle Georgia State University,public,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),297,482228,Veritas Baptist College,private,IN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),297,482325,National American University-Georgetown,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),True,HD2021 CLOSEDAT=03/01/2021; HD2021 DEATHYR=2021,HD2021,False
+skipped (data check),297,482334,National American University-Richardson,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),297,482343,National American University-Rochester,forprofit,MN,,,,insufficient data: data check (insufficient enrollment data),False,,none after HD2019,True
+skipped (data check),297,482413,DeVry College of New York,forprofit,NY,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,480790,Rocky Vista University,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482422,DeVry University-Arizona,forprofit,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482431,DeVry University-California,forprofit,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482440,DeVry University-Colorado,forprofit,CO,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=06/25/2022; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),298,482459,DeVry University-Florida,forprofit,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482468,DeVry University-Georgia,forprofit,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482477,DeVry University-Illinois,forprofit,IL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),298,482486,DeVry University-Indiana,forprofit,IN,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=06/26/2021; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),298,482538,DeVry University-Missouri,forprofit,MO,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=06/25/2022; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),299,481438,Yeshiva Yesodei Hatorah,private,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),299,482547,DeVry University-Nevada,forprofit,NV,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),299,482556,DeVry University-New Jersey,forprofit,NJ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),299,482565,DeVry University-North Carolina,forprofit,NC,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=04/22/2023; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),299,482574,DeVry University-Ohio,forprofit,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),299,482608,DeVry University-Pennsylvania,forprofit,PA,,,,insufficient data: data check (insufficient enrollment data),True,HD2022 CLOSEDAT=06/25/2022; HD2022 DEATHYR=2022,HD2022,False
+skipped (data check),299,482617,DeVry University-Tennessee,forprofit,TN,,,,insufficient data: data check (insufficient enrollment data),True,HD2023 CLOSEDAT=06/25/2022; HD2023 DEATHYR=2023,HD2023,False
+skipped (data check),299,482635,DeVry University-Texas,forprofit,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),299,482653,DeVry University-Virginia,forprofit,VA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,482370,National American University-Indianapolis,forprofit,IN,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
+skipped (data check),300,482680,University of North Georgia,public,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,482699,South Georgia State College,public,GA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,482705,Northeastern University Lifelong Learning Network,private,MA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,482936,Florida Polytechnic University,public,FL,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,483018,Antioch College,private,OH,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,483036,Texas A&M University-Central Texas,public,TX,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,483124,Arizona State University-Skysong,public,AZ,,,,insufficient data: data check (insufficient enrollment data),False,,HD2025,False
+skipped (data check),300,483586,California International Business University,private,CA,,,,insufficient data: data check (insufficient enrollment data),False,,HD2020,True
