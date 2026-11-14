@@ -1,0 +1,95 @@
+name: Analyze confirmatory test (comparator, then outcomes)
+
+# Manual-only. Runs the confirmatory test's analysis under
+# "sampling protocol.md", in two jobs that each end in their own commit,
+# so the repository's history shows the order:
+#
+# 1. comparator: computes the critical-slowing-down comparator for every
+#    scored institution from FY2009-FY2019 data only, and commits
+#    "data/confirmatory/comparator flags.json". No post-2019 file is
+#    opened.
+# 2. outcomes: refuses to run unless that file is committed, then looks
+#    up every institution's outcome in the IPEDS header files released
+#    after fiscal year 2019, computes every pre-specified measure and
+#    trigger, and commits "data/confirmatory/outcomes.csv" and
+#    "data/confirmatory/results.json".
+#
+# See src/analyze_confirmatory.py's own docstring for the details.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: analyze-confirmatory
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  comparator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - name: Download each NCES finance file the window needs, once
+        run: |
+          cd src
+          python score_confirmatory.py prefetch --out ../work/finance
+
+      - name: Compute the critical-slowing-down comparator (FY2009-FY2019 data only)
+        run: |
+          cd src
+          python analyze_confirmatory.py comparator --compact ../work/scorecard_compact.csv --finance ../work/finance
+
+      - name: Commit the comparator flags before any outcome is looked up
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/confirmatory/comparator flags.json"
+          git commit -m "Confirmatory test: comparator flags (fixed before any outcome is looked up)"
+          git fetch origin main
+          git rebase origin/main
+          git push
+
+  outcomes:
+    needs: comparator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Look up outcomes and compute every pre-specified measure
+        run: |
+          cd src
+          python analyze_confirmatory.py outcomes
+
+      - name: Commit the outcomes and results
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/confirmatory/outcomes.csv data/confirmatory/results.json
+          git commit -m "Confirmatory test: outcomes and results"
+          git fetch origin main
+          git rebase origin/main
+          git push
