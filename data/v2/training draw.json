@@ -1,0 +1,5422 @@
+{
+  "protocol": "sampling protocol v2.md",
+  "draw": "training",
+  "drawn at (UTC)": "2026-11-14T23:24:13.083218+00:00",
+  "source file": "HD2014",
+  "source url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+  "source sha256": "30ee132aeb7e9bb7cc1aff108f75a1310acca7aca67c7c7a79ff9c3a17055e72",
+  "frame size before exclusions": 3199,
+  "removed as touched by the first test or the training draw": 0,
+  "frame size N": 3199,
+  "step size k": 5,
+  "first position": 1,
+  "institutions drawn": 600,
+  "by sector": {
+    "public": 138,
+    "private": 327,
+    "forprofit": 135
+  },
+  "collisions skipped": 18,
+  "institutions": [
+    {
+      "slot": 1,
+      "frame position": 1,
+      "unitid": "100654",
+      "name": "Alabama A & M University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AL"
+    },
+    {
+      "slot": 2,
+      "frame position": 6,
+      "unitid": "100751",
+      "name": "The University of Alabama",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AL"
+    },
+    {
+      "slot": 3,
+      "frame position": 11,
+      "unitid": "101073",
+      "name": "Concordia College Alabama",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AL"
+    },
+    {
+      "slot": 4,
+      "frame position": 16,
+      "unitid": "101453",
+      "name": "Heritage Christian University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AL"
+    },
+    {
+      "slot": 5,
+      "frame position": 21,
+      "unitid": "101693",
+      "name": "University of Mobile",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AL"
+    },
+    {
+      "slot": 6,
+      "frame position": 26,
+      "unitid": "102058",
+      "name": "Selma University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AL"
+    },
+    {
+      "slot": 7,
+      "frame position": 31,
+      "unitid": "102298",
+      "name": "Talladega College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AL"
+    },
+    {
+      "slot": 8,
+      "frame position": 36,
+      "unitid": "102580",
+      "name": "Alaska Bible College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AK"
+    },
+    {
+      "slot": 9,
+      "frame position": 41,
+      "unitid": "103644",
+      "name": "Everest College-Phoenix",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 10,
+      "frame position": 46,
+      "unitid": "104090",
+      "name": "Brookline College-Phoenix",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 11,
+      "frame position": 51,
+      "unitid": "104586",
+      "name": "Embry-Riddle Aeronautical University-Prescott",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AZ"
+    },
+    {
+      "slot": 12,
+      "frame position": 56,
+      "unitid": "105172",
+      "name": "ITT Technical Institute-Tempe",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 13,
+      "frame position": 61,
+      "unitid": "105534",
+      "name": "Pima Medical Institute-Tucson",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 14,
+      "frame position": 66,
+      "unitid": "106263",
+      "name": "University of Arkansas for Medical Sciences",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AR"
+    },
+    {
+      "slot": 15,
+      "frame position": 71,
+      "unitid": "106458",
+      "name": "Arkansas State University-Main Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AR"
+    },
+    {
+      "slot": 16,
+      "frame position": 76,
+      "unitid": "106810",
+      "name": "Crowley's Ridge College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AR"
+    },
+    {
+      "slot": 17,
+      "frame position": 81,
+      "unitid": "107512",
+      "name": "Ouachita Baptist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "AR"
+    },
+    {
+      "slot": 18,
+      "frame position": 86,
+      "unitid": "108092",
+      "name": "University of Arkansas-Fort Smith",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AR"
+    },
+    {
+      "slot": 19,
+      "frame position": 91,
+      "unitid": "108870",
+      "name": "American Film Institute Conservatory",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 20,
+      "frame position": 96,
+      "unitid": "110097",
+      "name": "Biola University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 21,
+      "frame position": 101,
+      "unitid": "110361",
+      "name": "California Baptist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 22,
+      "frame position": 106,
+      "unitid": "110422",
+      "name": "California Polytechnic State University-San Luis Obispo",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CA"
+    },
+    {
+      "slot": 23,
+      "frame position": 111,
+      "unitid": "110529",
+      "name": "California State Polytechnic University-Pomona",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CA"
+    },
+    {
+      "slot": 24,
+      "frame position": 116,
+      "unitid": "110574",
+      "name": "California State University-East Bay",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CA"
+    },
+    {
+      "slot": 25,
+      "frame position": 121,
+      "unitid": "110635",
+      "name": "University of California-Berkeley",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CA"
+    },
+    {
+      "slot": 26,
+      "frame position": 126,
+      "unitid": "110680",
+      "name": "University of California-San Diego",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CA"
+    },
+    {
+      "slot": 27,
+      "frame position": 131,
+      "unitid": "110918",
+      "name": "California Christian College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 28,
+      "frame position": 136,
+      "unitid": "111948",
+      "name": "Chapman University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 29,
+      "frame position": 141,
+      "unitid": "112251",
+      "name": "Claremont Graduate University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 30,
+      "frame position": 146,
+      "unitid": "112570",
+      "name": "Columbia College-Hollywood",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 31,
+      "frame position": 151,
+      "unitid": "114114",
+      "name": "Emperor's College of Traditional Oriental Medicine",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 32,
+      "frame position": 156,
+      "unitid": "114734",
+      "name": "Franciscan School of Theology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 33,
+      "frame position": 161,
+      "unitid": "115409",
+      "name": "Harvey Mudd College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 34,
+      "frame position": 166,
+      "unitid": "116226",
+      "name": "Interior Designers Institute",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 35,
+      "frame position": 171,
+      "unitid": "116846",
+      "name": "American Jewish University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 36,
+      "frame position": 176,
+      "unitid": "117520",
+      "name": "Life Chiropractic College West",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 37,
+      "frame position": 181,
+      "unitid": "117672",
+      "name": "Southern California University of Health Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 38,
+      "frame position": 186,
+      "unitid": "118693",
+      "name": "Menlo College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 39,
+      "frame position": 191,
+      "unitid": "119544",
+      "name": "The National Hispanic University",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 40,
+      "frame position": 196,
+      "unitid": "120184",
+      "name": "Notre Dame de Namur University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 41,
+      "frame position": 201,
+      "unitid": "120740",
+      "name": "Pacific Lutheran Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 42,
+      "frame position": 206,
+      "unitid": "120883",
+      "name": "University of the Pacific",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 43,
+      "frame position": 212,
+      "unitid": "121381",
+      "name": "Westwood College-South Bay",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 44,
+      "frame position": 216,
+      "unitid": "122117",
+      "name": "Dongguk University-Los Angeles",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 45,
+      "frame position": 221,
+      "unitid": "122454",
+      "name": "San Francisco Art Institute",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 46,
+      "frame position": 226,
+      "unitid": "122649",
+      "name": "San Joaquin College of Law",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 47,
+      "frame position": 231,
+      "unitid": "122852",
+      "name": "Santa Barbara Business College-Santa Maria",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 48,
+      "frame position": 236,
+      "unitid": "123448",
+      "name": "Trinity Law School",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 49,
+      "frame position": 241,
+      "unitid": "123651",
+      "name": "Vanguard University of Southern California",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 50,
+      "frame position": 246,
+      "unitid": "123961",
+      "name": "University of Southern California",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 51,
+      "frame position": 251,
+      "unitid": "125037",
+      "name": "The Santa Barbara and Ventura Colleges of Law-Ventura",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 52,
+      "frame position": 256,
+      "unitid": "125897",
+      "name": "Woodbury University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 53,
+      "frame position": 261,
+      "unitid": "126182",
+      "name": "Adams State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CO"
+    },
+    {
+      "slot": 54,
+      "frame position": 266,
+      "unitid": "126678",
+      "name": "Colorado College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CO"
+    },
+    {
+      "slot": 55,
+      "frame position": 271,
+      "unitid": "126827",
+      "name": "Colorado Technical University-Colorado Springs",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 56,
+      "frame position": 276,
+      "unitid": "127185",
+      "name": "Fort Lewis College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CO"
+    },
+    {
+      "slot": 57,
+      "frame position": 281,
+      "unitid": "127680",
+      "name": "National American University-Colorado Springs",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 58,
+      "frame position": 286,
+      "unitid": "127945",
+      "name": "Rocky Mountain College of Art and Design",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 59,
+      "frame position": 291,
+      "unitid": "128498",
+      "name": "Albertus Magnus College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 60,
+      "frame position": 296,
+      "unitid": "128902",
+      "name": "Connecticut College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 61,
+      "frame position": 301,
+      "unitid": "129428",
+      "name": "Rensselaer Hartford Graduate Center Inc",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 62,
+      "frame position": 306,
+      "unitid": "129774",
+      "name": "Mitchell College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 63,
+      "frame position": 311,
+      "unitid": "130253",
+      "name": "Sacred Heart University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 64,
+      "frame position": 316,
+      "unitid": "130590",
+      "name": "Trinity College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CT"
+    },
+    {
+      "slot": 65,
+      "frame position": 321,
+      "unitid": "130934",
+      "name": "Delaware State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "DE"
+    },
+    {
+      "slot": 66,
+      "frame position": 326,
+      "unitid": "131159",
+      "name": "American University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "DC"
+    },
+    {
+      "slot": 67,
+      "frame position": 331,
+      "unitid": "131450",
+      "name": "Gallaudet University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "DC"
+    },
+    {
+      "slot": 68,
+      "frame position": 336,
+      "unitid": "131876",
+      "name": "Trinity Washington University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "DC"
+    },
+    {
+      "slot": 69,
+      "frame position": 341,
+      "unitid": "132523",
+      "name": "Gooding Institute of Nurse Anesthesia",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 70,
+      "frame position": 346,
+      "unitid": "132842",
+      "name": "Carlos Albizu University-Miami",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 71,
+      "frame position": 351,
+      "unitid": "133085",
+      "name": "Clearwater Christian College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 72,
+      "frame position": 356,
+      "unitid": "133526",
+      "name": "Edward Waters College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 73,
+      "frame position": 361,
+      "unitid": "133711",
+      "name": "Flagler College-St Augustine",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 74,
+      "frame position": 366,
+      "unitid": "133979",
+      "name": "Florida Memorial University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 75,
+      "frame position": 371,
+      "unitid": "134121",
+      "name": "University of Southernmost Florida",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 76,
+      "frame position": 376,
+      "unitid": "134510",
+      "name": "Hobe Sound Bible College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 77,
+      "frame position": 381,
+      "unitid": "134945",
+      "name": "Jacksonville University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 78,
+      "frame position": 386,
+      "unitid": "135364",
+      "name": "Luther Rice University & Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 79,
+      "frame position": 391,
+      "unitid": "135939",
+      "name": "Remington College-Tampa Campus",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 80,
+      "frame position": 396,
+      "unitid": "136233",
+      "name": "Northwest Florida State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "FL"
+    },
+    {
+      "slot": 81,
+      "frame position": 401,
+      "unitid": "136473",
+      "name": "Pensacola State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "FL"
+    },
+    {
+      "slot": 82,
+      "frame position": 406,
+      "unitid": "137032",
+      "name": "Saint Leo University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 83,
+      "frame position": 411,
+      "unitid": "137272",
+      "name": "Saint John Vianney College Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 84,
+      "frame position": 416,
+      "unitid": "137546",
+      "name": "Stetson University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 85,
+      "frame position": 421,
+      "unitid": "137847",
+      "name": "The University of Tampa",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 86,
+      "frame position": 426,
+      "unitid": "138293",
+      "name": "Webber International University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 87,
+      "frame position": 431,
+      "unitid": "138691",
+      "name": "Darton State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 88,
+      "frame position": 436,
+      "unitid": "138901",
+      "name": "Atlanta Metropolitan State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 89,
+      "frame position": 441,
+      "unitid": "139153",
+      "name": "Beulah Heights University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 90,
+      "frame position": 446,
+      "unitid": "139311",
+      "name": "Clayton  State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 91,
+      "frame position": 451,
+      "unitid": "139579",
+      "name": "South University-Savannah",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "GA"
+    },
+    {
+      "slot": 92,
+      "frame position": 456,
+      "unitid": "139719",
+      "name": "Fort Valley State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 93,
+      "frame position": 461,
+      "unitid": "139940",
+      "name": "Georgia State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 94,
+      "frame position": 466,
+      "unitid": "140234",
+      "name": "LaGrange College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 95,
+      "frame position": 471,
+      "unitid": "140562",
+      "name": "Morehouse School of Medicine",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 96,
+      "frame position": 476,
+      "unitid": "140951",
+      "name": "Savannah College of Art and Design",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 97,
+      "frame position": 481,
+      "unitid": "141167",
+      "name": "Thomas University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "GA"
+    },
+    {
+      "slot": 98,
+      "frame position": 486,
+      "unitid": "141334",
+      "name": "University of West Georgia",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GA"
+    },
+    {
+      "slot": 99,
+      "frame position": 491,
+      "unitid": "141644",
+      "name": "Hawaii Pacific University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "HI"
+    },
+    {
+      "slot": 100,
+      "frame position": 496,
+      "unitid": "142115",
+      "name": "Boise State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "ID"
+    },
+    {
+      "slot": 101,
+      "frame position": 501,
+      "unitid": "142337",
+      "name": "ITT Technical Institute-Boise",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "ID"
+    },
+    {
+      "slot": 102,
+      "frame position": 506,
+      "unitid": "143048",
+      "name": "School of the Art Institute of Chicago",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 103,
+      "frame position": 511,
+      "unitid": "143297",
+      "name": "Blessing Rieman College of Nursing",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 104,
+      "frame position": 516,
+      "unitid": "144005",
+      "name": "Chicago State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IL"
+    },
+    {
+      "slot": 105,
+      "frame position": 521,
+      "unitid": "144740",
+      "name": "DePaul University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 106,
+      "frame position": 526,
+      "unitid": "145275",
+      "name": "Garrett-Evangelical Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 107,
+      "frame position": 531,
+      "unitid": "145558",
+      "name": "Rosalind Franklin University of Medicine and Science",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 108,
+      "frame position": 536,
+      "unitid": "145646",
+      "name": "Illinois Wesleyan University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 109,
+      "frame position": 541,
+      "unitid": "145886",
+      "name": "Institute for Clinical Social Work",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 110,
+      "frame position": 546,
+      "unitid": "146427",
+      "name": "Knox College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 111,
+      "frame position": 551,
+      "unitid": "146621",
+      "name": "Lexington College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 112,
+      "frame position": 556,
+      "unitid": "146755",
+      "name": "Trinity College of Nursing & Health Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 113,
+      "frame position": 561,
+      "unitid": "147129",
+      "name": "Methodist College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 114,
+      "frame position": 566,
+      "unitid": "147536",
+      "name": "National Louis University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 115,
+      "frame position": 571,
+      "unitid": "147703",
+      "name": "Northern Illinois University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IL"
+    },
+    {
+      "slot": 116,
+      "frame position": 576,
+      "unitid": "148131",
+      "name": "Quincy University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 117,
+      "frame position": 581,
+      "unitid": "148496",
+      "name": "Dominican University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 118,
+      "frame position": 586,
+      "unitid": "148627",
+      "name": "Saint Xavier University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 119,
+      "frame position": 591,
+      "unitid": "148885",
+      "name": "University of Saint Mary of the Lake",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 120,
+      "frame position": 596,
+      "unitid": "149329",
+      "name": "Telshe Yeshiva-Chicago",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 121,
+      "frame position": 601,
+      "unitid": "149772",
+      "name": "Western Illinois University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IL"
+    },
+    {
+      "slot": 122,
+      "frame position": 606,
+      "unitid": "150163",
+      "name": "Butler University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 123,
+      "frame position": 611,
+      "unitid": "150455",
+      "name": "Earlham College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 124,
+      "frame position": 616,
+      "unitid": "150756",
+      "name": "Hanover College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 125,
+      "frame position": 621,
+      "unitid": "151166",
+      "name": "Harrison College-Indianapolis",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IN"
+    },
+    {
+      "slot": 126,
+      "frame position": 626,
+      "unitid": "151333",
+      "name": "Indiana University-Kokomo",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IN"
+    },
+    {
+      "slot": 127,
+      "frame position": 631,
+      "unitid": "151388",
+      "name": "Indiana University-East",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IN"
+    },
+    {
+      "slot": 128,
+      "frame position": 636,
+      "unitid": "151616",
+      "name": "Brown Mackie College-Merrillville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IN"
+    },
+    {
+      "slot": 129,
+      "frame position": 641,
+      "unitid": "151810",
+      "name": "Martin University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 130,
+      "frame position": 646,
+      "unitid": "152099",
+      "name": "Oakland City University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 131,
+      "frame position": 651,
+      "unitid": "152363",
+      "name": "Saint Josephs College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 132,
+      "frame position": 656,
+      "unitid": "152567",
+      "name": "Trine University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IN"
+    },
+    {
+      "slot": 133,
+      "frame position": 661,
+      "unitid": "152822",
+      "name": "AIB College of Business",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 134,
+      "frame position": 666,
+      "unitid": "153144",
+      "name": "Coe College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 135,
+      "frame position": 671,
+      "unitid": "153278",
+      "name": "University of Dubuque",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 136,
+      "frame position": 676,
+      "unitid": "153384",
+      "name": "Grinnell College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 137,
+      "frame position": 682,
+      "unitid": "153658",
+      "name": "University of Iowa",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IA"
+    },
+    {
+      "slot": 138,
+      "frame position": 686,
+      "unitid": "153977",
+      "name": "Mercy College of Health Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 139,
+      "frame position": 691,
+      "unitid": "154101",
+      "name": "Northwestern College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 140,
+      "frame position": 696,
+      "unitid": "154350",
+      "name": "Simpson College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 141,
+      "frame position": 701,
+      "unitid": "154590",
+      "name": "William Penn University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IA"
+    },
+    {
+      "slot": 142,
+      "frame position": 706,
+      "unitid": "154767",
+      "name": "Brown Mackie College-Kansas City",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KS"
+    },
+    {
+      "slot": 143,
+      "frame position": 711,
+      "unitid": "155025",
+      "name": "Emporia State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "KS"
+    },
+    {
+      "slot": 144,
+      "frame position": 716,
+      "unitid": "155283",
+      "name": "Concorde Career College-Kansas City",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MO"
+    },
+    {
+      "slot": 145,
+      "frame position": 721,
+      "unitid": "155414",
+      "name": "Kansas Wesleyan University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KS"
+    },
+    {
+      "slot": 146,
+      "frame position": 726,
+      "unitid": "155636",
+      "name": "Ottawa University-Kansas City",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KS"
+    },
+    {
+      "slot": 147,
+      "frame position": 731,
+      "unitid": "155973",
+      "name": "Tabor College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KS"
+    },
+    {
+      "slot": 148,
+      "frame position": 736,
+      "unitid": "156222",
+      "name": "Asbury Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KY"
+    },
+    {
+      "slot": 149,
+      "frame position": 741,
+      "unitid": "156408",
+      "name": "Centre College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KY"
+    },
+    {
+      "slot": 150,
+      "frame position": 746,
+      "unitid": "156745",
+      "name": "Georgetown College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KY"
+    },
+    {
+      "slot": 151,
+      "frame position": 751,
+      "unitid": "157076",
+      "name": "Kentucky Wesleyan College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KY"
+    },
+    {
+      "slot": 152,
+      "frame position": 756,
+      "unitid": "157270",
+      "name": "Sullivan College of Technology and Design",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 153,
+      "frame position": 761,
+      "unitid": "157386",
+      "name": "Morehead State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "KY"
+    },
+    {
+      "slot": 154,
+      "frame position": 766,
+      "unitid": "157599",
+      "name": "Brown Mackie College-Louisville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 155,
+      "frame position": 771,
+      "unitid": "157766",
+      "name": "Spencerian College-Louisville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 156,
+      "frame position": 776,
+      "unitid": "157951",
+      "name": "Western Kentucky University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "KY"
+    },
+    {
+      "slot": 157,
+      "frame position": 781,
+      "unitid": "159382",
+      "name": "Louisiana State University-Alexandria",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "LA"
+    },
+    {
+      "slot": 158,
+      "frame position": 786,
+      "unitid": "159656",
+      "name": "Loyola University New Orleans",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "LA"
+    },
+    {
+      "slot": 159,
+      "frame position": 791,
+      "unitid": "159993",
+      "name": "University of Louisiana at Monroe",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "LA"
+    },
+    {
+      "slot": 160,
+      "frame position": 796,
+      "unitid": "160409",
+      "name": "Saint Joseph Seminary College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "LA"
+    },
+    {
+      "slot": 161,
+      "frame position": 801,
+      "unitid": "160755",
+      "name": "Tulane University of Louisiana",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "LA"
+    },
+    {
+      "slot": 162,
+      "frame position": 807,
+      "unitid": "161086",
+      "name": "Colby College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "ME"
+    },
+    {
+      "slot": 163,
+      "frame position": 811,
+      "unitid": "161235",
+      "name": "University of Maine at Fort Kent",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "ME"
+    },
+    {
+      "slot": 164,
+      "frame position": 816,
+      "unitid": "161457",
+      "name": "University of New England",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "ME"
+    },
+    {
+      "slot": 165,
+      "frame position": 821,
+      "unitid": "161572",
+      "name": "Unity College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "ME"
+    },
+    {
+      "slot": 166,
+      "frame position": 826,
+      "unitid": "162283",
+      "name": "Coppin State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MD"
+    },
+    {
+      "slot": 167,
+      "frame position": 832,
+      "unitid": "163046",
+      "name": "Loyola University Maryland",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MD"
+    },
+    {
+      "slot": 168,
+      "frame position": 836,
+      "unitid": "163286",
+      "name": "University of Maryland-College Park",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MD"
+    },
+    {
+      "slot": 169,
+      "frame position": 841,
+      "unitid": "163532",
+      "name": "Ner Israel Rabbinical College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MD"
+    },
+    {
+      "slot": 170,
+      "frame position": 846,
+      "unitid": "163976",
+      "name": "St John's College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MD"
+    },
+    {
+      "slot": 171,
+      "frame position": 851,
+      "unitid": "164216",
+      "name": "Washington College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MD"
+    },
+    {
+      "slot": 172,
+      "frame position": 857,
+      "unitid": "164474",
+      "name": "Andover Newton Theological School",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 173,
+      "frame position": 861,
+      "unitid": "164614",
+      "name": "Boston Baptist College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 174,
+      "frame position": 866,
+      "unitid": "164748",
+      "name": "Berklee College of Music",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 175,
+      "frame position": 871,
+      "unitid": "164988",
+      "name": "Boston University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 176,
+      "frame position": 876,
+      "unitid": "165334",
+      "name": "Clark University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 177,
+      "frame position": 881,
+      "unitid": "165662",
+      "name": "Emerson College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 178,
+      "frame position": 886,
+      "unitid": "165820",
+      "name": "Fitchburg State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 179,
+      "frame position": 893,
+      "unitid": "166045",
+      "name": "Hebrew College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 180,
+      "frame position": 896,
+      "unitid": "166391",
+      "name": "Lasell College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 181,
+      "frame position": 901,
+      "unitid": "166629",
+      "name": "University of Massachusetts-Amherst",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 182,
+      "frame position": 906,
+      "unitid": "166692",
+      "name": "Massachusetts Maritime Academy",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 183,
+      "frame position": 911,
+      "unitid": "166911",
+      "name": "Montserrat College of Art",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 184,
+      "frame position": 916,
+      "unitid": "167093",
+      "name": "New England College of Optometry",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 185,
+      "frame position": 921,
+      "unitid": "167288",
+      "name": "Massachusetts College of Liberal Arts",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 186,
+      "frame position": 926,
+      "unitid": "167464",
+      "name": "Pope St John XXIII National Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 187,
+      "frame position": 931,
+      "unitid": "167792",
+      "name": "Bard College at Simon's Rock",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 188,
+      "frame position": 936,
+      "unitid": "168005",
+      "name": "Suffolk University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 189,
+      "frame position": 941,
+      "unitid": "168263",
+      "name": "Westfield State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 190,
+      "frame position": 946,
+      "unitid": "168430",
+      "name": "Worcester State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MA"
+    },
+    {
+      "slot": 191,
+      "frame position": 951,
+      "unitid": "168786",
+      "name": "Aquinas College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 192,
+      "frame position": 956,
+      "unitid": "169220",
+      "name": "Michigan School of Professional Psychology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 193,
+      "frame position": 961,
+      "unitid": "169442",
+      "name": "College for Creative Studies",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 194,
+      "frame position": 966,
+      "unitid": "169910",
+      "name": "Ferris State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MI"
+    },
+    {
+      "slot": 195,
+      "frame position": 971,
+      "unitid": "170091",
+      "name": "Great Lakes Christian College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 196,
+      "frame position": 976,
+      "unitid": "170532",
+      "name": "Kalamazoo College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 197,
+      "frame position": 982,
+      "unitid": "170967",
+      "name": "Rochester College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 198,
+      "frame position": 986,
+      "unitid": "171137",
+      "name": "University of Michigan-Dearborn",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MI"
+    },
+    {
+      "slot": 199,
+      "frame position": 991,
+      "unitid": "171492",
+      "name": "Northwood University-Michigan",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 200,
+      "frame position": 996,
+      "unitid": "172051",
+      "name": "Saginaw Valley State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MI"
+    },
+    {
+      "slot": 201,
+      "frame position": 1001,
+      "unitid": "172608",
+      "name": "Walsh College of Accountancy and Business Administration",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 202,
+      "frame position": 1006,
+      "unitid": "173045",
+      "name": "Augsburg College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 203,
+      "frame position": 1012,
+      "unitid": "173300",
+      "name": "Concordia College at Moorhead",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 204,
+      "frame position": 1016,
+      "unitid": "173629",
+      "name": "Globe University-Woodbury",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 205,
+      "frame position": 1021,
+      "unitid": "173896",
+      "name": "Luther Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 206,
+      "frame position": 1026,
+      "unitid": "173984",
+      "name": "Argosy University-Twin Cities",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 207,
+      "frame position": 1031,
+      "unitid": "174154",
+      "name": "Herzing University-Minneapolis",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 208,
+      "frame position": 1036,
+      "unitid": "174358",
+      "name": "Minnesota State University Moorhead",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MN"
+    },
+    {
+      "slot": 209,
+      "frame position": 1041,
+      "unitid": "174507",
+      "name": "Northwestern Health Sciences University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 210,
+      "frame position": 1046,
+      "unitid": "174817",
+      "name": "Saint Mary's University of Minnesota",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 211,
+      "frame position": 1051,
+      "unitid": "175005",
+      "name": "St Catherine University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MN"
+    },
+    {
+      "slot": 212,
+      "frame position": 1056,
+      "unitid": "175272",
+      "name": "Winona State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MN"
+    },
+    {
+      "slot": 213,
+      "frame position": 1061,
+      "unitid": "175616",
+      "name": "Delta State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MS"
+    },
+    {
+      "slot": 214,
+      "frame position": 1066,
+      "unitid": "176035",
+      "name": "Mississippi University for Women",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MS"
+    },
+    {
+      "slot": 215,
+      "frame position": 1071,
+      "unitid": "176336",
+      "name": "Southeastern Baptist College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MS"
+    },
+    {
+      "slot": 216,
+      "frame position": 1076,
+      "unitid": "176600",
+      "name": "Aquinas Institute of Theology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 217,
+      "frame position": 1081,
+      "unitid": "176770",
+      "name": "Cox College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 218,
+      "frame position": 1086,
+      "unitid": "177038",
+      "name": "Cleveland University-Kansas City",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KS"
+    },
+    {
+      "slot": 219,
+      "frame position": 1091,
+      "unitid": "177126",
+      "name": "Covenant Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 220,
+      "frame position": 1097,
+      "unitid": "177427",
+      "name": "Forest Institute of Professional Psychology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 221,
+      "frame position": 1101,
+      "unitid": "177719",
+      "name": "Barnes-Jewish College Goldfarb School of Nursing",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 222,
+      "frame position": 1106,
+      "unitid": "177968",
+      "name": "Lindenwood University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 223,
+      "frame position": 1111,
+      "unitid": "178244",
+      "name": "Missouri Baptist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 224,
+      "frame position": 1116,
+      "unitid": "178387",
+      "name": "Missouri Western State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MO"
+    },
+    {
+      "slot": 225,
+      "frame position": 1121,
+      "unitid": "178518",
+      "name": "Nazarene Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 226,
+      "frame position": 1126,
+      "unitid": "178721",
+      "name": "Park University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 227,
+      "frame position": 1131,
+      "unitid": "179070",
+      "name": "Everest College-Springfield",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MO"
+    },
+    {
+      "slot": 228,
+      "frame position": 1136,
+      "unitid": "179317",
+      "name": "Saint Paul School of Theology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "KS"
+    },
+    {
+      "slot": 229,
+      "frame position": 1141,
+      "unitid": "179566",
+      "name": "Missouri State University-Springfield",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MO"
+    },
+    {
+      "slot": 230,
+      "frame position": 1146,
+      "unitid": "179955",
+      "name": "William Jewell College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 231,
+      "frame position": 1151,
+      "unitid": "180416",
+      "name": "Montana Tech of the University of Montana",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "MT"
+    },
+    {
+      "slot": 232,
+      "frame position": 1156,
+      "unitid": "180647",
+      "name": "Salish Kootenai College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MT"
+    },
+    {
+      "slot": 233,
+      "frame position": 1161,
+      "unitid": "180948",
+      "name": "Chadron State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NE"
+    },
+    {
+      "slot": 234,
+      "frame position": 1166,
+      "unitid": "181127",
+      "name": "Hastings College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NE"
+    },
+    {
+      "slot": 235,
+      "frame position": 1171,
+      "unitid": "181376",
+      "name": "Nebraska Christian College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NE"
+    },
+    {
+      "slot": 236,
+      "frame position": 1176,
+      "unitid": "181464",
+      "name": "University of Nebraska-Lincoln",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NE"
+    },
+    {
+      "slot": 237,
+      "frame position": 1181,
+      "unitid": "181783",
+      "name": "Wayne State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NE"
+    },
+    {
+      "slot": 238,
+      "frame position": 1186,
+      "unitid": "182290",
+      "name": "University of Nevada-Reno",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NV"
+    },
+    {
+      "slot": 239,
+      "frame position": 1191,
+      "unitid": "182634",
+      "name": "Colby-Sawyer College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NH"
+    },
+    {
+      "slot": 240,
+      "frame position": 1196,
+      "unitid": "182865",
+      "name": "Mount Washington College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NH"
+    },
+    {
+      "slot": 241,
+      "frame position": 1201,
+      "unitid": "183062",
+      "name": "Keene State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NH"
+    },
+    {
+      "slot": 242,
+      "frame position": 1206,
+      "unitid": "183257",
+      "name": "Granite State College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NH"
+    },
+    {
+      "slot": 243,
+      "frame position": 1211,
+      "unitid": "183910",
+      "name": "Caldwell University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NJ"
+    },
+    {
+      "slot": 244,
+      "frame position": 1216,
+      "unitid": "184694",
+      "name": "Fairleigh Dickinson University-College at Florham",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NJ"
+    },
+    {
+      "slot": 245,
+      "frame position": 1221,
+      "unitid": "185572",
+      "name": "Monmouth University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NJ"
+    },
+    {
+      "slot": 246,
+      "frame position": 1227,
+      "unitid": "186186",
+      "name": "Rabbinical College of America",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NJ"
+    },
+    {
+      "slot": 247,
+      "frame position": 1231,
+      "unitid": "186380",
+      "name": "Rutgers University-New Brunswick",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NJ"
+    },
+    {
+      "slot": 248,
+      "frame position": 1236,
+      "unitid": "186867",
+      "name": "Stevens Institute of Technology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NJ"
+    },
+    {
+      "slot": 249,
+      "frame position": 1241,
+      "unitid": "187444",
+      "name": "William Paterson University of New Jersey",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NJ"
+    },
+    {
+      "slot": 250,
+      "frame position": 1246,
+      "unitid": "187967",
+      "name": "New Mexico Institute of Mining and Technology",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NM"
+    },
+    {
+      "slot": 251,
+      "frame position": 1251,
+      "unitid": "188182",
+      "name": "University of the Southwest",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NM"
+    },
+    {
+      "slot": 252,
+      "frame position": 1256,
+      "unitid": "188465",
+      "name": "Globe Institute of Technology",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NY"
+    },
+    {
+      "slot": 253,
+      "frame position": 1261,
+      "unitid": "188641",
+      "name": "Alfred University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 254,
+      "frame position": 1266,
+      "unitid": "189228",
+      "name": "Berkeley College-New York",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NY"
+    },
+    {
+      "slot": 255,
+      "frame position": 1271,
+      "unitid": "189459",
+      "name": "Briarcliffe College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NY"
+    },
+    {
+      "slot": 256,
+      "frame position": 1276,
+      "unitid": "189592",
+      "name": "Bryant & Stratton College-Greece",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NY"
+    },
+    {
+      "slot": 257,
+      "frame position": 1281,
+      "unitid": "190044",
+      "name": "Clarkson University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 258,
+      "frame position": 1286,
+      "unitid": "190248",
+      "name": "Concordia College-New York",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 259,
+      "frame position": 1291,
+      "unitid": "190512",
+      "name": "CUNY Bernard M Baruch College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 260,
+      "frame position": 1296,
+      "unitid": "190594",
+      "name": "CUNY Hunter College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 261,
+      "frame position": 1301,
+      "unitid": "190664",
+      "name": "CUNY Queens College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 262,
+      "frame position": 1306,
+      "unitid": "190752",
+      "name": "Yeshiva of Far Rockaway Derech Ayson Rabbinical Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 263,
+      "frame position": 1311,
+      "unitid": "191205",
+      "name": "Five Towns College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NY"
+    },
+    {
+      "slot": 264,
+      "frame position": 1316,
+      "unitid": "191597",
+      "name": "Helene Fuld College of Nursing",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 265,
+      "frame position": 1321,
+      "unitid": "191931",
+      "name": "Iona College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 266,
+      "frame position": 1326,
+      "unitid": "192165",
+      "name": "Kehilath Yakov Rabbinical Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 267,
+      "frame position": 1331,
+      "unitid": "192448",
+      "name": "LIU Post",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 268,
+      "frame position": 1336,
+      "unitid": "192712",
+      "name": "Manhattan School of Music",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 269,
+      "frame position": 1342,
+      "unitid": "193016",
+      "name": "Mercy College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 270,
+      "frame position": 1346,
+      "unitid": "193247",
+      "name": "Mirrer Yeshiva Cent Institute",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 271,
+      "frame position": 1351,
+      "unitid": "193405",
+      "name": "Icahn School of Medicine at Mount Sinai",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 272,
+      "frame position": 1356,
+      "unitid": "193821",
+      "name": "New York Law School",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 273,
+      "frame position": 1361,
+      "unitid": "194073",
+      "name": "New York College of Podiatric Medicine",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 274,
+      "frame position": 1366,
+      "unitid": "194310",
+      "name": "Pace University-New York",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 275,
+      "frame position": 1371,
+      "unitid": "194578",
+      "name": "Pratt Institute-Main",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 276,
+      "frame position": 1376,
+      "unitid": "194718",
+      "name": "Rabbinical Seminary M'kor Chaim",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 277,
+      "frame position": 1381,
+      "unitid": "195003",
+      "name": "Rochester Institute of Technology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 278,
+      "frame position": 1386,
+      "unitid": "195164",
+      "name": "St Bonaventure University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 279,
+      "frame position": 1391,
+      "unitid": "195304",
+      "name": "Sarah Lawrence College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 280,
+      "frame position": 1396,
+      "unitid": "195580",
+      "name": "Saint Vladimirs Orthodox Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 281,
+      "frame position": 1401,
+      "unitid": "196024",
+      "name": "SUNY College of Technology at Delhi",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 282,
+      "frame position": 1406,
+      "unitid": "196079",
+      "name": "SUNY at Binghamton",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 283,
+      "frame position": 1411,
+      "unitid": "196121",
+      "name": "SUNY College at Brockport",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 284,
+      "frame position": 1416,
+      "unitid": "196176",
+      "name": "State University of New York at New Paltz",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 285,
+      "frame position": 1421,
+      "unitid": "196228",
+      "name": "SUNY College of Optometry",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 286,
+      "frame position": 1426,
+      "unitid": "196291",
+      "name": "SUNY Maritime College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NY"
+    },
+    {
+      "slot": 287,
+      "frame position": 1431,
+      "unitid": "196468",
+      "name": "Teachers College at Columbia University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 288,
+      "frame position": 1436,
+      "unitid": "196866",
+      "name": "Union College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 289,
+      "frame position": 1441,
+      "unitid": "197045",
+      "name": "Utica College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 290,
+      "frame position": 1446,
+      "unitid": "197221",
+      "name": "Webb Institute",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 291,
+      "frame position": 1451,
+      "unitid": "197647",
+      "name": "Yeshiva Derech Chaim",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 292,
+      "frame position": 1456,
+      "unitid": "197744",
+      "name": "Yeshivath Zichron Moshe",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 293,
+      "frame position": 1461,
+      "unitid": "197993",
+      "name": "Bennett College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 294,
+      "frame position": 1466,
+      "unitid": "198242",
+      "name": "South College-Asheville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NC"
+    },
+    {
+      "slot": 295,
+      "frame position": 1471,
+      "unitid": "198507",
+      "name": "Elizabeth City State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NC"
+    },
+    {
+      "slot": 296,
+      "frame position": 1476,
+      "unitid": "198613",
+      "name": "Guilford College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 297,
+      "frame position": 1481,
+      "unitid": "198808",
+      "name": "Lees-McRae College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 298,
+      "frame position": 1486,
+      "unitid": "198969",
+      "name": "Methodist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 299,
+      "frame position": 1491,
+      "unitid": "199111",
+      "name": "University of North Carolina at Asheville",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NC"
+    },
+    {
+      "slot": 300,
+      "frame position": 1496,
+      "unitid": "199184",
+      "name": "University of North Carolina School of the Arts",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NC"
+    },
+    {
+      "slot": 301,
+      "frame position": 1501,
+      "unitid": "199281",
+      "name": "University of North Carolina at Pembroke",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NC"
+    },
+    {
+      "slot": 302,
+      "frame position": 1506,
+      "unitid": "199582",
+      "name": "Saint Augustine's University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 303,
+      "frame position": 1511,
+      "unitid": "199847",
+      "name": "Wake Forest University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NC"
+    },
+    {
+      "slot": 304,
+      "frame position": 1516,
+      "unitid": "200004",
+      "name": "Western Carolina University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "NC"
+    },
+    {
+      "slot": 305,
+      "frame position": 1521,
+      "unitid": "200156",
+      "name": "University of Jamestown",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "ND"
+    },
+    {
+      "slot": 306,
+      "frame position": 1526,
+      "unitid": "200280",
+      "name": "University of North Dakota",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "ND"
+    },
+    {
+      "slot": 307,
+      "frame position": 1531,
+      "unitid": "200554",
+      "name": "United Tribes Technical College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "ND"
+    },
+    {
+      "slot": 308,
+      "frame position": 1536,
+      "unitid": "200800",
+      "name": "University of Akron Main Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 309,
+      "frame position": 1541,
+      "unitid": "201177",
+      "name": "Aultman College of Nursing and Health Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 310,
+      "frame position": 1546,
+      "unitid": "201548",
+      "name": "Capital University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 311,
+      "frame position": 1551,
+      "unitid": "201858",
+      "name": "Cincinnati Christian University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 312,
+      "frame position": 1556,
+      "unitid": "201964",
+      "name": "Ohio Christian University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 313,
+      "frame position": 1561,
+      "unitid": "202480",
+      "name": "University of Dayton",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 314,
+      "frame position": 1566,
+      "unitid": "202806",
+      "name": "Franklin University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 315,
+      "frame position": 1571,
+      "unitid": "203128",
+      "name": "Hiram College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 316,
+      "frame position": 1576,
+      "unitid": "203456",
+      "name": "Kent State University at East Liverpool",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 317,
+      "frame position": 1581,
+      "unitid": "203517",
+      "name": "Kent State University at Kent",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 318,
+      "frame position": 1587,
+      "unitid": "203775",
+      "name": "Malone University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 319,
+      "frame position": 1591,
+      "unitid": "204006",
+      "name": "Miami University-Hamilton",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 320,
+      "frame position": 1596,
+      "unitid": "204194",
+      "name": "Mount Vernon Nazarene University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 321,
+      "frame position": 1601,
+      "unitid": "204477",
+      "name": "Northeast Ohio Medical University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 322,
+      "frame position": 1606,
+      "unitid": "204671",
+      "name": "Ohio State University-Lima Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 323,
+      "frame position": 1611,
+      "unitid": "204802",
+      "name": "Ohio University-Eastern Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 324,
+      "frame position": 1616,
+      "unitid": "204866",
+      "name": "Ohio University-Zanesville Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OH"
+    },
+    {
+      "slot": 325,
+      "frame position": 1621,
+      "unitid": "205124",
+      "name": "Rabbinical College Telshe",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 326,
+      "frame position": 1626,
+      "unitid": "205647",
+      "name": "Brown Mackie College-Akron",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OH"
+    },
+    {
+      "slot": 327,
+      "frame position": 1631,
+      "unitid": "206154",
+      "name": "Tri-State Bible College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 328,
+      "frame position": 1636,
+      "unitid": "206349",
+      "name": "Ursuline College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 329,
+      "frame position": 1642,
+      "unitid": "206589",
+      "name": "The College of Wooster",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 330,
+      "frame position": 1646,
+      "unitid": "206631",
+      "name": "ITT Technical Institute-Youngstown",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OH"
+    },
+    {
+      "slot": 331,
+      "frame position": 1651,
+      "unitid": "206914",
+      "name": "Cameron University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OK"
+    },
+    {
+      "slot": 332,
+      "frame position": 1656,
+      "unitid": "207254",
+      "name": "Spartan College of Aeronautics and Technology",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OK"
+    },
+    {
+      "slot": 333,
+      "frame position": 1661,
+      "unitid": "207342",
+      "name": "University of Oklahoma-Health Sciences Center",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OK"
+    },
+    {
+      "slot": 334,
+      "frame position": 1666,
+      "unitid": "207458",
+      "name": "Oklahoma City University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OK"
+    },
+    {
+      "slot": 335,
+      "frame position": 1671,
+      "unitid": "207689",
+      "name": "St. Gregory's University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OK"
+    },
+    {
+      "slot": 336,
+      "frame position": 1676,
+      "unitid": "207971",
+      "name": "University of Tulsa",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OK"
+    },
+    {
+      "slot": 337,
+      "frame position": 1681,
+      "unitid": "208822",
+      "name": "George Fox University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OR"
+    },
+    {
+      "slot": 338,
+      "frame position": 1686,
+      "unitid": "209241",
+      "name": "Mount Angel Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OR"
+    },
+    {
+      "slot": 339,
+      "frame position": 1691,
+      "unitid": "209506",
+      "name": "Oregon Institute of Technology",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OR"
+    },
+    {
+      "slot": 340,
+      "frame position": 1696,
+      "unitid": "209612",
+      "name": "Pacific University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OR"
+    },
+    {
+      "slot": 341,
+      "frame position": 1701,
+      "unitid": "210146",
+      "name": "Southern Oregon University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OR"
+    },
+    {
+      "slot": 342,
+      "frame position": 1706,
+      "unitid": "210429",
+      "name": "Western Oregon University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "OR"
+    },
+    {
+      "slot": 343,
+      "frame position": 1711,
+      "unitid": "210739",
+      "name": "DeSales University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 344,
+      "frame position": 1716,
+      "unitid": "210960",
+      "name": "The Art Institute of Pittsburgh",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "PA"
+    },
+    {
+      "slot": 345,
+      "frame position": 1721,
+      "unitid": "211273",
+      "name": "Bryn Mawr College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 346,
+      "frame position": 1726,
+      "unitid": "211440",
+      "name": "Carnegie Mellon University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 347,
+      "frame position": 1731,
+      "unitid": "211608",
+      "name": "Cheyney University of Pennsylvania",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 348,
+      "frame position": 1736,
+      "unitid": "212018",
+      "name": "The Dickinson School of Law of the Pennsylvania State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 349,
+      "frame position": 1741,
+      "unitid": "212160",
+      "name": "Edinboro University of Pennsylvania",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 350,
+      "frame position": 1746,
+      "unitid": "212601",
+      "name": "Gannon University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 351,
+      "frame position": 1751,
+      "unitid": "212832",
+      "name": "Gwynedd Mercy University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 352,
+      "frame position": 1756,
+      "unitid": "213020",
+      "name": "Indiana University of Pennsylvania-Main Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 353,
+      "frame position": 1761,
+      "unitid": "213358",
+      "name": "La Roche College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 354,
+      "frame position": 1766,
+      "unitid": "213507",
+      "name": "Lebanon Valley College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 355,
+      "frame position": 1771,
+      "unitid": "213640",
+      "name": "Lutheran Theological Seminary at Philadelphia",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 356,
+      "frame position": 1776,
+      "unitid": "213996",
+      "name": "Messiah College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 357,
+      "frame position": 1781,
+      "unitid": "214166",
+      "name": "Mount Aloysius College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 358,
+      "frame position": 1786,
+      "unitid": "214607",
+      "name": "Pennsylvania State University-Penn State Great Valley",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 359,
+      "frame position": 1791,
+      "unitid": "214652",
+      "name": "Pennsylvania State University-Penn State Worthington Scranton",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 360,
+      "frame position": 1796,
+      "unitid": "214713",
+      "name": "Pennsylvania State University-Penn State Harrisburg",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 361,
+      "frame position": 1801,
+      "unitid": "214777",
+      "name": "Pennsylvania State University-Main Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 362,
+      "frame position": 1806,
+      "unitid": "214829",
+      "name": "Pennsylvania State University-Penn State York",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 363,
+      "frame position": 1811,
+      "unitid": "215099",
+      "name": "Philadelphia University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 364,
+      "frame position": 1816,
+      "unitid": "215266",
+      "name": "University of Pittsburgh-Bradford",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PA"
+    },
+    {
+      "slot": 365,
+      "frame position": 1821,
+      "unitid": "215442",
+      "name": "Point Park University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 366,
+      "frame position": 1826,
+      "unitid": "215691",
+      "name": "Rosemont College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 367,
+      "frame position": 1831,
+      "unitid": "215929",
+      "name": "University of Scranton",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 368,
+      "frame position": 1836,
+      "unitid": "216278",
+      "name": "Susquehanna University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 369,
+      "frame position": 1841,
+      "unitid": "216357",
+      "name": "Thiel College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 370,
+      "frame position": 1846,
+      "unitid": "216597",
+      "name": "Villanova University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 371,
+      "frame position": 1851,
+      "unitid": "216816",
+      "name": "Westminster Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 372,
+      "frame position": 1856,
+      "unitid": "217059",
+      "name": "York College Pennsylvania",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PA"
+    },
+    {
+      "slot": 373,
+      "frame position": 1861,
+      "unitid": "217402",
+      "name": "Providence College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "RI"
+    },
+    {
+      "slot": 374,
+      "frame position": 1866,
+      "unitid": "217536",
+      "name": "Salve Regina University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "RI"
+    },
+    {
+      "slot": 375,
+      "frame position": 1871,
+      "unitid": "217721",
+      "name": "Benedict College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 376,
+      "frame position": 1876,
+      "unitid": "217873",
+      "name": "Claflin University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 377,
+      "frame position": 1881,
+      "unitid": "217934",
+      "name": "Columbia College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 378,
+      "frame position": 1886,
+      "unitid": "218089",
+      "name": "Cathedral Bible College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 379,
+      "frame position": 1891,
+      "unitid": "218399",
+      "name": "Morris College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 380,
+      "frame position": 1896,
+      "unitid": "218654",
+      "name": "University of South Carolina-Beaufort",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "SC"
+    },
+    {
+      "slot": 381,
+      "frame position": 1901,
+      "unitid": "218751",
+      "name": "Sherman College of Straight Chiropractic",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "SC"
+    },
+    {
+      "slot": 382,
+      "frame position": 1906,
+      "unitid": "219046",
+      "name": "Black Hills State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "SD"
+    },
+    {
+      "slot": 383,
+      "frame position": 1911,
+      "unitid": "219213",
+      "name": "National American University-Sioux Falls",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "SD"
+    },
+    {
+      "slot": 384,
+      "frame position": 1916,
+      "unitid": "219347",
+      "name": "South Dakota School of Mines and Technology",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "SD"
+    },
+    {
+      "slot": 385,
+      "frame position": 1921,
+      "unitid": "219505",
+      "name": "American Baptist College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 386,
+      "frame position": 1926,
+      "unitid": "219718",
+      "name": "Bethel University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 387,
+      "frame position": 1931,
+      "unitid": "219949",
+      "name": "Cumberland University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 388,
+      "frame position": 1936,
+      "unitid": "220181",
+      "name": "Fisk University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 389,
+      "frame position": 1941,
+      "unitid": "220516",
+      "name": "King University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 390,
+      "frame position": 1946,
+      "unitid": "220631",
+      "name": "Lincoln Memorial University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 391,
+      "frame position": 1951,
+      "unitid": "220862",
+      "name": "University of Memphis",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TN"
+    },
+    {
+      "slot": 392,
+      "frame position": 1956,
+      "unitid": "221014",
+      "name": "Milligan College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 393,
+      "frame position": 1961,
+      "unitid": "221670",
+      "name": "Southern College of Optometry",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 394,
+      "frame position": 1966,
+      "unitid": "221795",
+      "name": "Fountainhead College of Technology",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TN"
+    },
+    {
+      "slot": 395,
+      "frame position": 1971,
+      "unitid": "221953",
+      "name": "Tusculum College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 396,
+      "frame position": 1976,
+      "unitid": "222831",
+      "name": "Angelo State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 397,
+      "frame position": 1981,
+      "unitid": "223083",
+      "name": "Baptist Health System School of Health Professions",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TX"
+    },
+    {
+      "slot": 398,
+      "frame position": 1986,
+      "unitid": "223506",
+      "name": "Brazosport College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 399,
+      "frame position": 1991,
+      "unitid": "224305",
+      "name": "Dallas Theological Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 400,
+      "frame position": 1996,
+      "unitid": "224554",
+      "name": "Texas A & M University-Commerce",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 401,
+      "frame position": 2001,
+      "unitid": "225399",
+      "name": "Houston Baptist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 402,
+      "frame position": 2006,
+      "unitid": "225548",
+      "name": "Howard Payne University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 403,
+      "frame position": 2011,
+      "unitid": "225885",
+      "name": "Jarvis Christian College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 404,
+      "frame position": 2016,
+      "unitid": "226471",
+      "name": "University of Mary Hardin-Baylor",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 405,
+      "frame position": 2021,
+      "unitid": "227216",
+      "name": "University of North Texas",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 406,
+      "frame position": 2026,
+      "unitid": "227377",
+      "name": "The University of Texas at Brownsville",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 407,
+      "frame position": 2031,
+      "unitid": "227863",
+      "name": "University of St Thomas",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 408,
+      "frame position": 2036,
+      "unitid": "228246",
+      "name": "Southern Methodist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 409,
+      "frame position": 2041,
+      "unitid": "228468",
+      "name": "Southwestern Adventist University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 410,
+      "frame position": 2046,
+      "unitid": "228644",
+      "name": "The University of Texas Health Science Center at San Antonio",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 411,
+      "frame position": 2051,
+      "unitid": "228778",
+      "name": "The University of Texas at Austin",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 412,
+      "frame position": 2057,
+      "unitid": "228884",
+      "name": "Texas College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 413,
+      "frame position": 2061,
+      "unitid": "229027",
+      "name": "The University of Texas at San Antonio",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "TX"
+    },
+    {
+      "slot": 414,
+      "frame position": 2066,
+      "unitid": "229267",
+      "name": "Trinity University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 415,
+      "frame position": 2071,
+      "unitid": "229887",
+      "name": "Wiley College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 416,
+      "frame position": 2076,
+      "unitid": "230366",
+      "name": "Eagle Gate College-Murray",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 417,
+      "frame position": 2081,
+      "unitid": "230621",
+      "name": "Stevens-Henager College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "UT"
+    },
+    {
+      "slot": 418,
+      "frame position": 2086,
+      "unitid": "230782",
+      "name": "Weber State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "UT"
+    },
+    {
+      "slot": 419,
+      "frame position": 2091,
+      "unitid": "230852",
+      "name": "Champlain College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VT"
+    },
+    {
+      "slot": 420,
+      "frame position": 2096,
+      "unitid": "230940",
+      "name": "Marlboro College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VT"
+    },
+    {
+      "slot": 421,
+      "frame position": 2101,
+      "unitid": "231068",
+      "name": "SIT Graduate Institute",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VT"
+    },
+    {
+      "slot": 422,
+      "frame position": 2106,
+      "unitid": "231165",
+      "name": "Vermont Technical College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VT"
+    },
+    {
+      "slot": 423,
+      "frame position": 2111,
+      "unitid": "231624",
+      "name": "College of William and Mary",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VA"
+    },
+    {
+      "slot": 424,
+      "frame position": 2116,
+      "unitid": "231837",
+      "name": "Jefferson College of Health Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 425,
+      "frame position": 2121,
+      "unitid": "232089",
+      "name": "Ferrum College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 426,
+      "frame position": 2126,
+      "unitid": "232423",
+      "name": "James Madison University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VA"
+    },
+    {
+      "slot": 427,
+      "frame position": 2131,
+      "unitid": "232681",
+      "name": "University of Mary Washington",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VA"
+    },
+    {
+      "slot": 428,
+      "frame position": 2136,
+      "unitid": "232982",
+      "name": "Old Dominion University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VA"
+    },
+    {
+      "slot": 429,
+      "frame position": 2141,
+      "unitid": "233374",
+      "name": "University of Richmond",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 430,
+      "frame position": 2147,
+      "unitid": "233842",
+      "name": "Union Presbyterian Seminary",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 431,
+      "frame position": 2152,
+      "unitid": "234085",
+      "name": "Virginia Military Institute",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "VA"
+    },
+    {
+      "slot": 432,
+      "frame position": 2156,
+      "unitid": "234173",
+      "name": "Virginia Wesleyan College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 433,
+      "frame position": 2161,
+      "unitid": "234827",
+      "name": "Central Washington University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WA"
+    },
+    {
+      "slot": 434,
+      "frame position": 2166,
+      "unitid": "235024",
+      "name": "Cornish College of the Arts",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WA"
+    },
+    {
+      "slot": 435,
+      "frame position": 2171,
+      "unitid": "235422",
+      "name": "Heritage University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WA"
+    },
+    {
+      "slot": 436,
+      "frame position": 2176,
+      "unitid": "235699",
+      "name": "Lake Washington Institute of Technology",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WA"
+    },
+    {
+      "slot": 437,
+      "frame position": 2181,
+      "unitid": "236230",
+      "name": "Pacific Lutheran University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WA"
+    },
+    {
+      "slot": 438,
+      "frame position": 2186,
+      "unitid": "236513",
+      "name": "Seattle Central College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WA"
+    },
+    {
+      "slot": 439,
+      "frame position": 2191,
+      "unitid": "236939",
+      "name": "Washington State University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WA"
+    },
+    {
+      "slot": 440,
+      "frame position": 2196,
+      "unitid": "237109",
+      "name": "Yakima Valley Community College",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WA"
+    },
+    {
+      "slot": 441,
+      "frame position": 2201,
+      "unitid": "237312",
+      "name": "University of Charleston",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WV"
+    },
+    {
+      "slot": 442,
+      "frame position": 2206,
+      "unitid": "237525",
+      "name": "Marshall University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WV"
+    },
+    {
+      "slot": 443,
+      "frame position": 2211,
+      "unitid": "237792",
+      "name": "Shepherd University",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WV"
+    },
+    {
+      "slot": 444,
+      "frame position": 2216,
+      "unitid": "237969",
+      "name": "West Virginia Wesleyan College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WV"
+    },
+    {
+      "slot": 445,
+      "frame position": 2221,
+      "unitid": "238324",
+      "name": "Bellin College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WI"
+    },
+    {
+      "slot": 446,
+      "frame position": 2226,
+      "unitid": "238573",
+      "name": "Columbia College of Nursing",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WI"
+    },
+    {
+      "slot": 447,
+      "frame position": 2231,
+      "unitid": "239017",
+      "name": "Lawrence University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WI"
+    },
+    {
+      "slot": 448,
+      "frame position": 2236,
+      "unitid": "239309",
+      "name": "Milwaukee Institute of Art & Design",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WI"
+    },
+    {
+      "slot": 449,
+      "frame position": 2242,
+      "unitid": "239628",
+      "name": "Ripon College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "WI"
+    },
+    {
+      "slot": 450,
+      "frame position": 2246,
+      "unitid": "239929",
+      "name": "Bryant & Stratton College-Milwaukee",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WI"
+    },
+    {
+      "slot": 451,
+      "frame position": 2251,
+      "unitid": "240277",
+      "name": "University of Wisconsin-Green Bay",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WI"
+    },
+    {
+      "slot": 452,
+      "frame position": 2256,
+      "unitid": "240392",
+      "name": "Herzing University-Madison",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WI"
+    },
+    {
+      "slot": 453,
+      "frame position": 2261,
+      "unitid": "240462",
+      "name": "University of Wisconsin-Platteville",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "WI"
+    },
+    {
+      "slot": 454,
+      "frame position": 2266,
+      "unitid": "240754",
+      "name": "University of Guam",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "GU"
+    },
+    {
+      "slot": 455,
+      "frame position": 2271,
+      "unitid": "241216",
+      "name": "Atlantic University College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 456,
+      "frame position": 2276,
+      "unitid": "241386",
+      "name": "Caribbean University-Carolina",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 457,
+      "frame position": 2281,
+      "unitid": "241720",
+      "name": "Colegio Universitario de San Juan",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PR"
+    },
+    {
+      "slot": 458,
+      "frame position": 2286,
+      "unitid": "241951",
+      "name": "Escuela de Artes Plasticas de Puerto Rico",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PR"
+    },
+    {
+      "slot": 459,
+      "frame position": 2291,
+      "unitid": "242644",
+      "name": "Inter American University of Puerto Rico-Barranquitas",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 460,
+      "frame position": 2296,
+      "unitid": "242705",
+      "name": "Inter American University of Puerto Rico-Bayamon",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 461,
+      "frame position": 2301,
+      "unitid": "243106",
+      "name": "University of Puerto Rico-Aguadilla",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PR"
+    },
+    {
+      "slot": 462,
+      "frame position": 2306,
+      "unitid": "243179",
+      "name": "University of Puerto Rico-Humacao",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PR"
+    },
+    {
+      "slot": 463,
+      "frame position": 2311,
+      "unitid": "243221",
+      "name": "University of Puerto Rico-Rio Piedras",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "PR"
+    },
+    {
+      "slot": 464,
+      "frame position": 2316,
+      "unitid": "243577",
+      "name": "Universidad Politecnica de Puerto Rico",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 465,
+      "frame position": 2321,
+      "unitid": "243780",
+      "name": "Purdue University-Main Campus",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "IN"
+    },
+    {
+      "slot": 466,
+      "frame position": 2326,
+      "unitid": "244190",
+      "name": "Widener University-Delaware Campus",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "DE"
+    },
+    {
+      "slot": 467,
+      "frame position": 2331,
+      "unitid": "245777",
+      "name": "Bais Medrash Elyon",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 468,
+      "frame position": 2336,
+      "unitid": "245892",
+      "name": "Antioch University-Midwest",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OH"
+    },
+    {
+      "slot": 469,
+      "frame position": 2341,
+      "unitid": "247065",
+      "name": "Beckfield College-Florence",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 470,
+      "frame position": 2346,
+      "unitid": "247825",
+      "name": "Austin Graduate School of Theology",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 471,
+      "frame position": 2351,
+      "unitid": "260293",
+      "name": "Everest University-Brandon",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 472,
+      "frame position": 2356,
+      "unitid": "260947",
+      "name": "Christian Life College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "IL"
+    },
+    {
+      "slot": 473,
+      "frame position": 2361,
+      "unitid": "262022",
+      "name": "Bethel Seminary-San Diego",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 474,
+      "frame position": 2366,
+      "unitid": "363439",
+      "name": "Daymar College-Bowling Green",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 475,
+      "frame position": 2371,
+      "unitid": "363934",
+      "name": "University of Advancing Technology",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 476,
+      "frame position": 2376,
+      "unitid": "366368",
+      "name": "New York Academy of Art",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 477,
+      "frame position": 2381,
+      "unitid": "366678",
+      "name": "ITT Technical Institute-Austin",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TX"
+    },
+    {
+      "slot": 478,
+      "frame position": 2386,
+      "unitid": "367024",
+      "name": "Kaplan University-Des Moines Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IA"
+    },
+    {
+      "slot": 479,
+      "frame position": 2391,
+      "unitid": "367936",
+      "name": "Argosy University-Atlanta",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "GA"
+    },
+    {
+      "slot": 480,
+      "frame position": 2396,
+      "unitid": "369002",
+      "name": "Massachusetts School of Law",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MA"
+    },
+    {
+      "slot": 481,
+      "frame position": 2401,
+      "unitid": "369905",
+      "name": "Bryant & Stratton College-Eastlake",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OH"
+    },
+    {
+      "slot": 482,
+      "frame position": 2406,
+      "unitid": "372958",
+      "name": "Remington College-Honolulu Campus",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "HI"
+    },
+    {
+      "slot": 483,
+      "frame position": 2411,
+      "unitid": "375489",
+      "name": "Brown Mackie College-Findlay",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OH"
+    },
+    {
+      "slot": 484,
+      "frame position": 2416,
+      "unitid": "377546",
+      "name": "Northwest College of Art & Design",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WA"
+    },
+    {
+      "slot": 485,
+      "frame position": 2421,
+      "unitid": "379782",
+      "name": "Center for Advanced Legal Studies",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TX"
+    },
+    {
+      "slot": 486,
+      "frame position": 2426,
+      "unitid": "381617",
+      "name": "Baker College of Port Huron",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 487,
+      "frame position": 2431,
+      "unitid": "384254",
+      "name": "Beacon College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 488,
+      "frame position": 2436,
+      "unitid": "386472",
+      "name": "Herzing University-Winter Park",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 489,
+      "frame position": 2441,
+      "unitid": "398130",
+      "name": "Mt Sierra College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 490,
+      "frame position": 2446,
+      "unitid": "402615",
+      "name": "Colorado Technical University-Sioux Falls",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "SD"
+    },
+    {
+      "slot": 491,
+      "frame position": 2451,
+      "unitid": "404222",
+      "name": "Inter American University of Puerto Rico-School of Optometry",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 492,
+      "frame position": 2456,
+      "unitid": "405854",
+      "name": "Rabbinical College of Ohr Shimon Yisroel",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 493,
+      "frame position": 2461,
+      "unitid": "406015",
+      "name": "University of Phoenix-Southern California Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 494,
+      "frame position": 2466,
+      "unitid": "407009",
+      "name": "Arizona State University-West",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "AZ"
+    },
+    {
+      "slot": 495,
+      "frame position": 2471,
+      "unitid": "408039",
+      "name": "Brown Mackie College-Fort Wayne",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IN"
+    },
+    {
+      "slot": 496,
+      "frame position": 2476,
+      "unitid": "409616",
+      "name": "Roger Williams University School of Law",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "RI"
+    },
+    {
+      "slot": 497,
+      "frame position": 2481,
+      "unitid": "412599",
+      "name": "Remington College-Memphis Campus",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 498,
+      "frame position": 2486,
+      "unitid": "413848",
+      "name": "ITT Technical Institute-Oxnard",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 499,
+      "frame position": 2491,
+      "unitid": "414531",
+      "name": "ITT Technical Institute-Everett",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WA"
+    },
+    {
+      "slot": 500,
+      "frame position": 2496,
+      "unitid": "414823",
+      "name": "Johnson & Wales University-North Miami",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 501,
+      "frame position": 2501,
+      "unitid": "417318",
+      "name": "College of Business and Technology-Kendall",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 502,
+      "frame position": 2506,
+      "unitid": "420006",
+      "name": "Everest University-Melbourne",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 503,
+      "frame position": 2511,
+      "unitid": "420325",
+      "name": "Yeshiva D'monsey Rabbinical College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 504,
+      "frame position": 2516,
+      "unitid": "421018",
+      "name": "University of Phoenix-Detroit Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MI"
+    },
+    {
+      "slot": 505,
+      "frame position": 2521,
+      "unitid": "426314",
+      "name": "Embry-Riddle Aeronautical University-Worldwide",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 506,
+      "frame position": 2526,
+      "unitid": "428338",
+      "name": "Facultad de Derecho Eugenio Maria de Hostos",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 507,
+      "frame position": 2531,
+      "unitid": "430087",
+      "name": "Colorado Technical University-Greenwood Village",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 508,
+      "frame position": 2536,
+      "unitid": "430485",
+      "name": "The Creative Center",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NE"
+    },
+    {
+      "slot": 509,
+      "frame position": 2541,
+      "unitid": "431983",
+      "name": "Yeshiva of the Telshe Alumni",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 510,
+      "frame position": 2546,
+      "unitid": "432357",
+      "name": "LIU Hudson at Westchester",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 511,
+      "frame position": 2551,
+      "unitid": "433420",
+      "name": "Santa Barbara Business College-Ventura",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 512,
+      "frame position": 2556,
+      "unitid": "434414",
+      "name": "Michigan Jewish Institute",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MI"
+    },
+    {
+      "slot": 513,
+      "frame position": 2561,
+      "unitid": "434715",
+      "name": "Florida Coastal School of Law",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 514,
+      "frame position": 2566,
+      "unitid": "434964",
+      "name": "University of Phoenix-West Florida Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 515,
+      "frame position": 2571,
+      "unitid": "436094",
+      "name": "Argosy University-Phoenix",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 516,
+      "frame position": 2576,
+      "unitid": "436483",
+      "name": "National American University-Bloomington",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 517,
+      "frame position": 2581,
+      "unitid": "436836",
+      "name": "University of Connecticut-Stamford",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "CT"
+    },
+    {
+      "slot": 518,
+      "frame position": 2586,
+      "unitid": "437316",
+      "name": "Linfield College-School of Nursing",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "OR"
+    },
+    {
+      "slot": 519,
+      "frame position": 2591,
+      "unitid": "438382",
+      "name": "University of Phoenix-Southern Colorado Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 520,
+      "frame position": 2596,
+      "unitid": "438902",
+      "name": "Everest University-Jacksonville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 521,
+      "frame position": 2601,
+      "unitid": "439288",
+      "name": "Johnson & Wales University-Denver",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CO"
+    },
+    {
+      "slot": 522,
+      "frame position": 2606,
+      "unitid": "439701",
+      "name": "King's University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TX"
+    },
+    {
+      "slot": 523,
+      "frame position": 2611,
+      "unitid": "439969",
+      "name": "AM College LLC",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 524,
+      "frame position": 2616,
+      "unitid": "440341",
+      "name": "The Art Institute of Washington",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "VA"
+    },
+    {
+      "slot": 525,
+      "frame position": 2621,
+      "unitid": "440448",
+      "name": "University of Phoenix-Houston Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TX"
+    },
+    {
+      "slot": 526,
+      "frame position": 2626,
+      "unitid": "440749",
+      "name": "National American University-Ellsworth AFB Extension",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "SD"
+    },
+    {
+      "slot": 527,
+      "frame position": 2631,
+      "unitid": "440916",
+      "name": "Southern University Law Center",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "LA"
+    },
+    {
+      "slot": 528,
+      "frame position": 2636,
+      "unitid": "441238",
+      "name": "Irell & Manella Graduate School of Biological Sciences at City of Hope",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 529,
+      "frame position": 2641,
+      "unitid": "441690",
+      "name": "Universidad Pentecostal Mizpa",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "PR"
+    },
+    {
+      "slot": 530,
+      "frame position": 2646,
+      "unitid": "441973",
+      "name": "The Art Institute of California-Argosy University Orange County",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 531,
+      "frame position": 2651,
+      "unitid": "442161",
+      "name": "University of Phoenix-Illinois",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IL"
+    },
+    {
+      "slot": 532,
+      "frame position": 2656,
+      "unitid": "442338",
+      "name": "ITT Technical Institute-Canton",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MI"
+    },
+    {
+      "slot": 533,
+      "frame position": 2661,
+      "unitid": "442639",
+      "name": "University of the Potomac-VA Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "VA"
+    },
+    {
+      "slot": 534,
+      "frame position": 2666,
+      "unitid": "442930",
+      "name": "University of Antelope Valley",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 535,
+      "frame position": 2671,
+      "unitid": "443128",
+      "name": "International Technological University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 536,
+      "frame position": 2676,
+      "unitid": "443526",
+      "name": "ITT Technical Institute-Duluth",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "GA"
+    },
+    {
+      "slot": 537,
+      "frame position": 2681,
+      "unitid": "443687",
+      "name": "Westwood College-Chicago Loop",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IL"
+    },
+    {
+      "slot": 538,
+      "frame position": 2686,
+      "unitid": "443890",
+      "name": "University of Phoenix-Memphis Campus",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TN"
+    },
+    {
+      "slot": 539,
+      "frame position": 2691,
+      "unitid": "444130",
+      "name": "Northcentral University",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 540,
+      "frame position": 2696,
+      "unitid": "444413",
+      "name": "Beis Medrash Heichal Dovid",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 541,
+      "frame position": 2701,
+      "unitid": "444787",
+      "name": "Nightingale College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 542,
+      "frame position": 2706,
+      "unitid": "445081",
+      "name": "ITT Technical Institute-Eden Prairie",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 543,
+      "frame position": 2711,
+      "unitid": "445267",
+      "name": "Central Methodist University-College of Graduate and Extended Studies",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "MO"
+    },
+    {
+      "slot": 544,
+      "frame position": 2716,
+      "unitid": "445434",
+      "name": "Everest University-Orange Park",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 545,
+      "frame position": 2721,
+      "unitid": "445869",
+      "name": "Institute for the Psychological Sciences",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 546,
+      "frame position": 2726,
+      "unitid": "446048",
+      "name": "Ave Maria University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 547,
+      "frame position": 2731,
+      "unitid": "446604",
+      "name": "Uta Mesivta of Kiryas Joel",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 548,
+      "frame position": 2736,
+      "unitid": "446729",
+      "name": "University of Phoenix-Iowa",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IA"
+    },
+    {
+      "slot": 549,
+      "frame position": 2741,
+      "unitid": "446792",
+      "name": "Sanford-Brown College-Las Vegas",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NV"
+    },
+    {
+      "slot": 550,
+      "frame position": 2746,
+      "unitid": "446914",
+      "name": "ITT Technical Institute-Owings Mills",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MD"
+    },
+    {
+      "slot": 551,
+      "frame position": 2751,
+      "unitid": "447236",
+      "name": "Everest College-Mesa",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 552,
+      "frame position": 2756,
+      "unitid": "447421",
+      "name": "Eagle Gate College-Layton",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 553,
+      "frame position": 2761,
+      "unitid": "447670",
+      "name": "Minnesota School of Business-Rochester",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 554,
+      "frame position": 2766,
+      "unitid": "448239",
+      "name": "Careers Unlimited",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 555,
+      "frame position": 2771,
+      "unitid": "448442",
+      "name": "ITT Technical Institute-Charlotte South",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NC"
+    },
+    {
+      "slot": 556,
+      "frame position": 2776,
+      "unitid": "448503",
+      "name": "ITT Technical Institute-Oklahoma City",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OK"
+    },
+    {
+      "slot": 557,
+      "frame position": 2781,
+      "unitid": "448576",
+      "name": "The Art Institute of California-Argosy University Inland Empire",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 558,
+      "frame position": 2786,
+      "unitid": "448734",
+      "name": "Argosy University-Denver",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 559,
+      "frame position": 2791,
+      "unitid": "448840",
+      "name": "University of South Florida-St Petersburg",
+      "sector_code": "1",
+      "sector": "public",
+      "state": "FL"
+    },
+    {
+      "slot": 560,
+      "frame position": 2796,
+      "unitid": "449339",
+      "name": "American Public University System",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WV"
+    },
+    {
+      "slot": 561,
+      "frame position": 2801,
+      "unitid": "449764",
+      "name": "Visible Music College",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "TN"
+    },
+    {
+      "slot": 562,
+      "frame position": 2806,
+      "unitid": "449931",
+      "name": "Averett University-Non-Traditional Programs",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "VA"
+    },
+    {
+      "slot": 563,
+      "frame position": 2811,
+      "unitid": "450216",
+      "name": "ITT Technical Institute-Baton Rouge",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "LA"
+    },
+    {
+      "slot": 564,
+      "frame position": 2816,
+      "unitid": "450261",
+      "name": "ITT Technical Institute-Chattanooga",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TN"
+    },
+    {
+      "slot": 565,
+      "frame position": 2821,
+      "unitid": "450429",
+      "name": "Broadview University-Layton",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 566,
+      "frame position": 2826,
+      "unitid": "450483",
+      "name": "University of Phoenix-Washington DC",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "DC"
+    },
+    {
+      "slot": 567,
+      "frame position": 2831,
+      "unitid": "450571",
+      "name": "Rasmussen College-Wisconsin",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WI"
+    },
+    {
+      "slot": 568,
+      "frame position": 2836,
+      "unitid": "451060",
+      "name": "Digital Media Arts College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 569,
+      "frame position": 2841,
+      "unitid": "451404",
+      "name": "Talmudical Seminary of Bobov",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "NY"
+    },
+    {
+      "slot": 570,
+      "frame position": 2846,
+      "unitid": "451699",
+      "name": "Brown Mackie College-Indianapolis",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IN"
+    },
+    {
+      "slot": 571,
+      "frame position": 2851,
+      "unitid": "451796",
+      "name": "The Art Institute of Michigan",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MI"
+    },
+    {
+      "slot": 572,
+      "frame position": 2856,
+      "unitid": "451884",
+      "name": "National American University-Wichita",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KS"
+    },
+    {
+      "slot": 573,
+      "frame position": 2861,
+      "unitid": "451972",
+      "name": "ITT Technical Institute-Phoenix",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "AZ"
+    },
+    {
+      "slot": 574,
+      "frame position": 2866,
+      "unitid": "452090",
+      "name": "Argosy University-Salt Lake City",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "UT"
+    },
+    {
+      "slot": 575,
+      "frame position": 2871,
+      "unitid": "454236",
+      "name": "Chamberlain College of Nursing-Ohio",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "OH"
+    },
+    {
+      "slot": 576,
+      "frame position": 2876,
+      "unitid": "454829",
+      "name": "Aspen University",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CO"
+    },
+    {
+      "slot": 577,
+      "frame position": 2881,
+      "unitid": "455178",
+      "name": "Daoist Traditions College of Chinese Medical Arts",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NC"
+    },
+    {
+      "slot": 578,
+      "frame position": 2886,
+      "unitid": "455600",
+      "name": "Brown Mackie College-Boise",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "ID"
+    },
+    {
+      "slot": 579,
+      "frame position": 2891,
+      "unitid": "455804",
+      "name": "Institute of World Politics",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "DC"
+    },
+    {
+      "slot": 580,
+      "frame position": 2896,
+      "unitid": "456296",
+      "name": "Sanford-Brown College-Online",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 581,
+      "frame position": 2901,
+      "unitid": "456445",
+      "name": "ITT Technical Institute-Charlotte North",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "NC"
+    },
+    {
+      "slot": 582,
+      "frame position": 2906,
+      "unitid": "456621",
+      "name": "Strayer University-West Virginia",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WV"
+    },
+    {
+      "slot": 583,
+      "frame position": 2911,
+      "unitid": "456834",
+      "name": "Globe University-Minneapolis",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 584,
+      "frame position": 2916,
+      "unitid": "457226",
+      "name": "Horizon University",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 585,
+      "frame position": 2921,
+      "unitid": "457688",
+      "name": "American Business and Technology University",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MO"
+    },
+    {
+      "slot": 586,
+      "frame position": 2926,
+      "unitid": "458229",
+      "name": "West Coast University-Ontario",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 587,
+      "frame position": 2931,
+      "unitid": "458502",
+      "name": "Bryant & Stratton College-Bayshore",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "WI"
+    },
+    {
+      "slot": 588,
+      "frame position": 2936,
+      "unitid": "458742",
+      "name": "Minnesota School of Business-Lakeville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "MN"
+    },
+    {
+      "slot": 589,
+      "frame position": 2941,
+      "unitid": "458919",
+      "name": "Strayer University-Georgia",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "GA"
+    },
+    {
+      "slot": 590,
+      "frame position": 2946,
+      "unitid": "458982",
+      "name": "The Art Institute of San Antonio",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "TX"
+    },
+    {
+      "slot": 591,
+      "frame position": 2951,
+      "unitid": "459204",
+      "name": "Unitek College",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 592,
+      "frame position": 2956,
+      "unitid": "459587",
+      "name": "ITT Technical Institute-Merrillville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "IN"
+    },
+    {
+      "slot": 593,
+      "frame position": 2961,
+      "unitid": "459639",
+      "name": "ITT Technical Institute-Corona",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 594,
+      "frame position": 2966,
+      "unitid": "459684",
+      "name": "ITT Technical Institute-West Covina",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    },
+    {
+      "slot": 595,
+      "frame position": 2971,
+      "unitid": "459736",
+      "name": "Touro University California",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "CA"
+    },
+    {
+      "slot": 596,
+      "frame position": 2976,
+      "unitid": "459994",
+      "name": "Strayer University-Global Region",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "DC"
+    },
+    {
+      "slot": 597,
+      "frame position": 2981,
+      "unitid": "460473",
+      "name": "Daymar College-Louisville",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "KY"
+    },
+    {
+      "slot": 598,
+      "frame position": 2986,
+      "unitid": "460783",
+      "name": "Remington College-Heathrow Campus",
+      "sector_code": "2",
+      "sector": "private",
+      "state": "FL"
+    },
+    {
+      "slot": 599,
+      "frame position": 2991,
+      "unitid": "461005",
+      "name": "American College for Medical Careers",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "FL"
+    },
+    {
+      "slot": 600,
+      "frame position": 2996,
+      "unitid": "461148",
+      "name": "New York Film Academy",
+      "sector_code": "3",
+      "sector": "forprofit",
+      "state": "CA"
+    }
+  ]
+}
