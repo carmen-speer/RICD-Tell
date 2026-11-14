@@ -1,0 +1,3516 @@
+{
+  "protocol": "sampling protocol v2.md, early-finance check (before phase 2)",
+  "written at (UTC)": "2026-11-14T23:28:36.346945+00:00",
+  "passed": false,
+  "files NCES did not serve": [],
+  "every column the pipeline reads is present in every file": false,
+  "implausible parsed years": [],
+  "files": [
+    {
+      "form": "private",
+      "fiscal year": 2004,
+      "table": "F0304_F2",
+      "served": true,
+      "file": "F0304_F2.csv",
+      "rows": 1902,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.9238
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7518
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2005,
+      "table": "F0405_F2",
+      "served": true,
+      "file": "F0405_F2.csv",
+      "rows": 1902,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.909
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7655
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2006,
+      "table": "F0506_F2",
+      "served": true,
+      "file": "F0506_F2.csv",
+      "rows": 1896,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.9024
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7669
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2007,
+      "table": "F0607_F2",
+      "served": true,
+      "file": "F0607_F2.csv",
+      "rows": 1863,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.9093
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7772
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2008,
+      "table": "F0708_F2",
+      "served": true,
+      "file": "F0708_F2.csv",
+      "rows": 1861,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.9081
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7802
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2009,
+      "table": "F0809_F2",
+      "served": true,
+      "file": "F0809_F2.csv",
+      "rows": 1871,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8573
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.759
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2010,
+      "table": "F0910_F2",
+      "served": true,
+      "file": "F0910_F2.csv",
+      "rows": 1862,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8593
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.7637
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 0.9103
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 0.9103
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2011,
+      "table": "F1011_F2",
+      "served": true,
+      "file": "F1011_F2.csv",
+      "rows": 1888,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8628
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 0.8628
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 0.8628
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2012,
+      "table": "F1112_F2",
+      "served": true,
+      "file": "F1112_F2.csv",
+      "rows": 1878,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8647
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 0.8647
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 0.8647
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2013,
+      "table": "F1213_F2",
+      "served": true,
+      "file": "F1213_F2.csv",
+      "rows": 1889,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8703
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 0.8703
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 0.8703
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "private",
+      "fiscal year": 2014,
+      "table": "F1314_F2",
+      "served": true,
+      "file": "F1314_F2.csv",
+      "rows": 1883,
+      "columns": {
+        "total_liabilities": {
+          "code": "F2A03",
+          "present": true,
+          "share numeric": 0.8704
+        },
+        "endowment": {
+          "code": "F2H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F2B01",
+          "present": true,
+          "share numeric": 0.8704
+        },
+        "expenses": {
+          "code": "F2B02",
+          "present": true,
+          "share numeric": 0.8704
+        },
+        "institutional_support": {
+          "code": "F2E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F2E011",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "research": {
+          "code": "F2E021",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "net_tuition": {
+          "code": "F2D01",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2004,
+      "table": "F0304_F1A",
+      "served": true,
+      "file": "F0304_F1A.csv",
+      "rows": 1923,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.9163
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2005,
+      "table": "F0405_F1A",
+      "served": true,
+      "file": "F0405_F1A.csv",
+      "rows": 1962,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.8787
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2006,
+      "table": "F0506_F1A",
+      "served": true,
+      "file": "F0506_F1A.csv",
+      "rows": 1971,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.8691
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2007,
+      "table": "F0607_F1A",
+      "served": true,
+      "file": "F0607_F1A.csv",
+      "rows": 1971,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.862
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2008,
+      "table": "F0708_F1A",
+      "served": true,
+      "file": "F0708_F1A.csv",
+      "rows": 1960,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.8505
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2009,
+      "table": "F0809_F1A",
+      "served": true,
+      "file": "F0809_F1A.csv",
+      "rows": 1973,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.7826
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2010,
+      "table": "F0910_F1A",
+      "served": true,
+      "file": "F0910_F1A.csv",
+      "rows": 2012,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.7674
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.6456
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 0.837
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 0.837
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2011,
+      "table": "F1011_F1A",
+      "served": true,
+      "file": "F1011_F1A.csv",
+      "rows": 2018,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.7661
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 0.7661
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 0.7661
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2012,
+      "table": "F1112_F1A",
+      "served": true,
+      "file": "F1112_F1A.csv",
+      "rows": 2004,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.763
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 0.763
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 0.763
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2013,
+      "table": "F1213_F1A",
+      "served": true,
+      "file": "F1213_F1A.csv",
+      "rows": 1995,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.7644
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 0.7644
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 0.7644
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "public",
+      "fiscal year": 2014,
+      "table": "F1314_F1A",
+      "served": true,
+      "file": "F1314_F1A.csv",
+      "rows": 1988,
+      "columns": {
+        "total_liabilities": {
+          "code": "F1A13",
+          "present": true,
+          "share numeric": 0.7656
+        },
+        "endowment": {
+          "code": "F1H02",
+          "present": true,
+          "share numeric": 0.0
+        },
+        "revenue": {
+          "code": "F1D01",
+          "present": true,
+          "share numeric": 0.7656
+        },
+        "expenses": {
+          "code": "F1D02",
+          "present": true,
+          "share numeric": 0.7656
+        },
+        "institutional_support": {
+          "code": "F1C071",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F1C011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2004,
+      "table": "F0304_F3",
+      "served": true,
+      "file": "F0304_F3.csv",
+      "rows": 2262,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.9085
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2005,
+      "table": "F0405_F3",
+      "served": true,
+      "file": "F0405_F3.csv",
+      "rows": 2504,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.869
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2006,
+      "table": "F0506_F3",
+      "served": true,
+      "file": "F0506_F3.csv",
+      "rows": 2577,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.87
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2007,
+      "table": "F0607_F3",
+      "served": true,
+      "file": "F0607_F3.csv",
+      "rows": 2622,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.8501
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2008,
+      "table": "F0708_F3",
+      "served": true,
+      "file": "F0708_F3.csv",
+      "rows": 2718,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.8528
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2009,
+      "table": "F0809_F3",
+      "served": true,
+      "file": "F0809_F3.csv",
+      "rows": 2798,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.341
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2010,
+      "table": "F0910_F3",
+      "served": true,
+      "file": "F0910_F3.csv",
+      "rows": 3021,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.3486
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 0.8676
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2011,
+      "table": "F1011_F3",
+      "served": true,
+      "file": "F1011_F3.csv",
+      "rows": 3184,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.331
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 0.331
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2012,
+      "table": "F1112_F3",
+      "served": true,
+      "file": "F1112_F3.csv",
+      "rows": 3246,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.3364
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 0.3364
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2013,
+      "table": "F1213_F3",
+      "served": true,
+      "file": "F1213_F3.csv",
+      "rows": 3214,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.3398
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 0.3398
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": false,
+          "share numeric": 0.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": false,
+          "share numeric": 0.0
+        }
+      }
+    },
+    {
+      "form": "forprofit",
+      "fiscal year": 2014,
+      "table": "F1314_F3",
+      "served": true,
+      "file": "F1314_F3.csv",
+      "rows": 3176,
+      "columns": {
+        "total_liabilities": {
+          "code": "F3A03",
+          "present": true,
+          "share numeric": 0.3259
+        },
+        "revenue": {
+          "code": "F3D09",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "expenses": {
+          "code": "F3B02",
+          "present": true,
+          "share numeric": 0.3259
+        },
+        "institutional_support": {
+          "code": "F3E061",
+          "present": true,
+          "share numeric": 1.0
+        },
+        "instruction": {
+          "code": "F3E011",
+          "present": true,
+          "share numeric": 1.0
+        }
+      }
+    }
+  ],
+  "file hashes (sha256)": {
+    "private/2003/F0304_F2.csv": "670bbaeb91b1df98d63c8a9007e0511002986377573a0e99825574c4d4dec759",
+    "private/2004/F0405_F2.csv": "61174123641676c1c5de8f0f0337cbafb20803e81dcc6eabe0fdbfeb91b6c026",
+    "private/2005/F0506_F2.csv": "c77bc0ff73986db78fa2f902716dd710e940e82211eec301c3d2a80b8f91b02b",
+    "private/2006/F0607_F2.csv": "2857f1377f9cbec3d591b55e88ce15301d4e575a4d28fee4f86d0aa7dd74c3e7",
+    "private/2007/F0708_F2.csv": "ae098edfb3f7227f0ab3fe9cc44f3173be3fcbb421e4d83e9460dd87cdcd1625",
+    "private/2008/F0809_F2.csv": "d91dd15c5bf9ae8fdcdea20ececc73df1bda6a231e9d820380e61c5ac28aa0f1",
+    "private/2009/F0910_F2.csv": "c00a1988c5341c4283d2e5aa3637bfa1cf77cce649405ef07b079434128a5154",
+    "private/2010/F1011_F2.csv": "6ecae70dd1736deffde049770bdb8a52960fc8491a1b4eeebab686afe5d1a711",
+    "private/2011/F1112_F2.csv": "1e0a365dc6bc9f4364ca404b3a553b1d26b75ea0d86d48b1b8f3a924691b1296",
+    "private/2012/F1213_F2.csv": "12b0f65ccd6aeae09782e6eddf0cb23ade49f4d42cb33365b5ff4ab9cd34802f",
+    "private/2013/F1314_F2.csv": "5f5f4a2e17bb21e2c73ca1cf81301e25accb314d31fa59a89d4adf5810e2f95d",
+    "public/2003/F0304_F1A.csv": "1deaa6d42bb3b99153f7eac607c4927be42dec1faa65f1ffcfadb420030aec5e",
+    "public/2004/F0405_F1A.csv": "b0f38521e8fa317678198e09fecc538bc1f54fb46cafc965208a43ac89254c6c",
+    "public/2005/F0506_F1A.csv": "2d6bd33e55ddd052fd0d072a9bff02f565ddf6de5406cb85710ad1b203cb9424",
+    "public/2006/F0607_F1A.csv": "51f6969f2480155f50f5b942218080c1b3811dc6b6019b6ecd8cf1c516ac0dcd",
+    "public/2007/F0708_F1A.csv": "656d51bc289583f36c055820bb8ac7c55fb276b570fe1c4c857d56c8b6b9c3ce",
+    "public/2008/F0809_F1A.csv": "c8c7e04b368242a9d5673b43c3651d77021d8eee858a0bb645373ee0ca820af6",
+    "public/2009/F0910_F1A.csv": "09c786d36f2f82e5491db5a2c73e4d2b10b206499d9935c014c330330e70d13b",
+    "public/2010/F1011_F1A.csv": "b200251bef0b9c4e9069779e9e6e3773ef1ff8aeb066ae65850f90ec9b50b90c",
+    "public/2011/F1112_F1A.csv": "0c071c5b30791907d0a35cff1a30fdc2c969e1ec982550ba60ecb3115296fd76",
+    "public/2012/F1213_F1A.csv": "b1c3e873c5d74d1c6548317a0a612347537c795c8358fc41fa293b02fa777e11",
+    "public/2013/F1314_F1A.csv": "e8644bae7d81a66972b26fbceb0aef8a2b10f3158b2d0c5f2c34f441621021a8",
+    "forprofit/2003/F0304_F3.csv": "02db1ab093f47df44d49a02ec11e07069d7b3fc91fab140cb1634405c59f2390",
+    "forprofit/2004/F0405_F3.csv": "28537a7289a9bf76a0e323fcb76cab2ff329a45242fc30192a693475a8b4f391",
+    "forprofit/2005/F0506_F3.csv": "0ad1e7f3418984a909e136047fb9f07767132fa07133f21dc58af0e9a4129c58",
+    "forprofit/2006/F0607_F3.csv": "5283df0c927494a9728c5278b3c5184b5b4e3e9ebca155622eae6a74dcb23bad",
+    "forprofit/2007/F0708_F3.csv": "d9f63104e0ac40952febafac0d66b65e74dc3ef119a69555c87de48e461efbcb",
+    "forprofit/2008/F0809_F3.csv": "a016122aee0dc346692d2fc708a2bc1e797ed7daa96645f4c3530e72c213159e",
+    "forprofit/2009/F0910_F3.csv": "2f600f95a5995b7419f69dc8807ecd46abc7f74b4de4b1078583746329f83046",
+    "forprofit/2010/F1011_F3.csv": "08d4b6346d6730600b35ce464a7a412db0ebb7587a0db97ef1fa0c172dfb0bd8",
+    "forprofit/2011/F1112_F3.csv": "0e2c205b62c2995e3e4c418cb98b63feba265f9e64da32e54d79fecee504a2e1",
+    "forprofit/2012/F1213_F3.csv": "3fca18ef3733793971212f37f4bd496b8f57947688b09263f1a95fe1bb481be5",
+    "forprofit/2013/F1314_F3.csv": "10a09eee7cc650703d39dc83317f2603439fb8b33891050471d13fb3180b4257"
+  },
+  "institutions": [
+    {
+      "slot": 1,
+      "unitid": "100654",
+      "name": "Alabama A & M University",
+      "sector (header file)": "public",
+      "finance form used": "public",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 122176286.0,
+          "total expenses": 110994174.0,
+          "instruction": 21317976.0,
+          "institutional support": 17568801.0,
+          "total liabilities": 88665987.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 118310223.0,
+          "total expenses": 118900950.0,
+          "instruction": 23983227.0,
+          "institutional support": 18517555.0,
+          "total liabilities": 85693239.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 119050234.0,
+          "total expenses": 123859683.0,
+          "instruction": 25467610.0,
+          "institutional support": 19360489.0,
+          "total liabilities": 83596012.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 141498327.0,
+          "total expenses": 126371645.0,
+          "instruction": 27584135.0,
+          "institutional support": 20690943.0,
+          "total liabilities": 105560959.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 137332616.0,
+          "total expenses": 132165814.0,
+          "instruction": 29630163.0,
+          "institutional support": 21828653.0,
+          "total liabilities": 96415031.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 127080771.00000001,
+          "total expenses": 122977893.0,
+          "instruction": 28383086.0,
+          "institutional support": 13961998.0,
+          "total liabilities": 102698359.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 140776490.0,
+          "total expenses": 138956247.0,
+          "instruction": 33144160.0,
+          "institutional support": 24488316.0,
+          "total liabilities": 113050823.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 145365185.0,
+          "total expenses": 140942258.0,
+          "instruction": 35866962.0,
+          "institutional support": 21083793.0,
+          "total liabilities": 116267000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 139234627.0,
+          "total expenses": 139478346.0,
+          "instruction": 37967292.0,
+          "institutional support": 25234001.0,
+          "total liabilities": 116687694.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 136255775.0,
+          "total expenses": 141835328.0,
+          "instruction": 33743737.0,
+          "institutional support": 34321045.0,
+          "total liabilities": 104215252.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 144396059.0,
+          "total expenses": 135119578.0,
+          "instruction": 32866009.0,
+          "institutional support": 26597673.0,
+          "total liabilities": 102187939.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "unitid": "100751",
+      "name": "The University of Alabama",
+      "sector (header file)": "public",
+      "finance form used": "public",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 487956296.0,
+          "total expenses": 404323227.0,
+          "instruction": 127372436.0,
+          "institutional support": 30955541.0,
+          "total liabilities": 467287014.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 567515545.0,
+          "total expenses": 449794843.0,
+          "instruction": 131538558.0,
+          "institutional support": 37075388.0,
+          "total liabilities": 462057011.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 598918771.0,
+          "total expenses": 496556140.0,
+          "instruction": 142390344.0,
+          "institutional support": 41740549.0,
+          "total liabilities": 552258560.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 707435212.0,
+          "total expenses": 565427668.0,
+          "instruction": 168532917.0,
+          "institutional support": 55260521.0,
+          "total liabilities": 555194464.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 605949519.0,
+          "total expenses": 629500088.0,
+          "instruction": 191625311.0,
+          "institutional support": 59956291.0,
+          "total liabilities": 592270079.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 695722640.0,
+          "total expenses": 658672130.0,
+          "instruction": 250878520.0,
+          "institutional support": 74360102.0,
+          "total liabilities": 604294434.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 927903526.0,
+          "total expenses": 760107259.0,
+          "instruction": 254024768.0,
+          "institutional support": 80943998.0,
+          "total liabilities": 905840696.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 845911128.0,
+          "total expenses": 765614454.0,
+          "instruction": 289042702.0,
+          "institutional support": 75434968.0,
+          "total liabilities": 1089231555.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 1022461971.0,
+          "total expenses": 790098075.0,
+          "instruction": 299530031.0,
+          "institutional support": 75401758.0,
+          "total liabilities": 1088102436.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 974589219.0,
+          "total expenses": 841358792.0,
+          "instruction": 311434055.0,
+          "institutional support": 83530397.0,
+          "total liabilities": 1244358728.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 1024840134.0,
+          "total expenses": 871629959.0,
+          "instruction": 335800649.0,
+          "institutional support": 96040359.0,
+          "total liabilities": 1378460048.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "unitid": "101073",
+      "name": "Concordia College Alabama",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 5322691.0,
+          "total expenses": 5256694.0,
+          "instruction": 2128844.0,
+          "institutional support": 1317468.0,
+          "total liabilities": 570796.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 5632460.0,
+          "total expenses": 6401949.0,
+          "instruction": 2375038.0,
+          "institutional support": 1686735.0,
+          "total liabilities": 2126446.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 5777404.0,
+          "total expenses": 6146831.0,
+          "instruction": 2570649.0,
+          "institutional support": 1476763.0,
+          "total liabilities": 2360495.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 6895517.0,
+          "total expenses": 7059065.0,
+          "instruction": 2674121.0,
+          "institutional support": 1573060.0,
+          "total liabilities": 2494321.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 6090996.0,
+          "total expenses": 7173585.0,
+          "instruction": 2415701.0,
+          "institutional support": 1919549.0,
+          "total liabilities": 2311353.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 6494005.0,
+          "total expenses": 8456091.0,
+          "instruction": 2582532.0,
+          "institutional support": 1927283.0,
+          "total liabilities": 2251012.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 8658065.0,
+          "total expenses": 8595371.0,
+          "instruction": 2821113.0,
+          "institutional support": 1592669.0,
+          "total liabilities": 2717706.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 10468844.0,
+          "total expenses": 10724325.0,
+          "instruction": 2975962.0,
+          "institutional support": 3045123.0,
+          "total liabilities": 5573348.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 12070301.0,
+          "total expenses": 10792048.0,
+          "instruction": 2823442.0,
+          "institutional support": 2887707.0,
+          "total liabilities": 6273263.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 14459828.0,
+          "total expenses": 12304846.0,
+          "instruction": 3425968.0,
+          "institutional support": 3632404.0,
+          "total liabilities": 4024224.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 12860451.0,
+          "total expenses": 13032162.0,
+          "instruction": 3330060.0,
+          "institutional support": 3833795.0,
+          "total liabilities": 3817334.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "unitid": "101453",
+      "name": "Heritage Christian University",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 3031701.0,
+          "total expenses": 2535907.0,
+          "instruction": 552566.0,
+          "institutional support": 1402821.0,
+          "total liabilities": 2057433.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 3068954.0,
+          "total expenses": 2733760.0,
+          "instruction": 464096.0,
+          "institutional support": 1640828.0,
+          "total liabilities": 2137061.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 2941044.0,
+          "total expenses": 2596516.0,
+          "instruction": 433556.0,
+          "institutional support": 1564292.0,
+          "total liabilities": 2395967.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 5698786.0,
+          "total expenses": 2696400.0,
+          "instruction": 482470.0,
+          "institutional support": 1631860.0,
+          "total liabilities": 2932004.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 2236266.0,
+          "total expenses": 2823334.0,
+          "instruction": 549365.0,
+          "institutional support": 1285879.0,
+          "total liabilities": 2833237.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 1210439.0,
+          "total expenses": 2841920.0,
+          "instruction": 547217.0,
+          "institutional support": 1608328.0,
+          "total liabilities": 2881885.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 3160900.0,
+          "total expenses": 2654242.0,
+          "instruction": 435643.0,
+          "institutional support": 1537346.0,
+          "total liabilities": 3173977.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 4122410.0,
+          "total expenses": 2666050.0,
+          "instruction": 427162.0,
+          "institutional support": 1545927.0,
+          "total liabilities": 3054775.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 2348291.0,
+          "total expenses": 2783276.0,
+          "instruction": 424597.0,
+          "institutional support": 1574118.0,
+          "total liabilities": 2899603.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 3493472.0,
+          "total expenses": 2850269.0,
+          "instruction": 495842.0,
+          "institutional support": 1472521.0,
+          "total liabilities": 2717085.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 4462283.0,
+          "total expenses": 2970324.0,
+          "instruction": 490589.00000000006,
+          "institutional support": 1400315.0,
+          "total liabilities": 2381836.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "unitid": "101693",
+      "name": "University of Mobile",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 18489530.0,
+          "total expenses": 17197344.0,
+          "instruction": 7958338.000000001,
+          "institutional support": 3299539.0,
+          "total liabilities": 13579716.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 19878794.0,
+          "total expenses": 18564459.0,
+          "instruction": 8197464.0,
+          "institutional support": 3567393.0,
+          "total liabilities": 18523926.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 21461218.0,
+          "total expenses": 19649917.0,
+          "instruction": 8503645.0,
+          "institutional support": 4121462.9999999995,
+          "total liabilities": 17541824.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 25035022.0,
+          "total expenses": 20666270.0,
+          "instruction": 8645079.0,
+          "institutional support": 4076423.0,
+          "total liabilities": 16315128.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 19829331.0,
+          "total expenses": 21681706.0,
+          "instruction": 8675686.0,
+          "institutional support": 4299897.0,
+          "total liabilities": 17178529.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 18405694.0,
+          "total expenses": 21068950.0,
+          "instruction": 8441260.0,
+          "institutional support": 4223327.0,
+          "total liabilities": 19582296.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 23270619.0,
+          "total expenses": 23687657.0,
+          "instruction": 8959085.0,
+          "institutional support": 5705176.0,
+          "total liabilities": 21236239.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 26459211.0,
+          "total expenses": 22945220.0,
+          "instruction": 9286279.0,
+          "institutional support": 4289972.0,
+          "total liabilities": 19782642.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 30144838.0,
+          "total expenses": 25700384.0,
+          "instruction": 9602598.0,
+          "institutional support": 5945103.0,
+          "total liabilities": 28699529.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 29135507.0,
+          "total expenses": 25716507.0,
+          "instruction": 9629727.0,
+          "institutional support": 5248520.0,
+          "total liabilities": 29786311.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 28843556.0,
+          "total expenses": 26690187.0,
+          "instruction": 9546935.0,
+          "institutional support": 6019814.0,
+          "total liabilities": 33290074.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "unitid": "102058",
+      "name": "Selma University",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 7,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 1950189.0,
+          "total expenses": 1892476.0,
+          "instruction": 428675.0,
+          "institutional support": 897069.0,
+          "total liabilities": 0.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 1004216.0,
+          "total expenses": 1050299.0,
+          "instruction": 377840.0,
+          "institutional support": 338161.0,
+          "total liabilities": 537630.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 3151530.0,
+          "total expenses": 2575130.0,
+          "instruction": 562083.0,
+          "institutional support": 340488.0,
+          "total liabilities": 737630.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 3151530.0,
+          "total expenses": 2675130.0,
+          "instruction": 471962.0,
+          "institutional support": 340488.0,
+          "total liabilities": 1000000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 2869998.0,
+          "total expenses": 2735325.0,
+          "instruction": 1848931.0,
+          "institutional support": 402360.0,
+          "total liabilities": 457790.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 3100000.0,
+          "total expenses": 2575130.0,
+          "instruction": 1700000.0,
+          "institutional support": 340000.0,
+          "total liabilities": 600000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 5232538.0,
+          "total expenses": 2953414.0,
+          "instruction": 2445247.0,
+          "institutional support": 369442.0,
+          "total liabilities": 299181.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "unitid": "102298",
+      "name": "Talladega College",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 10216581.0,
+          "total expenses": 11117444.0,
+          "instruction": 2954181.0,
+          "institutional support": 4116978.0000000005,
+          "total liabilities": 8747672.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 8544395.0,
+          "total expenses": 9455314.0,
+          "instruction": 2385598.0,
+          "institutional support": 2804042.0,
+          "total liabilities": 10638745.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 9306784.0,
+          "total expenses": 9309045.0,
+          "instruction": 2425463.0,
+          "institutional support": 2584889.0,
+          "total liabilities": 11759913.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 11512083.0,
+          "total expenses": 10929929.0,
+          "instruction": 2668397.0,
+          "institutional support": 5056340.0,
+          "total liabilities": 13066274.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 11698030.0,
+          "total expenses": 10859736.0,
+          "instruction": 2783396.0,
+          "institutional support": 4938077.0,
+          "total liabilities": 14080490.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 12850695.0,
+          "total expenses": 12134969.0,
+          "instruction": 2334224.0,
+          "institutional support": 5487141.0,
+          "total liabilities": 15530844.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 13411961.0,
+          "total expenses": 13371300.0,
+          "instruction": 3473626.0,
+          "institutional support": 4737235.0,
+          "total liabilities": 16229441.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 16005669.0,
+          "total expenses": 14473611.0,
+          "instruction": 3725381.0,
+          "institutional support": 5024186.0,
+          "total liabilities": 13495878.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 15139161.0,
+          "total expenses": 13421225.0,
+          "instruction": 3910832.0000000005,
+          "institutional support": 2606618.0,
+          "total liabilities": 12448396.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 15961090.0,
+          "total expenses": 15522507.0,
+          "instruction": 3727014.0,
+          "institutional support": 4688968.0,
+          "total liabilities": 13057547.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 25375711.0,
+          "total expenses": 16379119.000000002,
+          "instruction": 3565494.0,
+          "institutional support": 6439981.0,
+          "total liabilities": 14303697.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "unitid": "102580",
+      "name": "Alaska Bible College",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 5,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 1152881.0,
+          "total expenses": 1219378.0,
+          "instruction": 257221.99999999997,
+          "institutional support": 308409.0,
+          "total liabilities": 25762.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 2861819.0,
+          "total expenses": 1464501.0,
+          "instruction": 321747.0,
+          "institutional support": 334120.0,
+          "total liabilities": 382608.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 1382610.0,
+          "total expenses": 1646950.0,
+          "instruction": 415450.0,
+          "institutional support": 379328.0,
+          "total liabilities": 55805.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 1316499.0,
+          "total expenses": 1601505.0,
+          "instruction": 407098.0,
+          "institutional support": 396180.0,
+          "total liabilities": 87538.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 1116392.0,
+          "total expenses": 1295273.0,
+          "instruction": 230028.0,
+          "institutional support": 245634.0,
+          "total liabilities": 143172.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "unitid": "103644",
+      "name": "Everest College-Phoenix",
+      "sector (header file)": "forprofit",
+      "finance form used": "forprofit",
+      "years with a row": 1,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": false
+        },
+        {
+          "fiscal year": 2011,
+          "row found": false
+        },
+        {
+          "fiscal year": 2012,
+          "row found": false
+        },
+        {
+          "fiscal year": 2013,
+          "row found": false
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 45639516.0,
+          "total expenses": 43069480.0,
+          "instruction": 27061053.0,
+          "institutional support": 0.0,
+          "total liabilities": 10504534.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "unitid": "104090",
+      "name": "Brookline College-Phoenix",
+      "sector (header file)": "forprofit",
+      "finance form used": "forprofit",
+      "years with a row": 1,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": false
+        },
+        {
+          "fiscal year": 2011,
+          "row found": false
+        },
+        {
+          "fiscal year": 2012,
+          "row found": false
+        },
+        {
+          "fiscal year": 2013,
+          "row found": false
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 30994657.0,
+          "total expenses": 36721766.0,
+          "instruction": 11660973.0,
+          "institutional support": 0.0,
+          "total liabilities": 3558193.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "unitid": "104586",
+      "name": "Embry-Riddle Aeronautical University-Prescott",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 0,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": false
+        },
+        {
+          "fiscal year": 2011,
+          "row found": false
+        },
+        {
+          "fiscal year": 2012,
+          "row found": false
+        },
+        {
+          "fiscal year": 2013,
+          "row found": false
+        },
+        {
+          "fiscal year": 2014,
+          "row found": false
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "unitid": "105172",
+      "name": "ITT Technical Institute-Tempe",
+      "sector (header file)": "forprofit",
+      "finance form used": "forprofit",
+      "years with a row": 1,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": false
+        },
+        {
+          "fiscal year": 2011,
+          "row found": false
+        },
+        {
+          "fiscal year": 2012,
+          "row found": false
+        },
+        {
+          "fiscal year": 2013,
+          "row found": false
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 9869248.0,
+          "total expenses": 7403511.0,
+          "instruction": 968484.0,
+          "institutional support": 0.0,
+          "total liabilities": 150162.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "unitid": "105534",
+      "name": "Pima Medical Institute-Tucson",
+      "sector (header file)": "forprofit",
+      "finance form used": "forprofit",
+      "years with a row": 1,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": false
+        },
+        {
+          "fiscal year": 2005,
+          "row found": false
+        },
+        {
+          "fiscal year": 2006,
+          "row found": false
+        },
+        {
+          "fiscal year": 2007,
+          "row found": false
+        },
+        {
+          "fiscal year": 2008,
+          "row found": false
+        },
+        {
+          "fiscal year": 2009,
+          "row found": false
+        },
+        {
+          "fiscal year": 2010,
+          "row found": false
+        },
+        {
+          "fiscal year": 2011,
+          "row found": false
+        },
+        {
+          "fiscal year": 2012,
+          "row found": false
+        },
+        {
+          "fiscal year": 2013,
+          "row found": false
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 19827661.0,
+          "total expenses": 16018857.0,
+          "instruction": 6991559.0,
+          "institutional support": 0.0,
+          "total liabilities": 9191853.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "unitid": "106263",
+      "name": "University of Arkansas for Medical Sciences",
+      "sector (header file)": "public",
+      "finance form used": "public",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 773988000.0,
+          "total expenses": 727019000.0,
+          "instruction": 136580000.0,
+          "institutional support": 48493000.0,
+          "total liabilities": 204585000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 830291000.0,
+          "total expenses": 782496000.0,
+          "instruction": 146903000.0,
+          "institutional support": 49442000.0,
+          "total liabilities": 299879000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 899462000.0,
+          "total expenses": 859132000.0,
+          "instruction": 141297000.0,
+          "institutional support": 57306000.0,
+          "total liabilities": 424127000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 952989000.0,
+          "total expenses": 928434000.0,
+          "instruction": 149159000.0,
+          "institutional support": 60041000.0,
+          "total liabilities": 437491000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 1105658000.0,
+          "total expenses": 996553000.0,
+          "instruction": 121907000.0,
+          "institutional support": 99842000.0,
+          "total liabilities": 456105000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 1085807000.0,
+          "total expenses": 1081583000.0,
+          "instruction": 125217000.0,
+          "institutional support": 105646000.0,
+          "total liabilities": 457829000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 1159028000.0,
+          "total expenses": 1128595000.0,
+          "instruction": 147343000.0,
+          "institutional support": 126848999.99999999,
+          "total liabilities": 453029000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 1215653000.0,
+          "total expenses": 1155807000.0,
+          "instruction": 155948000.0,
+          "institutional support": 127871000.00000001,
+          "total liabilities": 496710000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 1294385000.0,
+          "total expenses": 1258989000.0,
+          "instruction": 142337000.0,
+          "institutional support": 126686000.0,
+          "total liabilities": 501941000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 1260709000.0,
+          "total expenses": 1241675000.0,
+          "instruction": 151063000.0,
+          "institutional support": 111309000.0,
+          "total liabilities": 550465000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 1278141000.0,
+          "total expenses": 1291783000.0,
+          "instruction": 159705000.0,
+          "institutional support": 112812000.0,
+          "total liabilities": 532453000.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "unitid": "106458",
+      "name": "Arkansas State University-Main Campus",
+      "sector (header file)": "public",
+      "finance form used": "public",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 139427363.0,
+          "total expenses": 134879325.0,
+          "instruction": 38945921.0,
+          "institutional support": 16364211.0,
+          "total liabilities": 111750748.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 142333020.0,
+          "total expenses": 141965861.0,
+          "instruction": 40174438.0,
+          "institutional support": 12031050.0,
+          "total liabilities": 115147134.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 153844143.0,
+          "total expenses": 145991553.0,
+          "instruction": 41233733.0,
+          "institutional support": 11223313.0,
+          "total liabilities": 111490184.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 158743790.0,
+          "total expenses": 154934121.0,
+          "instruction": 38881189.0,
+          "institutional support": 10317111.0,
+          "total liabilities": 146068273.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 172575970.0,
+          "total expenses": 163827062.0,
+          "instruction": 46474427.0,
+          "institutional support": 12590456.0,
+          "total liabilities": 143257235.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 194423789.0,
+          "total expenses": 178265954.0,
+          "instruction": 49073784.0,
+          "institutional support": 13924903.0,
+          "total liabilities": 151563202.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 196741254.0,
+          "total expenses": 182021874.0,
+          "instruction": 54044169.0,
+          "institutional support": 17106616.0,
+          "total liabilities": 146814628.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 212893533.0,
+          "total expenses": 194761363.0,
+          "instruction": 58426629.0,
+          "institutional support": 15827128.999999998,
+          "total liabilities": 148284363.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 209483473.0,
+          "total expenses": 195243331.0,
+          "instruction": 60912134.0,
+          "institutional support": 16211539.0,
+          "total liabilities": 162607983.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 202804498.0,
+          "total expenses": 198375425.0,
+          "instruction": 62293924.0,
+          "institutional support": 17224734.0,
+          "total liabilities": 170499609.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 210399761.0,
+          "total expenses": 199474318.0,
+          "instruction": 65399525.0,
+          "institutional support": 15399490.0,
+          "total liabilities": 197167289.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "unitid": "106810",
+      "name": "Crowley's Ridge College",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 1436234.0,
+          "total expenses": 1336441.0,
+          "instruction": 247973.00000000003,
+          "institutional support": 436549.0,
+          "total liabilities": 337690.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 1482997.0,
+          "total expenses": 1460642.0,
+          "instruction": 245938.99999999997,
+          "institutional support": 613156.0,
+          "total liabilities": 339575.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 1393308.0,
+          "total expenses": 1481093.0,
+          "instruction": 238559.0,
+          "institutional support": 590144.0,
+          "total liabilities": 406048.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 1442837.0,
+          "total expenses": 1495931.0,
+          "instruction": 283220.0,
+          "institutional support": 595599.0,
+          "total liabilities": 429244.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 1830626.0,
+          "total expenses": 1711291.0,
+          "instruction": 313021.0,
+          "institutional support": 735281.0,
+          "total liabilities": 406014.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 1874249.0,
+          "total expenses": 1787037.0,
+          "instruction": 333215.0,
+          "institutional support": 735440.0,
+          "total liabilities": 313498.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 2188072.0,
+          "total expenses": 1867807.0,
+          "instruction": 415518.0,
+          "institutional support": 624667.0,
+          "total liabilities": 428990.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 2275059.0,
+          "total expenses": 2083742.9999999998,
+          "instruction": 438873.0,
+          "institutional support": 596045.0,
+          "total liabilities": 403446.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 2348023.0,
+          "total expenses": 2235086.0,
+          "instruction": 479317.0,
+          "institutional support": 573093.0,
+          "total liabilities": 373146.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 2528867.0,
+          "total expenses": 2298163.0,
+          "instruction": 441177.0,
+          "institutional support": 670928.0,
+          "total liabilities": 394698.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 2744070.0,
+          "total expenses": 2390328.0,
+          "instruction": 481701.0,
+          "institutional support": 607141.0,
+          "total liabilities": 388797.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 17,
+      "unitid": "107512",
+      "name": "Ouachita Baptist University",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 36720773.0,
+          "total expenses": 29330298.0,
+          "instruction": 10919556.0,
+          "institutional support": 5937434.0,
+          "total liabilities": 18858739.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 38376759.0,
+          "total expenses": 31257334.999999996,
+          "instruction": 10837470.0,
+          "institutional support": 5256903.0,
+          "total liabilities": 20890462.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 35434463.0,
+          "total expenses": 31958900.999999996,
+          "instruction": 11256284.0,
+          "institutional support": 5564701.0,
+          "total liabilities": 28046498.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 37059122.0,
+          "total expenses": 34314378.0,
+          "instruction": 12352759.0,
+          "institutional support": 5317472.0,
+          "total liabilities": 31719940.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 30687591.0,
+          "total expenses": 34896305.0,
+          "instruction": 12201493.0,
+          "institutional support": 4596697.0,
+          "total liabilities": 35406691.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 21066430.0,
+          "total expenses": 34967832.0,
+          "instruction": 12497311.0,
+          "institutional support": 4467091.0,
+          "total liabilities": 79718186.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 40799933.0,
+          "total expenses": 36177753.0,
+          "instruction": 12909080.0,
+          "institutional support": 5376860.0,
+          "total liabilities": 93478432.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 47469377.0,
+          "total expenses": 37931991.0,
+          "instruction": 12954871.0,
+          "institutional support": 5813638.0,
+          "total liabilities": 92396793.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 34601740.0,
+          "total expenses": 39456808.0,
+          "instruction": 13636722.0,
+          "institutional support": 6019981.0,
+          "total liabilities": 90125653.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 47127016.0,
+          "total expenses": 40296624.0,
+          "instruction": 13688515.0,
+          "institutional support": 5989944.0,
+          "total liabilities": 88888331.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 50078169.0,
+          "total expenses": 40133442.0,
+          "instruction": 13490295.0,
+          "institutional support": 5927179.0,
+          "total liabilities": 84348955.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "unitid": "108092",
+      "name": "University of Arkansas-Fort Smith",
+      "sector (header file)": "public",
+      "finance form used": "public",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 44604316.0,
+          "total expenses": 44108656.0,
+          "instruction": 13700274.0,
+          "institutional support": 4470112.0,
+          "total liabilities": 50838566.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 47376482.0,
+          "total expenses": 48352946.0,
+          "instruction": 16153737.000000002,
+          "institutional support": 5042830.0,
+          "total liabilities": 49283251.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 52043137.0,
+          "total expenses": 51188210.0,
+          "instruction": 17009968.0,
+          "institutional support": 5616622.0,
+          "total liabilities": 60393745.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 57518727.0,
+          "total expenses": 55984752.0,
+          "instruction": 18889552.0,
+          "institutional support": 6757279.0,
+          "total liabilities": 66059147.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 66000472.00000001,
+          "total expenses": 59880871.0,
+          "instruction": 19739189.0,
+          "institutional support": 7432316.0,
+          "total liabilities": 64044906.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 67067313.0,
+          "total expenses": 63646747.0,
+          "instruction": 21168283.0,
+          "institutional support": 7911389.0,
+          "total liabilities": 86724791.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 72266392.0,
+          "total expenses": 68726452.0,
+          "instruction": 28540844.0,
+          "institutional support": 10204410.0,
+          "total liabilities": 85605149.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 78944837.0,
+          "total expenses": 78694371.0,
+          "instruction": 30231255.0,
+          "institutional support": 11107517.0,
+          "total liabilities": 92040482.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 81777579.0,
+          "total expenses": 80417622.0,
+          "instruction": 32597516.0,
+          "institutional support": 11744126.0,
+          "total liabilities": 89988298.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 81184394.0,
+          "total expenses": 81179641.0,
+          "instruction": 31521008.000000004,
+          "institutional support": 12943699.0,
+          "total liabilities": 87556291.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 82381705.0,
+          "total expenses": 80943738.0,
+          "instruction": 32693671.0,
+          "institutional support": 13128283.0,
+          "total liabilities": 97681742.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 19,
+      "unitid": "108870",
+      "name": "American Film Institute Conservatory",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 30537161.0,
+          "total expenses": 30790641.0,
+          "instruction": 2518421.0,
+          "institutional support": 4819098.0,
+          "total liabilities": 10784763.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 32562880.000000004,
+          "total expenses": 33097514.0,
+          "instruction": 2679569.0,
+          "institutional support": 4970192.0,
+          "total liabilities": 10030307.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 34093535.0,
+          "total expenses": 33836782.0,
+          "instruction": 2737332.0,
+          "institutional support": 5082284.0,
+          "total liabilities": 9858423.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 40790219.0,
+          "total expenses": 35819063.0,
+          "instruction": 2865525.0,
+          "institutional support": 5372859.0,
+          "total liabilities": 9974711.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 36217905.0,
+          "total expenses": 36799716.0,
+          "instruction": 2943977.0,
+          "institutional support": 5519957.0,
+          "total liabilities": 9259266.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 30735359.0,
+          "total expenses": 30404931.0,
+          "instruction": 2432394.0,
+          "institutional support": 4560739.0,
+          "total liabilities": 5674541.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 27155124.0,
+          "total expenses": 24140731.0,
+          "instruction": 2023217.0,
+          "institutional support": 3842962.0,
+          "total liabilities": 7776719.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 26777273.0,
+          "total expenses": 26548494.0,
+          "instruction": 2111810.0,
+          "institutional support": 4089658.0000000005,
+          "total liabilities": 7747893.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 34716818.0,
+          "total expenses": 28262642.0,
+          "instruction": 2261011.0,
+          "institutional support": 4239396.0,
+          "total liabilities": 6984630.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 33461533.0,
+          "total expenses": 32247987.0,
+          "instruction": 2533799.0,
+          "institutional support": 4815354.0,
+          "total liabilities": 7221054.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 32513366.000000004,
+          "total expenses": 31848925.0,
+          "instruction": 2547914.0,
+          "institutional support": 4777337.0,
+          "total liabilities": 6908029.0,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "unitid": "110097",
+      "name": "Biola University",
+      "sector (header file)": "private",
+      "finance form used": "private",
+      "years with a row": 11,
+      "years": [
+        {
+          "fiscal year": 2004,
+          "row found": true,
+          "revenue": 94203000.0,
+          "total expenses": 80698000.0,
+          "instruction": 32914000.0,
+          "institutional support": 14441000.0,
+          "total liabilities": 123541000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2005,
+          "row found": true,
+          "revenue": 101191000.0,
+          "total expenses": 89381000.0,
+          "instruction": 36197000.0,
+          "institutional support": 16528000.000000002,
+          "total liabilities": 159239000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2006,
+          "row found": true,
+          "revenue": 118040000.0,
+          "total expenses": 98206000.0,
+          "instruction": 40379000.0,
+          "institutional support": 17377000.0,
+          "total liabilities": 144863000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2007,
+          "row found": true,
+          "revenue": 123085000.0,
+          "total expenses": 106129000.0,
+          "instruction": 43007000.0,
+          "institutional support": 19428000.0,
+          "total liabilities": 142418000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2008,
+          "row found": true,
+          "revenue": 119891000.0,
+          "total expenses": 117397000.0,
+          "instruction": 46386000.0,
+          "institutional support": 23785000.0,
+          "total liabilities": 154103000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2009,
+          "row found": true,
+          "revenue": 120299000.0,
+          "total expenses": 119695887.0,
+          "instruction": 48115007.0,
+          "institutional support": 22999850.0,
+          "total liabilities": 147293000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2010,
+          "row found": true,
+          "revenue": 138905000.0,
+          "total expenses": 120345000.0,
+          "instruction": 49174790.0,
+          "institutional support": 23979344.0,
+          "total liabilities": 147312000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2011,
+          "row found": true,
+          "revenue": 149930000.0,
+          "total expenses": 126497000.0,
+          "instruction": 51806230.0,
+          "institutional support": 25568626.0,
+          "total liabilities": 145719000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2012,
+          "row found": true,
+          "revenue": 149724000.0,
+          "total expenses": 138861000.0,
+          "instruction": 58081337.0,
+          "institutional support": 28340530.0,
+          "total liabilities": 140220000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2013,
+          "row found": true,
+          "revenue": 156748000.0,
+          "total expenses": 143292000.0,
+          "instruction": 55564158.0,
+          "institutional support": 29580555.0,
+          "total liabilities": 175321000.0,
+          "problems": []
+        },
+        {
+          "fiscal year": 2014,
+          "row found": true,
+          "revenue": 172126000.0,
+          "total expenses": 147391000.0,
+          "instruction": 56987000.0,
+          "institutional support": 29715000.0,
+          "total liabilities": 176116000.0,
+          "problems": []
+        }
+      ]
+    }
+  ],
+  "machine": {
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "python": "3.11.18",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "environment variables": {
+      "NUMBA_CPU_NAME": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "PYTENSOR_FLAGS": null,
+      "NUMBA_CACHE_DIR": null
+    },
+    "packages": [
+      "arviz==0.23.4",
+      "cachetools==6.2.6",
+      "certifi==2026.10.23",
+      "charset-normalizer==3.5.2",
+      "cloudpickle==3.1.2",
+      "cons==0.4.7",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "etuples==0.3.10",
+      "filelock==4.2.10",
+      "fonttools==4.68.0",
+      "h5netcdf==1.8.3",
+      "h5py==3.16.0",
+      "idna==3.20",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "llvmlite==0.47.0",
+      "logical-unification==0.4.7",
+      "markdown-it-py==4.3.0",
+      "matplotlib==3.11.2",
+      "mdurl==0.1.2",
+      "miniKanren==1.0.5",
+      "multipledispatch==1.0.0",
+      "narwhals==2.28.0",
+      "numba==0.65.1",
+      "numpy==2.4.6",
+      "packaging==26.3",
+      "pandas==3.1.1",
+      "pillow==13.0.0",
+      "platformdirs==4.14.5",
+      "Pygments==2.21.0",
+      "pymc==5.28.5",
+      "pyparsing==3.3.3",
+      "pytensor==2.38.3",
+      "python-dateutil==4.0.0",
+      "requests==2.34.2",
+      "rich==15.0.0",
+      "scikit-learn==1.9.1",
+      "scipy==1.17.1",
+      "threadpoolctl==3.8.0",
+      "toolz==1.2.0",
+      "typing_extensions==4.16.0",
+      "tzdata==2026.6",
+      "urllib3==2.8.0",
+      "xarray==2026.9.0",
+      "xarray-einstats==0.9.1"
+    ]
+  }
+}
