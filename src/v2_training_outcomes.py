@@ -121,7 +121,11 @@ def download_hd(year: int) -> dict:
 
 def rows_by_id(text: str) -> dict:
     reader = csv.DictReader(io.StringIO(text))
-    fields = {f: f.strip().upper() for f in (reader.fieldnames or [])}
+    # A heading may carry a byte-order mark (read as latin-1 it appears as "\u00ef\u00bb\u00bf"), as
+    # every other IPEDS reader in this repository already allows for; without this, a file whose first
+    # heading is UNITID yields no rows at all.
+    fields = {f: f.strip().lstrip("\ufeff").lstrip("\u00ef\u00bb\u00bf").strip().upper()
+              for f in (reader.fieldnames or [])}
     out = {}
     for r in reader:
         row = {fields[k]: (v or "").strip() for k, v in r.items() if k in fields}
