@@ -1,0 +1,56 @@
+name: v2 phase 4 - fit and freeze classifier v2
+
+# Manual-only. Under "sampling protocol v2.md".
+# Phase 4: fits classifier v2 on the scored training institutions, fixes its
+# threshold by 10-fold cross-validation, and freezes it. Commits
+# data/v2/classifier v2.json, which the test draw requires. No test outcome
+# exists yet.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: fit-classifier-v2
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run
+        run: |
+          cd src
+          python fit_classifier_v2.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v2/classifier v2.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v2 phase 4: classifier v2 frozen (before the test draw)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
