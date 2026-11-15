@@ -1,0 +1,147 @@
+name: v3 - rescore the development set with the drift terms
+
+# Manual-only. Runs src/score_v3_development.py under "sampling protocol
+# v3.md". A first job builds the College Scorecard file and downloads the
+# finance files for fiscal years 2004-2019 once; twenty jobs then refit
+# the 670 development institutions (the scored institutions of the v2
+# training set and the v2 test) once each at seed 7 with the drift terms
+# on; a final job adds their results to data/v3/development scores/ as the
+# next numbered batch. Run it again until every development institution
+# has a result. Refuses to start unless the v3 reproducibility check has
+# passed.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-development
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  NUMBA_CPU_NAME: generic
+  OPENBLAS_NUM_THREADS: "1"
+  OMP_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"
+
+jobs:
+  inputs:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - name: Download the finance files for fiscal years 2004-2019
+        run: |
+          cd src
+          python score_v3_development.py prefetch --finance ../work/finance
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inputs
+          path: |
+            work/scorecard_compact.csv
+            work/scorecard_compact.json
+            work/finance/
+          retention-days: 3
+
+  shard:
+    needs: inputs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: inputs
+          path: work
+
+      - name: Score this shard
+        run: |
+          cd src
+          python score_v3_development.py shard --shard ${{ matrix.shard }} --of 20 --minutes 290 --compact ../work/scorecard_compact.csv --finance ../work/finance --out ../work/evals
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shard-${{ matrix.shard }}
+          path: work/evals/
+          if-no-files-found: ignore
+
+  merge:
+    needs: shard
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: work/evals
+          merge-multiple: true
+
+      - name: Merge the shards into the next batch
+        run: |
+          cd src
+          python score_v3_development.py merge --evals ../work/evals
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/development scores/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3: development scores batch (drift terms on)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
