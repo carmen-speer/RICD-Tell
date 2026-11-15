@@ -1,0 +1,5004 @@
+{
+  "protocol": "sampling protocol v2.md, phase 8 (test outcomes)",
+  "written at (UTC)": "2026-11-15T14:03:20.536887+00:00",
+  "scoring year": 2019,
+  "header files": [
+    {
+      "table": "HD2019",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+      "file": "hd2019.csv",
+      "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26"
+    },
+    {
+      "table": "HD2020",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+      "file": "hd2020.csv",
+      "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475"
+    },
+    {
+      "table": "HD2021",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+      "file": "hd2021.csv",
+      "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389"
+    },
+    {
+      "table": "HD2022",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+      "file": "hd2022.csv",
+      "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782"
+    },
+    {
+      "table": "HD2023",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+      "file": "HD2023.csv",
+      "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b"
+    },
+    {
+      "table": "HD2024",
+      "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+      "file": "HD2024.csv",
+      "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345"
+    },
+    {
+      "table": "HD2025",
+      "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+      "file": "hd2025.csv",
+      "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf"
+    }
+  ],
+  "header files not served": [
+    "HD2026"
+  ],
+  "institutions": [
+    {
+      "slot": 1,
+      "unitid": "100663",
+      "name": "University of Alabama at Birmingham",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 2,
+      "unitid": "100830",
+      "name": "Auburn University at Montgomery",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 3,
+      "unitid": "101480",
+      "name": "Jacksonville State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 4,
+      "unitid": "101912",
+      "name": "Oakwood University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 5,
+      "unitid": "102377",
+      "name": "Tuskegee University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 6,
+      "unitid": "102845",
+      "name": "Charter College",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 7,
+      "unitid": "104717",
+      "name": "Grand Canyon University",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 8,
+      "unitid": "106306",
+      "name": "Arkansas Baptist College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 9,
+      "unitid": "106704",
+      "name": "University of Central Arkansas",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 10,
+      "unitid": "107558",
+      "name": "University of the Ozarks",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 11,
+      "unitid": "108269",
+      "name": "Academy of Chinese Culture and Health Sciences",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 12,
+      "unitid": "109785",
+      "name": "Azusa Pacific University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 13,
+      "unitid": "110404",
+      "name": "California Institute of Technology",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 14,
+      "unitid": "110538",
+      "name": "California State University-Chico",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 15,
+      "unitid": "110608",
+      "name": "California State University-Northridge",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 16,
+      "unitid": "112075",
+      "name": "Concordia University-Irvine",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 17,
+      "unitid": "113236",
+      "name": "Cypress College",
+      "sector": "public",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 18,
+      "unitid": "114354",
+      "name": "FIDM-Fashion Institute of Design & Merchandising-Los Angeles",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 19,
+      "unitid": "114840",
+      "name": "Fuller Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 20,
+      "unitid": "115773",
+      "name": "Humphreys University-Stockton and Modesto Campuses",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 21,
+      "unitid": "117575",
+      "name": "Southern California Seminary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 22,
+      "unitid": "118888",
+      "name": "Mills College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2022",
+          "DEATHYR": "2022",
+          "ACT": "C",
+          "year": 2022,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2022",
+          "NEWID": "167358",
+          "year": 2022,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 23,
+      "unitid": "119270",
+      "name": "Musicians Institute",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 24,
+      "unitid": "120537",
+      "name": "Hope International University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 25,
+      "unitid": "121275",
+      "name": "Platt College-San Diego",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 26,
+      "unitid": "122375",
+      "name": "San Diego Mesa College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 27,
+      "unitid": "122603",
+      "name": "San Francisco Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2020",
+          "DEATHYR": "2020",
+          "ACT": "C",
+          "year": 2020,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2020",
+          "NEWID": "121691",
+          "year": 2020,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 28,
+      "unitid": "122977",
+      "name": "Santa Monica College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 29,
+      "unitid": "123509",
+      "name": "Skyline College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 30,
+      "unitid": "123855",
+      "name": "St John's Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 31,
+      "unitid": "124487",
+      "name": "Epic Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 32,
+      "unitid": "126076",
+      "name": "Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 33,
+      "unitid": "126775",
+      "name": "Colorado School of Mines",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 34,
+      "unitid": "127200",
+      "name": "Front Range Community College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 35,
+      "unitid": "127741",
+      "name": "University of Northern Colorado",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 36,
+      "unitid": "128328",
+      "name": "United States Air Force Academy",
+      "sector": "public",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 37,
+      "unitid": "128780",
+      "name": "Charter Oak State College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 38,
+      "unitid": "129525",
+      "name": "University of Hartford",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 39,
+      "unitid": "130314",
+      "name": "University of Saint Joseph",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 40,
+      "unitid": "130907",
+      "name": "Delaware Technical Community College-Terry",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 41,
+      "unitid": "131283",
+      "name": "The Catholic University of America",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 42,
+      "unitid": "131520",
+      "name": "Howard University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 43,
+      "unitid": "132602",
+      "name": "Bethune-Cookman University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 44,
+      "unitid": "133021",
+      "name": "Chipola College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 45,
+      "unitid": "133650",
+      "name": "Florida Agricultural and Mechanical University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 46,
+      "unitid": "133881",
+      "name": "Florida Institute of Technology",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 47,
+      "unitid": "134237",
+      "name": "Full Sail University",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 48,
+      "unitid": "135160",
+      "name": "Florida Gateway College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 49,
+      "unitid": "136145",
+      "name": "North Florida College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 50,
+      "unitid": "136400",
+      "name": "Pasco-Hernando State College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 51,
+      "unitid": "137281",
+      "name": "Saint Johns River State College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 52,
+      "unitid": "137759",
+      "name": "Tallahassee Community College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 53,
+      "unitid": "138275",
+      "name": "Warner University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 54,
+      "unitid": "138761",
+      "name": "Andrew College",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 55,
+      "unitid": "139144",
+      "name": "Berry College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 56,
+      "unitid": "139366",
+      "name": "Columbus State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 57,
+      "unitid": "139658",
+      "name": "Emory University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 58,
+      "unitid": "139959",
+      "name": "University of Georgia",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 59,
+      "unitid": "140447",
+      "name": "Mercer University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 60,
+      "unitid": "140988",
+      "name": "Shorter University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 61,
+      "unitid": "141361",
+      "name": "Young Harris College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 62,
+      "unitid": "142090",
+      "name": "Boise Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 63,
+      "unitid": "142522",
+      "name": "Brigham Young University-Idaho",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 64,
+      "unitid": "143233",
+      "name": "Bethany Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 65,
+      "unitid": "143978",
+      "name": "The Chicago School of Professional Psychology at Chicago",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 66,
+      "unitid": "144883",
+      "name": "East-West University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 67,
+      "unitid": "145497",
+      "name": "Hebrew Theological College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 68,
+      "unitid": "145725",
+      "name": "Illinois Institute of Technology",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 69,
+      "unitid": "146533",
+      "name": "Lakeview College of Nursing",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 70,
+      "unitid": "146728",
+      "name": "Lutheran School of Theology at Chicago",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 71,
+      "unitid": "147369",
+      "name": "Moody Bible Institute",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 72,
+      "unitid": "147828",
+      "name": "Olivet Nazarene University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 73,
+      "unitid": "148575",
+      "name": "Saint Francis Medical Center College of Nursing",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 74,
+      "unitid": "149028",
+      "name": "Saint Anthony College of Nursing",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 75,
+      "unitid": "149639",
+      "name": "VanderCook College of Music",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 76,
+      "unitid": "150172",
+      "name": "Calumet College of Saint Joseph",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 77,
+      "unitid": "150604",
+      "name": "Franklin College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 78,
+      "unitid": "151263",
+      "name": "University of Indianapolis",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 79,
+      "unitid": "151360",
+      "name": "Indiana University-Northwest",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 80,
+      "unitid": "151962",
+      "name": "Mid-America College of Funeral Service",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 81,
+      "unitid": "152451",
+      "name": "Saint Meinrad School of Theology",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 82,
+      "unitid": "152798",
+      "name": "Allen College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 83,
+      "unitid": "153241",
+      "name": "Divine Word College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 84,
+      "unitid": "153366",
+      "name": "Graceland University-Lamoni",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 85,
+      "unitid": "153825",
+      "name": "Loras College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 86,
+      "unitid": "154013",
+      "name": "Mount Mercy University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 87,
+      "unitid": "154262",
+      "name": "St Luke's College",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 88,
+      "unitid": "154712",
+      "name": "Benedictine College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 89,
+      "unitid": "155070",
+      "name": "Barclay College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 90,
+      "unitid": "155399",
+      "name": "Kansas State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 91,
+      "unitid": "155812",
+      "name": "University of Saint Mary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 92,
+      "unitid": "156189",
+      "name": "Alice Lloyd College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 93,
+      "unitid": "156417",
+      "name": "Clear Creek Baptist Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 94,
+      "unitid": "157030",
+      "name": "Kentucky Mountain Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 95,
+      "unitid": "157298",
+      "name": "Louisville Presbyterian Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 96,
+      "unitid": "157757",
+      "name": "Spalding University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 97,
+      "unitid": "158477",
+      "name": "Centenary College of Louisiana",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 98,
+      "unitid": "159568",
+      "name": "Louisiana College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 99,
+      "unitid": "160038",
+      "name": "Northwestern State University of Louisiana",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 100,
+      "unitid": "160658",
+      "name": "University of Louisiana at Lafayette",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 101,
+      "unitid": "160995",
+      "name": "Beal College",
+      "sector": "forprofit",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 102,
+      "unitid": "161509",
+      "name": "Maine College of Art",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 103,
+      "unitid": "162007",
+      "name": "Bowie State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 104,
+      "unitid": "162760",
+      "name": "Hood College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 105,
+      "unitid": "163338",
+      "name": "University of Maryland Eastern Shore",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 106,
+      "unitid": "164076",
+      "name": "Towson University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 107,
+      "unitid": "164438",
+      "name": "New England College of Business and Finance",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 108,
+      "unitid": "164580",
+      "name": "Babson College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 109,
+      "unitid": "164872",
+      "name": "Boston Architectural College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 110,
+      "unitid": "165167",
+      "name": "Cambridge College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 111,
+      "unitid": "165671",
+      "name": "Emmanuel College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 112,
+      "unitid": "165936",
+      "name": "Gordon College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 113,
+      "unitid": "166489",
+      "name": "Longy School of Music of Bard College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 114,
+      "unitid": "166708",
+      "name": "University of Massachusetts Medical School Worcester",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 115,
+      "unitid": "167215",
+      "name": "New England Law-Boston",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 116,
+      "unitid": "167455",
+      "name": "Pine Manor College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": true,
+      "standing grounds": [
+        "a",
+        "b"
+      ],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2022",
+          "CLOSEDAT": "05/11/2022",
+          "year": 2022,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2022",
+          "DEATHYR": "2022",
+          "ACT": "D",
+          "year": 2022,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 117,
+      "unitid": "167835",
+      "name": "Smith College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 118,
+      "unitid": "168218",
+      "name": "Wellesley College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 119,
+      "unitid": "168528",
+      "name": "Adrian College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 120,
+      "unitid": "169099",
+      "name": "Calvin Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 121,
+      "unitid": "169716",
+      "name": "University of Detroit Mercy",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 122,
+      "unitid": "170240",
+      "name": "Henry Ford College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 123,
+      "unitid": "170806",
+      "name": "Madonna University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 124,
+      "unitid": "171146",
+      "name": "University of Michigan-Flint",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 125,
+      "unitid": "171881",
+      "name": "Kuyper College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 126,
+      "unitid": "172477",
+      "name": "Western Michigan University-Thomas M. Cooley Law School",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 127,
+      "unitid": "173142",
+      "name": "Bethany Lutheran College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 128,
+      "unitid": "173647",
+      "name": "Gustavus Adolphus College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 129,
+      "unitid": "173957",
+      "name": "Mayo Clinic College of Medicine and Science",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 130,
+      "unitid": "174251",
+      "name": "University of Minnesota-Morris",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 131,
+      "unitid": "174783",
+      "name": "Saint Cloud State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 132,
+      "unitid": "175014",
+      "name": "Rasmussen College-Minnesota",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 133,
+      "unitid": "175430",
+      "name": "Blue Mountain College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 134,
+      "unitid": "176080",
+      "name": "Mississippi State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 135,
+      "unitid": "176479",
+      "name": "William Carey University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 136,
+      "unitid": "176965",
+      "name": "University of Central Missouri",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 137,
+      "unitid": "177214",
+      "name": "Drury University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 138,
+      "unitid": "177816",
+      "name": "Kenrick Glennon Seminary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 139,
+      "unitid": "178369",
+      "name": "Missouri Valley College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 140,
+      "unitid": "178624",
+      "name": "Northwest Missouri State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 141,
+      "unitid": "179043",
+      "name": "Rockhurst University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 142,
+      "unitid": "179450",
+      "name": "Saint Luke's College of Health Sciences",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2020",
+          "DEATHYR": "2020",
+          "ACT": "C",
+          "year": 2020,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2020",
+          "NEWID": "179043",
+          "year": 2020,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 143,
+      "unitid": "179946",
+      "name": "Westminster College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 144,
+      "unitid": "180489",
+      "name": "The University of Montana",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 145,
+      "unitid": "180878",
+      "name": "Bryan College of Health Sciences",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 146,
+      "unitid": "181297",
+      "name": "Nebraska Methodist College of Nursing & Allied Health",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 147,
+      "unitid": "181446",
+      "name": "Nebraska Wesleyan University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 148,
+      "unitid": "181853",
+      "name": "York College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 149,
+      "unitid": "182500",
+      "name": "Truckee Meadows Community College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 150,
+      "unitid": "183044",
+      "name": "University of New Hampshire-Main Campus",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 151,
+      "unitid": "183789",
+      "name": "Berkeley College-Woodland Park",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 152,
+      "unitid": "184612",
+      "name": "Felician University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 153,
+      "unitid": "185262",
+      "name": "Kean University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 154,
+      "unitid": "186201",
+      "name": "Ramapo College of New Jersey",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 155,
+      "unitid": "186584",
+      "name": "Seton Hall University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 156,
+      "unitid": "187596",
+      "name": "Navajo Technical University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 157,
+      "unitid": "188030",
+      "name": "New Mexico State University-Main Campus",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 158,
+      "unitid": "188517",
+      "name": "Bryant & Stratton College-Albany",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 159,
+      "unitid": "189088",
+      "name": "Bard College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 160,
+      "unitid": "189565",
+      "name": "Bryant & Stratton College-Syracuse North",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 161,
+      "unitid": "190099",
+      "name": "Colgate University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 162,
+      "unitid": "190503",
+      "name": "Culinary Institute of America",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 163,
+      "unitid": "190600",
+      "name": "CUNY John Jay College of Criminal Justice",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 164,
+      "unitid": "190691",
+      "name": "CUNY York College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 165,
+      "unitid": "191241",
+      "name": "Fordham University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 166,
+      "unitid": "191649",
+      "name": "Hofstra University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 167,
+      "unitid": "192271",
+      "name": "LIM College",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 168,
+      "unitid": "192785",
+      "name": "Maria College of Albany",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 169,
+      "unitid": "193061",
+      "name": "Mesivta of Eastern Parkway-Yeshiva Zichron Meilech",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 170,
+      "unitid": "193584",
+      "name": "Nazareth College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 171,
+      "unitid": "193900",
+      "name": "New York University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 172,
+      "unitid": "194392",
+      "name": "Paul Smiths College of Arts and Science",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 173,
+      "unitid": "194736",
+      "name": "Rabbinical College of Long Island",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 174,
+      "unitid": "195049",
+      "name": "Rockefeller University",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 175,
+      "unitid": "195243",
+      "name": "St. Thomas Aquinas College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 176,
+      "unitid": "195720",
+      "name": "Saint John Fisher College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 177,
+      "unitid": "196042",
+      "name": "Farmingdale State College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 178,
+      "unitid": "196103",
+      "name": "SUNY College of Environmental Science and Forestry",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 179,
+      "unitid": "196185",
+      "name": "SUNY Oneonta",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 180,
+      "unitid": "196255",
+      "name": "SUNY Downstate Health Sciences University",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 181,
+      "unitid": "196583",
+      "name": "Torah Temimah Talmudical Seminary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 182,
+      "unitid": "197036",
+      "name": "United States Military Academy",
+      "sector": "public",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 183,
+      "unitid": "197285",
+      "name": "The College of Westchester",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 184,
+      "unitid": "197735",
+      "name": "Yeshivath Viznitz",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 185,
+      "unitid": "198109",
+      "name": "Cabarrus College of Health Sciences",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 186,
+      "unitid": "198464",
+      "name": "East Carolina University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 187,
+      "unitid": "198677",
+      "name": "Heritage Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 188,
+      "unitid": "198899",
+      "name": "Mars Hill University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 189,
+      "unitid": "199102",
+      "name": "North Carolina A & T State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 190,
+      "unitid": "199209",
+      "name": "North Carolina Wesleyan College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 191,
+      "unitid": "199607",
+      "name": "Salem College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 192,
+      "unitid": "199962",
+      "name": "Wingate University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 193,
+      "unitid": "200217",
+      "name": "University of Mary",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 194,
+      "unitid": "200527",
+      "name": "Turtle Mountain Community College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 195,
+      "unitid": "201140",
+      "name": "Athenaeum of Ohio",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 196,
+      "unitid": "201645",
+      "name": "Case Western Reserve University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 197,
+      "unitid": "201973",
+      "name": "Clark State Community College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 198,
+      "unitid": "202684",
+      "name": "Bryant & Stratton College-Cleveland",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "c",
+          "file": "HD2019",
+          "NEWID": "201469",
+          "year": 2019,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 199,
+      "unitid": "203368",
+      "name": "John Carroll University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 200,
+      "unitid": "203544",
+      "name": "Kettering College",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 201,
+      "unitid": "203997",
+      "name": "Methodist Theological School in Ohio",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 202,
+      "unitid": "204264",
+      "name": "Muskingum University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 203,
+      "unitid": "204635",
+      "name": "Ohio Northern University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 204,
+      "unitid": "204909",
+      "name": "Ohio Wesleyan University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 205,
+      "unitid": "205391",
+      "name": "The Modern College of Design",
+      "sector": "forprofit",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 206,
+      "unitid": "206084",
+      "name": "University of Toledo",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 207,
+      "unitid": "206491",
+      "name": "Wilberforce University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 208,
+      "unitid": "206622",
+      "name": "Xavier University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 209,
+      "unitid": "206941",
+      "name": "University of Central Oklahoma",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 210,
+      "unitid": "207306",
+      "name": "Northwestern Oklahoma State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 211,
+      "unitid": "207403",
+      "name": "Oklahoma Baptist University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 212,
+      "unitid": "207847",
+      "name": "Southeastern Oklahoma State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 213,
+      "unitid": "209056",
+      "name": "Lewis & Clark College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 214,
+      "unitid": "209490",
+      "name": "Oregon Health & Science University",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 215,
+      "unitid": "209807",
+      "name": "Portland State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 216,
+      "unitid": "210368",
+      "name": "Western Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 217,
+      "unitid": "210775",
+      "name": "Alvernia University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 218,
+      "unitid": "211158",
+      "name": "Bloomsburg University of Pennsylvania",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2022",
+          "DEATHYR": "2022",
+          "ACT": "C",
+          "year": 2022,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2022",
+          "NEWID": "498562",
+          "year": 2022,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 219,
+      "unitid": "211468",
+      "name": "Cedar Crest College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 220,
+      "unitid": "211981",
+      "name": "Delaware Valley University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 221,
+      "unitid": "212197",
+      "name": "Elizabethtown College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 222,
+      "unitid": "212771",
+      "name": "Gratz College",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 223,
+      "unitid": "213011",
+      "name": "Immaculata University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 224,
+      "unitid": "213376",
+      "name": "Lackawanna College",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 225,
+      "unitid": "213613",
+      "name": "Lock Haven University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2022",
+          "DEATHYR": "2022",
+          "ACT": "C",
+          "year": 2022,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2022",
+          "NEWID": "498562",
+          "year": 2022,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 226,
+      "unitid": "213987",
+      "name": "Mercyhurst University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 227,
+      "unitid": "214175",
+      "name": "Muhlenberg College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 228,
+      "unitid": "214634",
+      "name": "Pennsylvania State University-Penn State Shenango",
+      "sector": "public",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": false,
+      "coding B": false,
+      "coding C": false,
+      "standing grounds": [],
+      "events": [
+        {
+          "ground": "c",
+          "file": "HD2020",
+          "NEWID": "495767",
+          "year": 2020,
+          "voided by reappearance as active": "HD2022"
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 229,
+      "unitid": "215132",
+      "name": "University of the Sciences",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": false,
+      "coding C": true,
+      "standing grounds": [
+        "b",
+        "c"
+      ],
+      "events": [
+        {
+          "ground": "b",
+          "file": "HD2022",
+          "DEATHYR": "2022",
+          "ACT": "C",
+          "year": 2022,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "c",
+          "file": "HD2022",
+          "NEWID": "215770",
+          "year": 2022,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 230,
+      "unitid": "215628",
+      "name": "Reformed Presbyterian Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 231,
+      "unitid": "215813",
+      "name": "Saint Vincent Seminary",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 232,
+      "unitid": "216339",
+      "name": "Temple University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 233,
+      "unitid": "216542",
+      "name": "University of Valley Forge",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 234,
+      "unitid": "216852",
+      "name": "Widener University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 235,
+      "unitid": "217235",
+      "name": "Johnson & Wales University-Providence",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 236,
+      "unitid": "217606",
+      "name": "Northpoint Bible College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 237,
+      "unitid": "217819",
+      "name": "College of Charleston",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 238,
+      "unitid": "217925",
+      "name": "Columbia International University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 239,
+      "unitid": "218229",
+      "name": "Lander University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 240,
+      "unitid": "218645",
+      "name": "University of South Carolina Aiken",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 241,
+      "unitid": "218964",
+      "name": "Winthrop University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 242,
+      "unitid": "219204",
+      "name": "National American University-Rapid City",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 243,
+      "unitid": "219356",
+      "name": "South Dakota State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 244,
+      "unitid": "219709",
+      "name": "Belmont University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 245,
+      "unitid": "220002",
+      "name": "Hussian College-Daymar College Nashville",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 246,
+      "unitid": "220552",
+      "name": "South College",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 247,
+      "unitid": "220792",
+      "name": "Meharry Medical College",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 248,
+      "unitid": "221351",
+      "name": "Rhodes College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 249,
+      "unitid": "221768",
+      "name": "The University of Tennessee-Martin",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 250,
+      "unitid": "222628",
+      "name": "Amberton University",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 251,
+      "unitid": "223001",
+      "name": "Austin Presbyterian Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 252,
+      "unitid": "224147",
+      "name": "Texas A & M University-Corpus Christi",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 253,
+      "unitid": "224545",
+      "name": "Texas A&M University-Texarkana",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 254,
+      "unitid": "225502",
+      "name": "University of Houston-Victoria",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 255,
+      "unitid": "226231",
+      "name": "LeTourneau University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 256,
+      "unitid": "226879",
+      "name": "Wade College",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 257,
+      "unitid": "227526",
+      "name": "Prairie View A & M University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 258,
+      "unitid": "228194",
+      "name": "South Texas College of Law Houston",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 259,
+      "unitid": "228486",
+      "name": "Southwestern Christian College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 260,
+      "unitid": "228705",
+      "name": "Texas A & M University-Kingsville",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 261,
+      "unitid": "228866",
+      "name": "Texas Chiropractic College Foundation Inc",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 262,
+      "unitid": "229115",
+      "name": "Texas Tech University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 263,
+      "unitid": "230038",
+      "name": "Brigham Young University-Provo",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 264,
+      "unitid": "230603",
+      "name": "Southern Utah University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 265,
+      "unitid": "230816",
+      "name": "Bennington College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 266,
+      "unitid": "231059",
+      "name": "Saint Michael's College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 267,
+      "unitid": "231147",
+      "name": "Vermont Law School",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 268,
+      "unitid": "231712",
+      "name": "Christopher Newport University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 269,
+      "unitid": "232025",
+      "name": "Emory & Henry College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 270,
+      "unitid": "232557",
+      "name": "Liberty University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 271,
+      "unitid": "232706",
+      "name": "Marymount University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 272,
+      "unitid": "233301",
+      "name": "Randolph College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 273,
+      "unitid": "233684",
+      "name": "Strayer University-Virginia",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 274,
+      "unitid": "234137",
+      "name": "Virginia University of Lynchburg",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 275,
+      "unitid": "234845",
+      "name": "Centralia College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 276,
+      "unitid": "235097",
+      "name": "Eastern Washington University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 277,
+      "unitid": "235431",
+      "name": "Highline College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 278,
+      "unitid": "236382",
+      "name": "Renton Technical College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 279,
+      "unitid": "236692",
+      "name": "Spokane Community College",
+      "sector": "public",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 280,
+      "unitid": "237011",
+      "name": "Western Washington University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 281,
+      "unitid": "237181",
+      "name": "Bethany College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 282,
+      "unitid": "237640",
+      "name": "Ohio Valley University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": true,
+      "standing grounds": [
+        "a",
+        "b"
+      ],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2021",
+          "CLOSEDAT": "12/17/2021",
+          "year": 2021,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2021",
+          "DEATHYR": "2021",
+          "ACT": "M",
+          "year": 2021,
+          "voided by reappearance as active": null
+        }
+      ],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 283,
+      "unitid": "237899",
+      "name": "West Virginia State University",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 284,
+      "unitid": "238263",
+      "name": "Madison Area Technical College",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 285,
+      "unitid": "238661",
+      "name": "Edgewood College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 286,
+      "unitid": "239318",
+      "name": "Milwaukee School of Engineering",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 287,
+      "unitid": "240107",
+      "name": "Viterbo University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 288,
+      "unitid": "240365",
+      "name": "University of Wisconsin-Oshkosh",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 289,
+      "unitid": "240453",
+      "name": "University of Wisconsin-Milwaukee",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 290,
+      "unitid": "241100",
+      "name": "American University of Puerto Rico",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 291,
+      "unitid": "241331",
+      "name": "Carlos Albizu University-San Juan",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 292,
+      "unitid": "241739",
+      "name": "Universidad Ana G. Mendez-Cupey Campus",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 293,
+      "unitid": "242121",
+      "name": "Humacao Community College",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 294,
+      "unitid": "243197",
+      "name": "University of Puerto Rico-Mayaguez",
+      "sector": "public",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 295,
+      "unitid": "243498",
+      "name": "Seminario Evangelico de Puerto Rico",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 296,
+      "unitid": "243744",
+      "name": "Stanford University",
+      "sector": "private",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 297,
+      "unitid": "245847",
+      "name": "Antioch University-Santa Barbara",
+      "sector": "private",
+      "status": "structurally unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 298,
+      "unitid": "247162",
+      "name": "Ecumenical Theological Seminary",
+      "sector": "private",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 299,
+      "unitid": "248934",
+      "name": "ECPI University",
+      "sector": "forprofit",
+      "status": "scored",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    },
+    {
+      "slot": 300,
+      "unitid": "260992",
+      "name": "Northwestern College",
+      "sector": "forprofit",
+      "status": "unscorable",
+      "closed or failed (primary)": true,
+      "coding B": true,
+      "coding C": false,
+      "standing grounds": [
+        "d"
+      ],
+      "events": [],
+      "in first file": true,
+      "in latest file": false
+    }
+  ]
+}
