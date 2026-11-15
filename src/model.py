@@ -111,7 +111,8 @@ def build_model_stage2(obs_Oo, obs_Op, obs_types_Oo, obs_types_Op,
                         finance_mask, dt=1.0,
                         pt_share_obs=None, pt_share_mask=None,
                         debt_obs=None, debt_mask=None,
-                        online_share_obs=None, online_share_mask=None):
+                        online_share_obs=None, online_share_mask=None,
+                        enroll_obs=None):
     """
     Stage 2 extension of build_model: adds real resource dynamics
     R(t)/delta_R(t), tied to sparse real IPEDS finance observations
@@ -373,9 +374,48 @@ def build_model_stage2(obs_Oo, obs_Op, obs_types_Oo, obs_types_Op,
         d_A_max = 1.0  # normalized ceiling
         S_tilde_proxy = S_t / (S_t.max() + 1e-6)  # simple in-model relative scale
         delta_R_tilde_proxy = delta_R_t / (delta_R_t.max() + 1e-6)
-        d_A_t = pm.Deterministic(
-            "d_A_t", d_A_max * pt.exp(-beta_S * S_tilde_proxy - beta_R * delta_R_tilde_proxy)
-        )
+        if enroll_obs is None:
+            # Unchanged: the live pipeline and every v2 fit take this branch,
+            # so the model they build is exactly the model they always built.
+            d_A_t = pm.Deterministic(
+                "d_A_t", d_A_max * pt.exp(-beta_S * S_tilde_proxy - beta_R * delta_R_tilde_proxy)
+            )
+        else:
+            # --- Drift-type and shock-type collapse (RICD §10.3a; "sampling
+            # protocol v3.md"), used only when enroll_obs is supplied. ---
+            # Exchange base (Definition 10.3a.2): log enrollment, relative to
+            # its own peak, as a local linear trend whose level moves by a
+            # slowly varying drift plus heavy-tailed (Student-t) steps, the
+            # section 15.2 construction for a drift-type observable that can
+            # take rare large steps. Observed only at years with a value.
+            enroll_obs = np.asarray(enroll_obs, dtype=float)
+            enroll_seen = ~np.isnan(enroll_obs)
+            enroll_idx = np.where(enroll_seen)[0]
+            enroll_first = float(enroll_obs[enroll_idx[0]])
+            n_init = pm.Normal("enroll_init", mu=enroll_first, sigma=0.2)
+            mu_init = pm.Normal("enroll_drift_init", mu=0.0, sigma=0.1)
+            mu_steps = pm.Normal("enroll_drift_steps_raw", mu=0.0, sigma=1.0, shape=T - 1) * 0.02
+            mu_seq = pt.concatenate([pt.stack([mu_init]), mu_init + pt.cumsum(mu_steps)])
+            n_resid = pm.StudentT("enroll_steps_raw", nu=3.0, mu=0.0, sigma=1.0, shape=T - 1) * 0.03
+            n_seq = pt.concatenate([pt.stack([n_init]), n_init + pt.cumsum(mu_seq[:-1] + n_resid)])
+            pm.Deterministic("enroll_level", n_seq)
+            pm.Deterministic("enroll_drift", mu_seq)
+            pm.Deterministic("enroll_step_resid", n_resid)
+            sigma_enroll = 0.02  # fixed: reported enrollment counts carry little measurement noise
+            pm.Normal("obs_enroll", mu=n_seq[enroll_idx], sigma=sigma_enroll,
+                      observed=enroll_obs[enroll_idx])
+            # Cost coverage (Definition 10.3a.3): the share of exchange already
+            # committed to total work, c = W_total / E_exch, from the two
+            # reported finance channels.
+            coverage = pm.Deterministic(
+                "coverage_t", W_total_latent / pt.maximum(E_exch_latent, 1e-3))
+            # Headroom term (Definition 10.3a.5): committed capacity contracts
+            # adaptive possibility before any debt accumulates.
+            beta_H = pm.HalfNormal("beta_H", sigma=1)
+            d_A_t = pm.Deterministic(
+                "d_A_t", d_A_max * pt.exp(-beta_S * S_tilde_proxy - beta_R * delta_R_tilde_proxy
+                                          - beta_H * pt.maximum(coverage, 0.0))
+            )
         kappa4_pc = pm.HalfNormal("kappa4_pc", sigma=1)
         P_C_t = pm.Deterministic("P_C_t", pt.sigmoid(kappa4_pc * (1 - d_A_t / d_A_max)))
 
