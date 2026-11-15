@@ -1,0 +1,57 @@
+name: v3 - anchor flows
+
+# Manual-only. Runs src/v3_anchors.py under "sampling protocol v3.md":
+# for every institution in the 2014 and 2019 IPEDS files, reads its
+# appropriations, gifts and total expenses for the three fiscal years up to
+# its scoring year, and its system membership, and records the inputs of the
+# anchor capacity (RICD 10.5b.13c). Commits data/v3/anchors.json. No
+# institution's outcome is read.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-anchors
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Read the anchor flows
+        run: |
+          cd src
+          python v3_anchors.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/anchors.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3: anchor flows (no outcome looked up)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
