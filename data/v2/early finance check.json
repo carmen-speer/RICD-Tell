@@ -1,9 +1,9 @@
 {
   "protocol": "sampling protocol v2.md, early-finance check (before phase 2)",
-  "written at (UTC)": "2026-11-14T23:28:36.346945+00:00",
-  "passed": false,
+  "written at (UTC)": "2026-11-15T00:02:02.659968+00:00",
+  "passed": true,
   "files NCES did not serve": [],
-  "every column the pipeline reads is present in every file": false,
+  "every column the pipeline reads is present in every file": true,
   "implausible parsed years": [],
   "files": [
     {
@@ -372,7 +372,7 @@
         "endowment": {
           "code": "F2H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.7304
         },
         "revenue": {
           "code": "F2B01",
@@ -422,7 +422,7 @@
         "endowment": {
           "code": "F2H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.7359
         },
         "revenue": {
           "code": "F2B01",
@@ -472,7 +472,7 @@
         "endowment": {
           "code": "F2H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.7316
         },
         "revenue": {
           "code": "F2B01",
@@ -522,7 +522,7 @@
         "endowment": {
           "code": "F2H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.7302
         },
         "revenue": {
           "code": "F2B01",
@@ -572,7 +572,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6245
         },
         "revenue": {
           "code": "F1D01",
@@ -612,7 +612,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.633
         },
         "revenue": {
           "code": "F1D01",
@@ -652,7 +652,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6408
         },
         "revenue": {
           "code": "F1D01",
@@ -692,7 +692,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.657
         },
         "revenue": {
           "code": "F1D01",
@@ -732,7 +732,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6597
         },
         "revenue": {
           "code": "F1D01",
@@ -772,7 +772,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6645
         },
         "revenue": {
           "code": "F1D01",
@@ -852,7 +852,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6278
         },
         "revenue": {
           "code": "F1D01",
@@ -892,7 +892,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6327
         },
         "revenue": {
           "code": "F1D01",
@@ -932,7 +932,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6376
         },
         "revenue": {
           "code": "F1D01",
@@ -972,7 +972,7 @@
         "endowment": {
           "code": "F1H02",
           "present": true,
-          "share numeric": 0.0
+          "share numeric": 0.6459
         },
         "revenue": {
           "code": "F1D01",
@@ -1020,14 +1020,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1055,14 +1055,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1090,14 +1090,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1125,14 +1125,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1160,14 +1160,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1195,14 +1195,14 @@
           "share numeric": 1.0
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1230,14 +1230,14 @@
           "share numeric": 0.8676
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1265,14 +1265,14 @@
           "share numeric": 0.331
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1300,14 +1300,14 @@
           "share numeric": 0.3364
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1335,14 +1335,14 @@
           "share numeric": 0.3398
         },
         "institutional_support": {
-          "code": "F3E061",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_MAINT",
+          "present": true,
+          "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
-          "present": false,
-          "share numeric": 0.0
+          "code": "V2_INSTR",
+          "present": true,
+          "share numeric": 1.0
         }
       }
     },
@@ -1370,12 +1370,12 @@
           "share numeric": 0.3259
         },
         "institutional_support": {
-          "code": "F3E061",
+          "code": "V2_MAINT",
           "present": true,
           "share numeric": 1.0
         },
         "instruction": {
-          "code": "F3E011",
+          "code": "V2_INSTR",
           "present": true,
           "share numeric": 1.0
         }
@@ -2324,47 +2324,107 @@
       "name": "Everest College-Phoenix",
       "sector (header file)": "forprofit",
       "finance form used": "forprofit",
-      "years with a row": 1,
+      "years with a row": 11,
       "years": [
         {
           "fiscal year": 2004,
-          "row found": false
+          "row found": true,
+          "revenue": 6573913.0,
+          "total expenses": 5245828.0,
+          "instruction": 1352111.0,
+          "institutional support": 3893717.0,
+          "total liabilities": 5302474.0,
+          "problems": []
         },
         {
           "fiscal year": 2005,
-          "row found": false
+          "row found": true,
+          "revenue": 7744719.0,
+          "total expenses": 6966357.0,
+          "instruction": 1817782.0,
+          "institutional support": 5148575.0,
+          "total liabilities": 6424065.0,
+          "problems": []
         },
         {
           "fiscal year": 2006,
-          "row found": false
+          "row found": true,
+          "revenue": 13587126.0,
+          "total expenses": 14837004.0,
+          "instruction": 4825945.0,
+          "institutional support": 10011059.0,
+          "total liabilities": 5174187.0,
+          "problems": []
         },
         {
           "fiscal year": 2007,
-          "row found": false
+          "row found": true,
+          "revenue": 18345165.0,
+          "total expenses": 19124829.0,
+          "instruction": 7929604.0,
+          "institutional support": 11195225.0,
+          "total liabilities": 4235502.0,
+          "problems": []
         },
         {
           "fiscal year": 2008,
-          "row found": false
+          "row found": true,
+          "revenue": 29525401.0,
+          "total expenses": 28939420.0,
+          "instruction": 13174239.0,
+          "institutional support": 15765181.0,
+          "total liabilities": 7922889.0,
+          "problems": []
         },
         {
           "fiscal year": 2009,
-          "row found": false
+          "row found": true,
+          "revenue": 60063558.0,
+          "total expenses": 49274636.0,
+          "instruction": 23853106.0,
+          "institutional support": 25421530.0,
+          "total liabilities": 10896709.0,
+          "problems": []
         },
         {
           "fiscal year": 2010,
-          "row found": false
+          "row found": true,
+          "revenue": 93407334.0,
+          "total expenses": 70233569.0,
+          "instruction": 34281253.0,
+          "institutional support": 35952316.0,
+          "total liabilities": 35054531.0,
+          "problems": []
         },
         {
           "fiscal year": 2011,
-          "row found": false
+          "row found": true,
+          "revenue": 80050537.0,
+          "total expenses": 79789291.0,
+          "instruction": 36043377.0,
+          "institutional support": 43745914.0,
+          "total liabilities": 34331720.0,
+          "problems": []
         },
         {
           "fiscal year": 2012,
-          "row found": false
+          "row found": true,
+          "revenue": 29563422.0,
+          "total expenses": 25502562.0,
+          "instruction": 15920185.0,
+          "institutional support": 9582377.0,
+          "total liabilities": 7959091.0,
+          "problems": []
         },
         {
           "fiscal year": 2013,
-          "row found": false
+          "row found": true,
+          "revenue": 26486079.0,
+          "total expenses": 29307868.0,
+          "instruction": 17045865.0,
+          "institutional support": 12262003.0,
+          "total liabilities": 7239698.0,
+          "problems": []
         },
         {
           "fiscal year": 2014,
@@ -2372,7 +2432,7 @@
           "revenue": 45639516.0,
           "total expenses": 43069480.0,
           "instruction": 27061053.0,
-          "institutional support": 0.0,
+          "institutional support": 16008426.999999998,
           "total liabilities": 10504534.0,
           "problems": []
         }
@@ -2384,7 +2444,7 @@
       "name": "Brookline College-Phoenix",
       "sector (header file)": "forprofit",
       "finance form used": "forprofit",
-      "years with a row": 1,
+      "years with a row": 8,
       "years": [
         {
           "fiscal year": 2004,
@@ -2400,31 +2460,73 @@
         },
         {
           "fiscal year": 2007,
-          "row found": false
+          "row found": true,
+          "revenue": 13884523.0,
+          "total expenses": 17872293.0,
+          "instruction": 6316247.0,
+          "institutional support": 9487547.0,
+          "total liabilities": -84735.0,
+          "problems": []
         },
         {
           "fiscal year": 2008,
-          "row found": false
+          "row found": true,
+          "revenue": 7299914.0,
+          "total expenses": 7990867.0,
+          "instruction": 2453851.0,
+          "institutional support": 4700172.0,
+          "total liabilities": -190953.0,
+          "problems": []
         },
         {
           "fiscal year": 2009,
-          "row found": false
+          "row found": true,
+          "revenue": 18753111.0,
+          "total expenses": 20288631.0,
+          "instruction": 6604793.0,
+          "institutional support": 11464603.0,
+          "total liabilities": 3423526.0,
+          "problems": []
         },
         {
           "fiscal year": 2010,
-          "row found": false
+          "row found": true,
+          "revenue": 28835104.0,
+          "total expenses": 27376387.0,
+          "instruction": 9057285.0,
+          "institutional support": 15743719.0,
+          "total liabilities": 4354242.0,
+          "problems": []
         },
         {
           "fiscal year": 2011,
-          "row found": false
+          "row found": true,
+          "revenue": 53038233.0,
+          "total expenses": 46883910.0,
+          "instruction": 14779038.0,
+          "institutional support": 27042411.0,
+          "total liabilities": 7981415.0,
+          "problems": []
         },
         {
           "fiscal year": 2012,
-          "row found": false
+          "row found": true,
+          "revenue": 54964837.0,
+          "total expenses": 52737369.0,
+          "instruction": 17635900.0,
+          "institutional support": 26076585.0,
+          "total liabilities": 8944735.0,
+          "problems": []
         },
         {
           "fiscal year": 2013,
-          "row found": false
+          "row found": true,
+          "revenue": 40595439.0,
+          "total expenses": 43275636.0,
+          "instruction": 12709244.0,
+          "institutional support": 30566392.0,
+          "total liabilities": 8385302.0,
+          "problems": []
         },
         {
           "fiscal year": 2014,
@@ -2432,7 +2534,7 @@
           "revenue": 30994657.0,
           "total expenses": 36721766.0,
           "instruction": 11660973.0,
-          "institutional support": 0.0,
+          "institutional support": 25060793.0,
           "total liabilities": 3558193.0,
           "problems": []
         }
@@ -2498,47 +2600,107 @@
       "name": "ITT Technical Institute-Tempe",
       "sector (header file)": "forprofit",
       "finance form used": "forprofit",
-      "years with a row": 1,
+      "years with a row": 11,
       "years": [
         {
           "fiscal year": 2004,
-          "row found": false
+          "row found": true,
+          "revenue": 8354583.000000001,
+          "total expenses": 6688162.0,
+          "instruction": 2351049.0,
+          "institutional support": 4337113.0,
+          "total liabilities": -1098618.0,
+          "problems": []
         },
         {
           "fiscal year": 2005,
-          "row found": false
+          "row found": true,
+          "revenue": 8354583.000000001,
+          "total expenses": 6688162.0,
+          "instruction": 2351049.0,
+          "institutional support": 4337113.0,
+          "total liabilities": -1098618.0,
+          "problems": []
         },
         {
           "fiscal year": 2006,
-          "row found": false
+          "row found": true,
+          "revenue": 10496358.0,
+          "total expenses": 8101214.000000001,
+          "instruction": 2824887.0,
+          "institutional support": 5276327.0,
+          "total liabilities": -271527.0,
+          "problems": []
         },
         {
           "fiscal year": 2007,
-          "row found": false
+          "row found": true,
+          "revenue": 11673604.0,
+          "total expenses": 8458007.0,
+          "instruction": 3002928.0,
+          "institutional support": 5455079.0,
+          "total liabilities": -544793.0,
+          "problems": []
         },
         {
           "fiscal year": 2008,
-          "row found": false
+          "row found": true,
+          "revenue": 13058650.0,
+          "total expenses": 8234230.0,
+          "instruction": 2493057.0,
+          "institutional support": 5741173.0,
+          "total liabilities": -2973295.0,
+          "problems": []
         },
         {
           "fiscal year": 2009,
-          "row found": false
+          "row found": true,
+          "revenue": 14866579.0,
+          "total expenses": 7977975.0,
+          "instruction": 2749121.0,
+          "institutional support": 5228854.0,
+          "total liabilities": -1764503.0,
+          "problems": []
         },
         {
           "fiscal year": 2010,
-          "row found": false
+          "row found": true,
+          "revenue": 15656427.0,
+          "total expenses": 7973767.0,
+          "instruction": 2622360.0,
+          "institutional support": 5351407.0,
+          "total liabilities": -867889.0,
+          "problems": []
         },
         {
           "fiscal year": 2011,
-          "row found": false
+          "row found": true,
+          "revenue": 16212917.0,
+          "total expenses": 8418597.0,
+          "instruction": 2352870.0,
+          "institutional support": 6065726.0,
+          "total liabilities": -340522.0,
+          "problems": []
         },
         {
           "fiscal year": 2012,
-          "row found": false
+          "row found": true,
+          "revenue": 14908274.0,
+          "total expenses": 7812427.0,
+          "instruction": 2043690.0,
+          "institutional support": 5768737.0,
+          "total liabilities": -562748.0,
+          "problems": []
         },
         {
           "fiscal year": 2013,
-          "row found": false
+          "row found": true,
+          "revenue": 12559423.0,
+          "total expenses": 7464208.0,
+          "instruction": 1860156.0,
+          "institutional support": 5604052.0,
+          "total liabilities": 509407.0,
+          "problems": []
         },
         {
           "fiscal year": 2014,
@@ -2546,7 +2708,7 @@
           "revenue": 9869248.0,
           "total expenses": 7403511.0,
           "instruction": 968484.0,
-          "institutional support": 0.0,
+          "institutional support": 6435027.0,
           "total liabilities": 150162.0,
           "problems": []
         }
@@ -2558,47 +2720,107 @@
       "name": "Pima Medical Institute-Tucson",
       "sector (header file)": "forprofit",
       "finance form used": "forprofit",
-      "years with a row": 1,
+      "years with a row": 11,
       "years": [
         {
           "fiscal year": 2004,
-          "row found": false
+          "row found": true,
+          "revenue": 4886059.0,
+          "total expenses": 4624294.0,
+          "instruction": 1346776.0,
+          "institutional support": 3277518.0,
+          "total liabilities": 662808.0,
+          "problems": []
         },
         {
           "fiscal year": 2005,
-          "row found": false
+          "row found": true,
+          "revenue": 6016869.0,
+          "total expenses": 5484215.0,
+          "instruction": 1756214.0,
+          "institutional support": 3728001.0,
+          "total liabilities": 1395855.0,
+          "problems": []
         },
         {
           "fiscal year": 2006,
-          "row found": false
+          "row found": true,
+          "revenue": 6285040.0,
+          "total expenses": 5727649.0,
+          "instruction": 1822894.0,
+          "institutional support": 3904755.0,
+          "total liabilities": 2167203.0,
+          "problems": []
         },
         {
           "fiscal year": 2007,
-          "row found": false
+          "row found": true,
+          "revenue": 6580380.0,
+          "total expenses": 6032493.0,
+          "instruction": 1912866.0,
+          "institutional support": 4119627.0,
+          "total liabilities": 2892942.0,
+          "problems": []
         },
         {
           "fiscal year": 2008,
-          "row found": false
+          "row found": true,
+          "revenue": 6851055.0,
+          "total expenses": 6276082.0,
+          "instruction": 2026941.0,
+          "institutional support": 4249141.0,
+          "total liabilities": 3454812.0,
+          "problems": []
         },
         {
           "fiscal year": 2009,
-          "row found": false
+          "row found": true,
+          "revenue": 9930465.0,
+          "total expenses": 9443793.0,
+          "instruction": 3191975.0,
+          "institutional support": 6251818.0,
+          "total liabilities": 3927616.0,
+          "problems": []
         },
         {
           "fiscal year": 2010,
-          "row found": false
+          "row found": true,
+          "revenue": 12601824.0,
+          "total expenses": 10700541.0,
+          "instruction": 3904082.0,
+          "institutional support": 6796458.0,
+          "total liabilities": 5799429.0,
+          "problems": []
         },
         {
           "fiscal year": 2011,
-          "row found": false
+          "row found": true,
+          "revenue": 15273533.0,
+          "total expenses": 12638307.0,
+          "instruction": 4997854.0,
+          "institutional support": 7640453.0,
+          "total liabilities": 6175919.0,
+          "problems": []
         },
         {
           "fiscal year": 2012,
-          "row found": false
+          "row found": true,
+          "revenue": 16928066.0,
+          "total expenses": 13888915.0,
+          "instruction": 5442238.0,
+          "institutional support": 8387771.0,
+          "total liabilities": 9533641.0,
+          "problems": []
         },
         {
           "fiscal year": 2013,
-          "row found": false
+          "row found": true,
+          "revenue": 17551313.0,
+          "total expenses": 14994270.0,
+          "instruction": 5947298.0,
+          "institutional support": 8970969.0,
+          "total liabilities": 5860537.0,
+          "problems": []
         },
         {
           "fiscal year": 2014,
@@ -2606,7 +2828,7 @@
           "revenue": 19827661.0,
           "total expenses": 16018857.0,
           "instruction": 6991559.0,
-          "institutional support": 0.0,
+          "institutional support": 8959694.0,
           "total liabilities": 9191853.0,
           "problems": []
         }
@@ -3454,7 +3676,7 @@
     }
   ],
   "machine": {
-    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
     "python": "3.11.18",
     "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
     "environment variables": {
