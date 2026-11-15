@@ -46,6 +46,14 @@ counted first as flagged and then as not flagged; the seed disagreements
 and their outcomes; and the flagged survivors, listed for the separate
 anchor analysis. The panel sanity check is a separate step.
 
+Reading check. Every header file must yield at least 3,000 institutions
+(each lists several thousand); otherwise the run stops and records
+nothing, because a file that reads as empty would otherwise make every
+institution absent from it and count it a closure under ground (d). The
+number of institutions read from each file is recorded. This check was
+added after the first phase 8 run, which read no institution from HD2025
+(see the erratum in "sampling protocol v2.md").
+
 Outputs: data/v2/test outcomes.json and data/v2/test results.json.
 
 Usage (GitHub Actions only, via v2_test_results.yml):
@@ -74,6 +82,7 @@ TRIED = list(range(2019, 2027))
 BOOT_N = 10_000
 BOOT_SEED = 20261115
 Z = 1.959963984540054
+MIN_ROWS = 3_000        # every IPEDS header file lists several thousand institutions
 
 
 def wilson(k: int, n: int) -> list:
@@ -149,6 +158,11 @@ def main() -> None:
     years = sorted(files)
     coding.SCORING_YEAR, coding.FILES = SCORING_YEAR, years      # the test's scoring year and header files
     tables = {y: coding.rows_by_id(f["csv"]) for y, f in files.items()}
+    for y in years:                                               # a file that reads as (nearly) empty is a
+        files[y]["institutions read"] = len(tables[y])            # reading error, never an outcome
+        if len(tables[y]) < MIN_ROWS:
+            raise SystemExit(f"HD{y} yielded {len(tables[y])} institutions (fewer than {MIN_ROWS}); "
+                             "it was not read correctly. Nothing is recorded.")
 
     records = []
     for i in insts:
