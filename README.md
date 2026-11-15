@@ -36,11 +36,11 @@ does.
 
 **The full RICD manuscript (the complete, domain-independent theory) is in two
 documents: the Spine, which holds the core engine,
-[`docs/RICD 17.3 Spine.docx`](<docs/RICD 17.3 Spine.docx>)
-(also available as [`.tex`](<docs/RICD 17.3 Spine.tex>)), and the Catalog of
+[`docs/RICD 17.4 Spine.docx`](<docs/RICD 17.4 Spine.docx>)
+(also available as [`.tex`](<docs/RICD 17.4 Spine.tex>)), and the Catalog of
 Mechanisms, which holds every further mechanism, edge case and audit protocol,
-[`docs/RICD 17.3 Catalog.docx`](<docs/RICD 17.3 Catalog.docx>)
-(also available as [`.tex`](<docs/RICD 17.3 Catalog.tex>)).**
+[`docs/RICD 17.4 Catalog.docx`](<docs/RICD 17.4 Catalog.docx>)
+(also available as [`.tex`](<docs/RICD 17.4 Catalog.tex>)).**
 The two share section numbers, so a reference to a section not in one is in the
 other. Everything in this repository's code implements a real subset of that
 framework (Parts 6, 7, 8, and 10.5b specifically) against U.S. higher-education
@@ -977,8 +977,8 @@ data/
   confirmatory/draw log.csv     Every institution the confirmatory draw touched, and why each was kept or skipped
   confirmatory/draw slots.json  The 300 drawn institutions, with frame size, step size, source checksum, and 25 ordered backups per slot
 docs/
-  RICD 17.3 Spine.docx, .tex         The full, domain-independent RICD theory: the core engine
-  RICD 17.3 Catalog.docx, .tex       The full, domain-independent RICD theory: the catalog of mechanisms
+  RICD 17.4 Spine.docx, .tex         The full, domain-independent RICD theory: the core engine
+  RICD 17.4 Catalog.docx, .tex       The full, domain-independent RICD theory: the catalog of mechanisms
   index.html                      Public results dashboard (GitHub Pages)
   data/panel.json                  Validated 54-institution panel data
   data/live_scores.json            Real institutions scored live by score_institution.py / score_batch.py
