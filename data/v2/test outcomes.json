@@ -1,49 +1,56 @@
 {
   "protocol": "sampling protocol v2.md, phase 8 (test outcomes)",
-  "written at (UTC)": "2026-11-15T14:03:20.536887+00:00",
+  "written at (UTC)": "2026-11-15T14:17:20.726576+00:00",
   "scoring year": 2019,
   "header files": [
     {
       "table": "HD2019",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
       "file": "hd2019.csv",
-      "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26"
+      "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+      "institutions read": 6559
     },
     {
       "table": "HD2020",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
       "file": "hd2020.csv",
-      "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475"
+      "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+      "institutions read": 6440
     },
     {
       "table": "HD2021",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
       "file": "hd2021.csv",
-      "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389"
+      "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+      "institutions read": 6289
     },
     {
       "table": "HD2022",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
       "file": "hd2022.csv",
-      "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782"
+      "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+      "institutions read": 6256
     },
     {
       "table": "HD2023",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
       "file": "HD2023.csv",
-      "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b"
+      "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+      "institutions read": 6163
     },
     {
       "table": "HD2024",
       "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
       "file": "HD2024.csv",
-      "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345"
+      "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+      "institutions read": 6072
     },
     {
       "table": "HD2025",
       "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
       "file": "hd2025.csv",
-      "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf"
+      "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+      "institutions read": 5985
     }
   ],
   "header files not served": [
@@ -56,15 +63,13 @@
       "name": "University of Alabama at Birmingham",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 2,
@@ -72,15 +77,13 @@
       "name": "Auburn University at Montgomery",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 3,
@@ -88,15 +91,13 @@
       "name": "Jacksonville State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 4,
@@ -104,15 +105,13 @@
       "name": "Oakwood University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 5,
@@ -120,15 +119,13 @@
       "name": "Tuskegee University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 6,
@@ -136,15 +133,13 @@
       "name": "Charter College",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 7,
@@ -152,15 +147,13 @@
       "name": "Grand Canyon University",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 8,
@@ -168,15 +161,13 @@
       "name": "Arkansas Baptist College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 9,
@@ -184,15 +175,13 @@
       "name": "University of Central Arkansas",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 10,
@@ -200,15 +189,13 @@
       "name": "University of the Ozarks",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 11,
@@ -216,15 +203,13 @@
       "name": "Academy of Chinese Culture and Health Sciences",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 12,
@@ -232,15 +217,13 @@
       "name": "Azusa Pacific University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 13,
@@ -248,15 +231,13 @@
       "name": "California Institute of Technology",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 14,
@@ -264,15 +245,13 @@
       "name": "California State University-Chico",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 15,
@@ -280,15 +259,13 @@
       "name": "California State University-Northridge",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 16,
@@ -296,15 +273,13 @@
       "name": "Concordia University-Irvine",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 17,
@@ -312,15 +287,13 @@
       "name": "Cypress College",
       "sector": "public",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 18,
@@ -330,13 +303,30 @@
       "status": "scored",
       "closed or failed (primary)": true,
       "coding B": true,
-      "coding C": false,
+      "coding C": true,
       "standing grounds": [
-        "d"
+        "a",
+        "b"
       ],
-      "events": [],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2025",
+          "CLOSEDAT": "03/24/2025",
+          "year": 2025,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2025",
+          "DEATHYR": "2025",
+          "ACT": "D",
+          "year": 2025,
+          "voided by reappearance as active": null
+        }
+      ],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 19,
@@ -344,15 +334,13 @@
       "name": "Fuller Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 20,
@@ -360,15 +348,13 @@
       "name": "Humphreys University-Stockton and Modesto Campuses",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 21,
@@ -376,15 +362,13 @@
       "name": "Southern California Seminary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 22,
@@ -392,13 +376,10 @@
       "name": "Mills College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
+      "closed or failed (primary)": false,
       "coding B": false,
-      "coding C": true,
-      "standing grounds": [
-        "b",
-        "c"
-      ],
+      "coding C": false,
+      "standing grounds": [],
       "events": [
         {
           "ground": "b",
@@ -406,18 +387,18 @@
           "DEATHYR": "2022",
           "ACT": "C",
           "year": 2022,
-          "voided by reappearance as active": null
+          "voided by reappearance as active": "HD2023"
         },
         {
           "ground": "c",
           "file": "HD2022",
           "NEWID": "167358",
           "year": 2022,
-          "voided by reappearance as active": null
+          "voided by reappearance as active": "HD2023"
         }
       ],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 23,
@@ -425,15 +406,13 @@
       "name": "Musicians Institute",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 24,
@@ -441,15 +420,13 @@
       "name": "Hope International University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 25,
@@ -459,11 +436,28 @@
       "status": "scored",
       "closed or failed (primary)": true,
       "coding B": true,
-      "coding C": false,
+      "coding C": true,
       "standing grounds": [
-        "d"
+        "a",
+        "b"
       ],
-      "events": [],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2023",
+          "CLOSEDAT": "06/28/2023",
+          "year": 2023,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2023",
+          "DEATHYR": "2023",
+          "ACT": "D",
+          "year": 2023,
+          "voided by reappearance as active": null
+        }
+      ],
       "in first file": true,
       "in latest file": false
     },
@@ -473,15 +467,13 @@
       "name": "San Diego Mesa College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 27,
@@ -522,15 +514,13 @@
       "name": "Santa Monica College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 29,
@@ -538,15 +528,13 @@
       "name": "Skyline College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 30,
@@ -570,15 +558,13 @@
       "name": "Epic Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 32,
@@ -586,15 +572,13 @@
       "name": "Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 33,
@@ -602,15 +586,13 @@
       "name": "Colorado School of Mines",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 34,
@@ -618,15 +600,13 @@
       "name": "Front Range Community College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 35,
@@ -634,15 +614,13 @@
       "name": "University of Northern Colorado",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 36,
@@ -650,15 +628,13 @@
       "name": "United States Air Force Academy",
       "sector": "public",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 37,
@@ -666,15 +642,13 @@
       "name": "Charter Oak State College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 38,
@@ -682,15 +656,13 @@
       "name": "University of Hartford",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 39,
@@ -698,15 +670,13 @@
       "name": "University of Saint Joseph",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 40,
@@ -714,15 +684,13 @@
       "name": "Delaware Technical Community College-Terry",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 41,
@@ -730,15 +698,13 @@
       "name": "The Catholic University of America",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 42,
@@ -746,15 +712,13 @@
       "name": "Howard University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 43,
@@ -762,15 +726,13 @@
       "name": "Bethune-Cookman University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 44,
@@ -778,15 +740,13 @@
       "name": "Chipola College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 45,
@@ -794,15 +754,13 @@
       "name": "Florida Agricultural and Mechanical University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 46,
@@ -810,15 +768,13 @@
       "name": "Florida Institute of Technology",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 47,
@@ -826,15 +782,13 @@
       "name": "Full Sail University",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 48,
@@ -842,15 +796,13 @@
       "name": "Florida Gateway College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 49,
@@ -858,15 +810,13 @@
       "name": "North Florida College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 50,
@@ -874,15 +824,13 @@
       "name": "Pasco-Hernando State College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 51,
@@ -890,15 +838,13 @@
       "name": "Saint Johns River State College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 52,
@@ -906,15 +852,13 @@
       "name": "Tallahassee Community College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 53,
@@ -922,15 +866,13 @@
       "name": "Warner University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 54,
@@ -938,15 +880,13 @@
       "name": "Andrew College",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 55,
@@ -954,15 +894,13 @@
       "name": "Berry College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 56,
@@ -970,15 +908,13 @@
       "name": "Columbus State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 57,
@@ -986,15 +922,13 @@
       "name": "Emory University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 58,
@@ -1002,15 +936,13 @@
       "name": "University of Georgia",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 59,
@@ -1018,15 +950,13 @@
       "name": "Mercer University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 60,
@@ -1034,15 +964,13 @@
       "name": "Shorter University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 61,
@@ -1050,15 +978,13 @@
       "name": "Young Harris College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 62,
@@ -1066,15 +992,13 @@
       "name": "Boise Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 63,
@@ -1082,15 +1006,13 @@
       "name": "Brigham Young University-Idaho",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 64,
@@ -1098,15 +1020,13 @@
       "name": "Bethany Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 65,
@@ -1114,15 +1034,13 @@
       "name": "The Chicago School of Professional Psychology at Chicago",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 66,
@@ -1130,15 +1048,13 @@
       "name": "East-West University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 67,
@@ -1146,15 +1062,13 @@
       "name": "Hebrew Theological College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 68,
@@ -1162,15 +1076,13 @@
       "name": "Illinois Institute of Technology",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 69,
@@ -1178,15 +1090,13 @@
       "name": "Lakeview College of Nursing",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 70,
@@ -1194,15 +1104,13 @@
       "name": "Lutheran School of Theology at Chicago",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 71,
@@ -1210,15 +1118,13 @@
       "name": "Moody Bible Institute",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 72,
@@ -1226,15 +1132,13 @@
       "name": "Olivet Nazarene University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 73,
@@ -1242,15 +1146,13 @@
       "name": "Saint Francis Medical Center College of Nursing",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 74,
@@ -1258,15 +1160,13 @@
       "name": "Saint Anthony College of Nursing",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 75,
@@ -1274,15 +1174,13 @@
       "name": "VanderCook College of Music",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 76,
@@ -1290,15 +1188,13 @@
       "name": "Calumet College of Saint Joseph",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 77,
@@ -1306,15 +1202,13 @@
       "name": "Franklin College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 78,
@@ -1322,15 +1216,13 @@
       "name": "University of Indianapolis",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 79,
@@ -1338,15 +1230,13 @@
       "name": "Indiana University-Northwest",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 80,
@@ -1354,15 +1244,13 @@
       "name": "Mid-America College of Funeral Service",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 81,
@@ -1370,15 +1258,13 @@
       "name": "Saint Meinrad School of Theology",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 82,
@@ -1386,15 +1272,13 @@
       "name": "Allen College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 83,
@@ -1402,15 +1286,13 @@
       "name": "Divine Word College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 84,
@@ -1418,15 +1300,13 @@
       "name": "Graceland University-Lamoni",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 85,
@@ -1434,15 +1314,13 @@
       "name": "Loras College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 86,
@@ -1450,15 +1328,13 @@
       "name": "Mount Mercy University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 87,
@@ -1466,15 +1342,13 @@
       "name": "St Luke's College",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 88,
@@ -1482,15 +1356,13 @@
       "name": "Benedictine College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 89,
@@ -1498,15 +1370,13 @@
       "name": "Barclay College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 90,
@@ -1514,15 +1384,13 @@
       "name": "Kansas State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 91,
@@ -1530,15 +1398,13 @@
       "name": "University of Saint Mary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 92,
@@ -1546,15 +1412,13 @@
       "name": "Alice Lloyd College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 93,
@@ -1562,15 +1426,13 @@
       "name": "Clear Creek Baptist Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 94,
@@ -1578,15 +1440,13 @@
       "name": "Kentucky Mountain Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 95,
@@ -1594,15 +1454,13 @@
       "name": "Louisville Presbyterian Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 96,
@@ -1610,15 +1468,13 @@
       "name": "Spalding University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 97,
@@ -1626,15 +1482,13 @@
       "name": "Centenary College of Louisiana",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 98,
@@ -1642,15 +1496,13 @@
       "name": "Louisiana College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 99,
@@ -1658,15 +1510,13 @@
       "name": "Northwestern State University of Louisiana",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 100,
@@ -1674,15 +1524,13 @@
       "name": "University of Louisiana at Lafayette",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 101,
@@ -1690,15 +1538,13 @@
       "name": "Beal College",
       "sector": "forprofit",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 102,
@@ -1706,15 +1552,13 @@
       "name": "Maine College of Art",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 103,
@@ -1722,15 +1566,13 @@
       "name": "Bowie State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 104,
@@ -1738,15 +1580,13 @@
       "name": "Hood College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 105,
@@ -1754,15 +1594,13 @@
       "name": "University of Maryland Eastern Shore",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 106,
@@ -1770,15 +1608,13 @@
       "name": "Towson University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 107,
@@ -1802,15 +1638,13 @@
       "name": "Babson College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 109,
@@ -1818,15 +1652,13 @@
       "name": "Boston Architectural College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 110,
@@ -1834,15 +1666,13 @@
       "name": "Cambridge College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 111,
@@ -1850,15 +1680,13 @@
       "name": "Emmanuel College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 112,
@@ -1866,15 +1694,13 @@
       "name": "Gordon College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 113,
@@ -1882,15 +1708,13 @@
       "name": "Longy School of Music of Bard College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 114,
@@ -1898,15 +1722,13 @@
       "name": "University of Massachusetts Medical School Worcester",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 115,
@@ -1914,15 +1736,13 @@
       "name": "New England Law-Boston",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 116,
@@ -1963,15 +1783,13 @@
       "name": "Smith College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 118,
@@ -1979,15 +1797,13 @@
       "name": "Wellesley College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 119,
@@ -1995,15 +1811,13 @@
       "name": "Adrian College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 120,
@@ -2011,15 +1825,13 @@
       "name": "Calvin Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 121,
@@ -2027,15 +1839,13 @@
       "name": "University of Detroit Mercy",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 122,
@@ -2043,15 +1853,13 @@
       "name": "Henry Ford College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 123,
@@ -2059,15 +1867,13 @@
       "name": "Madonna University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 124,
@@ -2075,15 +1881,13 @@
       "name": "University of Michigan-Flint",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 125,
@@ -2091,15 +1895,13 @@
       "name": "Kuyper College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 126,
@@ -2107,15 +1909,13 @@
       "name": "Western Michigan University-Thomas M. Cooley Law School",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 127,
@@ -2123,15 +1923,13 @@
       "name": "Bethany Lutheran College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 128,
@@ -2139,15 +1937,13 @@
       "name": "Gustavus Adolphus College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 129,
@@ -2155,15 +1951,13 @@
       "name": "Mayo Clinic College of Medicine and Science",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 130,
@@ -2171,15 +1965,13 @@
       "name": "University of Minnesota-Morris",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 131,
@@ -2187,15 +1979,13 @@
       "name": "Saint Cloud State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 132,
@@ -2203,15 +1993,13 @@
       "name": "Rasmussen College-Minnesota",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 133,
@@ -2219,15 +2007,13 @@
       "name": "Blue Mountain College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 134,
@@ -2235,15 +2021,13 @@
       "name": "Mississippi State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 135,
@@ -2251,15 +2035,13 @@
       "name": "William Carey University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 136,
@@ -2267,15 +2049,13 @@
       "name": "University of Central Missouri",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 137,
@@ -2283,15 +2063,13 @@
       "name": "Drury University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 138,
@@ -2299,15 +2077,13 @@
       "name": "Kenrick Glennon Seminary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 139,
@@ -2315,15 +2091,13 @@
       "name": "Missouri Valley College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 140,
@@ -2331,15 +2105,13 @@
       "name": "Northwest Missouri State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 141,
@@ -2347,15 +2119,13 @@
       "name": "Rockhurst University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 142,
@@ -2396,15 +2166,13 @@
       "name": "Westminster College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 144,
@@ -2412,15 +2180,13 @@
       "name": "The University of Montana",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 145,
@@ -2428,15 +2194,13 @@
       "name": "Bryan College of Health Sciences",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 146,
@@ -2444,15 +2208,13 @@
       "name": "Nebraska Methodist College of Nursing & Allied Health",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 147,
@@ -2460,15 +2222,13 @@
       "name": "Nebraska Wesleyan University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 148,
@@ -2476,15 +2236,13 @@
       "name": "York College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 149,
@@ -2492,15 +2250,13 @@
       "name": "Truckee Meadows Community College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 150,
@@ -2508,15 +2264,13 @@
       "name": "University of New Hampshire-Main Campus",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 151,
@@ -2524,15 +2278,13 @@
       "name": "Berkeley College-Woodland Park",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 152,
@@ -2540,15 +2292,13 @@
       "name": "Felician University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 153,
@@ -2556,15 +2306,13 @@
       "name": "Kean University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 154,
@@ -2572,15 +2320,13 @@
       "name": "Ramapo College of New Jersey",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 155,
@@ -2588,15 +2334,13 @@
       "name": "Seton Hall University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 156,
@@ -2604,15 +2348,13 @@
       "name": "Navajo Technical University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 157,
@@ -2620,15 +2362,13 @@
       "name": "New Mexico State University-Main Campus",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 158,
@@ -2636,15 +2376,13 @@
       "name": "Bryant & Stratton College-Albany",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 159,
@@ -2652,15 +2390,13 @@
       "name": "Bard College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 160,
@@ -2668,15 +2404,13 @@
       "name": "Bryant & Stratton College-Syracuse North",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 161,
@@ -2684,15 +2418,13 @@
       "name": "Colgate University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 162,
@@ -2700,15 +2432,13 @@
       "name": "Culinary Institute of America",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 163,
@@ -2716,15 +2446,13 @@
       "name": "CUNY John Jay College of Criminal Justice",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 164,
@@ -2732,15 +2460,13 @@
       "name": "CUNY York College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 165,
@@ -2748,15 +2474,13 @@
       "name": "Fordham University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 166,
@@ -2764,15 +2488,13 @@
       "name": "Hofstra University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 167,
@@ -2780,15 +2502,13 @@
       "name": "LIM College",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 168,
@@ -2796,15 +2516,13 @@
       "name": "Maria College of Albany",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 169,
@@ -2812,15 +2530,13 @@
       "name": "Mesivta of Eastern Parkway-Yeshiva Zichron Meilech",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 170,
@@ -2828,15 +2544,13 @@
       "name": "Nazareth College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 171,
@@ -2844,15 +2558,13 @@
       "name": "New York University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 172,
@@ -2860,15 +2572,13 @@
       "name": "Paul Smiths College of Arts and Science",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 173,
@@ -2876,15 +2586,13 @@
       "name": "Rabbinical College of Long Island",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 174,
@@ -2892,15 +2600,13 @@
       "name": "Rockefeller University",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 175,
@@ -2908,15 +2614,13 @@
       "name": "St. Thomas Aquinas College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 176,
@@ -2924,15 +2628,13 @@
       "name": "Saint John Fisher College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 177,
@@ -2940,15 +2642,13 @@
       "name": "Farmingdale State College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 178,
@@ -2956,15 +2656,13 @@
       "name": "SUNY College of Environmental Science and Forestry",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 179,
@@ -2972,15 +2670,13 @@
       "name": "SUNY Oneonta",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 180,
@@ -2988,15 +2684,13 @@
       "name": "SUNY Downstate Health Sciences University",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 181,
@@ -3004,15 +2698,13 @@
       "name": "Torah Temimah Talmudical Seminary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 182,
@@ -3020,15 +2712,13 @@
       "name": "United States Military Academy",
       "sector": "public",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 183,
@@ -3036,15 +2726,13 @@
       "name": "The College of Westchester",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 184,
@@ -3052,15 +2740,13 @@
       "name": "Yeshivath Viznitz",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 185,
@@ -3068,15 +2754,13 @@
       "name": "Cabarrus College of Health Sciences",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 186,
@@ -3084,15 +2768,13 @@
       "name": "East Carolina University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 187,
@@ -3100,15 +2782,13 @@
       "name": "Heritage Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 188,
@@ -3116,15 +2796,13 @@
       "name": "Mars Hill University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 189,
@@ -3132,15 +2810,13 @@
       "name": "North Carolina A & T State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 190,
@@ -3148,15 +2824,13 @@
       "name": "North Carolina Wesleyan College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 191,
@@ -3164,15 +2838,13 @@
       "name": "Salem College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 192,
@@ -3180,15 +2852,13 @@
       "name": "Wingate University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 193,
@@ -3196,15 +2866,13 @@
       "name": "University of Mary",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 194,
@@ -3212,15 +2880,13 @@
       "name": "Turtle Mountain Community College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 195,
@@ -3228,15 +2894,13 @@
       "name": "Athenaeum of Ohio",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 196,
@@ -3244,15 +2908,13 @@
       "name": "Case Western Reserve University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 197,
@@ -3260,15 +2922,13 @@
       "name": "Clark State Community College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 198,
@@ -3300,15 +2960,13 @@
       "name": "John Carroll University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 200,
@@ -3316,15 +2974,13 @@
       "name": "Kettering College",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 201,
@@ -3332,15 +2988,13 @@
       "name": "Methodist Theological School in Ohio",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 202,
@@ -3348,15 +3002,13 @@
       "name": "Muskingum University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 203,
@@ -3364,15 +3016,13 @@
       "name": "Ohio Northern University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 204,
@@ -3380,15 +3030,13 @@
       "name": "Ohio Wesleyan University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 205,
@@ -3396,15 +3044,13 @@
       "name": "The Modern College of Design",
       "sector": "forprofit",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 206,
@@ -3412,15 +3058,13 @@
       "name": "University of Toledo",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 207,
@@ -3428,15 +3072,13 @@
       "name": "Wilberforce University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 208,
@@ -3444,15 +3086,13 @@
       "name": "Xavier University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 209,
@@ -3460,15 +3100,13 @@
       "name": "University of Central Oklahoma",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 210,
@@ -3476,15 +3114,13 @@
       "name": "Northwestern Oklahoma State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 211,
@@ -3492,15 +3128,13 @@
       "name": "Oklahoma Baptist University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 212,
@@ -3508,15 +3142,13 @@
       "name": "Southeastern Oklahoma State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 213,
@@ -3524,15 +3156,13 @@
       "name": "Lewis & Clark College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 214,
@@ -3540,15 +3170,13 @@
       "name": "Oregon Health & Science University",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 215,
@@ -3556,15 +3184,13 @@
       "name": "Portland State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 216,
@@ -3572,15 +3198,13 @@
       "name": "Western Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 217,
@@ -3588,15 +3212,13 @@
       "name": "Alvernia University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 218,
@@ -3637,15 +3259,13 @@
       "name": "Cedar Crest College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 220,
@@ -3653,15 +3273,13 @@
       "name": "Delaware Valley University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 221,
@@ -3669,15 +3287,13 @@
       "name": "Elizabethtown College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 222,
@@ -3685,15 +3301,13 @@
       "name": "Gratz College",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 223,
@@ -3701,15 +3315,13 @@
       "name": "Immaculata University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 224,
@@ -3717,15 +3329,13 @@
       "name": "Lackawanna College",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 225,
@@ -3766,15 +3376,13 @@
       "name": "Mercyhurst University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 227,
@@ -3782,15 +3390,13 @@
       "name": "Muhlenberg College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 228,
@@ -3812,7 +3418,7 @@
         }
       ],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 229,
@@ -3869,15 +3475,13 @@
       "name": "Saint Vincent Seminary",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 232,
@@ -3885,15 +3489,13 @@
       "name": "Temple University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 233,
@@ -3901,15 +3503,13 @@
       "name": "University of Valley Forge",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 234,
@@ -3917,15 +3517,13 @@
       "name": "Widener University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 235,
@@ -3933,15 +3531,13 @@
       "name": "Johnson & Wales University-Providence",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 236,
@@ -3949,15 +3545,13 @@
       "name": "Northpoint Bible College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 237,
@@ -3965,15 +3559,13 @@
       "name": "College of Charleston",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 238,
@@ -3981,15 +3573,13 @@
       "name": "Columbia International University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 239,
@@ -3997,15 +3587,13 @@
       "name": "Lander University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 240,
@@ -4013,15 +3601,13 @@
       "name": "University of South Carolina Aiken",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 241,
@@ -4029,15 +3615,13 @@
       "name": "Winthrop University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 242,
@@ -4045,15 +3629,13 @@
       "name": "National American University-Rapid City",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 243,
@@ -4061,15 +3643,13 @@
       "name": "South Dakota State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 244,
@@ -4077,15 +3657,13 @@
       "name": "Belmont University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 245,
@@ -4095,11 +3673,28 @@
       "status": "scored",
       "closed or failed (primary)": true,
       "coding B": true,
-      "coding C": false,
+      "coding C": true,
       "standing grounds": [
-        "d"
+        "a",
+        "b"
       ],
-      "events": [],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2023",
+          "CLOSEDAT": "05/26/2023",
+          "year": 2023,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2023",
+          "DEATHYR": "2023",
+          "ACT": "D",
+          "year": 2023,
+          "voided by reappearance as active": null
+        }
+      ],
       "in first file": true,
       "in latest file": false
     },
@@ -4109,15 +3704,13 @@
       "name": "South College",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 247,
@@ -4125,15 +3718,13 @@
       "name": "Meharry Medical College",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 248,
@@ -4141,15 +3732,13 @@
       "name": "Rhodes College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 249,
@@ -4157,15 +3746,13 @@
       "name": "The University of Tennessee-Martin",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 250,
@@ -4173,15 +3760,13 @@
       "name": "Amberton University",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 251,
@@ -4189,15 +3774,13 @@
       "name": "Austin Presbyterian Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 252,
@@ -4205,15 +3788,13 @@
       "name": "Texas A & M University-Corpus Christi",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 253,
@@ -4221,15 +3802,13 @@
       "name": "Texas A&M University-Texarkana",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 254,
@@ -4237,15 +3816,13 @@
       "name": "University of Houston-Victoria",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 255,
@@ -4253,15 +3830,13 @@
       "name": "LeTourneau University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 256,
@@ -4269,15 +3844,13 @@
       "name": "Wade College",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 257,
@@ -4285,15 +3858,13 @@
       "name": "Prairie View A & M University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 258,
@@ -4301,15 +3872,13 @@
       "name": "South Texas College of Law Houston",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 259,
@@ -4317,15 +3886,13 @@
       "name": "Southwestern Christian College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 260,
@@ -4333,15 +3900,13 @@
       "name": "Texas A & M University-Kingsville",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 261,
@@ -4349,15 +3914,13 @@
       "name": "Texas Chiropractic College Foundation Inc",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 262,
@@ -4365,15 +3928,13 @@
       "name": "Texas Tech University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 263,
@@ -4381,15 +3942,13 @@
       "name": "Brigham Young University-Provo",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 264,
@@ -4397,15 +3956,13 @@
       "name": "Southern Utah University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 265,
@@ -4413,15 +3970,13 @@
       "name": "Bennington College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 266,
@@ -4429,15 +3984,13 @@
       "name": "Saint Michael's College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 267,
@@ -4445,15 +3998,13 @@
       "name": "Vermont Law School",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 268,
@@ -4461,15 +4012,13 @@
       "name": "Christopher Newport University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 269,
@@ -4477,15 +4026,13 @@
       "name": "Emory & Henry College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 270,
@@ -4493,15 +4040,13 @@
       "name": "Liberty University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 271,
@@ -4509,15 +4054,13 @@
       "name": "Marymount University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 272,
@@ -4525,15 +4068,13 @@
       "name": "Randolph College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 273,
@@ -4541,15 +4082,13 @@
       "name": "Strayer University-Virginia",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 274,
@@ -4557,15 +4096,13 @@
       "name": "Virginia University of Lynchburg",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 275,
@@ -4573,15 +4110,13 @@
       "name": "Centralia College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 276,
@@ -4589,15 +4124,13 @@
       "name": "Eastern Washington University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 277,
@@ -4605,15 +4138,13 @@
       "name": "Highline College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 278,
@@ -4621,15 +4152,13 @@
       "name": "Renton Technical College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 279,
@@ -4637,15 +4166,13 @@
       "name": "Spokane Community College",
       "sector": "public",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 280,
@@ -4653,15 +4180,13 @@
       "name": "Western Washington University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 281,
@@ -4669,15 +4194,13 @@
       "name": "Bethany College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 282,
@@ -4718,15 +4241,13 @@
       "name": "West Virginia State University",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 284,
@@ -4734,15 +4255,13 @@
       "name": "Madison Area Technical College",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 285,
@@ -4750,15 +4269,13 @@
       "name": "Edgewood College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 286,
@@ -4766,15 +4283,13 @@
       "name": "Milwaukee School of Engineering",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 287,
@@ -4782,15 +4297,13 @@
       "name": "Viterbo University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 288,
@@ -4798,15 +4311,13 @@
       "name": "University of Wisconsin-Oshkosh",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 289,
@@ -4814,15 +4325,13 @@
       "name": "University of Wisconsin-Milwaukee",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 290,
@@ -4832,11 +4341,28 @@
       "status": "scored",
       "closed or failed (primary)": true,
       "coding B": true,
-      "coding C": false,
+      "coding C": true,
       "standing grounds": [
-        "d"
+        "a",
+        "b"
       ],
-      "events": [],
+      "events": [
+        {
+          "ground": "a",
+          "file": "HD2024",
+          "CLOSEDAT": "12/31/2023",
+          "year": 2024,
+          "voided by reappearance as active": null
+        },
+        {
+          "ground": "b",
+          "file": "HD2024",
+          "DEATHYR": "2024",
+          "ACT": "D",
+          "year": 2024,
+          "voided by reappearance as active": null
+        }
+      ],
       "in first file": true,
       "in latest file": false
     },
@@ -4846,15 +4372,13 @@
       "name": "Carlos Albizu University-San Juan",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 292,
@@ -4862,15 +4386,13 @@
       "name": "Universidad Ana G. Mendez-Cupey Campus",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 293,
@@ -4878,15 +4400,13 @@
       "name": "Humacao Community College",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 294,
@@ -4894,15 +4414,13 @@
       "name": "University of Puerto Rico-Mayaguez",
       "sector": "public",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 295,
@@ -4910,15 +4428,13 @@
       "name": "Seminario Evangelico de Puerto Rico",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 296,
@@ -4926,15 +4442,13 @@
       "name": "Stanford University",
       "sector": "private",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 297,
@@ -4942,15 +4456,13 @@
       "name": "Antioch University-Santa Barbara",
       "sector": "private",
       "status": "structurally unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 298,
@@ -4958,15 +4470,13 @@
       "name": "Ecumenical Theological Seminary",
       "sector": "private",
       "status": "unscorable",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 299,
@@ -4974,15 +4484,13 @@
       "name": "ECPI University",
       "sector": "forprofit",
       "status": "scored",
-      "closed or failed (primary)": true,
-      "coding B": true,
+      "closed or failed (primary)": false,
+      "coding B": false,
       "coding C": false,
-      "standing grounds": [
-        "d"
-      ],
+      "standing grounds": [],
       "events": [],
       "in first file": true,
-      "in latest file": false
+      "in latest file": true
     },
     {
       "slot": 300,

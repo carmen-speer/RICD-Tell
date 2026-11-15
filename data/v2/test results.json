@@ -1,8 +1,8 @@
 {
   "protocol": "sampling protocol v2.md, phase 8 (measures and revision triggers)",
-  "written at (UTC)": "2026-11-15T14:03:20.809873+00:00",
-  "classifier v2 (commit, time)": "26d03f5fa20d28f9a9fd7b04504d45d9b73bd759 2026-11-15T13:10:09Z",
-  "test scores (commit, time)": "26d03f5fa20d28f9a9fd7b04504d45d9b73bd759 2026-11-15T13:10:09Z",
+  "written at (UTC)": "2026-11-15T14:17:21.014989+00:00",
+  "classifier v2 (commit, time)": "7c6a2c688d21d118b070af0a2bbf1c509f656b33 2026-11-15T03:32:20Z",
+  "test scores (commit, time)": "6d33be1f60f2b76fe6cd4baf47b48c6b8ae44bd2 2026-11-15T07:14:09Z",
   "comparator flags (commit, time)": "26d03f5fa20d28f9a9fd7b04504d45d9b73bd759 2026-11-15T13:10:09Z",
   "header files used": [
     "HD2019",
@@ -19,232 +19,232 @@
   "threshold": 0.16,
   "primary result (scored institutions, primary coding)": {
     "N": 245,
-    "E (closed or failed)": 245,
+    "E (closed or failed)": 11,
     "flagged": 39,
-    "true positives": 39,
-    "false positives": 0,
-    "sensitivity S": 0.15918367346938775,
+    "true positives": 6,
+    "false positives": 33,
+    "sensitivity S": 0.5454545454545454,
     "S 95% Wilson": [
-      0.11868599547477536,
-      0.21020397008223424
+      0.280091537409322,
+      0.7872872837754024
     ],
-    "false-alarm rate F": null,
+    "false-alarm rate F": 0.14102564102564102,
     "F 95% Wilson": [
-      null,
-      null
+      0.1022124881707466,
+      0.19143462939653497
     ],
-    "precision": 1.0,
+    "precision": 0.15384615384615385,
     "precision 95% Wilson": [
-      0.9103331462924287,
-      1.0
+      0.07247472376982099,
+      0.29729463648926696
     ],
-    "closure rate": 1.0,
-    "lift": 1.0,
-    "J": null,
+    "closure rate": 0.044897959183673466,
+    "lift": 3.426573426573427,
+    "J": 0.4044289044289044,
     "J 95% bootstrap": [
-      null,
-      null
+      0.08421750663129976,
+      0.71684350132626
     ],
-    "bootstrap resamples dropped (no J)": 10000
+    "bootstrap resamples dropped (no J)": 1
   },
   "underpowered for sensitivity (E < 10)": false,
   "triggers": {
-    "R1 (no discrimination)": true,
-    "R2 (low sensitivity)": true,
+    "R1 (no discrimination)": false,
+    "R2 (low sensitivity)": false,
     "R3 (excess false alarms)": false,
     "R4 (no advantage over the comparator)": false
   },
-  "passed": false,
+  "passed": true,
   "R4 comparison (scored institutions with a computable comparator)": {
     "N": 245,
     "tracker": {
       "N": 245,
-      "E (closed or failed)": 245,
+      "E (closed or failed)": 11,
       "flagged": 39,
-      "true positives": 39,
-      "false positives": 0,
-      "sensitivity S": 0.15918367346938775,
+      "true positives": 6,
+      "false positives": 33,
+      "sensitivity S": 0.5454545454545454,
       "S 95% Wilson": [
-        0.11868599547477536,
-        0.21020397008223424
+        0.280091537409322,
+        0.7872872837754024
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 0.14102564102564102,
       "F 95% Wilson": [
-        null,
-        null
+        0.1022124881707466,
+        0.19143462939653497
       ],
-      "precision": 1.0,
+      "precision": 0.15384615384615385,
       "precision 95% Wilson": [
-        0.9103331462924287,
-        1.0
+        0.07247472376982099,
+        0.29729463648926696
       ],
-      "closure rate": 1.0,
-      "lift": 1.0,
-      "J": null,
+      "closure rate": 0.044897959183673466,
+      "lift": 3.426573426573427,
+      "J": 0.4044289044289044,
       "J 95% bootstrap": [
-        null,
-        null
+        0.08421750663129976,
+        0.71684350132626
       ],
-      "bootstrap resamples dropped (no J)": 10000
+      "bootstrap resamples dropped (no J)": 1
     },
     "comparator": {
       "N": 245,
-      "E (closed or failed)": 245,
+      "E (closed or failed)": 11,
       "flagged": 43,
-      "true positives": 43,
-      "false positives": 0,
-      "sensitivity S": 0.17551020408163265,
+      "true positives": 1,
+      "false positives": 42,
+      "sensitivity S": 0.09090909090909091,
       "S 95% Wilson": [
-        0.1329907541351289,
-        0.22804819510777247
+        0.016232172885884855,
+        0.37735843645159567
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 0.1794871794871795,
       "F 95% Wilson": [
-        null,
-        null
+        0.13561869550858435,
+        0.23370908803363133
       ],
-      "precision": 1.0,
+      "precision": 0.023255813953488372,
       "precision 95% Wilson": [
-        0.9179901967742088,
-        1.0
+        0.004117087274333769,
+        0.12058993440607177
       ],
-      "closure rate": 1.0,
-      "lift": 1.0,
-      "J": null,
+      "closure rate": 0.044897959183673466,
+      "lift": 0.5179704016913319,
+      "J": -0.08857808857808858,
       "J 95% bootstrap": [
-        null,
-        null
+        -0.21794871794871795,
+        0.13320869353929024
       ],
-      "bootstrap resamples dropped (no J)": 10000
+      "bootstrap resamples dropped (no J)": 1
     }
   },
   "sensitivity codings (never used for triggers)": {
     "coding B (successor records count as surviving)": {
       "N": 245,
-      "E (closed or failed)": 240,
+      "E (closed or failed)": 7,
       "flagged": 39,
-      "true positives": 38,
-      "false positives": 1,
-      "sensitivity S": 0.15833333333333333,
+      "true positives": 5,
+      "false positives": 34,
+      "sensitivity S": 0.7142857142857143,
       "S 95% Wilson": [
-        0.11758132712042738,
-        0.20985051817297115
+        0.35893445183261935,
+        0.9177810759959433
       ],
-      "false-alarm rate F": 0.2,
+      "false-alarm rate F": 0.14285714285714285,
       "F 95% Wilson": [
-        0.03622410863243014,
-        0.6244653702374747
+        0.10406450629712839,
+        0.1929956386880156
       ],
-      "precision": 0.9743589743589743,
+      "precision": 0.1282051282051282,
       "precision 95% Wilson": [
-        0.8681900983014993,
-        0.99545929689901
+        0.056028175369713926,
+        0.26705743379745456
       ],
-      "closure rate": 0.9795918367346939,
-      "lift": 0.9946581196581197,
-      "J": -0.041666666666666685
+      "closure rate": 0.02857142857142857,
+      "lift": 4.487179487179487,
+      "J": 0.5714285714285714
     },
     "coding C (absence alone counts as surviving)": {
       "N": 245,
-      "E (closed or failed)": 7,
+      "E (closed or failed)": 10,
       "flagged": 39,
-      "true positives": 1,
-      "false positives": 38,
-      "sensitivity S": 0.14285714285714285,
+      "true positives": 5,
+      "false positives": 34,
+      "sensitivity S": 0.5,
       "S 95% Wilson": [
-        0.02567962434474355,
-        0.5131278292743189
+        0.236593090512564,
+        0.7634069094874361
       ],
-      "false-alarm rate F": 0.15966386554621848,
+      "false-alarm rate F": 0.14468085106382977,
       "F 95% Wilson": [
-        0.11858941959611002,
-        0.21155024797796834
+        0.10541801621119448,
+        0.19537339234667986
       ],
-      "precision": 0.02564102564102564,
+      "precision": 0.1282051282051282,
       "precision 95% Wilson": [
-        0.004540703100990098,
-        0.13180990169850076
+        0.056028175369713926,
+        0.26705743379745456
       ],
-      "closure rate": 0.02857142857142857,
-      "lift": 0.8974358974358975,
-      "J": -0.016806722689075626
+      "closure rate": 0.04081632653061224,
+      "lift": 3.141025641025641,
+      "J": 0.3553191489361702
     }
   },
   "by sector": {
     "public": {
       "N": 79,
-      "E (closed or failed)": 79,
+      "E (closed or failed)": 2,
       "flagged": 8,
-      "true positives": 8,
-      "false positives": 0,
-      "sensitivity S": 0.10126582278481013,
+      "true positives": 0,
+      "false positives": 8,
+      "sensitivity S": 0.0,
       "S 95% Wilson": [
-        0.05221180794058543,
-        0.18729941147963136
+        0.0,
+        0.6576197724933469
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 0.1038961038961039,
       "F 95% Wilson": [
-        null,
-        null
+        0.053592923647580934,
+        0.19184375092681488
       ],
-      "precision": 1.0,
+      "precision": 0.0,
       "precision 95% Wilson": [
-        0.6755924351161198,
-        1.0
+        0.0,
+        0.32440756488388023
       ],
-      "closure rate": 1.0,
-      "lift": 1.0,
-      "J": null
+      "closure rate": 0.02531645569620253,
+      "lift": 0.0,
+      "J": -0.1038961038961039
     },
     "private": {
       "N": 146,
-      "E (closed or failed)": 146,
+      "E (closed or failed)": 4,
       "flagged": 11,
-      "true positives": 11,
-      "false positives": 0,
-      "sensitivity S": 0.07534246575342465,
+      "true positives": 1,
+      "false positives": 10,
+      "sensitivity S": 0.25,
       "S 95% Wilson": [
-        0.04258831995307833,
-        0.12987035085856252
+        0.04558726080970055,
+        0.6993581574175981
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 0.07042253521126761,
       "F 95% Wilson": [
-        null,
-        null
+        0.03869889992451165,
+        0.12477628068243898
       ],
-      "precision": 1.0,
+      "precision": 0.09090909090909091,
       "precision 95% Wilson": [
-        0.7411670330319684,
-        1.0
+        0.016232172885884855,
+        0.37735843645159567
       ],
-      "closure rate": 1.0,
-      "lift": 1.0,
-      "J": null
+      "closure rate": 0.0273972602739726,
+      "lift": 3.3181818181818183,
+      "J": 0.17957746478873238
     },
     "forprofit": {
       "N": 20,
-      "E (closed or failed)": 20,
+      "E (closed or failed)": 5,
       "flagged": 20,
-      "true positives": 20,
-      "false positives": 0,
+      "true positives": 5,
+      "false positives": 15,
       "sensitivity S": 1.0,
       "S 95% Wilson": [
-        0.8388748419471806,
+        0.5655175352168251,
         1.0
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 1.0,
       "F 95% Wilson": [
-        null,
-        null
-      ],
-      "precision": 1.0,
-      "precision 95% Wilson": [
-        0.8388748419471806,
+        0.7961166989641515,
         1.0
       ],
-      "closure rate": 1.0,
+      "precision": 0.25,
+      "precision 95% Wilson": [
+        0.11186170140766569,
+        0.468700877618744
+      ],
+      "closure rate": 0.25,
       "lift": 1.0,
-      "J": null
+      "J": 0.0
     }
   },
   "missing-data features": {
@@ -254,64 +254,64 @@
     },
     "variant without them (analysis only)": {
       "N": 245,
-      "E (closed or failed)": 245,
+      "E (closed or failed)": 11,
       "flagged": 35,
-      "true positives": 35,
-      "false positives": 0,
-      "sensitivity S": 0.14285714285714285,
+      "true positives": 6,
+      "false positives": 29,
+      "sensitivity S": 0.5454545454545454,
       "S 95% Wilson": [
-        0.10454483889504237,
-        0.19219614297607548
+        0.280091537409322,
+        0.7872872837754024
       ],
-      "false-alarm rate F": null,
+      "false-alarm rate F": 0.12393162393162394,
       "F 95% Wilson": [
-        null,
-        null
+        0.08769149309464794,
+        0.17231977292821846
       ],
-      "precision": 1.0,
+      "precision": 0.17142857142857143,
       "precision 95% Wilson": [
-        0.9010990076755959,
-        0.9999999999999999
+        0.08102640053701589,
+        0.3268228229904496
       ],
-      "closure rate": 1.0,
-      "lift": 1.0,
-      "J": null
+      "closure rate": 0.044897959183673466,
+      "lift": 3.8181818181818183,
+      "J": 0.4215229215229215
     }
   },
   "unscorable institutions": {
     "closure rate, scored": {
       "N": 245,
-      "closed or failed": 245,
-      "rate": 1.0
+      "closed or failed": 11,
+      "rate": 0.044897959183673466
     },
     "closure rate, unscorable": {
       "N": 42,
-      "closed or failed": 42,
-      "rate": 1.0
+      "closed or failed": 4,
+      "rate": 0.09523809523809523
     },
     "closure rate, structurally unscorable": {
       "N": 13,
-      "closed or failed": 12,
-      "rate": 0.9230769230769231
+      "closed or failed": 1,
+      "rate": 0.07692307692307693
     },
     "bounds over all drawn non-structural institutions": {
       "every unscorable counted as flagged": {
         "N": 287,
-        "sensitivity S": 0.28222996515679444,
-        "false-alarm rate F": null,
-        "J": null
+        "sensitivity S": 0.6666666666666666,
+        "false-alarm rate F": 0.2610294117647059,
+        "J": 0.40563725490196073
       },
       "every unscorable counted as not flagged": {
         "N": 287,
-        "sensitivity S": 0.13588850174216027,
-        "false-alarm rate F": null,
-        "J": null
+        "sensitivity S": 0.4,
+        "false-alarm rate F": 0.1213235294117647,
+        "J": 0.2786764705882353
       }
     }
   },
   "seed disagreement": {
     "scored institutions whose three seeds disagree": 2,
-    "of them closed or failed": 2,
+    "of them closed or failed": 0,
     "institutions": [
       {
         "unitid": "218645",
@@ -321,7 +321,7 @@
           false,
           true
         ],
-        "closed or failed": true
+        "closed or failed": false
       },
       {
         "unitid": "236382",
@@ -331,16 +331,215 @@
           false,
           false
         ],
-        "closed or failed": true
+        "closed or failed": false
       }
     ]
   },
-  "flagged survivors (for the separate anchor analysis)": [],
+  "flagged survivors (for the separate anchor analysis)": [
+    {
+      "unitid": "102845",
+      "name": "Charter College",
+      "sector": "forprofit",
+      "score": 0.5288701973727741
+    },
+    {
+      "unitid": "104717",
+      "name": "Grand Canyon University",
+      "sector": "forprofit",
+      "score": 0.5590208923653684
+    },
+    {
+      "unitid": "119270",
+      "name": "Musicians Institute",
+      "sector": "forprofit",
+      "score": 0.23558543504000562
+    },
+    {
+      "unitid": "122375",
+      "name": "San Diego Mesa College",
+      "sector": "public",
+      "score": 0.3152239060557669
+    },
+    {
+      "unitid": "123509",
+      "name": "Skyline College",
+      "sector": "public",
+      "score": 0.4869772336987424
+    },
+    {
+      "unitid": "124487",
+      "name": "Epic Bible College",
+      "sector": "private",
+      "score": 0.5098484586239014
+    },
+    {
+      "unitid": "126076",
+      "name": "Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary",
+      "sector": "private",
+      "score": 0.32526567988335564
+    },
+    {
+      "unitid": "130907",
+      "name": "Delaware Technical Community College-Terry",
+      "sector": "public",
+      "score": 0.39643962486538237
+    },
+    {
+      "unitid": "134237",
+      "name": "Full Sail University",
+      "sector": "forprofit",
+      "score": 0.7386554759983016
+    },
+    {
+      "unitid": "144883",
+      "name": "East-West University",
+      "sector": "private",
+      "score": 0.3827532526955092
+    },
+    {
+      "unitid": "145497",
+      "name": "Hebrew Theological College",
+      "sector": "private",
+      "score": 0.20771004308860858
+    },
+    {
+      "unitid": "151962",
+      "name": "Mid-America College of Funeral Service",
+      "sector": "private",
+      "score": 0.3163627803247421
+    },
+    {
+      "unitid": "175014",
+      "name": "Rasmussen College-Minnesota",
+      "sector": "forprofit",
+      "score": 0.3233071921090602
+    },
+    {
+      "unitid": "183789",
+      "name": "Berkeley College-Woodland Park",
+      "sector": "forprofit",
+      "score": 0.4290121822527512
+    },
+    {
+      "unitid": "187596",
+      "name": "Navajo Technical University",
+      "sector": "public",
+      "score": 0.21596849903174228
+    },
+    {
+      "unitid": "188517",
+      "name": "Bryant & Stratton College-Albany",
+      "sector": "forprofit",
+      "score": 0.43494275820776285
+    },
+    {
+      "unitid": "189565",
+      "name": "Bryant & Stratton College-Syracuse North",
+      "sector": "forprofit",
+      "score": 0.4695641333143576
+    },
+    {
+      "unitid": "192271",
+      "name": "LIM College",
+      "sector": "forprofit",
+      "score": 0.3182691846871321
+    },
+    {
+      "unitid": "193061",
+      "name": "Mesivta of Eastern Parkway-Yeshiva Zichron Meilech",
+      "sector": "private",
+      "score": 0.3174994691284461
+    },
+    {
+      "unitid": "194736",
+      "name": "Rabbinical College of Long Island",
+      "sector": "private",
+      "score": 0.5076233275740337
+    },
+    {
+      "unitid": "196583",
+      "name": "Torah Temimah Talmudical Seminary",
+      "sector": "private",
+      "score": 0.42248381175347877
+    },
+    {
+      "unitid": "197285",
+      "name": "The College of Westchester",
+      "sector": "forprofit",
+      "score": 0.3018349553591223
+    },
+    {
+      "unitid": "219204",
+      "name": "National American University-Rapid City",
+      "sector": "forprofit",
+      "score": 0.39022996356095624
+    },
+    {
+      "unitid": "220552",
+      "name": "South College",
+      "sector": "forprofit",
+      "score": 0.3419911013993884
+    },
+    {
+      "unitid": "226879",
+      "name": "Wade College",
+      "sector": "forprofit",
+      "score": 0.5168561120786944
+    },
+    {
+      "unitid": "228486",
+      "name": "Southwestern Christian College",
+      "sector": "private",
+      "score": 0.28556277801486424
+    },
+    {
+      "unitid": "232557",
+      "name": "Liberty University",
+      "sector": "private",
+      "score": 0.24961929656117673
+    },
+    {
+      "unitid": "233684",
+      "name": "Strayer University-Virginia",
+      "sector": "forprofit",
+      "score": 0.1921422020316276
+    },
+    {
+      "unitid": "235431",
+      "name": "Highline College",
+      "sector": "public",
+      "score": 0.8916185629831356
+    },
+    {
+      "unitid": "236382",
+      "name": "Renton Technical College",
+      "sector": "public",
+      "score": 0.21117848821283727
+    },
+    {
+      "unitid": "238263",
+      "name": "Madison Area Technical College",
+      "sector": "public",
+      "score": 0.3182735431154321
+    },
+    {
+      "unitid": "243197",
+      "name": "University of Puerto Rico-Mayaguez",
+      "sector": "public",
+      "score": 0.49124452584910017
+    },
+    {
+      "unitid": "248934",
+      "name": "ECPI University",
+      "sector": "forprofit",
+      "score": 0.27262676995289425
+    }
+  ],
   "panel sanity check": "a separate step; not part of this result",
   "machine": {
-    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
     "python": "3.11.18",
-    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
     "environment variables": {
       "NUMBA_CPU_NAME": null,
       "OPENBLAS_NUM_THREADS": null,
