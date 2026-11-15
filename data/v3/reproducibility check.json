@@ -1,11 +1,11 @@
 {
   "protocol": "sampling protocol v3.md, reproducibility check (before any drift-term scoring)",
-  "written at (UTC)": "2026-11-15T17:01:58.914817+00:00",
-  "verdict": "failed",
-  "drift terms off: identical to committed v2 scores": false,
-  "drift terms on: identical on both machines": true,
+  "written at (UTC)": "2026-11-15T22:29:40.890270+00:00",
+  "verdict": "passed",
+  "drift terms off: identical to the pipeline before the drift terms": true,
+  "drift terms on: identical on both machines (reported, not judged)": false,
   "processors": [
-    "AMD EPYC 7763 64-Core Processor",
+    "Intel(R) Xeon(R) 6975P-C",
     "AMD EPYC 7763 64-Core Processor"
   ],
   "pipeline file hashes": {
@@ -24,7 +24,7 @@
       "replica": "a",
       "unitid": "100663",
       "name": "University of Alabama at Birmingham",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -34,13 +34,23 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.004769738865081363,
+        "d_A_final": 0.045267640263610076,
+        "delta_R_final": 0.08751420272927546,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.037173342153182354,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "a",
       "unitid": "100830",
       "name": "Auburn University at Montgomery",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -50,29 +60,23 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.003725469072378751,
+        "d_A_final": 0.0006930661275343364,
+        "delta_R_final": 0.02005988901203093,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.008703705450621713,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "a",
       "unitid": "101480",
       "name": "Jacksonville State University",
-      "differences": {
-        "d_A_trend": 0.002694497890965375,
-        "d_A_final": 0.021251372456713546,
-        "delta_R_final": 0.006002178178294293,
-        "frac_high_entropy": 0.0,
-        "debt_spike": 0.0,
-        "delta_R_trend": 0.0026730034597624575,
-        "reserve_adequacy": 0.0,
-        "research_ratio": 0.0
-      },
-      "equal": false
-    },
-    {
-      "replica": "a",
-      "unitid": "101912",
-      "name": "Oakwood University",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -82,29 +86,75 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
+    },
+    {
+      "replica": "a",
+      "unitid": "101912",
+      "name": "Oakwood University",
+      "differences from the pipeline before the drift terms (same machine)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.006450392074611899,
+        "d_A_final": 0.006483926230585357,
+        "delta_R_final": 0.006961753287049066,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.002971546826920246,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "a",
       "unitid": "102377",
       "name": "Tuskegee University",
-      "differences": {
-        "d_A_trend": 0.007804406795400731,
-        "d_A_final": 0.00700662659534762,
-        "delta_R_final": 0.020828908362555243,
+      "differences from the pipeline before the drift terms (same machine)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
         "frac_high_entropy": 0.0,
         "debt_spike": 0.0,
-        "delta_R_trend": 0.010137568410851228,
+        "delta_R_trend": 0.0,
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": false
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "b",
       "unitid": "100663",
       "name": "University of Alabama at Birmingham",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -114,13 +164,23 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "b",
       "unitid": "100830",
       "name": "Auburn University at Montgomery",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -130,13 +190,34 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "b",
       "unitid": "101480",
       "name": "Jacksonville State University",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
         "d_A_trend": 0.002694497890965375,
         "d_A_final": 0.021251372456713546,
         "delta_R_final": 0.006002178178294293,
@@ -145,14 +226,13 @@
         "delta_R_trend": 0.0026730034597624575,
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
-      },
-      "equal": false
+      }
     },
     {
       "replica": "b",
       "unitid": "101912",
       "name": "Oakwood University",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
         "d_A_trend": 0.0,
         "d_A_final": 0.0,
         "delta_R_final": 0.0,
@@ -162,13 +242,34 @@
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
       },
-      "equal": true
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      }
     },
     {
       "replica": "b",
       "unitid": "102377",
       "name": "Tuskegee University",
-      "differences": {
+      "differences from the pipeline before the drift terms (same machine)": {
+        "d_A_trend": 0.0,
+        "d_A_final": 0.0,
+        "delta_R_final": 0.0,
+        "frac_high_entropy": 0.0,
+        "debt_spike": 0.0,
+        "delta_R_trend": 0.0,
+        "reserve_adequacy": 0.0,
+        "research_ratio": 0.0
+      },
+      "equal": true,
+      "differences from the committed v2 score (report only)": {
         "d_A_trend": 0.007804406795400731,
         "d_A_final": 0.00700662659534762,
         "delta_R_final": 0.020828908362555243,
@@ -177,8 +278,7 @@
         "delta_R_trend": 0.010137568410851228,
         "reserve_adequacy": 0.0,
         "research_ratio": 0.0
-      },
-      "equal": false
+      }
     }
   ],
   "drift terms on": [
@@ -187,21 +287,21 @@
       "name": "University of Alabama at Birmingham",
       "replica a": {
         "features": {
-          "d_A_trend": -0.049266077812030296,
-          "d_A_final": 0.1953556833958091,
-          "delta_R_final": 0.7767347435630819,
+          "d_A_trend": -0.052376262135554214,
+          "d_A_final": 0.198483680316053,
+          "delta_R_final": 0.8832473650875132,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.30395060684383224,
-          "delta_R_trend": 0.3548583351250664,
+          "delta_R_trend": 0.4036332712688459,
           "reserve_adequacy": 10.116323375906221,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.03953509218606041,
-          "slide_rate": 0.0008184179403128424,
-          "collapse_urgency": 0.011952443756021355,
-          "coverage_final": 0.9345833757785228,
-          "enroll_jump_recent": 0.006087632592960592
+          "enroll_drift": 0.038177562274047026,
+          "slide_rate": 0.001259963860327056,
+          "collapse_urgency": 0.024556731741915434,
+          "coverage_final": 0.9511834584314776,
+          "enroll_jump_recent": 0.0032720809010839944
         }
       },
       "replica b": {
@@ -225,24 +325,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.003110184323523918,
+          "d_A_final": 0.003127996920243903,
+          "delta_R_final": 0.1065126215244313,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.04877493614377948,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
-          "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "enroll_drift": 0.0013575299120133846,
+          "slide_rate": 0.00044154592001421347,
+          "collapse_urgency": 0.012604287985894079,
+          "coverage_final": 0.016600082652954762,
+          "enroll_jump_recent": 0.0028155516918765976
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -253,21 +353,21 @@
       "name": "Auburn University at Montgomery",
       "replica a": {
         "features": {
-          "d_A_trend": -0.06958508865539159,
-          "d_A_final": 0.1392814926094288,
-          "delta_R_final": 1.0105024291697184,
+          "d_A_trend": -0.0710578524020298,
+          "d_A_final": 0.14695966826369766,
+          "delta_R_final": 1.0268697668419526,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.19573007471554238,
-          "delta_R_trend": 0.45252354384595417,
+          "delta_R_trend": 0.45971647212771144,
           "reserve_adequacy": 8.806014170715171,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.02247484384079501,
-          "slide_rate": -0.01500287885464193,
+          "enroll_drift": 0.023695850634182322,
+          "slide_rate": -0.014860358619840993,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.9529401402322446,
-          "enroll_jump_recent": 0.0037494760471550783
+          "coverage_final": 0.9533177515430538,
+          "enroll_jump_recent": 0.00281915784700052
         }
       },
       "replica b": {
@@ -291,24 +391,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.0014727637466382115,
+          "d_A_final": 0.007678175654268871,
+          "delta_R_final": 0.016367337672234195,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.0071929282817572715,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 0.0012210067933873109,
+          "slide_rate": 0.00014252023480093579,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 0.0003776113108091561,
+          "enroll_jump_recent": 0.0009303182001545581
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -319,21 +419,21 @@
       "name": "Jacksonville State University",
       "replica a": {
         "features": {
-          "d_A_trend": -0.07371108719763522,
-          "d_A_final": 0.16112145658122812,
-          "delta_R_final": 0.8680390599724512,
+          "d_A_trend": -0.07100378513949843,
+          "d_A_final": 0.1634788305481678,
+          "delta_R_final": 0.8527468439979683,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.19477404690618755,
-          "delta_R_trend": 0.3968499990627546,
+          "delta_R_trend": 0.3899650419806936,
           "reserve_adequacy": 7.111439216123466,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": -0.022821849825829753,
-          "slide_rate": -0.06257196093437134,
+          "enroll_drift": -0.021226109078324847,
+          "slide_rate": -0.06101410228940695,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.7911422732104482,
-          "enroll_jump_recent": 0.006297243437173067
+          "coverage_final": 0.7951771623552748,
+          "enroll_jump_recent": 0.00861113891026802
         }
       },
       "replica b": {
@@ -357,24 +457,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.0027073020581367957,
+          "d_A_final": 0.002357373966939691,
+          "delta_R_final": 0.015292215974482937,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.006884957082060994,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 0.001595740747504907,
+          "slide_rate": 0.0015578586449643897,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 0.004034889144826637,
+          "enroll_jump_recent": 0.002313895473094953
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -385,21 +485,21 @@
       "name": "Oakwood University",
       "replica a": {
         "features": {
-          "d_A_trend": -0.07208465048953738,
-          "d_A_final": 0.15629907037391372,
-          "delta_R_final": 0.8554035945166155,
+          "d_A_trend": -0.07241444931200758,
+          "d_A_final": 0.14485294165440782,
+          "delta_R_final": 0.9232166344096735,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.2897158002279974,
-          "delta_R_trend": 0.38359216361101056,
+          "delta_R_trend": 0.41405031987917307,
           "reserve_adequacy": 7.784984578288885,
           "research_ratio": 0.06139099794810286
         },
         "drift": {
-          "enroll_drift": -0.032673871452979036,
-          "slide_rate": 0.011989827436310182,
-          "collapse_urgency": 0.3058121677708693,
-          "coverage_final": 0.9731503551651188,
-          "enroll_jump_recent": 0.0111350564263379
+          "enroll_drift": -0.03348834010857888,
+          "slide_rate": 0.01190734992728403,
+          "collapse_urgency": 0.30537646327816925,
+          "coverage_final": 0.9732784965494786,
+          "enroll_jump_recent": 0.011454809903938636
         }
       },
       "replica b": {
@@ -423,24 +523,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.0003297988224701953,
+          "d_A_final": 0.0114461287195059,
+          "delta_R_final": 0.06781303989305798,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.030458156268162506,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
-          "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "enroll_drift": 0.000814468655599844,
+          "slide_rate": 8.247750902615203e-05,
+          "collapse_urgency": 0.00043570449270002864,
+          "coverage_final": 0.00012814138435979228,
+          "enroll_jump_recent": 0.00031975347760073575
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -451,21 +551,21 @@
       "name": "Tuskegee University",
       "replica a": {
         "features": {
-          "d_A_trend": -0.09791516533982328,
-          "d_A_final": 0.14758736402221198,
-          "delta_R_final": 0.7831559526271726,
+          "d_A_trend": -0.09365483591121151,
+          "d_A_final": 0.14946382940099281,
+          "delta_R_final": 0.7898558053200027,
           "frac_high_entropy": 0.2,
           "debt_spike": 0.14285528557394944,
-          "delta_R_trend": 0.3808451227187381,
+          "delta_R_trend": 0.38460900840214385,
           "reserve_adequacy": 10.15125489449835,
           "research_ratio": 0.6430766670148821
         },
         "drift": {
-          "enroll_drift": -0.03911481331679914,
-          "slide_rate": -0.04509306802985465,
+          "enroll_drift": -0.036559024941006414,
+          "slide_rate": -0.04562466938784269,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.916515390755598,
-          "enroll_jump_recent": 0.043861356745388554
+          "coverage_final": 0.9150475131984968,
+          "enroll_jump_recent": 0.046156295197208784
         }
       },
       "replica b": {
@@ -489,24 +589,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.004260329428611764,
+          "d_A_final": 0.0018764653787808339,
+          "delta_R_final": 0.006699852692830022,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.0037638856834057433,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 0.0025557883757927266,
+          "slide_rate": 0.0005316013579880416,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 0.0014678775571012048,
+          "enroll_jump_recent": 0.0022949384518202304
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -517,21 +617,21 @@
       "name": "Charter College",
       "replica a": {
         "features": {
-          "d_A_trend": -0.08025393888454263,
-          "d_A_final": 0.15145040743781543,
-          "delta_R_final": 0.8437908358737182,
+          "d_A_trend": -0.0761753626358942,
+          "d_A_final": 0.14574758606447352,
+          "delta_R_final": 0.8372177870514111,
           "frac_high_entropy": 0.2,
           "debt_spike": 0.09576731406102226,
-          "delta_R_trend": 0.38368900452643057,
+          "delta_R_trend": 0.38098977257186095,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.1441410822604496,
-          "slide_rate": 0.03137445922183114,
-          "collapse_urgency": 0.3889597333024596,
-          "coverage_final": 0.9519069150879685,
-          "enroll_jump_recent": 0.13023762388111226
+          "enroll_drift": 0.27719574577426964,
+          "slide_rate": 0.0330360471435189,
+          "collapse_urgency": 0.42736360004811697,
+          "coverage_final": 0.9566995177183253,
+          "enroll_jump_recent": 0.2777201287360771
         }
       },
       "replica b": {
@@ -555,24 +655,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.004078576248648436,
+          "d_A_final": 0.00570282137334191,
+          "delta_R_final": 0.006573048822307026,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.002699231954569614,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
-          "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "enroll_drift": 0.13305466351382003,
+          "slide_rate": 0.00166158792168776,
+          "collapse_urgency": 0.03840386674565738,
+          "coverage_final": 0.004792602630356746,
+          "enroll_jump_recent": 0.14748250485496484
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -583,21 +683,21 @@
       "name": "Grand Canyon University",
       "replica a": {
         "features": {
-          "d_A_trend": -0.04021969198287703,
-          "d_A_final": 0.22871113931565745,
-          "delta_R_final": 0.38115583852307644,
+          "d_A_trend": -0.04011355943492684,
+          "d_A_final": 0.2505929477460918,
+          "delta_R_final": 0.35403960418065744,
           "frac_high_entropy": 0.2,
           "debt_spike": 0.09247773139301232,
-          "delta_R_trend": 0.16878130876413638,
+          "delta_R_trend": 0.1566787919620394,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.08365967274292584,
-          "slide_rate": 0.00021869418039281794,
-          "collapse_urgency": 0.0011470016064916834,
-          "coverage_final": 0.826589333141646,
-          "enroll_jump_recent": 0.017178660621649543
+          "enroll_drift": 0.08512178372922669,
+          "slide_rate": -0.0003738556964450001,
+          "collapse_urgency": 0.0,
+          "coverage_final": 0.8069642928260985,
+          "enroll_jump_recent": 0.017671359355762837
         }
       },
       "replica b": {
@@ -621,24 +721,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.000106132547950194,
+          "d_A_final": 0.021881808430434357,
+          "delta_R_final": 0.027116234342419,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.01210251680209698,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
-          "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "enroll_drift": 0.0014621109863008491,
+          "slide_rate": 0.000592549876837818,
+          "collapse_urgency": 0.0011470016064916834,
+          "coverage_final": 0.01962504031554746,
+          "enroll_jump_recent": 0.0004926987341132942
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -649,21 +749,21 @@
       "name": "Arkansas Baptist College",
       "replica a": {
         "features": {
-          "d_A_trend": -0.10107273272836897,
-          "d_A_final": 0.12622342204815706,
-          "delta_R_final": 1.1181679541706315,
+          "d_A_trend": -0.10423494497165486,
+          "d_A_final": 0.13005160861022944,
+          "delta_R_final": 1.1317846042426596,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.19034929376587167,
-          "delta_R_trend": 0.5141729935652506,
+          "delta_R_trend": 0.5202852375880307,
           "reserve_adequacy": 3.712278896718584,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": -0.10543251571480307,
-          "slide_rate": 0.022850393750069073,
+          "enroll_drift": -0.10586010202046493,
+          "slide_rate": 0.021303827702929268,
           "collapse_urgency": 1.0,
-          "coverage_final": 1.2048993684911964,
-          "enroll_jump_recent": 0.29128877500181666
+          "coverage_final": 1.2049517372162275,
+          "enroll_jump_recent": 0.28767103830695967
         }
       },
       "replica b": {
@@ -687,24 +787,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.003162212243285889,
+          "d_A_final": 0.003828186562072372,
+          "delta_R_final": 0.013616650072028058,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.0061122440227801,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 0.0004275863056618645,
+          "slide_rate": 0.0015465660471398052,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 5.236872503111556e-05,
+          "enroll_jump_recent": 0.003617736694856988
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -715,21 +815,21 @@
       "name": "University of Central Arkansas",
       "replica a": {
         "features": {
-          "d_A_trend": -0.08555378577957248,
-          "d_A_final": 0.14022246659097795,
-          "delta_R_final": 0.9145406170535831,
+          "d_A_trend": -0.0810912317992529,
+          "d_A_final": 0.12970095831177197,
+          "delta_R_final": 0.8975155656700512,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.1681868599131383,
-          "delta_R_trend": 0.4369964358465445,
+          "delta_R_trend": 0.4287346631251964,
           "reserve_adequacy": 6.1589475827940605,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": -0.010661642240945594,
-          "slide_rate": 0.01639795512559987,
+          "enroll_drift": -0.010651015628821502,
+          "slide_rate": 0.016295473609365202,
           "collapse_urgency": 1.0,
-          "coverage_final": 1.0444226212037788,
-          "enroll_jump_recent": 0.010450776631920886
+          "coverage_final": 1.0440120236016488,
+          "enroll_jump_recent": 0.010018030393386956
         }
       },
       "replica b": {
@@ -753,24 +853,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.0044625539803195835,
+          "d_A_final": 0.010521508279205977,
+          "delta_R_final": 0.01702505138353194,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.008261772721348093,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 1.0626612124092424e-05,
+          "slide_rate": 0.00010248151623466761,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 0.00041059760213002505,
+          "enroll_jump_recent": 0.00043274623853392993
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -781,21 +881,21 @@
       "name": "University of the Ozarks",
       "replica a": {
         "features": {
-          "d_A_trend": -0.08058946642846854,
-          "d_A_final": 0.15098861413215398,
-          "delta_R_final": 0.8337046523217322,
+          "d_A_trend": -0.0820237228353391,
+          "d_A_final": 0.15706422184178373,
+          "delta_R_final": 0.821132459453448,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.5442768540766608,
-          "delta_R_trend": 0.37156779968758125,
+          "delta_R_trend": 0.3664450276975881,
           "reserve_adequacy": 11.294166270321044,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.09324820223795062,
-          "slide_rate": -0.0471800356169612,
+          "enroll_drift": 0.09422902275760545,
+          "slide_rate": -0.04731500474247866,
           "collapse_urgency": 0.0,
-          "coverage_final": 1.0046752050774141,
-          "enroll_jump_recent": 0.003002734347207221
+          "coverage_final": 1.0024613704996432,
+          "enroll_jump_recent": 0.004171108216005787
         }
       },
       "replica b": {
@@ -819,24 +919,24 @@
       },
       "differences": {
         "features": {
-          "d_A_trend": 0.0,
-          "d_A_final": 0.0,
-          "delta_R_final": 0.0,
+          "d_A_trend": 0.0014342564068705599,
+          "d_A_final": 0.0060756077096297545,
+          "delta_R_final": 0.012572192868284149,
           "frac_high_entropy": 0.0,
           "debt_spike": 0.0,
-          "delta_R_trend": 0.0,
+          "delta_R_trend": 0.005122771989993169,
           "reserve_adequacy": 0.0,
           "research_ratio": 0.0
         },
         "drift": {
-          "enroll_drift": 0.0,
-          "slide_rate": 0.0,
+          "enroll_drift": 0.0009808205196548264,
+          "slide_rate": 0.00013496912551746315,
           "collapse_urgency": 0.0,
-          "coverage_final": 0.0,
-          "enroll_jump_recent": 0.0
+          "coverage_final": 0.0022138345777709123,
+          "enroll_jump_recent": 0.001168373868798566
         }
       },
-      "equal": true,
+      "equal": false,
       "divergences (a, b)": [
         0,
         0
@@ -845,9 +945,9 @@
   ],
   "machines": {
     "a": {
-      "cpu": "AMD EPYC 7763 64-Core Processor",
+      "cpu": "Intel(R) Xeon(R) 6975P-C",
       "python": "3.11.18",
-      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+      "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
       "environment variables": {
         "NUMBA_CPU_NAME": "generic",
         "OPENBLAS_NUM_THREADS": "1",
@@ -965,5 +1065,14 @@
       ]
     }
   },
-  "earlier runs": []
+  "earlier runs": [
+    {
+      "written at (UTC)": "2026-11-15T17:01:58.914817+00:00",
+      "verdict": "failed",
+      "processors": [
+        "AMD EPYC 7763 64-Core Processor",
+        "AMD EPYC 7763 64-Core Processor"
+      ]
+    }
+  ]
 }
