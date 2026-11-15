@@ -176,4 +176,35 @@ def cohort(year: str, years: tuple, log: dict) -> dict:
             num = sum(used[fy][k] for fy in ys)
             den = sum(used[fy]["expenses"] for fy in ys)
             rec[f"f_{k}"] = round(num / den, 6) if den > 0 else None
-        rec["W"] = round(sum(r["expenses"] for r in used.values()) / len(used), 2) if used
+        rec["W"] = round(sum(r["expenses"] for r in used.values()) / len(used), 2) if used else None
+        rec["S_par"] = 1 if (dinfo["system member"] and dinfo["control"] in ("1", "2")) else 0
+        out[u] = rec
+    return out
+
+
+def main() -> None:
+    log: dict = {}
+    result = {
+        "protocol": "sampling protocol v3.md",
+        "created": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "machine": v2.machine(),
+        "codes": CODES,
+        "cohorts": {},
+    }
+    for year, years in COHORTS.items():
+        recs = cohort(year, years, log)
+        result["cohorts"][year] = {
+            "fiscal years": list(years),
+            "institutions": len(recs),
+            "with f_approp > 0": sum(1 for r in recs.values() if (r["f_approp"] or 0) > 0),
+            "with f_gift > 0": sum(1 for r in recs.values() if (r["f_gift"] or 0) > 0),
+            "with S_par = 1": sum(r["S_par"] for r in recs.values()),
+            "records": recs,
+        }
+        print(year, {k: v for k, v in result["cohorts"][year].items() if k != "records"})
+    result["files read"] = log
+    v2.write_json(OUT_PATH, result)
+
+
+if __name__ == "__main__":
+    main()
