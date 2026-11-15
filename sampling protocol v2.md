@@ -197,3 +197,13 @@ This amendment was made after phase 1 (the training draw) and before any trainin
 **5. The early-finance check is run again.** It is run again under these rules, and its new result replaces the committed one (whose earlier version remains in the repository's history). Training scoring begins only after it passes and after the cross-machine reproducibility check of the third amendment, which passed (`data/v2/reproducibility check.json`).
 
 **6. Saving training scores.** The training-scoring workflow retries its final commit up to five times, so that a commit landing on the repository at the same moment does not discard a run's results.
+
+## Results record
+
+### Erratum (2026-11-15), phase 8: the first run of the outcome lookup is invalid
+
+The first phase 8 run (commit aec0541, `data/v2/test outcomes.json` and `data/v2/test results.json` as committed there) coded all 300 test institutions as closed or failed, every one of them under ground (d). It read no institution at all from HD2025, the latest header file, which was served from NCES's complete-data-files address rather than the data-center address of the earlier years. The outcome reader (`rows_by_id` in `src/v2_training_outcomes.py`) did not remove a byte-order mark from a file's first heading, as every other IPEDS reader in this repository does; with the heading UNITID unreadable, the file yielded no rows, every institution was absent from it, and ground (d) counted each one as a closure. That run's results are therefore not a result of this protocol. They remain in the repository's history and are reported as invalid.
+
+The correction changes how files are read and nothing else. The reader now removes a byte-order mark from headings; phase 8 records how many institutions it read from each header file and stops, recording nothing, if any file yields fewer than 3,000; and its workflow checks out the repository's full history, because the first run recorded the latest commit in place of the classifier's, the test scores' and the comparator flags' own (a consequence of a single-commit checkout). The outcome definition, the measures, the triggers and the pass criterion are unchanged, and so are classifier v2, its threshold, every test score and flag, and every comparator flag, all of which were committed before any test outcome was looked up. The training outcomes are unaffected: their header files (2014 through 2019) were read in full, as their record shows.
+
+Phase 8 is then run again, and its result is the result of this protocol.
