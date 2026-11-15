@@ -133,7 +133,8 @@ def cmd_shard(shard: int, of: int, minutes: float, compact: str, finance: str, o
         r = fit_one(inst, compact, finance)
         if r is None:
             continue
-        results.append({**inst, **r, "scored at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat()})
+        results.append({**inst, **r, "processor": v2.machine()["cpu"],
+                        "scored at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat()})
         save()
     save()
     print(f"Wrote {path} ({len(results)} results).")
