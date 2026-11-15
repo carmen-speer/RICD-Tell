@@ -1,0 +1,59 @@
+name: v3 - anchor field-code diagnostic
+
+# Manual-only. Runs src/diagnose_v3_anchor_codes.py under "sampling
+# protocol v3.md", before the anchor sensor reads any value: for each
+# finance form and the fiscal years 2012-2014 and 2017-2019, it lists every
+# revenue, net-asset and endowment column with how often it holds a number
+# and its title in NCES's own dictionary; for the 2014 and 2019 directory
+# and institutional-characteristics files, it records the system,
+# designation and religious-affiliation columns. Commits
+# data/v3/anchor codes diagnostic.json. No institution's outcome is read.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-anchor-codes
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the diagnostic
+        run: |
+          cd src
+          python diagnose_v3_anchor_codes.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/anchor codes diagnostic.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3: anchor field-code diagnostic (no outcome looked up)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
