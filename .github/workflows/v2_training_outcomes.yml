@@ -1,0 +1,55 @@
+name: v2 phase 3 - training outcomes
+
+# Manual-only. Under "sampling protocol v2.md".
+# Phase 3: codes every training institution's outcome from the IPEDS header
+# files for 2014-2019. Refuses to run until every training institution has a
+# committed result. Commits data/v2/training outcomes.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v2-training-outcomes
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run
+        run: |
+          cd src
+          python v2_training_outcomes.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v2/training outcomes.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v2 phase 3: training outcomes"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
