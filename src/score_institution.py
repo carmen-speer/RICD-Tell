@@ -43,7 +43,7 @@ def compute_features_for_institution(
     target_accept: float = 0.9, cores: int | None = None,
     debug_per_chain: bool = False, compile_mode: str | None = None,
     random_seed: int = 7, debug_param_rhat: bool = False,
-    allow_gaps: bool = False,
+    allow_gaps: bool = False, drift_terms: bool = False,
 ) -> InstitutionFeatures | None:
     """
     Real, live scoring pipeline for one institution, replicating
@@ -188,7 +188,17 @@ def compute_features_for_institution(
 
     # --- Real Bayesian trajectory fit, identical to the validated pipeline ---
     types = ["observed"] * len(O_o_real)
-    pymc_model = mdl.build_model_stage2(O_o_real, O_p_real, types, types, E_exch, M_maint, W_instr, W_total, mask)
+    if drift_terms:
+        # "sampling protocol v3.md": the exchange base (RICD Definition
+        # 10.3a.1) as log undergraduate enrollment relative to its own peak,
+        # with missing years left as NaN for the model to skip.
+        _n = np.asarray(series["n_undergrads"], dtype=float)
+        _n = np.where(_n > 0, _n, np.nan)
+        enroll_obs = np.log(_n) - np.log(np.nanmax(_n))
+        pymc_model = mdl.build_model_stage2(O_o_real, O_p_real, types, types, E_exch, M_maint, W_instr,
+                                            W_total, mask, enroll_obs=enroll_obs)
+    else:
+        pymc_model = mdl.build_model_stage2(O_o_real, O_p_real, types, types, E_exch, M_maint, W_instr, W_total, mask)
     with pymc_model:
         sample_kwargs = dict(
             tune=n_tune, chains=n_chains,
@@ -398,6 +408,27 @@ def compute_features_for_institution(
         delta_R_trend=delta_R_trend, reserve_adequacy=reserve_adequacy,
         research_ratio=research_ratio, outcome=None,
     )
+    if drift_terms:
+        # RICD §10.3a read-outs ("sampling protocol v3.md"), each from the
+        # posterior mean trajectory, at the end of the window T.
+        post = idata.posterior
+        cov = post["coverage_t"].mean(dim=["chain", "draw"]).values
+        drift = post["enroll_drift"].mean(dim=["chain", "draw"]).values
+        resid = post["enroll_step_resid"].mean(dim=["chain", "draw"]).values
+        k = min(5, len(cov))
+        tail = np.log(np.maximum(cov[-k:], 1e-6))
+        g = float(np.polyfit(np.arange(k), tail, 1)[0]) if k >= 2 else 0.0      # slide rate, Prop. 10.3a.1
+        c_T = float(cov[-1])
+        gap = max(-np.log(max(c_T, 1e-6)), 0.0)
+        urgency = 0.0 if g <= 0 else g / (g + gap)                               # collapse urgency
+        feats.drift = {
+            "enroll_drift": float(drift[-2]) if len(drift) >= 2 else float(drift[-1]),  # drift into year T
+            "slide_rate": g,
+            "collapse_urgency": float(urgency),
+            "coverage_final": c_T,
+            "enroll_jump_recent": float(max(0.0, -np.min(resid[-3:]))) if len(resid) else 0.0,
+        }
+        print(f"DRIFT TERMS: {feats.drift}")
     if allow_gaps:
         # Which years were actually present, for the missing-data features
         # computed by the v2 scripts ("sampling protocol v2.md"). Recorded
