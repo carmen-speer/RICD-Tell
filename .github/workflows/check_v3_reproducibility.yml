@@ -1,0 +1,104 @@
+name: v3 - reproducibility check for the drift terms
+
+# Manual-only. Runs src/check_v3_reproducibility.py under "sampling
+# protocol v3.md": two jobs, on two separate machines, each refit 5
+# institutions with the drift terms off (which must match the committed v2
+# scores exactly) and 10 with them on (which must match each other
+# exactly); a third job compares them. Commits
+# data/v3/reproducibility check.json. No outcome is looked up.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-reproducibility
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  NUMBA_CPU_NAME: generic
+  OPENBLAS_NUM_THREADS: "1"
+  OMP_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"
+
+jobs:
+  replica:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        name: [a, b]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - name: Fit the institutions
+        run: |
+          cd src
+          python check_v3_reproducibility.py replica --name ${{ matrix.name }} --compact ../work/scorecard_compact.csv --finance ../work/finance --out ../work/replicas
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: replica-${{ matrix.name }}
+          path: work/replicas/replica_${{ matrix.name }}.json
+
+  compare:
+    needs: replica
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: work/replicas
+          merge-multiple: true
+
+      - name: Compare
+        run: |
+          cd src
+          python check_v3_reproducibility.py compare --dir ../work/replicas
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/reproducibility check.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3: reproducibility check for the drift terms (no outcome looked up)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
