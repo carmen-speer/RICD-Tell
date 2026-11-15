@@ -1,0 +1,306 @@
+slot,frame position,unitid,name,sector,state,status,reason
+1,1,100663,University of Alabama at Birmingham,public,AL,selected,primary selection
+2,6,100830,Auburn University at Montgomery,public,AL,selected,primary selection
+3,11,101480,Jacksonville State University,public,AL,selected,primary selection
+4,16,101912,Oakwood University,private,AL,selected,primary selection
+5,21,102377,Tuskegee University,private,AL,selected,primary selection
+6,26,102845,Charter College,forprofit,WA,selected,primary selection
+7,31,104717,Grand Canyon University,forprofit,AZ,selected,primary selection
+8,36,106306,Arkansas Baptist College,private,AR,selected,primary selection
+9,41,106704,University of Central Arkansas,public,AR,selected,primary selection
+10,46,107558,University of the Ozarks,private,AR,selected,primary selection
+11,51,108269,Academy of Chinese Culture and Health Sciences,private,CA,selected,primary selection
+12,56,109785,Azusa Pacific University,private,CA,selected,primary selection
+13,61,110404,California Institute of Technology,private,CA,selected,primary selection
+14,66,110538,California State University-Chico,public,CA,selected,primary selection
+15,71,110608,California State University-Northridge,public,CA,selected,primary selection
+16,76,112075,Concordia University-Irvine,private,CA,selected,primary selection
+17,81,113236,Cypress College,public,CA,selected,primary selection
+18,86,114354,FIDM-Fashion Institute of Design & Merchandising-Los Angeles,forprofit,CA,selected,primary selection
+19,91,114840,Fuller Theological Seminary,private,CA,selected,primary selection
+20,96,115773,Humphreys University-Stockton and Modesto Campuses,private,CA,selected,primary selection
+21,101,117575,Southern California Seminary,private,CA,selected,primary selection
+22,106,118888,Mills College,private,CA,selected,primary selection
+23,111,119270,Musicians Institute,forprofit,CA,selected,primary selection
+24,116,120537,Hope International University,private,CA,selected,primary selection
+25,121,121275,Platt College-San Diego,forprofit,CA,selected,primary selection
+26,126,122375,San Diego Mesa College,public,CA,selected,primary selection
+27,131,122603,San Francisco Theological Seminary,private,CA,selected,primary selection
+28,136,122977,Santa Monica College,public,CA,selected,primary selection
+29,141,123509,Skyline College,public,CA,selected,primary selection
+30,146,123855,St John's Seminary,private,CA,selected,primary selection
+31,151,124487,Epic Bible College,private,CA,selected,primary selection
+32,156,126076,Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary,private,CA,selected,primary selection
+33,161,126775,Colorado School of Mines,public,CO,selected,primary selection
+34,166,127200,Front Range Community College,public,CO,selected,primary selection
+35,171,127741,University of Northern Colorado,public,CO,selected,primary selection
+36,176,128328,United States Air Force Academy,public,CO,selected,primary selection
+37,181,128780,Charter Oak State College,public,CT,selected,primary selection
+38,186,129525,University of Hartford,private,CT,selected,primary selection
+39,191,130314,University of Saint Joseph,private,CT,selected,primary selection
+40,196,130907,Delaware Technical Community College-Terry,public,DE,selected,primary selection
+41,201,131283,The Catholic University of America,private,DC,selected,primary selection
+42,206,131520,Howard University,private,DC,selected,primary selection
+43,211,132602,Bethune-Cookman University,private,FL,selected,primary selection
+44,216,133021,Chipola College,public,FL,selected,primary selection
+45,221,133650,Florida Agricultural and Mechanical University,public,FL,selected,primary selection
+46,226,133881,Florida Institute of Technology,private,FL,selected,primary selection
+47,231,134130,University of Florida,public,FL,skipped,panel
+47,232,134237,Full Sail University,forprofit,FL,selected,replacement
+48,236,135160,Florida Gateway College,public,FL,selected,primary selection
+49,241,136145,North Florida College,public,FL,selected,primary selection
+50,246,136400,Pasco-Hernando State College,public,FL,selected,primary selection
+51,251,137281,Saint Johns River State College,public,FL,selected,primary selection
+52,256,137759,Tallahassee Community College,public,FL,selected,primary selection
+53,261,138275,Warner University,private,FL,selected,primary selection
+54,266,138761,Andrew College,private,GA,selected,primary selection
+55,271,139144,Berry College,private,GA,selected,primary selection
+56,276,139366,Columbus State University,public,GA,selected,primary selection
+57,281,139658,Emory University,private,GA,selected,primary selection
+58,286,139959,University of Georgia,public,GA,selected,primary selection
+59,291,140447,Mercer University,private,GA,selected,primary selection
+60,296,140988,Shorter University,private,GA,selected,primary selection
+61,301,141361,Young Harris College,private,GA,selected,primary selection
+62,306,142090,Boise Bible College,private,ID,selected,primary selection
+63,311,142522,Brigham Young University-Idaho,private,ID,selected,primary selection
+64,316,143233,Bethany Theological Seminary,private,IN,selected,primary selection
+65,321,143978,The Chicago School of Professional Psychology at Chicago,private,IL,selected,primary selection
+66,326,144883,East-West University,private,IL,selected,primary selection
+67,331,145497,Hebrew Theological College,private,IL,selected,primary selection
+68,336,145725,Illinois Institute of Technology,private,IL,selected,primary selection
+69,341,146533,Lakeview College of Nursing,private,IL,selected,primary selection
+70,346,146728,Lutheran School of Theology at Chicago,private,IL,selected,primary selection
+71,351,147369,Moody Bible Institute,private,IL,selected,primary selection
+72,356,147828,Olivet Nazarene University,private,IL,selected,primary selection
+73,361,148575,Saint Francis Medical Center College of Nursing,private,IL,selected,primary selection
+74,366,149028,Saint Anthony College of Nursing,private,IL,selected,primary selection
+75,371,149639,VanderCook College of Music,private,IL,selected,primary selection
+76,376,150172,Calumet College of Saint Joseph,private,IN,selected,primary selection
+77,381,150604,Franklin College,private,IN,selected,primary selection
+78,386,151263,University of Indianapolis,private,IN,selected,primary selection
+79,391,151360,Indiana University-Northwest,public,IN,selected,primary selection
+80,396,151962,Mid-America College of Funeral Service,private,IN,selected,primary selection
+81,401,152451,Saint Meinrad School of Theology,private,IN,selected,primary selection
+82,406,152798,Allen College,private,IA,selected,primary selection
+83,411,153241,Divine Word College,private,IA,selected,primary selection
+84,416,153366,Graceland University-Lamoni,private,IA,selected,primary selection
+85,421,153621,Iowa Wesleyan University,private,IA,skipped,panel
+85,422,153825,Loras College,private,IA,selected,replacement
+86,426,154013,Mount Mercy University,private,IA,selected,primary selection
+87,431,154262,St Luke's College,private,IA,selected,primary selection
+88,436,154712,Benedictine College,private,KS,selected,primary selection
+89,441,155070,Barclay College,private,KS,selected,primary selection
+90,446,155399,Kansas State University,public,KS,selected,primary selection
+91,451,155812,University of Saint Mary,private,KS,selected,primary selection
+92,456,156189,Alice Lloyd College,private,KY,selected,primary selection
+93,461,156417,Clear Creek Baptist Bible College,private,KY,selected,primary selection
+94,466,157030,Kentucky Mountain Bible College,private,KY,selected,primary selection
+95,471,157298,Louisville Presbyterian Theological Seminary,private,KY,selected,primary selection
+96,476,157757,Spalding University,private,KY,selected,primary selection
+97,481,158477,Centenary College of Louisiana,private,LA,selected,primary selection
+98,486,159568,Louisiana College,private,LA,selected,primary selection
+99,491,160038,Northwestern State University of Louisiana,public,LA,selected,primary selection
+100,496,160658,University of Louisiana at Lafayette,public,LA,selected,primary selection
+101,501,160995,Beal College,forprofit,ME,selected,primary selection
+102,506,161509,Maine College of Art,private,ME,selected,primary selection
+103,511,162007,Bowie State University,public,MD,selected,primary selection
+104,516,162760,Hood College,private,MD,selected,primary selection
+105,521,163338,University of Maryland Eastern Shore,public,MD,selected,primary selection
+106,526,164076,Towson University,public,MD,selected,primary selection
+107,531,164438,New England College of Business and Finance,forprofit,MA,selected,primary selection
+108,536,164580,Babson College,private,MA,selected,primary selection
+109,541,164872,Boston Architectural College,private,MA,selected,primary selection
+110,546,165167,Cambridge College,private,MA,selected,primary selection
+111,551,165671,Emmanuel College,private,MA,selected,primary selection
+112,556,165936,Gordon College,private,MA,selected,primary selection
+113,561,166489,Longy School of Music of Bard College,private,MA,selected,primary selection
+114,566,166708,University of Massachusetts Medical School Worcester,public,MA,selected,primary selection
+115,571,167215,New England Law-Boston,private,MA,selected,primary selection
+116,576,167455,Pine Manor College,private,MA,selected,primary selection
+117,581,167835,Smith College,private,MA,selected,primary selection
+118,586,168218,Wellesley College,private,MA,selected,primary selection
+119,591,168528,Adrian College,private,MI,selected,primary selection
+120,596,169099,Calvin Theological Seminary,private,MI,selected,primary selection
+121,601,169716,University of Detroit Mercy,private,MI,selected,primary selection
+122,606,170240,Henry Ford College,public,MI,selected,primary selection
+123,611,170806,Madonna University,private,MI,selected,primary selection
+124,616,171146,University of Michigan-Flint,public,MI,selected,primary selection
+125,621,171881,Kuyper College,private,MI,selected,primary selection
+126,626,172440,Finlandia University,private,MI,skipped,panel
+126,627,172477,Western Michigan University-Thomas M. Cooley Law School,private,MI,selected,replacement
+127,631,173142,Bethany Lutheran College,private,MN,selected,primary selection
+128,636,173647,Gustavus Adolphus College,private,MN,selected,primary selection
+129,641,173957,Mayo Clinic College of Medicine and Science,private,MN,selected,primary selection
+130,646,174251,University of Minnesota-Morris,public,MN,selected,primary selection
+131,651,174783,Saint Cloud State University,public,MN,selected,primary selection
+132,656,175014,Rasmussen College-Minnesota,forprofit,MN,selected,primary selection
+133,661,175430,Blue Mountain College,private,MS,selected,primary selection
+134,666,176080,Mississippi State University,public,MS,selected,primary selection
+135,671,176479,William Carey University,private,MS,selected,primary selection
+136,676,176965,University of Central Missouri,public,MO,selected,primary selection
+137,681,177214,Drury University,private,MO,selected,primary selection
+138,686,177816,Kenrick Glennon Seminary,private,MO,selected,primary selection
+139,691,178369,Missouri Valley College,private,MO,selected,primary selection
+140,696,178624,Northwest Missouri State University,public,MO,selected,primary selection
+141,701,179043,Rockhurst University,private,MO,selected,primary selection
+142,706,179450,Saint Luke's College of Health Sciences,private,MO,selected,primary selection
+143,711,179946,Westminster College,private,MO,selected,primary selection
+144,716,180489,The University of Montana,public,MT,selected,primary selection
+145,721,180878,Bryan College of Health Sciences,private,NE,selected,primary selection
+146,726,181297,Nebraska Methodist College of Nursing & Allied Health,private,NE,selected,primary selection
+147,731,181446,Nebraska Wesleyan University,private,NE,selected,primary selection
+148,736,181853,York College,private,NE,selected,primary selection
+149,741,182500,Truckee Meadows Community College,public,NV,selected,primary selection
+150,746,183044,University of New Hampshire-Main Campus,public,NH,selected,primary selection
+151,751,183789,Berkeley College-Woodland Park,forprofit,NJ,selected,primary selection
+152,756,184612,Felician University,private,NJ,selected,primary selection
+153,761,185262,Kean University,public,NJ,selected,primary selection
+154,766,186201,Ramapo College of New Jersey,public,NJ,selected,primary selection
+155,771,186584,Seton Hall University,private,NJ,selected,primary selection
+156,776,187596,Navajo Technical University,public,NM,selected,primary selection
+157,781,188030,New Mexico State University-Main Campus,public,NM,selected,primary selection
+158,786,188517,Bryant & Stratton College-Albany,forprofit,NY,selected,primary selection
+159,791,189088,Bard College,private,NY,selected,primary selection
+160,796,189565,Bryant & Stratton College-Syracuse North,forprofit,NY,selected,primary selection
+161,801,190099,Colgate University,private,NY,selected,primary selection
+162,806,190503,Culinary Institute of America,private,NY,selected,primary selection
+163,811,190600,CUNY John Jay College of Criminal Justice,public,NY,selected,primary selection
+164,816,190691,CUNY York College,public,NY,selected,primary selection
+165,821,191241,Fordham University,private,NY,selected,primary selection
+166,826,191649,Hofstra University,private,NY,selected,primary selection
+167,831,192271,LIM College,forprofit,NY,selected,primary selection
+168,836,192785,Maria College of Albany,private,NY,selected,primary selection
+169,841,193061,Mesivta of Eastern Parkway-Yeshiva Zichron Meilech,private,NY,selected,primary selection
+170,846,193584,Nazareth College,private,NY,selected,primary selection
+171,851,193900,New York University,private,NY,selected,primary selection
+172,856,194392,Paul Smiths College of Arts and Science,private,NY,selected,primary selection
+173,861,194736,Rabbinical College of Long Island,private,NY,selected,primary selection
+174,866,195049,Rockefeller University,private,NY,selected,primary selection
+175,871,195243,St. Thomas Aquinas College,private,NY,selected,primary selection
+176,876,195720,Saint John Fisher College,private,NY,selected,primary selection
+177,881,196042,Farmingdale State College,public,NY,selected,primary selection
+178,886,196103,SUNY College of Environmental Science and Forestry,public,NY,selected,primary selection
+179,891,196185,SUNY Oneonta,public,NY,selected,primary selection
+180,896,196255,SUNY Downstate Health Sciences University,public,NY,selected,primary selection
+181,901,196583,Torah Temimah Talmudical Seminary,private,NY,selected,primary selection
+182,906,197036,United States Military Academy,public,NY,selected,primary selection
+183,911,197285,The College of Westchester,forprofit,NY,selected,primary selection
+184,916,197735,Yeshivath Viznitz,private,NY,selected,primary selection
+185,921,198109,Cabarrus College of Health Sciences,private,NC,selected,primary selection
+186,926,198464,East Carolina University,public,NC,selected,primary selection
+187,931,198677,Heritage Bible College,private,NC,selected,primary selection
+188,936,198899,Mars Hill University,private,NC,selected,primary selection
+189,941,199102,North Carolina A & T State University,public,NC,selected,primary selection
+190,946,199209,North Carolina Wesleyan College,private,NC,selected,primary selection
+191,951,199607,Salem College,private,NC,selected,primary selection
+192,956,199962,Wingate University,private,NC,selected,primary selection
+193,961,200217,University of Mary,private,ND,selected,primary selection
+194,966,200527,Turtle Mountain Community College,private,ND,selected,primary selection
+195,971,201140,Athenaeum of Ohio,private,OH,selected,primary selection
+196,976,201645,Case Western Reserve University,private,OH,selected,primary selection
+197,981,201973,Clark State Community College,public,OH,selected,primary selection
+198,986,202684,Bryant & Stratton College-Cleveland,forprofit,OH,selected,primary selection
+199,991,203368,John Carroll University,private,OH,selected,primary selection
+200,996,203544,Kettering College,private,OH,selected,primary selection
+201,1001,203997,Methodist Theological School in Ohio,private,OH,selected,primary selection
+202,1006,204264,Muskingum University,private,OH,selected,primary selection
+203,1011,204635,Ohio Northern University,private,OH,selected,primary selection
+204,1016,204909,Ohio Wesleyan University,private,OH,selected,primary selection
+205,1021,205391,The Modern College of Design,forprofit,OH,selected,primary selection
+206,1026,206084,University of Toledo,public,OH,selected,primary selection
+207,1031,206491,Wilberforce University,private,OH,selected,primary selection
+208,1036,206622,Xavier University,private,OH,selected,primary selection
+209,1041,206941,University of Central Oklahoma,public,OK,selected,primary selection
+210,1046,207306,Northwestern Oklahoma State University,public,OK,selected,primary selection
+211,1051,207403,Oklahoma Baptist University,private,OK,selected,primary selection
+212,1056,207847,Southeastern Oklahoma State University,public,OK,selected,primary selection
+213,1061,209056,Lewis & Clark College,private,OR,selected,primary selection
+214,1066,209490,Oregon Health & Science University,public,OR,selected,primary selection
+215,1071,209807,Portland State University,public,OR,selected,primary selection
+216,1076,210368,Western Seminary,private,OR,selected,primary selection
+217,1081,210775,Alvernia University,private,PA,selected,primary selection
+218,1086,211158,Bloomsburg University of Pennsylvania,public,PA,selected,primary selection
+219,1091,211468,Cedar Crest College,private,PA,selected,primary selection
+220,1096,211981,Delaware Valley University,private,PA,selected,primary selection
+221,1101,212197,Elizabethtown College,private,PA,selected,primary selection
+222,1106,212771,Gratz College,private,PA,selected,primary selection
+223,1111,213011,Immaculata University,private,PA,selected,primary selection
+224,1116,213376,Lackawanna College,private,PA,selected,primary selection
+225,1121,213613,Lock Haven University,public,PA,selected,primary selection
+226,1126,213987,Mercyhurst University,private,PA,selected,primary selection
+227,1131,214175,Muhlenberg College,private,PA,selected,primary selection
+228,1136,214634,Pennsylvania State University-Penn State Shenango,public,PA,selected,primary selection
+229,1141,215132,University of the Sciences,private,PA,selected,primary selection
+230,1146,215628,Reformed Presbyterian Theological Seminary,private,PA,selected,primary selection
+231,1151,215813,Saint Vincent Seminary,private,PA,selected,primary selection
+232,1156,216339,Temple University,public,PA,selected,primary selection
+233,1161,216542,University of Valley Forge,private,PA,selected,primary selection
+234,1166,216852,Widener University,private,PA,selected,primary selection
+235,1171,217235,Johnson & Wales University-Providence,private,RI,selected,primary selection
+236,1176,217606,Northpoint Bible College,private,MA,selected,primary selection
+237,1181,217819,College of Charleston,public,SC,selected,primary selection
+238,1186,217925,Columbia International University,private,SC,selected,primary selection
+239,1191,218229,Lander University,public,SC,selected,primary selection
+240,1196,218645,University of South Carolina Aiken,public,SC,selected,primary selection
+241,1201,218964,Winthrop University,public,SC,selected,primary selection
+242,1206,219204,National American University-Rapid City,forprofit,SD,selected,primary selection
+243,1211,219356,South Dakota State University,public,SD,selected,primary selection
+244,1216,219709,Belmont University,private,TN,selected,primary selection
+245,1221,220002,Hussian College-Daymar College Nashville,forprofit,TN,selected,primary selection
+246,1226,220552,South College,forprofit,TN,selected,primary selection
+247,1231,220792,Meharry Medical College,private,TN,selected,primary selection
+248,1236,221351,Rhodes College,private,TN,selected,primary selection
+249,1241,221768,The University of Tennessee-Martin,public,TN,selected,primary selection
+250,1246,222178,Abilene Christian University,private,TX,skipped,panel
+250,1247,222628,Amberton University,private,TX,selected,replacement
+251,1251,223001,Austin Presbyterian Theological Seminary,private,TX,selected,primary selection
+252,1256,224147,Texas A & M University-Corpus Christi,public,TX,selected,primary selection
+253,1261,224545,Texas A&M University-Texarkana,public,TX,selected,primary selection
+254,1266,225502,University of Houston-Victoria,public,TX,selected,primary selection
+255,1271,226231,LeTourneau University,private,TX,selected,primary selection
+256,1276,226879,Wade College,forprofit,TX,selected,primary selection
+257,1281,227526,Prairie View A & M University,public,TX,selected,primary selection
+258,1286,228194,South Texas College of Law Houston,private,TX,selected,primary selection
+259,1291,228486,Southwestern Christian College,private,TX,selected,primary selection
+260,1296,228705,Texas A & M University-Kingsville,public,TX,selected,primary selection
+261,1301,228866,Texas Chiropractic College Foundation Inc,private,TX,selected,primary selection
+262,1306,229115,Texas Tech University,public,TX,selected,primary selection
+263,1311,230038,Brigham Young University-Provo,private,UT,selected,primary selection
+264,1316,230603,Southern Utah University,public,UT,selected,primary selection
+265,1321,230816,Bennington College,private,VT,selected,primary selection
+266,1326,230959,Middlebury College,private,VT,skipped,panel
+266,1327,231059,Saint Michael's College,private,VT,selected,replacement
+267,1331,231147,Vermont Law School,private,VT,selected,primary selection
+268,1336,231712,Christopher Newport University,public,VA,selected,primary selection
+269,1341,232025,Emory & Henry College,private,VA,selected,primary selection
+270,1346,232557,Liberty University,private,VA,selected,primary selection
+271,1351,232706,Marymount University,private,VA,selected,primary selection
+272,1356,233301,Randolph College,private,VA,selected,primary selection
+273,1361,233684,Strayer University-Virginia,forprofit,VA,selected,primary selection
+274,1366,234137,Virginia University of Lynchburg,private,VA,selected,primary selection
+275,1371,234845,Centralia College,public,WA,selected,primary selection
+276,1376,235097,Eastern Washington University,public,WA,selected,primary selection
+277,1381,235431,Highline College,public,WA,selected,primary selection
+278,1386,236382,Renton Technical College,public,WA,selected,primary selection
+279,1391,236692,Spokane Community College,public,WA,selected,primary selection
+280,1396,237011,Western Washington University,public,WA,selected,primary selection
+281,1401,237181,Bethany College,private,WV,selected,primary selection
+282,1406,237640,Ohio Valley University,private,WV,selected,primary selection
+283,1411,237899,West Virginia State University,public,WV,selected,primary selection
+284,1416,238263,Madison Area Technical College,public,WI,selected,primary selection
+285,1421,238661,Edgewood College,private,WI,selected,primary selection
+286,1426,239318,Milwaukee School of Engineering,private,WI,selected,primary selection
+287,1431,240107,Viterbo University,private,WI,selected,primary selection
+288,1436,240365,University of Wisconsin-Oshkosh,public,WI,selected,primary selection
+289,1441,240453,University of Wisconsin-Milwaukee,public,WI,selected,primary selection
+290,1446,241100,American University of Puerto Rico,private,PR,selected,primary selection
+291,1451,241331,Carlos Albizu University-San Juan,private,PR,selected,primary selection
+292,1456,241739,Universidad Ana G. Mendez-Cupey Campus,private,PR,selected,primary selection
+293,1461,242121,Humacao Community College,private,PR,selected,primary selection
+294,1466,243197,University of Puerto Rico-Mayaguez,public,PR,selected,primary selection
+295,1471,243498,Seminario Evangelico de Puerto Rico,private,PR,selected,primary selection
+296,1476,243744,Stanford University,private,CA,selected,primary selection
+297,1481,245847,Antioch University-Santa Barbara,private,CA,selected,primary selection
+298,1486,247162,Ecumenical Theological Seminary,private,MI,selected,primary selection
+299,1491,248934,ECPI University,forprofit,VA,selected,primary selection
+300,1496,260992,Northwestern College,forprofit,IL,selected,primary selection
