@@ -1,0 +1,902 @@
+{
+  "written at (UTC)": "2026-11-16T06:21:04.228229+00:00",
+  "note": "Checks of the measurement only; no closure outcome is read.",
+  "years read (fall)": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fiscal years they are assigned to": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "per year": {
+    "2012": {
+      "institutions with a value": 7443,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 7443,
+        "min": 0.0,
+        "10%": 0.128,
+        "25%": 0.277,
+        "median": 0.508,
+        "75%": 0.8,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.537
+      }
+    },
+    "2013": {
+      "institutions with a value": 7409,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 7409,
+        "min": 0.0,
+        "10%": 0.125,
+        "25%": 0.273,
+        "median": 0.5,
+        "75%": 0.78,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.525
+      }
+    },
+    "2014": {
+      "institutions with a value": 7309,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 7309,
+        "min": 0.0,
+        "10%": 0.124,
+        "25%": 0.27,
+        "median": 0.5,
+        "75%": 0.769,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.519
+      }
+    },
+    "2015": {
+      "institutions with a value": 7183,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 7183,
+        "min": 0.0,
+        "10%": 0.113,
+        "25%": 0.268,
+        "median": 0.5,
+        "75%": 0.751,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.516
+      }
+    },
+    "2016": {
+      "institutions with a value": 6773,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 6773,
+        "min": 0.0,
+        "10%": 0.125,
+        "25%": 0.271,
+        "median": 0.5,
+        "75%": 0.75,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.515
+      }
+    },
+    "2017": {
+      "institutions with a value": 6631,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 6631,
+        "min": 0.0,
+        "10%": 0.136,
+        "25%": 0.283,
+        "median": 0.5,
+        "75%": 0.75,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.519
+      }
+    },
+    "2018": {
+      "institutions with a value": 6314,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 6314,
+        "min": 0.0,
+        "10%": 0.147,
+        "25%": 0.291,
+        "median": 0.5,
+        "75%": 0.76,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.526
+      }
+    },
+    "2019": {
+      "institutions with a value": 6121,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 6121,
+        "min": 0.0,
+        "10%": 0.157,
+        "25%": 0.297,
+        "median": 0.5,
+        "75%": 0.756,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.53
+      }
+    },
+    "2020": {
+      "institutions with a value": 6050,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 6050,
+        "min": 0.0,
+        "10%": 0.167,
+        "25%": 0.321,
+        "median": 0.52,
+        "75%": 0.778,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.545
+      }
+    },
+    "2021": {
+      "institutions with a value": 5975,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 5975,
+        "min": 0.0,
+        "10%": 0.167,
+        "25%": 0.324,
+        "median": 0.512,
+        "75%": 0.772,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.542
+      }
+    },
+    "2022": {
+      "institutions with a value": 5907,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 5907,
+        "min": 0.0,
+        "10%": 0.167,
+        "25%": 0.323,
+        "median": 0.512,
+        "75%": 0.75,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.538
+      }
+    },
+    "2023": {
+      "institutions with a value": 5848,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 5848,
+        "min": 0.0,
+        "10%": 0.167,
+        "25%": 0.325,
+        "median": 0.506,
+        "75%": 0.76,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.538
+      }
+    },
+    "2024": {
+      "institutions with a value": 5763,
+      "rows with no instructional staff": 0,
+      "rows where EAPTOT differs from EAPFT + EAPPT": 0,
+      "share": {
+        "n": 5763,
+        "min": 0.0,
+        "10%": 0.161,
+        "25%": 0.318,
+        "median": 0.505,
+        "75%": 0.759,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.535
+      }
+    }
+  },
+  "by sector, fall 2024 (sector from HD2025)": {
+    "public 4-year": {
+      "n": 850,
+      "min": 0.0,
+      "10%": 0.295,
+      "25%": 0.411,
+      "median": 0.577,
+      "75%": 0.72,
+      "90%": 0.818,
+      "max": 1.0,
+      "mean": 0.566
+    },
+    "private nonprofit 4-year": {
+      "n": 1557,
+      "min": 0.0,
+      "10%": 0.16,
+      "25%": 0.297,
+      "median": 0.478,
+      "75%": 0.7,
+      "90%": 0.9,
+      "max": 1.0,
+      "mean": 0.502
+    },
+    "for-profit 4-year": {
+      "n": 276,
+      "min": 0.0,
+      "10%": 0.03,
+      "25%": 0.103,
+      "median": 0.248,
+      "75%": 0.435,
+      "90%": 0.778,
+      "max": 1.0,
+      "mean": 0.306
+    },
+    "public 2-year": {
+      "n": 820,
+      "min": 0.0,
+      "10%": 0.232,
+      "25%": 0.305,
+      "median": 0.394,
+      "75%": 0.503,
+      "90%": 0.688,
+      "max": 1.0,
+      "mean": 0.433
+    },
+    "private nonprofit 2-year": {
+      "n": 128,
+      "min": 0.0,
+      "10%": 0.0,
+      "25%": 0.214,
+      "median": 0.571,
+      "75%": 0.9,
+      "90%": 1.0,
+      "max": 1.0,
+      "mean": 0.557
+    },
+    "for-profit 2-year": {
+      "n": 468,
+      "min": 0.0,
+      "10%": 0.154,
+      "25%": 0.286,
+      "median": 0.5,
+      "75%": 0.8,
+      "90%": 1.0,
+      "max": 1.0,
+      "mean": 0.535
+    },
+    "public less-than-2-year": {
+      "n": 219,
+      "min": 0.0,
+      "10%": 0.05,
+      "25%": 0.214,
+      "median": 0.6,
+      "75%": 1.0,
+      "90%": 1.0,
+      "max": 1.0,
+      "mean": 0.571
+    },
+    "private nonprofit less-than-2-year": {
+      "n": 54,
+      "min": 0.0,
+      "10%": 0.2,
+      "25%": 0.529,
+      "median": 0.929,
+      "75%": 1.0,
+      "90%": 1.0,
+      "max": 1.0,
+      "mean": 0.732
+    },
+    "for-profit less-than-2-year": {
+      "n": 1331,
+      "min": 0.0,
+      "10%": 0.143,
+      "25%": 0.429,
+      "median": 0.667,
+      "75%": 1.0,
+      "90%": 1.0,
+      "max": 1.0,
+      "mean": 0.647
+    }
+  },
+  "year-to-year change in an institution's share": {
+    "pairs of consecutive years": 75860,
+    "change": {
+      "n": 75860,
+      "min": 0.0,
+      "10%": 0.0,
+      "25%": 0.005,
+      "median": 0.026,
+      "75%": 0.078,
+      "90%": 0.186,
+      "max": 1.0,
+      "mean": 0.07
+    },
+    "changes of 0.3 or more": 3906,
+    "share of changes of 0.3 or more": 0.0515,
+    "first examples of large changes": [
+      {
+        "unitid": "205708",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.452,
+          0.778
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            14,
+            17
+          ],
+          [
+            7,
+            2
+          ]
+        ]
+      },
+      {
+        "unitid": "119951",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.556,
+          0.867
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            5,
+            4
+          ],
+          [
+            13,
+            2
+          ]
+        ]
+      },
+      {
+        "unitid": "443225",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.333,
+          0.667
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "unitid": "122454",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.183,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            26,
+            116
+          ],
+          [
+            21,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "367097",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.333,
+          0.667
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "unitid": "160199",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.429
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      {
+        "unitid": "476993",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.667,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            4,
+            2
+          ],
+          [
+            8,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "467793",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.818,
+          0.261
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            9,
+            2
+          ],
+          [
+            6,
+            17
+          ]
+        ]
+      },
+      {
+        "unitid": "417318",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.538
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            16,
+            0
+          ],
+          [
+            7,
+            6
+          ]
+        ]
+      },
+      {
+        "unitid": "192864",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.325,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            98,
+            204
+          ],
+          [
+            89,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "368771",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.353,
+          0.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            6,
+            11
+          ],
+          [
+            0,
+            11
+          ]
+        ]
+      },
+      {
+        "unitid": "431275",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.267
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            11
+          ]
+        ]
+      },
+      {
+        "unitid": "212683",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.5
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      {
+        "unitid": "110060",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.12
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            8,
+            0
+          ],
+          [
+            6,
+            44
+          ]
+        ]
+      },
+      {
+        "unitid": "204185",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.52
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            128,
+            0
+          ],
+          [
+            129,
+            119
+          ]
+        ]
+      },
+      {
+        "unitid": "459426",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.667,
+          0.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            6
+          ]
+        ]
+      },
+      {
+        "unitid": "248882",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.4,
+          0.037
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            26
+          ]
+        ]
+      },
+      {
+        "unitid": "384412",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.057,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            4,
+            66
+          ],
+          [
+            6,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "192828",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.6,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "460525",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.875,
+          0.381
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            21,
+            3
+          ],
+          [
+            8,
+            13
+          ]
+        ]
+      },
+      {
+        "unitid": "458034",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.1
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "unitid": "233897",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.571
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            90,
+            0
+          ],
+          [
+            92,
+            69
+          ]
+        ]
+      },
+      {
+        "unitid": "441779",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          1.0,
+          0.5
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      {
+        "unitid": "441894",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.667,
+          1.0
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            6,
+            3
+          ],
+          [
+            10,
+            0
+          ]
+        ]
+      },
+      {
+        "unitid": "475592",
+        "fall years": [
+          2012,
+          2013
+        ],
+        "shares": [
+          0.043,
+          0.417
+        ],
+        "headcounts (full-time, part-time)": [
+          [
+            1,
+            22
+          ],
+          [
+            10,
+            14
+          ]
+        ]
+      }
+    ]
+  },
+  "coverage of the tracker's institutions": {
+    "v3 test institutions": {
+      "institutions": 1382,
+      "with a value in the latest year": 1220,
+      "with values in all of fall 2014-2024": 1114,
+      "with no value in fall 2014-2024": 17
+    },
+    "v3 development institutions": {
+      "institutions": 670,
+      "with a value in the latest year": 585,
+      "with values in all of fall 2014-2024": 580,
+      "with no value in fall 2014-2024": 1
+    }
+  }
+}
