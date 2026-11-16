@@ -1,0 +1,65 @@
+name: meta channel 4 - measure the tenure share and test it on the development colleges
+
+# Manual-only. Runs src/tenure share.py: from the IPEDS staffing files (EAP,
+# fall 2012 on) and their data dictionaries, measures each institution's
+# secure (tenured plus tenure-track) share of instructional staff, with two
+# variants (tenured only; plus indefinite contracts from fall 2016), and
+# checks the measurement. Then runs src/tenure share test.py, the
+# exploratory test of the secure share as the meta channel, on the 670
+# development institutions only (the v3 test institutions are held back for
+# a pre-registered retest). Commits the results to data/meta channel/.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: tenure-share
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Download, measure and check the tenure share
+        run: |
+          cd src
+          python "tenure share.py" --first 2012
+
+      - name: Test the hypothesis on the development institutions
+        run: |
+          cd src
+          python "tenure share test.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/meta channel/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "meta channel 4: tenure share, its checks and the development test (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
