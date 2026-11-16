@@ -1,5 +1,5 @@
 {
-  "written at (UTC)": "2026-11-16T08:47:45.943191+00:00",
+  "written at (UTC)": "2026-11-16T20:59:03.057671+00:00",
   "note": "Checks of the measurement only; no closure outcome is read.",
   "years read (fall)": [
     2012,
@@ -33,121 +33,753 @@
   ],
   "categories resolved per year": {
     "2012": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
       "office support"
     ],
     "2013": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2014": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2015": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2016": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2017": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2018": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2019": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2020": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2021": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2022": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2023": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ],
     "2024": [
+      "business",
+      "community/legal/media",
       "instructional",
       "management",
-      "office support"
+      "office support",
+      "student affairs"
     ]
   },
   "core administrative share": {
     "per year": {
-      "2012": "not computed: a needed category was not resolved this year",
-      "2013": "not computed: a needed category was not resolved this year",
-      "2014": "not computed: a needed category was not resolved this year",
-      "2015": "not computed: a needed category was not resolved this year",
-      "2016": "not computed: a needed category was not resolved this year",
-      "2017": "not computed: a needed category was not resolved this year",
-      "2018": "not computed: a needed category was not resolved this year",
-      "2019": "not computed: a needed category was not resolved this year",
-      "2020": "not computed: a needed category was not resolved this year",
-      "2021": "not computed: a needed category was not resolved this year",
-      "2022": "not computed: a needed category was not resolved this year",
-      "2023": "not computed: a needed category was not resolved this year",
-      "2024": "not computed: a needed category was not resolved this year"
-    },
-    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {},
-    "year-to-year change in an institution's share": {
-      "pairs": 0,
-      "change": {
-        "n": 0
+      "2012": {
+        "institutions": 7443,
+        "share (FTE)": {
+          "n": 7443,
+          "min": 0.0,
+          "10%": 0.115,
+          "25%": 0.207,
+          "median": 0.316,
+          "75%": 0.414,
+          "90%": 0.511,
+          "max": 0.998,
+          "mean": 0.315
+        }
       },
-      "changes of 0.2 or more": 0,
-      "share of changes of 0.2 or more": null
+      "2013": {
+        "institutions": 7409,
+        "share (FTE)": {
+          "n": 7409,
+          "min": 0.0,
+          "10%": 0.128,
+          "25%": 0.204,
+          "median": 0.304,
+          "75%": 0.4,
+          "90%": 0.5,
+          "max": 0.999,
+          "mean": 0.309
+        }
+      },
+      "2014": {
+        "institutions": 7309,
+        "share (FTE)": {
+          "n": 7309,
+          "min": 0.0,
+          "10%": 0.111,
+          "25%": 0.2,
+          "median": 0.3,
+          "75%": 0.399,
+          "90%": 0.493,
+          "max": 0.999,
+          "mean": 0.302
+        }
+      },
+      "2015": {
+        "institutions": 7183,
+        "share (FTE)": {
+          "n": 7183,
+          "min": 0.0,
+          "10%": 0.129,
+          "25%": 0.214,
+          "median": 0.309,
+          "75%": 0.401,
+          "90%": 0.496,
+          "max": 1.0,
+          "mean": 0.311
+        }
+      },
+      "2016": {
+        "institutions": 6773,
+        "share (FTE)": {
+          "n": 6773,
+          "min": 0.0,
+          "10%": 0.13,
+          "25%": 0.214,
+          "median": 0.316,
+          "75%": 0.41,
+          "90%": 0.5,
+          "max": 0.998,
+          "mean": 0.316
+        }
+      },
+      "2017": {
+        "institutions": 6631,
+        "share (FTE)": {
+          "n": 6631,
+          "min": 0.0,
+          "10%": 0.138,
+          "25%": 0.221,
+          "median": 0.324,
+          "75%": 0.414,
+          "90%": 0.5,
+          "max": 0.999,
+          "mean": 0.322
+        }
+      },
+      "2018": {
+        "institutions": 6314,
+        "share (FTE)": {
+          "n": 6314,
+          "min": 0.0,
+          "10%": 0.138,
+          "25%": 0.224,
+          "median": 0.326,
+          "75%": 0.417,
+          "90%": 0.5,
+          "max": 0.999,
+          "mean": 0.324
+        }
+      },
+      "2019": {
+        "institutions": 6121,
+        "share (FTE)": {
+          "n": 6121,
+          "min": 0.0,
+          "10%": 0.14,
+          "25%": 0.226,
+          "median": 0.328,
+          "75%": 0.421,
+          "90%": 0.5,
+          "max": 0.999,
+          "mean": 0.326
+        }
+      },
+      "2020": {
+        "institutions": 6050,
+        "share (FTE)": {
+          "n": 6050,
+          "min": 0.0,
+          "10%": 0.143,
+          "25%": 0.233,
+          "median": 0.333,
+          "75%": 0.429,
+          "90%": 0.503,
+          "max": 0.999,
+          "mean": 0.333
+        }
+      },
+      "2021": {
+        "institutions": 5975,
+        "share (FTE)": {
+          "n": 5975,
+          "min": 0.0,
+          "10%": 0.143,
+          "25%": 0.233,
+          "median": 0.333,
+          "75%": 0.429,
+          "90%": 0.506,
+          "max": 0.999,
+          "mean": 0.333
+        }
+      },
+      "2022": {
+        "institutions": 5907,
+        "share (FTE)": {
+          "n": 5907,
+          "min": 0.0,
+          "10%": 0.148,
+          "25%": 0.24,
+          "median": 0.339,
+          "75%": 0.437,
+          "90%": 0.516,
+          "max": 1.0,
+          "mean": 0.339
+        }
+      },
+      "2023": {
+        "institutions": 5848,
+        "share (FTE)": {
+          "n": 5848,
+          "min": 0.0,
+          "10%": 0.15,
+          "25%": 0.243,
+          "median": 0.343,
+          "75%": 0.441,
+          "90%": 0.522,
+          "max": 1.0,
+          "mean": 0.343
+        }
+      },
+      "2024": {
+        "institutions": 5763,
+        "share (FTE)": {
+          "n": 5763,
+          "min": 0.0,
+          "10%": 0.154,
+          "25%": 0.244,
+          "median": 0.348,
+          "75%": 0.449,
+          "90%": 0.525,
+          "max": 1.0,
+          "mean": 0.346
+        }
+      }
+    },
+    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {
+      "2012": 0.1076,
+      "2013": 0.0865,
+      "2014": 0.0821,
+      "2015": 0.0812,
+      "2016": 0.0895,
+      "2017": 0.0906,
+      "2018": 0.0933,
+      "2019": 0.097,
+      "2020": 0.1026,
+      "2021": 0.1054,
+      "2022": 0.1148,
+      "2023": 0.1236,
+      "2024": 0.132
+    },
+    "by sector, fall 2024 (sector from HD2025)": {
+      "public 4-year": {
+        "n": 850,
+        "min": 0.038,
+        "10%": 0.258,
+        "25%": 0.324,
+        "median": 0.39,
+        "75%": 0.464,
+        "90%": 0.524,
+        "max": 0.781,
+        "mean": 0.389
+      },
+      "private nonprofit 4-year": {
+        "n": 1557,
+        "min": 0.0,
+        "10%": 0.202,
+        "25%": 0.322,
+        "median": 0.418,
+        "75%": 0.489,
+        "90%": 0.552,
+        "max": 0.929,
+        "mean": 0.4
+      },
+      "for-profit 4-year": {
+        "n": 276,
+        "min": 0.0,
+        "10%": 0.143,
+        "25%": 0.205,
+        "median": 0.281,
+        "75%": 0.398,
+        "90%": 0.517,
+        "max": 0.941,
+        "mean": 0.308
+      },
+      "public 2-year": {
+        "n": 820,
+        "min": 0.048,
+        "10%": 0.169,
+        "25%": 0.241,
+        "median": 0.313,
+        "75%": 0.395,
+        "90%": 0.467,
+        "max": 0.9,
+        "mean": 0.319
+      },
+      "private nonprofit 2-year": {
+        "n": 128,
+        "min": 0.0,
+        "10%": 0.101,
+        "25%": 0.167,
+        "median": 0.292,
+        "75%": 0.43,
+        "90%": 0.583,
+        "max": 0.875,
+        "mean": 0.321
+      },
+      "for-profit 2-year": {
+        "n": 468,
+        "min": 0.0,
+        "10%": 0.141,
+        "25%": 0.204,
+        "median": 0.297,
+        "75%": 0.417,
+        "90%": 0.5,
+        "max": 0.774,
+        "mean": 0.31
+      },
+      "public less-than-2-year": {
+        "n": 219,
+        "min": 0.0,
+        "10%": 0.083,
+        "25%": 0.157,
+        "median": 0.221,
+        "75%": 0.316,
+        "90%": 0.429,
+        "max": 0.767,
+        "mean": 0.244
+      },
+      "private nonprofit less-than-2-year": {
+        "n": 54,
+        "min": 0.0,
+        "10%": 0.1,
+        "25%": 0.162,
+        "median": 0.308,
+        "75%": 0.4,
+        "90%": 0.542,
+        "max": 0.75,
+        "mean": 0.304
+      },
+      "for-profit less-than-2-year": {
+        "n": 1331,
+        "min": 0.0,
+        "10%": 0.111,
+        "25%": 0.2,
+        "median": 0.3,
+        "75%": 0.41,
+        "90%": 0.5,
+        "max": 0.857,
+        "mean": 0.306
+      }
+    },
+    "year-to-year change in an institution's share": {
+      "pairs": 75860,
+      "change": {
+        "n": 75860,
+        "min": 0.0,
+        "10%": 0.001,
+        "25%": 0.008,
+        "median": 0.023,
+        "75%": 0.061,
+        "90%": 0.133,
+        "max": 0.875,
+        "mean": 0.051
+      },
+      "changes of 0.2 or more": 3800,
+      "share of changes of 0.2 or more": 0.0501
+    },
+    "coverage of the tracker's institutions": {
+      "v3 test institutions": {
+        "institutions": 1382,
+        "with a value in the latest year": 1220,
+        "with values in all of fall 2014-2024": 1114
+      },
+      "v3 development institutions": {
+        "institutions": 670,
+        "with a value in the latest year": 585,
+        "with values in all of fall 2014-2024": 580
+      }
     }
   },
   "broad administrative share": {
     "per year": {
       "2012": "not computed: a needed category was not resolved this year",
-      "2013": "not computed: a needed category was not resolved this year",
-      "2014": "not computed: a needed category was not resolved this year",
-      "2015": "not computed: a needed category was not resolved this year",
-      "2016": "not computed: a needed category was not resolved this year",
-      "2017": "not computed: a needed category was not resolved this year",
-      "2018": "not computed: a needed category was not resolved this year",
-      "2019": "not computed: a needed category was not resolved this year",
-      "2020": "not computed: a needed category was not resolved this year",
-      "2021": "not computed: a needed category was not resolved this year",
-      "2022": "not computed: a needed category was not resolved this year",
-      "2023": "not computed: a needed category was not resolved this year",
-      "2024": "not computed: a needed category was not resolved this year"
-    },
-    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {},
-    "year-to-year change in an institution's share": {
-      "pairs": 0,
-      "change": {
-        "n": 0
+      "2013": {
+        "institutions": 7409,
+        "share (FTE)": {
+          "n": 7409,
+          "min": 0.0,
+          "10%": 0.304,
+          "25%": 0.4,
+          "median": 0.487,
+          "75%": 0.566,
+          "90%": 0.65,
+          "max": 0.999,
+          "mean": 0.48
+        }
       },
-      "changes of 0.2 or more": 0,
-      "share of changes of 0.2 or more": null
+      "2014": {
+        "institutions": 7309,
+        "share (FTE)": {
+          "n": 7309,
+          "min": 0.0,
+          "10%": 0.297,
+          "25%": 0.391,
+          "median": 0.485,
+          "75%": 0.561,
+          "90%": 0.638,
+          "max": 0.999,
+          "mean": 0.474
+        }
+      },
+      "2015": {
+        "institutions": 7183,
+        "share (FTE)": {
+          "n": 7183,
+          "min": 0.0,
+          "10%": 0.307,
+          "25%": 0.4,
+          "median": 0.488,
+          "75%": 0.564,
+          "90%": 0.639,
+          "max": 1.0,
+          "mean": 0.479
+        }
+      },
+      "2016": {
+        "institutions": 6773,
+        "share (FTE)": {
+          "n": 6773,
+          "min": 0.0,
+          "10%": 0.32,
+          "25%": 0.405,
+          "median": 0.492,
+          "75%": 0.565,
+          "90%": 0.642,
+          "max": 0.999,
+          "mean": 0.485
+        }
+      },
+      "2017": {
+        "institutions": 6631,
+        "share (FTE)": {
+          "n": 6631,
+          "min": 0.0,
+          "10%": 0.323,
+          "25%": 0.409,
+          "median": 0.494,
+          "75%": 0.567,
+          "90%": 0.643,
+          "max": 0.999,
+          "mean": 0.487
+        }
+      },
+      "2018": {
+        "institutions": 6314,
+        "share (FTE)": {
+          "n": 6314,
+          "min": 0.0,
+          "10%": 0.325,
+          "25%": 0.412,
+          "median": 0.496,
+          "75%": 0.569,
+          "90%": 0.641,
+          "max": 1.0,
+          "mean": 0.488
+        }
+      },
+      "2019": {
+        "institutions": 6121,
+        "share (FTE)": {
+          "n": 6121,
+          "min": 0.0,
+          "10%": 0.327,
+          "25%": 0.413,
+          "median": 0.495,
+          "75%": 0.568,
+          "90%": 0.643,
+          "max": 1.0,
+          "mean": 0.488
+        }
+      },
+      "2020": {
+        "institutions": 6050,
+        "share (FTE)": {
+          "n": 6050,
+          "min": 0.0,
+          "10%": 0.324,
+          "25%": 0.412,
+          "median": 0.496,
+          "75%": 0.566,
+          "90%": 0.645,
+          "max": 1.0,
+          "mean": 0.488
+        }
+      },
+      "2021": {
+        "institutions": 5975,
+        "share (FTE)": {
+          "n": 5975,
+          "min": 0.0,
+          "10%": 0.321,
+          "25%": 0.406,
+          "median": 0.494,
+          "75%": 0.569,
+          "90%": 0.64,
+          "max": 1.0,
+          "mean": 0.487
+        }
+      },
+      "2022": {
+        "institutions": 5907,
+        "share (FTE)": {
+          "n": 5907,
+          "min": 0.0,
+          "10%": 0.316,
+          "25%": 0.407,
+          "median": 0.5,
+          "75%": 0.573,
+          "90%": 0.644,
+          "max": 1.0,
+          "mean": 0.489
+        }
+      },
+      "2023": {
+        "institutions": 5848,
+        "share (FTE)": {
+          "n": 5848,
+          "min": 0.0,
+          "10%": 0.308,
+          "25%": 0.402,
+          "median": 0.497,
+          "75%": 0.571,
+          "90%": 0.643,
+          "max": 1.0,
+          "mean": 0.485
+        }
+      },
+      "2024": {
+        "institutions": 5763,
+        "share (FTE)": {
+          "n": 5763,
+          "min": 0.0,
+          "10%": 0.308,
+          "25%": 0.402,
+          "median": 0.5,
+          "75%": 0.571,
+          "90%": 0.642,
+          "max": 1.0,
+          "mean": 0.486
+        }
+      }
+    },
+    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {
+      "2013": 0.4455,
+      "2014": 0.4367,
+      "2015": 0.4441,
+      "2016": 0.4559,
+      "2017": 0.4577,
+      "2018": 0.4659,
+      "2019": 0.4627,
+      "2020": 0.4593,
+      "2021": 0.4591,
+      "2022": 0.4788,
+      "2023": 0.4713,
+      "2024": 0.4794
+    },
+    "by sector, fall 2024 (sector from HD2025)": {
+      "public 4-year": {
+        "n": 850,
+        "min": 0.086,
+        "10%": 0.412,
+        "25%": 0.475,
+        "median": 0.527,
+        "75%": 0.58,
+        "90%": 0.629,
+        "max": 0.826,
+        "mean": 0.523
+      },
+      "private nonprofit 4-year": {
+        "n": 1557,
+        "min": 0.0,
+        "10%": 0.349,
+        "25%": 0.462,
+        "median": 0.533,
+        "75%": 0.591,
+        "90%": 0.652,
+        "max": 0.948,
+        "mean": 0.518
+      },
+      "for-profit 4-year": {
+        "n": 276,
+        "min": 0.142,
+        "10%": 0.333,
+        "25%": 0.409,
+        "median": 0.493,
+        "75%": 0.571,
+        "90%": 0.663,
+        "max": 0.96,
+        "mean": 0.497
+      },
+      "public 2-year": {
+        "n": 820,
+        "min": 0.158,
+        "10%": 0.359,
+        "25%": 0.421,
+        "median": 0.487,
+        "75%": 0.553,
+        "90%": 0.608,
+        "max": 0.955,
+        "mean": 0.487
+      },
+      "private nonprofit 2-year": {
+        "n": 128,
+        "min": 0.0,
+        "10%": 0.234,
+        "25%": 0.321,
+        "median": 0.429,
+        "75%": 0.577,
+        "90%": 0.69,
+        "max": 0.9,
+        "mean": 0.448
+      },
+      "for-profit 2-year": {
+        "n": 468,
+        "min": 0.0,
+        "10%": 0.295,
+        "25%": 0.362,
+        "median": 0.452,
+        "75%": 0.545,
+        "90%": 0.625,
+        "max": 0.873,
+        "mean": 0.457
+      },
+      "public less-than-2-year": {
+        "n": 219,
+        "min": 0.0,
+        "10%": 0.225,
+        "25%": 0.309,
+        "median": 0.409,
+        "75%": 0.5,
+        "90%": 0.596,
+        "max": 0.915,
+        "mean": 0.415
+      },
+      "private nonprofit less-than-2-year": {
+        "n": 54,
+        "min": 0.0,
+        "10%": 0.271,
+        "25%": 0.365,
+        "median": 0.49,
+        "75%": 0.538,
+        "90%": 0.673,
+        "max": 0.837,
+        "mean": 0.477
+      },
+      "for-profit less-than-2-year": {
+        "n": 1331,
+        "min": 0.0,
+        "10%": 0.25,
+        "25%": 0.333,
+        "median": 0.441,
+        "75%": 0.545,
+        "90%": 0.636,
+        "max": 0.875,
+        "mean": 0.442
+      }
+    },
+    "year-to-year change in an institution's share": {
+      "pairs": 68646,
+      "change": {
+        "n": 68646,
+        "min": 0.0,
+        "10%": 0.002,
+        "25%": 0.008,
+        "median": 0.023,
+        "75%": 0.059,
+        "90%": 0.123,
+        "max": 0.947,
+        "mean": 0.048
+      },
+      "changes of 0.2 or more": 2699,
+      "share of changes of 0.2 or more": 0.0393
+    },
+    "coverage of the tracker's institutions": {
+      "v3 test institutions": {
+        "institutions": 1382,
+        "with a value in the latest year": 1220,
+        "with values in all of fall 2014-2024": 1114
+      },
+      "v3 development institutions": {
+        "institutions": 670,
+        "with a value in the latest year": 585,
+        "with values in all of fall 2014-2024": 580
+      }
     }
   }
 }

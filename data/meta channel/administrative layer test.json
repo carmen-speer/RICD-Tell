@@ -1,7 +1,112 @@
 {
   "note": "Exploratory: development institutions only, outcomes already known. The v3 test institutions are held back for the prospective retest.",
-  "written at (UTC)": "2026-11-16T08:47:47.345647+00:00",
+  "written at (UTC)": "2026-11-16T20:59:05.679091+00:00",
   "development institutions scored": 670,
+  "categories resolved per fall year": {
+    "2012": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2013": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2014": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2015": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2016": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2017": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2018": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2019": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2020": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2021": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2022": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2023": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ],
+    "2024": [
+      "business",
+      "community/legal/media",
+      "instructional",
+      "management",
+      "office support",
+      "student affairs"
+    ]
+  },
   "bootstrap": {
     "resamples": 2000,
     "seed": 20261116
@@ -10,55 +115,209 @@
     "institutions with a value": 670,
     "closed": 70,
     "share thirds cut at": [
-      0.1682,
-      0.2401
+      0.3274,
+      0.4065
     ],
-    "1. Spearman with resource debt (delta_R_final)": -0.0274,
+    "1. Spearman with resource debt (delta_R_final)": 0.1212,
     "95% interval (debt)": [
-      -0.1022,
-      0.0527
+      0.0459,
+      0.1984
     ],
-    "1. Spearman with resource-debt trend (delta_R_trend)": -0.0119,
+    "1. Spearman with resource-debt trend (delta_R_trend)": 0.1366,
     "95% interval (debt trend)": [
-      -0.084,
-      0.0684
+      0.0641,
+      0.2125
     ],
     "1. within each sector": {
       "forprofit": {
         "institutions": 87,
-        "Spearman with resource debt": -0.1695,
+        "Spearman with resource debt": -0.1398,
         "95% interval": [
-          -0.3664,
-          0.0423
+          -0.3495,
+          0.0886
         ]
       },
       "private": {
         "institutions": 390,
-        "Spearman with resource debt": 0.1401,
+        "Spearman with resource debt": 0.2209,
         "95% interval": [
-          0.0423,
-          0.2362
+          0.1201,
+          0.3168
         ]
       },
       "public": {
         "institutions": 193,
-        "Spearman with resource debt": -0.1295,
+        "Spearman with resource debt": 0.1141,
         "95% interval": [
-          -0.2724,
-          0.0207
+          -0.0379,
+          0.26
         ]
       }
     },
     "2. closure by thirds of the share": {
       "thinnest third": {
         "institutions": 224,
-        "closed": 19,
-        "closure rate": 0.0848
+        "closed": 29,
+        "closure rate": 0.1295
       },
       "middle third": {
         "institutions": 223,
+        "closed": 23,
+        "closure rate": 0.1031
+      },
+      "thickest third": {
+        "institutions": 223,
         "closed": 18,
         "closure rate": 0.0807
+      }
+    },
+    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.1337,
+    "95% interval (adaptive capacity)": [
+      0.0608,
+      0.2075
+    ],
+    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.2342,
+    "95% interval (research ratio)": [
+      0.1623,
+      0.2989
+    ],
+    "3. Spearman with full-time instructional share (predicted below 0)": 0.2723,
+    "95% interval (full-time share)": [
+      0.193,
+      0.3483
+    ],
+    "2. area under the ROC curve (closure)": 0.4483,
+    "95% interval (area)": [
+      0.3749,
+      0.5258
+    ]
+  },
+  "core administrative share, public and private nonprofit": {
+    "institutions with a value": 583,
+    "closed": 19,
+    "share thirds cut at": [
+      0.3355,
+      0.4114
+    ],
+    "1. Spearman with resource debt (delta_R_final)": 0.1576,
+    "95% interval (debt)": [
+      0.0722,
+      0.2372
+    ],
+    "1. Spearman with resource-debt trend (delta_R_trend)": 0.1682,
+    "95% interval (debt trend)": [
+      0.0851,
+      0.2459
+    ],
+    "1. within each sector": {
+      "private": {
+        "institutions": 390,
+        "Spearman with resource debt": 0.2209,
+        "95% interval": [
+          0.1201,
+          0.3168
+        ]
+      },
+      "public": {
+        "institutions": 193,
+        "Spearman with resource debt": 0.1141,
+        "95% interval": [
+          -0.0379,
+          0.26
+        ]
+      }
+    },
+    "2. closure by thirds of the share": {
+      "thinnest third": {
+        "institutions": 195,
+        "closed": 5,
+        "closure rate": 0.0256
+      },
+      "middle third": {
+        "institutions": 194,
+        "closed": 9,
+        "closure rate": 0.0464
+      },
+      "thickest third": {
+        "institutions": 194,
+        "closed": 5,
+        "closure rate": 0.0258
+      }
+    },
+    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.1521,
+    "95% interval (adaptive capacity)": [
+      0.0682,
+      0.2295
+    ],
+    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.2279,
+    "95% interval (research ratio)": [
+      0.1521,
+      0.3016
+    ],
+    "3. Spearman with full-time instructional share (predicted below 0)": 0.2595,
+    "95% interval (full-time share)": [
+      0.1718,
+      0.3412
+    ],
+    "2. area under the ROC curve (closure)": 0.498,
+    "95% interval (area)": [
+      0.3814,
+      0.621
+    ]
+  },
+  "broad administrative share, all": {
+    "institutions with a value": 670,
+    "closed": 70,
+    "share thirds cut at": [
+      0.4872,
+      0.5455
+    ],
+    "1. Spearman with resource debt (delta_R_final)": 0.0941,
+    "95% interval (debt)": [
+      0.0156,
+      0.1724
+    ],
+    "1. Spearman with resource-debt trend (delta_R_trend)": 0.09,
+    "95% interval (debt trend)": [
+      0.0139,
+      0.1691
+    ],
+    "1. within each sector": {
+      "forprofit": {
+        "institutions": 87,
+        "Spearman with resource debt": -0.2425,
+        "95% interval": [
+          -0.4404,
+          -0.0299
+        ]
+      },
+      "private": {
+        "institutions": 390,
+        "Spearman with resource debt": 0.2132,
+        "95% interval": [
+          0.1112,
+          0.3093
+        ]
+      },
+      "public": {
+        "institutions": 193,
+        "Spearman with resource debt": 0.0737,
+        "95% interval": [
+          -0.0748,
+          0.2231
+        ]
+      }
+    },
+    "2. closure by thirds of the share": {
+      "thinnest third": {
+        "institutions": 226,
+        "closed": 26,
+        "closure rate": 0.115
+      },
+      "middle third": {
+        "institutions": 221,
+        "closed": 11,
+        "closure rate": 0.0498
       },
       "thickest third": {
         "institutions": 223,
@@ -66,67 +325,67 @@
         "closure rate": 0.148
       }
     },
-    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.0756,
+    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.12,
     "95% interval (adaptive capacity)": [
-      -0.0032,
-      0.1475
+      0.0402,
+      0.1928
     ],
-    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.123,
+    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.206,
     "95% interval (research ratio)": [
-      0.0505,
-      0.1884
+      0.1383,
+      0.2682
     ],
-    "3. Spearman with full-time instructional share (predicted below 0)": 0.0469,
+    "3. Spearman with full-time instructional share (predicted below 0)": 0.2388,
     "95% interval (full-time share)": [
-      -0.0356,
-      0.1252
+      0.1556,
+      0.3199
     ],
-    "2. area under the ROC curve (closure)": 0.6017,
+    "2. area under the ROC curve (closure)": 0.5709,
     "95% interval (area)": [
-      0.5293,
-      0.6737
+      0.4884,
+      0.6482
     ]
   },
-  "core administrative share, public and private nonprofit": {
+  "broad administrative share, public and private nonprofit": {
     "institutions with a value": 583,
     "closed": 19,
     "share thirds cut at": [
-      0.1674,
-      0.2352
+      0.4897,
+      0.5444
     ],
-    "1. Spearman with resource debt (delta_R_final)": 0.0064,
+    "1. Spearman with resource debt (delta_R_final)": 0.1535,
     "95% interval (debt)": [
-      -0.0787,
-      0.0893
+      0.067,
+      0.2388
     ],
-    "1. Spearman with resource-debt trend (delta_R_trend)": 0.0254,
+    "1. Spearman with resource-debt trend (delta_R_trend)": 0.1524,
     "95% interval (debt trend)": [
-      -0.0601,
-      0.1089
+      0.0707,
+      0.2374
     ],
     "1. within each sector": {
       "private": {
         "institutions": 390,
-        "Spearman with resource debt": 0.1401,
+        "Spearman with resource debt": 0.2132,
         "95% interval": [
-          0.0423,
-          0.2362
+          0.1112,
+          0.3093
         ]
       },
       "public": {
         "institutions": 193,
-        "Spearman with resource debt": -0.1295,
+        "Spearman with resource debt": 0.0737,
         "95% interval": [
-          -0.2724,
-          0.0207
+          -0.0748,
+          0.2231
         ]
       }
     },
     "2. closure by thirds of the share": {
       "thinnest third": {
         "institutions": 195,
-        "closed": 8,
-        "closure rate": 0.041
+        "closed": 7,
+        "closure rate": 0.0359
       },
       "middle third": {
         "institutions": 194,
@@ -135,183 +394,29 @@
       },
       "thickest third": {
         "institutions": 194,
-        "closed": 7,
-        "closure rate": 0.0361
-      }
-    },
-    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.0802,
-    "95% interval (adaptive capacity)": [
-      -0.0007,
-      0.1625
-    ],
-    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.1535,
-    "95% interval (research ratio)": [
-      0.0778,
-      0.229
-    ],
-    "3. Spearman with full-time instructional share (predicted below 0)": 0.0961,
-    "95% interval (full-time share)": [
-      0.0107,
-      0.1755
-    ],
-    "2. area under the ROC curve (closure)": 0.5167,
-    "95% interval (area)": [
-      0.3598,
-      0.6617
-    ]
-  },
-  "broad administrative share, all": {
-    "institutions with a value": 670,
-    "closed": 70,
-    "share thirds cut at": [
-      0.331,
-      0.4133
-    ],
-    "1. Spearman with resource debt (delta_R_final)": 0.027,
-    "95% interval (debt)": [
-      -0.0477,
-      0.1041
-    ],
-    "1. Spearman with resource-debt trend (delta_R_trend)": 0.0297,
-    "95% interval (debt trend)": [
-      -0.0456,
-      0.1065
-    ],
-    "1. within each sector": {
-      "forprofit": {
-        "institutions": 87,
-        "Spearman with resource debt": -0.2291,
-        "95% interval": [
-          -0.4357,
-          -0.0164
-        ]
-      },
-      "private": {
-        "institutions": 390,
-        "Spearman with resource debt": 0.1365,
-        "95% interval": [
-          0.0353,
-          0.2338
-        ]
-      },
-      "public": {
-        "institutions": 193,
-        "Spearman with resource debt": -0.038,
-        "95% interval": [
-          -0.1786,
-          0.0999
-        ]
-      }
-    },
-    "2. closure by thirds of the share": {
-      "thinnest third": {
-        "institutions": 224,
-        "closed": 24,
-        "closure rate": 0.1071
-      },
-      "middle third": {
-        "institutions": 223,
-        "closed": 12,
-        "closure rate": 0.0538
-      },
-      "thickest third": {
-        "institutions": 223,
-        "closed": 34,
-        "closure rate": 0.1525
-      }
-    },
-    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.1103,
-    "95% interval (adaptive capacity)": [
-      0.0332,
-      0.188
-    ],
-    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.143,
-    "95% interval (research ratio)": [
-      0.0779,
-      0.2077
-    ],
-    "3. Spearman with full-time instructional share (predicted below 0)": 0.2086,
-    "95% interval (full-time share)": [
-      0.1295,
-      0.2934
-    ],
-    "2. area under the ROC curve (closure)": 0.5854,
-    "95% interval (area)": [
-      0.4944,
-      0.6733
-    ]
-  },
-  "broad administrative share, public and private nonprofit": {
-    "institutions with a value": 583,
-    "closed": 19,
-    "share thirds cut at": [
-      0.3366,
-      0.411
-    ],
-    "1. Spearman with resource debt (delta_R_final)": 0.0756,
-    "95% interval (debt)": [
-      -0.0058,
-      0.1601
-    ],
-    "1. Spearman with resource-debt trend (delta_R_trend)": 0.0818,
-    "95% interval (debt trend)": [
-      -0.0006,
-      0.1666
-    ],
-    "1. within each sector": {
-      "private": {
-        "institutions": 390,
-        "Spearman with resource debt": 0.1365,
-        "95% interval": [
-          0.0353,
-          0.2338
-        ]
-      },
-      "public": {
-        "institutions": 193,
-        "Spearman with resource debt": -0.038,
-        "95% interval": [
-          -0.1786,
-          0.0999
-        ]
-      }
-    },
-    "2. closure by thirds of the share": {
-      "thinnest third": {
-        "institutions": 195,
         "closed": 8,
-        "closure rate": 0.041
-      },
-      "middle third": {
-        "institutions": 194,
-        "closed": 5,
-        "closure rate": 0.0258
-      },
-      "thickest third": {
-        "institutions": 194,
-        "closed": 6,
-        "closure rate": 0.0309
+        "closure rate": 0.0412
       }
     },
-    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.0992,
+    "3. Spearman with adaptive capacity (d_A_final; predicted below 0)": 0.1218,
     "95% interval (adaptive capacity)": [
-      0.0118,
-      0.1767
+      0.0363,
+      0.1985
     ],
-    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.1662,
+    "3. Spearman with research-to-instruction ratio (predicted above 0)": 0.2373,
     "95% interval (research ratio)": [
-      0.0915,
-      0.2411
+      0.1648,
+      0.3072
     ],
-    "3. Spearman with full-time instructional share (predicted below 0)": 0.2519,
+    "3. Spearman with full-time instructional share (predicted below 0)": 0.306,
     "95% interval (full-time share)": [
-      0.1659,
-      0.3352
+      0.2185,
+      0.3889
     ],
-    "2. area under the ROC curve (closure)": 0.5028,
+    "2. area under the ROC curve (closure)": 0.5628,
     "95% interval (area)": [
-      0.3334,
-      0.6665
+      0.4131,
+      0.7117
     ]
   }
 }
