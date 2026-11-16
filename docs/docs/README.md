@@ -6,10 +6,10 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
 
 ## Contents
 
-- [`RICD 17.4 Spine.docx`](<../RICD 17.4 Spine.docx>)
-  (also [`RICD 17.4 Spine.tex`](<../RICD 17.4 Spine.tex>)) and
-  [`RICD 17.4 Catalog.docx`](<../RICD 17.4 Catalog.docx>)
-  (also [`RICD 17.4 Catalog.tex`](<../RICD 17.4 Catalog.tex>)) —
+- [`RICD 17.5 Spine.docx`](<../RICD 17.5 Spine.docx>)
+  (also [`RICD 17.5 Spine.tex`](<../RICD 17.5 Spine.tex>)) and
+  [`RICD 17.5 Catalog.docx`](<../RICD 17.5 Catalog.docx>)
+  (also [`RICD 17.5 Catalog.tex`](<../RICD 17.5 Catalog.tex>)) —
   the full, domain-independent RICD theory, in two documents: the Spine
   holds the core engine, and the Catalog of Mechanisms holds every
   further mechanism, edge case and audit protocol, under the same section
