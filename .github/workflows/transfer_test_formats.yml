@@ -1,0 +1,58 @@
+name: transfer test 1b - record the Texas report formats
+
+# Manual-only. Runs src/transfer formats.py, step 1b of "transfer test
+# protocol.md": saves the Coordinating Board's "Transfer Students Success"
+# page (every college and year offered), submits each of its report forms
+# once (one college, one year) to record what format comes back, and saves
+# the accountability system's report and measure menus, so the download
+# and parsing code can be written. Commits data/transfer test/formats/.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: transfer-test
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Record the report formats
+        run: |
+          cd src
+          python "transfer formats.py"
+
+      - name: Commit the formats
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/transfer test/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "transfer test 1b: Texas report formats (one sample report per form)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
