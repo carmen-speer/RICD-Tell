@@ -80,3 +80,25 @@ is reported, whichever way it comes out.
    (`administrative_layer_retest.yml`).
 2. Run the workflow once; it writes data/meta channel/administrative layer retest.json.
 3. Report every result.
+
+## Amendment 1 (November 16, after the run; disclosed)
+
+The joint reading (prediction 3) split colleges at zero debt trend. In the
+two-channel model nearly every college's debt trend is above zero (in the
+run, 8 of 580 private nonprofit colleges and no for-profit colleges fell
+below it), so the "flat or falling" groups held a handful of colleges with
+no closures, and the run's verdicts for prediction 3 are not interpretable.
+This was a design error: the distribution should have been checked before
+the split was fixed.
+
+The amended joint reading splits each sector at its own median debt trend
+(lower half, upper half) as well as at its median share, and is otherwise
+unchanged: rising (upper half) debt is predicted to close more than the
+lower half among thick-layer colleges and among thin-layer colleges. It is
+run by `src/administrative layer retest amendment.py` through the workflow
+"meta channel 3a - amended joint reading on the held-out colleges"
+(`administrative_layer_retest_amendment.yml`) and written to
+data/meta channel/administrative layer retest amendment.json. Because it
+was fixed after the run's other results were seen (though not the closure
+rates under this split), it is reported as an amendment, not as a
+pre-registered result. The blind version belongs in the prospective retest.
