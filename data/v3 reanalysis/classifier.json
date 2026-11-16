@@ -1,0 +1,292 @@
+{
+  "protocol": "reanalysis protocol.md (exploratory: the two-channel scoring model, model_two_channel.py; the v3 test outcomes were already known, so no result here is a test)",
+  "original v3 label": "sampling protocol v3.md, phase 1 (classifier v3 and the size-and-sector baseline, frozen before the test frame is listed)",
+  "written at (UTC)": "2026-11-16T08:04:21.811483+00:00",
+  "development scores (commit, time)": "d8136f1e9621bb6856162490acfe196402538035 2026-11-16T07:33:22Z",
+  "anchors (commit, time)": "87f626f5f0c6ee54aeeeb95e375d15a61d055bf2 2026-11-15T23:54:43Z",
+  "outcomes, scoring year 2014 (commit, time)": "49833679d0c26c99c56d132b146cbf904499f441 2026-11-15T03:29:00Z",
+  "outcomes, scoring year 2019 (commit, time)": "4dbb88452aa8c48557a833ef04fa2293793a210c 2026-11-15T14:17:21Z",
+  "processors of the development results": {
+    "Intel(R) Xeon(R) 6975P-C": 169,
+    "AMD EPYC 9V74 80-Core Processor": 234,
+    "AMD EPYC 7763 64-Core Processor": 201,
+    "AMD EPYC 9V45 96-Core Processor": 66
+  },
+  "classifier v2 (commit, time)": "7c6a2c688d21d118b070af0a2bbf1c509f656b33 2026-11-15T03:32:20Z",
+  "development set": {
+    "scored institutions": 670,
+    "closed or failed (primary)": 70,
+    "by scoring year": {
+      "2014": {
+        "N": 425,
+        "closed": 59
+      },
+      "2019": {
+        "N": 245,
+        "closed": 11
+      }
+    },
+    "public and private nonprofit": {
+      "N": 583,
+      "closed": 19
+    },
+    "for-profit": {
+      "N": 87,
+      "closed": 51
+    }
+  },
+  "model": "standardized features, logistic regression, L2 penalty, C = 1 (max_iter 10000)",
+  "threshold rule": "two cuts, nonprofit (grid 0.01-0.99) and for-profit (grid 0.00-0.99), 0.01 steps, fixed together by 10-fold cross-validation stratified on outcome and sector, seed 20261114, maximum mean J across folds, lowest nonprofit then lowest for-profit cut on ties",
+  "classifier v3": {
+    "features": [
+      "d_A_trend",
+      "d_A_final",
+      "delta_R_final",
+      "frac_high_entropy",
+      "debt_spike",
+      "delta_R_trend",
+      "reserve_adequacy",
+      "research_ratio",
+      "gap_trailing",
+      "gap_internal",
+      "forprofit",
+      "log_enrollment",
+      "below_peak",
+      "enrollment_change_5y",
+      "enroll_drift",
+      "slide_rate",
+      "collapse_urgency",
+      "coverage_final",
+      "enroll_jump_recent"
+    ],
+    "scaler": {
+      "mean": [
+        -0.10877140816452963,
+        0.22091220665203662,
+        0.042703622229594076,
+        0.12059701492537316,
+        3109.1424044780956,
+        0.021456973228406163,
+        6.852562244983708,
+        0.02717044533269767,
+        0.0020352781546811396,
+        0.00791351683142728,
+        0.12985074626865672,
+        7.4430081611951335,
+        -0.21401415305911664,
+        -0.019300561870306536,
+        -0.005900653638151962,
+        0.0025193527457279,
+        0.3248301688066277,
+        0.9838041826857902,
+        0.06641422639791142
+      ],
+      "scale": [
+        0.05594678058710781,
+        0.06485051371461102,
+        0.07674389902838666,
+        0.29120378358321225,
+        69832.00864544045,
+        0.04140126064700982,
+        3.9692964873920578,
+        0.11392790498441842,
+        0.02126624908737864,
+        0.05293914667985446,
+        0.33613915267658057,
+        1.4976261759646827,
+        0.32556984970776537,
+        0.35145808207442303,
+        0.05629426409261626,
+        0.11616137064448041,
+        0.4253911028508638,
+        0.46130325020088925,
+        0.176579322765915
+      ]
+    },
+    "coefficients": {
+      "d_A_trend": 0.7283705498935469,
+      "d_A_final": -0.6677464971248595,
+      "delta_R_final": -0.08986455427715695,
+      "frac_high_entropy": 0.08288989488683852,
+      "debt_spike": 0.09991576137514208,
+      "delta_R_trend": 0.009515939004357488,
+      "reserve_adequacy": -0.1182769524033985,
+      "research_ratio": -0.19507339638247392,
+      "gap_trailing": 0.17023337815096803,
+      "gap_internal": 0.2098276602108145,
+      "forprofit": 0.895542965242432,
+      "log_enrollment": -0.27101311690784063,
+      "below_peak": -0.4092953947483111,
+      "enrollment_change_5y": 0.47611234573116074,
+      "enroll_drift": -0.34522161681669716,
+      "slide_rate": 0.41338528941116054,
+      "collapse_urgency": -0.02159484345298293,
+      "coverage_final": -0.027265697488628147,
+      "enroll_jump_recent": 0.098226959139448
+    },
+    "intercept": -3.3810844671910565,
+    "converged in iterations": 24,
+    "threshold, public and private nonprofit": 0.1,
+    "threshold, for-profit": 0.11
+  },
+  "size-and-sector baseline": {
+    "features": [
+      "forprofit",
+      "log_enrollment",
+      "below_peak",
+      "enrollment_change_5y"
+    ],
+    "scaler": {
+      "mean": [
+        0.12985074626865672,
+        7.4430081611951335,
+        -0.21401415305911664,
+        -0.019300561870306536
+      ],
+      "scale": [
+        0.33613915267658057,
+        1.4976261759646827,
+        0.32556984970776537,
+        0.35145808207442303
+      ]
+    },
+    "coefficients": {
+      "forprofit": 1.0448471489571292,
+      "log_enrollment": -0.4954477815520349,
+      "below_peak": -0.5733008205058239,
+      "enrollment_change_5y": 0.41671675836706684
+    },
+    "intercept": -3.1124871298410555,
+    "converged in iterations": 11,
+    "threshold, public and private nonprofit": 0.1,
+    "threshold, for-profit": 0.39
+  },
+  "anchor sensor": {
+    "inputs": [
+      "f_approp",
+      "f_gift",
+      "S_par"
+    ],
+    "coefficients (kappa_anch times theta_k; non-negative)": {
+      "f_approp": 0.47486576891599935,
+      "f_gift": 0.510158247699319,
+      "S_par": 0.2770914242406391
+    },
+    "cap on f_approp and f_gift": 1.0,
+    "penalty": "L2, C = 1, no intercept, classifier v3's out-of-fold log-odds as offset",
+    "cuts": "classifier v3's frozen cuts (anchoring can only clear a flag)",
+    "development institutions without an anchor record or total expenses (inputs set to 0)": 5
+  },
+  "cross-validated estimates (in-sample only; not a test result)": {
+    "classifier v3": {
+      "mean J across folds at the cuts": 0.7192857142857143,
+      "out-of-fold J, all institutions": 0.7192857142857143,
+      "out-of-fold J, public and private nonprofit": 0.27146323254945876,
+      "out-of-fold closures flagged, public and private nonprofit": "6 of 19",
+      "out-of-fold nonprofit institutions flagged": 31,
+      "out-of-fold AUC, public and private nonprofit": 0.7546659201194476
+    },
+    "size-and-sector baseline": {
+      "mean J across folds at the cuts": 0.7183333333333333,
+      "out-of-fold J, all institutions": 0.7183333333333334,
+      "out-of-fold J, public and private nonprofit": 0.22769690182904068,
+      "out-of-fold closures flagged, public and private nonprofit": "5 of 19",
+      "out-of-fold nonprofit institutions flagged": 25,
+      "out-of-fold AUC, public and private nonprofit": 0.7426278462112729
+    },
+    "anchor sensor": {
+      "out-of-fold J, classifier v3 flag": 0.7192857142857143,
+      "J, anchored flag (anchor coefficients fitted in-sample)": 0.7116666666666667,
+      "flags cleared by anchoring": 5,
+      "of which closed": 1,
+      "AUC of the scale-free anchor capacity for survival, among flagged institutions": 0.6583564173591874
+    },
+    "J of flagging every for-profit institution and nothing else": 0.6685714285714286
+  },
+  "development institutions scored in v2 but unscorable with the drift terms": [],
+  "pipeline file hashes": {
+    "score_institution.py": "bb269c8dab9a1f5d4afaf9fbe46c81b716aaf6fe",
+    "model.py": "38cd5fbd651198ba41cab625f181fbf601c81ca5",
+    "fetch_live_data.py": "166ca0b1936633c254b77ff9f1db83c97bae43fc",
+    "real_adapter.py": "a19313c3340d79f4641821b5388ab086f0a64258",
+    "dynamics.py": "0fb853c22972a9ccdfd2a44de82fcbf7513c81f8",
+    "jump_diffusion.py": "5e084e81f9611a7f03d9fb47115d47ea2719e237",
+    "v2_common.py": "15592ce6871a09eae5568d965995b6cb90bc7520",
+    "v3_score_one.py": "299bfd874b174f4750b13bfcbe8bbbe2c276913f",
+    "model_two_channel.py": "dcb72c80cf157f56695b97b8c35c321864b47a89",
+    "reanalysis.py": "09b51d7bc2e921dc8b025af96a86f5e05d4a2894",
+    "requirements v2 lock.txt": "9da5dfbd7d1b3ae3afce7b11f7ee331c7aa090d9"
+  },
+  "pipeline files": [
+    "score_institution.py",
+    "model.py",
+    "fetch_live_data.py",
+    "real_adapter.py",
+    "dynamics.py",
+    "jump_diffusion.py",
+    "v2_common.py",
+    "v3_score_one.py",
+    "model_two_channel.py",
+    "reanalysis.py"
+  ],
+  "machine": {
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "python": "3.11.18",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "environment variables": {
+      "NUMBA_CPU_NAME": "generic",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTENSOR_FLAGS": null,
+      "NUMBA_CACHE_DIR": null
+    },
+    "packages": [
+      "arviz==0.23.4",
+      "cachetools==6.2.6",
+      "certifi==2026.10.23",
+      "charset-normalizer==3.5.2",
+      "cloudpickle==3.1.2",
+      "cons==0.4.7",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "etuples==0.3.10",
+      "filelock==4.2.10",
+      "fonttools==4.68.0",
+      "h5netcdf==1.8.3",
+      "h5py==3.16.0",
+      "idna==3.20",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "llvmlite==0.47.0",
+      "logical-unification==0.4.7",
+      "markdown-it-py==4.3.0",
+      "matplotlib==3.11.2",
+      "mdurl==0.1.2",
+      "miniKanren==1.0.5",
+      "multipledispatch==1.0.0",
+      "narwhals==2.28.0",
+      "numba==0.65.1",
+      "numpy==2.4.6",
+      "packaging==26.3",
+      "pandas==3.1.1",
+      "pillow==13.0.0",
+      "platformdirs==4.14.5",
+      "Pygments==2.21.0",
+      "pymc==5.28.5",
+      "pyparsing==3.3.3",
+      "pytensor==2.38.3",
+      "python-dateutil==4.0.0",
+      "requests==2.34.2",
+      "rich==15.0.0",
+      "scikit-learn==1.9.1",
+      "scipy==1.17.1",
+      "threadpoolctl==3.8.0",
+      "toolz==1.2.0",
+      "typing_extensions==4.16.0",
+      "tzdata==2026.6",
+      "urllib3==2.8.0",
+      "xarray==2026.9.0",
+      "xarray-einstats==0.9.1"
+    ]
+  }
+}
