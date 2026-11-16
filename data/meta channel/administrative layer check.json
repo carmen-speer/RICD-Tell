@@ -1,0 +1,153 @@
+{
+  "written at (UTC)": "2026-11-16T08:47:45.943191+00:00",
+  "note": "Checks of the measurement only; no closure outcome is read.",
+  "years read (fall)": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fiscal years they are assigned to": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "categories resolved per year": {
+    "2012": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2013": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2014": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2015": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2016": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2017": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2018": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2019": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2020": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2021": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2022": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2023": [
+      "instructional",
+      "management",
+      "office support"
+    ],
+    "2024": [
+      "instructional",
+      "management",
+      "office support"
+    ]
+  },
+  "core administrative share": {
+    "per year": {
+      "2012": "not computed: a needed category was not resolved this year",
+      "2013": "not computed: a needed category was not resolved this year",
+      "2014": "not computed: a needed category was not resolved this year",
+      "2015": "not computed: a needed category was not resolved this year",
+      "2016": "not computed: a needed category was not resolved this year",
+      "2017": "not computed: a needed category was not resolved this year",
+      "2018": "not computed: a needed category was not resolved this year",
+      "2019": "not computed: a needed category was not resolved this year",
+      "2020": "not computed: a needed category was not resolved this year",
+      "2021": "not computed: a needed category was not resolved this year",
+      "2022": "not computed: a needed category was not resolved this year",
+      "2023": "not computed: a needed category was not resolved this year",
+      "2024": "not computed: a needed category was not resolved this year"
+    },
+    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {},
+    "year-to-year change in an institution's share": {
+      "pairs": 0,
+      "change": {
+        "n": 0
+      },
+      "changes of 0.2 or more": 0,
+      "share of changes of 0.2 or more": null
+    }
+  },
+  "broad administrative share": {
+    "per year": {
+      "2012": "not computed: a needed category was not resolved this year",
+      "2013": "not computed: a needed category was not resolved this year",
+      "2014": "not computed: a needed category was not resolved this year",
+      "2015": "not computed: a needed category was not resolved this year",
+      "2016": "not computed: a needed category was not resolved this year",
+      "2017": "not computed: a needed category was not resolved this year",
+      "2018": "not computed: a needed category was not resolved this year",
+      "2019": "not computed: a needed category was not resolved this year",
+      "2020": "not computed: a needed category was not resolved this year",
+      "2021": "not computed: a needed category was not resolved this year",
+      "2022": "not computed: a needed category was not resolved this year",
+      "2023": "not computed: a needed category was not resolved this year",
+      "2024": "not computed: a needed category was not resolved this year"
+    },
+    "fraction of institutions where administrative staff outnumber instructional staff (FTE)": {},
+    "year-to-year change in an institution's share": {
+      "pairs": 0,
+      "change": {
+        "n": 0
+      },
+      "changes of 0.2 or more": 0,
+      "share of changes of 0.2 or more": null
+    }
+  }
+}
