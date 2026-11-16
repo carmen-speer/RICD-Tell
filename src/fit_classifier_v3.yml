@@ -1,0 +1,63 @@
+name: v3 phase 1 - fit and freeze classifier v3
+
+# Manual-only. Runs src/fit_classifier_v3.py under "sampling protocol v3.md",
+# phase 1: fits classifier v3, the size-and-sector baseline and the anchor
+# sensor on the development set (the v2 training set and the v2 test,
+# rescored with the drift terms in data/v3/development scores/), fixes
+# their cuts by cross-validation and freezes them. Commits
+# data/v3/classifier v3.json, which the v3 test list requires.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-fit
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Build the compact College Scorecard file (checked against the protocol's SHA-256)
+        run: |
+          cd src
+          python build_scorecard_compact.py --out ../work/scorecard_compact.csv
+
+      - name: Run
+        run: |
+          cd src
+          python fit_classifier_v3.py --compact ../work/scorecard_compact.csv
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/classifier v3.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3 phase 1: classifier v3 and baseline frozen (before the test list)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
