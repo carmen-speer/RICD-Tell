@@ -1,0 +1,60 @@
+name: meta channel - download and check the instructional staff share
+
+# Manual-only. Runs src/meta_channel.py: downloads the IPEDS Human
+# Resources "Employees by Assigned Position" files (EAP) for fall 2012
+# onward and their data dictionaries, measures each institution's
+# full-time share of instructional staff (the meta channel P_m the scoring
+# model was built to take), checks the measurement, and commits
+# data/meta channel/instructional staff share.json and
+# data/meta channel/check.json. No closure outcome is read, and no frozen
+# file or scoring pipeline uses these files.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: meta-channel
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Download, measure and check
+        run: |
+          cd src
+          python meta_channel.py --first 2012
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/meta channel/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "meta channel: instructional staff share and its checks"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
