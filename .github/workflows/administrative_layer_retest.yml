@@ -1,0 +1,59 @@
+name: meta channel 3 - retest the administrative layer on the held-out colleges
+
+# Manual-only. Runs src/administrative layer retest.py under
+# "administrative layer retest protocol.md": the administrative-layer
+# hypothesis, at equal size and wealth, sector by sector and read jointly
+# with the debt trend, on the 987 scored v3 test colleges held back from the
+# first test. Reads only committed files; commits
+# data/meta channel/administrative layer retest.json. Exploratory; changes
+# no v3 verdict.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: administrative-layer
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the retest
+        run: |
+          cd src
+          python "administrative layer retest.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/meta channel/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "meta channel 3: administrative layer retest on the held-out colleges (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
