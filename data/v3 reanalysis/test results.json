@@ -1,0 +1,1264 @@
+{
+  "protocol": "reanalysis protocol.md (exploratory: the two-channel scoring model, model_two_channel.py; the v3 test outcomes were already known, so no result here is a test)",
+  "original v3 label": "sampling protocol v3.md, phase 5 (measures and revision triggers)",
+  "written at (UTC)": "2026-11-16T08:50:12.787260+00:00",
+  "classifier v3 (commit, time)": "460b8786fe9fdb40403d000442ba4a8e8af137ac 2026-11-16T08:04:22Z",
+  "test scores (commit, time)": "b24943178d22d7f429ee3343db111711a5d4bd41 2026-11-16T08:43:20Z",
+  "comparator flags (commit, time)": "21d6ea02915c7465a2665ea62209dcd49f293b32 2026-11-16T03:22:59Z",
+  "header files used": [
+    "HD2019",
+    "HD2020",
+    "HD2021",
+    "HD2022",
+    "HD2023",
+    "HD2024",
+    "HD2025"
+  ],
+  "header files not served": [
+    "HD2026"
+  ],
+  "thresholds": {
+    "public and private nonprofit": 0.1,
+    "for-profit": 0.11
+  },
+  "primary result (scored institutions, primary coding)": {
+    "N": 987,
+    "E (closed or failed)": 56,
+    "flagged": 112,
+    "true positives": 33,
+    "false positives": 79,
+    "sensitivity S": 0.5892857142857143,
+    "S 95% Wilson": [
+      0.4587759684643971,
+      0.708332257121538
+    ],
+    "false-alarm rate F": 0.08485499462943072,
+    "F 95% Wilson": [
+      0.06861629662664176,
+      0.10450552771441571
+    ],
+    "precision": 0.29464285714285715,
+    "precision 95% Wilson": [
+      0.21815664129794862,
+      0.38474891196168903
+    ],
+    "closure rate": 0.05673758865248227,
+    "lift": 5.193080357142858,
+    "J": 0.5044307196562836,
+    "J 95% bootstrap": [
+      0.3707678337501489,
+      0.633471468289478
+    ],
+    "bootstrap resamples dropped (no J)": 0
+  },
+  "public and private nonprofit (R6)": {
+    "N": 926,
+    "E (closed or failed)": 36,
+    "flagged": 51,
+    "true positives": 13,
+    "false positives": 38,
+    "sensitivity S": 0.3611111111111111,
+    "S 95% Wilson": [
+      0.22475592946515371,
+      0.5242492451444196
+    ],
+    "false-alarm rate F": 0.04269662921348315,
+    "F 95% Wilson": [
+      0.03126328513803378,
+      0.05806067498128581
+    ],
+    "precision": 0.2549019607843137,
+    "precision 95% Wilson": [
+      0.15545768156582296,
+      0.3886828183844375
+    ],
+    "closure rate": 0.038876889848812095,
+    "lift": 6.556644880174291,
+    "J": 0.31841448189762794,
+    "J 95% bootstrap": [
+      0.16215894265998215,
+      0.48331864376906786
+    ],
+    "bootstrap resamples dropped (no J)": 0
+  },
+  "flag every for-profit and nothing else (R5)": {
+    "N": 987,
+    "E (closed or failed)": 56,
+    "flagged": 61,
+    "true positives": 20,
+    "false positives": 41,
+    "sensitivity S": 0.35714285714285715,
+    "S 95% Wilson": [
+      0.24456571707649905,
+      0.4880611219860049
+    ],
+    "false-alarm rate F": 0.04403866809881848,
+    "F 95% Wilson": [
+      0.03262678261609066,
+      0.0591978342863127
+    ],
+    "precision": 0.32786885245901637,
+    "precision 95% Wilson": [
+      0.22335119798553627,
+      0.45278193686463364
+    ],
+    "closure rate": 0.05673758865248227,
+    "lift": 5.778688524590164,
+    "J": 0.3131041890440387
+  },
+  "minimum events": {
+    "E": 56,
+    "E among public and private nonprofit": 36,
+    "underpowered": false
+  },
+  "triggers": {
+    "R1 (no discrimination)": false,
+    "R2 (low sensitivity)": false,
+    "R3 (excess false alarms)": false,
+    "R4 (no advantage over the comparator)": false,
+    "R5 (no advantage over flagging every for-profit)": false,
+    "R6 (no discrimination among public and private nonprofit)": false
+  },
+  "passed": true,
+  "second verdict: do the tracker's features add value beyond size and sector": {
+    "AUC, classifier v3": 0.8402933832709113,
+    "AUC, size-and-sector baseline": 0.8451310861423221,
+    "difference": -0.004837702871410832,
+    "difference 95% paired bootstrap": [
+      -0.07112937156796824,
+      0.06058986096171024
+    ],
+    "bootstrap resamples dropped": 0,
+    "institutions compared": 926,
+    "verdict": "not shown that the tracker's features add value beyond size and sector",
+    "J at frozen cuts, public and private nonprofit": {
+      "classifier v3": 0.31841448189762794,
+      "size-and-sector baseline": 0.09313358302122346
+    },
+    "baseline, all scored institutions": {
+      "N": 987,
+      "E (closed or failed)": 56,
+      "flagged": 73,
+      "true positives": 24,
+      "false positives": 49,
+      "sensitivity S": 0.42857142857142855,
+      "S 95% Wilson": [
+        0.3076896268393824,
+        0.5586237926918696
+      ],
+      "false-alarm rate F": 0.05263157894736842,
+      "F 95% Wilson": [
+        0.04003832028621105,
+        0.06890149818222474
+      ],
+      "precision": 0.3287671232876712,
+      "precision 95% Wilson": [
+        0.23194485864699999,
+        0.44270993859811325
+      ],
+      "closure rate": 0.05673758865248227,
+      "lift": 5.794520547945205,
+      "J": 0.37593984962406013
+    }
+  },
+  "R4 comparison (scored institutions with a computable comparator)": {
+    "N": 954,
+    "tracker": {
+      "N": 954,
+      "E (closed or failed)": 49,
+      "flagged": 95,
+      "true positives": 28,
+      "false positives": 67,
+      "sensitivity S": 0.5714285714285714,
+      "S 95% Wilson": [
+        0.4327049309001736,
+        0.699766809211184
+      ],
+      "false-alarm rate F": 0.07403314917127071,
+      "F 95% Wilson": [
+        0.05871648933246292,
+        0.09295073214261826
+      ],
+      "precision": 0.29473684210526313,
+      "precision 95% Wilson": [
+        0.21247932282989435,
+        0.39294940651788923
+      ],
+      "closure rate": 0.051362683438155136,
+      "lift": 5.738345864661653,
+      "J": 0.4973954222573007
+    },
+    "comparator": {
+      "N": 954,
+      "E (closed or failed)": 49,
+      "flagged": 173,
+      "true positives": 8,
+      "false positives": 165,
+      "sensitivity S": 0.16326530612244897,
+      "S 95% Wilson": [
+        0.08512698370728837,
+        0.2903633843391683
+      ],
+      "false-alarm rate F": 0.18232044198895028,
+      "F 95% Wilson": [
+        0.15852502503808483,
+        0.2088013723006593
+      ],
+      "precision": 0.046242774566473986,
+      "precision 95% Wilson": [
+        0.023615435969923965,
+        0.08858369964573554
+      ],
+      "closure rate": 0.051362683438155136,
+      "lift": 0.9003185089064527,
+      "J": -0.019055135866501316
+    }
+  },
+  "tracker J minus for-profit-only rule J, paired 95% bootstrap (analysis only)": [
+    0.08517168238706681,
+    0.3072464347174711
+  ],
+  "sensitivity codings (never used for triggers)": {
+    "coding B (successor records count as surviving)": {
+      "N": 987,
+      "E (closed or failed)": 41,
+      "flagged": 112,
+      "true positives": 25,
+      "false positives": 87,
+      "sensitivity S": 0.6097560975609756,
+      "S 95% Wilson": [
+        0.45726856934123794,
+        0.7434385493987647
+      ],
+      "false-alarm rate F": 0.0919661733615222,
+      "F 95% Wilson": [
+        0.07516489933782979,
+        0.11206788269034033
+      ],
+      "precision": 0.22321428571428573,
+      "precision 95% Wilson": [
+        0.15601171396569474,
+        0.30877403173207785
+      ],
+      "closure rate": 0.04154002026342452,
+      "lift": 5.373475609756097,
+      "J": 0.5177899241994534
+    },
+    "coding C (absence alone counts as surviving)": {
+      "N": 987,
+      "E (closed or failed)": 48,
+      "flagged": 112,
+      "true positives": 28,
+      "false positives": 84,
+      "sensitivity S": 0.5833333333333334,
+      "S 95% Wilson": [
+        0.4428133228397628,
+        0.7115033222158844
+      ],
+      "false-alarm rate F": 0.08945686900958466,
+      "F 95% Wilson": [
+        0.07283555354518914,
+        0.10942357094816246
+      ],
+      "precision": 0.25,
+      "precision 95% Wilson": [
+        0.17900299692765526,
+        0.33757767660581667
+      ],
+      "closure rate": 0.0486322188449848,
+      "lift": 5.140625,
+      "J": 0.4938764643237487
+    }
+  },
+  "by sector": {
+    "public": {
+      "N": 345,
+      "E (closed or failed)": 4,
+      "flagged": 4,
+      "true positives": 0,
+      "false positives": 4,
+      "sensitivity S": 0.0,
+      "S 95% Wilson": [
+        0.0,
+        0.4898908364545973
+      ],
+      "false-alarm rate F": 0.011730205278592375,
+      "F 95% Wilson": [
+        0.004570843988917968,
+        0.029768005119278393
+      ],
+      "precision": 0.0,
+      "precision 95% Wilson": [
+        0.0,
+        0.4898908364545973
+      ],
+      "closure rate": 0.011594202898550725,
+      "lift": 0.0,
+      "J": -0.011730205278592375
+    },
+    "private": {
+      "N": 581,
+      "E (closed or failed)": 32,
+      "flagged": 47,
+      "true positives": 13,
+      "false positives": 34,
+      "sensitivity S": 0.40625,
+      "S 95% Wilson": [
+        0.2551963484266544,
+        0.5773997512461713
+      ],
+      "false-alarm rate F": 0.061930783242258654,
+      "F 95% Wilson": [
+        0.044653678799236374,
+        0.08529579889359859
+      ],
+      "precision": 0.2765957446808511,
+      "precision 95% Wilson": [
+        0.16936563369682642,
+        0.41758563624878886
+      ],
+      "closure rate": 0.055077452667814115,
+      "lift": 5.021941489361702,
+      "J": 0.34431921675774135
+    },
+    "forprofit": {
+      "N": 61,
+      "E (closed or failed)": 20,
+      "flagged": 61,
+      "true positives": 20,
+      "false positives": 41,
+      "sensitivity S": 1.0,
+      "S 95% Wilson": [
+        0.8388748419471806,
+        1.0
+      ],
+      "false-alarm rate F": 1.0,
+      "F 95% Wilson": [
+        0.9143324298155681,
+        0.9999999999999999
+      ],
+      "precision": 0.32786885245901637,
+      "precision 95% Wilson": [
+        0.22335119798553627,
+        0.45278193686463364
+      ],
+      "closure rate": 0.32786885245901637,
+      "lift": 1.0,
+      "J": 0.0
+    }
+  },
+  "frozen classifier v2 coefficients on the same institutions' v3-pipeline features (analysis only)": {
+    "all scored": {
+      "N": 987,
+      "E (closed or failed)": 56,
+      "flagged": 191,
+      "true positives": 21,
+      "false positives": 170,
+      "sensitivity S": 0.375,
+      "S 95% Wilson": [
+        0.260102143264709,
+        0.5059463409149819
+      ],
+      "false-alarm rate F": 0.18259935553168635,
+      "F 95% Wilson": [
+        0.15910385085687836,
+        0.20870339129779816
+      ],
+      "precision": 0.1099476439790576,
+      "precision 95% Wilson": [
+        0.07304510364224662,
+        0.16223058715865443
+      ],
+      "closure rate": 0.05673758865248227,
+      "lift": 1.9378272251308901,
+      "J": 0.19240064446831365,
+      "J 95% bootstrap": [
+        0.06430522065701218,
+        0.3262482820052694
+      ],
+      "bootstrap resamples dropped (no J)": 0
+    },
+    "public and private nonprofit": {
+      "N": 926,
+      "E (closed or failed)": 36,
+      "flagged": 144,
+      "true positives": 7,
+      "false positives": 137,
+      "sensitivity S": 0.19444444444444445,
+      "S 95% Wilson": [
+        0.09753095418928728,
+        0.3502804299517739
+      ],
+      "false-alarm rate F": 0.15393258426966291,
+      "F 95% Wilson": [
+        0.1317147603837668,
+        0.17912499322004263
+      ],
+      "precision": 0.04861111111111111,
+      "precision 95% Wilson": [
+        0.023743988255155446,
+        0.09693568416564162
+      ],
+      "closure rate": 0.038876889848812095,
+      "lift": 1.2503858024691359,
+      "J": 0.04051186017478153
+    }
+  },
+  "unscorable institutions": {
+    "closure rate, scored": {
+      "N": 987,
+      "closed or failed": 56,
+      "rate": 0.05673758865248227
+    },
+    "closure rate, unscorable": {
+      "N": 287,
+      "closed or failed": 51,
+      "rate": 0.17770034843205576
+    },
+    "closure rate, structurally unscorable": {
+      "N": 108,
+      "closed or failed": 43,
+      "rate": 0.39814814814814814
+    },
+    "bounds over all listed non-structural institutions": {
+      "every unscorable counted as flagged": {
+        "N": 1274,
+        "sensitivity S": 0.7850467289719626,
+        "false-alarm rate F": 0.2699228791773779,
+        "J": 0.5151238497945847
+      },
+      "every unscorable counted as not flagged": {
+        "N": 1274,
+        "sensitivity S": 0.308411214953271,
+        "false-alarm rate F": 0.0676949443016281,
+        "J": 0.24071627065164292
+      }
+    }
+  },
+  "anchor sensor": {
+    "primary coding": {
+      "main test: does anchoring explain flagged survivors": {
+        "flagged institutions": 112,
+        "closed": 33,
+        "survived": 79,
+        "underpowered": false,
+        "AUC": 0.6705024932873033,
+        "AUC 95% bootstrap": [
+          0.5876111624688475,
+          0.7482993197278911
+        ],
+        "verdict": "passed: anchoring explains flagged survivors"
+      },
+      "second test: anchored flag against classifier v3's flag": {
+        "J, classifier v3": 0.5044307196562836,
+        "J, anchored flag": 0.515171858216971,
+        "difference, paired 95% bootstrap": [
+          0.004319654427645814,
+          0.017572825155873703
+        ],
+        "verdict": "improves on the tracker"
+      },
+      "flags cleared": 10,
+      "of which closed": 0
+    },
+    "coding B (mergers count as survival)": {
+      "main test: does anchoring explain flagged survivors": {
+        "flagged institutions": 112,
+        "closed": 25,
+        "survived": 87,
+        "underpowered": false,
+        "AUC": 0.6397701149425288,
+        "AUC 95% bootstrap": [
+          0.5467357892240587,
+          0.7238402374031008
+        ],
+        "verdict": "passed: anchoring explains flagged survivors"
+      },
+      "second test: anchored flag against classifier v3's flag": {
+        "J, classifier v3": 0.5177899241994534,
+        "J, anchored flag": 0.5283607487237663,
+        "difference, paired 95% bootstrap": [
+          0.00424628450106157,
+          0.017234497389582114
+        ],
+        "verdict": "improves on the tracker"
+      },
+      "flags cleared": 10,
+      "of which closed": 0
+    },
+    "reported, not scored (closure rates among flagged institutions)": {
+      "religious affiliation": {
+        "with": {
+          "N": 22,
+          "closed or failed": 1,
+          "rate": 0.045454545454545456
+        },
+        "without": {
+          "N": 90,
+          "closed or failed": 32,
+          "rate": 0.35555555555555557
+        }
+      },
+      "HBCU": {
+        "with": {
+          "N": 1,
+          "closed or failed": 0,
+          "rate": 0.0
+        },
+        "without": {
+          "N": 111,
+          "closed or failed": 33,
+          "rate": 0.2972972972972973
+        }
+      },
+      "tribal": {
+        "with": {
+          "N": 1,
+          "closed or failed": 0,
+          "rate": 0.0
+        },
+        "without": {
+          "N": 111,
+          "closed or failed": 33,
+          "rate": 0.2972972972972973
+        }
+      },
+      "land-grant": {
+        "with": {
+          "N": 1,
+          "closed or failed": 0,
+          "rate": 0.0
+        },
+        "without": {
+          "N": 111,
+          "closed or failed": 33,
+          "rate": 0.2972972972972973
+        }
+      },
+      "for-profit chain member": {
+        "with": {
+          "N": 30,
+          "closed or failed": 7,
+          "rate": 0.23333333333333334
+        },
+        "without": {
+          "N": 82,
+          "closed or failed": 26,
+          "rate": 0.3170731707317073
+        }
+      },
+      "nonprofit or public system member (S_par = 1)": {
+        "with": {
+          "N": 7,
+          "closed or failed": 1,
+          "rate": 0.14285714285714285
+        },
+        "without": {
+          "N": 105,
+          "closed or failed": 32,
+          "rate": 0.3047619047619048
+        }
+      }
+    }
+  },
+  "processors": {
+    "INTEL(R) XEON(R) PLATINUM 8573C": {
+      "scored": 987,
+      "flagged": 112
+    }
+  },
+  "flagged survivors": [
+    {
+      "unitid": "108232",
+      "name": "Academy of Art University",
+      "sector": "forprofit",
+      "score": 0.24996772129180117,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "110219",
+      "name": "Bryan University",
+      "sector": "forprofit",
+      "score": 0.494065686876415,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "113582",
+      "name": "Design Institute of San Diego",
+      "sector": "forprofit",
+      "score": 0.8000919672305377,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "125231",
+      "name": "Walden University",
+      "sector": "forprofit",
+      "score": 0.17293643934779232,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "128586",
+      "name": "Bais Binyomin Academy",
+      "sector": "private",
+      "score": 0.13211868025674733,
+      "anchor capacity": 0.3457133279776728,
+      "anchored flag": false
+    },
+    {
+      "unitid": "129534",
+      "name": "Holy Apostles College and Seminary",
+      "sector": "private",
+      "score": 0.1335329452459206,
+      "anchor capacity": 0.17975885000108432,
+      "anchored flag": true
+    },
+    {
+      "unitid": "130183",
+      "name": "Post University",
+      "sector": "forprofit",
+      "score": 0.2378188880940818,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "131803",
+      "name": "Strayer University-District of Columbia",
+      "sector": "forprofit",
+      "score": 0.9870506308875064,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "133465",
+      "name": "South University-West Palm Beach",
+      "sector": "forprofit",
+      "score": 0.4466562101818801,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "137777",
+      "name": "Talmudic College of Florida",
+      "sector": "private",
+      "score": 0.35127288579737254,
+      "anchor capacity": 0.34530214043002716,
+      "anchored flag": true
+    },
+    {
+      "unitid": "138309",
+      "name": "Rasmussen College-Florida",
+      "sector": "forprofit",
+      "score": 0.2801989284560175,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "140340",
+      "name": "Herzing University-Atlanta",
+      "sector": "private",
+      "score": 0.1329947189328731,
+      "anchor capacity": 0.2770914242406391,
+      "anchored flag": true
+    },
+    {
+      "unitid": "153427",
+      "name": "Hamilton Technical College",
+      "sector": "forprofit",
+      "score": 0.5894545803729345,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "153861",
+      "name": "Maharishi University of Management",
+      "sector": "private",
+      "score": 0.10853482965917431,
+      "anchor capacity": 0.08648355662473164,
+      "anchored flag": true
+    },
+    {
+      "unitid": "155496",
+      "name": "Manhattan Christian College",
+      "sector": "private",
+      "score": 0.10068399196158263,
+      "anchor capacity": 0.18467269424292418,
+      "anchored flag": false
+    },
+    {
+      "unitid": "157021",
+      "name": "American National University-Lexington",
+      "sector": "forprofit",
+      "score": 0.9284248894050947,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "157793",
+      "name": "Sullivan University",
+      "sector": "forprofit",
+      "score": 0.5579969919018488,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "168847",
+      "name": "Baker College",
+      "sector": "private",
+      "score": 0.32885988621092566,
+      "anchor capacity": 0.27749546957281696,
+      "anchored flag": true
+    },
+    {
+      "unitid": "172334",
+      "name": "Spring Arbor University",
+      "sector": "private",
+      "score": 0.11618315390617036,
+      "anchor capacity": 0.06265164516215324,
+      "anchored flag": true
+    },
+    {
+      "unitid": "174525",
+      "name": "Oak Hills Christian College",
+      "sector": "private",
+      "score": 0.16447170141525067,
+      "anchor capacity": 0.21292678847525556,
+      "anchored flag": true
+    },
+    {
+      "unitid": "176664",
+      "name": "Baptist Bible College",
+      "sector": "private",
+      "score": 0.11826429873397837,
+      "anchor capacity": 0.09951146779622916,
+      "anchored flag": true
+    },
+    {
+      "unitid": "176910",
+      "name": "Central Christian College of the Bible",
+      "sector": "private",
+      "score": 0.1266285028120454,
+      "anchor capacity": 0.18424671210609522,
+      "anchored flag": true
+    },
+    {
+      "unitid": "178767",
+      "name": "Stevens-The Institute of Business & Arts",
+      "sector": "forprofit",
+      "score": 0.4590446254821629,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "178989",
+      "name": "Research College of Nursing",
+      "sector": "forprofit",
+      "score": 0.9999999999999973,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "181543",
+      "name": "Summit Christian College",
+      "sector": "private",
+      "score": 0.10047125576219311,
+      "anchor capacity": 0.27043029568117966,
+      "anchored flag": false
+    },
+    {
+      "unitid": "184959",
+      "name": "Eastwick College-Ramsey",
+      "sector": "forprofit",
+      "score": 0.2759270580934571,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "189583",
+      "name": "Bryant & Stratton College-Buffalo",
+      "sector": "forprofit",
+      "score": 0.29215636450844185,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "193308",
+      "name": "Monroe College",
+      "sector": "forprofit",
+      "score": 0.26190951584552463,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "194499",
+      "name": "Plaza College",
+      "sector": "forprofit",
+      "score": 0.27972193137839885,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "194763",
+      "name": "Rabbinical Seminary of America",
+      "sector": "private",
+      "score": 0.14554961675679562,
+      "anchor capacity": 0.24341384535776683,
+      "anchored flag": true
+    },
+    {
+      "unitid": "196440",
+      "name": "Talmudical Institute of Upstate New York",
+      "sector": "private",
+      "score": 0.6119771559805527,
+      "anchor capacity": 0.40108284323347065,
+      "anchored flag": true
+    },
+    {
+      "unitid": "197151",
+      "name": "School of Visual Arts",
+      "sector": "forprofit",
+      "score": 0.3227158752337661,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "198598",
+      "name": "Greensboro College",
+      "sector": "private",
+      "score": 0.1404353080796483,
+      "anchor capacity": 0.06493498240016012,
+      "anchored flag": true
+    },
+    {
+      "unitid": "200013",
+      "name": "Rasmussen College-North Dakota",
+      "sector": "forprofit",
+      "score": 0.5943746356322326,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "200086",
+      "name": "Nueta Hidatsa Sahnish College",
+      "sector": "public",
+      "score": 0.11286553220496182,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "200484",
+      "name": "Trinity Bible College and Graduate School",
+      "sector": "private",
+      "score": 0.15560834224051998,
+      "anchor capacity": 0.3436767762528571,
+      "anchored flag": true
+    },
+    {
+      "unitid": "201469",
+      "name": "Bryant & Stratton College-Parma",
+      "sector": "forprofit",
+      "score": 0.6710554374106463,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "203386",
+      "name": "Hondros College of Nursing",
+      "sector": "forprofit",
+      "score": 0.12170315960338601,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "210304",
+      "name": "Warner Pacific University",
+      "sector": "private",
+      "score": 0.19520516194703771,
+      "anchor capacity": 0.09819525951716492,
+      "anchored flag": true
+    },
+    {
+      "unitid": "211477",
+      "name": "Central Penn College",
+      "sector": "forprofit",
+      "score": 0.6362889611836285,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "215637",
+      "name": "The Restaurant School at Walnut Hill College",
+      "sector": "forprofit",
+      "score": 0.3776518009700513,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "217749",
+      "name": "Bob Jones University",
+      "sector": "private",
+      "score": 0.3273959898748338,
+      "anchor capacity": 0.050604127064038544,
+      "anchored flag": true
+    },
+    {
+      "unitid": "222877",
+      "name": "Arlington Baptist University",
+      "sector": "private",
+      "score": 0.13029134563410513,
+      "anchor capacity": 0.0881578959936808,
+      "anchored flag": true
+    },
+    {
+      "unitid": "223117",
+      "name": "Baptist Missionary Association Theological Seminary",
+      "sector": "private",
+      "score": 0.1311786057642464,
+      "anchor capacity": 0.2651613812989411,
+      "anchored flag": true
+    },
+    {
+      "unitid": "227429",
+      "name": "Paul Quinn College",
+      "sector": "private",
+      "score": 0.1068720625619406,
+      "anchor capacity": 0.14692149407142227,
+      "anchored flag": false
+    },
+    {
+      "unitid": "231785",
+      "name": "Bryant & Stratton College-Virginia Beach",
+      "sector": "forprofit",
+      "score": 0.31244266492233747,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "232016",
+      "name": "Centura College-Virginia Beach",
+      "sector": "forprofit",
+      "score": 0.8648197750699778,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "237136",
+      "name": "Appalachian Bible College",
+      "sector": "private",
+      "score": 0.10805261469025042,
+      "anchor capacity": 0.16070750039900095,
+      "anchored flag": false
+    },
+    {
+      "unitid": "237783",
+      "name": "Salem University",
+      "sector": "forprofit",
+      "score": 0.20511251947060524,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "241517",
+      "name": "CEM College-San Juan",
+      "sector": "forprofit",
+      "score": 0.9437469502500474,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "242112",
+      "name": "Huertas College",
+      "sector": "forprofit",
+      "score": 0.29203850884981986,
+      "anchor capacity": 0.009593713129409934,
+      "anchored flag": true
+    },
+    {
+      "unitid": "243133",
+      "name": "University of Puerto Rico-Bayamon",
+      "sector": "public",
+      "score": 0.10448291001651208,
+      "anchor capacity": 0.5229098351297802,
+      "anchored flag": false
+    },
+    {
+      "unitid": "243142",
+      "name": "University of Puerto Rico-Carolina",
+      "sector": "public",
+      "score": 0.14559591597998886,
+      "anchor capacity": 0.5250824058387563,
+      "anchored flag": false
+    },
+    {
+      "unitid": "243212",
+      "name": "University of Puerto Rico-Ponce",
+      "sector": "public",
+      "score": 0.11502030494449082,
+      "anchor capacity": 0.5144053452986718,
+      "anchored flag": false
+    },
+    {
+      "unitid": "260789",
+      "name": "Platt College-Los Angeles",
+      "sector": "forprofit",
+      "score": 0.5821163668597583,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "363712",
+      "name": "Yeshivah Gedolah Rabbinical College",
+      "sector": "private",
+      "score": 0.1072738620985052,
+      "anchor capacity": 0.110341617236638,
+      "anchored flag": false
+    },
+    {
+      "unitid": "363916",
+      "name": "Caribbean University-Vega Baja",
+      "sector": "private",
+      "score": 0.13515801306783964,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "366003",
+      "name": "South Florida Bible College and Theological Seminary",
+      "sector": "private",
+      "score": 0.10982030053893109,
+      "anchor capacity": 0.025374761082316424,
+      "anchored flag": true
+    },
+    {
+      "unitid": "366535",
+      "name": "Remington College-Mobile Campus",
+      "sector": "private",
+      "score": 0.21515646203082525,
+      "anchor capacity": 0.2772310347767004,
+      "anchored flag": true
+    },
+    {
+      "unitid": "366553",
+      "name": "Southern Technical College",
+      "sector": "forprofit",
+      "score": 0.7398081056563438,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "369516",
+      "name": "Bryan University",
+      "sector": "forprofit",
+      "score": 0.4494738827513437,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "378576",
+      "name": "Pacific College of Oriental Medicine-San Diego",
+      "sector": "forprofit",
+      "score": 0.41711364045411475,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "380438",
+      "name": "Provo College",
+      "sector": "forprofit",
+      "score": 0.14687714244877445,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "384412",
+      "name": "University of the Potomac-Washington DC Campus",
+      "sector": "forprofit",
+      "score": 0.8367734317893893,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "384421",
+      "name": "Rabbi Jacob Joseph School",
+      "sector": "private",
+      "score": 0.16903697427632838,
+      "anchor capacity": 0.32671860594108404,
+      "anchored flag": true
+    },
+    {
+      "unitid": "399869",
+      "name": "Southern California Institute of Technology",
+      "sector": "forprofit",
+      "score": 0.11745058848001792,
+      "anchor capacity": 0.23916092099108496,
+      "anchored flag": false
+    },
+    {
+      "unitid": "401223",
+      "name": "World Mission University",
+      "sector": "private",
+      "score": 0.11312534363955447,
+      "anchor capacity": 0.04018363469653226,
+      "anchored flag": true
+    },
+    {
+      "unitid": "413413",
+      "name": "Capella University",
+      "sector": "forprofit",
+      "score": 0.19822396745443893,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "414595",
+      "name": "Pacific College of Oriental Medicine-New York",
+      "sector": "forprofit",
+      "score": 0.160888961189505,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "418126",
+      "name": "New York College of Health Professions",
+      "sector": "private",
+      "score": 0.5353680229595328,
+      "anchor capacity": 0.04715392683484805,
+      "anchored flag": true
+    },
+    {
+      "unitid": "438586",
+      "name": "American InterContinental University-Atlanta",
+      "sector": "forprofit",
+      "score": 0.5820675590337897,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "440396",
+      "name": "New Saint Andrews College",
+      "sector": "private",
+      "score": 0.31299350949915944,
+      "anchor capacity": 0.13537967387547287,
+      "anchored flag": true
+    },
+    {
+      "unitid": "445027",
+      "name": "American InterContinental University",
+      "sector": "forprofit",
+      "score": 0.4346162758017585,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "485999",
+      "name": "Bet Medrash Gadol Ateret Torah",
+      "sector": "private",
+      "score": 0.18059237293671346,
+      "anchor capacity": 0.4187909461693617,
+      "anchored flag": true
+    },
+    {
+      "unitid": "486017",
+      "name": "Yeshiva Gedola Ohr Yisrael",
+      "sector": "private",
+      "score": 0.14840409248997302,
+      "anchor capacity": 0.2934649608812993,
+      "anchored flag": true
+    },
+    {
+      "unitid": "486026",
+      "name": "Yeshiva Sholom Shachna",
+      "sector": "private",
+      "score": 0.22487953188244886,
+      "anchor capacity": 0.1006787098669652,
+      "anchored flag": true
+    },
+    {
+      "unitid": "486196",
+      "name": "Beth Medrash Meor Yitzchok",
+      "sector": "private",
+      "score": 0.11471732377260152,
+      "anchor capacity": 0.122476241316414,
+      "anchored flag": true
+    },
+    {
+      "unitid": "486354",
+      "name": "Unilatina International College",
+      "sector": "forprofit",
+      "score": 0.470096619050231,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    },
+    {
+      "unitid": "488448",
+      "name": "Seattle Film Institute",
+      "sector": "forprofit",
+      "score": 0.46642593855160447,
+      "anchor capacity": 0.0,
+      "anchored flag": true
+    }
+  ],
+  "machine": {
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "python": "3.11.18",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "environment variables": {
+      "NUMBA_CPU_NAME": "generic",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTENSOR_FLAGS": null,
+      "NUMBA_CACHE_DIR": null
+    },
+    "packages": [
+      "arviz==0.23.4",
+      "cachetools==6.2.6",
+      "certifi==2026.10.23",
+      "charset-normalizer==3.5.2",
+      "cloudpickle==3.1.2",
+      "cons==0.4.7",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "etuples==0.3.10",
+      "filelock==4.2.10",
+      "fonttools==4.68.0",
+      "h5netcdf==1.8.3",
+      "h5py==3.16.0",
+      "idna==3.20",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "llvmlite==0.47.0",
+      "logical-unification==0.4.7",
+      "markdown-it-py==4.3.0",
+      "matplotlib==3.11.2",
+      "mdurl==0.1.2",
+      "miniKanren==1.0.5",
+      "multipledispatch==1.0.0",
+      "narwhals==2.28.0",
+      "numba==0.65.1",
+      "numpy==2.4.6",
+      "packaging==26.3",
+      "pandas==3.1.1",
+      "pillow==13.0.0",
+      "platformdirs==4.14.5",
+      "Pygments==2.21.0",
+      "pymc==5.28.5",
+      "pyparsing==3.3.3",
+      "pytensor==2.38.3",
+      "python-dateutil==4.0.0",
+      "requests==2.34.2",
+      "rich==15.0.0",
+      "scikit-learn==1.9.1",
+      "scipy==1.17.1",
+      "threadpoolctl==3.8.0",
+      "toolz==1.2.0",
+      "typing_extensions==4.16.0",
+      "tzdata==2026.6",
+      "urllib3==2.8.0",
+      "xarray==2026.9.0",
+      "xarray-einstats==0.9.1"
+    ]
+  }
+}
