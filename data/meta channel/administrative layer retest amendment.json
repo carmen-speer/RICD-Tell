@@ -1,0 +1,180 @@
+{
+  "protocol": "administrative layer retest protocol.md, Amendment 1 (disclosed; fixed after the run)",
+  "written at (UTC)": "2026-11-16T22:22:12.740394+00:00",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261116
+  },
+  "core administrative share (primary)": {
+    "private nonprofit": {
+      "median share": 0.3968,
+      "median debt trend": 0.006694,
+      "groups": {
+        "thin, debt trend lower half": {
+          "colleges": 158,
+          "closed": 4,
+          "closure rate": 0.0253
+        },
+        "thin, debt trend upper half": {
+          "colleges": 132,
+          "closed": 14,
+          "closure rate": 0.1061
+        },
+        "thick, debt trend lower half": {
+          "colleges": 132,
+          "closed": 3,
+          "closure rate": 0.0227
+        },
+        "thick, debt trend upper half": {
+          "colleges": 158,
+          "closed": 11,
+          "closure rate": 0.0696
+        }
+      },
+      "thin layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.0807,
+        "95% interval": [
+          0.0237,
+          0.1402
+        ],
+        "verdict (predicted above zero)": "supported"
+      },
+      "thick layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.0469,
+        "95% interval": [
+          -0.0028,
+          0.094
+        ],
+        "verdict (predicted above zero)": "not decided"
+      }
+    },
+    "for-profit": {
+      "median share": 0.297,
+      "median debt trend": 0.013569,
+      "groups": {
+        "thin, debt trend lower half": {
+          "colleges": 17,
+          "closed": 5,
+          "closure rate": 0.2941
+        },
+        "thin, debt trend upper half": {
+          "colleges": 14,
+          "closed": 6,
+          "closure rate": 0.4286
+        },
+        "thick, debt trend lower half": {
+          "colleges": 14,
+          "closed": 4,
+          "closure rate": 0.2857
+        },
+        "thick, debt trend upper half": {
+          "colleges": 16,
+          "closed": 5,
+          "closure rate": 0.3125
+        }
+      },
+      "thin layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.1345,
+        "95% interval": [
+          -0.2112,
+          0.4983
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "thick layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.0268,
+        "95% interval": [
+          -0.3125,
+          0.3572
+        ],
+        "verdict (predicted above zero)": "not decided"
+      }
+    }
+  },
+  "broad administrative share": {
+    "private nonprofit": {
+      "median share": 0.5265,
+      "median debt trend": 0.006694,
+      "groups": {
+        "thin, debt trend lower half": {
+          "colleges": 154,
+          "closed": 4,
+          "closure rate": 0.026
+        },
+        "thin, debt trend upper half": {
+          "colleges": 136,
+          "closed": 14,
+          "closure rate": 0.1029
+        },
+        "thick, debt trend lower half": {
+          "colleges": 136,
+          "closed": 3,
+          "closure rate": 0.0221
+        },
+        "thick, debt trend upper half": {
+          "colleges": 154,
+          "closed": 11,
+          "closure rate": 0.0714
+        }
+      },
+      "thin layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.077,
+        "95% interval": [
+          0.0207,
+          0.1376
+        ],
+        "verdict (predicted above zero)": "supported"
+      },
+      "thick layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.0494,
+        "95% interval": [
+          -0.0002,
+          0.0952
+        ],
+        "verdict (predicted above zero)": "not decided"
+      }
+    },
+    "for-profit": {
+      "median share": 0.5,
+      "median debt trend": 0.013569,
+      "groups": {
+        "thin, debt trend lower half": {
+          "colleges": 16,
+          "closed": 6,
+          "closure rate": 0.375
+        },
+        "thin, debt trend upper half": {
+          "colleges": 15,
+          "closed": 5,
+          "closure rate": 0.3333
+        },
+        "thick, debt trend lower half": {
+          "colleges": 15,
+          "closed": 3,
+          "closure rate": 0.2
+        },
+        "thick, debt trend upper half": {
+          "colleges": 15,
+          "closed": 6,
+          "closure rate": 0.4
+        }
+      },
+      "thin layer: closure rate, upper minus lower half of debt trend": {
+        "difference": -0.0417,
+        "95% interval": [
+          -0.3864,
+          0.3138
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "thick layer: closure rate, upper minus lower half of debt trend": {
+        "difference": 0.2,
+        "95% interval": [
+          -0.1429,
+          0.5294
+        ],
+        "verdict (predicted above zero)": "not decided"
+      }
+    }
+  }
+}
