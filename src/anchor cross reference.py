@@ -42,11 +42,16 @@ private nonprofit institutions alone, with 95% bootstrap intervals
 
 Usage:
     cd src
-    python "anchor cross reference.py"
+    python "anchor cross reference.py"                 # v3 scores (data/v3/test scores/)
+    python "anchor cross reference.py" --two-channel   # the exploratory two-channel rescoring
+                                                       # (data/v3 reanalysis/test scores/), whose
+                                                       # resource debt is free of the meta-channel
+                                                       # fallback; written to its own file
 """
 
 from __future__ import annotations
 
+import argparse
 import datetime
 import json
 import math
@@ -58,25 +63,29 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 V3 = ROOT / "data" / "v3"
 OUT = ROOT / "data" / "v3 exploratory" / "anchor cross reference.json"
+OUT_TWO = ROOT / "data" / "v3 exploratory" / "anchor cross reference two-channel.json"
+SCORES = V3 / "test scores"
+SCORES_TWO = ROOT / "data" / "v3 reanalysis" / "test scores"
 SEED = 20261115
 BOOT = 2000
 
 
-def load() -> list[dict]:
+def load(scores: Path = SCORES) -> list[dict]:
     outcomes = {r["unitid"]: r for r in json.loads((V3 / "test outcomes.json").read_text())["institutions"]}
     anchors = json.loads((V3 / "anchors.json").read_text())["cohorts"]["2019"]["records"]
     rows = []
-    for p in sorted((V3 / "test scores").glob("batch_*.json")):
+    for p in sorted(scores.glob("batch_*.json")):
         for r in json.loads(p.read_text())["results"]:
             if r["status"] != "scored":
                 continue
             a = anchors.get(r["unitid"]) or {}
+            drift = r.get("drift features") or r["drift"]
             has = a.get("W") is not None
             share = (min(a.get("f_approp") or 0.0, 1.0) + min(a.get("f_gift") or 0.0, 1.0)) if has else 0.0
             rows.append({"unitid": r["unitid"], "sector": r["sector"],
                          "closed": bool(outcomes[r["unitid"]]["closed or failed (primary)"]),
-                         "coverage": r["drift features"]["coverage_final"],
-                         "slide": r["drift features"]["slide_rate"],
+                         "coverage": drift["coverage_final"],
+                         "slide": drift["slide_rate"],
                          "anchor share": share, "system member": bool(has and a.get("S_par")),
                          "reserve": r["features (seed 7)"]["reserve_adequacy"],
                          "debt": r["features (seed 7)"]["delta_R_final"]})
@@ -169,19 +178,23 @@ def analyses(rows: list[dict]) -> dict:
 
 
 def main() -> None:
-    rows = load()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--two-channel", action="store_true")
+    two = ap.parse_args().two_channel
+    scores, out = (SCORES_TWO, OUT_TWO) if two else (SCORES, OUT)
+    rows = load(scores)
     nonprofit = [dict(r) for r in rows if r["sector"] != "forprofit"]
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps({
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps({
         "note": ("Exploratory: the v3 test outcomes were already known. The analyses are fixed in "
                  "src/anchor cross reference.py so that they can be run blind on the prospective retest."),
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "inputs": ["data/v3/test scores/", "data/v3/test outcomes.json", "data/v3/anchors.json"],
+        "inputs": [str(scores.relative_to(ROOT)) + "/", "data/v3/test outcomes.json", "data/v3/anchors.json"],
         "bootstrap": {"resamples": BOOT, "seed": SEED},
         "all scored institutions": analyses([dict(r) for r in rows]),
         "public and private nonprofit institutions": analyses(nonprofit),
     }, indent=2))
-    print(OUT.read_text())
+    print(out.read_text())
 
 
 if __name__ == "__main__":
