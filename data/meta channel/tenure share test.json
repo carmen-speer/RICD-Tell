@@ -1,0 +1,1438 @@
+{
+  "note": "Exploratory: development colleges only, outcomes already known. The v3 test colleges are held back for a pre-registered retest, fixed after this test.",
+  "written at (UTC)": "2026-11-16T22:24:04.253313+00:00",
+  "development colleges scored": 670,
+  "closures": 70,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261116
+  },
+  "secure (primary)": {
+    "colleges with a value": 670,
+    "predictions (size and wealth held constant)": {
+      "debt, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.1117,
+        "95% interval": [
+          0.043,
+          0.1799
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "debt trend, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.0964,
+        "95% interval": [
+          0.0253,
+          0.1648
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "closed, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.014,
+        "95% interval": [
+          -0.0393,
+          0.0722
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.0226,
+        "95% interval": [
+          -0.0509,
+          0.0945
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "debt, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.1567,
+        "95% interval": [
+          0.0581,
+          0.2589
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "debt trend, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.1235,
+        "95% interval": [
+          0.0248,
+          0.225
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "closed, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.0106,
+        "95% interval": [
+          -0.0755,
+          0.1048
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.0097,
+        "95% interval": [
+          -0.0957,
+          0.1105
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "closed, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": -0.0764,
+        "95% interval": [
+          -0.1737,
+          0.1003
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      }
+    },
+    "reported without prediction": {
+      "debt, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.2087,
+        "95% interval": [
+          0.1329,
+          0.281
+        ],
+        "controls": []
+      },
+      "debt trend, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.2145,
+        "95% interval": [
+          0.1391,
+          0.2878
+        ],
+        "controls": []
+      },
+      "closed, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": -0.3135,
+        "95% interval": [
+          -0.3731,
+          -0.2508
+        ],
+        "controls": []
+      },
+      "adaptive capacity, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.1558,
+        "95% interval": [
+          0.0819,
+          0.2274
+        ],
+        "controls": []
+      },
+      "core administrative share, all colleges (sector added as a control)": {
+        "colleges": 670,
+        "partial Spearman": 0.2007,
+        "95% interval": [
+          0.1196,
+          0.28
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "full-time share, all colleges (sector added as a control)": {
+        "colleges": 670,
+        "partial Spearman": 0.5224,
+        "95% interval": [
+          0.4541,
+          0.5876
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "debt, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.2858,
+        "95% interval": [
+          0.1868,
+          0.3802
+        ],
+        "controls": []
+      },
+      "debt trend, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.2658,
+        "95% interval": [
+          0.1695,
+          0.3591
+        ],
+        "controls": []
+      },
+      "closed, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": -0.0968,
+        "95% interval": [
+          -0.1747,
+          -0.0062
+        ],
+        "controls": []
+      },
+      "adaptive capacity, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.2213,
+        "95% interval": [
+          0.1246,
+          0.3123
+        ],
+        "controls": []
+      },
+      "core administrative share, private nonprofit": {
+        "colleges": 390,
+        "partial Spearman": 0.2075,
+        "95% interval": [
+          0.0907,
+          0.3162
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, private nonprofit": {
+        "colleges": 390,
+        "partial Spearman": 0.462,
+        "95% interval": [
+          0.3714,
+          0.5486
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1144,
+        "95% interval": [
+          -0.0886,
+          0.2267
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1331,
+        "95% interval": [
+          0.1117,
+          0.2635
+        ],
+        "controls": []
+      },
+      "debt trend, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1063,
+        "95% interval": [
+          -0.0825,
+          0.2136
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1288,
+        "95% interval": [
+          0.1074,
+          0.2559
+        ],
+        "controls": []
+      },
+      "closed, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": -0.1283,
+        "95% interval": [
+          -0.2492,
+          -0.1091
+        ],
+        "controls": []
+      },
+      "adaptive capacity, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1349,
+        "95% interval": [
+          -0.1253,
+          0.2634
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1546,
+        "95% interval": [
+          0.1374,
+          0.2936
+        ],
+        "controls": []
+      },
+      "core administrative share, for-profit": {
+        "colleges": 87,
+        "partial Spearman": -0.0859,
+        "95% interval": [
+          -0.1729,
+          0.0946
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, for-profit": {
+        "colleges": 87,
+        "partial Spearman": -0.1083,
+        "95% interval": [
+          -0.2185,
+          0.0866
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0469,
+        "95% interval": [
+          -0.0883,
+          0.1855
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.0497,
+        "95% interval": [
+          -0.0886,
+          0.1952
+        ],
+        "controls": []
+      },
+      "debt trend, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0559,
+        "95% interval": [
+          -0.0859,
+          0.199
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.0628,
+        "95% interval": [
+          -0.0798,
+          0.2077
+        ],
+        "controls": []
+      },
+      "closed, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.178,
+        "95% interval": [
+          -0.0073,
+          0.2834
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "closed, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.1635,
+        "95% interval": [
+          0.1049,
+          0.2627
+        ],
+        "controls": []
+      },
+      "adaptive capacity, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0547,
+        "95% interval": [
+          -0.0874,
+          0.1903
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.1207,
+        "95% interval": [
+          -0.0315,
+          0.2562
+        ],
+        "controls": []
+      },
+      "core administrative share, public": {
+        "colleges": 193,
+        "partial Spearman": 0.2279,
+        "95% interval": [
+          0.0905,
+          0.3642
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, public": {
+        "colleges": 193,
+        "partial Spearman": 0.804,
+        "95% interval": [
+          0.7239,
+          0.8664
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      }
+    }
+  },
+  "tenured only": {
+    "colleges with a value": 670,
+    "predictions (size and wealth held constant)": {
+      "debt, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.1245,
+        "95% interval": [
+          0.0502,
+          0.1941
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "debt trend, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.1043,
+        "95% interval": [
+          0.0324,
+          0.1726
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "closed, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.0267,
+        "95% interval": [
+          -0.0287,
+          0.0916
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 670,
+        "partial Spearman": 0.0387,
+        "95% interval": [
+          -0.0346,
+          0.108
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "debt, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.1682,
+        "95% interval": [
+          0.0705,
+          0.2676
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "debt trend, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.1278,
+        "95% interval": [
+          0.0303,
+          0.2254
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "closed, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.024,
+        "95% interval": [
+          -0.0682,
+          0.1292
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, private nonprofit": {
+        "closures": 17,
+        "colleges": 390,
+        "partial Spearman": 0.0198,
+        "95% interval": [
+          -0.0836,
+          0.12
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "closed, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": -0.0764,
+        "95% interval": [
+          -0.1737,
+          0.1003
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      }
+    },
+    "reported without prediction": {
+      "debt, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.2234,
+        "95% interval": [
+          0.1443,
+          0.2963
+        ],
+        "controls": []
+      },
+      "debt trend, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.2258,
+        "95% interval": [
+          0.148,
+          0.2991
+        ],
+        "controls": []
+      },
+      "closed, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": -0.313,
+        "95% interval": [
+          -0.3723,
+          -0.249
+        ],
+        "controls": []
+      },
+      "adaptive capacity, all colleges (sector added as a control), no controls": {
+        "colleges": 670,
+        "partial Spearman": 0.1814,
+        "95% interval": [
+          0.1076,
+          0.2559
+        ],
+        "controls": []
+      },
+      "core administrative share, all colleges (sector added as a control)": {
+        "colleges": 670,
+        "partial Spearman": 0.1946,
+        "95% interval": [
+          0.1145,
+          0.2726
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "full-time share, all colleges (sector added as a control)": {
+        "colleges": 670,
+        "partial Spearman": 0.4733,
+        "95% interval": [
+          0.4018,
+          0.5421
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "debt, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.3007,
+        "95% interval": [
+          0.2075,
+          0.3943
+        ],
+        "controls": []
+      },
+      "debt trend, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.2769,
+        "95% interval": [
+          0.1862,
+          0.3701
+        ],
+        "controls": []
+      },
+      "closed, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": -0.098,
+        "95% interval": [
+          -0.1759,
+          -0.002
+        ],
+        "controls": []
+      },
+      "adaptive capacity, private nonprofit, no controls": {
+        "colleges": 390,
+        "partial Spearman": 0.2502,
+        "95% interval": [
+          0.1564,
+          0.3386
+        ],
+        "controls": []
+      },
+      "core administrative share, private nonprofit": {
+        "colleges": 390,
+        "partial Spearman": 0.193,
+        "95% interval": [
+          0.0807,
+          0.2987
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, private nonprofit": {
+        "colleges": 390,
+        "partial Spearman": 0.4088,
+        "95% interval": [
+          0.3158,
+          0.499
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1144,
+        "95% interval": [
+          -0.0886,
+          0.2267
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1331,
+        "95% interval": [
+          0.1117,
+          0.2635
+        ],
+        "controls": []
+      },
+      "debt trend, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1063,
+        "95% interval": [
+          -0.0825,
+          0.2136
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1288,
+        "95% interval": [
+          0.1074,
+          0.2559
+        ],
+        "controls": []
+      },
+      "closed, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": -0.1283,
+        "95% interval": [
+          -0.2492,
+          -0.1091
+        ],
+        "controls": []
+      },
+      "adaptive capacity, for-profit": {
+        "closures": 51,
+        "colleges": 87,
+        "partial Spearman": 0.1349,
+        "95% interval": [
+          -0.1253,
+          0.2634
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, for-profit, no controls": {
+        "colleges": 87,
+        "partial Spearman": 0.1546,
+        "95% interval": [
+          0.1374,
+          0.2936
+        ],
+        "controls": []
+      },
+      "core administrative share, for-profit": {
+        "colleges": 87,
+        "partial Spearman": -0.0859,
+        "95% interval": [
+          -0.1729,
+          0.0946
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, for-profit": {
+        "colleges": 87,
+        "partial Spearman": -0.1083,
+        "95% interval": [
+          -0.2185,
+          0.0866
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0499,
+        "95% interval": [
+          -0.0905,
+          0.1911
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.0785,
+        "95% interval": [
+          -0.061,
+          0.2281
+        ],
+        "controls": []
+      },
+      "debt trend, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0614,
+        "95% interval": [
+          -0.0851,
+          0.2043
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.0923,
+        "95% interval": [
+          -0.0476,
+          0.2378
+        ],
+        "controls": []
+      },
+      "closed, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.1743,
+        "95% interval": [
+          -0.0075,
+          0.2799
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "closed, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.1552,
+        "95% interval": [
+          0.092,
+          0.2504
+        ],
+        "controls": []
+      },
+      "adaptive capacity, public": {
+        "closures": 2,
+        "colleges": 193,
+        "partial Spearman": 0.0782,
+        "95% interval": [
+          -0.0671,
+          0.214
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, public, no controls": {
+        "colleges": 193,
+        "partial Spearman": 0.172,
+        "95% interval": [
+          0.0251,
+          0.3035
+        ],
+        "controls": []
+      },
+      "core administrative share, public": {
+        "colleges": 193,
+        "partial Spearman": 0.227,
+        "95% interval": [
+          0.0771,
+          0.3655
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, public": {
+        "colleges": 193,
+        "partial Spearman": 0.7089,
+        "95% interval": [
+          0.6094,
+          0.785
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      }
+    }
+  },
+  "secure with indefinite": {
+    "colleges with a value": 245,
+    "predictions (size and wealth held constant)": {
+      "debt, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 245,
+        "partial Spearman": 0.0899,
+        "95% interval": [
+          -0.0239,
+          0.2055
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "debt trend, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 245,
+        "partial Spearman": 0.0798,
+        "95% interval": [
+          -0.0319,
+          0.1972
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "closed, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 245,
+        "partial Spearman": 0.0535,
+        "95% interval": [
+          -0.0927,
+          0.1954
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, all colleges (sector added as a control)": {
+        "closures": 70,
+        "colleges": 245,
+        "partial Spearman": 0.003,
+        "95% interval": [
+          -0.1187,
+          0.1286
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "debt, private nonprofit": {
+        "closures": 17,
+        "colleges": 146,
+        "partial Spearman": 0.2226,
+        "95% interval": [
+          0.0767,
+          0.3661
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "debt trend, private nonprofit": {
+        "closures": 17,
+        "colleges": 146,
+        "partial Spearman": 0.1716,
+        "95% interval": [
+          0.0267,
+          0.3157
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "contradicted"
+      },
+      "closed, private nonprofit": {
+        "closures": 17,
+        "colleges": 146,
+        "partial Spearman": 0.0331,
+        "95% interval": [
+          -0.0979,
+          0.1705
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      },
+      "adaptive capacity, private nonprofit": {
+        "closures": 17,
+        "colleges": 146,
+        "partial Spearman": -0.0661,
+        "95% interval": [
+          -0.2209,
+          0.0911
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted above zero)": "not decided"
+      },
+      "closed, for-profit": {
+        "closures": 51,
+        "colleges": 20,
+        "partial Spearman": -0.1671,
+        "95% interval": [
+          -0.6183,
+          0.2589
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ],
+        "verdict (predicted below zero)": "not decided"
+      }
+    },
+    "reported without prediction": {
+      "debt, all colleges (sector added as a control), no controls": {
+        "colleges": 245,
+        "partial Spearman": 0.2068,
+        "95% interval": [
+          0.0873,
+          0.3217
+        ],
+        "controls": []
+      },
+      "debt trend, all colleges (sector added as a control), no controls": {
+        "colleges": 245,
+        "partial Spearman": 0.1819,
+        "95% interval": [
+          0.0637,
+          0.2988
+        ],
+        "controls": []
+      },
+      "closed, all colleges (sector added as a control), no controls": {
+        "colleges": 245,
+        "partial Spearman": -0.0164,
+        "95% interval": [
+          -0.1501,
+          0.1223
+        ],
+        "controls": []
+      },
+      "adaptive capacity, all colleges (sector added as a control), no controls": {
+        "colleges": 245,
+        "partial Spearman": 0.1202,
+        "95% interval": [
+          -0.0007,
+          0.2444
+        ],
+        "controls": []
+      },
+      "core administrative share, all colleges (sector added as a control)": {
+        "colleges": 245,
+        "partial Spearman": 0.246,
+        "95% interval": [
+          0.113,
+          0.3676
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "full-time share, all colleges (sector added as a control)": {
+        "colleges": 245,
+        "partial Spearman": 0.4581,
+        "95% interval": [
+          0.3297,
+          0.5805
+        ],
+        "controls": [
+          "size",
+          "wealth",
+          "public",
+          "forprofit"
+        ]
+      },
+      "debt, private nonprofit, no controls": {
+        "colleges": 146,
+        "partial Spearman": 0.2819,
+        "95% interval": [
+          0.1279,
+          0.4298
+        ],
+        "controls": []
+      },
+      "debt trend, private nonprofit, no controls": {
+        "colleges": 146,
+        "partial Spearman": 0.2156,
+        "95% interval": [
+          0.0602,
+          0.3689
+        ],
+        "controls": []
+      },
+      "closed, private nonprofit, no controls": {
+        "colleges": 146,
+        "partial Spearman": -0.0162,
+        "95% interval": [
+          -0.0802,
+          0.0477
+        ],
+        "controls": []
+      },
+      "adaptive capacity, private nonprofit, no controls": {
+        "colleges": 146,
+        "partial Spearman": 0.1643,
+        "95% interval": [
+          0.0031,
+          0.3109
+        ],
+        "controls": []
+      },
+      "core administrative share, private nonprofit": {
+        "colleges": 146,
+        "partial Spearman": 0.2426,
+        "95% interval": [
+          0.051,
+          0.4125
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, private nonprofit": {
+        "colleges": 146,
+        "partial Spearman": 0.2865,
+        "95% interval": [
+          0.1131,
+          0.4629
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit": {
+        "closures": 51,
+        "colleges": 20,
+        "partial Spearman": -0.514,
+        "95% interval": [
+          -0.8041,
+          -0.0248
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, for-profit, no controls": {
+        "colleges": 20,
+        "partial Spearman": -0.5178,
+        "95% interval": [
+          -0.8012,
+          -0.0831
+        ],
+        "controls": []
+      },
+      "debt trend, for-profit": {
+        "closures": 51,
+        "colleges": 20,
+        "partial Spearman": -0.5546,
+        "95% interval": [
+          -0.8194,
+          -0.1266
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, for-profit, no controls": {
+        "colleges": 20,
+        "partial Spearman": -0.5563,
+        "95% interval": [
+          -0.8165,
+          -0.1685
+        ],
+        "controls": []
+      },
+      "closed, for-profit, no controls": {
+        "colleges": 20,
+        "partial Spearman": -0.1812,
+        "95% interval": [
+          -0.5753,
+          0.2407
+        ],
+        "controls": []
+      },
+      "adaptive capacity, for-profit": {
+        "closures": 51,
+        "colleges": 20,
+        "partial Spearman": 0.2448,
+        "95% interval": [
+          -0.1696,
+          0.5826
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, for-profit, no controls": {
+        "colleges": 20,
+        "partial Spearman": 0.2494,
+        "95% interval": [
+          -0.1638,
+          0.5668
+        ],
+        "controls": []
+      },
+      "core administrative share, for-profit": {
+        "colleges": 20,
+        "partial Spearman": 0.1107,
+        "95% interval": [
+          -0.4098,
+          0.5104
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, for-profit": {
+        "colleges": 20,
+        "partial Spearman": 0.5045,
+        "95% interval": [
+          0.0095,
+          0.9052
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public": {
+        "closures": 2,
+        "colleges": 79,
+        "partial Spearman": 0.0226,
+        "95% interval": [
+          -0.196,
+          0.2451
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt, public, no controls": {
+        "colleges": 79,
+        "partial Spearman": 0.0344,
+        "95% interval": [
+          -0.1785,
+          0.2567
+        ],
+        "controls": []
+      },
+      "debt trend, public": {
+        "closures": 2,
+        "colleges": 79,
+        "partial Spearman": 0.0589,
+        "95% interval": [
+          -0.1493,
+          0.2697
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "debt trend, public, no controls": {
+        "colleges": 79,
+        "partial Spearman": 0.0597,
+        "95% interval": [
+          -0.1495,
+          0.2713
+        ],
+        "controls": []
+      },
+      "closed, public": {
+        "closures": 2,
+        "colleges": 79,
+        "partial Spearman": 0.3178,
+        "95% interval": [
+          -0.0684,
+          0.4987
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "closed, public, no controls": {
+        "colleges": 79,
+        "partial Spearman": 0.2438,
+        "95% interval": [
+          0.15,
+          0.3902
+        ],
+        "controls": []
+      },
+      "adaptive capacity, public": {
+        "closures": 2,
+        "colleges": 79,
+        "partial Spearman": 0.0262,
+        "95% interval": [
+          -0.1997,
+          0.2497
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "adaptive capacity, public, no controls": {
+        "colleges": 79,
+        "partial Spearman": 0.1372,
+        "95% interval": [
+          -0.1074,
+          0.3566
+        ],
+        "controls": []
+      },
+      "core administrative share, public": {
+        "colleges": 79,
+        "partial Spearman": 0.2088,
+        "95% interval": [
+          -0.0356,
+          0.4238
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      },
+      "full-time share, public": {
+        "colleges": 79,
+        "partial Spearman": 0.7508,
+        "95% interval": [
+          0.5661,
+          0.866
+        ],
+        "controls": [
+          "size",
+          "wealth"
+        ]
+      }
+    }
+  }
+}

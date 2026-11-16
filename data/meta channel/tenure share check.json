@@ -1,0 +1,1032 @@
+{
+  "written at (UTC)": "2026-11-16T22:24:01.877460+00:00",
+  "note": "Checks of the measurement only; no closure outcome is read.",
+  "years read (fall)": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fiscal years they are assigned to": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "categories resolved per year": {
+    "2012": [
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2013": [
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2014": [
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2015": [
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2016": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2017": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2018": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2019": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2020": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2021": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2022": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2023": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ],
+    "2024": [
+      "indefinite",
+      "tenured",
+      "total",
+      "track"
+    ]
+  },
+  "secure (primary)": {
+    "per year": {
+      "2012": {
+        "institutions": 7443,
+        "share": {
+          "n": 7443,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.214,
+          "90%": 0.483,
+          "max": 1.0,
+          "mean": 0.123
+        },
+        "fraction with no tenured or tenure-track staff": 0.7066
+      },
+      "2013": {
+        "institutions": 7409,
+        "share": {
+          "n": 7409,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.22,
+          "90%": 0.479,
+          "max": 1.0,
+          "mean": 0.122
+        },
+        "fraction with no tenured or tenure-track staff": 0.7051
+      },
+      "2014": {
+        "institutions": 7309,
+        "share": {
+          "n": 7309,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.218,
+          "90%": 0.471,
+          "max": 1.0,
+          "mean": 0.121
+        },
+        "fraction with no tenured or tenure-track staff": 0.7049
+      },
+      "2015": {
+        "institutions": 7183,
+        "share": {
+          "n": 7183,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.228,
+          "90%": 0.473,
+          "max": 1.0,
+          "mean": 0.122
+        },
+        "fraction with no tenured or tenure-track staff": 0.6989
+      },
+      "2016": {
+        "institutions": 6773,
+        "share": {
+          "n": 6773,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.25,
+          "90%": 0.48,
+          "max": 1.0,
+          "mean": 0.128
+        },
+        "fraction with no tenured or tenure-track staff": 0.6814
+      },
+      "2017": {
+        "institutions": 6631,
+        "share": {
+          "n": 6631,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.259,
+          "90%": 0.482,
+          "max": 1.0,
+          "mean": 0.13
+        },
+        "fraction with no tenured or tenure-track staff": 0.6761
+      },
+      "2018": {
+        "institutions": 6314,
+        "share": {
+          "n": 6314,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.272,
+          "90%": 0.492,
+          "max": 1.0,
+          "mean": 0.134
+        },
+        "fraction with no tenured or tenure-track staff": 0.6644
+      },
+      "2019": {
+        "institutions": 6121,
+        "share": {
+          "n": 6121,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.277,
+          "90%": 0.491,
+          "max": 1.0,
+          "mean": 0.136
+        },
+        "fraction with no tenured or tenure-track staff": 0.6584
+      },
+      "2020": {
+        "institutions": 6050,
+        "share": {
+          "n": 6050,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.291,
+          "90%": 0.508,
+          "max": 1.0,
+          "mean": 0.141
+        },
+        "fraction with no tenured or tenure-track staff": 0.6577
+      },
+      "2021": {
+        "institutions": 5975,
+        "share": {
+          "n": 5975,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.288,
+          "90%": 0.494,
+          "max": 1.0,
+          "mean": 0.138
+        },
+        "fraction with no tenured or tenure-track staff": 0.6566
+      },
+      "2022": {
+        "institutions": 5907,
+        "share": {
+          "n": 5907,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.287,
+          "90%": 0.489,
+          "max": 1.0,
+          "mean": 0.138
+        },
+        "fraction with no tenured or tenure-track staff": 0.6519
+      },
+      "2023": {
+        "institutions": 5848,
+        "share": {
+          "n": 5848,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.291,
+          "90%": 0.489,
+          "max": 1.0,
+          "mean": 0.138
+        },
+        "fraction with no tenured or tenure-track staff": 0.6518
+      },
+      "2024": {
+        "institutions": 5763,
+        "share": {
+          "n": 5763,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.286,
+          "90%": 0.479,
+          "max": 1.0,
+          "mean": 0.136
+        },
+        "fraction with no tenured or tenure-track staff": 0.6491
+      }
+    },
+    "by sector, fall 2024 (sector from HD2025)": {
+      "public 4-year": {
+        "n": 850,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.257,
+        "median": 0.385,
+        "75%": 0.493,
+        "90%": 0.588,
+        "max": 0.912,
+        "mean": 0.363
+      },
+      "private nonprofit 4-year": {
+        "n": 1557,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.106,
+        "75%": 0.39,
+        "90%": 0.588,
+        "max": 1.0,
+        "mean": 0.213
+      },
+      "for-profit 4-year": {
+        "n": 276,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.302,
+        "mean": 0.002
+      },
+      "public 2-year": {
+        "n": 820,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.012,
+        "75%": 0.329,
+        "90%": 0.448,
+        "max": 1.0,
+        "mean": 0.17
+      },
+      "private nonprofit 2-year": {
+        "n": 128,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 1.0,
+        "mean": 0.012
+      },
+      "for-profit 2-year": {
+        "n": 468,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.276,
+        "mean": 0.001
+      },
+      "public less-than-2-year": {
+        "n": 219,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "private nonprofit less-than-2-year": {
+        "n": 54,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "for-profit less-than-2-year": {
+        "n": 1331,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    "year-to-year change in an institution's share": {
+      "pairs": 75860,
+      "change": {
+        "n": 75860,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.007,
+        "90%": 0.031,
+        "max": 1.0,
+        "mean": 0.011
+      },
+      "changes of 0.2 or more": 485,
+      "share of changes of 0.2 or more": 0.0064
+    },
+    "coverage of the tracker's institutions": {
+      "v3 test institutions": {
+        "institutions": 1382,
+        "with a value in the latest year": 1220
+      },
+      "v3 development institutions": {
+        "institutions": 670,
+        "with a value in the latest year": 585
+      }
+    }
+  },
+  "tenured only": {
+    "per year": {
+      "2012": {
+        "institutions": 7443,
+        "share": {
+          "n": 7443,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.139,
+          "90%": 0.335,
+          "max": 1.0,
+          "mean": 0.086
+        },
+        "fraction with no tenured or tenure-track staff": 0.7072
+      },
+      "2013": {
+        "institutions": 7409,
+        "share": {
+          "n": 7409,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.138,
+          "90%": 0.333,
+          "max": 1.0,
+          "mean": 0.085
+        },
+        "fraction with no tenured or tenure-track staff": 0.706
+      },
+      "2014": {
+        "institutions": 7309,
+        "share": {
+          "n": 7309,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.137,
+          "90%": 0.33,
+          "max": 1.0,
+          "mean": 0.084
+        },
+        "fraction with no tenured or tenure-track staff": 0.7061
+      },
+      "2015": {
+        "institutions": 7183,
+        "share": {
+          "n": 7183,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.144,
+          "90%": 0.328,
+          "max": 1.0,
+          "mean": 0.085
+        },
+        "fraction with no tenured or tenure-track staff": 0.6994
+      },
+      "2016": {
+        "institutions": 6773,
+        "share": {
+          "n": 6773,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.163,
+          "90%": 0.333,
+          "max": 1.0,
+          "mean": 0.088
+        },
+        "fraction with no tenured or tenure-track staff": 0.6824
+      },
+      "2017": {
+        "institutions": 6631,
+        "share": {
+          "n": 6631,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.164,
+          "90%": 0.331,
+          "max": 1.0,
+          "mean": 0.089
+        },
+        "fraction with no tenured or tenure-track staff": 0.6768
+      },
+      "2018": {
+        "institutions": 6314,
+        "share": {
+          "n": 6314,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.172,
+          "90%": 0.338,
+          "max": 1.0,
+          "mean": 0.092
+        },
+        "fraction with no tenured or tenure-track staff": 0.6649
+      },
+      "2019": {
+        "institutions": 6121,
+        "share": {
+          "n": 6121,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.178,
+          "90%": 0.336,
+          "max": 1.0,
+          "mean": 0.094
+        },
+        "fraction with no tenured or tenure-track staff": 0.6594
+      },
+      "2020": {
+        "institutions": 6050,
+        "share": {
+          "n": 6050,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.192,
+          "90%": 0.353,
+          "max": 1.0,
+          "mean": 0.099
+        },
+        "fraction with no tenured or tenure-track staff": 0.6582
+      },
+      "2021": {
+        "institutions": 5975,
+        "share": {
+          "n": 5975,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.192,
+          "90%": 0.349,
+          "max": 1.0,
+          "mean": 0.097
+        },
+        "fraction with no tenured or tenure-track staff": 0.6567
+      },
+      "2022": {
+        "institutions": 5907,
+        "share": {
+          "n": 5907,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.188,
+          "90%": 0.347,
+          "max": 1.0,
+          "mean": 0.097
+        },
+        "fraction with no tenured or tenure-track staff": 0.6521
+      },
+      "2023": {
+        "institutions": 5848,
+        "share": {
+          "n": 5848,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.188,
+          "90%": 0.343,
+          "max": 1.0,
+          "mean": 0.096
+        },
+        "fraction with no tenured or tenure-track staff": 0.6527
+      },
+      "2024": {
+        "institutions": 5763,
+        "share": {
+          "n": 5763,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.183,
+          "90%": 0.338,
+          "max": 1.0,
+          "mean": 0.095
+        },
+        "fraction with no tenured or tenure-track staff": 0.6502
+      }
+    },
+    "by sector, fall 2024 (sector from HD2025)": {
+      "public 4-year": {
+        "n": 850,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.172,
+        "median": 0.267,
+        "75%": 0.351,
+        "90%": 0.429,
+        "max": 0.743,
+        "mean": 0.258
+      },
+      "private nonprofit 4-year": {
+        "n": 1557,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.053,
+        "75%": 0.25,
+        "90%": 0.414,
+        "max": 1.0,
+        "mean": 0.142
+      },
+      "for-profit 4-year": {
+        "n": 276,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.283,
+        "mean": 0.002
+      },
+      "public 2-year": {
+        "n": 820,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.012,
+        "75%": 0.232,
+        "90%": 0.333,
+        "max": 0.897,
+        "mean": 0.123
+      },
+      "private nonprofit 2-year": {
+        "n": 128,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.625,
+        "mean": 0.008
+      },
+      "for-profit 2-year": {
+        "n": 468,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.241,
+        "mean": 0.001
+      },
+      "public less-than-2-year": {
+        "n": 219,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "private nonprofit less-than-2-year": {
+        "n": 54,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "for-profit less-than-2-year": {
+        "n": 1331,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    "year-to-year change in an institution's share": {
+      "pairs": 75860,
+      "change": {
+        "n": 75860,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.006,
+        "90%": 0.026,
+        "max": 1.0,
+        "mean": 0.009
+      },
+      "changes of 0.2 or more": 318,
+      "share of changes of 0.2 or more": 0.0042
+    },
+    "coverage of the tracker's institutions": {
+      "v3 test institutions": {
+        "institutions": 1382,
+        "with a value in the latest year": 1220
+      },
+      "v3 development institutions": {
+        "institutions": 670,
+        "with a value in the latest year": 585
+      }
+    }
+  },
+  "secure with indefinite": {
+    "per year": {
+      "2012": "not computed: a needed category was not resolved this year",
+      "2013": "not computed: a needed category was not resolved this year",
+      "2014": "not computed: a needed category was not resolved this year",
+      "2015": "not computed: a needed category was not resolved this year",
+      "2016": {
+        "institutions": 6773,
+        "share": {
+          "n": 6773,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.362,
+          "90%": 0.657,
+          "max": 1.0,
+          "mean": 0.201
+        },
+        "fraction with no tenured or tenure-track staff": 0.5801
+      },
+      "2017": {
+        "institutions": 6631,
+        "share": {
+          "n": 6631,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.374,
+          "90%": 0.663,
+          "max": 1.0,
+          "mean": 0.206
+        },
+        "fraction with no tenured or tenure-track staff": 0.571
+      },
+      "2018": {
+        "institutions": 6314,
+        "share": {
+          "n": 6314,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.378,
+          "90%": 0.646,
+          "max": 1.0,
+          "mean": 0.207
+        },
+        "fraction with no tenured or tenure-track staff": 0.5603
+      },
+      "2019": {
+        "institutions": 6121,
+        "share": {
+          "n": 6121,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.38,
+          "90%": 0.653,
+          "max": 1.0,
+          "mean": 0.21
+        },
+        "fraction with no tenured or tenure-track staff": 0.554
+      },
+      "2020": {
+        "institutions": 6050,
+        "share": {
+          "n": 6050,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.405,
+          "90%": 0.69,
+          "max": 1.0,
+          "mean": 0.219
+        },
+        "fraction with no tenured or tenure-track staff": 0.5564
+      },
+      "2021": {
+        "institutions": 5975,
+        "share": {
+          "n": 5975,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.398,
+          "90%": 0.667,
+          "max": 1.0,
+          "mean": 0.216
+        },
+        "fraction with no tenured or tenure-track staff": 0.5546
+      },
+      "2022": {
+        "institutions": 5907,
+        "share": {
+          "n": 5907,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.4,
+          "90%": 0.671,
+          "max": 1.0,
+          "mean": 0.22
+        },
+        "fraction with no tenured or tenure-track staff": 0.5455
+      },
+      "2023": {
+        "institutions": 5848,
+        "share": {
+          "n": 5848,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.402,
+          "90%": 0.688,
+          "max": 1.0,
+          "mean": 0.225
+        },
+        "fraction with no tenured or tenure-track staff": 0.5404
+      },
+      "2024": {
+        "institutions": 5763,
+        "share": {
+          "n": 5763,
+          "min": 0.0,
+          "10%": 0.0,
+          "25%": 0.0,
+          "median": 0.0,
+          "75%": 0.4,
+          "90%": 0.696,
+          "max": 1.0,
+          "mean": 0.225
+        },
+        "fraction with no tenured or tenure-track staff": 0.536
+      }
+    },
+    "by sector, fall 2024 (sector from HD2025)": {
+      "public 4-year": {
+        "n": 850,
+        "min": 0.0,
+        "10%": 0.073,
+        "25%": 0.274,
+        "median": 0.406,
+        "75%": 0.529,
+        "90%": 0.667,
+        "max": 1.0,
+        "mean": 0.404
+      },
+      "private nonprofit 4-year": {
+        "n": 1557,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.235,
+        "75%": 0.476,
+        "90%": 0.703,
+        "max": 1.0,
+        "mean": 0.283
+      },
+      "for-profit 4-year": {
+        "n": 276,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.196,
+        "75%": 1.0,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.414
+      },
+      "public 2-year": {
+        "n": 820,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.196,
+        "75%": 0.383,
+        "90%": 0.534,
+        "max": 1.0,
+        "mean": 0.231
+      },
+      "private nonprofit 2-year": {
+        "n": 128,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.183
+      },
+      "for-profit 2-year": {
+        "n": 468,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 1.0,
+        "90%": 1.0,
+        "max": 1.0,
+        "mean": 0.383
+      },
+      "public less-than-2-year": {
+        "n": 219,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "private nonprofit less-than-2-year": {
+        "n": 54,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "for-profit less-than-2-year": {
+        "n": 1331,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.0,
+        "90%": 0.0,
+        "max": 1.0,
+        "mean": 0.002
+      }
+    },
+    "year-to-year change in an institution's share": {
+      "pairs": 47888,
+      "change": {
+        "n": 47888,
+        "min": 0.0,
+        "10%": 0.0,
+        "25%": 0.0,
+        "median": 0.0,
+        "75%": 0.015,
+        "90%": 0.047,
+        "max": 1.0,
+        "mean": 0.027
+      },
+      "changes of 0.2 or more": 1196,
+      "share of changes of 0.2 or more": 0.025
+    },
+    "coverage of the tracker's institutions": {
+      "v3 test institutions": {
+        "institutions": 1382,
+        "with a value in the latest year": 1220
+      },
+      "v3 development institutions": {
+        "institutions": 670,
+        "with a value in the latest year": 585
+      }
+    }
+  }
+}
