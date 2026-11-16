@@ -67,10 +67,10 @@ def outcomes() -> dict:
     return out
 
 
-def share_at(layer: dict, unitid: str, scoring_year: int, cats: tuple) -> float | None:
+def share_at(layer: dict, resolved: dict, unitid: str, scoring_year: int, cats: tuple) -> float | None:
     for fall in range(scoring_year - 1, 2011, -1):
         rec = layer["by fall year"].get(str(fall), {}).get(unitid)
-        s = al.shares(rec, cats, True) if rec else None
+        s = al.shares(rec, cats, True, resolved.get(str(fall), set())) if rec else None
         if s is not None:
             return s
     return None
@@ -78,6 +78,7 @@ def share_at(layer: dict, unitid: str, scoring_year: int, cats: tuple) -> float 
 
 def load() -> list[dict]:
     layer = json.loads((ROOT / "data" / "meta channel" / "administrative layer.json").read_text())
+    resolved = al.resolved_by_fall(layer)
     ft = json.loads((ROOT / "data" / "meta channel" / "instructional staff share.json").read_text())["by fall year"]
 
     def ft_share(unitid, scoring_year):
@@ -92,8 +93,8 @@ def load() -> list[dict]:
         for r in json.loads(p.read_text())["results"]:
             if r["key"].startswith("v3test:") or r["status"] != "scored" or r["key"] not in out_:
                 continue
-            core = share_at(layer, r["unitid"], r["scoring year"], al.CORE)
-            broad = share_at(layer, r["unitid"], r["scoring year"], al.BROAD)
+            core = share_at(layer, resolved, r["unitid"], r["scoring year"], al.CORE)
+            broad = share_at(layer, resolved, r["unitid"], r["scoring year"], al.BROAD)
             rows.append({"key": r["key"], "sector": r["sector"], "closed": out_[r["key"]],
                          "core": core, "broad": broad,
                          "debt": r["features"]["delta_R_final"], "debt trend": r["features"]["delta_R_trend"],
@@ -182,6 +183,9 @@ def main() -> None:
                     "The v3 test institutions are held back for the prospective retest."),
            "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
            "development institutions scored": len(rows),
+           "categories resolved per fall year": {
+               y: sorted(c) for y, c in al.resolved_by_fall(
+                   json.loads((ROOT / "data" / "meta channel" / "administrative layer.json").read_text())).items()},
            "bootstrap": {"resamples": BOOT, "seed": SEED}}
     for m in ("core", "broad"):
         res[f"{m} administrative share, all"] = block(rows, m)

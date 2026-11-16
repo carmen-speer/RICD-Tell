@@ -70,7 +70,10 @@ LAYER_PATH = mc.OUT_DIR / "administrative layer.json"
 CHECK_PATH = mc.OUT_DIR / "administrative layer check.json"
 PT_WEIGHT = 1 / 3          # IPEDS full-time-equivalent convention
 JUMP = 0.20
-EXCLUDE = ("faculty status", "tenure", "medical", "with faculty", "without faculty", "new hire")
+EXCLUDE = ("faculty status", "tenure", "medical", "with faculty", "without faculty", "new hire",
+           "contract", "graduate assistant")   # contract-length breakdowns and graduate-assistant
+                                                # rows repeat a category's label; only the category
+                                                # total is wanted
 
 CATEGORIES = {
     "management": lambda l: l.startswith("management occupations") or l == "management",
@@ -126,15 +129,24 @@ def read_year(year: int, required: bool) -> dict | None:
             "values": values}
 
 
-def shares(rec: dict, cats: tuple, fte: bool) -> float | None:
-    """Administrative share of (cats + instructional); None where a needed category is missing."""
+def shares(rec: dict, cats: tuple, fte: bool, resolved) -> float | None:
+    """Administrative share of (cats + instructional). None unless every needed category was
+    resolved in that year's dictionary (`resolved`: the year's resolved category names). Within a
+    resolved category, an institution with no row has no staff in it: IPEDS writes no zero rows."""
+    if any(c not in resolved for c in cats + ("instructional",)):
+        return None
     w = PT_WEIGHT if fte else 1.0
-    size = lambda c: rec[c][0] + w * rec[c][1]
+    size = lambda c: rec[c][0] + w * rec[c][1] if c in rec else 0.0
     if "instructional" not in rec:
         return None
-    admin = sum(size(c) for c in cats if c in rec)
+    admin = sum(size(c) for c in cats)
     total = admin + size("instructional")
     return admin / total if total > 0 else None
+
+
+def resolved_by_fall(layer: dict) -> dict[str, set]:
+    """Fall year (as a string) -> the category names resolved in that year's dictionary."""
+    return {f["table"][3:]: set(f["categories"]) for f in layer["files"]}
 
 
 def checks(years: dict, sec: dict) -> dict:
@@ -150,7 +162,7 @@ def checks(years: dict, sec: dict) -> dict:
             if not usable(y, cats):
                 per_year[str(y)] = "not computed: a needed category was not resolved this year"
                 continue
-            s = {u: shares(r, cats, True) for u, r in years[y]["values"].items()}
+            s = {u: shares(r, cats, True, years[y]["file"]["categories"]) for u, r in years[y]["values"].items()}
             s = {u: v for u, v in s.items() if v is not None}
             series[y] = s
             per_year[str(y)] = {"institutions": len(s), "share (FTE)": mc.quantiles(list(s.values()))}
@@ -217,9 +229,10 @@ def candidate(layer: dict, unitid: str, fiscal_years: list[int], cats: tuple = C
     aligned to fiscal_years. Years without a value are masked out, never filled."""
     import numpy as np
     obs, mask = np.zeros(len(fiscal_years)), np.zeros(len(fiscal_years), dtype=bool)
+    resolved = resolved_by_fall(layer)
     for i, fy in enumerate(fiscal_years):
         rec = layer["by fall year"].get(str(fy - 1), {}).get(unitid)
-        s = shares(rec, cats, True) if rec else None
+        s = shares(rec, cats, True, resolved.get(str(fy - 1), set())) if rec else None
         if s is not None:
             obs[i], mask[i] = 1 - s, True
     return obs, mask
