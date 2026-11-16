@@ -1,0 +1,67 @@
+name: transfer test 2 - download the Texas reports and run the test
+
+# Manual-only. Step 2 of "transfer test protocol.md" (with Amendment 1):
+# src/transfer data.py downloads the Coordinating Board's academic
+# performance and graduation reports for every Texas two-year college,
+# parses them (checking every table), and assembles the IPEDS crosswalk and
+# College Scorecard Pell shares; src/transfer test.py then runs the fixed
+# analysis. Commits data/transfer test/reports.json, inputs.json and
+# results.json (the PDFs themselves are not committed).
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: transfer-test
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned) and pdftotext
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Download and parse the Texas reports
+        run: |
+          mkdir -p work
+          cd src
+          python "transfer data.py" --work ../work
+
+      - name: Run the test
+        run: |
+          cd src
+          python "transfer test.py"
+
+      - name: Commit the results
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/transfer test/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "transfer test 2: Texas reports, inputs and results (pre-registered; exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
