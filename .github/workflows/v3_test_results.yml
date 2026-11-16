@@ -1,0 +1,58 @@
+name: v3 phase 5 - test outcomes and results
+
+# Manual-only. Runs src/v3_test_results.py under "sampling protocol v3.md",
+# phase 5: codes every v3 test institution's outcome from the IPEDS header
+# files for 2019 onward, then computes the pre-specified measures, triggers
+# R1-R6, the pass criterion and the second verdict. Refuses to run until
+# every v3 test score and the comparator flags are committed. Commits
+# data/v3/test outcomes.json and data/v3/test results.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v3-test-results
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run
+        run: |
+          cd src
+          python v3_test_results.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3/test outcomes.json" "data/v3/test results.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v3 phase 5: test outcomes and results"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
