@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THECB Accountability System</title>
+    <meta name="description" content="Texas Higher Education Coordinating Board Accountability System" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/AcctPublic/Content/lazeemenu.css" rel="stylesheet" type="text/css" />
+    <script src="/AcctPublic/Scripts/jquery-3.4.0.min.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="/AcctPublic/Scripts/modernizr-2.8.3.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap-multiselect.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/bootstrap.vertical-tabs.min.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/site.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/loading.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="" />
+
+    
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_6039200.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" style="margin-top:0;">
+        <div class="container-fluid pr0" style="min-height:30px; width:100%">
+            <div class="navbar-header ">
+                <a class="navbar-brand img_hide" href="https://www.highered.texas.gov" target="_blank" title="THECB Home">
+                    <img alt="THECB" src="/AcctPublic/images/logo-THECB-1.png" style="height: 34px; margin-top: -7px;" />
+                </a>
+                <button type="button" class="navbar-toggle" title="undefined" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-text" href="/AcctPublic/">
+                    <span class="wordmark-small" style="color: #ffffff">Texas Higher Education<br /><span class="wordmark" style="color: #ffffff">Accountability System</span></span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse pl0 pr0 navbar-right">
+
+                <ul class="nav navbar-nav" style="width: 100%">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="resourcesMenu">
+                            
+                            <li><a href="/AcctPublic/Resources/History" title="History">History</a></li>
+
+                            
+
+                            <li><a href="/AcctPublic/Resources/PeerGroup" title="Peer Groups">Peer Groups</a></li>
+                            <li><a href="/AcctPublic/Measures/ManageMeasures?instTypeID=0" title="Measures &amp; Definitions">Measures &amp; Definitions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">THECB <span class="caret"></span></a>
+                        
+                        <ul class="dropdown-menu" id="thecbMenu">
+                            <li><a href="https://www.highered.texas.gov" title="THECB Home" target="_blank">THECB Home</a></li>
+                            <li><a href="https://databridge.highered.texas.gov" title="THECB Data" target="_blank">THECB Data</a></li>
+                            <li><a href="http://www.txhighereddata.org" title="THED Home" target="_blank">THED</a></li>
+                            <li><a href="https://www1.highered.texas.gov/cbpass/" title="Institutional Login" target="_blank">Institutional Login</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="bg-red"><a href="/AcctPublic/InteractiveReport/ManageReports">Interactive</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content" style="margin-bottom: 40px;">
+        
+
+
+
+<style>
+    a {
+        /*color: #337ab7;*/
+        color: blue
+    }
+</style>
+
+
+<h1 style="display:none"> test</h1>
+<h2 style="display:none"> test</h2>
+<h3 style="display:none"> test</h3>
+<h4 style="display:none"> test</h4>
+<div class="row" style="margin-top: 40px">
+    
+
+    <div class="col-xs-10 form-group">
+        <h4>Measures and Definitions </h4>
+        <input data-val="true" data-val-number="The field Institution Type ID must be a number." data-val-required="The Institution Type ID field is required." id="InstTypeId" name="InstTypeId" type="hidden" value="2" />
+        <input id="CurrentYear" name="CurrentYear" type="hidden" value="2025" />
+        <select class="form-control" id="InstType" name="InstTypeId" title="Measures and Definitions"><option value="0">Statewide</option>
+<option value="1">Public Universities</option>
+<option value="3">Community Colleges</option>
+<option value="5">Public Health Related Institutions</option>
+<option value="10">Two-Year Career Institutions</option>
+<option value="11">Four-Year Institutions (Non-Public)</option>
+<option value="14">Texas State Technical Colleges &amp; State Colleges</option>
+<option value="15">All Public Two-Year Colleges</option>
+</select>
+    </div>
+
+    <div class="col-xs-2">
+        <a href="/AcctPublic/Measures/PDFGenerator?instTypeID=2&yearID=10" class="btn btn-primary btn-sm">
+            <span class="glyphicon glyphicon-import"></span>
+            Download Measures PDF
+        </a>
+    </div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: rgb(168,29,64)">
+        <div style="float: right; width: 12%; color: white; text-align: right; padding-right: 5px; font-size: 9px;">Version: 1.1.22.19</div>
+        <div style="float: right; width: 76%; color: white; text-align: center; font-size: 14px;">
+            &copy; 2026
+            
+            <a href="https://www.highered.texas.gov" target="_blank" style="color: white; text-decoration: underline;"
+               title="THECB Home">Texas Higher Education Coordinating Board</a>
+            <br>
+            1801 N. Congress Ave. Suite 12.200, Austin, TX 78701 | Main: 512-427-6101
+        </div>
+        <!--<p class="text-center" style="color: white;">
+        &copy; 2026 - Texas Higher Education Coordinating Board<a href="#" title="11/2/2026 10:04:46 AM">.</a>
+        <span style="float: right; margin-right: 5px; font-size: 10px;">Version: 1.1.22.19</span>
+        <br />1200 East Anderson Lane, Austin, TX 78752 | Main: 512-427-6101
+        </p>-->
+    </div>
+    
+    <script src="/AcctPublic/Scripts/jquery.validate.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/umd/popper.js"></script>
+<script src="/AcctPublic/Scripts/bootstrap.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/respond.min.js"></script>
+<script src="/AcctPublic/Scripts/respond.matchmedia.addListener.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/bootstrap-multiselect.js"></script>
+
+
+    
+    <script src="/AcctPublic/Scripts/jquery.loading.js"></script>
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#InstType").change(function () {
+                var selected = this.value;
+                window.location = '/AcctPublic/Measures/ManageMeasures' + '?instTypeID=' + selected;
+            });
+        });
+
+        $(".goalBtn").click(function () {
+        var measureAndCategoryId = $(this).children("a").attr('href').split("-");
+        var categoryId = measureAndCategoryId[0];
+        var measureId = measureAndCategoryId[1];
+        var instId = $("#InstType").val();
+        var sector = "#statewide"
+            if (categoryId.substring(0, 1) === "#")
+                categoryId = categoryId.substr(1, categoryId.length - 1);
+        var goal = "#goal" + categoryId
+        switch (instId) {
+            case "1":
+                sector ="#universities"
+                break;
+            case "3":
+                sector = "#twoYearCC"
+                break;
+            case "5":
+                sector = "#healthRelated"
+                break;
+            case "10":
+                sector = "#nonTexasAndCareer2"
+                break;
+            case "11":
+                sector = "#nonTexasAndCareer4"
+                break;
+            case "14":
+                sector = "#twoYearTSTCL"
+                break;
+            case "15":
+                sector ="#twoYearAll"
+                break;
+            default:
+            sector = "#statewide"
+        }
+         document.location.href = '/AcctPublic/' + '?goal=' + goal + '&sector=' + sector + '&measureId=' + measureId;
+    });
+    </script>
+
+
+
+    <script type="text/javascript">
+        function adjustMultiselectDropdown(group) {
+            var $group = $(group);
+            var $menu = $group.children(
+                '.multiselect-container.dropdown-menu'
+            );
+
+            var $button = $group.children('button.multiselect');
+
+            if (!$menu.length || !$button.length)
+                return;
+
+            var buttonRect = $button[0].getBoundingClientRect();
+
+            var $footer = $('.navbar-fixed-bottom:visible').first();
+            var $header = $('.navbar-fixed-top:visible').first();
+
+            var footerTop = $footer.length
+                ? $footer[0].getBoundingClientRect().top
+                : window.innerHeight;
+
+            var headerBottom = $header.length
+                ? $header[0].getBoundingClientRect().bottom
+                : 0;
+
+            var margin = 10;
+
+            var spaceBelow = Math.max(
+                0, footerTop - buttonRect.bottom - margin
+            );
+
+            var spaceAbove = Math.max(
+                0, buttonRect.top - headerBottom - margin
+            );
+
+            // Determine the best opening direction.
+            var openUp = spaceBelow < 160 &&
+                spaceAbove > spaceBelow;
+
+            // Bootstrap 3.3.6 supports .dropup.
+            $group.toggleClass('dropup', openUp);
+
+            // Preserve the original maxHeight.
+            var originalMax = $menu.data('originalMaxHeight');
+
+            if (originalMax === undefined) {
+                originalMax = parseInt(
+                    $menu[0].style.maxHeight, 10
+                );
+
+                if (isNaN(originalMax))
+                    originalMax = 500;
+
+                $menu.data('originalMaxHeight', originalMax);
+            }
+
+            var availableHeight = openUp
+                ? spaceAbove
+                : spaceBelow;
+
+            var maxHeight = Math.max(
+                0,
+                Math.floor(Math.min(
+                    originalMax, availableHeight
+                ))
+            );
+
+            $menu.css({
+                'max-height': maxHeight + 'px',
+                'overflow-y': 'auto',
+                'overflow-x': 'hidden'
+            });
+        }
+
+        $(document).on('shown.bs.dropdown', '.btn-group', function () {
+            if ($(this).children(
+                '.multiselect-container.dropdown-menu'
+            ).length) {
+                adjustMultiselectDropdown(this);
+            }
+        });
+
+
+        $(window).on('resize', function () {
+            $('.btn-group.open').each(function () {
+                if ($(this).children(
+                    '.multiselect-container.dropdown-menu'
+                ).length) {
+                    adjustMultiselectDropdown(this);
+                }
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $.ajaxSetup({ cache: false });
+
+        //populate the external links defined in the admin portal.
+        $.get(
+                { url: '/AcctPublic/Resources/GetResources' })
+            .done(function(data) {
+                $('#resourcesMenu').append('<li role="separator" class="divider hidden-lg hidden-md"></li>');
+                $.each(data,
+                    function(i, val) {
+                        $('#resourcesMenu')
+                            .append('<li><a href=' + val.url + ' target=_blank>' + val.name + '</a></li>');
+                    });
+            });
+    </script>
+</body>
+</html>
+

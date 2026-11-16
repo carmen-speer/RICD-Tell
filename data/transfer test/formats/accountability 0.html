@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THECB Accountability System</title>
+    <meta name="description" content="Texas Higher Education Coordinating Board Accountability System" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/AcctPublic/Content/lazeemenu.css" rel="stylesheet" type="text/css" />
+    <script src="/AcctPublic/Scripts/jquery-3.4.0.min.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="/AcctPublic/Scripts/modernizr-2.8.3.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap-multiselect.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/bootstrap.vertical-tabs.min.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/site.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/loading.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="" />
+
+    
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_6039200.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" style="margin-top:0;">
+        <div class="container-fluid pr0" style="min-height:30px; width:100%">
+            <div class="navbar-header ">
+                <a class="navbar-brand img_hide" href="https://www.highered.texas.gov" target="_blank" title="THECB Home">
+                    <img alt="THECB" src="/AcctPublic/images/logo-THECB-1.png" style="height: 34px; margin-top: -7px;" />
+                </a>
+                <button type="button" class="navbar-toggle" title="undefined" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-text" href="/AcctPublic/">
+                    <span class="wordmark-small" style="color: #ffffff">Texas Higher Education<br /><span class="wordmark" style="color: #ffffff">Accountability System</span></span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse pl0 pr0 navbar-right">
+
+                <ul class="nav navbar-nav" style="width: 100%">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="resourcesMenu">
+                            
+                            <li><a href="/AcctPublic/Resources/History" title="History">History</a></li>
+
+                            
+
+                            <li><a href="/AcctPublic/Resources/PeerGroup" title="Peer Groups">Peer Groups</a></li>
+                            <li><a href="/AcctPublic/Measures/ManageMeasures?instTypeID=0" title="Measures &amp; Definitions">Measures &amp; Definitions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">THECB <span class="caret"></span></a>
+                        
+                        <ul class="dropdown-menu" id="thecbMenu">
+                            <li><a href="https://www.highered.texas.gov" title="THECB Home" target="_blank">THECB Home</a></li>
+                            <li><a href="https://databridge.highered.texas.gov" title="THECB Data" target="_blank">THECB Data</a></li>
+                            <li><a href="http://www.txhighereddata.org" title="THED Home" target="_blank">THED</a></li>
+                            <li><a href="https://www1.highered.texas.gov/cbpass/" title="Institutional Login" target="_blank">Institutional Login</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="bg-red"><a href="/AcctPublic/InteractiveReport/ManageReports">Interactive</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content" style="margin-bottom: 40px;">
+        
+<link href="/AcctPublic/Content/datatables/dataTables.bootstrap.min.css" rel="stylesheet"/>
+
+
+<style>
+    .btn-report {
+        text-align: center;
+        background-color: #005F84; /*added on 1/13/2020*/
+    }
+
+    .section {
+        margin-top: 2em;
+    }
+</style>
+<input type="text" hidden="" title="reportId" id="reportId" />
+
+<div class="row section">
+    <h1 style="display:none"> test</h1>
+    <h2 style="display:none"> test</h2>
+    <h3 style="display:none"> test</h3>
+    <h4 style="display:none"> test</h4>
+    <div class="col-md-4">
+        <a class="btn-block btn-lg btn-primary btn-report" href="/AcctPublic/InteractiveReport/AddReport">   <span class="glyphicon glyphicon-download-alt"></span>  Download Data   </a>
+    </div>
+    <div class="col-md-8">
+        <p class="row" style="font-size:medium;">
+            Download data from the Accountability database in Excel or PDF format
+        </p>
+    </div>
+</div>
+
+<div class="row section">
+    <div class="col-md-4">
+        <a class="btn-block btn-lg btn-primary btn-report" href="/AcctPublic/InteractiveReport/Predefined"> <span class="glyphicon  glyphicon-list-alt"></span>  Predefined Reports</a>
+    </div>
+    <div class="col-md-8">
+        <p class="row" style="font-size: medium;">
+            Frequently requested reports on topics such as Fall Headcount, Graduation Rates,
+            Degree and Certificates Awarded, and others
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="/AcctPublic/Scripts/createReportPublicPortal.js"></script>
+<script type="text/javascript" src="/AcctPublic/Scripts/DataTables/jquery.dataTables.js"></script>
+<script src="/AcctPublic/Scripts/HighCharts/highcharts.js"></script>
+
+
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: rgb(168,29,64)">
+        <div style="float: right; width: 12%; color: white; text-align: right; padding-right: 5px; font-size: 9px;">Version: 1.1.22.19</div>
+        <div style="float: right; width: 76%; color: white; text-align: center; font-size: 14px;">
+            &copy; 2026
+            
+            <a href="https://www.highered.texas.gov" target="_blank" style="color: white; text-decoration: underline;"
+               title="THECB Home">Texas Higher Education Coordinating Board</a>
+            <br>
+            1801 N. Congress Ave. Suite 12.200, Austin, TX 78701 | Main: 512-427-6101
+        </div>
+        <!--<p class="text-center" style="color: white;">
+        &copy; 2026 - Texas Higher Education Coordinating Board<a href="#" title="11/2/2026 10:04:46 AM">.</a>
+        <span style="float: right; margin-right: 5px; font-size: 10px;">Version: 1.1.22.19</span>
+        <br />1200 East Anderson Lane, Austin, TX 78752 | Main: 512-427-6101
+        </p>-->
+    </div>
+    
+    <script src="/AcctPublic/Scripts/jquery.validate.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/umd/popper.js"></script>
+<script src="/AcctPublic/Scripts/bootstrap.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/respond.min.js"></script>
+<script src="/AcctPublic/Scripts/respond.matchmedia.addListener.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/bootstrap-multiselect.js"></script>
+
+
+    
+    <script src="/AcctPublic/Scripts/jquery.loading.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            function addReport(parameters) {
+                $("#addReport").trigger('click');
+            }
+            //Added per TFS-189 on 4/6/2016
+            loadAccountabilityYear();
+            var acctYear = $('#acctYear').val();
+
+
+            var table = $('#reportsGrid').DataTable({
+                ajax: {
+                    url: '/AcctPublic/InteractiveReport/GetReports',
+                    data: { acctYearId: acctYear },
+                    dataSrc: ''
+                },
+                "deferRender": true,
+                "processing": true,
+                "columns": [{'data': 'ReportID','defaultContent': ""},
+                            {'data': 'ReportName','defaultContent': ""},
+                            {'data': 'Category','defaultContent': ""},
+                            {'data': 'Measure','defaultContent': "No data found" },
+                            {'data': 'LastUpdated','defaultContent': ""},
+                            {'data': null,'defaultContent': "<button class='btn btn-primary btn-sm column-action margin-btn' data-toggle='modal' " +
+                                                            "data-target='#previewReportModal'>Preview</button>" +
+                                                            "<button class='btn btn-primary btn-sm column-action' data-toggle='modal' action-name='edit' " +
+                                                            "data-target='#editReportModal'>Edit</button>"
+                    }
+                ],
+                "createdRow": function(nRow, aData, iDataIndex) {
+                    $(nRow).eq(0).attr('data-trigger', 'click');
+                    $(nRow).eq(0).attr('data-toggle', 'popover');
+                    $(nRow).eq(0).addClass('poppy');
+                },
+                "drawCallback": function() {
+                    setPopover();
+                },
+                "rowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+                    if (aData.Active != true) {
+                        $(nRow).css('color', '#c0c0c0');
+                    }
+                }
+            });
+
+            $('#reportsGrid tbody').on('click', 'button', function(e) {
+                var data = table.row($(this).parents('tr')).data();
+                $("#reportId").val(data['ReportID']);
+
+            });
+
+            $('#previewReportModal').on('shown.bs.modal', function(e) {
+                var reportId = $("#reportId").val();
+                $.ajax({
+                    url: '/AcctPublic/InteractiveReport/PreviewReport',
+                    data: { reportId: reportId },
+                    dataType: 'html'
+                }).done(function(response) {
+                    $('#previewContent').html(response);
+                });
+            });
+
+        });
+
+        //added per TFS-189 on 4/6/2016
+        function loadAccountabilityYear() {
+            $.ajax({
+                url: '/AcctPublic/InteractiveReport/GetYears',
+                type: "GET",
+                success: function(data) {
+                    $.each(data, function(i, obj) {
+                        $('#acctYear').append(
+                            $('<option></option>').attr('value', obj.Value).prop('selected', obj.Selected).text(obj.Text)
+                        );
+
+                        if (obj.Selected == true)
+                            $("#draftMsg").val(obj.Text);
+                    });
+                    showHideDraft();
+                }
+            });
+        }
+
+        //Added per TFS-189 on 4/11/2016
+        $(document).ready(function() {
+            $("#acctYear").on("change", function(e) {
+                ////var txt1 = jQuery(this).find("option:selected").attr("value");//get ID from the combo box
+                ////alert ( txt1);
+
+                e.preventDefault();
+                showHideDraft();
+                reloadTable();
+            });
+        });
+
+        //Added per TFS-189 on 4/11/2016
+
+        function showHideDraft() {
+            var txt2 = $('#acctYear option:selected').text(); //get text of the ID from the combo box
+
+            if (txt2.toLowerCase().indexOf("draft") > -1) {
+                //$("#draftMsg").val(txt2).css('background-color', 'orange');
+                $("#draftMsg").text('DRAFT');
+                $('#draftMsg').show();
+            } else {
+                $('#draftMsg').hide();
+            }
+        }
+        //Added per TFS-189 on 4/11/2016    `
+
+        function reloadTable() {
+            var acctYear = $('#acctYear').val();
+
+            $.ajax({
+                url: '/AcctPublic/InteractiveReport/GetReports',
+                data: { acctYearId: acctYear },
+                dataType: 'json'
+            }).done(function(data) {
+                var oTable = $('#reportsGrid').dataTable();
+
+                oTable.fnClearTable();
+                oTable.fnAddData(data);
+                oTable.api().order([0, 'asc']).draw();
+            });
+        }
+
+    </script>
+    <script src="/AcctPublic/Scripts/DataTables/jquery.dataTables.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/DataTables/datatables.bootstrap.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        function adjustMultiselectDropdown(group) {
+            var $group = $(group);
+            var $menu = $group.children(
+                '.multiselect-container.dropdown-menu'
+            );
+
+            var $button = $group.children('button.multiselect');
+
+            if (!$menu.length || !$button.length)
+                return;
+
+            var buttonRect = $button[0].getBoundingClientRect();
+
+            var $footer = $('.navbar-fixed-bottom:visible').first();
+            var $header = $('.navbar-fixed-top:visible').first();
+
+            var footerTop = $footer.length
+                ? $footer[0].getBoundingClientRect().top
+                : window.innerHeight;
+
+            var headerBottom = $header.length
+                ? $header[0].getBoundingClientRect().bottom
+                : 0;
+
+            var margin = 10;
+
+            var spaceBelow = Math.max(
+                0, footerTop - buttonRect.bottom - margin
+            );
+
+            var spaceAbove = Math.max(
+                0, buttonRect.top - headerBottom - margin
+            );
+
+            // Determine the best opening direction.
+            var openUp = spaceBelow < 160 &&
+                spaceAbove > spaceBelow;
+
+            // Bootstrap 3.3.6 supports .dropup.
+            $group.toggleClass('dropup', openUp);
+
+            // Preserve the original maxHeight.
+            var originalMax = $menu.data('originalMaxHeight');
+
+            if (originalMax === undefined) {
+                originalMax = parseInt(
+                    $menu[0].style.maxHeight, 10
+                );
+
+                if (isNaN(originalMax))
+                    originalMax = 500;
+
+                $menu.data('originalMaxHeight', originalMax);
+            }
+
+            var availableHeight = openUp
+                ? spaceAbove
+                : spaceBelow;
+
+            var maxHeight = Math.max(
+                0,
+                Math.floor(Math.min(
+                    originalMax, availableHeight
+                ))
+            );
+
+            $menu.css({
+                'max-height': maxHeight + 'px',
+                'overflow-y': 'auto',
+                'overflow-x': 'hidden'
+            });
+        }
+
+        $(document).on('shown.bs.dropdown', '.btn-group', function () {
+            if ($(this).children(
+                '.multiselect-container.dropdown-menu'
+            ).length) {
+                adjustMultiselectDropdown(this);
+            }
+        });
+
+
+        $(window).on('resize', function () {
+            $('.btn-group.open').each(function () {
+                if ($(this).children(
+                    '.multiselect-container.dropdown-menu'
+                ).length) {
+                    adjustMultiselectDropdown(this);
+                }
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $.ajaxSetup({ cache: false });
+
+        //populate the external links defined in the admin portal.
+        $.get(
+                { url: '/AcctPublic/Resources/GetResources' })
+            .done(function(data) {
+                $('#resourcesMenu').append('<li role="separator" class="divider hidden-lg hidden-md"></li>');
+                $.each(data,
+                    function(i, val) {
+                        $('#resourcesMenu')
+                            .append('<li><a href=' + val.url + ' target=_blank>' + val.name + '</a></li>');
+                    });
+            });
+    </script>
+</body>
+</html>
+

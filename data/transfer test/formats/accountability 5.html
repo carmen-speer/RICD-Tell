@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THECB Accountability System</title>
+    <meta name="description" content="Texas Higher Education Coordinating Board Accountability System" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/AcctPublic/Content/lazeemenu.css" rel="stylesheet" type="text/css" />
+    <script src="/AcctPublic/Scripts/jquery-3.4.0.min.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="/AcctPublic/Scripts/modernizr-2.8.3.js"></script>
+
+    <link href="/AcctPublic/Content/bootstrap-multiselect.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/bootstrap.vertical-tabs.min.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/site.css" rel="stylesheet"/>
+
+    <link href="/AcctPublic/Content/loading.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="" />
+
+    
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_6039200.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" style="margin-top:0;">
+        <div class="container-fluid pr0" style="min-height:30px; width:100%">
+            <div class="navbar-header ">
+                <a class="navbar-brand img_hide" href="https://www.highered.texas.gov" target="_blank" title="THECB Home">
+                    <img alt="THECB" src="/AcctPublic/images/logo-THECB-1.png" style="height: 34px; margin-top: -7px;" />
+                </a>
+                <button type="button" class="navbar-toggle" title="undefined" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-text" href="/AcctPublic/">
+                    <span class="wordmark-small" style="color: #ffffff">Texas Higher Education<br /><span class="wordmark" style="color: #ffffff">Accountability System</span></span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse pl0 pr0 navbar-right">
+
+                <ul class="nav navbar-nav" style="width: 100%">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="resourcesMenu">
+                            
+                            <li><a href="/AcctPublic/Resources/History" title="History">History</a></li>
+
+                            
+
+                            <li><a href="/AcctPublic/Resources/PeerGroup" title="Peer Groups">Peer Groups</a></li>
+                            <li><a href="/AcctPublic/Measures/ManageMeasures?instTypeID=0" title="Measures &amp; Definitions">Measures &amp; Definitions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">THECB <span class="caret"></span></a>
+                        
+                        <ul class="dropdown-menu" id="thecbMenu">
+                            <li><a href="https://www.highered.texas.gov" title="THECB Home" target="_blank">THECB Home</a></li>
+                            <li><a href="https://databridge.highered.texas.gov" title="THECB Data" target="_blank">THECB Data</a></li>
+                            <li><a href="http://www.txhighereddata.org" title="THED Home" target="_blank">THED</a></li>
+                            <li><a href="https://www1.highered.texas.gov/cbpass/" title="Institutional Login" target="_blank">Institutional Login</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="bg-red"><a href="/AcctPublic/InteractiveReport/ManageReports">Interactive</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content" style="margin-bottom: 40px;">
+        
+
+
+
+<style>
+    a {
+        /*color: #337ab7;*/
+        color: blue
+    }
+</style>
+
+
+<h1 style="display:none"> test</h1>
+<h2 style="display:none"> test</h2>
+<h3 style="display:none"> test</h3>
+<h4 style="display:none"> test</h4>
+<div class="row" style="margin-top: 40px">
+    
+
+    <div class="col-xs-10 form-group">
+        <h4>Measures and Definitions </h4>
+        <input data-val="true" data-val-number="The field Institution Type ID must be a number." data-val-required="The Institution Type ID field is required." id="InstTypeId" name="InstTypeId" type="hidden" value="5" />
+        <input id="CurrentYear" name="CurrentYear" type="hidden" value="2025" />
+        <select class="form-control" id="InstType" name="InstTypeId" title="Measures and Definitions"><option value="0">Statewide</option>
+<option value="1">Public Universities</option>
+<option value="3">Community Colleges</option>
+<option selected="selected" value="5">Public Health Related Institutions</option>
+<option value="10">Two-Year Career Institutions</option>
+<option value="11">Four-Year Institutions (Non-Public)</option>
+<option value="14">Texas State Technical Colleges &amp; State Colleges</option>
+<option value="15">All Public Two-Year Colleges</option>
+</select>
+    </div>
+
+    <div class="col-xs-2">
+        <a href="/AcctPublic/Measures/PDFGenerator?instTypeID=5&yearID=10" class="btn btn-primary btn-sm">
+            <span class="glyphicon glyphicon-import"></span>
+            Download Measures PDF
+        </a>
+    </div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-md-4 form-group">
+                    <div class="row" style="font-size:medium; font:900"> COMPLETION - KEY MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_0" data-target="#all_0">C01UH - Degrees and Certificates Awarded</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for - Degrees and Certificates Awarded" name="46-821" href="#46-821"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_0" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number of certificates, associate degrees, bachelor&#39;s (baccalaureate) degrees, master&#39;s degrees, doctoral degrees (doctoral research scholarship), and professional (doctoral professional practice) degrees awarded by Texas public institutions of higher education. Certificates are lower-level undergraduate certificates.  Note that this measure includes doctoral degrees (doctoral research scholarship) and professional (doctoral professional practice) degrees when reported for individual sectors; however, doctoral and professional degrees are not included for tracking progress toward the 60x30TX statewide completion goal.  Source: CBM009
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-821" href="#46-821"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_1" data-target="#all_1">C01UH- Degrees and Certificates Awarded (Econ Dis)</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Degrees and Certificates Awarded (Econ Dis)" name="46-822" href="#46-822"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_1" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number of undergraduates who received a certificate, associate degree, or bachelor&#39;s (baccalaureate) degree from a Texas public institution of higher education. Certificates are lower-level undergraduate certificates.  Economically disadvantaged students are those receiving Pell at any time (from 1997 through the most current fiscal year data is available). Source: CBM009, Financial Aid Database System (FADS)
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-822" href="#46-822"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_2" data-target="#all_2">C04UHC - Enrollment</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  - Enrollment" name="46-827" href="#46-827"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_2" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number of students enrolled in fall at a Texas public institution. Dual credit students are included (if dual credit is offered); flex entry students are not included. Source: CBM001
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-827" href="#46-827"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_3" data-target="#all_3">C05H - Completion by Selected Program Area</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Completion by Selected Program Area" name="46-802" href="#46-802"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_3" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number of degrees for selected levels awarded by specialty, including Pharmacy, Dental, Medical, Audiology, Physical Therapy, and Nursing Practice. Source: CBM009
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-802" href="#46-802"> Go to Data</a>
+                    </div>
+                </div>
+<br />                    <div class="row" style="font-size:medium; font:900"> COMPLETION - CONTEXTUAL MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_4" data-target="#all_4">C08UH - Students Receiving Pell Grants</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for - Students Receiving Pell Grants" name="46-790" href="#46-790"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_4" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Percentage and number of undergraduate students who received any amount of Pell Grant as reported in the THECB financial aid database (FADS). Matches the fall undergraduate enrollment by valid Social Security Number (SSN) to FADS and includes all students who received a Pell Grant at any time in the academic year. The percentage reported is the number of Pell grant students divided by the fall undergraduate enrollment. Source: CBM001, Financial Aid Database (FADS)
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-790" href="#46-790"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_5" data-target="#all_5">C13UH - Graduation Rates for Graduate Programs</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for - Graduation Rates for Graduate Programs" name="46-810" href="#46-810"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_5" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    The cohort was developed by pulling all of the students coded on the CBM001 at a specific level in the fall semester and then checking the five prior years to determine if they had been coded at that level in those prior years. If students were coded at that level in the prior years, they were dropped from the cohort. The doctoral cohort was tracked for 10 years. The master’s cohort was tracked for 5 years. The master’s cohort does not include students who received a master’s level certificate or were classified as a doctorate student within the next 5 years (and did not earn a master’s degree). Source: CBM001, CBM009, CBM00N
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="46-810" href="#46-810"> Go to Data</a>
+                    </div>
+                </div>
+<br />                    <div class="row" style="font-size:medium; font:900"> MARKETABLE SKILLS - KEY MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_6" data-target="#all_6">M01A - Working or Enrolled within One Year</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Working or Enrolled within One Year" name="47-825" href="#47-825"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_6" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number and percentage of students awarded a degree or certificate in a given year who are employed in the 4th quarter of the calendar year in which the program (fiscal) year ends or enrolled in a Texas public, private (independent), and for-profit (career) institution of higher education in the fall semester after receiving the award. Enrollment in certain institutions located outside Texas serving residents or conducting services in Texas, is also included.  Students are considered employed if they are reported in the Texas Unemployment Insurance (UI) or the U.S. Office of Personnel Management (OPM) wage records. OPM data were only available from 2005 to 2016. Note that this measure was revised to match the 60x30TX state strategic plan; enrollment is no longer dependent on degree level. Source: CBM001, CBM009, Unemployment Insurance (UI) wage records, Office of Personnel Management (OPM) wage records
+                    <div class="goalBtn" style="display:inline-block">
+                        <a name="47-825" href="#47-825"> Go to Data</a>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4 form-group">
+                    <div class="row" style="font-size:medium; font:900"> MARKETABLE SKILLS - CONTEXTUAL MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_7" data-target="#all_7">M02H - Certification and Licensure Pass Rates</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Certification and Licensure Pass Rates" name="47-842" href="#47-842"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_7" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Licensure/certification rate on state or national exams. For medical, dental, allied health, nursing and pharmacy programs, eligible students are those in a discipline that offers or requires an external certification or licensure who pass the examination on the first attempt during the reporting period. Calculated as the number of graduates or eligible students who pass an external examination on the first attempt during the fiscal year, divided by the total number of graduates or eligible students taking an external examination for the first time during the fiscal year. Source: Legislative Budget Board (LBB)
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="47-842" href="#47-842"> Go to Data</a>
+                    </div>
+                </div>
+<br />                     <div class="row" style="font-size:medium; font:900"> STUDENT DEBT - KEY MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_8" data-target="#all_8">S01A - Student Debt as Percentage of  Wage</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Student Debt as Percentage of  Wage" name="48-786" href="#48-786"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_8" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Median of individual student loan debt as a percentage of first year wage for students awarded a certificate, associate degree, or bachelor&#39;s degree in a given year from a Texas public institution. Individual must have student loan debt at time of award and wages in first year following award. Each student&#39;s loan debt includes loans reported in the THECB financial aid database (FADS) report by any institution for that student in the last 15 years, excluding parent loan debt. First year wages are based on UI wage data reported to the Texas Workforce Commission. Bachelor’s degrees awarded at community colleges are not included. Source: CBM009, Unemployment Insurance (UI) wage records, Financial Aid Database System (FADS)
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="48-786" href="#48-786"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_9" data-target="#all_9">S02UH - Excess Semester Credit Hours</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for   Excess Semester Credit Hours" name="48-828" href="#48-828"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_9" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Average number of semester credit hours (SCH) attempted by graduates of bachelor&#39;s degree programs from a Texas public institution in excess of the degree plan. To determine SCH attempted, compile all college-level semester credit hours a graduate attempted for up to 10 years prior to the time of college graduation. Developmental education SCH attempted and dual credit SCH attempted are not included. Two breakouts are also shown: average attempted SCH accumulated by graduates who began and graduated at the same institution and average attempted SCH accumulated among graduates who began at another public institution.  Source: CBM001, CBM009, CBM00N
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="48-828" href="#48-828"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_10" data-target="#all_10">S03UH - Percent of Graduates with Debt</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for   Percent of Graduates with Debt" name="48-830" href="#48-830"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_10" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Percentage of students awarded an associate or bachelor&#39;s degree from a Texas public or private (independent) 4-year institution in a given year who have student loan debt. Each student&#39;s loan debt includes loans reported in the THECB financial aid database (FADS) report by any institution for that student in the last 15 years, excluding parent loan debt. Source: CBM009, Financial Aid Database System (FADS)
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="48-830" href="#48-830"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_11" data-target="#all_11">S04UH - Tuition and Fees</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for   Tuition and Fees" name="48-805" href="#48-805"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_11" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Statutory tuition (state required tuition), designated tuition (set by institutional governing boards), and mandatory fees (charged to all students), for resident undergraduate students at 30 semester credit hours (SCH) for a fall and spring semester. Many institutions charge additional fees that vary by field of study and/or major. The actual cost for 30 SCH of tuition and fees may be higher for some students as only statutory tuition, designated tuition, and mandatory fees are included. Source: College Student Budget
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="48-805" href="#48-805"> Go to Data</a>
+                    </div>
+                </div>
+<br />                     <div class="row" style="font-size:medium; font:900"> STUDENT DEBT - CONTEXTUAL MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_12" data-target="#all_12">S06UCH - Average Debt of Graduates with Loans</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  - Average Debt of Graduates with Loans" name="48-818" href="#48-818"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_12" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Average debt is calculated by averaging each student’s loan debt, accumulated at all Texas institutions up to the time of receiving an applicable degree, based on the student’s highest degree earned. Only students with debt are included. Each student&#39;s loan debt includes loans reported in the THECB financial aid database (FADS) report by any institution for that student in the last 15 years, excluding parent loan debt.  Two breakouts are also shown: average debt accumulated by graduates who began and graduated at the same institution and average debt accumulated by graduates who began at another public institution. Source: CBM001, CBM009, Financial Aid Database System (FADS)
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="48-818" href="#48-818"> Go to Data</a>
+                    </div>
+                </div>
+<br />                     <div class="row" style="font-size:medium; font:900"> SECTOR-SPECIFIC/OTHER - KEY MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"> <a data-toggle="collapse" name="all_13" data-target="#all_13">X01H - Residents in Accredited Programs</a></div>
+                    <div style="display:inline" class="goalBtn"><a title="Go to data for  Residents in Accredited Programs" name="49-806" href="#49-806"><span class='glyphicon glyphicon-stats'>.</span> </a></div>
+                </div>
+                <div id="all_13" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    M.D. or D.O. filled positions at any level in Accreditation Council for Graduate Medical Education (ACGME) or American Osteopathic Association (AOA)-accredited residency programs including sub-specialty programs. This does not include physicians undertaking post-residency training that is not considered part of the accredited residency program. Source: CBM00R for 1-7 years; institutions provide data for 8 years or more
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-806" href="#49-806"> Go to Data</a>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4 form-group">
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_14" data-target="#all_14" href="#">X02H - Physicians Practicing in Texas</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Physicians Practicing in Texas" name="49-807" href="#49-807"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_14" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Primary care residents, M.D. or D.O. filled positions at any level in ACGME or AOA-accredited primary care residency programs. This does not include physicians undertaking post-residency training that is not considered part of the accredited residency program. Primary care includes family medicine, obstetrics and gynecology, internal medicine and pediatrics. Percentage of medical school graduates practicing in Texas (LBB: I-5&amp; H-2) are M.D. or D.O. graduates practicing medicine at a Texas address as of August 31 of the current calendar year. Percentage of medical school graduates entering a primary care residency (LBB: M-3) are the M.D. or D.O. students who report just prior to graduation that they are entering an accredited post-graduate program in primary care. Percentage of medical residency completers practicing in Texas (LBB: I-4 &amp; HC-1) are physicians who are practicing medicine at a Texas address two years after completing an institutionally-affiliated and accredited residency training program in Texas as of August 31 of the current calendar year. Source: Institutions; Legislative Budget Board (LBB)
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-807" href="#49-807"> Go to Data</a>
+                    </div>
+                </div>
+<br />                    <div class="row" style="font-size:medium; font:900"> SECTOR-SPECIFIC/OTHER - CONTEXTUAL MEASURES</div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_15" data-target="#all_15" href="#">X03H - Outpatient Visits</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Outpatient Visits" name="49-864" href="#49-864"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_15" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    The total number of outpatient visits during the fiscal year. An &#39;outpatient visit&#39; occurs when the individual receives health care services, including emergency room services, but is not admitted to a hospital bed. One patient who initially visits an emergency room and is then referred to and receives health care services from another affiliated, contracted, or owned outpatient facility would be counted as two outpatient visits. The definition includes visits to both on-site (on the premises of the hospital or institution) and off-site outpatient facilities. It includes outpatient visits previously reported as a separate measure under the Dental School. A &#39;patient visit&#39; occurs when an individual receives health care services from Institutional faculty, post-graduate trainees, or pre-doctoral dental students at a hospital or clinic, affiliated with, contracted with, or owned, operated and funded by a health-related institution (including the Texas Department of Criminal Justice Hospital) during the reporting period. To the extent possible, the total should exclude outpatient visits associated with health care providers who are not employed by the institution but may teach residents and students. Source: Institutions
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-864" href="#49-864"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_16" data-target="#all_16" href="#">X04H - Inpatient Days</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Inpatient Days" name="49-865" href="#49-865"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_16" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    The total number of inpatient days during a fiscal year. An &#39;inpatient day&#39; occurs when an individual, who is admitted by an institutional faculty or post-graduate trainee, occupies a hospital bed at the time that the official census is taken at each hospital affiliated with, contracted with, or owned, operated, and funded by a health-related institution (including the Texas Department of Criminal Justice Hospital) during the reporting period. One patient occupying one room for two nights would be counted as two inpatient days. To the extent possible, the total should exclude inpatient days associated with health care providers who are not employed by the institution but may teach residents and students. Source: Institutions
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-865" href="#49-865"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_17" data-target="#all_17" href="#">X05H - Research Expenditures per FTE Faculty</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Research Expenditures per FTE Faculty" name="49-860" href="#49-860"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_17" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Federal and private research expenditures divided by the number of fall tenured/tenure-track full-time-equivalent faculty (ranks 1-5) with research responsibilities. Source: Institutions’ Annual Financial Reports.  CBM008
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-860" href="#49-860"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_18" data-target="#all_18" href="#">X06UH - Research Expenditures by Source of Funds</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for  Research Expenditures by Source of Funds" name="49-795" href="#49-795"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_18" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Total research expenditures by source of funds (federal, state, private, and institutional). To qualify as research, the primary purpose of the contract, gift, or grant must be research. Source: Institutions’ Annual Financial Reports
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-795" href="#49-795"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_19" data-target="#all_19" href="#">X09H - Faculty Headcount</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Faculty Headcount" name="49-820" href="#49-820"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_19" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    Number of faculty by total, race/ethnicity and gender. Tenure/tenure-track data come from CBM008 Faculty Report using rank codes 1-4 and coded for a tenure/tenure track position and non-tenure/tenure-track faculty are those faculty coded as non-tenure. Source: CBM008
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-820" href="#49-820"> Go to Data</a>
+                    </div>
+                </div>
+                <div class="row" style="display:inline">
+                    <div style="display:inline"><a data-toggle="collapse" name="all_20" data-target="#all_20" href="#">X10H - Total Uncompensated Care by Faculty</a></div>
+                    <div style="display:inline" class="goalBtn">
+                        <a title="Go to data for Total Uncompensated Care by Faculty" name="49-819" href="#49-819"><span class='glyphicon glyphicon-stats'>.</span> </a>
+                    </div>
+                </div>
+                <div id="all_20" class="collapse" style="font-style:italic; font-family:'Century Gothic'">
+                    The total dollar amount of uncompensated care provided through faculty physician practice plans (i.e. PRS, MSRDP, PIP) during the reporting period. Uncompensated care definition provided by the  Legislative Budget Board (LBB) (and located in Article III, Special Provisions of the General Appropriations Act). The definition applies to all practice plans, including medical, dental, allied health, nursing, or other health care discipline. Source: Institutional data reported to the LBB
+                    <div class="goalBtn" style="display:inline-block;">
+                        <a name="49-819" href="#49-819"> Go to Data</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: rgb(168,29,64)">
+        <div style="float: right; width: 12%; color: white; text-align: right; padding-right: 5px; font-size: 9px;">Version: 1.1.22.19</div>
+        <div style="float: right; width: 76%; color: white; text-align: center; font-size: 14px;">
+            &copy; 2026
+            
+            <a href="https://www.highered.texas.gov" target="_blank" style="color: white; text-decoration: underline;"
+               title="THECB Home">Texas Higher Education Coordinating Board</a>
+            <br>
+            1801 N. Congress Ave. Suite 12.200, Austin, TX 78701 | Main: 512-427-6101
+        </div>
+        <!--<p class="text-center" style="color: white;">
+        &copy; 2026 - Texas Higher Education Coordinating Board<a href="#" title="11/2/2026 10:04:46 AM">.</a>
+        <span style="float: right; margin-right: 5px; font-size: 10px;">Version: 1.1.22.19</span>
+        <br />1200 East Anderson Lane, Austin, TX 78752 | Main: 512-427-6101
+        </p>-->
+    </div>
+    
+    <script src="/AcctPublic/Scripts/jquery.validate.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/umd/popper.js"></script>
+<script src="/AcctPublic/Scripts/bootstrap.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/respond.min.js"></script>
+<script src="/AcctPublic/Scripts/respond.matchmedia.addListener.min.js"></script>
+
+    <script src="/AcctPublic/Scripts/bootstrap-multiselect.js"></script>
+
+
+    
+    <script src="/AcctPublic/Scripts/jquery.loading.js"></script>
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#InstType").change(function () {
+                var selected = this.value;
+                window.location = '/AcctPublic/Measures/ManageMeasures' + '?instTypeID=' + selected;
+            });
+        });
+
+        $(".goalBtn").click(function () {
+        var measureAndCategoryId = $(this).children("a").attr('href').split("-");
+        var categoryId = measureAndCategoryId[0];
+        var measureId = measureAndCategoryId[1];
+        var instId = $("#InstType").val();
+        var sector = "#statewide"
+            if (categoryId.substring(0, 1) === "#")
+                categoryId = categoryId.substr(1, categoryId.length - 1);
+        var goal = "#goal" + categoryId
+        switch (instId) {
+            case "1":
+                sector ="#universities"
+                break;
+            case "3":
+                sector = "#twoYearCC"
+                break;
+            case "5":
+                sector = "#healthRelated"
+                break;
+            case "10":
+                sector = "#nonTexasAndCareer2"
+                break;
+            case "11":
+                sector = "#nonTexasAndCareer4"
+                break;
+            case "14":
+                sector = "#twoYearTSTCL"
+                break;
+            case "15":
+                sector ="#twoYearAll"
+                break;
+            default:
+            sector = "#statewide"
+        }
+         document.location.href = '/AcctPublic/' + '?goal=' + goal + '&sector=' + sector + '&measureId=' + measureId;
+    });
+    </script>
+
+
+
+    <script type="text/javascript">
+        function adjustMultiselectDropdown(group) {
+            var $group = $(group);
+            var $menu = $group.children(
+                '.multiselect-container.dropdown-menu'
+            );
+
+            var $button = $group.children('button.multiselect');
+
+            if (!$menu.length || !$button.length)
+                return;
+
+            var buttonRect = $button[0].getBoundingClientRect();
+
+            var $footer = $('.navbar-fixed-bottom:visible').first();
+            var $header = $('.navbar-fixed-top:visible').first();
+
+            var footerTop = $footer.length
+                ? $footer[0].getBoundingClientRect().top
+                : window.innerHeight;
+
+            var headerBottom = $header.length
+                ? $header[0].getBoundingClientRect().bottom
+                : 0;
+
+            var margin = 10;
+
+            var spaceBelow = Math.max(
+                0, footerTop - buttonRect.bottom - margin
+            );
+
+            var spaceAbove = Math.max(
+                0, buttonRect.top - headerBottom - margin
+            );
+
+            // Determine the best opening direction.
+            var openUp = spaceBelow < 160 &&
+                spaceAbove > spaceBelow;
+
+            // Bootstrap 3.3.6 supports .dropup.
+            $group.toggleClass('dropup', openUp);
+
+            // Preserve the original maxHeight.
+            var originalMax = $menu.data('originalMaxHeight');
+
+            if (originalMax === undefined) {
+                originalMax = parseInt(
+                    $menu[0].style.maxHeight, 10
+                );
+
+                if (isNaN(originalMax))
+                    originalMax = 500;
+
+                $menu.data('originalMaxHeight', originalMax);
+            }
+
+            var availableHeight = openUp
+                ? spaceAbove
+                : spaceBelow;
+
+            var maxHeight = Math.max(
+                0,
+                Math.floor(Math.min(
+                    originalMax, availableHeight
+                ))
+            );
+
+            $menu.css({
+                'max-height': maxHeight + 'px',
+                'overflow-y': 'auto',
+                'overflow-x': 'hidden'
+            });
+        }
+
+        $(document).on('shown.bs.dropdown', '.btn-group', function () {
+            if ($(this).children(
+                '.multiselect-container.dropdown-menu'
+            ).length) {
+                adjustMultiselectDropdown(this);
+            }
+        });
+
+
+        $(window).on('resize', function () {
+            $('.btn-group.open').each(function () {
+                if ($(this).children(
+                    '.multiselect-container.dropdown-menu'
+                ).length) {
+                    adjustMultiselectDropdown(this);
+                }
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $.ajaxSetup({ cache: false });
+
+        //populate the external links defined in the admin portal.
+        $.get(
+                { url: '/AcctPublic/Resources/GetResources' })
+            .done(function(data) {
+                $('#resourcesMenu').append('<li role="separator" class="divider hidden-lg hidden-md"></li>');
+                $.each(data,
+                    function(i, val) {
+                        $('#resourcesMenu')
+                            .append('<li><a href=' + val.url + ' target=_blank>' + val.name + '</a></li>');
+                    });
+            });
+    </script>
+</body>
+</html>
+

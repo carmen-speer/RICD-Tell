@@ -1,0 +1,1686 @@
+{
+ "protocol": "transfer test protocol.md, step 1b (formats; one sample report per form)",
+ "written at (UTC)": "2026-11-16T22:25:16.196716+00:00",
+ "transfer page": {
+  "file": "data/transfer test/formats/transfer page.html",
+  "status": 200,
+  "final url": "https://apps.highered.texas.gov/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+  "content type": "text/html;charset=UTF-8",
+  "bytes": 49407,
+  "content disposition": null
+ },
+ "forms": [
+  {
+   "name": "form2",
+   "action": "/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "method": "post",
+   "inputs": {
+    "report_type": {
+     "type": "hidden",
+     "value": "2"
+    },
+    "OutPutType": {
+     "type": "hidden",
+     "value": "PDF"
+    },
+    "btnSubmit": {
+     "type": "submit",
+     "value": "View PDF"
+    }
+   },
+   "selects": {
+    "inst": [
+     {
+      "value": "000309",
+      "text": "ACCD - NORTHEAST LAKEVIEW COLLEGE"
+     },
+     {
+      "value": "000307",
+      "text": "ACCD - NORTHWEST VISTA COLLEGE"
+     },
+     {
+      "value": "023413",
+      "text": "ACCD - PALO ALTO COLLEGE"
+     },
+     {
+      "value": "009163",
+      "text": "ACCD - SAN ANTONIO COLLEGE"
+     },
+     {
+      "value": "003608",
+      "text": "ACCD - ST. PHILIP'S COLLEGE"
+     },
+     {
+      "value": "003607",
+      "text": "ALAMO COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "003539",
+      "text": "ALVIN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003540",
+      "text": "AMARILLO COLLEGE"
+     },
+     {
+      "value": "006661",
+      "text": "ANGELINA COLLEGE"
+     },
+     {
+      "value": "012015",
+      "text": "AUSTIN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003549",
+      "text": "BLINN COLLEGE DISTRICT"
+     },
+     {
+      "value": "007857",
+      "text": "BRAZOSPORT COLLEGE"
+     },
+     {
+      "value": "004003",
+      "text": "CENTRAL TEXAS COLLEGE"
+     },
+     {
+      "value": "003553",
+      "text": "CISCO COLLEGE"
+     },
+     {
+      "value": "003554",
+      "text": "CLARENDON COLLEGE"
+     },
+     {
+      "value": "003546",
+      "text": "COASTAL BEND COLLEGE"
+     },
+     {
+      "value": "007096",
+      "text": "COLLEGE OF THE MAINLAND COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "023614",
+      "text": "COLLIN COUNTY COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "009331",
+      "text": "DALLAS COLLEGE"
+     },
+     {
+      "value": "021002",
+      "text": "DALLAS COLLEGE BROOKHAVEN CAMPUS"
+     },
+     {
+      "value": "003561",
+      "text": "DALLAS COLLEGE CEDAR VALLEY CAMPUS"
+     },
+     {
+      "value": "008510",
+      "text": "DALLAS COLLEGE EASTFIELD CAMPUS"
+     },
+     {
+      "value": "004453",
+      "text": "DALLAS COLLEGE EL CENTRO CAMPUS"
+     },
+     {
+      "value": "008503",
+      "text": "DALLAS COLLEGE MOUNTAIN VIEW CAMPUS"
+     },
+     {
+      "value": "020774",
+      "text": "DALLAS COLLEGE NORTH LAKE CAMPUS"
+     },
+     {
+      "value": "008504",
+      "text": "DALLAS COLLEGE RICHLAND CAMPUS"
+     },
+     {
+      "value": "003563",
+      "text": "DEL MAR COLLEGE"
+     },
+     {
+      "value": "010387",
+      "text": "EL PASO COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "003568",
+      "text": "FRANK PHILLIPS COLLEGE"
+     },
+     {
+      "value": "006662",
+      "text": "GALVESTON COLLEGE"
+     },
+     {
+      "value": "003570",
+      "text": "GRAYSON COLLEGE"
+     },
+     {
+      "value": "003574",
+      "text": "HCJCD - HOWARD COLLEGE"
+     },
+     {
+      "value": "000574",
+      "text": "HCJCD - SOUTHWEST COLLEGIATE INSTITUTE FOR THE DEAF"
+     },
+     {
+      "value": "003573",
+      "text": "HILL COLLEGE"
+     },
+     {
+      "value": "010633",
+      "text": "HOUSTON CITY COLLEGE"
+     },
+     {
+      "value": "103574",
+      "text": "HOWARD COUNTY JUNIOR COLLEGE DISTRICT"
+     },
+     {
+      "value": "003580",
+      "text": "KILGORE COLLEGE"
+     },
+     {
+      "value": "036273",
+      "text": "LAMAR INSTITUTE OF TECHNOLOGY"
+     },
+     {
+      "value": "023582",
+      "text": "LAMAR STATE COLLEGE - ORANGE"
+     },
+     {
+      "value": "023485",
+      "text": "LAMAR STATE COLLEGE - PORT ARTHUR"
+     },
+     {
+      "value": "003582",
+      "text": "LAREDO COLLEGE"
+     },
+     {
+      "value": "003583",
+      "text": "LEE COLLEGE"
+     },
+     {
+      "value": "000823",
+      "text": "LONE STAR COLLEGE - CONNECT CAMPUS"
+     },
+     {
+      "value": "000717",
+      "text": "LONE STAR COLLEGE - CYFAIR"
+     },
+     {
+      "value": "000819",
+      "text": "LONE STAR COLLEGE - HOUSTON NORTH"
+     },
+     {
+      "value": "000719",
+      "text": "LONE STAR COLLEGE - KINGWOOD"
+     },
+     {
+      "value": "000721",
+      "text": "LONE STAR COLLEGE - MONTGOMERY"
+     },
+     {
+      "value": "000722",
+      "text": "LONE STAR COLLEGE - NORTH HARRIS"
+     },
+     {
+      "value": "000720",
+      "text": "LONE STAR COLLEGE - TOMBALL"
+     },
+     {
+      "value": "000821",
+      "text": "LONE STAR COLLEGE - UNIVERSITY PARK"
+     },
+     {
+      "value": "011145",
+      "text": "LONE STAR COLLEGE SYSTEM"
+     },
+     {
+      "value": "003590",
+      "text": "MCLENNAN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "009797",
+      "text": "MIDLAND COLLEGE"
+     },
+     {
+      "value": "003593",
+      "text": "NAVARRO COLLEGE"
+     },
+     {
+      "value": "003558",
+      "text": "NORTH CENTRAL TEXAS COLLEGE"
+     },
+     {
+      "value": "023154",
+      "text": "NORTHEAST TEXAS COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003596",
+      "text": "ODESSA COLLEGE"
+     },
+     {
+      "value": "003600",
+      "text": "PANOLA COLLEGE"
+     },
+     {
+      "value": "003601",
+      "text": "PARIS JUNIOR COLLEGE"
+     },
+     {
+      "value": "003603",
+      "text": "RANGER COLLEGE"
+     },
+     {
+      "value": "029137",
+      "text": "SAN JACINTO COLLEGE"
+     },
+     {
+      "value": "003609",
+      "text": "SAN JACINTO COLLEGE - CENTRAL CAMPUS"
+     },
+     {
+      "value": "012713",
+      "text": "SAN JACINTO COLLEGE - NORTH CAMPUS"
+     },
+     {
+      "value": "000090",
+      "text": "SAN JACINTO COLLEGE - SOUTH CAMPUS"
+     },
+     {
+      "value": "003611",
+      "text": "SOUTH PLAINS COLLEGE"
+     },
+     {
+      "value": "031034",
+      "text": "SOUTH TEXAS COLLEGE"
+     },
+     {
+      "value": "003614",
+      "text": "SOUTHWEST TEXAS COLLEGE"
+     },
+     {
+      "value": "003626",
+      "text": "TARRANT COUNTY COLLEGE"
+     },
+     {
+      "value": "008897",
+      "text": "TARRANT COUNTY COLLEGE - CONNECT CAMPUS"
+     },
+     {
+      "value": "008899",
+      "text": "TARRANT COUNTY COLLEGE - NORTHEAST CAMPUS"
+     },
+     {
+      "value": "010964",
+      "text": "TARRANT COUNTY COLLEGE - NORTHWEST CAMPUS"
+     },
+     {
+      "value": "008900",
+      "text": "TARRANT COUNTY COLLEGE - SOUTH CAMPUS"
+     },
+     {
+      "value": "000326",
+      "text": "TARRANT COUNTY COLLEGE - SOUTHEAST CAMPUS"
+     },
+     {
+      "value": "008901",
+      "text": "TARRANT COUNTY COLLEGE - TRINITY RIVER CAMPUS"
+     },
+     {
+      "value": "003627",
+      "text": "TEMPLE COLLEGE"
+     },
+     {
+      "value": "003628",
+      "text": "TEXARKANA COLLEGE"
+     },
+     {
+      "value": "003643",
+      "text": "TEXAS SOUTHMOST COLLEGE"
+     },
+     {
+      "value": "119642",
+      "text": "TEXAS STATE TECHNICAL COLLEGE CONNECT"
+     },
+     {
+      "value": "203634",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN FORT BEND COUNTY"
+     },
+     {
+      "value": "009225",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN HARLINGEN"
+     },
+     {
+      "value": "033965",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN MARSHALL"
+     },
+     {
+      "value": "133965",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN NORTH TEXAS"
+     },
+     {
+      "value": "003634",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN WACO"
+     },
+     {
+      "value": "009932",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN WEST TEXAS"
+     },
+     {
+      "value": "009642",
+      "text": "TEXAS STATE TECHNICAL COLLEGE SYSTEM"
+     },
+     {
+      "value": "003572",
+      "text": "TRINITY VALLEY COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003648",
+      "text": "TYLER JUNIOR COLLEGE"
+     },
+     {
+      "value": "010060",
+      "text": "VERNON COLLEGE"
+     },
+     {
+      "value": "003662",
+      "text": "VICTORIA COLLEGE"
+     },
+     {
+      "value": "003664",
+      "text": "WEATHERFORD COLLEGE"
+     },
+     {
+      "value": "009549",
+      "text": "WESTERN TEXAS COLLEGE"
+     },
+     {
+      "value": "003668",
+      "text": "WHARTON COUNTY JUNIOR COLLEGE"
+     },
+     {
+      "value": "778899",
+      "text": "COMMUNITY AND TECHNICAL COLLEGES STATEWIDE TOTALS"
+     }
+    ],
+    "Report_Yr": [
+     {
+      "value": "2024",
+      "text": "2024"
+     },
+     {
+      "value": "2023",
+      "text": "2023"
+     },
+     {
+      "value": "2022",
+      "text": "2022"
+     },
+     {
+      "value": "2021",
+      "text": "2021"
+     },
+     {
+      "value": "2020",
+      "text": "2020"
+     },
+     {
+      "value": "2019",
+      "text": "2019"
+     },
+     {
+      "value": "2018",
+      "text": "2018"
+     },
+     {
+      "value": "2017",
+      "text": "2017"
+     },
+     {
+      "value": "2016",
+      "text": "2016"
+     },
+     {
+      "value": "2015",
+      "text": "2015"
+     },
+     {
+      "value": "2014",
+      "text": "2014"
+     },
+     {
+      "value": "2013",
+      "text": "2013"
+     },
+     {
+      "value": "2012",
+      "text": "2012"
+     },
+     {
+      "value": "2011",
+      "text": "2011"
+     },
+     {
+      "value": "2010",
+      "text": "2010"
+     },
+     {
+      "value": "2009",
+      "text": "2009"
+     },
+     {
+      "value": "2008",
+      "text": "2008"
+     },
+     {
+      "value": "2007",
+      "text": "2007"
+     },
+     {
+      "value": "2006",
+      "text": "2006"
+     },
+     {
+      "value": "2005",
+      "text": "2005"
+     },
+     {
+      "value": "2004",
+      "text": "2004"
+     }
+    ]
+   }
+  },
+  {
+   "name": "form4",
+   "action": "/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "method": "post",
+   "inputs": {
+    "report_type": {
+     "type": "hidden",
+     "value": "4"
+    },
+    "OutPutType": {
+     "type": "hidden",
+     "value": "PDF"
+    },
+    "btnSubmit": {
+     "type": "submit",
+     "value": "View PDF"
+    }
+   },
+   "selects": {
+    "inst": [
+     {
+      "value": "003541",
+      "text": "ANGELO STATE UNIVERSITY"
+     },
+     {
+      "value": "003565",
+      "text": "EAST TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "003581",
+      "text": "LAMAR UNIVERSITY"
+     },
+     {
+      "value": "003592",
+      "text": "MIDWESTERN STATE UNIVERSITY"
+     },
+     {
+      "value": "003630",
+      "text": "PRAIRIE VIEW A&M UNIVERSITY"
+     },
+     {
+      "value": "003606",
+      "text": "SAM HOUSTON STATE UNIVERSITY"
+     },
+     {
+      "value": "003624",
+      "text": "STEPHEN F. AUSTIN STATE UNIVERSITY"
+     },
+     {
+      "value": "003625",
+      "text": "SUL ROSS STATE UNIVERSITY"
+     },
+     {
+      "value": "000020",
+      "text": "SUL ROSS STATE UNIVERSITY - RIO GRANDE COLLEGE"
+     },
+     {
+      "value": "003631",
+      "text": "TARLETON STATE UNIVERSITY"
+     },
+     {
+      "value": "009651",
+      "text": "TEXAS A&M INTERNATIONAL UNIVERSITY"
+     },
+     {
+      "value": "003632",
+      "text": "TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "042295",
+      "text": "TEXAS A&M UNIVERSITY - CENTRAL TEXAS"
+     },
+     {
+      "value": "011161",
+      "text": "TEXAS A&M UNIVERSITY - CORPUS CHRISTI"
+     },
+     {
+      "value": "003639",
+      "text": "TEXAS A&M UNIVERSITY - KINGSVILLE"
+     },
+     {
+      "value": "042485",
+      "text": "TEXAS A&M UNIVERSITY - SAN ANTONIO"
+     },
+     {
+      "value": "029269",
+      "text": "TEXAS A&M UNIVERSITY - TEXARKANA"
+     },
+     {
+      "value": "013231",
+      "text": "TEXAS A&M UNIVERSITY - VICTORIA"
+     },
+     {
+      "value": "010298",
+      "text": "TEXAS A&M UNIVERSITY AT GALVESTON"
+     },
+     {
+      "value": "000089",
+      "text": "TEXAS A&M UNIVERSITY SYSTEM HEALTH SCIENCE CENTER"
+     },
+     {
+      "value": "003642",
+      "text": "TEXAS SOUTHERN UNIVERSITY"
+     },
+     {
+      "value": "003615",
+      "text": "TEXAS STATE UNIVERSITY"
+     },
+     {
+      "value": "003644",
+      "text": "TEXAS TECH UNIVERSITY"
+     },
+     {
+      "value": "000412",
+      "text": "TEXAS TECH UNIVERSITY HEALTH SCIENCES CENTER"
+     },
+     {
+      "value": "000862",
+      "text": "TEXAS TECH UNIVERSITY HEALTH SCIENCES CENTER - EL PASO"
+     },
+     {
+      "value": "003646",
+      "text": "TEXAS WOMAN'S UNIVERSITY"
+     },
+     {
+      "value": "103599",
+      "text": "THE UNIVERSITY OF TEXAS - PAN AMERICAN"
+     },
+     {
+      "value": "003599",
+      "text": "THE UNIVERSITY OF TEXAS - RIO GRANDE VALLEY"
+     },
+     {
+      "value": "003656",
+      "text": "THE UNIVERSITY OF TEXAS AT ARLINGTON"
+     },
+     {
+      "value": "003658",
+      "text": "THE UNIVERSITY OF TEXAS AT AUSTIN"
+     },
+     {
+      "value": "030646",
+      "text": "THE UNIVERSITY OF TEXAS AT BROWNSVILLE"
+     },
+     {
+      "value": "009741",
+      "text": "THE UNIVERSITY OF TEXAS AT DALLAS"
+     },
+     {
+      "value": "003661",
+      "text": "THE UNIVERSITY OF TEXAS AT EL PASO"
+     },
+     {
+      "value": "010115",
+      "text": "THE UNIVERSITY OF TEXAS AT SAN ANTONIO"
+     },
+     {
+      "value": "011163",
+      "text": "THE UNIVERSITY OF TEXAS AT TYLER"
+     },
+     {
+      "value": "011618",
+      "text": "THE UNIVERSITY OF TEXAS HEALTH SCIENCE CENTER AT HOUSTON"
+     },
+     {
+      "value": "000040",
+      "text": "THE UNIVERSITY OF TEXAS HEALTH SCIENCE CENTER AT SAN ANTONIO"
+     },
+     {
+      "value": "025554",
+      "text": "THE UNIVERSITY OF TEXAS M.D. ANDERSON CANCER CENTER"
+     },
+     {
+      "value": "104952",
+      "text": "THE UNIVERSITY OF TEXAS MEDICAL BRANCH AT GALVESTON"
+     },
+     {
+      "value": "009930",
+      "text": "THE UNIVERSITY OF TEXAS PERMIAN BASIN"
+     },
+     {
+      "value": "000030",
+      "text": "THE UNIVERSITY OF TEXAS SOUTHWESTERN MEDICAL CENTER"
+     },
+     {
+      "value": "003652",
+      "text": "UNIVERSITY OF HOUSTON"
+     },
+     {
+      "value": "011711",
+      "text": "UNIVERSITY OF HOUSTON - CLEAR LAKE"
+     },
+     {
+      "value": "012826",
+      "text": "UNIVERSITY OF HOUSTON - DOWNTOWN"
+     },
+     {
+      "value": "003594",
+      "text": "UNIVERSITY OF NORTH TEXAS"
+     },
+     {
+      "value": "042421",
+      "text": "UNIVERSITY OF NORTH TEXAS AT DALLAS"
+     },
+     {
+      "value": "000130",
+      "text": "UNIVERSITY OF NORTH TEXAS HEALTH SCIENCE CENTER"
+     },
+     {
+      "value": "003665",
+      "text": "WEST TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "445566",
+      "text": "UNIVERSITIES STATEWIDE TOTALS"
+     }
+    ],
+    "report_yr": [
+     {
+      "value": "2024",
+      "text": "2024"
+     },
+     {
+      "value": "2023",
+      "text": "2023"
+     },
+     {
+      "value": "2022",
+      "text": "2022"
+     },
+     {
+      "value": "2021",
+      "text": "2021"
+     },
+     {
+      "value": "2020",
+      "text": "2020"
+     },
+     {
+      "value": "2019",
+      "text": "2019"
+     },
+     {
+      "value": "2018",
+      "text": "2018"
+     },
+     {
+      "value": "2017",
+      "text": "2017"
+     },
+     {
+      "value": "2016",
+      "text": "2016"
+     },
+     {
+      "value": "2015",
+      "text": "2015"
+     },
+     {
+      "value": "2014",
+      "text": "2014"
+     },
+     {
+      "value": "2013",
+      "text": "2013"
+     },
+     {
+      "value": "2012",
+      "text": "2012"
+     },
+     {
+      "value": "2011",
+      "text": "2011"
+     },
+     {
+      "value": "2010",
+      "text": "2010"
+     },
+     {
+      "value": "2009",
+      "text": "2009"
+     },
+     {
+      "value": "2008",
+      "text": "2008"
+     },
+     {
+      "value": "2007",
+      "text": "2007"
+     },
+     {
+      "value": "2006",
+      "text": "2006"
+     },
+     {
+      "value": "2005",
+      "text": "2005"
+     },
+     {
+      "value": "2004",
+      "text": "2004"
+     }
+    ]
+   }
+  },
+  {
+   "name": "form2g",
+   "action": "/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "method": "post",
+   "inputs": {
+    "report_type": {
+     "type": "hidden",
+     "value": "2Grad"
+    },
+    "OutPutType": {
+     "type": "hidden",
+     "value": "PDF"
+    },
+    "btnSubmit": {
+     "type": "submit",
+     "value": "View PDF"
+    }
+   },
+   "selects": {
+    "inst": [
+     {
+      "value": "000309",
+      "text": "ACCD - NORTHEAST LAKEVIEW COLLEGE"
+     },
+     {
+      "value": "000307",
+      "text": "ACCD - NORTHWEST VISTA COLLEGE"
+     },
+     {
+      "value": "023413",
+      "text": "ACCD - PALO ALTO COLLEGE"
+     },
+     {
+      "value": "009163",
+      "text": "ACCD - SAN ANTONIO COLLEGE"
+     },
+     {
+      "value": "003608",
+      "text": "ACCD - ST. PHILIP'S COLLEGE"
+     },
+     {
+      "value": "003607",
+      "text": "ALAMO COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "003539",
+      "text": "ALVIN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003540",
+      "text": "AMARILLO COLLEGE"
+     },
+     {
+      "value": "006661",
+      "text": "ANGELINA COLLEGE"
+     },
+     {
+      "value": "012015",
+      "text": "AUSTIN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003549",
+      "text": "BLINN COLLEGE DISTRICT"
+     },
+     {
+      "value": "007857",
+      "text": "BRAZOSPORT COLLEGE"
+     },
+     {
+      "value": "004003",
+      "text": "CENTRAL TEXAS COLLEGE"
+     },
+     {
+      "value": "003553",
+      "text": "CISCO COLLEGE"
+     },
+     {
+      "value": "003554",
+      "text": "CLARENDON COLLEGE"
+     },
+     {
+      "value": "003546",
+      "text": "COASTAL BEND COLLEGE"
+     },
+     {
+      "value": "007096",
+      "text": "COLLEGE OF THE MAINLAND COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "023614",
+      "text": "COLLIN COUNTY COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "009331",
+      "text": "DALLAS COLLEGE"
+     },
+     {
+      "value": "021002",
+      "text": "DALLAS COLLEGE BROOKHAVEN CAMPUS"
+     },
+     {
+      "value": "003561",
+      "text": "DALLAS COLLEGE CEDAR VALLEY CAMPUS"
+     },
+     {
+      "value": "008510",
+      "text": "DALLAS COLLEGE EASTFIELD CAMPUS"
+     },
+     {
+      "value": "004453",
+      "text": "DALLAS COLLEGE EL CENTRO CAMPUS"
+     },
+     {
+      "value": "008503",
+      "text": "DALLAS COLLEGE MOUNTAIN VIEW CAMPUS"
+     },
+     {
+      "value": "020774",
+      "text": "DALLAS COLLEGE NORTH LAKE CAMPUS"
+     },
+     {
+      "value": "008504",
+      "text": "DALLAS COLLEGE RICHLAND CAMPUS"
+     },
+     {
+      "value": "003563",
+      "text": "DEL MAR COLLEGE"
+     },
+     {
+      "value": "010387",
+      "text": "EL PASO COMMUNITY COLLEGE DISTRICT"
+     },
+     {
+      "value": "003568",
+      "text": "FRANK PHILLIPS COLLEGE"
+     },
+     {
+      "value": "006662",
+      "text": "GALVESTON COLLEGE"
+     },
+     {
+      "value": "003570",
+      "text": "GRAYSON COLLEGE"
+     },
+     {
+      "value": "003574",
+      "text": "HCJCD - HOWARD COLLEGE"
+     },
+     {
+      "value": "000574",
+      "text": "HCJCD - SOUTHWEST COLLEGIATE INSTITUTE FOR THE DEAF"
+     },
+     {
+      "value": "003573",
+      "text": "HILL COLLEGE"
+     },
+     {
+      "value": "010633",
+      "text": "HOUSTON CITY COLLEGE"
+     },
+     {
+      "value": "103574",
+      "text": "HOWARD COUNTY JUNIOR COLLEGE DISTRICT"
+     },
+     {
+      "value": "003580",
+      "text": "KILGORE COLLEGE"
+     },
+     {
+      "value": "036273",
+      "text": "LAMAR INSTITUTE OF TECHNOLOGY"
+     },
+     {
+      "value": "023582",
+      "text": "LAMAR STATE COLLEGE - ORANGE"
+     },
+     {
+      "value": "023485",
+      "text": "LAMAR STATE COLLEGE - PORT ARTHUR"
+     },
+     {
+      "value": "003582",
+      "text": "LAREDO COLLEGE"
+     },
+     {
+      "value": "003583",
+      "text": "LEE COLLEGE"
+     },
+     {
+      "value": "000823",
+      "text": "LONE STAR COLLEGE - CONNECT CAMPUS"
+     },
+     {
+      "value": "000717",
+      "text": "LONE STAR COLLEGE - CYFAIR"
+     },
+     {
+      "value": "000819",
+      "text": "LONE STAR COLLEGE - HOUSTON NORTH"
+     },
+     {
+      "value": "000719",
+      "text": "LONE STAR COLLEGE - KINGWOOD"
+     },
+     {
+      "value": "000721",
+      "text": "LONE STAR COLLEGE - MONTGOMERY"
+     },
+     {
+      "value": "000722",
+      "text": "LONE STAR COLLEGE - NORTH HARRIS"
+     },
+     {
+      "value": "000720",
+      "text": "LONE STAR COLLEGE - TOMBALL"
+     },
+     {
+      "value": "000821",
+      "text": "LONE STAR COLLEGE - UNIVERSITY PARK"
+     },
+     {
+      "value": "011145",
+      "text": "LONE STAR COLLEGE SYSTEM"
+     },
+     {
+      "value": "003590",
+      "text": "MCLENNAN COMMUNITY COLLEGE"
+     },
+     {
+      "value": "009797",
+      "text": "MIDLAND COLLEGE"
+     },
+     {
+      "value": "003593",
+      "text": "NAVARRO COLLEGE"
+     },
+     {
+      "value": "003558",
+      "text": "NORTH CENTRAL TEXAS COLLEGE"
+     },
+     {
+      "value": "023154",
+      "text": "NORTHEAST TEXAS COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003596",
+      "text": "ODESSA COLLEGE"
+     },
+     {
+      "value": "003600",
+      "text": "PANOLA COLLEGE"
+     },
+     {
+      "value": "003601",
+      "text": "PARIS JUNIOR COLLEGE"
+     },
+     {
+      "value": "003603",
+      "text": "RANGER COLLEGE"
+     },
+     {
+      "value": "029137",
+      "text": "SAN JACINTO COLLEGE"
+     },
+     {
+      "value": "003609",
+      "text": "SAN JACINTO COLLEGE - CENTRAL CAMPUS"
+     },
+     {
+      "value": "012713",
+      "text": "SAN JACINTO COLLEGE - NORTH CAMPUS"
+     },
+     {
+      "value": "000090",
+      "text": "SAN JACINTO COLLEGE - SOUTH CAMPUS"
+     },
+     {
+      "value": "003611",
+      "text": "SOUTH PLAINS COLLEGE"
+     },
+     {
+      "value": "031034",
+      "text": "SOUTH TEXAS COLLEGE"
+     },
+     {
+      "value": "003614",
+      "text": "SOUTHWEST TEXAS COLLEGE"
+     },
+     {
+      "value": "003626",
+      "text": "TARRANT COUNTY COLLEGE"
+     },
+     {
+      "value": "008897",
+      "text": "TARRANT COUNTY COLLEGE - CONNECT CAMPUS"
+     },
+     {
+      "value": "008899",
+      "text": "TARRANT COUNTY COLLEGE - NORTHEAST CAMPUS"
+     },
+     {
+      "value": "010964",
+      "text": "TARRANT COUNTY COLLEGE - NORTHWEST CAMPUS"
+     },
+     {
+      "value": "008900",
+      "text": "TARRANT COUNTY COLLEGE - SOUTH CAMPUS"
+     },
+     {
+      "value": "000326",
+      "text": "TARRANT COUNTY COLLEGE - SOUTHEAST CAMPUS"
+     },
+     {
+      "value": "008901",
+      "text": "TARRANT COUNTY COLLEGE - TRINITY RIVER CAMPUS"
+     },
+     {
+      "value": "003627",
+      "text": "TEMPLE COLLEGE"
+     },
+     {
+      "value": "003628",
+      "text": "TEXARKANA COLLEGE"
+     },
+     {
+      "value": "003643",
+      "text": "TEXAS SOUTHMOST COLLEGE"
+     },
+     {
+      "value": "119642",
+      "text": "TEXAS STATE TECHNICAL COLLEGE CONNECT"
+     },
+     {
+      "value": "203634",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN FORT BEND COUNTY"
+     },
+     {
+      "value": "009225",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN HARLINGEN"
+     },
+     {
+      "value": "033965",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN MARSHALL"
+     },
+     {
+      "value": "133965",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN NORTH TEXAS"
+     },
+     {
+      "value": "003634",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN WACO"
+     },
+     {
+      "value": "009932",
+      "text": "TEXAS STATE TECHNICAL COLLEGE IN WEST TEXAS"
+     },
+     {
+      "value": "009642",
+      "text": "TEXAS STATE TECHNICAL COLLEGE SYSTEM"
+     },
+     {
+      "value": "003572",
+      "text": "TRINITY VALLEY COMMUNITY COLLEGE"
+     },
+     {
+      "value": "003648",
+      "text": "TYLER JUNIOR COLLEGE"
+     },
+     {
+      "value": "010060",
+      "text": "VERNON COLLEGE"
+     },
+     {
+      "value": "003662",
+      "text": "VICTORIA COLLEGE"
+     },
+     {
+      "value": "003664",
+      "text": "WEATHERFORD COLLEGE"
+     },
+     {
+      "value": "009549",
+      "text": "WESTERN TEXAS COLLEGE"
+     },
+     {
+      "value": "003668",
+      "text": "WHARTON COUNTY JUNIOR COLLEGE"
+     },
+     {
+      "value": "778899",
+      "text": "COMMUNITY AND TECHNICAL COLLEGES STATEWIDE TOTALS"
+     }
+    ],
+    "Report_Yr": [
+     {
+      "value": "2021",
+      "text": "2021"
+     },
+     {
+      "value": "2020",
+      "text": "2020"
+     },
+     {
+      "value": "2019",
+      "text": "2019"
+     },
+     {
+      "value": "2018",
+      "text": "2018"
+     },
+     {
+      "value": "2017",
+      "text": "2017"
+     },
+     {
+      "value": "2016",
+      "text": "2016"
+     },
+     {
+      "value": "2015",
+      "text": "2015"
+     },
+     {
+      "value": "2014",
+      "text": "2014"
+     },
+     {
+      "value": "2013",
+      "text": "2013"
+     },
+     {
+      "value": "2012",
+      "text": "2012"
+     },
+     {
+      "value": "2011",
+      "text": "2011"
+     },
+     {
+      "value": "2010",
+      "text": "2010"
+     },
+     {
+      "value": "2009",
+      "text": "2009"
+     },
+     {
+      "value": "2008",
+      "text": "2008"
+     }
+    ]
+   }
+  },
+  {
+   "name": "form4g",
+   "action": "/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "method": "post",
+   "inputs": {
+    "report_type": {
+     "type": "hidden",
+     "value": "4Grad"
+    },
+    "OutPutType": {
+     "type": "hidden",
+     "value": "PDF"
+    },
+    "btnSubmit": {
+     "type": "submit",
+     "value": "View PDF"
+    }
+   },
+   "selects": {
+    "inst": [
+     {
+      "value": "003541",
+      "text": "ANGELO STATE UNIVERSITY"
+     },
+     {
+      "value": "003565",
+      "text": "EAST TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "003581",
+      "text": "LAMAR UNIVERSITY"
+     },
+     {
+      "value": "003592",
+      "text": "MIDWESTERN STATE UNIVERSITY"
+     },
+     {
+      "value": "003630",
+      "text": "PRAIRIE VIEW A&M UNIVERSITY"
+     },
+     {
+      "value": "003606",
+      "text": "SAM HOUSTON STATE UNIVERSITY"
+     },
+     {
+      "value": "003624",
+      "text": "STEPHEN F. AUSTIN STATE UNIVERSITY"
+     },
+     {
+      "value": "003625",
+      "text": "SUL ROSS STATE UNIVERSITY"
+     },
+     {
+      "value": "000020",
+      "text": "SUL ROSS STATE UNIVERSITY - RIO GRANDE COLLEGE"
+     },
+     {
+      "value": "003631",
+      "text": "TARLETON STATE UNIVERSITY"
+     },
+     {
+      "value": "009651",
+      "text": "TEXAS A&M INTERNATIONAL UNIVERSITY"
+     },
+     {
+      "value": "003632",
+      "text": "TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "042295",
+      "text": "TEXAS A&M UNIVERSITY - CENTRAL TEXAS"
+     },
+     {
+      "value": "011161",
+      "text": "TEXAS A&M UNIVERSITY - CORPUS CHRISTI"
+     },
+     {
+      "value": "003639",
+      "text": "TEXAS A&M UNIVERSITY - KINGSVILLE"
+     },
+     {
+      "value": "042485",
+      "text": "TEXAS A&M UNIVERSITY - SAN ANTONIO"
+     },
+     {
+      "value": "029269",
+      "text": "TEXAS A&M UNIVERSITY - TEXARKANA"
+     },
+     {
+      "value": "013231",
+      "text": "TEXAS A&M UNIVERSITY - VICTORIA"
+     },
+     {
+      "value": "010298",
+      "text": "TEXAS A&M UNIVERSITY AT GALVESTON"
+     },
+     {
+      "value": "000089",
+      "text": "TEXAS A&M UNIVERSITY SYSTEM HEALTH SCIENCE CENTER"
+     },
+     {
+      "value": "003642",
+      "text": "TEXAS SOUTHERN UNIVERSITY"
+     },
+     {
+      "value": "003615",
+      "text": "TEXAS STATE UNIVERSITY"
+     },
+     {
+      "value": "003644",
+      "text": "TEXAS TECH UNIVERSITY"
+     },
+     {
+      "value": "000412",
+      "text": "TEXAS TECH UNIVERSITY HEALTH SCIENCES CENTER"
+     },
+     {
+      "value": "000862",
+      "text": "TEXAS TECH UNIVERSITY HEALTH SCIENCES CENTER - EL PASO"
+     },
+     {
+      "value": "003646",
+      "text": "TEXAS WOMAN'S UNIVERSITY"
+     },
+     {
+      "value": "103599",
+      "text": "THE UNIVERSITY OF TEXAS - PAN AMERICAN"
+     },
+     {
+      "value": "003599",
+      "text": "THE UNIVERSITY OF TEXAS - RIO GRANDE VALLEY"
+     },
+     {
+      "value": "003656",
+      "text": "THE UNIVERSITY OF TEXAS AT ARLINGTON"
+     },
+     {
+      "value": "003658",
+      "text": "THE UNIVERSITY OF TEXAS AT AUSTIN"
+     },
+     {
+      "value": "030646",
+      "text": "THE UNIVERSITY OF TEXAS AT BROWNSVILLE"
+     },
+     {
+      "value": "009741",
+      "text": "THE UNIVERSITY OF TEXAS AT DALLAS"
+     },
+     {
+      "value": "003661",
+      "text": "THE UNIVERSITY OF TEXAS AT EL PASO"
+     },
+     {
+      "value": "010115",
+      "text": "THE UNIVERSITY OF TEXAS AT SAN ANTONIO"
+     },
+     {
+      "value": "011163",
+      "text": "THE UNIVERSITY OF TEXAS AT TYLER"
+     },
+     {
+      "value": "011618",
+      "text": "THE UNIVERSITY OF TEXAS HEALTH SCIENCE CENTER AT HOUSTON"
+     },
+     {
+      "value": "000040",
+      "text": "THE UNIVERSITY OF TEXAS HEALTH SCIENCE CENTER AT SAN ANTONIO"
+     },
+     {
+      "value": "025554",
+      "text": "THE UNIVERSITY OF TEXAS M.D. ANDERSON CANCER CENTER"
+     },
+     {
+      "value": "104952",
+      "text": "THE UNIVERSITY OF TEXAS MEDICAL BRANCH AT GALVESTON"
+     },
+     {
+      "value": "009930",
+      "text": "THE UNIVERSITY OF TEXAS PERMIAN BASIN"
+     },
+     {
+      "value": "000030",
+      "text": "THE UNIVERSITY OF TEXAS SOUTHWESTERN MEDICAL CENTER"
+     },
+     {
+      "value": "003652",
+      "text": "UNIVERSITY OF HOUSTON"
+     },
+     {
+      "value": "011711",
+      "text": "UNIVERSITY OF HOUSTON - CLEAR LAKE"
+     },
+     {
+      "value": "012826",
+      "text": "UNIVERSITY OF HOUSTON - DOWNTOWN"
+     },
+     {
+      "value": "003594",
+      "text": "UNIVERSITY OF NORTH TEXAS"
+     },
+     {
+      "value": "042421",
+      "text": "UNIVERSITY OF NORTH TEXAS AT DALLAS"
+     },
+     {
+      "value": "000130",
+      "text": "UNIVERSITY OF NORTH TEXAS HEALTH SCIENCE CENTER"
+     },
+     {
+      "value": "003665",
+      "text": "WEST TEXAS A&M UNIVERSITY"
+     },
+     {
+      "value": "445566",
+      "text": "UNIVERSITIES STATEWIDE TOTALS"
+     }
+    ],
+    "report_yr": [
+     {
+      "value": "2021",
+      "text": "2021"
+     },
+     {
+      "value": "2020",
+      "text": "2020"
+     },
+     {
+      "value": "2019",
+      "text": "2019"
+     },
+     {
+      "value": "2018",
+      "text": "2018"
+     },
+     {
+      "value": "2017",
+      "text": "2017"
+     },
+     {
+      "value": "2016",
+      "text": "2016"
+     },
+     {
+      "value": "2015",
+      "text": "2015"
+     },
+     {
+      "value": "2014",
+      "text": "2014"
+     },
+     {
+      "value": "2013",
+      "text": "2013"
+     },
+     {
+      "value": "2012",
+      "text": "2012"
+     },
+     {
+      "value": "2011",
+      "text": "2011"
+     },
+     {
+      "value": "2010",
+      "text": "2010"
+     },
+     {
+      "value": "2009",
+      "text": "2009"
+     },
+     {
+      "value": "2008",
+      "text": "2008"
+     }
+    ]
+   }
+  }
+ ],
+ "samples": [
+  {
+   "form": "form2",
+   "submitted": {
+    "report_type": "2",
+    "OutPutType": "PDF",
+    "btnSubmit": "View PDF",
+    "inst": "000309",
+    "Report_Yr": "2023"
+   },
+   "choices": {
+    "inst": {
+     "value": "000309",
+     "text": "ACCD - NORTHEAST LAKEVIEW COLLEGE"
+    },
+    "Report_Yr": {
+     "value": "2023",
+     "text": "2023"
+    }
+   },
+   "file": "data/transfer test/formats/sample form2.pdf",
+   "status": 200,
+   "final url": "https://apps.highered.texas.gov/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "content type": "application/pdf;charset=UTF-8",
+   "bytes": 110038,
+   "content disposition": null
+  },
+  {
+   "form": "form4",
+   "submitted": {
+    "report_type": "4",
+    "OutPutType": "PDF",
+    "btnSubmit": "View PDF",
+    "inst": "003541",
+    "report_yr": "2023"
+   },
+   "choices": {
+    "inst": {
+     "value": "003541",
+     "text": "ANGELO STATE UNIVERSITY"
+    },
+    "report_yr": {
+     "value": "2023",
+     "text": "2023"
+    }
+   },
+   "file": "data/transfer test/formats/sample form4.pdf",
+   "status": 200,
+   "final url": "https://apps.highered.texas.gov/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "content type": "application/pdf;charset=UTF-8",
+   "bytes": 107956,
+   "content disposition": null
+  },
+  {
+   "form": "form2g",
+   "submitted": {
+    "report_type": "2Grad",
+    "OutPutType": "PDF",
+    "btnSubmit": "View PDF",
+    "inst": "000309",
+    "Report_Yr": "2020"
+   },
+   "choices": {
+    "inst": {
+     "value": "000309",
+     "text": "ACCD - NORTHEAST LAKEVIEW COLLEGE"
+    },
+    "Report_Yr": {
+     "value": "2020",
+     "text": "2020"
+    }
+   },
+   "file": "data/transfer test/formats/sample form2g.pdf",
+   "status": 200,
+   "final url": "https://apps.highered.texas.gov/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "content type": "application/pdf;charset=UTF-8",
+   "bytes": 85359,
+   "content disposition": null
+  },
+  {
+   "form": "form4g",
+   "submitted": {
+    "report_type": "4Grad",
+    "OutPutType": "PDF",
+    "btnSubmit": "View PDF",
+    "inst": "003541",
+    "report_yr": "2020"
+   },
+   "choices": {
+    "inst": {
+     "value": "003541",
+     "text": "ANGELO STATE UNIVERSITY"
+    },
+    "report_yr": {
+     "value": "2020",
+     "text": "2020"
+    }
+   },
+   "file": "data/transfer test/formats/sample form4g.pdf",
+   "status": 200,
+   "final url": "https://apps.highered.texas.gov/index.cfm?page=F5C67269E9A51FF66C697725A30167EAAD92F671EEA28FA27DEB32DFB4609513",
+   "content type": "application/pdf;charset=UTF-8",
+   "bytes": 83765,
+   "content disposition": null
+  }
+ ],
+ "accountability pages": [
+  {
+   "file": "data/transfer test/formats/accountability 0.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/InteractiveReport/ManageReports",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 17065,
+   "content disposition": null
+  },
+  {
+   "file": "data/transfer test/formats/accountability 1.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/Measures/ManageMeasures?instTypeID=1",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 61562,
+   "content disposition": null
+  },
+  {
+   "file": "data/transfer test/formats/accountability 2.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/Measures/ManageMeasures?instTypeID=2",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 13174,
+   "content disposition": null
+  },
+  {
+   "file": "data/transfer test/formats/accountability 3.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/Measures/ManageMeasures?instTypeID=3",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 49397,
+   "content disposition": null
+  },
+  {
+   "file": "data/transfer test/formats/accountability 4.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/Measures/ManageMeasures?instTypeID=4",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 13174,
+   "content disposition": null
+  },
+  {
+   "file": "data/transfer test/formats/accountability 5.html",
+   "status": 200,
+   "final url": "http://www.txhigheredaccountability.org/AcctPublic/Measures/ManageMeasures?instTypeID=5",
+   "content type": "text/html; charset=utf-8",
+   "bytes": 43022,
+   "content disposition": null
+  }
+ ]
+}
