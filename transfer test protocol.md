@@ -92,3 +92,46 @@ levels 2 and 3 are supporting checks with fewer independent units.
 2. From that listing, build the download, parsing and analysis code, test
    it offline on synthetic files, and commit it before it runs.
 3. Run it once; report every result.
+
+## Amendment 1 (November 16, before any analysis data was downloaded; disclosed)
+
+Step 1 found where and how the reports are served; this amendment fits the
+analysis to them. Only one sample report per form was read, to write the
+parser (Northeast Lakeview College: academic performance, fall 2023; and
+graduation, fall 2020); no other outcome had been seen.
+
+1. **Source.** The per-pair reports are served as PDFs by the
+   Coordinating Board's "Transfer Students Success" page
+   (apps.highered.texas.gov), one per two-year college per fall cohort:
+   academic performance (fall cohorts 2014 to 2024 used; earlier cohorts
+   have no staffing data two falls before transfer) and graduation (fall
+   cohorts 2014 to 2021, the latest offered). Page 1 of each performance
+   report, which splits every transfer exactly once (with or without
+   developmental education), is the table used.
+2. **Graduation at level 1.** The graduation reports give, for each pair,
+   how many of a fall cohort's transfers graduated within four years from a
+   Texas public or independent institution. Prediction 3 (less often
+   graduate) is therefore tested at level 1 as well, as the share not
+   graduated, with the same analysis as the other two outcomes.
+3. **Level 2.** The graduation reports' institution totals (each
+   community college's transfers, and how many graduated) replace the
+   accountability system's whole-cohort bachelor's rate: they measure what
+   the hypothesis is about, the transfers' own completion, and the
+   accountability system's download route was not established. Predicted
+   below zero, as before.
+4. **Level 3 deferred.** The receiving universities' junior-cohort tables
+   are in the annual Transfer Report PDFs; level 3 will be built and
+   reported separately, under this protocol, without changing levels 1
+   and 2.
+5. **Details fixed.** The first-year GPA share is taken over transfers
+   with a known GPA. Colleges are matched by FICE code, which is the first
+   six digits of the IPEDS OPEID; every IPEDS unit with that OPEID6 in a
+   fall's header file is assigned to the college and their staff counts
+   summed. Pell share is the mean PCTPELL of those units in the College
+   Scorecard files for the same two falls. Reports whose tables do not add
+   up are left out and listed, never repaired.
+6. **Run.** `src/transfer data.py` downloads and parses the reports and
+   assembles the inputs; `src/transfer test.py` runs the analysis; both are
+   run by the workflow "transfer test 2 - download the Texas reports and run the test"
+   (`transfer_test_run.yml`), which commits data/transfer test/reports.json,
+   inputs.json and results.json.
