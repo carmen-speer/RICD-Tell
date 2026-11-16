@@ -1,0 +1,59 @@
+name: anchor cross reference - run on the v3 and two-channel scores and commit
+
+# Manual-only. Runs src/anchor cross reference.py twice: once on the v3
+# test scores (data/v3/test scores/) and once on the exploratory
+# two-channel rescoring (data/v3 reanalysis/test scores/), and commits both
+# result files to data/v3 exploratory/. Reads only committed files; no
+# download, no frozen file changes. Exploratory: the v3 test outcomes were
+# already known.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: anchor-cross-reference
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the cross-reference on both sets of scores
+        run: |
+          cd src
+          python "anchor cross reference.py"
+          python "anchor cross reference.py" --two-channel
+
+      - name: Commit the results
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v3 exploratory/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "anchor cross reference: v3 and two-channel results (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
