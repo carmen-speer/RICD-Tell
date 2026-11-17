@@ -99,6 +99,6 @@ one-directional anchoring rather than Φ_mutual/Γ_mutual's mutual-cluster
 case. What's unfinished is the data pipeline and that constant's actual
 fitted value, not the underlying mechanism.
 
-See the main tracker's [README — Known Gaps](../README.md#known-gaps--stated-honestly-not-smoothed-over)
+See the main tracker's [Known gaps and record of fixes](<../history of fixes/Known gaps and record of fixes.md>)
 for this in the context of the full 8-feature panel and its documentation
 standard.

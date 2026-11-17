@@ -20,10 +20,11 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
   GitHub Pages at
   [carmen-speer.github.io/RICD-Tell](https://carmen-speer.github.io/RICD-Tell/).
   Shows the validated 54-institution panel and, separately, real
-  institutions scored live by the tracker pipeline (see the root
-  README's Known Gaps section for what each live score does and doesn't
-  mean, and "Distress, not collapse" for what an elevated score means
-  for a public flagship specifically).
+  institutions scored live by the original tracker pipeline (see
+  [Known gaps and record of fixes](<../../history of fixes/Known gaps and record of fixes.md>)
+  for what each live score does and doesn't mean, and
+  ["Distress, not collapse"](<../../explanations/Distress, not collapse.md>)
+  for what an elevated score means for a public flagship specifically).
 - `data/panel.json` and `data/live_scores.json` — the two real data files
   `index.html` reads directly: the validated panel and the live-scored
   institutions, respectively. Not meant to be read on their own; they
