@@ -149,14 +149,13 @@ The full history of gaps, diagnostics and fixes, kept intact, is in [history of 
 ## Repository structure
 
 - **Protocols** (top level): [`sampling protocol.md`](<sampling protocol.md>), [`sampling protocol v2.md`](<sampling protocol v2.md>), [`sampling protocol v3.md`](<sampling protocol v3.md>), [`reanalysis protocol.md`](<reanalysis protocol.md>), [`administrative layer retest protocol.md`](<administrative layer retest protocol.md>), [`transfer test protocol.md`](<transfer test protocol.md>).
-- [`src/`](src/): the model, the scoring pipelines for every test, the measurements and the diagnostics.
+- [`src/`](src/): the model, the scoring pipelines for every test and the measurements.
 - [`data/`](data/): every test's draws, scores, outcomes and results, by version (`confirmatory`, `v2`, `v3`, `v3 reanalysis`, `v3 exploratory`, `meta channel`, `transfer test`, `panel`).
 - [`docs/`](docs/): the RICD manuscript (Spine and Catalog) and the dashboard.
 - [`reports/`](reports/) and [`future-projects/`](future-projects/): reports and planned work.
 - [`explanations/`](explanations/) and [`history of fixes/`](<history of fixes/>): longer explanations and the full record of fixes.
 - [`.github/workflows/`](.github/workflows/): every workflow that scored, measured or tested anything, each named for its step.
-
-A reorganization that moves superseded diagnostic scripts and workflows into an archive, with their history intact, is planned next.
+- [`archive/`](archive/): the one-off diagnostic scripts and workflows from building and testing the tracker, moved with their history intact; what each found is in the record of fixes.
 
 ## Re-scoring cadence
 
