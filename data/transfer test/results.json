@@ -1,15 +1,15 @@
 {
-  "protocol": "transfer test protocol.md with Amendment 1 (pre-registered analysis of existing data; exploratory)",
-  "written at (UTC)": "2026-11-17T00:12:37.713978+00:00",
+  "protocol": "transfer test protocol.md with Amendments 1 and 2 (pre-registered analysis of existing data; exploratory)",
+  "written at (UTC)": "2026-11-17T02:24:24.426494+00:00",
   "bootstrap": {
     "resamples": 2000,
     "seed": 20261116,
     "resampled unit": "community college (cluster)"
   },
   "reports parsed": {
-    "performance": 829,
-    "graduation": 591,
-    "failed": 235,
+    "performance": 961,
+    "graduation": 694,
+    "failed": 0,
     "download errors": 93
   },
   "college-cohorts excluded": {
@@ -26,6 +26,11 @@
     "000309 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000307 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000307 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
+    "000307 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
+    "000307 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
+    "000307 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
+    "000307 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
+    "000307 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000307 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000307 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000307 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
@@ -41,30 +46,6 @@
     "007857 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "007857 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "007857 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "021002 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "021002 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "021002 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "021002 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "003561 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "003561 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "003561 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "003561 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008510 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008510 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008510 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008510 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008503 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008503 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008503 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008503 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "020774 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "020774 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "020774 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "020774 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008504 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008504 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008504 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008504 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "006662 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "006662 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "006662 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
@@ -83,169 +64,6 @@
     "000574 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000574 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "000574 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "103574 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000823 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000823 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000717 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000717 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000717 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000717 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000819 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000819 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000819 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000819 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000819 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000719 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000721 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000722 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000720 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000821 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "012713 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000090 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008897 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008899 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "010964 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008900 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "000326 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "008901 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "003643 2014": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "003643 2015": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "003643 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
@@ -256,184 +74,689 @@
     "003643 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "003643 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
     "003643 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "003643 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "119642 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "119642 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "203634 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009225 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "033965 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "133965 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "133965 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "133965 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "133965 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "133965 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2016": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2017": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2018": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2019": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2020": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2021": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2022": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2023": "fewer than 25 instructional staff, or not found, in a fall before transfer",
-    "009932 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer"
+    "003643 2024": "fewer than 25 instructional staff, or not found, in a fall before transfer"
+  },
+  "college-cohorts set aside by the district rule": {
+    "003607 2014": "district rule (Amendment 2): covered by another report",
+    "003607 2015": "district rule (Amendment 2): covered by another report",
+    "003607 2016": "district rule (Amendment 2): covered by another report",
+    "003607 2017": "district rule (Amendment 2): covered by another report",
+    "003607 2018": "district rule (Amendment 2): covered by another report",
+    "003607 2019": "district rule (Amendment 2): covered by another report",
+    "003607 2020": "district rule (Amendment 2): covered by another report",
+    "003607 2021": "district rule (Amendment 2): covered by another report",
+    "003607 2022": "district rule (Amendment 2): covered by another report",
+    "003607 2023": "district rule (Amendment 2): covered by another report",
+    "003607 2024": "district rule (Amendment 2): covered by another report",
+    "009331 2014": "district rule (Amendment 2): covered by another report",
+    "009331 2015": "district rule (Amendment 2): covered by another report",
+    "009331 2016": "district rule (Amendment 2): covered by another report",
+    "009331 2017": "district rule (Amendment 2): covered by another report",
+    "009331 2018": "district rule (Amendment 2): covered by another report",
+    "009331 2019": "district rule (Amendment 2): covered by another report",
+    "009331 2020": "district rule (Amendment 2): covered by another report",
+    "009331 2021": "district rule (Amendment 2): covered by another report",
+    "021002 2021": "district rule (Amendment 2): covered by another report",
+    "021002 2022": "district rule (Amendment 2): covered by another report",
+    "021002 2023": "district rule (Amendment 2): covered by another report",
+    "021002 2024": "district rule (Amendment 2): covered by another report",
+    "003561 2021": "district rule (Amendment 2): covered by another report",
+    "003561 2022": "district rule (Amendment 2): covered by another report",
+    "003561 2023": "district rule (Amendment 2): covered by another report",
+    "003561 2024": "district rule (Amendment 2): covered by another report",
+    "008510 2021": "district rule (Amendment 2): covered by another report",
+    "008510 2022": "district rule (Amendment 2): covered by another report",
+    "008510 2023": "district rule (Amendment 2): covered by another report",
+    "008510 2024": "district rule (Amendment 2): covered by another report",
+    "004453 2021": "district rule (Amendment 2): covered by another report",
+    "004453 2022": "district rule (Amendment 2): covered by another report",
+    "004453 2023": "district rule (Amendment 2): covered by another report",
+    "004453 2024": "district rule (Amendment 2): covered by another report",
+    "008503 2021": "district rule (Amendment 2): covered by another report",
+    "008503 2022": "district rule (Amendment 2): covered by another report",
+    "008503 2023": "district rule (Amendment 2): covered by another report",
+    "008503 2024": "district rule (Amendment 2): covered by another report",
+    "020774 2021": "district rule (Amendment 2): covered by another report",
+    "020774 2022": "district rule (Amendment 2): covered by another report",
+    "020774 2023": "district rule (Amendment 2): covered by another report",
+    "020774 2024": "district rule (Amendment 2): covered by another report",
+    "008504 2021": "district rule (Amendment 2): covered by another report",
+    "008504 2022": "district rule (Amendment 2): covered by another report",
+    "008504 2023": "district rule (Amendment 2): covered by another report",
+    "008504 2024": "district rule (Amendment 2): covered by another report",
+    "103574 2014": "district rule (Amendment 2): covered by another report",
+    "103574 2015": "district rule (Amendment 2): covered by another report",
+    "103574 2016": "district rule (Amendment 2): covered by another report",
+    "103574 2017": "district rule (Amendment 2): covered by another report",
+    "103574 2018": "district rule (Amendment 2): covered by another report",
+    "103574 2019": "district rule (Amendment 2): covered by another report",
+    "103574 2020": "district rule (Amendment 2): covered by another report",
+    "103574 2021": "district rule (Amendment 2): covered by another report",
+    "103574 2022": "district rule (Amendment 2): covered by another report",
+    "103574 2023": "district rule (Amendment 2): covered by another report",
+    "103574 2024": "district rule (Amendment 2): covered by another report",
+    "000823 2023": "district rule (Amendment 2): covered by another report",
+    "000823 2024": "district rule (Amendment 2): covered by another report",
+    "000717 2014": "district rule (Amendment 2): covered by another report",
+    "000717 2015": "district rule (Amendment 2): covered by another report",
+    "000717 2016": "district rule (Amendment 2): covered by another report",
+    "000717 2017": "district rule (Amendment 2): covered by another report",
+    "000717 2018": "district rule (Amendment 2): covered by another report",
+    "000717 2019": "district rule (Amendment 2): covered by another report",
+    "000717 2020": "district rule (Amendment 2): covered by another report",
+    "000717 2021": "district rule (Amendment 2): covered by another report",
+    "000717 2022": "district rule (Amendment 2): covered by another report",
+    "000717 2023": "district rule (Amendment 2): covered by another report",
+    "000717 2024": "district rule (Amendment 2): covered by another report",
+    "000819 2020": "district rule (Amendment 2): covered by another report",
+    "000819 2021": "district rule (Amendment 2): covered by another report",
+    "000819 2022": "district rule (Amendment 2): covered by another report",
+    "000819 2023": "district rule (Amendment 2): covered by another report",
+    "000819 2024": "district rule (Amendment 2): covered by another report",
+    "000719 2014": "district rule (Amendment 2): covered by another report",
+    "000719 2015": "district rule (Amendment 2): covered by another report",
+    "000719 2016": "district rule (Amendment 2): covered by another report",
+    "000719 2017": "district rule (Amendment 2): covered by another report",
+    "000719 2018": "district rule (Amendment 2): covered by another report",
+    "000719 2019": "district rule (Amendment 2): covered by another report",
+    "000719 2020": "district rule (Amendment 2): covered by another report",
+    "000719 2021": "district rule (Amendment 2): covered by another report",
+    "000719 2022": "district rule (Amendment 2): covered by another report",
+    "000719 2023": "district rule (Amendment 2): covered by another report",
+    "000719 2024": "district rule (Amendment 2): covered by another report",
+    "000721 2014": "district rule (Amendment 2): covered by another report",
+    "000721 2015": "district rule (Amendment 2): covered by another report",
+    "000721 2016": "district rule (Amendment 2): covered by another report",
+    "000721 2017": "district rule (Amendment 2): covered by another report",
+    "000721 2018": "district rule (Amendment 2): covered by another report",
+    "000721 2019": "district rule (Amendment 2): covered by another report",
+    "000721 2020": "district rule (Amendment 2): covered by another report",
+    "000721 2021": "district rule (Amendment 2): covered by another report",
+    "000721 2022": "district rule (Amendment 2): covered by another report",
+    "000721 2023": "district rule (Amendment 2): covered by another report",
+    "000721 2024": "district rule (Amendment 2): covered by another report",
+    "000722 2014": "district rule (Amendment 2): covered by another report",
+    "000722 2015": "district rule (Amendment 2): covered by another report",
+    "000722 2016": "district rule (Amendment 2): covered by another report",
+    "000722 2017": "district rule (Amendment 2): covered by another report",
+    "000722 2018": "district rule (Amendment 2): covered by another report",
+    "000722 2019": "district rule (Amendment 2): covered by another report",
+    "000722 2020": "district rule (Amendment 2): covered by another report",
+    "000722 2021": "district rule (Amendment 2): covered by another report",
+    "000722 2022": "district rule (Amendment 2): covered by another report",
+    "000722 2023": "district rule (Amendment 2): covered by another report",
+    "000722 2024": "district rule (Amendment 2): covered by another report",
+    "000720 2014": "district rule (Amendment 2): covered by another report",
+    "000720 2015": "district rule (Amendment 2): covered by another report",
+    "000720 2016": "district rule (Amendment 2): covered by another report",
+    "000720 2017": "district rule (Amendment 2): covered by another report",
+    "000720 2018": "district rule (Amendment 2): covered by another report",
+    "000720 2019": "district rule (Amendment 2): covered by another report",
+    "000720 2020": "district rule (Amendment 2): covered by another report",
+    "000720 2021": "district rule (Amendment 2): covered by another report",
+    "000720 2022": "district rule (Amendment 2): covered by another report",
+    "000720 2023": "district rule (Amendment 2): covered by another report",
+    "000720 2024": "district rule (Amendment 2): covered by another report",
+    "000821 2014": "district rule (Amendment 2): covered by another report",
+    "000821 2015": "district rule (Amendment 2): covered by another report",
+    "000821 2016": "district rule (Amendment 2): covered by another report",
+    "000821 2017": "district rule (Amendment 2): covered by another report",
+    "000821 2018": "district rule (Amendment 2): covered by another report",
+    "000821 2019": "district rule (Amendment 2): covered by another report",
+    "000821 2020": "district rule (Amendment 2): covered by another report",
+    "000821 2021": "district rule (Amendment 2): covered by another report",
+    "000821 2022": "district rule (Amendment 2): covered by another report",
+    "000821 2023": "district rule (Amendment 2): covered by another report",
+    "000821 2024": "district rule (Amendment 2): covered by another report",
+    "003609 2014": "district rule (Amendment 2): covered by another report",
+    "003609 2015": "district rule (Amendment 2): covered by another report",
+    "003609 2016": "district rule (Amendment 2): covered by another report",
+    "003609 2017": "district rule (Amendment 2): covered by another report",
+    "003609 2018": "district rule (Amendment 2): covered by another report",
+    "003609 2019": "district rule (Amendment 2): covered by another report",
+    "003609 2020": "district rule (Amendment 2): covered by another report",
+    "003609 2021": "district rule (Amendment 2): covered by another report",
+    "003609 2022": "district rule (Amendment 2): covered by another report",
+    "003609 2023": "district rule (Amendment 2): covered by another report",
+    "003609 2024": "district rule (Amendment 2): covered by another report",
+    "012713 2014": "district rule (Amendment 2): covered by another report",
+    "012713 2015": "district rule (Amendment 2): covered by another report",
+    "012713 2016": "district rule (Amendment 2): covered by another report",
+    "012713 2017": "district rule (Amendment 2): covered by another report",
+    "012713 2018": "district rule (Amendment 2): covered by another report",
+    "012713 2019": "district rule (Amendment 2): covered by another report",
+    "012713 2020": "district rule (Amendment 2): covered by another report",
+    "012713 2021": "district rule (Amendment 2): covered by another report",
+    "012713 2022": "district rule (Amendment 2): covered by another report",
+    "012713 2023": "district rule (Amendment 2): covered by another report",
+    "012713 2024": "district rule (Amendment 2): covered by another report",
+    "000090 2014": "district rule (Amendment 2): covered by another report",
+    "000090 2015": "district rule (Amendment 2): covered by another report",
+    "000090 2016": "district rule (Amendment 2): covered by another report",
+    "000090 2017": "district rule (Amendment 2): covered by another report",
+    "000090 2018": "district rule (Amendment 2): covered by another report",
+    "000090 2019": "district rule (Amendment 2): covered by another report",
+    "000090 2020": "district rule (Amendment 2): covered by another report",
+    "000090 2021": "district rule (Amendment 2): covered by another report",
+    "000090 2022": "district rule (Amendment 2): covered by another report",
+    "000090 2023": "district rule (Amendment 2): covered by another report",
+    "000090 2024": "district rule (Amendment 2): covered by another report",
+    "008897 2016": "district rule (Amendment 2): covered by another report",
+    "008897 2017": "district rule (Amendment 2): covered by another report",
+    "008897 2018": "district rule (Amendment 2): covered by another report",
+    "008897 2019": "district rule (Amendment 2): covered by another report",
+    "008897 2020": "district rule (Amendment 2): covered by another report",
+    "008897 2021": "district rule (Amendment 2): covered by another report",
+    "008897 2022": "district rule (Amendment 2): covered by another report",
+    "008897 2023": "district rule (Amendment 2): covered by another report",
+    "008897 2024": "district rule (Amendment 2): covered by another report",
+    "008899 2014": "district rule (Amendment 2): covered by another report",
+    "008899 2015": "district rule (Amendment 2): covered by another report",
+    "008899 2016": "district rule (Amendment 2): covered by another report",
+    "008899 2017": "district rule (Amendment 2): covered by another report",
+    "008899 2018": "district rule (Amendment 2): covered by another report",
+    "008899 2019": "district rule (Amendment 2): covered by another report",
+    "008899 2020": "district rule (Amendment 2): covered by another report",
+    "008899 2021": "district rule (Amendment 2): covered by another report",
+    "008899 2022": "district rule (Amendment 2): covered by another report",
+    "008899 2023": "district rule (Amendment 2): covered by another report",
+    "008899 2024": "district rule (Amendment 2): covered by another report",
+    "010964 2014": "district rule (Amendment 2): covered by another report",
+    "010964 2015": "district rule (Amendment 2): covered by another report",
+    "010964 2016": "district rule (Amendment 2): covered by another report",
+    "010964 2017": "district rule (Amendment 2): covered by another report",
+    "010964 2018": "district rule (Amendment 2): covered by another report",
+    "010964 2019": "district rule (Amendment 2): covered by another report",
+    "010964 2020": "district rule (Amendment 2): covered by another report",
+    "010964 2021": "district rule (Amendment 2): covered by another report",
+    "010964 2022": "district rule (Amendment 2): covered by another report",
+    "010964 2023": "district rule (Amendment 2): covered by another report",
+    "010964 2024": "district rule (Amendment 2): covered by another report",
+    "008900 2014": "district rule (Amendment 2): covered by another report",
+    "008900 2015": "district rule (Amendment 2): covered by another report",
+    "008900 2016": "district rule (Amendment 2): covered by another report",
+    "008900 2017": "district rule (Amendment 2): covered by another report",
+    "008900 2018": "district rule (Amendment 2): covered by another report",
+    "008900 2019": "district rule (Amendment 2): covered by another report",
+    "008900 2020": "district rule (Amendment 2): covered by another report",
+    "008900 2021": "district rule (Amendment 2): covered by another report",
+    "008900 2022": "district rule (Amendment 2): covered by another report",
+    "008900 2023": "district rule (Amendment 2): covered by another report",
+    "008900 2024": "district rule (Amendment 2): covered by another report",
+    "000326 2014": "district rule (Amendment 2): covered by another report",
+    "000326 2015": "district rule (Amendment 2): covered by another report",
+    "000326 2016": "district rule (Amendment 2): covered by another report",
+    "000326 2017": "district rule (Amendment 2): covered by another report",
+    "000326 2018": "district rule (Amendment 2): covered by another report",
+    "000326 2019": "district rule (Amendment 2): covered by another report",
+    "000326 2020": "district rule (Amendment 2): covered by another report",
+    "000326 2021": "district rule (Amendment 2): covered by another report",
+    "000326 2022": "district rule (Amendment 2): covered by another report",
+    "000326 2023": "district rule (Amendment 2): covered by another report",
+    "000326 2024": "district rule (Amendment 2): covered by another report",
+    "008901 2014": "district rule (Amendment 2): covered by another report",
+    "008901 2015": "district rule (Amendment 2): covered by another report",
+    "008901 2016": "district rule (Amendment 2): covered by another report",
+    "008901 2017": "district rule (Amendment 2): covered by another report",
+    "008901 2018": "district rule (Amendment 2): covered by another report",
+    "008901 2019": "district rule (Amendment 2): covered by another report",
+    "008901 2020": "district rule (Amendment 2): covered by another report",
+    "008901 2021": "district rule (Amendment 2): covered by another report",
+    "008901 2022": "district rule (Amendment 2): covered by another report",
+    "008901 2023": "district rule (Amendment 2): covered by another report",
+    "008901 2024": "district rule (Amendment 2): covered by another report",
+    "119642 2023": "district rule (Amendment 2): covered by another report",
+    "119642 2024": "district rule (Amendment 2): covered by another report",
+    "203634 2018": "district rule (Amendment 2): covered by another report",
+    "203634 2019": "district rule (Amendment 2): covered by another report",
+    "203634 2020": "district rule (Amendment 2): covered by another report",
+    "203634 2021": "district rule (Amendment 2): covered by another report",
+    "203634 2022": "district rule (Amendment 2): covered by another report",
+    "203634 2023": "district rule (Amendment 2): covered by another report",
+    "203634 2024": "district rule (Amendment 2): covered by another report",
+    "009225 2016": "district rule (Amendment 2): covered by another report",
+    "009225 2017": "district rule (Amendment 2): covered by another report",
+    "009225 2018": "district rule (Amendment 2): covered by another report",
+    "009225 2019": "district rule (Amendment 2): covered by another report",
+    "009225 2020": "district rule (Amendment 2): covered by another report",
+    "009225 2021": "district rule (Amendment 2): covered by another report",
+    "009225 2022": "district rule (Amendment 2): covered by another report",
+    "009225 2023": "district rule (Amendment 2): covered by another report",
+    "009225 2024": "district rule (Amendment 2): covered by another report",
+    "033965 2016": "district rule (Amendment 2): covered by another report",
+    "033965 2017": "district rule (Amendment 2): covered by another report",
+    "033965 2018": "district rule (Amendment 2): covered by another report",
+    "033965 2019": "district rule (Amendment 2): covered by another report",
+    "033965 2020": "district rule (Amendment 2): covered by another report",
+    "033965 2021": "district rule (Amendment 2): covered by another report",
+    "033965 2022": "district rule (Amendment 2): covered by another report",
+    "033965 2023": "district rule (Amendment 2): covered by another report",
+    "033965 2024": "district rule (Amendment 2): covered by another report",
+    "133965 2017": "district rule (Amendment 2): covered by another report",
+    "133965 2018": "district rule (Amendment 2): covered by another report",
+    "133965 2019": "district rule (Amendment 2): covered by another report",
+    "133965 2020": "district rule (Amendment 2): covered by another report",
+    "133965 2024": "district rule (Amendment 2): covered by another report",
+    "003634 2016": "district rule (Amendment 2): covered by another report",
+    "003634 2017": "district rule (Amendment 2): covered by another report",
+    "003634 2018": "district rule (Amendment 2): covered by another report",
+    "003634 2019": "district rule (Amendment 2): covered by another report",
+    "003634 2020": "district rule (Amendment 2): covered by another report",
+    "003634 2021": "district rule (Amendment 2): covered by another report",
+    "003634 2022": "district rule (Amendment 2): covered by another report",
+    "003634 2023": "district rule (Amendment 2): covered by another report",
+    "003634 2024": "district rule (Amendment 2): covered by another report",
+    "009932 2016": "district rule (Amendment 2): covered by another report",
+    "009932 2017": "district rule (Amendment 2): covered by another report",
+    "009932 2018": "district rule (Amendment 2): covered by another report",
+    "009932 2019": "district rule (Amendment 2): covered by another report",
+    "009932 2020": "district rule (Amendment 2): covered by another report",
+    "009932 2021": "district rule (Amendment 2): covered by another report",
+    "009932 2022": "district rule (Amendment 2): covered by another report",
+    "009932 2023": "district rule (Amendment 2): covered by another report",
+    "009932 2024": "district rule (Amendment 2): covered by another report"
+  },
+  "check: district totals against their colleges' totals (performance reports)": {
+    "003607 2014": {
+      "district": 2763,
+      "sum of colleges": 2640
+    },
+    "003607 2015": {
+      "district": 2954,
+      "sum of colleges": 2784
+    },
+    "003607 2016": {
+      "district": 3197,
+      "sum of colleges": 3034
+    },
+    "003607 2017": {
+      "district": 3315,
+      "sum of colleges": 3116
+    },
+    "003607 2018": {
+      "district": 3182,
+      "sum of colleges": 3022
+    },
+    "003607 2019": {
+      "district": 3043,
+      "sum of colleges": 2815
+    },
+    "003607 2020": {
+      "district": 3172,
+      "sum of colleges": 2939
+    },
+    "003607 2021": {
+      "district": 2831,
+      "sum of colleges": 2584
+    },
+    "003607 2022": {
+      "district": 2659,
+      "sum of colleges": 2333
+    },
+    "003607 2023": {
+      "district": 2549,
+      "sum of colleges": 2251
+    },
+    "003607 2024": {
+      "district": 2641,
+      "sum of colleges": 2345
+    },
+    "009331 2014": {
+      "district": 2964,
+      "sum of colleges": 2824
+    },
+    "009331 2015": {
+      "district": 3204,
+      "sum of colleges": 2985
+    },
+    "009331 2016": {
+      "district": 3368,
+      "sum of colleges": 3194
+    },
+    "009331 2017": {
+      "district": 3428,
+      "sum of colleges": 3213
+    },
+    "009331 2018": {
+      "district": 3295,
+      "sum of colleges": 3114
+    },
+    "009331 2019": {
+      "district": 3321,
+      "sum of colleges": 3097
+    },
+    "009331 2020": {
+      "district": 3342,
+      "sum of colleges": 3052
+    },
+    "009331 2021": {
+      "district": 3063,
+      "sum of colleges": 2116
+    },
+    "009331 2022": {
+      "district": 2712,
+      "sum of colleges": 1053
+    },
+    "009331 2023": {
+      "district": 2525,
+      "sum of colleges": 548
+    },
+    "009331 2024": {
+      "district": 2400,
+      "sum of colleges": 231
+    },
+    "011145 2014": {
+      "district": 3481,
+      "sum of colleges": 3220
+    },
+    "011145 2015": {
+      "district": 3539,
+      "sum of colleges": 3301
+    },
+    "011145 2016": {
+      "district": 3763,
+      "sum of colleges": 3469
+    },
+    "011145 2017": {
+      "district": 3856,
+      "sum of colleges": 3505
+    },
+    "011145 2018": {
+      "district": 3733,
+      "sum of colleges": 3405
+    },
+    "011145 2019": {
+      "district": 3597,
+      "sum of colleges": 3316
+    },
+    "011145 2020": {
+      "district": 3494,
+      "sum of colleges": 3160
+    },
+    "011145 2021": {
+      "district": 3505,
+      "sum of colleges": 3130
+    },
+    "011145 2022": {
+      "district": 3234,
+      "sum of colleges": 2826
+    },
+    "011145 2023": {
+      "district": 3206,
+      "sum of colleges": 2759
+    },
+    "011145 2024": {
+      "district": 3168,
+      "sum of colleges": 2716
+    },
+    "029137 2014": {
+      "district": 1664,
+      "sum of colleges": 1658
+    },
+    "029137 2015": {
+      "district": 1575,
+      "sum of colleges": 1538
+    },
+    "029137 2016": {
+      "district": 1635,
+      "sum of colleges": 1591
+    },
+    "029137 2017": {
+      "district": 1608,
+      "sum of colleges": 1550
+    },
+    "029137 2018": {
+      "district": 1697,
+      "sum of colleges": 1647
+    },
+    "029137 2019": {
+      "district": 1634,
+      "sum of colleges": 1602
+    },
+    "029137 2020": {
+      "district": 1518,
+      "sum of colleges": 1433
+    },
+    "029137 2021": {
+      "district": 1568,
+      "sum of colleges": 1071
+    },
+    "029137 2022": {
+      "district": 1338,
+      "sum of colleges": 497
+    },
+    "029137 2023": {
+      "district": 1337,
+      "sum of colleges": 255
+    },
+    "029137 2024": {
+      "district": 1396,
+      "sum of colleges": 121
+    },
+    "003626 2014": {
+      "district": 2933,
+      "sum of colleges": 2644
+    },
+    "003626 2015": {
+      "district": 3029,
+      "sum of colleges": 2699
+    },
+    "003626 2016": {
+      "district": 3268,
+      "sum of colleges": 2764
+    },
+    "003626 2017": {
+      "district": 3151,
+      "sum of colleges": 2755
+    },
+    "003626 2018": {
+      "district": 3076,
+      "sum of colleges": 2753
+    },
+    "003626 2019": {
+      "district": 2975,
+      "sum of colleges": 2679
+    },
+    "003626 2020": {
+      "district": 2761,
+      "sum of colleges": 2509
+    },
+    "003626 2021": {
+      "district": 2666,
+      "sum of colleges": 2193
+    },
+    "003626 2022": {
+      "district": 2278,
+      "sum of colleges": 1226
+    },
+    "003626 2023": {
+      "district": 2198,
+      "sum of colleges": 589
+    },
+    "003626 2024": {
+      "district": 2205,
+      "sum of colleges": 271
+    },
+    "103574 2014": {
+      "district": 164,
+      "sum of colleges": 162
+    },
+    "103574 2015": {
+      "district": 177,
+      "sum of colleges": 178
+    },
+    "103574 2016": {
+      "district": 162,
+      "sum of colleges": 163
+    },
+    "103574 2017": {
+      "district": 180,
+      "sum of colleges": 178
+    },
+    "103574 2018": {
+      "district": 143,
+      "sum of colleges": 144
+    },
+    "103574 2019": {
+      "district": 139,
+      "sum of colleges": 138
+    },
+    "103574 2020": {
+      "district": 144,
+      "sum of colleges": 146
+    },
+    "103574 2021": {
+      "district": 149,
+      "sum of colleges": 151
+    },
+    "103574 2022": {
+      "district": 139,
+      "sum of colleges": 140
+    },
+    "103574 2023": {
+      "district": 133,
+      "sum of colleges": 133
+    },
+    "103574 2024": {
+      "district": 145,
+      "sum of colleges": 145
+    }
   },
   "level 1, pairs (primary)": {
     "first-year GPA below 2.0": {
-      "pairs": 4296,
-      "colleges": 54,
-      "transfers (weight)": 133528,
-      "slope on contingent share, Pell held constant": 0.03536,
+      "pairs": 6244,
+      "colleges": 61,
+      "transfers (weight)": 322066,
+      "slope on contingent share, Pell held constant": -0.02475,
       "95% interval": [
-        -0.02987,
-        0.10039
+        -0.06366,
+        0.04751
       ],
       "verdict (predicted above zero)": "not decided",
-      "Pell share's own slope (no direction predicted)": 0.08589,
-      "check: slope without Pell": 0.01611,
+      "Pell share's own slope (no direction predicted)": 0.12409,
+      "check: slope without Pell": -0.04174,
       "check: 95% interval without Pell": [
-        -0.03808,
-        0.07176
+        -0.07912,
+        0.0269
       ],
       "check: within thirds of colleges by Pell share": {
         "lowest Pell third": {
-          "pairs": 1549,
-          "colleges": 18,
-          "slope": 0.06049,
+          "pairs": 2656,
+          "colleges": 21,
+          "slope": -0.05578,
           "95% interval": [
-            -0.10107,
-            0.12195
+            -0.12837,
+            0.06133
           ]
         },
         "middle Pell third": {
-          "pairs": 1320,
-          "colleges": 18,
-          "slope": 0.10839,
+          "pairs": 1664,
+          "colleges": 20,
+          "slope": 0.08076,
           "95% interval": [
-            -0.04254,
-            0.30172
+            -0.05128,
+            0.24782
           ]
         },
         "highest Pell third": {
-          "pairs": 1427,
-          "colleges": 18,
-          "slope": -0.0626,
+          "pairs": 1924,
+          "colleges": 20,
+          "slope": -0.03356,
           "95% interval": [
-            -0.13959,
-            -0.00184
+            -0.09721,
+            0.01971
           ]
         }
       }
     },
     "not enrolled the following fall": {
-      "pairs": 4572,
-      "colleges": 54,
-      "transfers (weight)": 139319,
-      "slope on contingent share, Pell held constant": 0.04885,
+      "pairs": 6749,
+      "colleges": 61,
+      "transfers (weight)": 335977,
+      "slope on contingent share, Pell held constant": 0.0218,
       "95% interval": [
-        -0.04131,
-        0.09484
+        -0.02709,
+        0.07451
       ],
       "verdict (predicted above zero)": "not decided",
-      "Pell share's own slope (no direction predicted)": 0.09121,
-      "check: slope without Pell": 0.02843,
+      "Pell share's own slope (no direction predicted)": 0.10182,
+      "check: slope without Pell": 0.0078,
       "check: 95% interval without Pell": [
-        -0.05821,
-        0.08142
+        -0.05564,
+        0.06031
       ],
       "check: within thirds of colleges by Pell share": {
         "lowest Pell third": {
-          "pairs": 1722,
-          "colleges": 18,
-          "slope": 0.04789,
+          "pairs": 2944,
+          "colleges": 21,
+          "slope": 0.01758,
           "95% interval": [
-            -0.20674,
-            0.13413
+            -0.08547,
+            0.08264
           ]
         },
         "middle Pell third": {
-          "pairs": 1363,
-          "colleges": 18,
-          "slope": 0.0202,
+          "pairs": 1764,
+          "colleges": 20,
+          "slope": 0.0641,
           "95% interval": [
-            -0.17062,
-            0.11025
+            -0.13321,
+            0.17207
           ]
         },
         "highest Pell third": {
-          "pairs": 1487,
-          "colleges": 18,
-          "slope": -0.00359,
+          "pairs": 2041,
+          "colleges": 20,
+          "slope": 0.0067,
           "95% interval": [
-            -0.09882,
-            0.09304
+            -0.07754,
+            0.0753
           ]
         }
       }
     },
     "not graduated": {
-      "pairs": 3562,
-      "colleges": 53,
-      "transfers (weight)": 110383,
-      "slope on contingent share, Pell held constant": 0.04534,
+      "pairs": 5140,
+      "colleges": 60,
+      "transfers (weight)": 257389,
+      "slope on contingent share, Pell held constant": 0.00257,
       "95% interval": [
-        -0.0357,
-        0.10225
+        -0.04276,
+        0.06147
       ],
       "verdict (predicted above zero)": "not decided",
-      "Pell share's own slope (no direction predicted)": 0.05628,
-      "check: slope without Pell": 0.03182,
+      "Pell share's own slope (no direction predicted)": 0.16861,
+      "check: slope without Pell": -0.01955,
       "check: 95% interval without Pell": [
-        -0.03656,
-        0.09163
+        -0.07583,
+        0.04547
       ],
       "check: within thirds of colleges by Pell share": {
         "lowest Pell third": {
-          "pairs": 1409,
-          "colleges": 18,
-          "slope": 0.06269,
+          "pairs": 2251,
+          "colleges": 20,
+          "slope": -0.01341,
           "95% interval": [
-            -0.15631,
-            0.13773
+            -0.14659,
+            0.0538
           ]
         },
         "middle Pell third": {
-          "pairs": 979,
-          "colleges": 17,
-          "slope": 0.0322,
+          "pairs": 1365,
+          "colleges": 20,
+          "slope": 0.07968,
           "95% interval": [
-            -0.1227,
-            0.13329
+            -0.05174,
+            0.17952
           ]
         },
         "highest Pell third": {
-          "pairs": 1174,
-          "colleges": 18,
-          "slope": -0.04864,
+          "pairs": 1524,
+          "colleges": 20,
+          "slope": -0.01308,
           "95% interval": [
-            -0.17122,
-            0.04063
+            -0.11476,
+            0.0565
           ]
         }
       }
@@ -441,22 +764,22 @@
   },
   "level 2, sending colleges": {
     "Spearman": {
-      "college-cohorts": 405,
-      "colleges": 55,
-      "correlation of transfers' graduation rate with contingent share": 0.0711,
+      "college-cohorts": 465,
+      "colleges": 62,
+      "correlation of transfers' graduation rate with contingent share": 0.0606,
       "95% interval": [
-        -0.11512,
-        0.26767
+        -0.12539,
+        0.25147
       ],
       "verdict (predicted below zero)": "not decided"
     },
     "partial Spearman, Pell held constant": {
-      "college-cohorts": 405,
-      "colleges": 55,
-      "correlation of transfers' graduation rate with contingent share": 0.0389,
+      "college-cohorts": 465,
+      "colleges": 62,
+      "correlation of transfers' graduation rate with contingent share": -0.013,
       "95% interval": [
-        -0.14064,
-        0.23386
+        -0.18345,
+        0.17652
       ],
       "verdict (predicted below zero)": "not decided"
     }
