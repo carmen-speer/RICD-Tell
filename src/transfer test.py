@@ -1,6 +1,6 @@
 """
 Transfer test, step 2b: the analysis fixed in "transfer test protocol.md"
-(with Amendment 1), run on the parsed Texas reports.
+(with Amendments 1 and 2), run on the parsed Texas reports.
 
 Prediction: within the same receiving Texas public university, students
 transferring from community colleges with a higher contingent share of
@@ -32,14 +32,47 @@ BOOT = 2000
 MIN_STAFF = 25
 SKIP = {"OTHER PUBLIC 4YR INSTITUTION", "INSTITUTION TOTAL"}
 
+# Amendment 2: multi-college districts. The Coordinating Board publishes a report for a district and for
+# each of its colleges, and the district report covers the same students as its colleges' reports, so the
+# two are never used together. Which one is used follows how IPEDS reports the district's staff: where
+# IPEDS reports each college separately, the colleges' reports are used; where it reports one unit for the
+# whole district, the district's report is used, with that unit's staff. Fixed from the IPEDS structure
+# alone, before the corrected reports were parsed.
+ALAMO = {"000309", "000307", "023413", "009163", "003608"}
+DALLAS = {"021002", "003561", "008510", "004453", "008503", "020774", "008504"}
+LONE_STAR = {"000823", "000717", "000819", "000719", "000721", "000722", "000720", "000821"}
+SAN_JACINTO = {"003609", "012713", "000090"}
+TARRANT = {"008897", "008899", "010964", "008900", "000326", "008901"}
+TSTC = {"009642", "119642", "203634", "009225", "033965", "133965", "003634", "009932"}
 
-def college_year(inputs, staff, fice, cohort):
-    """Contingent share (mean of falls cohort-2 and cohort-1) and Pell share for one college and cohort."""
+
+def district_rule(fice: str, cohort: int):
+    """(use this report?, the FICE whose IPEDS units stand for it if not its own, or None)."""
+    if fice in ("003607", "103574"):            # Alamo and Howard County districts: colleges reported separately
+        return False, None
+    if fice in LONE_STAR or fice in TARRANT or fice in SAN_JACINTO:
+        return False, None                      # one IPEDS unit for the district: the district report is used
+    if fice == "029137":                        # San Jacinto district: IPEDS unit filed under the Central campus
+        return True, "003609"
+    if fice == "009331" or fice in DALLAS:      # Dallas: one IPEDS unit (filed under El Centro) from fall 2020
+        if cohort <= 2020:
+            return fice != "009331", None
+        if cohort == 2021:
+            return False, None                  # falls 2019 and 2020 straddle the change
+        return fice == "009331", "004453"
+    if fice in TSTC:                            # Texas State Technical College: one IPEDS unit from fall 2015
+        return cohort <= 2015, None
+    return True, None
+
+
+def college_year(inputs, staff, fice, cohort, units_of=None):
+    """Contingent share (mean of falls cohort-2 and cohort-1) and Pell share for one college and cohort.
+    units_of: the FICE whose IPEDS units stand for this report (Amendment 2), if not its own."""
     xw = inputs["crosswalk (fall year -> FICE -> IPEDS unit IDs)"]
     pell = inputs["Pell share (PCTPELL)"]["by unit id"]
     shares, pells = [], []
     for fall in (cohort - 2, cohort - 1):
-        ids = (xw.get(str(fall)) or {}).get(fice, [])
+        ids = (xw.get(str(fall)) or {}).get(units_of or fice, [])
         recs = [staff.get(str(fall), {}).get(u) for u in ids]
         recs = [r for r in recs if r]
         ft, pt = sum(r[0] for r in recs), sum(r[1] for r in recs)
@@ -55,14 +88,19 @@ def build(root: Path):
     reports = json.loads((t / "reports.json").read_text())
     inputs = json.loads((t / "inputs.json").read_text())
     staff = json.loads((root / "data" / "meta channel" / "instructional staff share.json").read_text())["by fall year"]
-    cache, excluded = {}, {}
+    cache, excluded, set_aside = {}, {}, {}
 
     def cy(fice, cohort):
         if (fice, cohort) not in cache:
-            x, p, why = college_year(inputs, staff, fice, cohort)
-            cache[(fice, cohort)] = (x, p)
-            if why:
-                excluded[f"{fice} {cohort}"] = why
+            use, units_of = district_rule(fice, cohort)
+            if not use:
+                cache[(fice, cohort)] = (None, None)
+                set_aside[f"{fice} {cohort}"] = "district rule (Amendment 2): covered by another report"
+            else:
+                x, p, why = college_year(inputs, staff, fice, cohort, units_of)
+                cache[(fice, cohort)] = (x, p)
+                if why:
+                    excluded[f"{fice} {cohort}"] = why
         return cache[(fice, cohort)]
 
     pairs = {"first-year GPA below 2.0": [], "not enrolled the following fall": [], "not graduated": []}
@@ -100,7 +138,17 @@ def build(root: Path):
         tot = rep["total"]
         if tot["transfers"] > 0:
             level2.append({"fice": rep["fice"], "x": x, "pell": p, "rate": tot["graduated"] / tot["transfers"]})
-    return pairs, level2, excluded, reports
+    # Check (disclosed, not used): each district report's total against the sum of its colleges' totals.
+    groups = {"003607": ALAMO, "009331": DALLAS, "011145": LONE_STAR, "029137": SAN_JACINTO,
+              "003626": TARRANT, "103574": {"003574", "000574"}}
+    totals = {(r["fice"], r["cohort (fall)"]): r["total"]["transfers"]
+              for r in reports["performance"] if "error" not in r}
+    check = {}
+    for d, members in groups.items():
+        for c in sorted({k[1] for k in totals if k[0] == d}):
+            check[f"{d} {c}"] = {"district": totals[(d, c)],
+                                 "sum of colleges": sum(v for (f, y), v in totals.items() if f in members and y == c)}
+    return pairs, level2, excluded, reports, set_aside, check
 
 
 def slope(rows, with_pell):
@@ -172,13 +220,15 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=str(Path(__file__).resolve().parent.parent))
     root = Path(ap.parse_args().root)
-    pairs, level2, excluded, reports = build(root)
-    out = {"protocol": "transfer test protocol.md with Amendment 1 (pre-registered analysis of existing data; exploratory)",
+    pairs, level2, excluded, reports, set_aside, check = build(root)
+    out = {"protocol": "transfer test protocol.md with Amendments 1 and 2 (pre-registered analysis of existing data; exploratory)",
            "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
            "bootstrap": {"resamples": BOOT, "seed": SEED, "resampled unit": "community college (cluster)"},
            "reports parsed": reports["parsed"] | {"failed": len(reports["parsed"]["failed"]),
                                                   "download errors": len(reports["parsed"]["download errors"])},
            "college-cohorts excluded": excluded,
+           "college-cohorts set aside by the district rule": set_aside,
+           "check: district totals against their colleges' totals (performance reports)": check,
            "level 1, pairs (primary)": {}, "level 2, sending colleges": {}}
     for outcome, rows in pairs.items():
         main_ = slope(rows, True)
