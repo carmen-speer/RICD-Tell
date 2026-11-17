@@ -135,3 +135,53 @@ graduation, fall 2020); no other outcome had been seen.
    run by the workflow "transfer test 2 - download the Texas reports and run the test"
    (`transfer_test_run.yml`), which commits data/transfer test/reports.json,
    inputs.json and results.json.
+
+## Amendment 2 (November 16, after the first run; disclosed)
+
+The first run (commit f89b18c) finished, but checking its parsing log before
+reading its results as a finding showed two problems, both in how the
+reports were read and matched, not in the analysis. That run's results are
+kept in the repository's history and are not used.
+
+1. **Large counts were not read.** The reports print counts of 1,000 or
+   more with a thousands comma ("1,235"), which the parser did not accept,
+   so every report whose college sent 1,000 or more transfers in a year
+   failed with "no INSTITUTION TOTAL row" (235 reports). These are the
+   largest community colleges in Texas, among them Austin, Collin, El
+   Paso, Houston City, Blinn, South Texas and San Jacinto, and the Dallas,
+   Lone Star, Alamo and Tarrant districts. Their exclusion was not random,
+   so the first run's results are not a test of the hypothesis. The parser
+   now accepts the comma, reads the whole performance report rather than
+   page 1 alone (a large college's first table can run onto page 2), and
+   stops at the first table's institution total. The rule that a table
+   which does not add up is left out, never repaired, is unchanged.
+2. **District and college reports overlap.** The Coordinating Board
+   publishes a report for a multi-college district and for each of its
+   colleges, and the district report covers the same students. IPEDS, the
+   source of the staffing data, reports some districts college by college
+   and others as one unit. The two kinds of report are therefore never
+   used together, and the choice follows the IPEDS structure: where IPEDS
+   reports each college separately (Alamo, Howard County, Dallas before
+   fall 2020, Texas State Technical College before fall 2015), the
+   colleges' reports are used and the district's set aside; where IPEDS
+   reports one unit for the whole district (Lone Star, Tarrant, San
+   Jacinto, Dallas from fall 2020), the district's report is used with
+   that unit's staff, and the colleges' set aside. Cohorts whose two
+   staffing falls straddle a change (Dallas cohort 2021, Texas State
+   Technical College cohorts from 2016, whose campuses IPEDS no longer
+   reports separately) are left out. The first run had paired three
+   colleges' own transfers with their whole district's staff (El Centro
+   from cohort 2022, the San Jacinto Central campus, the Texas State
+   Technical College Waco campus from cohort 2016); this rule removes those
+   mismatches. Each district report's total is also compared with the sum
+   of its colleges' totals and disclosed, and the IPEDS unit names behind
+   every match are recorded so the matching can be checked.
+3. **Fixed before the corrected reports were read.** Both rules were fixed
+   from the first run's parsing log and the IPEDS structure alone. The
+   predictions, measures, analysis, thresholds and verdict rules of the
+   protocol and Amendment 1 are unchanged. Because the first run's
+   (uncorrected) results were seen before this amendment, it is disclosed
+   here, and the test stays labeled exploratory, as before.
+4. **Two colleges still cannot be matched** to IPEDS staffing by FICE code
+   (Northwest Vista and Northeast Lakeview, both in the Alamo district),
+   and some small units return no report; both are listed in the output.
