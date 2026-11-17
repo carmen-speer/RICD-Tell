@@ -1,6 +1,6 @@
 {
   "note": "Exploratory: the v3 test outcomes were already known. The analyses are fixed in src/anchor cross reference.py so that they can be run blind on the prospective retest.",
-  "written at (UTC)": "2026-11-16T20:33:54.352882+00:00",
+  "written at (UTC)": "2026-11-17T03:40:06.204170+00:00",
   "inputs": [
     "data/v3 reanalysis/test scores/",
     "data/v3/test outcomes.json",
