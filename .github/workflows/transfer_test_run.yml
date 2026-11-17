@@ -1,6 +1,6 @@
 name: transfer test 2 - download the Texas reports and run the test
 
-# Manual-only. Step 2 of "transfer test protocol.md" (with Amendment 1):
+# Manual-only. Step 2 of "transfer test protocol.md" (with Amendments 1 and 2):
 # src/transfer data.py downloads the Coordinating Board's academic
 # performance and graduation reports for every Texas two-year college,
 # parses them (checking every table), and assembles the IPEDS crosswalk and
@@ -36,6 +36,13 @@ jobs:
           pip install -r "requirements v2 lock.txt"
           sudo apt-get update && sudo apt-get install -y poppler-utils
 
+      - name: Reuse PDFs downloaded by an earlier run, if any (a cache, so a rerun need not download them again)
+        uses: actions/cache@v4
+        with:
+          path: work/transfer pdfs
+          key: texas-transfer-pdfs-v1-${{ github.run_id }}
+          restore-keys: texas-transfer-pdfs-v1-
+
       - name: Download and parse the Texas reports
         run: |
           mkdir -p work
@@ -55,7 +62,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "transfer test 2: Texas reports, inputs and results (pre-registered; exploratory)"
+            git commit -m "transfer test 2: Texas reports, inputs and results, Amendment 2 (pre-registered; exploratory)"
             for attempt in 1 2 3 4 5; do
               if git fetch origin main && git rebase origin/main && git push; then
                 exit 0
