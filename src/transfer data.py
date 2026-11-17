@@ -1,11 +1,11 @@
 """
-Transfer test, step 2a (see "transfer test protocol.md" and its Amendment 1):
+Transfer test, step 2a (see "transfer test protocol.md" and its Amendments 1 and 2):
 download the Texas Higher Education Coordinating Board's transfer reports for
 every two-year college, parse them, and assemble the other inputs.
 
 1. Reports (apps.highered.texas.gov, "Transfer Students Success"), PDFs:
    - academic performance by two-year college (form report_type 2), fall
-     cohorts 2014-2024: page 1 ("Comparison of Developmental Education vs No
+     cohorts 2014-2024: the first table ("Comparison of Developmental Education vs No
      Developmental Education"), which splits every transfer exactly once;
      for each receiving university: transfers, first-year GPA bands (below
      2.0, ..., unknown) and still enrolled the following fall, for students
@@ -15,7 +15,10 @@ every two-year college, parse them, and assemble the other inputs.
      graduated within four years from a Texas public or independent
      institution.
    Every parsed table is checked (parts add to totals); a table that fails is
-   recorded with the reason and left out, never repaired.
+   recorded with the reason and left out, never repaired. Amendment 2: counts
+   of 1,000 or more carry a thousands comma, and a large college's first
+   table can run past page 1, so the whole report is read and cut where the
+   second table ("Core Curriculum and Field of Study") begins.
 2. Crosswalk: a college's FICE code is the first six digits of its IPEDS
    OPEID; every IPEDS unit ID with that OPEID6 in the cohort's fall header
    file is assigned to it (a district reporting as several IPEDS units is
@@ -61,8 +64,14 @@ STATEWIDE = {"778899", "445566"}
 SKIP_ROWS = {"OTHER PUBLIC 4YR INSTITUTION", "INSTITUTION TOTAL"}
 PAUSE = 0.4
 
-PERF_ROW = re.compile(r"^\s*(\S.*?\S)\s+((?:\d+\s+){16}\d+)\s*$")
-GRAD_ROW = re.compile(r"^\s*(\S.*?\S)\s+(\d+)\s+(\d+)\s+([\d.]+)%\s*$")
+# Counts of 1,000 or more are printed with a thousands comma (Amendment 2).
+PERF_ROW = re.compile(r"^\s*(\S.*?\S)\s+((?:[\d,]+\s+){16}[\d,]+)\s*$")
+GRAD_ROW = re.compile(r"^\s*(\S.*?\S)\s+([\d,]+)\s+([\d,]+)\s+([\d.]+)%\s*$")
+NEXT_SECTION = "Core Curriculum and Field of Study"
+
+
+def num(x: str) -> int:
+    return int(x.replace(",", ""))
 
 
 def pdf_text(path: Path, first: int | None = None, last: int | None = None) -> str:
@@ -72,13 +81,17 @@ def pdf_text(path: Path, first: int | None = None, last: int | None = None) -> s
 
 def parse_performance(text: str, year: int) -> dict:
     if f"Fall {year}" not in text or "Developmental Education" not in text:
-        return {"error": "page 1 is not the developmental-education table for this cohort"}
+        return {"error": "not the developmental-education table for this cohort"}
+    # The developmental-education table is the first section; it may run past page 1 for a large college
+    # (Amendment 2), so the whole report is read and cut where the second section begins.
+    if NEXT_SECTION in text:
+        text = text[:text.index(NEXT_SECTION)]
     rows, total = [], None
     for line in text.splitlines():
         m = PERF_ROW.match(line)
         if not m:
             continue
-        name, n = m.group(1).strip(), [int(x) for x in m.group(2).split()]
+        name, n = m.group(1).strip(), [num(x) for x in m.group(2).split()]
         rec = {"university": name, "transfers": n[0],
                "dev ed": {"n": n[1], "gpa": n[2:7], "unknown": n[7], "enrolled next fall": n[8]},
                "no dev ed": {"n": n[9], "gpa": n[10:15], "unknown": n[15], "enrolled next fall": n[16]}}
@@ -95,6 +108,7 @@ def parse_performance(text: str, year: int) -> dict:
             rec["problems"] = problems
         if name == "INSTITUTION TOTAL":
             total = rec
+            break  # the first table ends at its total; nothing after it is read
         else:
             rows.append(rec)
     if total is None:
@@ -113,12 +127,13 @@ def parse_graduation(text: str, year: int) -> dict:
         m = GRAD_ROW.match(line)
         if not m:
             continue
-        rec = {"university": m.group(1).strip(), "transfers": int(m.group(2)), "graduated": int(m.group(3)),
+        rec = {"university": m.group(1).strip(), "transfers": num(m.group(2)), "graduated": num(m.group(3)),
                "percent": float(m.group(4))}
         if rec["graduated"] > rec["transfers"]:
             rec["problems"] = ["graduated > transfers"]
         if rec["university"] == "INSTITUTION TOTAL":
             total = rec
+            break
         else:
             rows.append(rec)
     if total is None:
@@ -158,9 +173,10 @@ def fetch_report(session, kind: str, fice: str, year: int, path: Path) -> str | 
     return err
 
 
-def crosswalk(fices: set[str]) -> dict:
-    """OPEID6 -> unit IDs, by fall year, from the IPEDS header files."""
-    out = {}
+def crosswalk(fices: set[str]) -> tuple[dict, dict]:
+    """OPEID6 -> unit IDs, by fall year, from the IPEDS header files; and each matched unit's name, so the
+    district matching in Amendment 2 can be checked."""
+    out, names = {}, {}
     for y in range(2012, PERF_YEARS[-1] + 1):
         got = mc.fetch(f"HD{y}.zip", False)
         if not got:
@@ -171,8 +187,9 @@ def crosswalk(fices: set[str]) -> dict:
             op = (r.get("OPEID") or "").strip().zfill(8)[:6]
             if op in fices:
                 by.setdefault(op, []).append(r["UNITID"])
+                names.setdefault(str(y), {})[r["UNITID"]] = (r.get("INSTNM") or "").strip()
         out[str(y)] = by
-    return out
+    return out, names
 
 
 def pell(work: Path) -> dict:
@@ -231,7 +248,7 @@ def main() -> None:
                     log.append({"report": kind, "fice": c["fice"], "year": y, "error": err})
                     continue
                 try:
-                    text = pdf_text(path, 1, 1) if kind == "2" else pdf_text(path)
+                    text = pdf_text(path)
                     res = parse(text, y)
                 except subprocess.CalledProcessError as e:
                     res = {"error": f"pdftotext failed: {e}"}
@@ -249,9 +266,11 @@ def main() -> None:
                               for r in perf + grad if "error" in r],
                    "download errors": log},
         "performance": perf, "graduation": grad}, indent=1))
+    xw, names = crosswalk({c["fice"] for c in cols})
     (OUT / "inputs.json").write_text(json.dumps({
         "written at (UTC)": stamp,
-        "crosswalk (fall year -> FICE -> IPEDS unit IDs)": crosswalk({c["fice"] for c in cols}),
+        "crosswalk (fall year -> FICE -> IPEDS unit IDs)": xw,
+        "IPEDS unit names (fall year -> unit ID -> name)": names,
         "Pell share (PCTPELL)": pell(work)}, indent=1))
     print("Wrote reports.json and inputs.json", flush=True)
 
