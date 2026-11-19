@@ -52,7 +52,17 @@ closure year, and the stock each year's band. Liberal arts colleges are
 read from the Carnegie basic classification in the header files (value 21,
 baccalaureate arts and sciences, in CCBASIC, C15BASIC, C18BASIC and
 C21BASIC; the newest of these present in a record is used) and reported as
-an extra group within private nonprofit four-year institutions.
+an extra group within private nonprofit four-year institutions. A new
+institution usually has no Carnegie classification in its first year (the
+classification is revised only every few years), so an opening is read as
+liberal arts from the first record of its own that carries a
+classification, as its size is; a closure from the last record carrying
+one at or before its closure year. The liberal arts stock is read from
+each year's records, and colleges entering or leaving the group because
+Carnegie reclassified them are counted separately ("reclassified in",
+"reclassified out"), so that a reclassification is never read as an
+opening or a closure. HD2004 carries no classification, so the group's
+stock starts in HD2005.
 
 For every group and the whole span: openings, successors, closures,
 mergers, and the replacement ratio (openings divided by closures, and
@@ -181,7 +191,8 @@ def exit_of(unitid: str, rows: dict, years: list) -> dict | None:
 
 
 def tally() -> dict:
-    return {"openings": 0, "successors": 0, "closures": 0, "mergers": 0}
+    return {"openings": 0, "successors": 0, "closures": 0, "mergers": 0, "reclassified in": 0,
+            "reclassified out": 0}
 
 
 def ratios(t: dict) -> dict:
@@ -204,10 +215,12 @@ def analyse(tables: dict) -> dict:
             if number(nid) is not None and number(nid) > 0 and nid != u:
                 successors.add(str(int(number(nid))))
 
-    def key_sets(r, b):
+    def key_sets(r, b, la=None):
         g = group(r)
         keys = [(g, "all sizes"), (g, b or "unknown")]
-        if g == "private nonprofit four-year" and liberal_arts(r):
+        if la is None:
+            la = liberal_arts(r)
+        if g == "private nonprofit four-year" and la:
             keys += [("private nonprofit four-year, liberal arts", "all sizes"),
                      ("private nonprofit four-year, liberal arts", b or "unknown")]
         return keys
@@ -217,7 +230,8 @@ def analyse(tables: dict) -> dict:
     act_n = {y: {"marked new (ACT = N) in frame": 0, "of them counted as openings": 0} for y in years}
     checks = {"events voided by reappearance as active": 0, "unrecorded disappearances": 0,
               "unrecorded disappearances first missing from the latest file": 0,
-              "openings whose size is never reported": 0, "closures whose size is never reported": 0}
+              "openings whose size is never reported": 0, "closures whose size is never reported": 0,
+              "liberal arts reclassifications": 0}
     listed = {"openings": [], "closures": [], "mergers": []}
 
     for y in years:
@@ -229,6 +243,24 @@ def analyse(tables: dict) -> dict:
             if r.get("ACT", "").upper() == "N":
                 act_n[y]["marked new (ACT = N) in frame"] += 1
 
+    la_group = "private nonprofit four-year, liberal arts"
+    for i in range(1, len(years)):
+        y0, y1 = years[i - 1], years[i]
+        for u, r1 in tables[y1].items():
+            r0 = tables[y0].get(u)
+            if r0 is None or not (in_frame(r0) and in_frame(r1)):
+                continue
+            if group(r0) != "private nonprofit four-year" or group(r1) != "private nonprofit four-year":
+                continue
+            a, c = liberal_arts(r0), liberal_arts(r1)
+            if a is None or c is None or a == c:
+                continue
+            kind = "reclassified in" if c else "reclassified out"
+            b = band(r1) or "unknown"
+            by_year[y1][la_group]["all sizes"][kind] += 1
+            by_year[y1][la_group][b][kind] += 1
+            checks["liberal arts reclassifications"] += 1
+
     for u, rows in history.items():
         fy = first_seen[u]
         if fy != years[0] and in_frame(rows[fy]):
@@ -236,8 +268,9 @@ def analyse(tables: dict) -> dict:
             b = next((band(rows[z]) for z in sorted(rows) if band(rows[z])), None)
             if b is None:
                 checks["openings whose size is never reported"] += 1
+            la = next((liberal_arts(rows[z]) for z in sorted(rows) if liberal_arts(rows[z]) is not None), None)
             kind = "successors" if u in successors else "openings"
-            for k in key_sets(r, b):
+            for k in key_sets(r, b, la):
                 by_year[fy][k[0]][k[1]][kind] += 1
             if kind == "openings":
                 if r.get("ACT", "").upper() == "N":
@@ -260,12 +293,13 @@ def analyse(tables: dict) -> dict:
         b = next((band(rows[z]) for z in reversed(before) if band(rows[z])), None)
         if b is None:
             checks["closures whose size is never reported"] += 1
+        la = next((liberal_arts(rows[z]) for z in reversed(before) if liberal_arts(rows[z]) is not None), None)
         if e["unrecorded"]:
             checks["unrecorded disappearances"] += 1
             if e["year"] == years[-1]:
                 checks["unrecorded disappearances first missing from the latest file"] += 1
         kind = "mergers" if e["merger"] else "closures"
-        for k in key_sets(r, b):
+        for k in key_sets(r, b, la):
             by_year[e["year"]][k[0]][k[1]][kind] += 1
         listed[kind].append({"unitid": u, "name": r.get("INSTNM", ""), "year": e["year"], "group": group(r),
                              "size": b or "unknown", "grounds": e["grounds"]})
