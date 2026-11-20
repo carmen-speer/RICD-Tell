@@ -1,0 +1,62 @@
+name: item 12 - law schools, download the ABA compilations
+
+# Manual-only. Runs "src/law school downloads.py" (channel selection
+# protocol, Amendments 8 and 12): requests the ABA Required Disclosures
+# national compilation spreadsheets from the same public addresses the
+# site's "Generate Report" buttons use (509 enrollment, attrition and, to
+# 2017, bar passage; first-time bar passage from 2018; employment
+# summaries), saves each file unchanged, and records its address, time,
+# size, SHA-256 and layout (sheet names and header rows only).
+# No 509 value is read. Commits data/v4 channels/law schools/.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: law-school-downloads
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install openpyxl==3.1.5
+
+      - name: Download the compilations
+        run: |
+          cd src
+          python "law school downloads.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/law schools/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 12: ABA compilation spreadsheets for the law-school record (no value read)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
