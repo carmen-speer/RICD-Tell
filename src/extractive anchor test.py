@@ -31,6 +31,14 @@ earlier. Instruction share: instruction expenses (F3E01 through fiscal 2013,
 F3E011 from fiscal 2014; the field was renamed, recorded as a possible
 segment break) over total expenses (F3B02), fiscal 2010 to 2023.
 
+Firming check (added November 20, to-do item 23c): each closed campus is
+sorted by why it left the header files (a documented closure; combined
+into another institution, by a new ID; or disappeared with no record),
+using the grounds of protocol v2's outcome coding, and E1 to E3 are
+recomputed counting documented closures only, and documented closures
+plus disappearances, so that campuses folded into another report are not
+counted as closing.
+
 This is exploratory: the outcomes are known. The predictions are tested
 blind with the HD2026 retest.
 
@@ -137,45 +145,74 @@ def main() -> None:
                          f"HD{FIRST} SECTOR values {dict(sectors)}; F1SYSTYP by year {field_status}. Nothing recorded.")
     years = list(range(FIRST + 1, last_file + 1))
 
-    # E1 and E3: cumulative closure curves; early window 2010-2013; crossing year
-    cc, ci = rate_curve(chain, years), rate_curve(indep, years)
-    crossing = next((y for y in years if cc[str(y)] > ci[str(y)]), None)
-    rng = np.random.default_rng(SEED)
+    def analyze(chain, indep):
+        # E1 and E3: cumulative closure curves; early window 2010-2013; crossing year
+        cc, ci = rate_curve(chain, years), rate_curve(indep, years)
+        crossing = next((y for y in years if cc[str(y)] > ci[str(y)]), None)
+        rng = np.random.default_rng(SEED)
 
-    def boot_diff(y):
-        d = []
-        for _ in range(BOOT):
-            a = rng.choice(len(chain), len(chain))
-            b = rng.choice(len(indep), len(indep))
-            ra = np.mean([chain[i]["closed"] is not None and chain[i]["closed"] <= y for i in a])
-            rb = np.mean([indep[i]["closed"] is not None and indep[i]["closed"] <= y for i in b])
-            d.append(ra - rb)
-        return [float(np.percentile(d, 2.5)), float(np.percentile(d, 97.5))]
+        def boot_diff(y):
+            d = []
+            for _ in range(BOOT):
+                a = rng.choice(len(chain), len(chain))
+                b = rng.choice(len(indep), len(indep))
+                ra = np.mean([chain[i]["closed"] is not None and chain[i]["closed"] <= y for i in a])
+                rb = np.mean([indep[i]["closed"] is not None and indep[i]["closed"] <= y for i in b])
+                d.append(ra - rb)
+            return [float(np.percentile(d, 2.5)), float(np.percentile(d, 97.5))]
 
-    e1 = {"window": "closures 2010-2013", "chain": cc["2013"], "independent": ci["2013"],
-          "difference (chain - independent)": cc["2013"] - ci["2013"], "95% interval": boot_diff(2013)}
-    e3 = {"cumulative closure rate by year, chain": cc, "cumulative closure rate by year, independent": ci,
-          "first year the chain curve is above the independent curve": crossing,
-          f"difference at {last_file}": cc[str(last_file)] - ci[str(last_file)],
-          f"95% interval at {last_file}": boot_diff(last_file)}
+        e1 = {"window": "closures 2010-2013", "chain": cc["2013"], "independent": ci["2013"],
+              "difference (chain - independent)": cc["2013"] - ci["2013"], "95% interval": boot_diff(2013)}
+        e3 = {"cumulative closure rate by year, chain": cc, "cumulative closure rate by year, independent": ci,
+              "first year the chain curve is above the independent curve": crossing,
+              f"difference at {last_file}": cc[str(last_file)] - ci[str(last_file)],
+              f"95% interval at {last_file}": boot_diff(last_file)}
 
-    # E2: clustering of closures in time within systems
-    by_sys = defaultdict(list)
-    for g in chain:
-        if g["system"] and g["closed"]:
-            by_sys[g["system"]].append(g["closed"])
-    same_year = sum(max(Counter(v).values()) for v in by_sys.values() if len(v) >= 2)
-    multi = sum(len(v) for v in by_sys.values() if len(v) >= 2)
-    yc = Counter(g["closed"] for g in chain if g["closed"])
-    yi = Counter(g["closed"] for g in indep if g["closed"])
-    peak = lambda c: max(c.values()) / sum(c.values()) if c else None
-    e2 = {"systems with two or more closed campuses": sum(1 for v in by_sys.values() if len(v) >= 2),
-          "share of those systems' closures falling in the system's single busiest year": same_year / multi if multi else None,
-          "share of all chain closures in the single busiest year": peak(yc),
-          "share of all independent closures in the single busiest year": peak(yi),
-          "chain closures by year": {str(k): v for k, v in sorted(yc.items())},
-          "independent closures by year": {str(k): v for k, v in sorted(yi.items())},
-          "largest systems by closed campuses": sorted(((s, len(v)) for s, v in by_sys.items()), key=lambda x: -x[1])[:10]}
+        # E2: clustering of closures in time within systems
+        by_sys = defaultdict(list)
+        for g in chain:
+            if g["system"] and g["closed"]:
+                by_sys[g["system"]].append(g["closed"])
+        same_year = sum(max(Counter(v).values()) for v in by_sys.values() if len(v) >= 2)
+        multi = sum(len(v) for v in by_sys.values() if len(v) >= 2)
+        yc = Counter(g["closed"] for g in chain if g["closed"])
+        yi = Counter(g["closed"] for g in indep if g["closed"])
+        peak = lambda c: max(c.values()) / sum(c.values()) if c else None
+        e2 = {"systems with two or more closed campuses": sum(1 for v in by_sys.values() if len(v) >= 2),
+              "share of those systems' closures falling in the system's single busiest year": same_year / multi if multi else None,
+              "share of all chain closures in the single busiest year": peak(yc),
+              "share of all independent closures in the single busiest year": peak(yi),
+              "chain closures by year": {str(k): v for k, v in sorted(yc.items())},
+              "independent closures by year": {str(k): v for k, v in sorted(yi.items())},
+              "largest systems by closed campuses": sorted(((s, len(v)) for s, v in by_sys.items()), key=lambda x: -x[1])[:10]}
+
+        return e1, e2, e3, crossing
+
+    e1, e2, e3, crossing = analyze(chain, indep)
+
+    # Firming check (to-do item 23c, run November 20): why each closed campus left the header files.
+    # Grounds as in the outcome coding of protocol v2: a = closure date, b = year out of business or
+    # deleted, c = a new ID (combined into another institution), d = disappeared with no record.
+    coding.SCORING_YEAR, coding.FILES = FIRST, sorted({y for rows in present.values() for y in rows})
+    for g in frame:
+        if g["closed"] is None:
+            g["how"] = None
+            continue
+        rows = present[g["unitid"]]
+        gr = coding.code(g["unitid"], {y: rows.get(y) for y in coding.FILES})["standing grounds"]
+        g["how"] = ("combined into another institution" if "c" in gr else
+                    "documented closure" if ("a" in gr or "b" in gr) else "disappeared with no record")
+    how = {grp: dict(Counter(g["how"] for g in sel if g["how"])) for grp, sel in (("chain", chain), ("independent", indep))}
+    sens = {}
+    for label, keep in (("documented closures only (combined and disappeared not counted as closing)",
+                         {"documented closure"}),
+                        ("documented closures and disappearances (combined not counted as closing)",
+                         {"documented closure", "disappeared with no record"})):
+        ch = [g | {"closed": g["closed"] if g["how"] in keep else None} for g in chain]
+        ind = [g | {"closed": g["closed"] if g["how"] in keep else None} for g in indep]
+        a1, a2, a3, cr = analyze(ch, ind)
+        sens[label] = {"E1 early protection": a1, "E2 clustering": {k: v for k, v in a2.items() if "by year" not in k},
+                       "E3 crossing curves": a3}
 
     # E4: instruction share of expenses over fiscal years, chain against independent
     ids = {g["unitid"]: g["chain"] for g in frame}
@@ -219,6 +256,8 @@ def main() -> None:
                                     "independent": sum(1 for g in indep if g["level"] == lv)}
                                for lv in ("four-year", "two-year", "less-than-two-year")}},
         "E1 early protection": e1, "E2 clustering": e2, "E3 crossing curves": e3, "E4 instruction share": e4,
+        "firming check: how each closed campus left the header files": how,
+        "firming check: E1 to E3 recomputed": sens,
         "note": "Exploratory: the outcomes are already known. The predictions are tested blind with the HD2026 retest."},
         indent=1) + "\n", encoding="utf-8")
     print(json.dumps({"E1": e1, "E3 crossing": crossing, "E4": {k: v for k, v in e4.items() if "trend" in k}}, indent=1))
