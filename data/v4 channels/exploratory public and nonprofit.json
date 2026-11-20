@@ -1,0 +1,277 @@
+{
+ "status": "EXPLORATORY. Not part of channel selection; changes nothing already selected.",
+ "written at (UTC)": "2026-11-20T15:37:34.679792+00:00",
+ "frame": 2014,
+ "header files": [
+  {
+   "table": "HD2014",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "file": "hd2014.csv",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  {
+   "table": "HD2015",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "file": "hd2015.csv",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  {
+   "table": "HD2016",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "file": "hd2016.csv",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  {
+   "table": "HD2017",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "file": "hd2017.csv",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  {
+   "table": "HD2018",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "file": "hd2018.csv",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  }
+ ],
+ "public and private nonprofit": {
+  "institutions": 2124,
+  "closures": 101,
+  "stage 1 repeated": {
+   "price": {
+    "N": 1790,
+    "closures": 65,
+    "AUC, size and sector": 0.7841293199554068,
+    "AUC, size, sector and price": 0.7806376811594202,
+    "gain": -0.0034916387959865736,
+    "gain 95% bootstrap": [
+     -0.029975492788210913,
+     0.01695765859946611
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "no gain",
+    "coverage": {
+     "covered": {
+      "N": 1790,
+      "closure rate": 0.036312849162011177,
+      "median log FTE": 7.7929678637423105,
+      "control": {
+       "public": 615,
+       "private nonprofit": 1175,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 334,
+      "closure rate": 0.10778443113772455,
+      "median log FTE": 6.54965074223381,
+      "control": {
+       "public": 88,
+       "private nonprofit": 246,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   },
+   "outcome (retention)": {
+    "N": 1777,
+    "closures": 68,
+    "AUC, size and sector": 0.7736636491928545,
+    "AUC, size, sector and outcome (retention)": 0.76247289436547,
+    "gain": -0.011190754827384408,
+    "gain 95% bootstrap": [
+     -0.030365318462456086,
+     0.0009831840136472383
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "no gain",
+    "coverage": {
+     "covered": {
+      "N": 1777,
+      "closure rate": 0.038266741699493526,
+      "median log FTE": 7.780720886117918,
+      "control": {
+       "public": 588,
+       "private nonprofit": 1189,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 347,
+      "closure rate": 0.09510086455331412,
+      "median log FTE": 6.690842277418564,
+      "control": {
+       "public": 115,
+       "private nonprofit": 232,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   },
+   "four-year": {
+    "N": 1777,
+    "closures": 67,
+    "AUC, size and sector": 0.7739722440429432,
+    "AUC, size, sector and four-year": 0.79248494370254,
+    "gain": 0.018512699659596787,
+    "gain 95% bootstrap": [
+     0.00048087741308361636,
+     0.038226107609792156
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "gain, interval above 0",
+    "coverage": {
+     "covered": {
+      "N": 1777,
+      "closure rate": 0.037703995498030385,
+      "median log FTE": 7.784057002639929,
+      "control": {
+       "public": 594,
+       "private nonprofit": 1183,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 347,
+      "closure rate": 0.09798270893371758,
+      "median log FTE": 6.584791392385716,
+      "control": {
+       "public": 109,
+       "private nonprofit": 238,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   }
+  }
+ },
+ "private nonprofit only": {
+  "institutions": 1421,
+  "closures": 94,
+  "stage 1 repeated": {
+   "price": {
+    "N": 1175,
+    "closures": 58,
+    "AUC, size and sector": 0.7821134195659557,
+    "AUC, size, sector and price": 0.787122217763097,
+    "gain": 0.005008798197141284,
+    "gain 95% bootstrap": [
+     -0.012468447205447476,
+     0.021071672548718515
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0",
+    "coverage": {
+     "covered": {
+      "N": 1175,
+      "closure rate": 0.04936170212765958,
+      "median log FTE": 7.374001859350161,
+      "control": {
+       "public": 0,
+       "private nonprofit": 1175,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 246,
+      "closure rate": 0.14634146341463414,
+      "median log FTE": 6.052086400750664,
+      "control": {
+       "public": 0,
+       "private nonprofit": 246,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   },
+   "outcome (retention)": {
+    "N": 1189,
+    "closures": 62,
+    "AUC, size and sector": 0.743495434639494,
+    "AUC, size, sector and outcome (retention)": 0.7213126484815525,
+    "gain": -0.022182786157941448,
+    "gain 95% bootstrap": [
+     -0.05247659532367803,
+     -0.0005481661127810405
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "no gain",
+    "coverage": {
+     "covered": {
+      "N": 1189,
+      "closure rate": 0.05214465937762826,
+      "median log FTE": 7.397561535524052,
+      "control": {
+       "public": 0,
+       "private nonprofit": 1189,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 232,
+      "closure rate": 0.13793103448275862,
+      "median log FTE": 5.780510074627172,
+      "control": {
+       "public": 0,
+       "private nonprofit": 232,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   },
+   "four-year": {
+    "N": 1183,
+    "closures": 61,
+    "AUC, size and sector": 0.7448934864556851,
+    "AUC, size, sector and four-year": 0.7648081587329417,
+    "gain": 0.01991467227725663,
+    "gain 95% bootstrap": [
+     -0.0031642683145666067,
+     0.04405592025849791
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0",
+    "coverage": {
+     "covered": {
+      "N": 1183,
+      "closure rate": 0.05156382079459002,
+      "median log FTE": 7.400620577371135,
+      "control": {
+       "public": 0,
+       "private nonprofit": 1183,
+       "for-profit": 0
+      }
+     },
+     "not covered": {
+      "N": 238,
+      "closure rate": 0.13865546218487396,
+      "median log FTE": 5.854809129531578,
+      "control": {
+       "public": 0,
+       "private nonprofit": 238,
+       "for-profit": 0
+      }
+     },
+     "wealth": "no wealth measure is in the committed inputs; not compared here"
+    }
+   }
+  }
+ }
+}
