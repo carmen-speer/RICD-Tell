@@ -1,0 +1,62 @@
+name: v4 step 1 - build the gap inputs and freeze the calibrations
+
+# Manual-only. Runs "src/v4 step 1 calibrations.py" under
+# "channel selection protocol.md" (step 1 of 5): builds the 2014 and 2019
+# four-year development frames, reads every price, need, completion and
+# retention input for fiscal years 2009-2019, fits the need-associated
+# discount (fractional logit, fiscal years <= 2013, validated 2014-2018) and
+# the retention calibrations (isotonic, per completion source), and commits
+# data/v4 channels/inputs.csv, "completion inputs.csv" and calibrations.json.
+# No closure outcome is read.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-step1
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Build the inputs and fit the calibrations
+        run: |
+          cd src
+          python "v4 step 1 calibrations.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 step 1: gap inputs and frozen calibrations (no closure outcome read)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
