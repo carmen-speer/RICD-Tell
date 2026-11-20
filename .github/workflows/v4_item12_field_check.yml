@@ -1,0 +1,62 @@
+name: v4 item 12 field check - endowment and value fields
+
+# Manual-only. Runs "src/v4 item 12 field check.py" (channel selection
+# protocol, Amendment 8): downloads the IPEDS private nonprofit finance
+# dictionaries for fiscal 2009 to 2024 (never the data, never an outcome)
+# and lists the endowment variables by year; downloads the College
+# Scorecard release asset (SHA-256 checked), lists its files, records
+# whether the field-of-study files are there, and reads only the header row
+# of each yearly file to list its repayment, default and earnings columns.
+# Commits data/v4 channels/"item 12 field check.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-item12-field-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Check the dictionaries and the Scorecard headers
+        run: |
+          cd src
+          python "v4 item 12 field check.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4: item 12 field check (IPEDS endowment dictionaries, Scorecard headers; no data, no outcome)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
