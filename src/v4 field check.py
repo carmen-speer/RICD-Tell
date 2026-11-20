@@ -72,10 +72,36 @@ def tables(y: int) -> dict[str, str]:
     }
 
 
+def xls_rows(content: bytes) -> list[list[str]]:
+    """Every row of every sheet of the old-format .xls inside a dictionary zip."""
+    import xlrd
+    z = zipfile.ZipFile(io.BytesIO(content))
+    out = []
+    for n in z.namelist():
+        if not n.lower().endswith(".xls"):
+            continue
+        book = xlrd.open_workbook(file_contents=z.read(n))
+        for sh in book.sheets():
+            for i in range(sh.nrows):
+                cells = []
+                for v in sh.row_values(i):
+                    if isinstance(v, float) and v == int(v):
+                        v = int(v)
+                    cells.append(str(v).strip())
+                if any(cells):
+                    out.append(cells)
+    return out
+
+
+ALTERNATE_NAMES = {"IC_MISSION": lambda y: [f"IC{y}MISSION", f"IC{y}_MISSION_STATEMENT", f"IC{y}MISSIONSTMT"]}
+
+
 def dictionary_rows(content: bytes) -> tuple[list[list[str]], str]:
     names = zipfile.ZipFile(io.BytesIO(content)).namelist()
     if any(n.lower().endswith(".xlsx") for n in names):
         return mc.xlsx_rows(content), "xlsx"
+    if any(n.lower().endswith(".xls") for n in names):
+        return xls_rows(content), "xls"
     return [], "unread (" + ", ".join(sorted({Path(n).suffix.lower() or n for n in names})) + ")"
 
 
@@ -85,7 +111,7 @@ def check(name: str) -> dict:
         return {"status": "not served"}
     content, url = got
     rows, fmt = dictionary_rows(content)
-    out = {"status": "read" if rows else "dictionary " + fmt, "dictionary url": url, "rows read": len(rows),
+    out = {"status": "read" if rows else "dictionary " + fmt, "format": fmt, "dictionary url": url, "rows read": len(rows),
            "matches": {}}
     for concept, pat in CONCEPTS.items():
         rx = re.compile(pat, re.I)
@@ -109,7 +135,14 @@ def main() -> None:
     result = {}
     for y in range(a.first, a.last + 1):
         for key, name in tables(y).items():
-            result.setdefault(key, {})[str(y)] = {"file": name, **check(name)}
+            got = check(name)
+            if got["status"] == "not served" and key in ALTERNATE_NAMES:
+                for alt in ALTERNATE_NAMES[key](y):
+                    tried = check(alt)
+                    if tried["status"] != "not served":
+                        name, got = alt, tried
+                        break
+            result.setdefault(key, {})[str(y)] = {"file": name, **got}
             print(y, key, name, result[key][str(y)]["status"], flush=True)
     summary = {key: {s: [y for y, v in years.items() if v["status"] == s]
                      for s in sorted({v["status"] for v in years.values()})}
