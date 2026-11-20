@@ -82,8 +82,32 @@ When the maintainer says a run has started:
 3. Then either continue with the next piece of work or hand the
    conversation back. Nothing runs in between.
 4. Each check is a single instant look at the run's status. If the run is
-   done at the first check, cancel the second. If it is still running at
-   the second, say so and schedule one later window; never keep checking.
+   done at the first check, leave the second to fire and answer it in one
+   line (deleting a scheduled check needs the maintainer's approval, which
+   interrupts a low-contact day). If it is still running at the second,
+   say so and schedule one later window; never keep checking.
 
 The maintainer saying "done" after a commit means the files are committed,
 not that the run has finished.
+
+## How to report the tracker's results (hard rule)
+
+Never present the size-and-sector comparison as the tracker's headline
+result or as a failure, in the README, a report, a summary, or a reply.
+
+Why: size and sector predict four-year closures as well as they do
+because they stand in for anchoring (states, systems and endowments hold
+up the colleges those two variables describe). The tracker was never
+expected to beat them outright without near-perfect accuracy, so not
+beating them is an expected result, not a failure. Putting it first made
+outside AI reviewers (November 20, 2026) describe a tracker that passed
+its pre-registered test as one that "failed," which misreports the work.
+
+The headline is what the tracker does: it passed its pre-registered test
+(v3: 32 of 56 closures caught, J 0.49), it beats the baseline trackers
+(critical slowing down, the flag-every-for-profit rule), its anchor
+sensor clears false flags on supported colleges, and it catches the
+edge cases size and sector miss. The size-and-sector comparison is still
+reported, honestly and with its numbers, inside the results and with
+the anchoring explanation beside it, never as its own heading or as a
+stand-alone limitation.
