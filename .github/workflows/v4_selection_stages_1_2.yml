@@ -1,0 +1,59 @@
+name: v4 selection stages 1 and 2 - test each gap and the combinations (2014 frame)
+
+# Manual-only. Runs "src/v4 selection stages 1 and 2.py" under "channel
+# selection protocol.md" (section 4 and Amendment 2): reads the committed
+# gap values, then the 2014 frame's closure outcomes (HD2014 to HD2019,
+# primary coding of protocol v2), and tests each gap alone (stage 1) and the
+# carried gaps together (stage 2) against size and sector, on out-of-fold
+# predictions. The 2019 frame's outcomes are not read. Commits
+# data/v4 channels/"selection stages 1 and 2.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-selection
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run stages 1 and 2
+        run: |
+          cd src
+          python "v4 selection stages 1 and 2.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 selection stages 1 and 2 (2014 frame)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
