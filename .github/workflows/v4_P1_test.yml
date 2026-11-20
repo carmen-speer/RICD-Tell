@@ -1,0 +1,56 @@
+name: v4 P1 test - does a widening excess discount precede closure
+
+# Manual-only. Runs "src/v4 P1 test.py" under "channel selection
+# protocol.md", Amendment 5: tests prediction P1 (Spine §15.2.1) on the 2014
+# and 2019 development frames from the committed gap values and inputs and
+# the header-file outcomes. Commits data/v4 channels/"P1 test.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-p1
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the P1 test
+        run: |
+          cd src
+          python "v4 P1 test.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4: test of prediction P1 (2014 and 2019 frames)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
