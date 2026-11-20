@@ -1,0 +1,57 @@
+name: v4 two-year count - the interim test frame (no outcomes)
+
+# Manual-only. Runs "src/v4 two-year count.py": counts the degree-granting
+# two-year institutions in HD2019 by sector and state, leaving out Texas
+# public two-year colleges, before any interim-test protocol is written.
+# Reads no later header file, so no outcome is seen. Commits
+# data/v4 two-year/count.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-two-year-count
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Count the two-year frame
+        run: |
+          cd src
+          python "v4 two-year count.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 two-year/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 two-year count: the interim test frame (no outcomes)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
