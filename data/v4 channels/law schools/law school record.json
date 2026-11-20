@@ -1,0 +1,1119 @@
+{
+ "record": "Item 12: ABA 509 law-school record (descriptive, not a test); Amendments 8, 12 and 13",
+ "written at (UTC)": "2026-11-20T18:45:59.059014+00:00",
+ "expectation (Amendment 8)": "each closed school sat in the bottom decile on first-time bar passage or on employment in at least two of the three years before it closed",
+ "closed schools meeting it": "5 of 7",
+ "meeting it": [
+  "Charlotte School of Law",
+  "Arizona Summit Law School",
+  "Valparaiso University School of Law",
+  "Whittier Law School",
+  "Florida Coastal School of Law"
+ ],
+ "closed schools": {
+  "Indiana Tech Law School": {
+   "names in the ABA files": [
+    "INDIANA TECH"
+   ],
+   "ending year": 2017,
+   "years": {
+    "2012": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2013": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2014": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2015": {
+     "first-time bar passage": {
+      "value": 0.0,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": 0.0,
+      "percentile among ABA schools": 39.7,
+      "schools reporting": 203
+     },
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2016": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": {
+      "value": 23.5,
+      "percentile among ABA schools": 89.0,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 40.0,
+      "percentile among ABA schools": 0.7,
+      "schools reporting": 204
+     }
+    }
+   },
+   "years with no entering class": [],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 1,
+   "of those three years, years with a bar passage or employment value": 1,
+   "expectation met (two or more of three)": false
+  },
+  "Charlotte School of Law": {
+   "names in the ABA files": [
+    "CHARLOTTE SCHOOL OF LAW"
+   ],
+   "ending year": 2018,
+   "years": {
+    "2013": {
+     "first-time bar passage": {
+      "value": 61.72,
+      "percentile among ABA schools": 5.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -8.87,
+      "percentile among ABA schools": 9.1,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 36.86,
+      "percentile among ABA schools": 12.9,
+      "schools reporting": 205
+     },
+     "first-year attrition": {
+      "value": 22.6,
+      "percentile among ABA schools": 86.9,
+      "schools reporting": 203
+     },
+     "first-year enrollment": {
+      "value": 535.0,
+      "percentile among ABA schools": 97.8,
+      "schools reporting": 203
+     }
+    },
+    "2014": {
+     "first-time bar passage": {
+      "value": 57.93,
+      "percentile among ABA schools": 6.7,
+      "schools reporting": 201
+     },
+     "bar passage difference from state": {
+      "value": -11.73,
+      "percentile among ABA schools": 9.7,
+      "schools reporting": 201
+     },
+     "employment": {
+      "value": 34.14,
+      "percentile among ABA schools": 6.2,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 32.2,
+      "percentile among ABA schools": 93.8,
+      "schools reporting": 203
+     },
+     "first-year enrollment": {
+      "value": 455.0,
+      "percentile among ABA schools": 97.3,
+      "schools reporting": 203
+     }
+    },
+    "2015": {
+     "first-time bar passage": {
+      "value": 46.26,
+      "percentile among ABA schools": 3.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -19.22,
+      "percentile among ABA schools": 4.7,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 26.32,
+      "percentile among ABA schools": 3.2,
+      "schools reporting": 205
+     },
+     "first-year attrition": {
+      "value": 44.6,
+      "percentile among ABA schools": 97.3,
+      "schools reporting": 201
+     },
+     "first-year enrollment": {
+      "value": 354.0,
+      "percentile among ABA schools": 93.8,
+      "schools reporting": 201
+     }
+    },
+    "2016": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": {
+      "value": 23.53,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 49.2,
+      "percentile among ABA schools": 98.3,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 391.0,
+      "percentile among ABA schools": 95.3,
+      "schools reporting": 204
+     }
+    },
+    "2017": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    }
+   },
+   "years with no entering class": [],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 2,
+   "of those three years, years with a bar passage or employment value": 2,
+   "expectation met (two or more of three)": true
+  },
+  "Arizona Summit Law School": {
+   "names in the ABA files": [
+    "ARIZONA SUMMIT LAW SCHOOL"
+   ],
+   "ending year": 2020,
+   "years": {
+    "2015": {
+     "first-time bar passage": {
+      "value": 41.64,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -24.17,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 39.82,
+      "percentile among ABA schools": 12.9,
+      "schools reporting": 205
+     },
+     "first-year attrition": {
+      "value": 28.8,
+      "percentile among ABA schools": 90.3,
+      "schools reporting": 201
+     },
+     "first-year enrollment": {
+      "value": 296.0,
+      "percentile among ABA schools": 88.8,
+      "schools reporting": 201
+     }
+    },
+    "2016": {
+     "first-time bar passage": {
+      "value": 34.43,
+      "percentile among ABA schools": 2.2,
+      "schools reporting": 202
+     },
+     "bar passage difference from state": {
+      "value": -30.99,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 202
+     },
+     "employment": {
+      "value": 38.01,
+      "percentile among ABA schools": 11.6,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 33.5,
+      "percentile among ABA schools": 94.4,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 173.0,
+      "percentile among ABA schools": 52.7,
+      "schools reporting": 204
+     }
+    },
+    "2017": {
+     "first-time bar passage": {
+      "value": 26.53,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -40.09,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 34.44,
+      "percentile among ABA schools": 5.2,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 27.2,
+      "percentile among ABA schools": 88.4,
+      "schools reporting": 202
+     },
+     "first-year enrollment": {
+      "value": 67.0,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 202
+     }
+    },
+    "2018": {
+     "first-time bar passage": {
+      "value": 38.94,
+      "percentile among ABA schools": 4.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -31.74,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 203
+     },
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    }
+   },
+   "years with no entering class": [
+    2018,
+    2019
+   ],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 2,
+   "of those three years, years with a bar passage or employment value": 2,
+   "expectation met (two or more of three)": true
+  },
+  "Concordia University School of Law": {
+   "names in the ABA files": [
+    "CONCORDIA LAW SCHOOL"
+   ],
+   "ending year": 2020,
+   "years": {
+    "2015": {
+     "first-time bar passage": {
+      "value": 55.56,
+      "percentile among ABA schools": 10.8,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -16.58,
+      "percentile among ABA schools": 7.6,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 41.67,
+      "percentile among ABA schools": 14.9,
+      "schools reporting": 205
+     },
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2016": {
+     "first-time bar passage": {
+      "value": 77.14,
+      "percentile among ABA schools": 54.0,
+      "schools reporting": 202
+     },
+     "bar passage difference from state": {
+      "value": -2.04,
+      "percentile among ABA schools": 37.4,
+      "schools reporting": 202
+     },
+     "employment": {
+      "value": 60.53,
+      "percentile among ABA schools": 45.6,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 5.3,
+      "percentile among ABA schools": 28.2,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 45.0,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 204
+     }
+    },
+    "2017": {
+     "first-time bar passage": {
+      "value": 84.0,
+      "percentile among ABA schools": 68.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": 4.54,
+      "percentile among ABA schools": 56.9,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 62.5,
+      "percentile among ABA schools": 43.1,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 11.1,
+      "percentile among ABA schools": 67.6,
+      "schools reporting": 202
+     },
+     "first-year enrollment": {
+      "value": 58.0,
+      "percentile among ABA schools": 2.2,
+      "schools reporting": 202
+     }
+    },
+    "2018": {
+     "first-time bar passage": {
+      "value": 68.0,
+      "percentile among ABA schools": 32.3,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -6.79,
+      "percentile among ABA schools": 30.8,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 51.72,
+      "percentile among ABA schools": 15.0,
+      "schools reporting": 200
+     },
+     "first-year attrition": {
+      "value": 10.5,
+      "percentile among ABA schools": 77.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 59.0,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": {
+      "value": 66.67,
+      "percentile among ABA schools": 22.1,
+      "schools reporting": 201
+     },
+     "bar passage difference from state": {
+      "value": -6.3,
+      "percentile among ABA schools": 26.6,
+      "schools reporting": 201
+     },
+     "employment": {
+      "value": 64.1,
+      "percentile among ABA schools": 29.0,
+      "schools reporting": 198
+     },
+     "first-year attrition": {
+      "value": 13.6,
+      "percentile among ABA schools": 88.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 89.0,
+      "percentile among ABA schools": 8.2,
+      "schools reporting": 200
+     }
+    }
+   },
+   "years with no entering class": [],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 0,
+   "of those three years, years with a bar passage or employment value": 3,
+   "expectation met (two or more of three)": false
+  },
+  "Valparaiso University School of Law": {
+   "names in the ABA files": [
+    "VALPARAISO UNIVERSITY"
+   ],
+   "ending year": 2020,
+   "years": {
+    "2015": {
+     "first-time bar passage": {
+      "value": 63.33,
+      "percentile among ABA schools": 19.5,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -16.12,
+      "percentile among ABA schools": 8.1,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 41.98,
+      "percentile among ABA schools": 15.9,
+      "schools reporting": 205
+     },
+     "first-year attrition": {
+      "value": 11.7,
+      "percentile among ABA schools": 61.9,
+      "schools reporting": 201
+     },
+     "first-year enrollment": {
+      "value": 139.0,
+      "percentile among ABA schools": 35.6,
+      "schools reporting": 201
+     }
+    },
+    "2016": {
+     "first-time bar passage": {
+      "value": 49.31,
+      "percentile among ABA schools": 9.7,
+      "schools reporting": 202
+     },
+     "bar passage difference from state": {
+      "value": -23.39,
+      "percentile among ABA schools": 6.2,
+      "schools reporting": 202
+     },
+     "employment": {
+      "value": 35.62,
+      "percentile among ABA schools": 8.6,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 19.4,
+      "percentile among ABA schools": 80.6,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 110.0,
+      "percentile among ABA schools": 18.9,
+      "schools reporting": 204
+     }
+    },
+    "2017": {
+     "first-time bar passage": {
+      "value": 46.6,
+      "percentile among ABA schools": 5.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -29.84,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 38.4,
+      "percentile among ABA schools": 6.7,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 9.1,
+      "percentile among ABA schools": 62.1,
+      "schools reporting": 202
+     },
+     "first-year enrollment": {
+      "value": 31.0,
+      "percentile among ABA schools": 0.7,
+      "schools reporting": 202
+     }
+    },
+    "2018": {
+     "first-time bar passage": {
+      "value": 36.96,
+      "percentile among ABA schools": 3.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -37.04,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 203
+     },
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    }
+   },
+   "years with no entering class": [
+    2018,
+    2019
+   ],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 2,
+   "of those three years, years with a bar passage or employment value": 2,
+   "expectation met (two or more of three)": true
+  },
+  "Whittier Law School": {
+   "names in the ABA files": [
+    "WHITTIER LAW SCHOOL"
+   ],
+   "ending year": 2020,
+   "years": {
+    "2015": {
+     "first-time bar passage": {
+      "value": 38.07,
+      "percentile among ABA schools": 1.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -25.74,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 21.28,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 205
+     },
+     "first-year attrition": {
+      "value": 34.7,
+      "percentile among ABA schools": 93.5,
+      "schools reporting": 201
+     },
+     "first-year enrollment": {
+      "value": 146.0,
+      "percentile among ABA schools": 39.8,
+      "schools reporting": 201
+     }
+    },
+    "2016": {
+     "first-time bar passage": {
+      "value": 22.66,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 202
+     },
+     "bar passage difference from state": {
+      "value": -37.51,
+      "percentile among ABA schools": 0.7,
+      "schools reporting": 202
+     },
+     "employment": {
+      "value": 29.69,
+      "percentile among ABA schools": 3.7,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 42.5,
+      "percentile among ABA schools": 97.3,
+      "schools reporting": 204
+     },
+     "first-year enrollment": {
+      "value": 132.0,
+      "percentile among ABA schools": 30.9,
+      "schools reporting": 204
+     }
+    },
+    "2017": {
+     "first-time bar passage": {
+      "value": 35.26,
+      "percentile among ABA schools": 1.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -31.37,
+      "percentile among ABA schools": 1.7,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 29.53,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 203
+     },
+     "first-year attrition": {
+      "value": 12.9,
+      "percentile among ABA schools": 74.0,
+      "schools reporting": 202
+     },
+     "first-year enrollment": {
+      "value": 2.0,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 202
+     }
+    },
+    "2018": {
+     "first-time bar passage": {
+      "value": 21.84,
+      "percentile among ABA schools": 0.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -39.87,
+      "percentile among ABA schools": 0.7,
+      "schools reporting": 203
+     },
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 200
+     }
+    }
+   },
+   "years with no entering class": [
+    2018,
+    2019
+   ],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 2,
+   "of those three years, years with a bar passage or employment value": 2,
+   "expectation met (two or more of three)": true
+  },
+  "Florida Coastal School of Law": {
+   "names in the ABA files": [
+    "FLORIDA COASTAL SCHOOL OF LAW"
+   ],
+   "ending year": 2023,
+   "years": {
+    "2018": {
+     "first-time bar passage": {
+      "value": 56.45,
+      "percentile among ABA schools": 15.5,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -11.35,
+      "percentile among ABA schools": 21.4,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 50.54,
+      "percentile among ABA schools": 14.2,
+      "schools reporting": 200
+     },
+     "first-year attrition": {
+      "value": 38.8,
+      "percentile among ABA schools": 99.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 73.0,
+      "percentile among ABA schools": 4.2,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": {
+      "value": 61.64,
+      "percentile among ABA schools": 13.7,
+      "schools reporting": 201
+     },
+     "bar passage difference from state": {
+      "value": -11.47,
+      "percentile among ABA schools": 15.2,
+      "schools reporting": 201
+     },
+     "employment": {
+      "value": 56.06,
+      "percentile among ABA schools": 13.4,
+      "schools reporting": 198
+     },
+     "first-year attrition": {
+      "value": 15.0,
+      "percentile among ABA schools": 92.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 77.0,
+      "percentile among ABA schools": 3.8,
+      "schools reporting": 200
+     }
+    },
+    "2020": {
+     "first-time bar passage": {
+      "value": 59.32,
+      "percentile among ABA schools": 7.8,
+      "schools reporting": 199
+     },
+     "bar passage difference from state": {
+      "value": -11.43,
+      "percentile among ABA schools": 13.3,
+      "schools reporting": 199
+     },
+     "employment": {
+      "value": 57.81,
+      "percentile among ABA schools": 22.1,
+      "schools reporting": 197
+     },
+     "first-year attrition": {
+      "value": 28.6,
+      "percentile among ABA schools": 99.2,
+      "schools reporting": 197
+     },
+     "first-year enrollment": {
+      "value": 103.0,
+      "percentile among ABA schools": 8.1,
+      "schools reporting": 197
+     }
+    },
+    "2021": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": {
+      "value": 48.94,
+      "percentile among ABA schools": 6.3,
+      "schools reporting": 197
+     },
+     "first-year attrition": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 196
+     },
+     "first-year enrollment": {
+      "value": null,
+      "percentile among ABA schools": null,
+      "schools reporting": 196
+     }
+    },
+    "2022": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    }
+   },
+   "years with no entering class": [
+    2021
+   ],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 2,
+   "of those three years, years with a bar passage or employment value": 2,
+   "expectation met (two or more of three)": true
+  }
+ },
+ "approval withdrawn, still open (their own group)": {
+  "University of La Verne College of Law": {
+   "names in the ABA files": [
+    "UNIVERSITY OF LA VERNE"
+   ],
+   "ending year": 2023,
+   "years": {
+    "2018": {
+     "first-time bar passage": {
+      "value": 31.49,
+      "percentile among ABA schools": 2.2,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -29.08,
+      "percentile among ABA schools": 4.2,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 22.41,
+      "percentile among ABA schools": 1.8,
+      "schools reporting": 200
+     },
+     "first-year attrition": {
+      "value": 8.0,
+      "percentile among ABA schools": 65.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 96.0,
+      "percentile among ABA schools": 10.5,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": {
+      "value": 40.51,
+      "percentile among ABA schools": 2.7,
+      "schools reporting": 201
+     },
+     "bar passage difference from state": {
+      "value": -28.72,
+      "percentile among ABA schools": 2.2,
+      "schools reporting": 201
+     },
+     "employment": null,
+     "first-year attrition": {
+      "value": 7.3,
+      "percentile among ABA schools": 66.2,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 98.0,
+      "percentile among ABA schools": 10.0,
+      "schools reporting": 200
+     }
+    },
+    "2020": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2021": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2022": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    }
+   },
+   "years with no entering class": [],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 0,
+   "of those three years, years with a bar passage or employment value": 0,
+   "expectation met (two or more of three)": false
+  },
+  "Thomas Jefferson School of Law": {
+   "names in the ABA files": [
+    "THOMAS JEFFERSON SCHOOL OF LAW"
+   ],
+   "ending year": 2023,
+   "years": {
+    "2018": {
+     "first-time bar passage": {
+      "value": 26.43,
+      "percentile among ABA schools": 0.7,
+      "schools reporting": 203
+     },
+     "bar passage difference from state": {
+      "value": -36.91,
+      "percentile among ABA schools": 1.7,
+      "schools reporting": 203
+     },
+     "employment": {
+      "value": 19.44,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 200
+     },
+     "first-year attrition": {
+      "value": 26.0,
+      "percentile among ABA schools": 98.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 57.0,
+      "percentile among ABA schools": 0.8,
+      "schools reporting": 200
+     }
+    },
+    "2019": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": {
+      "value": 14.0,
+      "percentile among ABA schools": 90.8,
+      "schools reporting": 200
+     },
+     "first-year enrollment": {
+      "value": 50.0,
+      "percentile among ABA schools": 1.2,
+      "schools reporting": 200
+     }
+    },
+    "2020": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2021": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    },
+    "2022": {
+     "first-time bar passage": null,
+     "bar passage difference from state": null,
+     "employment": null,
+     "first-year attrition": null,
+     "first-year enrollment": null
+    }
+   },
+   "years with no entering class": [],
+   "years in the bottom decile on bar passage or employment, of the three before the ending": 0,
+   "of those three years, years with a bar passage or employment value": 0,
+   "expectation met (two or more of three)": false
+  }
+ },
+ "not found in the ABA files": [],
+ "years covered by measure": {
+  "first-time bar passage": [
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "bar passage difference from state": [
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "employment": [
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "first-year attrition": [
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "first-year enrollment": [
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ]
+ },
+ "percentile": "share of schools reporting that year with a lower value, ties counted half; higher attrition is worse, so a high attrition percentile is the unfavorable end",
+ "notes": [
+  "bar passage 2023 first time.xlsx 2023_FirstTimeBarPassage: graduate year 2022 read from the column names or sheet title",
+  "bar passage 2024 first time.xlsx 2024_FirstTimeBarPassage: graduate year 2023 read from the column names or sheet title",
+  "bar passage 2025 first time.xlsx 2025_FirstTimeBarPassage: graduate year 2024 read from the column names or sheet title",
+  "bar passage 2026 first time.xlsx 2026_FirstTimeBarPassage: graduate year 2025 read from the column names or sheet title",
+  "A year with no first-year class (enrollment 0: the school was winding down) has its enrollment and attrition set to missing, and is listed under 'years with no entering class'.",
+  "The ABA compilations are generated from the ABA's current records, and they omit some schools from some of their last reporting years after the school lost approval (for example, Arizona Summit, Valparaiso and Whittier have no employment rows after the class of 2017, and La Verne and Thomas Jefferson have few rows after 2019, though all were still approved then). Missing years are a gap in the source, concentrated in the years just before an ending.",
+  "Attrition from 2018 is academic plus other attrition (as percentages); 2011-2017 use the file's own first-year attrition percentage, which can include transfers; percentiles are within each year."
+ ]
+}
