@@ -1,0 +1,60 @@
+name: v4 item 12 coverage count - value columns
+
+# Manual-only. Runs "src/v4 item 12 coverage count.py" (channel selection
+# protocol, Amendment 10): downloads the College Scorecard release asset
+# (SHA-256 checked) and counts, for each yearly file, how many institutions
+# have a non-missing entry in each candidate repayment, default and earnings
+# column. Presence only: no value is used, and no outcome is read.
+# Commits data/v4 channels/"item 12 coverage count.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-item12-coverage-count
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Count non-missing entries
+        run: |
+          cd src
+          python "v4 item 12 coverage count.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4: item 12 coverage count of the Scorecard value columns (presence only, no outcome)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
