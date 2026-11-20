@@ -22,7 +22,7 @@ Exact IPEDS fields for each measure, form and year: section 7.
 
 ## 3. States and the anchored share
 
-Each college-year is in one of three states: **self-covering** (c ≤ 1); **held up by anchors** (c > 1 and g ≤ 1); **short beyond its anchors** (g > 1), the only state counted as true collapse risk. Reported alongside: the **anchored share** A / (W − E_exch) for every year with c > 1. This is the first working version of the anchor-quantification sensor (future-projects/Anchor-Quantification Sensor - Seed Note.md).
+Each college-year is in one of three states: **self-covering** (c ≤ 1); **held up by anchors** (c > 1 and g ≤ 1); **short beyond its anchors** (g > 1), the only state counted as true collapse risk. Reported alongside: the **anchored share** A / (W − E_exch) for every year with c > 1, and **who carries the strain**: the same share split by the anchor's source, federal appropriations, state appropriations, local appropriations (taxpayers at each level), private gifts and contributions, and endowment spending, each as its part of W − E_exch, with the sectors' totals by source for each year. Report-only; no source split enters any classification. Where the strain comes from inside the college (which spending lines drive the gap) is a separate item, not part of this protocol. This is the first working version of the anchor-quantification sensor (future-projects/Anchor-Quantification Sensor - Seed Note.md).
 
 ## 4. The window
 
