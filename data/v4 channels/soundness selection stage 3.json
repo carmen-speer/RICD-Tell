@@ -1,0 +1,106 @@
+{
+ "protocol": "channel selection protocol.md, Amendment 6: soundness stage 3 (2019 frame)",
+ "frame": 2019,
+ "header files": [
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  {
+   "table": "HD2020",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "file": "hd2020.csv",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  {
+   "table": "HD2021",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "file": "hd2021.csv",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  {
+   "table": "HD2022",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "file": "hd2022.csv",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  {
+   "table": "HD2023",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "file": "HD2023.csv",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  {
+   "table": "HD2024",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "file": "HD2024.csv",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  {
+   "table": "HD2025",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "file": "hd2025.csv",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ ],
+ "header files not yet released": [
+  "HD2026"
+ ],
+ "carried": [
+  "exit"
+ ],
+ "institutions with size": 2520,
+ "closures": 227,
+ "note": "Selection-stage performance, used only to choose; never an estimate of v4's accuracy.",
+ "exit against size and sector": {
+  "N": 2109,
+  "closures": 112,
+  "AUC, size and sector": 0.7579427176479004,
+  "AUC, size, sector and exit": 0.7707409328278132,
+  "gain": 0.012798215179912753,
+  "gain 95% bootstrap": [
+   -0.004353093085325215,
+   0.032475328223317
+  ],
+  "bootstrap resamples used": 2000,
+  "verdict": "positive, interval includes 0"
+ },
+ "prediction (several parts beat one)": "not testable: only one reading was carried",
+ "coverage": {
+  "covered": {
+   "N": 2109,
+   "closure rate": 0.05310573731626363,
+   "median log FTE": 7.739359202689098,
+   "control": {
+    "public": 724,
+    "private nonprofit": 1169,
+    "for-profit": 216
+   }
+  },
+  "not covered": {
+   "N": 411,
+   "closure rate": 0.2798053527980535,
+   "median log FTE": 4.969813299576001,
+   "control": {
+    "public": 47,
+    "private nonprofit": 238,
+    "for-profit": 126
+   }
+  },
+  "wealth": "no wealth measure is in the committed inputs; not compared here"
+ },
+ "enters v4 (Amendment 4)": {
+  "exit": false
+ },
+ "verdict": "no soundness reading is confirmed; the dimension does not enter v4",
+ "written at (UTC)": "2026-11-20T16:29:57.520953+00:00"
+}
