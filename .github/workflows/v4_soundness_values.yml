@@ -1,0 +1,61 @@
+name: v4 soundness values - exit, coverage and the frozen norms
+
+# Manual-only. Runs "src/v4 soundness values.py" under "channel selection
+# protocol.md", Amendment 6: reads the IPEDS staffing, new-hire and finance
+# files, computes exit rates and operating coverage, fixes and freezes the
+# exit norms on staffing years 2013 and 2014, and computes the soundness
+# readings at the 2014 and 2019 scoring years. No closure outcome is read.
+# Commits data/v4 channels/"soundness norms.json",
+# "soundness values at scoring years.csv" and "soundness inputs.csv".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-soundness-values
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Compute the soundness values
+        run: |
+          cd src
+          python "v4 soundness values.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4: soundness inputs, frozen exit norms and readings (no closure outcome read)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
