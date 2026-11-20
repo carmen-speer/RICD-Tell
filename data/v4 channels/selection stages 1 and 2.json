@@ -1,0 +1,284 @@
+{
+ "protocol": "channel selection protocol.md, section 4 and Amendment 2: stages 1 and 2 (2014 frame)",
+ "written at (UTC)": "2026-11-20T15:10:24.759040+00:00",
+ "frame": 2014,
+ "header files": [
+  {
+   "table": "HD2014",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "file": "hd2014.csv",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  {
+   "table": "HD2015",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "file": "hd2015.csv",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  {
+   "table": "HD2016",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "file": "hd2016.csv",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  {
+   "table": "HD2017",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "file": "hd2017.csv",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  {
+   "table": "HD2018",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "file": "hd2018.csv",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  }
+ ],
+ "institutions in frame": 3199,
+ "with size": 2828,
+ "outcome components": {
+  "closed or failed (primary)": 532,
+  "closure date or deletion (a or b)": 435,
+  "merger (successor institution, c)": 61,
+  "disappearance only (d)": 77
+ },
+ "settings": {
+  "folds": 10,
+  "cross-validation seed": 20261120,
+  "bootstrap resamples": 2000,
+  "bootstrap seed": 20261121,
+  "size": "log 12-month FTE, fiscal 2014",
+  "sector": "control"
+ },
+ "stage 1": {
+  "price": {
+   "N": 2218,
+   "closures": 357,
+   "AUC, size and sector": 0.9295339844696611,
+   "AUC, size, sector and price": 0.9310256074487829,
+   "gain": 0.001491622979121865,
+   "gain 95% bootstrap": [
+    -0.0013054185380757394,
+    0.003925714765190533
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "positive, interval includes 0",
+   "coverage": {
+    "covered": {
+     "N": 2218,
+     "closure rate": 0.16095581605049594,
+     "median log FTE": 7.5569500260710765,
+     "control": {
+      "public": 615,
+      "private nonprofit": 1175,
+      "for-profit": 428
+     }
+    },
+    "not covered": {
+     "N": 610,
+     "closure rate": 0.28688524590163933,
+     "median log FTE": 6.218598135592302,
+     "control": {
+      "public": 88,
+      "private nonprofit": 246,
+      "for-profit": 276
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  },
+  "outcome (retention)": {
+   "N": 2043,
+   "closures": 240,
+   "AUC, size and sector": 0.9107656221112959,
+   "AUC, size, sector and outcome (retention)": 0.9099579404695877,
+   "gain": -0.0008076816417081911,
+   "gain 95% bootstrap": [
+    -0.002670170691623977,
+    0.0007090313515389326
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "no gain",
+   "coverage": {
+    "covered": {
+     "N": 2043,
+     "closure rate": 0.11747430249632893,
+     "median log FTE": 7.637234388789473,
+     "control": {
+      "public": 588,
+      "private nonprofit": 1189,
+      "for-profit": 266
+     }
+    },
+    "not covered": {
+     "N": 785,
+     "closure rate": 0.3719745222929936,
+     "median log FTE": 6.194405391104672,
+     "control": {
+      "public": 115,
+      "private nonprofit": 232,
+      "for-profit": 438
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   },
+   "direction-free outcome gap, for information": {
+    "N": 2043,
+    "closures": 240,
+    "AUC, size and sector": 0.9107656221112959,
+    "AUC, size, sector and the direction-free outcome gap": 0.9108476613052321,
+    "gain": 8.203919393623416e-05,
+    "gain 95% bootstrap": [
+     -0.0013633680478201903,
+     0.00133861445028941
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "by tau_out availability": {
+    "reported": {
+     "N": 823,
+     "closures": 63,
+     "AUC, size and sector": 0.8936925647451963,
+     "AUC, size, sector and outcome (retention)": 0.8910609857978278,
+     "gain": -0.0026315789473685403,
+     "gain 95% bootstrap": [
+      -0.022518206536000042,
+      0.013221604329206193
+     ],
+     "bootstrap resamples used": 2000,
+     "verdict": "no gain"
+    },
+    "unreported": {
+     "N": 1220,
+     "closures": 177,
+     "AUC, size and sector": 0.9105930849191002,
+     "AUC, size, sector and outcome (retention)": 0.910119115328989,
+     "gain": -0.00047396959011114514,
+     "gain 95% bootstrap": [
+      -0.002740652707345856,
+      0.0009960558322208181
+     ],
+     "bootstrap resamples used": 2000,
+     "verdict": "no gain"
+    }
+   }
+  },
+  "four-year": {
+   "N": 2070,
+   "closures": 248,
+   "AUC, size and sector": 0.9133473938599909,
+   "AUC, size, sector and four-year": 0.9126026875818846,
+   "gain": -0.0007447062781062996,
+   "gain 95% bootstrap": [
+    -0.001389604197631844,
+    -0.0001978982479894783
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "no gain",
+   "coverage": {
+    "covered": {
+     "N": 2070,
+     "closure rate": 0.11980676328502415,
+     "median log FTE": 7.632157410732697,
+     "control": {
+      "public": 594,
+      "private nonprofit": 1183,
+      "for-profit": 293
+     }
+    },
+    "not covered": {
+     "N": 758,
+     "closure rate": 0.37467018469656993,
+     "median log FTE": 6.153795394360261,
+     "control": {
+      "public": 109,
+      "private nonprofit": 238,
+      "for-profit": 411
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  }
+ },
+ "ranking by gain": [
+  "price",
+  "four-year",
+  "outcome (retention)"
+ ],
+ "stage 2": {
+  "carried (Decision B)": [
+   "price"
+  ],
+  "combined by the maximum": {
+   "N": 2218,
+   "closures": 357,
+   "AUC, size and sector": 0.9295339844696611,
+   "AUC, size, sector and the maximum": 0.9310256074487829,
+   "gain": 0.001491622979121865,
+   "gain 95% bootstrap": [
+    -0.0013054185380757394,
+    0.003925714765190533
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "positive, interval includes 0"
+  },
+  "separate features": {
+   "N": 2218,
+   "closures": 357,
+   "AUC, size and sector": 0.9295339844696611,
+   "AUC, size, sector and the carried gaps": 0.9310256074487829,
+   "gain": 0.001491622979121865,
+   "gain 95% bootstrap": [
+    -0.0013054185380757394,
+    0.003925714765190533
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "positive, interval includes 0"
+  },
+  "coverage": {
+   "covered": {
+    "N": 2218,
+    "closure rate": 0.16095581605049594,
+    "median log FTE": 7.5569500260710765,
+    "control": {
+     "public": 615,
+     "private nonprofit": 1175,
+     "for-profit": 428
+    }
+   },
+   "not covered": {
+    "N": 610,
+    "closure rate": 0.28688524590163933,
+    "median log FTE": 6.218598135592302,
+    "control": {
+     "public": 88,
+     "private nonprofit": 246,
+     "for-profit": 276
+    }
+   },
+   "wealth": "no wealth measure is in the committed inputs; not compared here"
+  }
+ },
+ "largest gap before each closure (by percentile within the frame; descriptive)": {
+  "price": 253,
+  "outcome (retention)": 88,
+  "four-year": 102,
+  "none available": 89
+ },
+ "program-length check (Amendment 3)": "not made: every four-year-gap result is reported without the check of Definition 15.2.13; the error can only weaken the gap's association with closure",
+ "largest four-year gaps, for the catalog look-up (Amendment 3; names and gaps only)": "not needed: the four-year gap was not carried",
+ "note": "Selection-stage performance, used only to choose dimensions; never an estimate of v4's accuracy."
+}
