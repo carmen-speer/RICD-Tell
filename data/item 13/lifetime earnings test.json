@@ -1,0 +1,196 @@
+{
+ "test": "Item 13: professions against trades, lifetime earnings (separate from the closure model)",
+ "protocol": "lifetime earnings protocol.md",
+ "written at (UTC)": "2026-11-20T18:01:44.015401+00:00",
+ "sources": {
+  "Scorecard field of study": "https://github.com/carmen-speer/RICD-Tell/releases/download/scorecard-raw-data-2026-11-02/College_Scorecard_Raw_Data_11022026.zip (Most-Recent-Cohorts-Field-of-Study.csv)",
+  "OEWS": "data/item 13/oesm24nat.zip (committed by hand; https://www.bls.gov/oes/special-requests/oesm24nat.zip gave HTTP 403) (oesm24nat/national_M2024_dl.xlsx)",
+  "CIP-SOC crosswalk": "https://nces.ed.gov/ipeds/cipcode/Files/CIP2020_SOC2018_Crosswalk.xlsx",
+  "top code used for #": 239200.0
+ },
+ "sectors": {
+  "trades": 59,
+  "professions": 155,
+  "other": 2355
+ },
+ "predictions": {
+  "P1 early position lower for professions": {
+   "professions units": 49,
+   "trades units": 41,
+   "median, professions": 1.0207259503075918,
+   "median, trades": 0.8903536977491961,
+   "difference (professions - trades)": 0.13037225255839568,
+   "95% interval": [
+    -0.020477042593270434,
+    0.3680124199997167
+   ],
+   "verdict": "not supported"
+  },
+  "P2 occupational ladder higher for professions": {
+   "professions units": 148,
+   "trades units": 49,
+   "median, professions": 2.2479099210314692,
+   "median, trades": 1.9594391893676044,
+   "difference (professions - trades)": 0.28847073166386483,
+   "95% interval": [
+    0.2034821890715595,
+    0.3671015103680083
+   ],
+   "verdict": "supported"
+  },
+  "P1 early position lower for professions (top-coded occupations left out)": {
+   "professions units": 46,
+   "trades units": 41,
+   "median, professions": 1.0734621669729976,
+   "median, trades": 0.8904502407161048,
+   "difference (professions - trades)": 0.18301192625689278,
+   "95% interval": [
+    0.05168627432345796,
+    0.41699070364079094
+   ],
+   "verdict": "not supported"
+  },
+  "P2 occupational ladder higher for professions (top-coded occupations left out)": {
+   "professions units": 145,
+   "trades units": 49,
+   "median, professions": 2.216487699743668,
+   "median, trades": 1.9594391893676044,
+   "difference (professions - trades)": 0.2570485103760638,
+   "95% interval": [
+    0.19323307512735388,
+    0.34845448196327244
+   ],
+   "verdict": "supported"
+  },
+  "P3 graduates' growth higher for professions": {
+   "professions units": 39,
+   "trades units": 45,
+   "median, professions": 1.1745140107925363,
+   "median, trades": 1.2245614968992042,
+   "difference (professions - trades)": -0.05004748610666798,
+   "95% interval": [
+    -0.11511342766557928,
+    0.03546281591508041
+   ],
+   "verdict": "not supported"
+  }
+ },
+ "payoff to cost by sector (no prediction)": {
+  "trades": {
+   "payoff to cost": {
+    "units": 37,
+    "median": 5.415154672774246
+   },
+   "early payoff": {
+    "units": 38,
+    "median": 4.541205513784462
+   },
+   "median debt (weighted median of program medians)": {
+    "units": 38,
+    "median": 11375.0
+   }
+  },
+  "professions": {
+   "payoff to cost": {
+    "units": 16,
+    "median": 0.957226314452877
+   },
+   "early payoff": {
+    "units": 16,
+    "median": 0.8802642459600489
+   },
+   "median debt (weighted median of program medians)": {
+    "units": 17,
+    "median": 119956.0
+   }
+  }
+ },
+ "by credential level (medians across fields)": {
+  "1 Undergraduate Certificate or Diploma": {
+   "EARN_MDN_1YR_NAT": 41927.5,
+   "EARN_MDN_5YR_NAT": 51672.0,
+   "EARN_MDN_7YR_NAT": 53626.5,
+   "early position": 0.661416802248694,
+   "occupational ladder": 2.154910061132568,
+   "graduates' growth": 1.2864606311096662,
+   "payoff to cost": 6.07107470235501,
+   "units": 384
+  },
+  "2 Associate's Degree": {
+   "EARN_MDN_1YR_NAT": 39455.5,
+   "EARN_MDN_5YR_NAT": 48679.0,
+   "EARN_MDN_7YR_NAT": 52574.0,
+   "early position": 0.6157348033165754,
+   "occupational ladder": 2.11174159584456,
+   "graduates' growth": 1.3153030804902286,
+   "payoff to cost": 5.1400943396226415,
+   "units": 345
+  },
+  "3 Bachelor's Degree": {
+   "EARN_MDN_1YR_NAT": 45851.5,
+   "EARN_MDN_5YR_NAT": 66656.0,
+   "EARN_MDN_7YR_NAT": 73759.0,
+   "early position": 0.7505042476183222,
+   "occupational ladder": 2.157237712725851,
+   "graduates' growth": 1.4957692104288962,
+   "payoff to cost": 4.424333592224542,
+   "units": 392
+  },
+  "4 Post-baccalaureate Certificate": {
+   "EARN_MDN_1YR_NAT": 68215.0,
+   "EARN_MDN_5YR_NAT": 80444.0,
+   "EARN_MDN_7YR_NAT": 81964.5,
+   "early position": 0.973807784324241,
+   "occupational ladder": 2.2002840009377347,
+   "graduates' growth": 1.2229078670105744,
+   "payoff to cost": null,
+   "units": 244
+  },
+  "5 Master's Degree": {
+   "EARN_MDN_1YR_NAT": 64554.0,
+   "EARN_MDN_5YR_NAT": 79507.5,
+   "EARN_MDN_7YR_NAT": 84766.0,
+   "early position": 0.9312176122044385,
+   "occupational ladder": 2.1716500606477775,
+   "graduates' growth": 1.32394709872627,
+   "payoff to cost": 2.512863167772119,
+   "units": 381
+  },
+  "6 Doctoral Degree": {
+   "EARN_MDN_1YR_NAT": 81306.0,
+   "EARN_MDN_5YR_NAT": 99443.0,
+   "EARN_MDN_7YR_NAT": 104623.0,
+   "early position": 1.1129786984628744,
+   "occupational ladder": 2.1801539113049873,
+   "graduates' growth": 1.2511963930947316,
+   "payoff to cost": 0.9958557378337748,
+   "units": 318
+  },
+  "7 First Professional Degree": {
+   "EARN_MDN_1YR_NAT": 76873.0,
+   "EARN_MDN_5YR_NAT": 98440.5,
+   "EARN_MDN_7YR_NAT": 90387.0,
+   "early position": 1.0207259503075918,
+   "occupational ladder": 2.2479099210314692,
+   "graduates' growth": 1.1745140107925363,
+   "payoff to cost": 0.957226314452877,
+   "units": 155
+  },
+  "8 Graduate/Professional Certificate": {
+   "EARN_MDN_1YR_NAT": 67937.5,
+   "EARN_MDN_5YR_NAT": 78659.0,
+   "EARN_MDN_7YR_NAT": 80837.0,
+   "early position": 0.9450872813343454,
+   "occupational ladder": 2.167676524807904,
+   "graduates' growth": 1.2257880264049024,
+   "payoff to cost": 2.6319543432349377,
+   "units": 350
+  }
+ },
+ "limitations": [
+  "The crosswalk links programs to the occupations they prepare for, not where graduates work.",
+  "The occupational ladder is a cross-section of all workers, not a followed career.",
+  "Top-coded wages are set at the top code, so results using them are lower bounds.",
+  "Debt is the median of program medians weighted by borrowers, an approximation."
+ ]
+}
