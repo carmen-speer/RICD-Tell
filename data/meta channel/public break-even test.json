@@ -1,0 +1,113 @@
+{
+ "test": "Item 19 (exploratory): administrative layer and break-even at public four-year colleges",
+ "written at (UTC)": "2026-11-20T17:09:41.562350+00:00",
+ "prediction": "a thicker administrative layer goes with lower coverage at equal appropriations per FTE and size",
+ "no closure outcome was read": true,
+ "core share": {
+  "college-years": 4547,
+  "institutions": 662,
+  "partial Spearman (share, B_cov | appropriations, size)": 0.0590017604132078,
+  "95% interval": [
+   0.00891369788515012,
+   0.1098334754696127
+  ],
+  "direction": "thicker layer, higher coverage (opposite to prediction)"
+ },
+ "broad share (sensitivity)": {
+  "college-years": 3904,
+  "institutions": 660,
+  "partial Spearman (share, B_cov | appropriations, size)": 0.08899364392082616,
+  "95% interval": [
+   0.0349242347030748,
+   0.14379773022716225
+  ],
+  "direction": "thicker layer, higher coverage (opposite to prediction)"
+ },
+ "by appropriations tercile and core-share third": {
+  "lowest appropriations per FTE": {
+   "thinnest third": {
+    "college-years": 506,
+    "median B_cov": 1.0292145439053924,
+    "share past break-even (B_cov < 1)": 0.3300395256916996
+   },
+   "middle third": {
+    "college-years": 505,
+    "median B_cov": 1.019816462442334,
+    "share past break-even (B_cov < 1)": 0.3306930693069307
+   },
+   "thickest third": {
+    "college-years": 505,
+    "median B_cov": 1.022197438355638,
+    "share past break-even (B_cov < 1)": 0.33861386138613864
+   }
+  },
+  "middle appropriations per FTE": {
+   "thinnest third": {
+    "college-years": 505,
+    "median B_cov": 1.0234801724052827,
+    "share past break-even (B_cov < 1)": 0.3782178217821782
+   },
+   "middle third": {
+    "college-years": 505,
+    "median B_cov": 1.0302592146784741,
+    "share past break-even (B_cov < 1)": 0.29108910891089107
+   },
+   "thickest third": {
+    "college-years": 505,
+    "median B_cov": 1.035532021364308,
+    "share past break-even (B_cov < 1)": 0.26732673267326734
+   }
+  },
+  "highest appropriations per FTE": {
+   "thinnest third": {
+    "college-years": 506,
+    "median B_cov": 1.0133270375263481,
+    "share past break-even (B_cov < 1)": 0.4426877470355731
+   },
+   "middle third": {
+    "college-years": 505,
+    "median B_cov": 1.0256484136826154,
+    "share past break-even (B_cov < 1)": 0.3465346534653465
+   },
+   "thickest third": {
+    "college-years": 505,
+    "median B_cov": 1.0436169376004392,
+    "share past break-even (B_cov < 1)": 0.2732673267326733
+   }
+  }
+ },
+ "core share by fiscal year": {
+  "2013": {
+   "n": 643,
+   "partial Spearman": 0.050423993917677254
+  },
+  "2014": {
+   "n": 649,
+   "partial Spearman": 0.028435236704449203
+  },
+  "2015": {
+   "n": 651,
+   "partial Spearman": 0.0028054921434581687
+  },
+  "2016": {
+   "n": 653,
+   "partial Spearman": -0.014870984519313814
+  },
+  "2017": {
+   "n": 649,
+   "partial Spearman": 0.0714625562322964
+  },
+  "2018": {
+   "n": 651,
+   "partial Spearman": 0.17717010835141683
+  },
+  "2019": {
+   "n": 651,
+   "partial Spearman": 0.12401367591829618
+  }
+ },
+ "limitations": [
+  "coverage counts all revenues, appropriations included, against all expenses",
+  "staffing shares are from the employees-by-position files; fall Y is fiscal Y + 1"
+ ]
+}
