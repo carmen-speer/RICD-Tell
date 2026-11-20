@@ -59,3 +59,22 @@ Nursing licensure is the one outside licensure measure kept (November 20). Befor
 
 Every step writes its result to data/v4 channels/ and is committed before the next begins: the field check; this protocol; the calibrations (step 1, with their diagnostics); the gap values for every institution and year (with every flag, the source of each input and the available set); and the stage results. Errors found along the way are recorded as amendments, never edited out.
 
+## 7. Amendments
+
+Amendments are dated, recorded here and never edited out of the sections above; the record of what was run before each amendment stays in the repository's history.
+
+### Amendment 1 (November 20, 2026): income-band fields for private colleges
+
+Section 3.1 names the income-band fields GIS4N12 to GIS4N52 over GIS4N2. Those are the public-college fields, which count in-state aid recipients only; private nonprofit and for-profit colleges report the same five bands for all aid recipients under GRN4N12 to GRN4N52 over GRN4N2 (confirmed in the SFA dictionaries by the field check). The first step 1 run (calibrations.json committed November 20, before this amendment) read only the public fields, so every income-band row was a public college and every private college fell to the Pell-share fit. Corrected: the bands are read from GIS4 for public colleges and from GRN4 for private nonprofit and for-profit colleges, the field used is recorded for every college-year (`income band field`), and the income-band fit, with control as a predictor, is refitted on both. The two families differ in whom they count (in-state recipients at public colleges, all recipients at private ones); control absorbs the difference in level, and the field is a stratification variable in every price-gap analysis. Step 1 is rerun and its calibrations frozen again. No closure outcome had been read.
+
+### Amendment 2 (November 20, 2026): the selection-stage details left open
+
+Fixed before any closure outcome is read:
+
+- **Size in the baseline.** Size is the natural log of 12-month full-time-equivalent enrollment (EFIA: FTEUG + FTEGD + FTEDPP) for the scoring year's fiscal year, the value step 1 already reads; sector is the institution's control (public, private nonprofit, for-profit; every development institution is four-year). The baseline is a logistic model of these alone, refitted on the same institutions as each comparison.
+- **Out-of-sample scoring.** Every AUC in stages 1 and 2 is computed on out-of-fold predictions: stratified 10-fold cross-validation with a fixed seed (20261120), so that each institution is scored by a model fitted without it. The paired bootstrap of section 4 (2,000 resamples, fixed seed) resamples institutions with those predictions held fixed.
+- **The outcome gap in stage 1.** As the Spine states for the v4 model, overclaiming (D_over) and underclaiming (D_under) enter as two separate features; the direction-free outcome gap is reported beside them for information and is not a selection candidate.
+
+### Open item (November 20, 2026): the program-length check of the four-year gap
+
+Section 3.3 marks a college whose standard bachelor's length exceeds four years unavailable on the four-year gap, and flags one with only some longer programs. No IPEDS field states a college's standard program length, so the check is not yet built: every college with a GR200 record is scored, and every output says the check is not built. A source for program length is to be found and fixed by amendment before stage 1 is run; if none is found, stage 1 reports the four-year gap with this limitation stated.
