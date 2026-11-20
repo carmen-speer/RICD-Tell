@@ -1,0 +1,435 @@
+{
+ "test": "Item 17 (exploratory): crossing curves of heavy adjunct absorbers at equal wealth, 2014 frame",
+ "written at (UTC)": "2026-11-20T17:44:57.312078+00:00",
+ "protocol": "channel selection protocol.md, Amendment 9",
+ "frame": {
+  "institutions in the 2014 frame": 3199,
+  "with a pool share at fall 2014": 3089,
+  "without (reported as their own group)": {
+   "institutions": 110,
+   "closed": 87
+  },
+  "cells (control, wealth tercile): institutions and top-quarter cut": {
+   "for-profit, pooled": {
+    "institutions": 728,
+    "cut": 0.9123851294903926
+   },
+   "private nonprofit, no wealth value": {
+    "institutions": 503,
+    "cut": 0.7817141089108911
+   },
+   "private nonprofit, 0": {
+    "institutions": 462,
+    "cut": 0.7440369707811568
+   },
+   "private nonprofit, 1": {
+    "institutions": 360,
+    "cut": 0.6206896551724138
+   },
+   "private nonprofit, 2": {
+    "institutions": 320,
+    "cut": 0.43351831011421993
+   },
+   "public, no wealth value": {
+    "institutions": 56,
+    "cut": 0.45409429280397023
+   },
+   "public, 0": {
+    "institutions": 188,
+    "cut": 0.6257859324027009
+   },
+   "public, 1": {
+    "institutions": 224,
+    "cut": 0.5077468920752504
+   },
+   "public, 2": {
+    "institutions": 248,
+    "cut": 0.4453945991207871
+   }
+  }
+ },
+ "header files read": [
+  {
+   "table": "HD2014",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "file": "hd2014.csv",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  {
+   "table": "HD2015",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "file": "hd2015.csv",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  {
+   "table": "HD2016",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "file": "hd2016.csv",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  {
+   "table": "HD2017",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "file": "hd2017.csv",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  {
+   "table": "HD2018",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "file": "hd2018.csv",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  {
+   "table": "HD2020",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "file": "hd2020.csv",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  {
+   "table": "HD2021",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "file": "hd2021.csv",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  {
+   "table": "HD2022",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "file": "hd2022.csv",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  {
+   "table": "HD2023",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "file": "HD2023.csv",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  {
+   "table": "HD2024",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "file": "HD2024.csv",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  {
+   "table": "HD2025",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "file": "hd2025.csv",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ ],
+ "verdict (overall)": "not supported",
+ "overall": {
+  "heavy absorbers": 772,
+  "others": 2317,
+  "heavy closed": 239,
+  "others closed": 540,
+  "cumulative closure rate by year, heavy": {
+   "2015": 0.03367875647668394,
+   "2016": 0.05829015544041451,
+   "2017": 0.15284974093264247,
+   "2018": 0.20466321243523317,
+   "2019": 0.2266839378238342,
+   "2020": 0.23963730569948186,
+   "2021": 0.25647668393782386,
+   "2022": 0.26813471502590674,
+   "2023": 0.29015544041450775,
+   "2024": 0.3018134715025907,
+   "2025": 0.30958549222797926
+  },
+  "cumulative closure rate by year, others": {
+   "2015": 0.017263703064307294,
+   "2016": 0.03625377643504532,
+   "2017": 0.08890807078118257,
+   "2018": 0.14328873543375054,
+   "2019": 0.16271040138109624,
+   "2020": 0.17781614156236514,
+   "2021": 0.19421665947345707,
+   "2022": 0.20155373327578766,
+   "2023": 0.2149331031506258,
+   "2024": 0.22356495468277945,
+   "2025": 0.23305999136814848
+  },
+  "first year the heavy curve is above the others'": 2015,
+  "difference at 2017 (heavy - others)": 0.0639416701514599,
+  "95% interval at 2017": [
+   0.037592020904287086,
+   0.09070938277789084
+  ],
+  "difference at 2025 (heavy - others)": 0.07652550085983079,
+  "95% interval at 2025": [
+   0.03895057314599684,
+   0.11280321894266519
+  ]
+ },
+ "by control": {
+  "public": {
+   "heavy absorbers": 179,
+   "others": 537,
+   "heavy closed": 4,
+   "others closed": 21,
+   "cumulative closure rate by year, heavy": {
+    "2015": 0.0,
+    "2016": 0.0,
+    "2017": 0.00558659217877095,
+    "2018": 0.00558659217877095,
+    "2019": 0.00558659217877095,
+    "2020": 0.0111731843575419,
+    "2021": 0.01675977653631285,
+    "2022": 0.01675977653631285,
+    "2023": 0.0223463687150838,
+    "2024": 0.0223463687150838,
+    "2025": 0.0223463687150838
+   },
+   "cumulative closure rate by year, others": {
+    "2015": 0.0037243947858473,
+    "2016": 0.0037243947858473,
+    "2017": 0.0074487895716946,
+    "2018": 0.0111731843575419,
+    "2019": 0.0111731843575419,
+    "2020": 0.0223463687150838,
+    "2021": 0.024208566108007448,
+    "2022": 0.035381750465549346,
+    "2023": 0.037243947858473,
+    "2024": 0.037243947858473,
+    "2025": 0.03910614525139665
+   },
+   "first year the heavy curve is above the others'": null,
+   "difference at 2017 (heavy - others)": -0.0018621973929236497,
+   "95% interval at 2017": [
+    -0.01303538175046555,
+    0.01303538175046555
+   ],
+   "difference at 2025 (heavy - others)": -0.01675977653631285,
+   "95% interval at 2025": [
+    -0.040968342644320296,
+    0.01303538175046555
+   ]
+  },
+  "private nonprofit": {
+   "heavy absorbers": 411,
+   "others": 1234,
+   "heavy closed": 90,
+   "others closed": 143,
+   "cumulative closure rate by year, heavy": {
+    "2015": 0.029197080291970802,
+    "2016": 0.038929440389294405,
+    "2017": 0.058394160583941604,
+    "2018": 0.09002433090024331,
+    "2019": 0.1192214111922141,
+    "2020": 0.1362530413625304,
+    "2021": 0.15328467153284672,
+    "2022": 0.170316301703163,
+    "2023": 0.1897810218978102,
+    "2024": 0.20924574209245742,
+    "2025": 0.21897810218978103
+   },
+   "cumulative closure rate by year, others": {
+    "2015": 0.008103727714748784,
+    "2016": 0.019448946515397084,
+    "2017": 0.029173419773095625,
+    "2018": 0.04376012965964344,
+    "2019": 0.05348460291734198,
+    "2020": 0.06726094003241491,
+    "2021": 0.08022690437601297,
+    "2022": 0.08427876823338736,
+    "2023": 0.09481361426256078,
+    "2024": 0.10615883306320907,
+    "2025": 0.11588330632090761
+   },
+   "first year the heavy curve is above the others'": 2015,
+   "difference at 2017 (heavy - others)": 0.02922074081084598,
+   "95% interval at 2017": [
+    0.004081439505968364,
+    0.05435811969856499
+   ],
+   "difference at 2025 (heavy - others)": 0.10309479586887342,
+   "95% interval at 2025": [
+    0.06008766222243255,
+    0.14608206453800865
+   ]
+  },
+  "for-profit": {
+   "heavy absorbers": 182,
+   "others": 546,
+   "heavy closed": 145,
+   "others closed": 376,
+   "cumulative closure rate by year, heavy": {
+    "2015": 0.07692307692307693,
+    "2016": 0.15934065934065933,
+    "2017": 0.510989010989011,
+    "2018": 0.6593406593406593,
+    "2019": 0.6868131868131868,
+    "2020": 0.6978021978021978,
+    "2021": 0.7252747252747253,
+    "2022": 0.7362637362637363,
+    "2023": 0.7802197802197802,
+    "2024": 0.7857142857142857,
+    "2025": 0.7967032967032966
+   },
+   "cumulative closure rate by year, others": {
+    "2015": 0.05128205128205128,
+    "2016": 0.10622710622710622,
+    "2017": 0.304029304029304,
+    "2018": 0.4981684981684982,
+    "2019": 0.5586080586080586,
+    "2020": 0.5805860805860806,
+    "2021": 0.6190476190476191,
+    "2022": 0.63003663003663,
+    "2023": 0.6611721611721612,
+    "2024": 0.6721611721611722,
+    "2025": 0.6886446886446886
+   },
+   "first year the heavy curve is above the others'": 2015,
+   "difference at 2017 (heavy - others)": 0.20695970695970695,
+   "95% interval at 2017": [
+    0.12271062271062272,
+    0.28759157509157485
+   ],
+   "difference at 2025 (heavy - others)": 0.10805860805860801,
+   "95% interval at 2025": [
+    0.03663003663003661,
+    0.17582417582417575
+   ]
+  }
+ },
+ "descriptive, fall 2014 (heavy against others)": {
+  "pool share": {
+   "heavy": {
+    "n": 772,
+    "min": 0.434,
+    "10%": 0.535,
+    "25%": 0.656,
+    "median": 0.807,
+    "75%": 0.94,
+    "90%": 1.0,
+    "max": 1.0,
+    "mean": 0.788
+   },
+   "others": {
+    "n": 2317,
+    "min": 0.0,
+    "10%": 0.087,
+    "25%": 0.25,
+    "median": 0.427,
+    "75%": 0.654,
+    "90%": 0.804,
+    "max": 0.912,
+    "mean": 0.442
+   }
+  },
+  "contract mix": {
+   "heavy": {
+    "n": 606,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.028,
+    "median": 0.157,
+    "75%": 0.855,
+    "90%": 1.0,
+    "max": 1.0,
+    "mean": 0.354
+   },
+   "others": {
+    "n": 2094,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.009,
+    "median": 0.155,
+    "75%": 0.377,
+    "90%": 1.0,
+    "max": 1.0,
+    "mean": 0.294
+   }
+  },
+  "pool depletion": {
+   "heavy": {
+    "n": 746,
+    "min": -0.895,
+    "10%": -0.182,
+    "25%": -0.06,
+    "median": 0.027,
+    "75%": 0.159,
+    "90%": 0.409,
+    "max": 22555.75,
+    "mean": 31.04
+   },
+   "others": {
+    "n": 2136,
+    "min": -1.0,
+    "10%": -0.317,
+    "25%": -0.13,
+    "median": 0.0,
+    "75%": 0.103,
+    "90%": 0.286,
+    "max": 11.0,
+    "mean": 0.028
+   }
+  },
+  "turnover, tenure line": {
+   "heavy": {
+    "n": 333,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.0,
+    "median": 0.038,
+    "75%": 0.084,
+    "90%": 0.154,
+    "max": 1.0,
+    "mean": 0.066
+   },
+   "others": {
+    "n": 1284,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.0,
+    "median": 0.034,
+    "75%": 0.066,
+    "90%": 0.111,
+    "max": 1.0,
+    "mean": 0.056
+   }
+  },
+  "turnover, off track": {
+   "heavy": {
+    "n": 617,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.0,
+    "median": 0.083,
+    "75%": 0.333,
+    "90%": 0.8,
+    "max": 1.0,
+    "mean": 0.229
+   },
+   "others": {
+    "n": 2090,
+    "min": 0.0,
+    "10%": 0.0,
+    "25%": 0.0,
+    "median": 0.053,
+    "75%": 0.167,
+    "90%": 0.333,
+    "max": 1.0,
+    "mean": 0.126
+   }
+  }
+ },
+ "note": "Exploratory: the outcomes are already known in aggregate. A disappearance can include a campus folded into another report. The prediction is tested blind with the HD2026 retest."
+}
