@@ -1,0 +1,62 @@
+name: item 13 - lifetime earnings, professions against trades
+
+# Manual-only. Runs "src/lifetime earnings test.py" ("lifetime earnings
+# protocol.md"): reads the College Scorecard field-of-study file from the
+# repository's release asset, the BLS OEWS national wage file (May 2024)
+# and the NCES-BLS CIP-SOC crosswalk, and compares the trades with the
+# professions on three pre-registered predictions. Separate from the
+# closure model; no closure outcome is read. If BLS or NCES refuses the
+# download, the file is read from data/item 13/ (committed by hand).
+# Commits data/item 13/"lifetime earnings.json" and "lifetime earnings test.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: item13-lifetime-earnings
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1 openpyxl==3.1.5
+
+      - name: Run the lifetime-earnings comparison
+        run: |
+          cd src
+          python "lifetime earnings test.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/item 13/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 13: lifetime earnings, professions against trades"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
