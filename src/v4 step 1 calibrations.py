@@ -174,7 +174,7 @@ def frame(year: int) -> dict[str, dict]:
 
 
 # ------------------------------------------------------------------ inputs by fiscal year
-def fiscal_inputs(f: int, ids: set[str], states: dict[str, str]) -> tuple[dict, dict]:
+def fiscal_inputs(f: int, ids: set[str], states: dict[str, str], ctrl: dict[str, str]) -> tuple[dict, dict]:
     a, b = (f - 1) % 100, f % 100
     log = {}
     ic = table(f"IC{f-1}_AY")
@@ -224,9 +224,14 @@ def fiscal_inputs(f: int, ids: set[str], states: dict[str, str]) -> tuple[dict, 
         else:
             rec["r_raw"], rec["price valid"], rec["price flag"], rec["delta_disc"] = None, False, "price inputs missing", None
         s = (sfa or {}).get(u, [{}])[0]
-        tot = num(s.get("GIS4N2"))
-        bands = [num(s.get(f"GIS4N{k}2")) for k in range(1, 6)]
-        rec["income bands"] = ([b / tot for b in bands] if tot and tot > 0 and all(b is not None for b in bands) else None)
+        # Amendment 1 (November 20): public colleges report the bands for in-state aid recipients (GIS4...),
+        # private nonprofit and for-profit colleges for all aid recipients (GRN4...)
+        pre = "GIS4" if ctrl.get(u) == "public" else "GRN4"
+        tot = num(s.get(f"{pre}N2"))
+        bands = [num(s.get(f"{pre}N{k}2")) for k in range(1, 6)]
+        ok = bool(tot and tot > 0 and all(b is not None for b in bands))
+        rec["income bands"] = [b / tot for b in bands] if ok else None
+        rec["income band field"] = pre if ok else None
         pell = num(s.get("PGRNT_P"))
         rec["Pell share"] = pell / 100 if pell is not None else None
         out[u] = rec
@@ -395,7 +400,7 @@ def main() -> None:
     states = {u: meta[u]["state"] for u in ids}
     fis, logs = {}, {}
     for f in FISCAL:
-        fis[f], logs[f"fiscal {f}"] = fiscal_inputs(f, ids, states)
+        fis[f], logs[f"fiscal {f}"] = fiscal_inputs(f, ids, states, ctrl)
         print("fiscal", f, logs[f"fiscal {f}"], flush=True)
     comp, comp_log = completion_inputs(ids)
     print("completion files", json.dumps(comp_log, indent=1), flush=True)
@@ -404,7 +409,8 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     cols = ["unitid", "name", "control", "in 2014 frame", "in 2019 frame", "fiscal year", "published in-state",
             "published out-of-state", "in-state share", "residence year", "S_post", "finance form", "net tuition", "FTE",
-            "graduate FTE share", "N_net", "r_raw", "price valid", "price flag", "delta_disc", "income bands", "Pell share"]
+            "graduate FTE share", "N_net", "r_raw", "price valid", "price flag", "delta_disc", "income bands",
+            "income band field", "Pell share"]
     with open(OUT_DIR / "inputs.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(cols)
