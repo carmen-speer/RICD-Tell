@@ -1,0 +1,317 @@
+{
+ "test": "Item 14 (exploratory): staffing shares beyond size, sector and staff exit",
+ "protocol": "channel selection protocol.md, Amendment 15",
+ "written at (UTC)": "2026-11-20T19:27:44.359241+00:00",
+ "2014 frame (development look)": {
+  "header files": [
+   {
+    "table": "HD2014",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+    "file": "hd2014.csv",
+    "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+    "institutions read": 7687
+   },
+   {
+    "table": "HD2015",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+    "file": "hd2015.csv",
+    "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+    "institutions read": 7647
+   },
+   {
+    "table": "HD2016",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+    "file": "hd2016.csv",
+    "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+    "institutions read": 7521
+   },
+   {
+    "table": "HD2017",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+    "file": "hd2017.csv",
+    "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+    "institutions read": 7153
+   },
+   {
+    "table": "HD2018",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+    "file": "hd2018.csv",
+    "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+    "institutions read": 6857
+   },
+   {
+    "table": "HD2019",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+    "file": "hd2019.csv",
+    "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+    "institutions read": 6559
+   }
+  ],
+  "secure share": {
+   "beyond size, sector and exit": {
+    "N": 1398,
+    "closures": 187,
+    "AUC, size, sector and exit": 0.9479901261608163,
+    "AUC, size, sector, exit and secure share": 0.9533509672918038,
+    "gain": 0.005360841130987448,
+    "gain 95% bootstrap": [
+     0.001882374780928936,
+     0.009458557270779088
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "gain, interval above 0"
+   },
+   "against size and sector alone": {
+    "N": 2793,
+    "closures": 515,
+    "AUC, size and sector": 0.906847686183588,
+    "AUC, size, sector and secure share": 0.9110325016834729,
+    "gain": 0.00418481549988492,
+    "gain 95% bootstrap": [
+     -0.0001108442153229805,
+     0.008178078382814105
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "coverage": {
+    "covered": {
+     "N": 1398,
+     "closure rate": 0.13376251788268956,
+     "median log FTE": 7.950677404243781,
+     "control": {
+      "public": 592,
+      "private nonprofit": 590,
+      "for-profit": 216
+     }
+    },
+    "not covered": {
+     "N": 1430,
+     "closure rate": 0.24125874125874125,
+     "median log FTE": 6.6153953926682885,
+     "control": {
+      "public": 111,
+      "private nonprofit": 831,
+      "for-profit": 488
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  },
+  "part-time share": {
+   "beyond size, sector and exit": {
+    "N": 1398,
+    "closures": 187,
+    "AUC, size, sector and exit": 0.9479901261608163,
+    "AUC, size, sector, exit and part-time share": 0.960319177592214,
+    "gain": 0.01232905143139762,
+    "gain 95% bootstrap": [
+     0.005454198720961478,
+     0.019846592544081068
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "gain, interval above 0"
+   },
+   "against size and sector alone": {
+    "N": 2793,
+    "closures": 515,
+    "AUC, size and sector": 0.906847686183588,
+    "AUC, size, sector and part-time share": 0.9193488582217412,
+    "gain": 0.012501172038153152,
+    "gain 95% bootstrap": [
+     0.005939785659666097,
+     0.019092937577474087
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "gain, interval above 0"
+   },
+   "coverage": {
+    "covered": {
+     "N": 1398,
+     "closure rate": 0.13376251788268956,
+     "median log FTE": 7.950677404243781,
+     "control": {
+      "public": 592,
+      "private nonprofit": 590,
+      "for-profit": 216
+     }
+    },
+    "not covered": {
+     "N": 1430,
+     "closure rate": 0.24125874125874125,
+     "median log FTE": 6.6153953926682885,
+     "control": {
+      "public": 111,
+      "private nonprofit": 831,
+      "for-profit": 488
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  }
+ },
+ "2019 frame (check)": {
+  "header files": [
+   {
+    "table": "HD2019",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+    "file": "hd2019.csv",
+    "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+    "institutions read": 6559
+   },
+   {
+    "table": "HD2020",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+    "file": "hd2020.csv",
+    "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+    "institutions read": 6440
+   },
+   {
+    "table": "HD2021",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+    "file": "hd2021.csv",
+    "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+    "institutions read": 6289
+   },
+   {
+    "table": "HD2022",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+    "file": "hd2022.csv",
+    "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+    "institutions read": 6256
+   },
+   {
+    "table": "HD2023",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+    "file": "HD2023.csv",
+    "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+    "institutions read": 6163
+   },
+   {
+    "table": "HD2024",
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+    "file": "HD2024.csv",
+    "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+    "institutions read": 6072
+   },
+   {
+    "table": "HD2025",
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+    "file": "hd2025.csv",
+    "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+    "institutions read": 5985
+   }
+  ],
+  "header files not yet released": [
+   "HD2026"
+  ],
+  "secure share": {
+   "beyond size, sector and exit": {
+    "N": 2106,
+    "closures": 111,
+    "AUC, size, sector and exit": 0.7696516064937118,
+    "AUC, size, sector, exit and secure share": 0.7712389080810134,
+    "gain": 0.0015873015873015817,
+    "gain 95% bootstrap": [
+     -0.005363217844519719,
+     0.008356843647632272
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "against size and sector alone": {
+    "N": 2439,
+    "closures": 184,
+    "AUC, size and sector": 0.7893099874674635,
+    "AUC, size, sector and secure share": 0.7898727465535526,
+    "gain": 0.0005627590860890486,
+    "gain 95% bootstrap": [
+     -0.004022329722900342,
+     0.005243520072392635
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "coverage": {
+    "covered": {
+     "N": 2106,
+     "closure rate": 0.05270655270655271,
+     "median log FTE": 7.739141480064277,
+     "control": {
+      "public": 723,
+      "private nonprofit": 1167,
+      "for-profit": 216
+     }
+    },
+    "not covered": {
+     "N": 414,
+     "closure rate": 0.28019323671497587,
+     "median log FTE": 4.980170182064455,
+     "control": {
+      "public": 48,
+      "private nonprofit": 240,
+      "for-profit": 126
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  },
+  "part-time share": {
+   "beyond size, sector and exit": {
+    "N": 2106,
+    "closures": 111,
+    "AUC, size, sector and exit": 0.7696516064937118,
+    "AUC, size, sector, exit and part-time share": 0.7756327756327757,
+    "gain": 0.00598116913906388,
+    "gain 95% bootstrap": [
+     -0.013027796199749236,
+     0.023859012385570273
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "against size and sector alone": {
+    "N": 2439,
+    "closures": 184,
+    "AUC, size and sector": 0.7893099874674635,
+    "AUC, size, sector and part-time share": 0.7968861467270799,
+    "gain": 0.007576159259616411,
+    "gain 95% bootstrap": [
+     -0.003826204441176212,
+     0.0183812474303222
+    ],
+    "bootstrap resamples used": 2000,
+    "verdict": "positive, interval includes 0"
+   },
+   "coverage": {
+    "covered": {
+     "N": 2106,
+     "closure rate": 0.05270655270655271,
+     "median log FTE": 7.739141480064277,
+     "control": {
+      "public": 723,
+      "private nonprofit": 1167,
+      "for-profit": 216
+     }
+    },
+    "not covered": {
+     "N": 414,
+     "closure rate": 0.28019323671497587,
+     "median log FTE": 4.980170182064455,
+     "control": {
+      "public": 48,
+      "private nonprofit": 240,
+      "for-profit": 126
+     }
+    },
+    "wealth": "no wealth measure is in the committed inputs; not compared here"
+   }
+  }
+ },
+ "carried into the HD2026 retest (Amendment 15 rule)": {
+  "secure share": false,
+  "part-time share": false
+ },
+ "tenure-share retest": "dropped",
+ "note": "Selection-stage performance, used only to choose; never an estimate of a tracker's accuracy."
+}
