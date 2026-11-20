@@ -1,0 +1,63 @@
+name: item 17 - adjunct absorption measures and crossing curves (exploratory)
+
+# Manual-only. Runs "src/adjunct absorption.py" (channel selection protocol,
+# Amendment 9): reads the IPEDS employees-by-position (EAP) and full-time
+# new-hire (S_NH) files from fall 2012, finding every category by its
+# dictionary label; computes part-time pool share, contract mix, turnover
+# by line and pool depletion; then the crossing-curves test on the 2014
+# frame at equal wealth, with the header files HD2014 onward for outcomes.
+# Exploratory: the outcomes are known in aggregate.
+# Commits data/meta channel/"adjunct absorption.json" and
+# data/v3 exploratory/"adjunct absorption test.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: adjunct-absorption
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Run the adjunct-absorption measures and test
+        run: |
+          cd src
+          python "adjunct absorption.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/meta channel/" "data/v3 exploratory/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 17: adjunct absorption measures and crossing-curves test (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
