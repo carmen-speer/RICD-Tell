@@ -1,6 +1,6 @@
 {
  "test": "Item 16 (exploratory): extractive-anchor predictions on for-profit institutions active in HD2009",
- "written at (UTC)": "2026-11-20T17:33:11.961576+00:00",
+ "written at (UTC)": "2026-11-20T19:49:32.243830+00:00",
  "header files": [
   {
    "table": "HD2009",
@@ -439,6 +439,228 @@
    "2021": 2173,
    "2022": 2120,
    "2023": 2090
+  }
+ },
+ "firming check: how each closed campus left the header files": {
+  "chain": {
+   "documented closure": 971,
+   "disappeared with no record": 194,
+   "combined into another institution": 105
+  },
+  "independent": {
+   "disappeared with no record": 234,
+   "documented closure": 299,
+   "combined into another institution": 7
+  }
+ },
+ "firming check: E1 to E3 recomputed": {
+  "documented closures only (combined and disappeared not counted as closing)": {
+   "E1 early protection": {
+    "window": "closures 2010-2013",
+    "chain": 0.05476566614007372,
+    "independent": 0.03939122649955237,
+    "difference (chain - independent)": 0.015374439640521348,
+    "95% interval": [
+     -0.00016075934985336493,
+     0.030178890741628574
+    ]
+   },
+   "E2 clustering": {
+    "systems with two or more closed campuses": 90,
+    "share of those systems' closures falling in the system's single busiest year": 0.6577415599534342,
+    "share of all chain closures in the single busiest year": 0.19052523171987643,
+    "share of all independent closures in the single busiest year": 0.13712374581939799,
+    "largest systems by closed campuses": [
+     [
+      "ITT Educational Services Inc",
+      108
+     ],
+     [
+      "Corinthian Colleges Inc",
+      81
+     ],
+     [
+      "Education Management Corporation",
+      67
+     ],
+     [
+      "Career Education Corporation",
+      59
+     ],
+     [
+      "Kaplan Higher Education Corporation",
+      54
+     ],
+     [
+      "Regency Corporation",
+      53
+     ],
+     [
+      "EEG, Inc",
+      34
+     ],
+     [
+      "University of Phoenix",
+      28
+     ],
+     [
+      "Vatterott Educational Centers Inc",
+      20
+     ],
+     [
+      "Westwood College",
+      17
+     ]
+    ]
+   },
+   "E3 crossing curves": {
+    "cumulative closure rate by year, chain": {
+     "2010": 0.0026329647182727752,
+     "2011": 0.008952080042127435,
+     "2012": 0.02632964718272775,
+     "2013": 0.05476566614007372,
+     "2014": 0.09004739336492891,
+     "2015": 0.1511321748288573,
+     "2016": 0.23170089520800422,
+     "2017": 0.3291205897840969,
+     "2018": 0.42443391258557134,
+     "2019": 0.4523433385992628,
+     "2020": 0.46550816219062663,
+     "2021": 0.482885729331227,
+     "2022": 0.48709847288046343,
+     "2023": 0.5007898894154819,
+     "2024": 0.506582411795682,
+     "2025": 0.5113217482885729
+    },
+    "cumulative closure rate by year, independent": {
+     "2010": 0.0026857654431512983,
+     "2011": 0.011638316920322292,
+     "2012": 0.02685765443151298,
+     "2013": 0.03939122649955237,
+     "2014": 0.052820053715308866,
+     "2015": 0.08952551477170993,
+     "2016": 0.12264995523724262,
+     "2017": 0.1459265890778872,
+     "2018": 0.1665174574753805,
+     "2019": 0.18979409131602507,
+     "2020": 0.19964189794091317,
+     "2021": 0.21844225604297224,
+     "2022": 0.23008057296329454,
+     "2023": 0.23992837958818264,
+     "2024": 0.26230975828111014,
+     "2025": 0.26768128916741274
+    },
+    "first year the chain curve is above the independent curve": 2013,
+    "difference at 2025": 0.24364045912116017,
+    "95% interval at 2025": [
+     0.20814441752550347,
+     0.278238617318732
+    ]
+   }
+  },
+  "documented closures and disappearances (combined not counted as closing)": {
+   "E1 early protection": {
+    "window": "closures 2010-2013",
+    "chain": 0.07161664033701948,
+    "independent": 0.08863025962399283,
+    "difference (chain - independent)": -0.017013619286973355,
+    "95% interval": [
+     -0.03691949256617652,
+     0.0033686744613736583
+    ]
+   },
+   "E2 clustering": {
+    "systems with two or more closed campuses": 114,
+    "share of those systems' closures falling in the system's single busiest year": 0.6343656343656343,
+    "share of all chain closures in the single busiest year": 0.192274678111588,
+    "share of all independent closures in the single busiest year": 0.11632270168855535,
+    "largest systems by closed campuses": [
+     [
+      "ITT Educational Services Inc",
+      108
+     ],
+     [
+      "Education Management Corporation",
+      90
+     ],
+     [
+      "Corinthian Colleges Inc",
+      87
+     ],
+     [
+      "Career Education Corporation",
+      61
+     ],
+     [
+      "Kaplan Higher Education Corporation",
+      55
+     ],
+     [
+      "Regency Corporation",
+      53
+     ],
+     [
+      "EEG, Inc",
+      35
+     ],
+     [
+      "University of Phoenix",
+      32
+     ],
+     [
+      "Premier Education Group LP",
+      20
+     ],
+     [
+      "Vatterott Educational Centers Inc",
+      20
+     ]
+    ]
+   },
+   "E3 crossing curves": {
+    "cumulative closure rate by year, chain": {
+     "2010": 0.0026329647182727752,
+     "2011": 0.011058451816745656,
+     "2012": 0.03896787783043707,
+     "2013": 0.07161664033701948,
+     "2014": 0.11690363349131122,
+     "2015": 0.17956819378620326,
+     "2016": 0.2638230647709321,
+     "2017": 0.3744075829383886,
+     "2018": 0.49236440231700895,
+     "2019": 0.5239599789362822,
+     "2020": 0.5418641390205371,
+     "2021": 0.5681937862032649,
+     "2022": 0.573986308583465,
+     "2023": 0.5966298051606108,
+     "2024": 0.6034755134281201,
+     "2025": 0.6134807793575566
+    },
+    "cumulative closure rate by year, independent": {
+     "2010": 0.0026857654431512983,
+     "2011": 0.018800358102059087,
+     "2012": 0.05461056401074306,
+     "2013": 0.08863025962399283,
+     "2014": 0.11727842435094002,
+     "2015": 0.162041181736795,
+     "2016": 0.20859444941808417,
+     "2017": 0.26410026857654434,
+     "2018": 0.3124440465532677,
+     "2019": 0.3428827215756491,
+     "2020": 0.35989256938227393,
+     "2021": 0.38227394807520143,
+     "2022": 0.40196956132497763,
+     "2023": 0.4297224709042077,
+     "2024": 0.4583706356311549,
+     "2025": 0.477170993733214
+    },
+    "first year the chain curve is above the independent curve": 2015,
+    "difference at 2025": 0.13630978562434265,
+    "95% interval at 2025": [
+     0.09898329139918628,
+     0.17259987704974064
+    ]
+   }
   }
  },
  "note": "Exploratory: the outcomes are already known. The predictions are tested blind with the HD2026 retest."
