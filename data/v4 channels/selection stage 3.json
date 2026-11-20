@@ -1,0 +1,163 @@
+{
+ "protocol": "channel selection protocol.md, section 4, Amendments 2 and 4: stage 3 (2019 frame)",
+ "written at (UTC)": "2026-11-20T15:50:20.851810+00:00",
+ "frame": 2019,
+ "header files": [
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  {
+   "table": "HD2020",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "file": "hd2020.csv",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  {
+   "table": "HD2021",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "file": "hd2021.csv",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  {
+   "table": "HD2022",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "file": "hd2022.csv",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  {
+   "table": "HD2023",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "file": "HD2023.csv",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  {
+   "table": "HD2024",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "file": "HD2024.csv",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  {
+   "table": "HD2025",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "file": "hd2025.csv",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ ],
+ "header files not yet released": [
+  "HD2026"
+ ],
+ "carried from stages 1 and 2": [
+  "price"
+ ],
+ "institutions in frame": 2876,
+ "with size": 2520,
+ "closures (primary) among those with size": 227,
+ "note": "Selection-stage performance, used only to choose dimensions; never an estimate of v4's accuracy.",
+ "(1) best single gap against size and sector": {
+  "N": 1968,
+  "closures": 114,
+  "AUC, size and sector": 0.7851373985124624,
+  "AUC, size, sector and price": 0.7812174719430723,
+  "gain": -0.003919926569390109,
+  "gain 95% bootstrap": [
+   -0.006484870412872779,
+   -0.0017286628929330536
+  ],
+  "bootstrap resamples used": 2000,
+  "verdict": "no gain",
+  "gap": "price"
+ },
+ "coverage": {
+  "covered": {
+   "N": 1968,
+   "closure rate": 0.057926829268292686,
+   "median log FTE": 7.727092930884838,
+   "control": {
+    "public": 666,
+    "private nonprofit": 1162,
+    "for-profit": 140
+   }
+  },
+  "not covered": {
+   "N": 552,
+   "closure rate": 0.20471014492753623,
+   "median log FTE": 6.147398776793272,
+   "control": {
+    "public": 105,
+    "private nonprofit": 245,
+    "for-profit": 202
+   }
+  },
+  "wealth": "no wealth measure is in the committed inputs; not compared here"
+ },
+ "prediction (several parts beat one)": "not testable on these gaps: only one dimension was carried, so models (1), (2) and (3) coincide",
+ "(b) four-year gap, public and private nonprofit": {
+  "N": 1756,
+  "closures": 85,
+  "AUC, size and sector": 0.7350124969197733,
+  "AUC, size, sector and four-year": 0.7395853134790721,
+  "gain": 0.0045728165592987535,
+  "gain 95% bootstrap": [
+   -0.02269354491615079,
+   0.02791458813308893
+  ],
+  "bootstrap resamples used": 2000,
+  "verdict": "positive, interval includes 0",
+  "marked unavailable by name (Amendment 4)": [
+   "Boston Architectural College",
+   "Northeastern University",
+   "Southern California Institute of Architecture"
+  ],
+  "coverage": {
+   "covered": {
+    "N": 1756,
+    "closure rate": 0.048405466970387244,
+    "median log FTE": 7.755766344751198,
+    "control": {
+     "public": 585,
+     "private nonprofit": 1171,
+     "for-profit": 0
+    }
+   },
+   "not covered": {
+    "N": 422,
+    "closure rate": 0.0995260663507109,
+    "median log FTE": 6.783864227549184,
+    "control": {
+     "public": 186,
+     "private nonprofit": 236,
+     "for-profit": 0
+    }
+   },
+   "wealth": "no wealth measure is in the committed inputs; not compared here"
+  },
+  "sensitivity: without institutions with r_on = 0": {
+   "N": 1688,
+   "closures": 83,
+   "AUC, size and sector": 0.7566790526592351,
+   "AUC, size, sector and four-year": 0.7543820140374582,
+   "gain": -0.0022970386217768812,
+   "gain 95% bootstrap": [
+    -0.010949827366315104,
+    0.0048707844328037455
+   ],
+   "bootstrap resamples used": 2000,
+   "verdict": "no gain"
+  }
+ },
+ "enters v4 (Amendment 4)": {
+  "price": false,
+  "four-year (public and private nonprofit)": false
+ },
+ "verdict": "no gap is confirmed; v4 has no IPEDS claim gap from this item"
+}
