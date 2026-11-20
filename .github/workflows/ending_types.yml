@@ -1,0 +1,64 @@
+name: item 15 - measure ending types
+
+# Manual-only. Runs "src/ending types.py" under "ending types protocol.md":
+# reads the IPEDS header files (HD2005 onward), the three finance forms
+# (F1A public, F2 private nonprofit, F3 for-profit, fiscal 2005 to 2024)
+# and the 12-month enrollment files (EFIA), computes coverage, gap
+# coverage, each college-year's state, the anchored share and who carries
+# the strain (by source), then classifies Sweet Briar, the University of
+# Phoenix (approach to date) and every documented closure since 2005 as
+# drift-type, shock-type, mixed or too short to classify. Exploratory
+# (outcomes known); the rule is frozen for the retest.
+# Commits data/ending types/.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ending-types
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Measure ending types
+        run: |
+          cd src
+          python "ending types.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/ending types/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 15: ending types measured on Sweet Briar, Phoenix and every documented closure since 2005 (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
