@@ -1,0 +1,445 @@
+{
+ "test": "Item 16 (exploratory): extractive-anchor predictions on for-profit institutions active in HD2009",
+ "written at (UTC)": "2026-11-20T17:33:11.961576+00:00",
+ "header files": [
+  {
+   "table": "HD2009",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2009.zip",
+   "file": "hd2009.csv",
+   "zip sha256": "6639ed79d93a4313e0be5830d8250709924811f8dec3fb664a9dea56f7dc1774",
+   "institutions read": 7316
+  },
+  {
+   "table": "HD2010",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2010.zip",
+   "file": "hd2010.csv",
+   "zip sha256": "72874b792f3c17c143002261af505340742f361645814f120216bda0ccaddb9c",
+   "institutions read": 7503
+  },
+  {
+   "table": "HD2011",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2011.zip",
+   "file": "hd2011.csv",
+   "zip sha256": "cc25e07c20380b1254f3a2d000d118cb1ec920d989a3071058c21ac8732548b6",
+   "institutions read": 7643
+  },
+  {
+   "table": "HD2012",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2012.zip",
+   "file": "hd2012.csv",
+   "zip sha256": "8d806d818194ccefdc594204025d4c17610338770a0ff130d28f251eec05691e",
+   "institutions read": 7735
+  },
+  {
+   "table": "HD2013",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2013.zip",
+   "file": "hd2013.csv",
+   "zip sha256": "d9690d6c37c1616f5c7e9f5ea845a9a9a72ea06665db2626bfb07c5c5dff809f",
+   "institutions read": 7764
+  },
+  {
+   "table": "HD2014",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "file": "hd2014.csv",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  {
+   "table": "HD2015",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "file": "hd2015.csv",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  {
+   "table": "HD2016",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "file": "hd2016.csv",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  {
+   "table": "HD2017",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "file": "hd2017.csv",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  {
+   "table": "HD2018",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "file": "hd2018.csv",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  {
+   "table": "HD2019",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "file": "hd2019.csv",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  {
+   "table": "HD2020",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "file": "hd2020.csv",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  {
+   "table": "HD2021",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "file": "hd2021.csv",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  {
+   "table": "HD2022",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "file": "hd2022.csv",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  {
+   "table": "HD2023",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "file": "HD2023.csv",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  {
+   "table": "HD2024",
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "file": "HD2024.csv",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  {
+   "table": "HD2025",
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "file": "hd2025.csv",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ ],
+ "header files not yet released": [],
+ "system membership field (F1SYSTYP) by header year, most common values": {
+  "2009": {
+   "<absent>": 7316
+  },
+  "2010": {
+   "1": 3692,
+   "2": 3672,
+   "-2": 81,
+   "-1": 58
+  },
+  "2011": {
+   "2": 3841,
+   "1": 3750,
+   "-2": 33,
+   "-1": 19
+  },
+  "2012": {
+   "2": 3855,
+   "1": 3801,
+   "-2": 45,
+   "-1": 34
+  },
+  "2013": {
+   "2": 3879,
+   "1": 3738,
+   "-2": 123,
+   "-1": 24
+  },
+  "2014": {
+   "2": 3913,
+   "1": 3618,
+   "-2": 146,
+   "-1": 10
+  },
+  "2015": {
+   "2": 3927,
+   "1": 3498,
+   "-2": 197,
+   "-1": 25
+  },
+  "2016": {
+   "2": 3886,
+   "1": 3162,
+   "-2": 284,
+   "-1": 189
+  },
+  "2017": {
+   "2": 3859,
+   "1": 3027,
+   "-2": 238,
+   "-1": 29
+  },
+  "2018": {
+   "2": 3801,
+   "1": 2882,
+   "-2": 167,
+   "-1": 7
+  },
+  "2019": {
+   "2": 3785,
+   "1": 2583,
+   "-2": 166,
+   "-1": 25
+  },
+  "2020": {
+   "2": 3767,
+   "1": 2499,
+   "-2": 123,
+   "-1": 51
+  },
+  "2021": {
+   "2": 3756,
+   "1": 2426,
+   "-2": 91,
+   "-1": 16
+  },
+  "2022": {
+   "2": 3740,
+   "1": 2405,
+   "-2": 66,
+   "-1": 45
+  },
+  "2023": {
+   "2": 3714,
+   "1": 2337,
+   "-2": 101,
+   "-1": 11
+  },
+  "2024": {
+   "2": 3668,
+   "1": 2292,
+   "-2": 76,
+   "-1": 36
+  },
+  "2025": {
+   "2": 3615,
+   "1": 2291,
+   "-2": 61,
+   "-1": 18
+  }
+ },
+ "membership read from (earliest header file coding it)": "HD2010",
+ "frame": {
+  "for-profit institutions in HD2009 with membership known": 3016,
+  "chain (system member)": 1899,
+  "independent": 1117,
+  "membership unknown (no coded record from that year on)": 154,
+  "membership unknown, closed": 154,
+  "by level": {
+   "four-year": {
+    "chain": 475,
+    "independent": 89
+   },
+   "two-year": {
+    "chain": 665,
+    "independent": 304
+   },
+   "less-than-two-year": {
+    "chain": 759,
+    "independent": 724
+   }
+  }
+ },
+ "E1 early protection": {
+  "window": "closures 2010-2013",
+  "chain": 0.08794102159031068,
+  "independent": 0.09042076991942703,
+  "difference (chain - independent)": -0.002479748329116349,
+  "95% interval": [
+   -0.023651719347175606,
+   0.018745483062988903
+  ]
+ },
+ "E2 clustering": {
+  "systems with two or more closed campuses": 121,
+  "share of those systems' closures falling in the system's single busiest year": 0.6422101449275363,
+  "share of all chain closures in the single busiest year": 0.18031496062992125,
+  "share of all independent closures in the single busiest year": 0.11481481481481481,
+  "chain closures by year": {
+   "2010": 5,
+   "2011": 17,
+   "2012": 56,
+   "2013": 89,
+   "2014": 127,
+   "2015": 120,
+   "2016": 164,
+   "2017": 211,
+   "2018": 229,
+   "2019": 78,
+   "2020": 35,
+   "2021": 51,
+   "2022": 11,
+   "2023": 43,
+   "2024": 13,
+   "2025": 21
+  },
+  "independent closures by year": {
+   "2010": 4,
+   "2011": 18,
+   "2012": 41,
+   "2013": 38,
+   "2014": 32,
+   "2015": 50,
+   "2016": 53,
+   "2017": 62,
+   "2018": 54,
+   "2019": 36,
+   "2020": 19,
+   "2021": 26,
+   "2022": 22,
+   "2023": 31,
+   "2024": 33,
+   "2025": 21
+  },
+  "largest systems by closed campuses": [
+   [
+    "ITT Educational Services Inc",
+    108
+   ],
+   [
+    "Education Management Corporation",
+    90
+   ],
+   [
+    "Corinthian Colleges Inc",
+    87
+   ],
+   [
+    "University of Phoenix",
+    73
+   ],
+   [
+    "Career Education Corporation",
+    65
+   ],
+   [
+    "Kaplan Higher Education Corporation",
+    62
+   ],
+   [
+    "Regency Corporation",
+    53
+   ],
+   [
+    "EEG, Inc",
+    35
+   ],
+   [
+    "DeVry Inc",
+    26
+   ],
+   [
+    "Premier Education Group LP",
+    20
+   ]
+  ]
+ },
+ "E3 crossing curves": {
+  "cumulative closure rate by year, chain": {
+   "2010": 0.0026329647182727752,
+   "2011": 0.01158504476040021,
+   "2012": 0.04107424960505529,
+   "2013": 0.08794102159031068,
+   "2014": 0.15481832543443919,
+   "2015": 0.21800947867298578,
+   "2016": 0.3043707214323328,
+   "2017": 0.4154818325434439,
+   "2018": 0.536071616640337,
+   "2019": 0.5771458662453923,
+   "2020": 0.5955766192733017,
+   "2021": 0.6224328593996841,
+   "2022": 0.6282253817798842,
+   "2023": 0.65086887835703,
+   "2024": 0.6577145866245392,
+   "2025": 0.6687730384412849
+  },
+  "cumulative closure rate by year, independent": {
+   "2010": 0.0035810205908683975,
+   "2011": 0.019695613249776187,
+   "2012": 0.05640107430617726,
+   "2013": 0.09042076991942703,
+   "2014": 0.11906893464637422,
+   "2015": 0.1638316920322292,
+   "2016": 0.21128021486123547,
+   "2017": 0.26678603401969564,
+   "2018": 0.315129811996419,
+   "2019": 0.34735899731423453,
+   "2020": 0.36436884512085943,
+   "2021": 0.38764547896150403,
+   "2022": 0.40734109221128023,
+   "2023": 0.4350940017905103,
+   "2024": 0.4646374216651746,
+   "2025": 0.4834377797672337
+  },
+  "first year the chain curve is above the independent curve": 2014,
+  "difference at 2025": 0.1853352586740512,
+  "95% interval at 2025": [
+   0.14894351406738604,
+   0.21999015407911524
+  ]
+ },
+ "E4 instruction share": {
+  "median instruction share by fiscal year": {
+   "chain": {
+    "2010": 0.3032884596555793,
+    "2011": 0.275246255121804,
+    "2012": 0.27689367212601046,
+    "2013": 0.27283965466086674,
+    "2014": 0.25748855006920246,
+    "2015": 0.24961099866619352,
+    "2016": 0.27096401055632763,
+    "2017": 0.28218774124371376,
+    "2018": 0.28243683469529296,
+    "2019": 0.29794494214300926,
+    "2020": 0.3000001723047858,
+    "2021": 0.3045461955102521,
+    "2022": 0.31368335243273765,
+    "2023": 0.3112500284755286
+   },
+   "independent": {
+    "2010": 0.3560967598210486,
+    "2011": 0.29799077442278854,
+    "2012": 0.3075364252028207,
+    "2013": 0.3086630547398702,
+    "2014": 0.3130678244034818,
+    "2015": 0.31817636106060243,
+    "2016": 0.316360986508286,
+    "2017": 0.32366268823672184,
+    "2018": 0.33844434833939663,
+    "2019": 0.345151897285496,
+    "2020": 0.34282963672078115,
+    "2021": 0.3437370192015893,
+    "2022": 0.33357734254810173,
+    "2023": 0.3357747775472645
+   }
+  },
+  "trend per year, chain": 0.0028072263696459483,
+  "trend per year, independent": 0.0020236569838448398,
+  "note": "instruction field renamed between fiscal 2013 (F3E01) and 2014 (F3E011); trends also reported within each segment",
+  "trend per year within fiscal 2014-2023, chain": 0.007086158226807077,
+  "trend per year within fiscal 2014-2023, independent": 0.0031106545852805497,
+  "finance files read": {
+   "2010": 3021,
+   "2011": 3184,
+   "2012": 3246,
+   "2013": 3214,
+   "2014": 3176,
+   "2015": 3020,
+   "2016": 2782,
+   "2017": 2657,
+   "2018": 2379,
+   "2019": 2272,
+   "2020": 2244,
+   "2021": 2173,
+   "2022": 2120,
+   "2023": 2090
+  }
+ },
+ "note": "Exploratory: the outcomes are already known. The predictions are tested blind with the HD2026 retest."
+}
