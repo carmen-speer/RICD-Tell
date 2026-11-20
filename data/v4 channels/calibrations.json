@@ -1,6 +1,6 @@
 {
  "note": "v4 channel selection, step 1 (channel selection protocol.md): inputs and frozen calibrations. No closure outcome was read.",
- "written at (UTC)": "2026-11-20T13:17:03.856785+00:00",
+ "written at (UTC)": "2026-11-20T13:54:31.118530+00:00",
  "frames": {
   "2014": 3199,
   "2019": 2876,
@@ -16,13 +16,13 @@
  "delta_need": {
   "income bands": {
    "coefficients": [
-    -1.8869374141118467,
-    1.5853373897762932,
-    1.1057128471184492,
-    0.4529862009879385,
-    0.7006442140545143,
-    0.0,
-    0.0
+    -0.7450284979523655,
+    -0.12147565468218022,
+    -0.3663874143047379,
+    -0.034130934429602536,
+    0.05132508649115964,
+    0.34449710521184457,
+    -0.6166692591852249
    ],
    "features": [
     "intercept",
@@ -33,57 +33,75 @@
     "private nonprofit",
     "for-profit"
    ],
-   "fit rows (fiscal <= 2013)": 3282,
-   "validation rows (fiscal 2014-2018)": 3349,
+   "fit rows (fiscal <= 2013)": 10982,
+   "validation rows (fiscal 2014-2018)": 10496,
    "fit diagnostics": {
     "all": {
-     "n": 3282,
-     "mean observed": 0.2982497512983645,
-     "mean predicted": 0.29824974839371743,
-     "mean absolute error": 0.14402544610977328,
-     "calibration slope": 1.0186756937593027
+     "n": 10982,
+     "mean observed": 0.32061129557199125,
+     "mean predicted": 0.32061129657452764,
+     "mean absolute error": 0.1469764637939049,
+     "calibration slope": 1.0029331398836108
+    },
+    "for-profit": {
+     "n": 1927,
+     "mean observed": 0.1828593895172729,
+     "mean predicted": 0.18285939733272097,
+     "mean absolute error": 0.15926212660038197,
+     "calibration slope": 0.3455933088646831
+    },
+    "private nonprofit": {
+     "n": 5773,
+     "mean observed": 0.3793049576668267,
+     "mean predicted": 0.37930494937489334,
+     "mean absolute error": 0.1408534597789524,
+     "calibration slope": 3.677808213244847
     },
     "public": {
      "n": 3282,
      "mean observed": 0.2982497512983645,
-     "mean predicted": 0.29824974839371743,
-     "mean absolute error": 0.14402544610977328,
-     "calibration slope": 1.0186756937593027
+     "mean predicted": 0.2982497646496192,
+     "mean absolute error": 0.15053332849537943,
+     "calibration slope": -6.646924402568389
     }
    },
    "validation diagnostics": {
     "all": {
-     "n": 3349,
-     "mean observed": 0.31266786256929796,
-     "mean predicted": 0.2900762380731608,
-     "mean absolute error": 0.13833836368387073,
-     "calibration slope": 1.126439515401168
+     "n": 10496,
+     "mean observed": 0.348458874633157,
+     "mean predicted": 0.32855753521720205,
+     "mean absolute error": 0.14771228791656185,
+     "calibration slope": 1.2107281068824791
     },
     "for-profit": {
-     "n": 5,
-     "mean observed": 0.3189369870924749,
-     "mean predicted": 0.30616509431831856,
-     "mean absolute error": 0.10652078063036355,
-     "calibration slope": -0.024439596277945588
+     "n": 1376,
+     "mean observed": 0.173979323510648,
+     "mean predicted": 0.18318161436815436,
+     "mean absolute error": 0.13905409271891755,
+     "calibration slope": 0.13174399615022753
     },
     "private nonprofit": {
-     "n": 2
+     "n": 5778,
+     "mean observed": 0.41075949221884556,
+     "mean predicted": 0.3804294422606327,
+     "mean absolute error": 0.15030124009529466,
+     "calibration slope": 4.864434665908801
     },
     "public": {
      "n": 3342,
      "mean observed": 0.3125854138116321,
-     "mean predicted": 0.2900254101047181,
-     "mean absolute error": 0.13840892204935523,
-     "calibration slope": 1.1319393492942251
+     "mean predicted": 0.29873149936781473,
+     "mean absolute error": 0.1468010703531987,
+     "calibration slope": -7.628386035786788
     }
    }
   },
   "Pell share": {
    "coefficients": [
-    -0.8490916200995355,
-    -0.016108509853905845,
-    0.3598365827993213,
-    -0.6370369417452805
+    -0.8490916251712555,
+    -0.01610853875438217,
+    0.3598365314560371,
+    -0.6370369014482375
    ],
    "features": [
     "intercept",
@@ -97,60 +115,60 @@
     "all": {
      "n": 11068,
      "mean observed": 0.32031536505899605,
-     "mean predicted": 0.32031536895558993,
-     "mean absolute error": 0.1480080953845167,
-     "calibration slope": 1.0001979779947219
+     "mean predicted": 0.32031535981293774,
+     "mean absolute error": 0.1480080963128959,
+     "calibration slope": 1.0001980776569064
     },
     "for-profit": {
      "n": 1944,
      "mean observed": 0.18281858023033243,
-     "mean predicted": 0.18281858724156258,
-     "mean absolute error": 0.1591105723634706,
-     "calibration slope": 22.172111101885832
+     "mean predicted": 0.18281858949271737,
+     "mean absolute error": 0.15911057269086962,
+     "calibration slope": 22.17207109585599
     },
     "private nonprofit": {
      "n": 5840,
-     "mean observed": 0.3785326633391102,
-     "mean predicted": 0.37853267966756093,
-     "mean absolute error": 0.14356582986627603,
-     "calibration slope": 35.33743051996113
+     "mean observed": 0.37853266333911006,
+     "mean predicted": 0.37853266364256577,
+     "mean absolute error": 0.143565831532815,
+     "calibration slope": 35.33736769498721
     },
     "public": {
      "n": 3284,
      "mean observed": 0.2981791676628498,
-     "mean predicted": 0.29817914760789166,
-     "mean absolute error": 0.14933562747326187,
-     "calibration slope": -110.30937576617524
+     "mean predicted": 0.2981791439595517,
+     "mean absolute error": 0.1493356274447143,
+     "calibration slope": -110.30917865239468
     }
    },
    "validation diagnostics": {
     "all": {
      "n": 10690,
      "mean observed": 0.3469814971085739,
-     "mean predicted": 0.32647832597051735,
-     "mean absolute error": 0.14903978250563996,
-     "calibration slope": 1.1929812812065186
+     "mean predicted": 0.3264783162465593,
+     "mean absolute error": 0.14903978476375954,
+     "calibration slope": 1.1929814055843642
     },
     "for-profit": {
      "n": 1467,
-     "mean observed": 0.17644012045625843,
-     "mean predicted": 0.18281002617523,
-     "mean absolute error": 0.13748167218119917,
-     "calibration slope": 10.91245738299073
+     "mean observed": 0.17644012045625837,
+     "mean predicted": 0.1828100284111725,
+     "mean absolute error": 0.13748167253838658,
+     "calibration slope": 10.912437651501149
     },
     "private nonprofit": {
      "n": 5877,
      "mean observed": 0.40922580908181333,
-     "mean predicted": 0.37849233401841,
-     "mean absolute error": 0.15404975615041117,
-     "calibration slope": 46.322006147872955
+     "mean predicted": 0.3784923179217176,
+     "mean absolute error": 0.15404976000753476,
+     "calibration slope": 46.32192378333644
     },
     "public": {
      "n": 3346,
      "mean observed": 0.312425124748209,
-     "mean predicted": 0.2981086518827174,
-     "mean absolute error": 0.14530760460236272,
-     "calibration slope": -117.09567775453331
+     "mean predicted": 0.29810864810836646,
+     "mean absolute error": 0.14530760488538383,
+     "calibration slope": -117.09546852413165
     }
    }
   }
@@ -276,58 +294,58 @@
      "mean observed": 0.5068771957046594,
      "mean predicted": 0.5068771957046593,
      "mean absolute error": 0.09899761283158266,
-     "calibration slope": 1.0000000000000002
+     "calibration slope": 1.0000000000000007
     },
     "for-profit": {
      "n": 1384,
      "mean observed": 0.3403810665484709,
      "mean predicted": 0.381901582938138,
      "mean absolute error": 0.16989000200303314,
-     "calibration slope": 0.6584489212443951
+     "calibration slope": 0.6584489212443946
     },
     "private nonprofit": {
      "n": 6599,
      "mean observed": 0.5579106011317547,
-     "mean predicted": 0.5317787011127353,
+     "mean predicted": 0.5317787011127354,
      "mean absolute error": 0.09952512599152141,
-     "calibration slope": 0.9399680229080158
+     "calibration slope": 0.9399680229080155
     },
     "public": {
      "n": 3285,
      "mean observed": 0.4745061760208731,
      "mean predicted": 0.5095077022133263,
      "mean absolute error": 0.06807032943562434,
-     "calibration slope": 1.1306511390427538
+     "calibration slope": 1.1306511390427534
     }
    },
    "validation diagnostics": {
     "all": {
      "n": 10044,
      "mean observed": 0.5167598279025815,
-     "mean predicted": 0.5158564809250085,
+     "mean predicted": 0.5158564809250084,
      "mean absolute error": 0.09470741782903482,
-     "calibration slope": 1.0045772928374284
+     "calibration slope": 1.0045772928374272
     },
     "for-profit": {
      "n": 1137,
      "mean observed": 0.3690973521141447,
      "mean predicted": 0.396738630234977,
-     "mean absolute error": 0.15275690860146604,
-     "calibration slope": 0.75109054881585
+     "mean absolute error": 0.15275690860146607,
+     "calibration slope": 0.7510905488158502
     },
     "private nonprofit": {
      "n": 5925,
      "mean observed": 0.5551891809824366,
      "mean predicted": 0.5357130622515629,
-     "mean absolute error": 0.09933381339880375,
-     "calibration slope": 0.9591344721646932
+     "mean absolute error": 0.09933381339880376,
+     "calibration slope": 0.9591344721646936
     },
     "public": {
      "n": 2982,
-     "mean observed": 0.4967056085777361,
+     "mean observed": 0.496705608577736,
      "mean predicted": 0.5218211864497333,
      "mean absolute error": 0.06338157451611219,
-     "calibration slope": 1.1587196562443003
+     "calibration slope": 1.1587196562443005
     }
    }
   },
@@ -459,58 +477,58 @@
      "n": 4660,
      "mean observed": 0.5138047210300429,
      "mean predicted": 0.5138047210300429,
-     "mean absolute error": 0.09675641223635255,
-     "calibration slope": 1.0000000000000002
+     "mean absolute error": 0.09675641223635253,
+     "calibration slope": 0.9999999999999994
     },
     "for-profit": {
      "n": 767,
      "mean observed": 0.42014341590612775,
      "mean predicted": 0.43164602556130516,
      "mean absolute error": 0.14023526051656812,
-     "calibration slope": 0.6422186654362021
+     "calibration slope": 0.6422186654362019
     },
     "private nonprofit": {
      "n": 2465,
-     "mean observed": 0.5570791075050711,
+     "mean observed": 0.557079107505071,
      "mean predicted": 0.5399175689386013,
      "mean absolute error": 0.1009810409032404,
-     "calibration slope": 1.0164701003078243
+     "calibration slope": 1.0164701003078245
     },
     "public": {
      "n": 1428,
-     "mean observed": 0.48941176470588243,
+     "mean observed": 0.4894117647058823,
      "mean predicted": 0.5128576267232682,
-     "mean absolute error": 0.06611076357052348,
-     "calibration slope": 1.1715736643427757
+     "mean absolute error": 0.06611076357052346,
+     "calibration slope": 1.1715736643427745
     }
    },
    "validation diagnostics": {
     "all": {
      "n": 4397,
      "mean observed": 0.5098680918808278,
-     "mean predicted": 0.5231813967256677,
-     "mean absolute error": 0.10245849639612849,
-     "calibration slope": 1.1104656714440653
+     "mean predicted": 0.5231813967256675,
+     "mean absolute error": 0.1024584963961285,
+     "calibration slope": 1.1104656714440657
     },
     "for-profit": {
      "n": 571,
-     "mean observed": 0.395061295971979,
+     "mean observed": 0.39506129597197903,
      "mean predicted": 0.4369898909161573,
      "mean absolute error": 0.16530220269242574,
-     "calibration slope": 0.7401820012173113
+     "calibration slope": 0.7401820012173106
     },
     "private nonprofit": {
      "n": 2446,
-     "mean observed": 0.5527596075224857,
+     "mean observed": 0.5527596075224858,
      "mean predicted": 0.5446515125401566,
      "mean absolute error": 0.10264993426258481,
-     "calibration slope": 1.1211604028002564
+     "calibration slope": 1.1211604028002573
     },
     "public": {
      "n": 1380,
      "mean observed": 0.48134782608695653,
-     "mean predicted": 0.5207896913162404,
-     "mean absolute error": 0.0761164577609561,
+     "mean predicted": 0.5207896913162405,
+     "mean absolute error": 0.07611645776095612,
      "calibration slope": 1.2463424773925653
     }
    }
