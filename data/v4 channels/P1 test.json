@@ -1,0 +1,500 @@
+{
+ "test": "Prediction P1 (Spine \u00a715.2.1), as fixed in channel selection protocol.md, Amendment 5",
+ "written at (UTC)": "2026-11-20T15:56:44.517171+00:00",
+ "limitation": "the excess discount is measured against a need-associated discount that in practice is close to a sector average, so the widening is relative to comparable practice",
+ "frames": {
+  "2014": {
+   "institutions in frame": 3199,
+   "with a comparable widening": 2118,
+   "75th-percentile thresholds by control": {
+    "public": 0.027309184051099944,
+    "private nonprofit": 0.0920741703153985,
+    "for-profit": 0.0
+   },
+   "results": {
+    "private nonprofit (primary)": {
+     "nominal (primary)": {
+      "flagged": 279,
+      "flagged closed": 8,
+      "others": 847,
+      "others closed": 40,
+      "closure rate, flagged": 0.02867383512544803,
+      "closure rate, others": 0.047225501770956316,
+      "rate ratio": 0.607168458781362,
+      "rate ratio 95% interval": [
+       0.28768592294973755,
+       1.2814444779188694
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9386836990233685,
+      "Fisher exact p, two-sided": 0.23165350742350876
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 271,
+      "flagged closed": 8,
+      "others": 855,
+      "others closed": 40,
+      "closure rate, flagged": 0.02952029520295203,
+      "closure rate, others": 0.04678362573099415,
+      "rate ratio": 0.6309963099630996,
+      "rate ratio 95% interval": [
+       0.2990488055215638,
+       1.3314092410188136
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9239109045848659,
+      "Fisher exact p, two-sided": 0.29956288876932147
+     },
+     "widened alone, price not considered": {
+      "flagged": 282,
+      "flagged closed": 9,
+      "others": 844,
+      "others closed": 39,
+      "closure rate, flagged": 0.031914893617021274,
+      "closure rate, others": 0.0462085308056872,
+      "rate ratio": 0.690671031096563,
+      "rate ratio 95% interval": [
+       0.3388359816301013,
+       1.4078388927323169
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.8875111393897945,
+      "Fisher exact p, two-sided": 0.39451227895938024
+     }
+    },
+    "all": {
+     "nominal (primary)": {
+      "flagged": 474,
+      "flagged closed": 30,
+      "others": 1644,
+      "others closed": 296,
+      "closure rate, flagged": 0.06329113924050633,
+      "closure rate, others": 0.18004866180048662,
+      "rate ratio": 0.35152240848443383,
+      "rate ratio 95% interval": [
+       0.24491403122888158,
+       0.5045362368447486
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9999999999949648,
+      "Fisher exact p, two-sided": 2.8061517079691977e-11
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 446,
+      "flagged closed": 22,
+      "others": 1672,
+      "others closed": 304,
+      "closure rate, flagged": 0.04932735426008968,
+      "closure rate, others": 0.18181818181818182,
+      "rate ratio": 0.2713004484304932,
+      "rate ratio 95% interval": [
+       0.17827036478500763,
+       0.4128781214272622
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9999999999999941,
+      "Fisher exact p, two-sided": 5.3268820159098465e-14
+     },
+     "widened alone, price not considered": {
+      "flagged": 497,
+      "flagged closed": 47,
+      "others": 1621,
+      "others closed": 279,
+      "closure rate, flagged": 0.09456740442655935,
+      "closure rate, others": 0.17211597779148674,
+      "rate ratio": 0.5494400092310133,
+      "rate ratio 95% interval": [
+       0.4102070899269253,
+       0.7359315115629863
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9999957647493777,
+      "Fisher exact p, two-sided": 1.8276196595160326e-05
+     }
+    },
+    "public": {
+     "nominal (primary)": {
+      "flagged": 151,
+      "flagged closed": 1,
+      "others": 455,
+      "others closed": 6,
+      "closure rate, flagged": 0.006622516556291391,
+      "closure rate, others": 0.013186813186813187,
+      "rate ratio": 0.5022075055187638,
+      "rate ratio 95% interval": [
+       0.060948427668384444,
+       4.138127729424731
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.8670357709578524,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 144,
+      "flagged closed": 1,
+      "others": 462,
+      "others closed": 6,
+      "closure rate, flagged": 0.006944444444444444,
+      "closure rate, others": 0.012987012987012988,
+      "rate ratio": 0.5347222222222222,
+      "rate ratio 95% interval": [
+       0.06491150937535427,
+       4.404886863512578
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.8519339551361529,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "widened alone, price not considered": {
+      "flagged": 152,
+      "flagged closed": 1,
+      "others": 454,
+      "others closed": 6,
+      "closure rate, flagged": 0.006578947368421052,
+      "closure rate, others": 0.013215859030837005,
+      "rate ratio": 0.4978070175438596,
+      "rate ratio 95% interval": [
+       0.06041224901769136,
+       4.102012931902971
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.8690813744815779,
+      "Fisher exact p, two-sided": 0.6862982712034913
+     }
+    },
+    "for-profit": {
+     "nominal (primary)": {
+      "flagged": 44,
+      "flagged closed": 21,
+      "others": 342,
+      "others closed": 250,
+      "closure rate, flagged": 0.4772727272727273,
+      "closure rate, others": 0.7309941520467836,
+      "rate ratio": 0.6529090909090909,
+      "rate ratio 95% interval": [
+       0.47608622013054674,
+       0.8954056281545877
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9997672214498733,
+      "Fisher exact p, two-sided": 0.001310840091683127
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 31,
+      "flagged closed": 13,
+      "others": 355,
+      "others closed": 258,
+      "closure rate, flagged": 0.41935483870967744,
+      "closure rate, others": 0.7267605633802817,
+      "rate ratio": 0.5770192548137034,
+      "rate ratio 95% interval": [
+       0.37946896589091716,
+       0.8774135709465959
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.999853642541346,
+      "Fisher exact p, two-sided": 0.0007535898518471979
+     },
+     "widened alone, price not considered": {
+      "flagged": 63,
+      "flagged closed": 37,
+      "others": 323,
+      "others closed": 234,
+      "closure rate, flagged": 0.5873015873015873,
+      "closure rate, others": 0.7244582043343654,
+      "rate ratio": 0.810676977343644,
+      "rate ratio 95% interval": [
+       0.6521148085261432,
+       1.0077936476866252
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.9887460186282693,
+      "Fisher exact p, two-sided": 0.0350843588967995
+     }
+    }
+   },
+   "header files": [
+    {
+     "table": "HD2014",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+     "file": "hd2014.csv",
+     "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+     "institutions read": 7687
+    },
+    {
+     "table": "HD2015",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+     "file": "hd2015.csv",
+     "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+     "institutions read": 7647
+    },
+    {
+     "table": "HD2016",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+     "file": "hd2016.csv",
+     "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+     "institutions read": 7521
+    },
+    {
+     "table": "HD2017",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+     "file": "hd2017.csv",
+     "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+     "institutions read": 7153
+    },
+    {
+     "table": "HD2018",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+     "file": "hd2018.csv",
+     "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+     "institutions read": 6857
+    },
+    {
+     "table": "HD2019",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+     "file": "hd2019.csv",
+     "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+     "institutions read": 6559
+    }
+   ]
+  },
+  "2019": {
+   "institutions in frame": 2876,
+   "with a comparable widening": 1900,
+   "75th-percentile thresholds by control": {
+    "public": 0.049513017772619405,
+    "private nonprofit": 0.11055634321679286,
+    "for-profit": 0.0
+   },
+   "results": {
+    "private nonprofit (primary)": {
+     "nominal (primary)": {
+      "flagged": 279,
+      "flagged closed": 19,
+      "others": 846,
+      "others closed": 51,
+      "closure rate, flagged": 0.06810035842293907,
+      "closure rate, others": 0.06028368794326241,
+      "rate ratio": 1.12966476913346,
+      "rate ratio 95% interval": [
+       0.6789611229923098,
+       1.8795516376506987
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.36529454020022933,
+      "Fisher exact p, two-sided": 0.6683043292879833
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 269,
+      "flagged closed": 16,
+      "others": 856,
+      "others closed": 54,
+      "closure rate, flagged": 0.05947955390334572,
+      "closure rate, others": 0.0630841121495327,
+      "rate ratio": 0.942861076690073,
+      "rate ratio 95% interval": [
+       0.5490130539667402,
+       1.6192456691403547
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.632407334440803,
+      "Fisher exact p, two-sided": 0.8860665146020374
+     },
+     "widened alone, price not considered": {
+      "flagged": 281,
+      "flagged closed": 19,
+      "others": 844,
+      "others closed": 51,
+      "closure rate, flagged": 0.06761565836298933,
+      "closure rate, others": 0.06042654028436019,
+      "rate ratio": 1.1189728560463332,
+      "rate ratio 95% interval": [
+       0.6724773617820305,
+       1.8619217890851916
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.37888682970401355,
+      "Fisher exact p, two-sided": 0.669731110878998
+     }
+    },
+    "all": {
+     "nominal (primary)": {
+      "flagged": 458,
+      "flagged closed": 24,
+      "others": 1442,
+      "others closed": 77,
+      "closure rate, flagged": 0.05240174672489083,
+      "closure rate, others": 0.05339805825242718,
+      "rate ratio": 0.981341802302501,
+      "rate ratio 95% interval": [
+       0.6282514798032192,
+       1.53287618717263
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.5731120811400578,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 413,
+      "flagged closed": 21,
+      "others": 1487,
+      "others closed": 80,
+      "closure rate, flagged": 0.05084745762711865,
+      "closure rate, others": 0.05379959650302623,
+      "rate ratio": 0.9451271186440678,
+      "rate ratio 95% interval": [
+       0.5918663397392498,
+       1.509234789040328
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.6337664130815925,
+      "Fisher exact p, two-sided": 0.9015654580472588
+     },
+     "widened alone, price not considered": {
+      "flagged": 470,
+      "flagged closed": 27,
+      "others": 1430,
+      "others closed": 74,
+      "closure rate, flagged": 0.0574468085106383,
+      "closure rate, others": 0.05174825174825175,
+      "rate ratio": 1.1101207590569293,
+      "rate ratio 95% interval": [
+       0.7234675142115734,
+       1.7034187098672338
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.3539991678881468,
+      "Fisher exact p, two-sided": 0.6360980209321204
+     }
+    },
+    "public": {
+     "nominal (primary)": {
+      "flagged": 162,
+      "flagged closed": 2,
+      "others": 498,
+      "others closed": 9,
+      "closure rate, flagged": 0.012345679012345678,
+      "closure rate, others": 0.018072289156626505,
+      "rate ratio": 0.6831275720164609,
+      "rate ratio 95% interval": [
+       0.1491268605278846,
+       3.1293039898861514
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.7957202850686096,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 134,
+      "flagged closed": 2,
+      "others": 526,
+      "others closed": 9,
+      "closure rate, flagged": 0.014925373134328358,
+      "closure rate, others": 0.017110266159695818,
+      "rate ratio": 0.8723051409618573,
+      "rate ratio 95% interval": [
+       0.19070900596442425,
+       3.9899335382746974
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.6890205384735938,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "widened alone, price not considered": {
+      "flagged": 165,
+      "flagged closed": 2,
+      "others": 495,
+      "others closed": 9,
+      "closure rate, flagged": 0.012121212121212121,
+      "closure rate, others": 0.01818181818181818,
+      "rate ratio": 0.6666666666666667,
+      "rate ratio 95% interval": [
+       0.1455150650649933,
+       3.0542847522071788
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.8052646181693079,
+      "Fisher exact p, two-sided": 0.7396538613124549
+     }
+    },
+    "for-profit": {
+     "nominal (primary)": {
+      "flagged": 17,
+      "flagged closed": 3,
+      "others": 98,
+      "others closed": 17,
+      "closure rate, flagged": 0.17647058823529413,
+      "closure rate, others": 0.17346938775510204,
+      "rate ratio": 1.0173010380622838,
+      "rate ratio 95% interval": [
+       0.33387859075398124,
+       3.099633910954082
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.6036854947049611,
+      "Fisher exact p, two-sided": 1.0
+     },
+     "inflation-adjusted (sensitivity)": {
+      "flagged": 10,
+      "flagged closed": 3,
+      "others": 105,
+      "others closed": 17,
+      "closure rate, flagged": 0.3,
+      "closure rate, others": 0.1619047619047619,
+      "rate ratio": 1.852941176470588,
+      "rate ratio 95% interval": [
+       0.6536349619760919,
+       5.252765233181929
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.23934588078006028,
+      "Fisher exact p, two-sided": 0.3749090773882159
+     },
+     "widened alone, price not considered": {
+      "flagged": 24,
+      "flagged closed": 6,
+      "others": 91,
+      "others closed": 14,
+      "closure rate, flagged": 0.25,
+      "closure rate, others": 0.15384615384615385,
+      "rate ratio": 1.625,
+      "rate ratio 95% interval": [
+       0.6987197956275456,
+       3.779233129681633
+      ],
+      "Fisher exact p, one-sided (flagged more often)": 0.20706826015071106,
+      "Fisher exact p, two-sided": 0.3621329458515436
+     }
+    }
+   },
+   "header files": [
+    {
+     "table": "HD2019",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+     "file": "hd2019.csv",
+     "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+     "institutions read": 6559
+    },
+    {
+     "table": "HD2020",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+     "file": "hd2020.csv",
+     "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+     "institutions read": 6440
+    },
+    {
+     "table": "HD2021",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+     "file": "hd2021.csv",
+     "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+     "institutions read": 6289
+    },
+    {
+     "table": "HD2022",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+     "file": "hd2022.csv",
+     "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+     "institutions read": 6256
+    },
+    {
+     "table": "HD2023",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+     "file": "HD2023.csv",
+     "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+     "institutions read": 6163
+    },
+    {
+     "table": "HD2024",
+     "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+     "file": "HD2024.csv",
+     "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+     "institutions read": 6072
+    },
+    {
+     "table": "HD2025",
+     "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+     "file": "hd2025.csv",
+     "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+     "institutions read": 5985
+    }
+   ]
+  }
+ }
+}
