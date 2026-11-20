@@ -1,0 +1,228 @@
+{
+ "note": "v4 soundness dimension (Amendment 6): frozen norms and summary. No closure outcome was read.",
+ "written at (UTC)": "2026-11-20T16:11:26.598005+00:00",
+ "norms": {
+  "norm years": [
+   2013,
+   2014
+  ],
+  "m_min": 20,
+  "n_pos": 20,
+  "by control": {
+   "public": {
+    "fit college-years": 1274,
+    "tercile cuts": [
+     4043.551355988511,
+     6415.945708231388
+    ],
+    "cells": {
+     "0": {
+      "bands merged": [
+       0
+      ],
+      "n": 394,
+      "x_norm": 0.038186375028480296
+     },
+     "1": {
+      "bands merged": [
+       1
+      ],
+      "n": 394,
+      "x_norm": 0.04252078584430706
+     },
+     "2": {
+      "bands merged": [
+       2
+      ],
+      "n": 394,
+      "x_norm": 0.042653629975935234
+     }
+    },
+    "pooled": {
+     "n": 1274,
+     "x_norm": 0.04186067303222114
+    },
+    "positive excess exit (fit)": 643,
+    "x_ref p90": 0.05564257275095442,
+    "x_ref p95": 0.08670550443937892,
+    "x_ref p97.5": 0.12234276057335769
+   },
+   "private nonprofit": {
+    "fit college-years": 1264,
+    "tercile cuts": [
+     13834.410993989475,
+     44088.11135707836
+    ],
+    "cells": {
+     "0": {
+      "bands merged": [
+       0
+      ],
+      "n": 358,
+      "x_norm": 0.06061558295060833
+     },
+     "1": {
+      "bands merged": [
+       1
+      ],
+      "n": 358,
+      "x_norm": 0.056560181276936065
+     },
+     "2": {
+      "bands merged": [
+       2
+      ],
+      "n": 358,
+      "x_norm": 0.05148304881901826
+     }
+    },
+    "pooled": {
+     "n": 1264,
+     "x_norm": 0.055375364431486884
+    },
+    "positive excess exit (fit)": 631,
+    "x_ref p90": 0.08668356573359451,
+    "x_ref p95": 0.12165655846469708,
+    "x_ref p97.5": 0.16275544067411338
+   },
+   "for-profit": {
+    "fit college-years": 602,
+    "pooled": {
+     "n": 602,
+     "x_norm": 0.18518518518518517
+    },
+    "positive excess exit (fit)": 298,
+    "x_ref p90": 0.17592592592592593,
+    "x_ref p95": 0.2553610333022089,
+    "x_ref p97.5": 0.3148148148148148
+   }
+  }
+ },
+ "summary at scoring years": {
+  "2014": {
+   "public": {
+    "institutions": 725,
+    "coverage available": 636,
+    "exit reading available": 606,
+    "median B_cov": 1.0298952704608881,
+    "median x_exit": 0.04339838086712733,
+    "share with excess exit": 0.5181518151815182
+   },
+   "private nonprofit": {
+    "institutions": 1682,
+    "coverage available": 1550,
+    "exit reading available": 644,
+    "median B_cov": 1.1282859083113774,
+    "median x_exit": 0.05764196536447845,
+    "share with excess exit": 0.5201863354037267
+   },
+   "for-profit": {
+    "institutions": 792,
+    "coverage available": 565,
+    "exit reading available": 221,
+    "median B_cov": 1.046827974764684,
+    "median x_exit": 0.16216216216216217,
+    "share with excess exit": 0.4479638009049774
+   }
+  },
+  "2019": {
+   "public": {
+    "institutions": 793,
+    "coverage available": 696,
+    "exit reading available": 740,
+    "median B_cov": 1.0211067064481583,
+    "median x_exit": 0.09534751637874471,
+    "share with excess exit": 0.8959459459459459
+   },
+   "private nonprofit": {
+    "institutions": 1670,
+    "coverage available": 1533,
+    "exit reading available": 1327,
+    "median B_cov": 1.0295275802069224,
+    "median x_exit": 0.12396694214876033,
+    "share with excess exit": 0.8831951770911831
+   },
+   "for-profit": {
+    "institutions": 413,
+    "coverage available": 263,
+    "exit reading available": 229,
+    "median B_cov": 1.0252180636360697,
+    "median x_exit": 0.19444444444444445,
+    "share with excess exit": 0.5152838427947598
+   }
+  }
+ },
+ "files read": {
+  "staff 2012": {
+   "S_OC": 3545,
+   "S_NH": 2393
+  },
+  "staff 2013": {
+   "S_OC": 7505,
+   "S_NH": 4044
+  },
+  "staff 2014": {
+   "S_OC": 3355,
+   "S_NH": 2292
+  },
+  "staff 2015": {
+   "S_OC": 7282,
+   "S_NH": 3783
+  },
+  "staff 2016": {
+   "S_OC": 6873,
+   "S_NH": 3726
+  },
+  "staff 2017": {
+   "S_OC": 6720,
+   "S_NH": 3717
+  },
+  "staff 2018": {
+   "S_OC": 6399,
+   "S_NH": 3546
+  },
+  "staff 2019": {
+   "S_OC": 6204,
+   "S_NH": 3478
+  },
+  "finance 2013": {
+   "F1A": 1995,
+   "F2": 1890,
+   "F3": 3214
+  },
+  "finance 2014": {
+   "F1A": 1988,
+   "F2": 1883,
+   "F3": 3176
+  },
+  "finance 2015": {
+   "F1A": 1986,
+   "F2": 1922,
+   "F3": 3020
+  },
+  "finance 2016": {
+   "F1A": 1986,
+   "F2": 1888,
+   "F3": 2782
+  },
+  "finance 2017": {
+   "F1A": 1978,
+   "F2": 1884,
+   "F3": 2657
+  },
+  "finance 2018": {
+   "F1A": 1964,
+   "F2": 1849,
+   "F3": 2379
+  },
+  "finance 2019": {
+   "F1A": 1961,
+   "F2": 1836,
+   "F3": 2272
+  }
+ },
+ "limitations": [
+  "x_exit is a residual under a headcount model; new hires are counted July 1 to October 31 only",
+  "private revenue includes investment return, so coverage moves with markets"
+ ]
+}
