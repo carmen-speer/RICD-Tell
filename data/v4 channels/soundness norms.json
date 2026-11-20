@@ -1,102 +1,205 @@
 {
  "note": "v4 soundness dimension (Amendment 6): frozen norms and summary. No closure outcome was read.",
- "written at (UTC)": "2026-11-20T16:11:26.598005+00:00",
- "norms": {
-  "norm years": [
-   2013,
-   2014
-  ],
-  "m_min": 20,
-  "n_pos": 20,
-  "by control": {
-   "public": {
-    "fit college-years": 1274,
-    "tercile cuts": [
-     4043.551355988511,
-     6415.945708231388
-    ],
-    "cells": {
-     "0": {
-      "bands merged": [
-       0
-      ],
-      "n": 394,
-      "x_norm": 0.038186375028480296
+ "written at (UTC)": "2026-11-20T16:19:45.707638+00:00",
+ "norms by comparability segment (Amendment 7)": {
+  "A (new hires July 1 to October 31; staffing years 2013-2015)": {
+   "norm years": [
+    2013,
+    2014
+   ],
+   "m_min": 20,
+   "n_pos": 20,
+   "by control": {
+    "public": {
+     "fit college-years": 1274,
+     "tercile cuts": [
+      4043.551355988511,
+      6415.945708231388
+     ],
+     "cells": {
+      "0": {
+       "bands merged": [
+        0
+       ],
+       "n": 394,
+       "x_norm": 0.038186375028480296
+      },
+      "1": {
+       "bands merged": [
+        1
+       ],
+       "n": 394,
+       "x_norm": 0.04252078584430706
+      },
+      "2": {
+       "bands merged": [
+        2
+       ],
+       "n": 394,
+       "x_norm": 0.042653629975935234
+      }
      },
-     "1": {
-      "bands merged": [
-       1
-      ],
-      "n": 394,
-      "x_norm": 0.04252078584430706
+     "pooled": {
+      "n": 1274,
+      "x_norm": 0.04186067303222114
      },
-     "2": {
-      "bands merged": [
-       2
-      ],
-      "n": 394,
-      "x_norm": 0.042653629975935234
-     }
+     "positive excess exit (fit)": 643,
+     "x_ref p90": 0.05564257275095442,
+     "x_ref p95": 0.08670550443937892,
+     "x_ref p97.5": 0.12234276057335769
     },
-    "pooled": {
-     "n": 1274,
-     "x_norm": 0.04186067303222114
-    },
-    "positive excess exit (fit)": 643,
-    "x_ref p90": 0.05564257275095442,
-    "x_ref p95": 0.08670550443937892,
-    "x_ref p97.5": 0.12234276057335769
-   },
-   "private nonprofit": {
-    "fit college-years": 1264,
-    "tercile cuts": [
-     13834.410993989475,
-     44088.11135707836
-    ],
-    "cells": {
-     "0": {
-      "bands merged": [
-       0
-      ],
-      "n": 358,
-      "x_norm": 0.06061558295060833
+    "private nonprofit": {
+     "fit college-years": 1264,
+     "tercile cuts": [
+      13834.410993989475,
+      44088.11135707836
+     ],
+     "cells": {
+      "0": {
+       "bands merged": [
+        0
+       ],
+       "n": 358,
+       "x_norm": 0.06061558295060833
+      },
+      "1": {
+       "bands merged": [
+        1
+       ],
+       "n": 358,
+       "x_norm": 0.056560181276936065
+      },
+      "2": {
+       "bands merged": [
+        2
+       ],
+       "n": 358,
+       "x_norm": 0.05148304881901826
+      }
      },
-     "1": {
-      "bands merged": [
-       1
-      ],
-      "n": 358,
-      "x_norm": 0.056560181276936065
+     "pooled": {
+      "n": 1264,
+      "x_norm": 0.055375364431486884
      },
-     "2": {
-      "bands merged": [
-       2
-      ],
-      "n": 358,
-      "x_norm": 0.05148304881901826
-     }
+     "positive excess exit (fit)": 631,
+     "x_ref p90": 0.08668356573359451,
+     "x_ref p95": 0.12165655846469708,
+     "x_ref p97.5": 0.16275544067411338
     },
-    "pooled": {
-     "n": 1264,
-     "x_norm": 0.055375364431486884
+    "for-profit": {
+     "fit college-years": 602,
+     "pooled": {
+      "n": 602,
+      "x_norm": 0.18518518518518517
+     },
+     "positive excess exit (fit)": 298,
+     "x_ref p90": 0.17592592592592593,
+     "x_ref p95": 0.2553610333022089,
+     "x_ref p97.5": 0.3148148148148148
+    }
+   }
+  },
+  "B (new hires over twelve months; staffing years 2016 on)": {
+   "norm years": [
+    2016,
+    2017
+   ],
+   "m_min": 20,
+   "n_pos": 20,
+   "by control": {
+    "public": {
+     "fit college-years": 1527,
+     "tercile cuts": [
+      4552.802467222391,
+      7136.29803795273
+     ],
+     "cells": {
+      "0": {
+       "bands merged": [
+        0
+       ],
+       "n": 471,
+       "x_norm": 0.0764525993883792
+      },
+      "1": {
+       "bands merged": [
+        1
+       ],
+       "n": 471,
+       "x_norm": 0.0859697386519945
+      },
+      "2": {
+       "bands merged": [
+        2
+       ],
+       "n": 471,
+       "x_norm": 0.08461538461538462
+      }
+     },
+     "pooled": {
+      "n": 1527,
+      "x_norm": 0.0830188679245283
+     },
+     "positive excess exit (fit)": 764,
+     "x_ref p90": 0.0625801541505805,
+     "x_ref p95": 0.08896267428567929,
+     "x_ref p97.5": 0.12312486540035295
     },
-    "positive excess exit (fit)": 631,
-    "x_ref p90": 0.08668356573359451,
-    "x_ref p95": 0.12165655846469708,
-    "x_ref p97.5": 0.16275544067411338
-   },
-   "for-profit": {
-    "fit college-years": 602,
-    "pooled": {
-     "n": 602,
-     "x_norm": 0.18518518518518517
+    "private nonprofit": {
+     "fit college-years": 2738,
+     "tercile cuts": [
+      12420.020161290322,
+      38438.73542210618
+     ],
+     "cells": {
+      "0": {
+       "bands merged": [
+        0
+       ],
+       "n": 722,
+       "x_norm": 0.11764705882352941
+      },
+      "1": {
+       "bands merged": [
+        1
+       ],
+       "n": 721,
+       "x_norm": 0.1148936170212766
+      },
+      "2": {
+       "bands merged": [
+        2
+       ],
+       "n": 721,
+       "x_norm": 0.09955752212389381
+      }
+     },
+     "pooled": {
+      "n": 2738,
+      "x_norm": 0.10943202554744526
+     },
+     "positive excess exit (fit)": 1369,
+     "x_ref p90": 0.10063802158588299,
+     "x_ref p95": 0.15570728990622973,
+     "x_ref p97.5": 0.20633942766295696
     },
-    "positive excess exit (fit)": 298,
-    "x_ref p90": 0.17592592592592593,
-    "x_ref p95": 0.2553610333022089,
-    "x_ref p97.5": 0.3148148148148148
+    "for-profit": {
+     "fit college-years": 707,
+     "pooled": {
+      "n": 707,
+      "x_norm": 0.21014492753623187
+     },
+     "positive excess exit (fit)": 353,
+     "x_ref p90": 0.24818840579710144,
+     "x_ref p95": 0.32775375914294247,
+     "x_ref p97.5": 0.38002807050193493
+    }
    }
   }
+ },
+ "segment used by frame": {
+  "2014": "A (new hires July 1 to October 31; staffing years 2013-2015)",
+  "2019": "B (new hires over twelve months; staffing years 2016 on)"
  },
  "summary at scoring years": {
   "2014": {
@@ -132,7 +235,7 @@
     "exit reading available": 740,
     "median B_cov": 1.0211067064481583,
     "median x_exit": 0.09534751637874471,
-    "share with excess exit": 0.8959459459459459
+    "share with excess exit": 0.6162162162162163
    },
    "private nonprofit": {
     "institutions": 1670,
@@ -140,7 +243,7 @@
     "exit reading available": 1327,
     "median B_cov": 1.0295275802069224,
     "median x_exit": 0.12396694214876033,
-    "share with excess exit": 0.8831951770911831
+    "share with excess exit": 0.5953278070836473
    },
    "for-profit": {
     "institutions": 413,
@@ -148,7 +251,7 @@
     "exit reading available": 229,
     "median B_cov": 1.0252180636360697,
     "median x_exit": 0.19444444444444445,
-    "share with excess exit": 0.5152838427947598
+    "share with excess exit": 0.4366812227074236
    }
   }
  },
