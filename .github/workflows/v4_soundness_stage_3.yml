@@ -1,0 +1,56 @@
+name: v4 soundness stage 3 - confirm on the 2019 frame
+
+# Manual-only. Runs "src/v4 soundness selection.py" --stage 3 under
+# "channel selection protocol.md", Amendment 6: the soundness dimension's
+# stage 3 on the 2019 frame (HD2019 onward), after stages 1 and 2 are committed.
+# Commits data/v4 channels/"soundness selection stage 3.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-soundness-selection
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the selection stage
+        run: |
+          cd src
+          python "v4 soundness selection.py" --stage 3
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 soundness selection stage 3 (2019 frame)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
