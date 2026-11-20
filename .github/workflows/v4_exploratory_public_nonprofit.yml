@@ -1,0 +1,57 @@
+name: v4 exploratory - the gaps at public and nonprofit colleges (2014 frame)
+
+# Manual-only. EXPLORATORY, not part of channel selection. Runs
+# "src/v4 exploratory public and nonprofit.py": repeats stage 1 on public and
+# private nonprofit institutions only, and on private nonprofits alone.
+# Changes nothing already selected. Commits
+# data/v4 channels/"exploratory public and nonprofit.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-exploratory
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the exploratory comparison
+        run: |
+          cd src
+          python "v4 exploratory public and nonprofit.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 exploratory: the gaps at public and nonprofit colleges (2014 frame; not part of selection)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
