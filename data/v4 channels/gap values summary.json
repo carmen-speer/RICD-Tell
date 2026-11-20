@@ -1,0 +1,381 @@
+{
+ "note": "v4 channel selection: gap values from the frozen step 1 calibrations (channel selection protocol.md). No closure outcome was read.",
+ "written at (UTC)": "2026-11-20T14:19:51.339328+00:00",
+ "calibrations written at (UTC)": "2026-11-20T13:54:31.118530+00:00",
+ "scoring-year rule": "price: fiscal year t; outcome: newest Outcome Measures file of a year <= t, or the Graduation Rates file of year t where no Outcome Measures file was yet collected; four-year: GR200 file of year t",
+ "open item": "the program-length check of Definition 15.2.13 is not built: no IPEDS field states a college's standard bachelor's length, so no college is yet marked unavailable or flagged for longer programs",
+ "by frame and control": {
+  "2014": {
+   "all": {
+    "institutions": 3199,
+    "D_price": {
+     "available": 2218,
+     "mean": 0.06345376601805669,
+     "median": 0.0034984245735683994,
+     "90th percentile": 0.19180987479036743,
+     "share above 0": 0.5103697024346258
+    },
+    "D_outcome_ret": {
+     "available": 2043,
+     "mean": 0.01002956682053482,
+     "median": 0.0006029361549598211,
+     "90th percentile": 0.015120924068707197,
+     "share above 0": 0.6216348507097406
+    },
+    "D_over": {
+     "available": 2043,
+     "mean": 0.008930105703010964,
+     "median": 0.00024215666140220415,
+     "90th percentile": 0.011405107736221193,
+     "share above 0": 0.5658345570239843
+    },
+    "D_under": {
+     "available": 2043,
+     "mean": 0.0010994611175238575,
+     "median": 0.0,
+     "90th percentile": 0.0,
+     "share above 0": 0.055800293685756244
+    },
+    "D_4yr": {
+     "available": 2070,
+     "mean": 0.2596269741319165,
+     "median": 0.18762891710728571,
+     "90th percentile": 0.5592690890298192,
+     "share above 0": 0.9367149758454106
+    },
+    "all three available": 1742,
+    "none available": 688,
+    "price ratio above 1 (kept, flagged)": 197,
+    "outcome source": {
+     "OM": 0,
+     "GR": 2043
+    },
+    "tau_out reported (of outcome available)": 823
+   },
+   "public": {
+    "institutions": 725,
+    "D_price": {
+     "available": 615,
+     "mean": 0.056795630666019246,
+     "median": 0.0,
+     "90th percentile": 0.20057872055145756,
+     "share above 0": 0.4585365853658537
+    },
+    "D_outcome_ret": {
+     "available": 588,
+     "mean": 0.0017419096913975413,
+     "median": 0.0,
+     "90th percentile": 0.004233813583200397,
+     "share above 0": 0.44047619047619047
+    },
+    "D_over": {
+     "available": 588,
+     "mean": 0.0012137634995852023,
+     "median": 0.0,
+     "90th percentile": 0.0027234354084297255,
+     "share above 0": 0.3843537414965986
+    },
+    "D_under": {
+     "available": 588,
+     "mean": 0.0005281461918123389,
+     "median": 0.0,
+     "90th percentile": 0.0,
+     "share above 0": 0.05612244897959184
+    },
+    "D_4yr": {
+     "available": 594,
+     "mean": 0.33694766769931855,
+     "median": 0.3225198175902524,
+     "90th percentile": 0.5109806095279898,
+     "share above 0": 1.0
+    },
+    "all three available": 536,
+    "none available": 56,
+    "price ratio above 1 (kept, flagged)": 25,
+    "outcome source": {
+     "OM": 0,
+     "GR": 588
+    },
+    "tau_out reported (of outcome available)": 367
+   },
+   "private nonprofit": {
+    "institutions": 1682,
+    "D_price": {
+     "available": 1175,
+     "mean": 0.07670246367232245,
+     "median": 0.03738180733849819,
+     "90th percentile": 0.19867374815849764,
+     "share above 0": 0.5982978723404255
+    },
+    "D_outcome_ret": {
+     "available": 1189,
+     "mean": 0.009866707834618637,
+     "median": 0.002129498272463115,
+     "90th percentile": 0.017809269698265864,
+     "share above 0": 0.7460050462573591
+    },
+    "D_over": {
+     "available": 1189,
+     "mean": 0.008731217784627227,
+     "median": 0.001726871421727949,
+     "90th percentile": 0.015146900922634378,
+     "share above 0": 0.7039529015979815
+    },
+    "D_under": {
+     "available": 1189,
+     "mean": 0.0011354900499914078,
+     "median": 0.0,
+     "90th percentile": 0.0,
+     "share above 0": 0.04205214465937763
+    },
+    "D_4yr": {
+     "available": 1183,
+     "mean": 0.21727674581010495,
+     "median": 0.12665407460093991,
+     "90th percentile": 0.5356179434624158,
+     "share above 0": 0.9518174133558749
+    },
+    "all three available": 1071,
+    "none available": 396,
+    "price ratio above 1 (kept, flagged)": 56,
+    "outcome source": {
+     "OM": 0,
+     "GR": 1189
+    },
+    "tau_out reported (of outcome available)": 388
+   },
+   "for-profit": {
+    "institutions": 792,
+    "D_price": {
+     "available": 428,
+     "mean": 0.036648937741750015,
+     "median": 0.0,
+     "90th percentile": 0.11827197570952502,
+     "share above 0": 0.34345794392523366
+    },
+    "D_outcome_ret": {
+     "available": 266,
+     "mean": 0.029077618422741834,
+     "median": 0.0,
+     "90th percentile": 0.08155347142389466,
+     "share above 0": 0.46616541353383456
+    },
+    "D_over": {
+     "available": 266,
+     "mean": 0.02687629724651701,
+     "median": 0.0,
+     "90th percentile": 0.07494624515828469,
+     "share above 0": 0.34962406015037595
+    },
+    "D_under": {
+     "available": 266,
+     "mean": 0.0022013211762248186,
+     "median": 0.0,
+     "90th percentile": 0.00048980453771863,
+     "share above 0": 0.11654135338345864
+    },
+    "D_4yr": {
+     "available": 293,
+     "mean": 0.27386529537992427,
+     "median": 0.10951407162544946,
+     "90th percentile": 1.0,
+     "share above 0": 0.7474402730375427
+    },
+    "all three available": 135,
+    "none available": 236,
+    "price ratio above 1 (kept, flagged)": 116,
+    "outcome source": {
+     "OM": 0,
+     "GR": 266
+    },
+    "tau_out reported (of outcome available)": 68
+   }
+  },
+  "2019": {
+   "all": {
+    "institutions": 2876,
+    "D_price": {
+     "available": 1968,
+     "mean": 0.08725887138562685,
+     "median": 0.043004450476514286,
+     "90th percentile": 0.2355211422094282,
+     "share above 0": 0.5975609756097561
+    },
+    "D_outcome_ret": {
+     "available": 2078,
+     "mean": 0.011592665479847787,
+     "median": 0.0007246430966663941,
+     "90th percentile": 0.030952122243943836,
+     "share above 0": 0.65832531280077
+    },
+    "D_over": {
+     "available": 2078,
+     "mean": 0.007844449953608208,
+     "median": 0.00011327306650066316,
+     "90th percentile": 0.01807813095489299,
+     "share above 0": 0.5567853705486044
+    },
+    "D_under": {
+     "available": 2078,
+     "mean": 0.00374821552623958,
+     "median": 0.0,
+     "90th percentile": 3.499172616544443e-06,
+     "share above 0": 0.10153994225216555
+    },
+    "D_4yr": {
+     "available": 1916,
+     "mean": 0.22593518575212915,
+     "median": 0.1522980405149759,
+     "90th percentile": 0.4884337720088985,
+     "share above 0": 0.9399791231732777
+    },
+    "all three available": 1667,
+    "none available": 601,
+    "price ratio above 1 (kept, flagged)": 106,
+    "outcome source": {
+     "OM": 2078,
+     "GR": 0
+    },
+    "tau_out reported (of outcome available)": 2078
+   },
+   "public": {
+    "institutions": 793,
+    "D_price": {
+     "available": 666,
+     "mean": 0.07273075846931037,
+     "median": 0.010702956469583615,
+     "90th percentile": 0.2151661781797594,
+     "share above 0": 0.5345345345345346
+    },
+    "D_outcome_ret": {
+     "available": 656,
+     "mean": 0.0024806826805854787,
+     "median": 0.0,
+     "90th percentile": 0.00605965388490784,
+     "share above 0": 0.44359756097560976
+    },
+    "D_over": {
+     "available": 656,
+     "mean": 0.0018577344310305825,
+     "median": 0.0,
+     "90th percentile": 0.004304985963683283,
+     "share above 0": 0.4054878048780488
+    },
+    "D_under": {
+     "available": 656,
+     "mean": 0.0006229482495548962,
+     "median": 0.0,
+     "90th percentile": 0.0,
+     "share above 0": 0.038109756097560975
+    },
+    "D_4yr": {
+     "available": 585,
+     "mean": 0.30295461450824873,
+     "median": 0.29234733310128647,
+     "90th percentile": 0.4887122121859782,
+     "share above 0": 0.9982905982905983
+    },
+    "all three available": 543,
+    "none available": 76,
+    "price ratio above 1 (kept, flagged)": 21,
+    "outcome source": {
+     "OM": 656,
+     "GR": 0
+    },
+    "tau_out reported (of outcome available)": 656
+   },
+   "private nonprofit": {
+    "institutions": 1670,
+    "D_price": {
+     "available": 1162,
+     "mean": 0.10039928163199713,
+     "median": 0.07351502694441678,
+     "90th percentile": 0.24750288322933628,
+     "share above 0": 0.6609294320137694
+    },
+    "D_outcome_ret": {
+     "available": 1208,
+     "mean": 0.01329129633794045,
+     "median": 0.00202264581635081,
+     "90th percentile": 0.03824727957821339,
+     "share above 0": 0.7557947019867549
+    },
+    "D_over": {
+     "available": 1208,
+     "mean": 0.009614738363997802,
+     "median": 0.0009267400294978856,
+     "90th percentile": 0.02409109836095752,
+     "share above 0": 0.6564569536423841
+    },
+    "D_under": {
+     "available": 1208,
+     "mean": 0.0036765579739426483,
+     "median": 0.0,
+     "90th percentile": 0.0,
+     "share above 0": 0.09933774834437085
+    },
+    "D_4yr": {
+     "available": 1175,
+     "mean": 0.18653094012765667,
+     "median": 0.10691113159526183,
+     "90th percentile": 0.4419818312542532,
+     "share above 0": 0.9412765957446808
+    },
+    "all three available": 1058,
+    "none available": 386,
+    "price ratio above 1 (kept, flagged)": 51,
+    "outcome source": {
+     "OM": 1208,
+     "GR": 0
+    },
+    "tau_out reported (of outcome available)": 1208
+   },
+   "for-profit": {
+    "institutions": 413,
+    "D_price": {
+     "available": 140,
+     "mean": 0.047305774928373415,
+     "median": 0.0,
+     "90th percentile": 0.1358407958694168,
+     "share above 0": 0.37142857142857144
+    },
+    "D_outcome_ret": {
+     "available": 214,
+     "mean": 0.029936191833773683,
+     "median": 0.0036550533836831045,
+     "90th percentile": 0.10803154614560007,
+     "share above 0": 0.7663551401869159
+    },
+    "D_over": {
+     "available": 214,
+     "mean": 0.016203220902488085,
+     "median": 0.0,
+     "90th percentile": 0.05269779157910309,
+     "share above 0": 0.45794392523364486
+    },
+    "D_under": {
+     "available": 214,
+     "mean": 0.013732970931285594,
+     "median": 0.0,
+     "90th percentile": 0.027692849492419108,
+     "share above 0": 0.308411214953271
+    },
+    "D_4yr": {
+     "available": 156,
+     "mean": 0.23390712669075192,
+     "median": 0.0952794511521729,
+     "90th percentile": 0.8621994662771914,
+     "share above 0": 0.7115384615384616
+    },
+    "all three available": 66,
+    "none available": 139,
+    "price ratio above 1 (kept, flagged)": 34,
+    "outcome source": {
+     "OM": 214,
+     "GR": 0
+    },
+    "tau_out reported (of outcome available)": 214
+   }
+  }
+ }
+}
