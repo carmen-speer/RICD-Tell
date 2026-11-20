@@ -15,9 +15,16 @@ independent for-profit colleges:
       time relative to independents'
 
 Frame: every for-profit institution (SECTOR 3, 6 or 9) active in HD2009.
-Chain: a member of a multi-institution or multi-campus organization in
-HD2009 (F1SYSTYP = 1), with its system named by F1SYSNAM, the definition
-the v3 anchor sensor and its first trace used. Closure year: the first year
+Chain: a member of a multi-institution or multi-campus organization
+(F1SYSTYP = 1), with its system named by F1SYSNAM, the definition the v3
+anchor sensor and its first trace used. Membership is read from HD2009 if
+that file codes F1SYSTYP; the first run (November 20) found no member in
+HD2009, so the field's presence and values in every header file are
+recorded, and membership is read from the earliest header file that codes
+it (at least 1,000 members), taking each institution's first coded record
+from that year on. Institutions with no coded record (mostly those that
+closed before that year) are reported as membership unknown and left out
+of the chain and independent groups. Closure year: the first year
 after an institution's last appearance in the header files 2009 onward
 (an institution that reappears as active is not closed), or its DEATHYR if
 earlier. Instruction share: instruction expenses (F3E01 through fiscal 2013,
@@ -93,16 +100,41 @@ def rate_curve(group, years):
 def main() -> None:
     present, files, missing = headers()
     last_file = max(int(f["table"][2:]) for f in files)
-    frame = []
+    # Which header files code system membership (F1SYSTYP), and from which year it is read
+    field_status = {}
+    for y in range(FIRST, last_file + 1):
+        vals = Counter(rows[y].get("F1SYSTYP", "<absent>") for rows in present.values() if y in rows)
+        field_status[str(y)] = dict(vals.most_common(5))
+    sys_year = next((y for y in range(FIRST, last_file + 1) if field_status.get(str(y), {}).get("1", 0) >= 1000), None)
+    if sys_year is None:
+        raise SystemExit(f"No header file codes F1SYSTYP with 1,000 or more members: {field_status}. Nothing recorded.")
+
+    def membership(rows):
+        for y in sorted(rows):
+            if y >= sys_year and rows[y].get("F1SYSTYP") in ("1", "2"):
+                name = rows[y].get("F1SYSNAM", "").strip()
+                return rows[y]["F1SYSTYP"] == "1", ("" if name in ("-1", "-2") else name), y
+        return None, "", None
+
+    frame, unknown = [], []
+    sectors = Counter()
     for u, rows in present.items():
         r0 = rows.get(FIRST)
-        if not r0 or r0.get("SECTOR") not in ("3", "6", "9"):
+        if not r0:
             continue
-        frame.append({"unitid": u, "chain": r0.get("F1SYSTYP") == "1", "system": r0.get("F1SYSNAM", "").strip(),
-                      "level": {"3": "four-year", "6": "two-year", "9": "less-than-two-year"}[r0["SECTOR"]],
-                      "closed": closure_year(rows, last_file)})
+        sectors[r0.get("SECTOR", "<absent>")] += 1
+        if r0.get("SECTOR") not in ("3", "6", "9"):
+            continue
+        member, name, read_year = membership(rows)
+        g = {"unitid": u, "chain": member, "system": name, "membership read from": read_year,
+             "level": {"3": "four-year", "6": "two-year", "9": "less-than-two-year"}[r0["SECTOR"]],
+             "closed": closure_year(rows, last_file)}
+        (unknown if member is None else frame).append(g)
     chain = [g for g in frame if g["chain"]]
     indep = [g for g in frame if not g["chain"]]
+    if not chain or not indep:
+        raise SystemExit(f"Empty group (chain {len(chain)}, independent {len(indep)}, unknown {len(unknown)}); "
+                         f"HD{FIRST} SECTOR values {dict(sectors)}; F1SYSTYP by year {field_status}. Nothing recorded.")
     years = list(range(FIRST + 1, last_file + 1))
 
     # E1 and E3: cumulative closure curves; early window 2010-2013; crossing year
@@ -177,8 +209,12 @@ def main() -> None:
         "test": "Item 16 (exploratory): extractive-anchor predictions on for-profit institutions active in HD2009",
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "header files": files, "header files not yet released": missing,
-        "frame": {"for-profit institutions in HD2009": len(frame), "chain (system member)": len(chain),
-                  "independent": len(indep),
+        "system membership field (F1SYSTYP) by header year, most common values": field_status,
+        "membership read from (earliest header file coding it)": f"HD{sys_year}",
+        "frame": {"for-profit institutions in HD2009 with membership known": len(frame),
+                  "chain (system member)": len(chain), "independent": len(indep),
+                  "membership unknown (no coded record from that year on)": len(unknown),
+                  "membership unknown, closed": sum(1 for g in unknown if g["closed"]),
                   "by level": {lv: {"chain": sum(1 for g in chain if g["level"] == lv),
                                     "independent": sum(1 for g in indep if g["level"] == lv)}
                                for lv in ("four-year", "two-year", "less-than-two-year")}},
