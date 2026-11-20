@@ -1,0 +1,63 @@
+name: item 15 step 0 - check the IPEDS fields for ending types
+
+# Manual-only. Runs "src/ending types field check.py": downloads the IPEDS
+# data dictionaries (never the data, never an outcome) for the three
+# finance forms (F1A public, F2 private nonprofit, F3 for-profit) and the
+# 12-month enrollment file (EFIA), 2004 to 2024, and records which fields
+# exist in which years (net tuition and fees, total expenses,
+# appropriations, gifts, endowment, spending distribution, 12-month FTE),
+# before the ending-types protocol is written or anything is built.
+# Older dictionaries (.xls) are read with xlrd, installed for this check
+# only. Commits data/ending types/field check.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ending-types-field-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Check the data dictionaries
+        run: |
+          cd src
+          python "ending types field check.py" --first 2004 --last 2024
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/ending types/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 15 step 0: field check of the IPEDS dictionaries for ending types (no data, no outcome)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
