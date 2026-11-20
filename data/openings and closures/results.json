@@ -1,6 +1,6 @@
 {
  "note": "Descriptive (Paper 1): openings against closures by sector and size, year by year, from the IPEDS header files. Outcomes are public; nothing is fitted and no verdict is drawn.",
- "written at (UTC)": "2026-11-18T22:50:35.631445+00:00",
+ "written at (UTC)": "2026-11-20T05:22:41.089468+00:00",
  "header files used": {
   "HD2004": {
    "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2004.zip",
@@ -499,6 +499,8 @@
     "successors": 52,
     "closures": 570,
     "mergers": 128,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.739,
     "replacement (openings per closure or merger)": 0.603
    },
@@ -507,6 +509,8 @@
     "successors": 24,
     "closures": 530,
     "mergers": 82,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.709,
     "replacement (openings per closure or merger)": 0.614
    },
@@ -515,6 +519,8 @@
     "successors": 21,
     "closures": 23,
     "mergers": 37,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.739,
     "replacement (openings per closure or merger)": 0.283
    },
@@ -523,6 +529,8 @@
     "successors": 7,
     "closures": 2,
     "mergers": 8,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 6.0,
     "replacement (openings per closure or merger)": 1.2
    },
@@ -531,6 +539,8 @@
     "successors": 0,
     "closures": 15,
     "mergers": 1,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 1.067,
     "replacement (openings per closure or merger)": 1.0
    }
@@ -541,6 +551,8 @@
     "successors": 8,
     "closures": 600,
     "mergers": 22,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.505,
     "replacement (openings per closure or merger)": 0.487
    },
@@ -549,6 +561,8 @@
     "successors": 8,
     "closures": 570,
     "mergers": 20,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.489,
     "replacement (openings per closure or merger)": 0.473
    },
@@ -557,6 +571,8 @@
     "successors": 0,
     "closures": 17,
     "mergers": 0,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.176,
     "replacement (openings per closure or merger)": 0.176
    },
@@ -565,6 +581,8 @@
     "successors": 0,
     "closures": 0,
     "mergers": 1,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": null,
     "replacement (openings per closure or merger)": 0.0
    },
@@ -573,6 +591,8 @@
     "successors": 0,
     "closures": 13,
     "mergers": 1,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 1.615,
     "replacement (openings per closure or merger)": 1.5
    }
@@ -583,6 +603,8 @@
     "successors": 9,
     "closures": 369,
     "mergers": 84,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.797,
     "replacement (openings per closure or merger)": 0.649
    },
@@ -591,6 +613,8 @@
     "successors": 7,
     "closures": 295,
     "mergers": 61,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.824,
     "replacement (openings per closure or merger)": 0.683
    },
@@ -599,6 +623,8 @@
     "successors": 2,
     "closures": 22,
     "mergers": 20,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.864,
     "replacement (openings per closure or merger)": 0.452
    },
@@ -607,6 +633,8 @@
     "successors": 0,
     "closures": 3,
     "mergers": 1,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.667,
     "replacement (openings per closure or merger)": 0.5
    },
@@ -615,40 +643,50 @@
     "successors": 0,
     "closures": 49,
     "mergers": 2,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.612,
     "replacement (openings per closure or merger)": 0.588
    }
   },
   "private nonprofit four-year, liberal arts": {
    "all sizes": {
-    "openings": 0,
+    "openings": 12,
     "successors": 0,
     "closures": 24,
     "mergers": 1,
-    "replacement (openings per closure)": 0.0,
-    "replacement (openings per closure or merger)": 0.0
+    "reclassified in": 101,
+    "reclassified out": 125,
+    "replacement (openings per closure)": 0.5,
+    "replacement (openings per closure or merger)": 0.48
    },
    "under 1,000": {
-    "openings": 0,
+    "openings": 11,
     "successors": 0,
     "closures": 21,
     "mergers": 1,
-    "replacement (openings per closure)": 0.0,
-    "replacement (openings per closure or merger)": 0.0
+    "reclassified in": 53,
+    "reclassified out": 53,
+    "replacement (openings per closure)": 0.524,
+    "replacement (openings per closure or merger)": 0.5
    },
    "1,000 to 4,999": {
-    "openings": 0,
+    "openings": 1,
     "successors": 0,
     "closures": 1,
     "mergers": 0,
-    "replacement (openings per closure)": 0.0,
-    "replacement (openings per closure or merger)": 0.0
+    "reclassified in": 47,
+    "reclassified out": 69,
+    "replacement (openings per closure)": 1.0,
+    "replacement (openings per closure or merger)": 1.0
    },
    "5,000 or more": {
     "openings": 0,
     "successors": 0,
     "closures": 0,
     "mergers": 0,
+    "reclassified in": 0,
+    "reclassified out": 2,
     "replacement (openings per closure)": null,
     "replacement (openings per closure or merger)": null
    },
@@ -657,6 +695,8 @@
     "successors": 0,
     "closures": 2,
     "mergers": 0,
+    "reclassified in": 1,
+    "reclassified out": 1,
     "replacement (openings per closure)": 0.0,
     "replacement (openings per closure or merger)": 0.0
    }
@@ -667,6 +707,8 @@
     "successors": 0,
     "closures": 81,
     "mergers": 5,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.383,
     "replacement (openings per closure or merger)": 0.36
    },
@@ -675,6 +717,8 @@
     "successors": 0,
     "closures": 74,
     "mergers": 5,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.392,
     "replacement (openings per closure or merger)": 0.367
    },
@@ -683,6 +727,8 @@
     "successors": 0,
     "closures": 0,
     "mergers": 0,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": null,
     "replacement (openings per closure or merger)": null
    },
@@ -691,6 +737,8 @@
     "successors": 0,
     "closures": 1,
     "mergers": 0,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.0,
     "replacement (openings per closure or merger)": 0.0
    },
@@ -699,6 +747,8 @@
     "successors": 0,
     "closures": 6,
     "mergers": 0,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.167,
     "replacement (openings per closure or merger)": 0.167
    }
@@ -709,6 +759,8 @@
     "successors": 11,
     "closures": 15,
     "mergers": 59,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 1.533,
     "replacement (openings per closure or merger)": 0.311
    },
@@ -717,6 +769,8 @@
     "successors": 0,
     "closures": 2,
     "mergers": 20,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 5.0,
     "replacement (openings per closure or merger)": 0.455
    },
@@ -725,6 +779,8 @@
     "successors": 1,
     "closures": 2,
     "mergers": 21,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 4.5,
     "replacement (openings per closure or merger)": 0.391
    },
@@ -733,6 +789,8 @@
     "successors": 10,
     "closures": 3,
     "mergers": 15,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.667,
     "replacement (openings per closure or merger)": 0.111
    },
@@ -741,6 +799,8 @@
     "successors": 0,
     "closures": 8,
     "mergers": 3,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.25,
     "replacement (openings per closure or merger)": 0.182
    }
@@ -751,6 +811,8 @@
     "successors": 7,
     "closures": 39,
     "mergers": 110,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.615,
     "replacement (openings per closure or merger)": 0.161
    },
@@ -759,6 +821,8 @@
     "successors": 1,
     "closures": 8,
     "mergers": 45,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 1.125,
     "replacement (openings per closure or merger)": 0.17
    },
@@ -767,6 +831,8 @@
     "successors": 3,
     "closures": 13,
     "mergers": 47,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.846,
     "replacement (openings per closure or merger)": 0.183
    },
@@ -775,6 +841,8 @@
     "successors": 3,
     "closures": 14,
     "mergers": 14,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.286,
     "replacement (openings per closure or merger)": 0.143
    },
@@ -783,6 +851,8 @@
     "successors": 0,
     "closures": 4,
     "mergers": 4,
+    "reclassified in": 0,
+    "reclassified out": 0,
     "replacement (openings per closure)": 0.0,
     "replacement (openings per closure or merger)": 0.0
    }
@@ -797,7 +867,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -805,7 +877,9 @@
      "openings": 26,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -813,7 +887,9 @@
      "openings": 24,
      "successors": 1,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -821,7 +897,9 @@
      "openings": 26,
      "successors": 1,
      "closures": 6,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -829,7 +907,9 @@
      "openings": 33,
      "successors": 1,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -837,7 +917,9 @@
      "openings": 25,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -845,7 +927,9 @@
      "openings": 53,
      "successors": 3,
      "closures": 12,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -853,7 +937,9 @@
      "openings": 72,
      "successors": 2,
      "closures": 3,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -861,7 +947,9 @@
      "openings": 42,
      "successors": 0,
      "closures": 9,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -869,7 +957,9 @@
      "openings": 20,
      "successors": 27,
      "closures": 14,
-     "mergers": 54
+     "mergers": 54,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -877,7 +967,9 @@
      "openings": 7,
      "successors": 16,
      "closures": 24,
-     "mergers": 45
+     "mergers": 45,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -885,7 +977,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 43,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -893,7 +987,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 38,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -901,7 +997,9 @@
      "openings": 11,
      "successors": 0,
      "closures": 168,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -909,7 +1007,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 119,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -917,7 +1017,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 23,
-     "mergers": 9
+     "mergers": 9,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -925,7 +1027,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 14,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -933,7 +1037,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 23,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -941,7 +1047,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 11,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -949,7 +1057,9 @@
      "openings": 10,
      "successors": 0,
      "closures": 30,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -957,7 +1067,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 10,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -965,7 +1077,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 14,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -975,7 +1089,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -983,7 +1099,9 @@
      "openings": 23,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -991,7 +1109,9 @@
      "openings": 24,
      "successors": 1,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -999,7 +1119,9 @@
      "openings": 25,
      "successors": 1,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1007,7 +1129,9 @@
      "openings": 29,
      "successors": 1,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1015,7 +1139,9 @@
      "openings": 22,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1023,7 +1149,9 @@
      "openings": 44,
      "successors": 1,
      "closures": 10,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1031,7 +1159,9 @@
      "openings": 62,
      "successors": 1,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1039,7 +1169,9 @@
      "openings": 39,
      "successors": 0,
      "closures": 8,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1047,7 +1179,9 @@
      "openings": 20,
      "successors": 14,
      "closures": 13,
-     "mergers": 36
+     "mergers": 36,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1055,7 +1189,9 @@
      "openings": 6,
      "successors": 4,
      "closures": 21,
-     "mergers": 26
+     "mergers": 26,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1063,7 +1199,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 37,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1071,7 +1209,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 37,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1079,7 +1219,9 @@
      "openings": 10,
      "successors": 0,
      "closures": 167,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1087,7 +1229,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 108,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1095,7 +1239,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 22,
-     "mergers": 9
+     "mergers": 9,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1103,7 +1249,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 12,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -1111,7 +1259,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 22,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -1119,7 +1269,9 @@
      "openings": 8,
      "successors": 0,
      "closures": 9,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -1127,7 +1279,9 @@
      "openings": 10,
      "successors": 0,
      "closures": 29,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -1135,7 +1289,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 10,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -1143,7 +1299,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 13,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -1153,7 +1311,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -1161,7 +1321,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -1169,7 +1331,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -1177,7 +1341,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1185,7 +1351,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1193,7 +1361,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1201,7 +1371,9 @@
      "openings": 5,
      "successors": 1,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1209,7 +1381,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1217,7 +1391,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1225,7 +1401,9 @@
      "openings": 0,
      "successors": 11,
      "closures": 0,
-     "mergers": 15
+     "mergers": 15,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1233,7 +1411,9 @@
      "openings": 0,
      "successors": 9,
      "closures": 2,
-     "mergers": 16
+     "mergers": 16,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1241,7 +1421,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1249,7 +1431,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1257,7 +1441,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1265,7 +1451,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 9,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1273,7 +1461,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1281,7 +1471,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -1289,7 +1481,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -1297,7 +1491,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -1305,7 +1501,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -1313,7 +1511,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -1321,7 +1521,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -1331,7 +1533,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -1339,7 +1543,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -1347,7 +1553,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -1355,7 +1563,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1363,7 +1573,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1371,7 +1583,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1379,7 +1593,9 @@
      "openings": 4,
      "successors": 1,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1387,7 +1603,9 @@
      "openings": 2,
      "successors": 1,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1395,7 +1613,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1403,7 +1623,9 @@
      "openings": 0,
      "successors": 2,
      "closures": 0,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1411,7 +1633,9 @@
      "openings": 0,
      "successors": 3,
      "closures": 0,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1419,7 +1643,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1427,7 +1653,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1435,7 +1663,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1443,7 +1673,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1451,7 +1683,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1459,7 +1693,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -1467,7 +1703,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -1475,7 +1713,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -1483,7 +1723,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -1491,7 +1733,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -1499,7 +1743,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -1509,7 +1755,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -1517,7 +1765,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -1525,7 +1775,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -1533,7 +1785,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1541,7 +1795,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1549,7 +1805,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1557,7 +1815,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1565,7 +1825,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1573,7 +1835,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1581,7 +1845,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1589,7 +1855,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1597,7 +1865,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1605,7 +1875,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1613,7 +1885,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1621,7 +1895,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1629,7 +1905,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1637,7 +1915,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -1645,7 +1925,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -1653,7 +1935,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -1661,7 +1945,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -1669,7 +1955,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -1677,7 +1965,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -1689,7 +1979,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -1697,7 +1989,9 @@
      "openings": 25,
      "successors": 0,
      "closures": 9,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -1705,7 +1999,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 8,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -1713,7 +2009,9 @@
      "openings": 13,
      "successors": 0,
      "closures": 22,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1721,7 +2019,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 7,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1729,7 +2029,9 @@
      "openings": 26,
      "successors": 2,
      "closures": 11,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1737,7 +2039,9 @@
      "openings": 39,
      "successors": 1,
      "closures": 7,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1745,7 +2049,9 @@
      "openings": 25,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1753,7 +2059,9 @@
      "openings": 18,
      "successors": 0,
      "closures": 23,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1761,7 +2069,9 @@
      "openings": 13,
      "successors": 0,
      "closures": 31,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1769,7 +2079,9 @@
      "openings": 8,
      "successors": 0,
      "closures": 66,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1777,7 +2089,9 @@
      "openings": 23,
      "successors": 1,
      "closures": 56,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1785,7 +2099,9 @@
      "openings": 14,
      "successors": 1,
      "closures": 43,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1793,7 +2109,9 @@
      "openings": 8,
      "successors": 1,
      "closures": 67,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1801,7 +2119,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 128,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1809,7 +2129,9 @@
      "openings": 7,
      "successors": 2,
      "closures": 24,
-     "mergers": 11
+     "mergers": 11,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1817,7 +2139,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 16,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -1825,7 +2149,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 20,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -1833,7 +2159,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 5,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -1841,7 +2169,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 18,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -1849,7 +2179,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 9,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -1857,7 +2189,9 @@
      "openings": 21,
      "successors": 0,
      "closures": 27,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -1867,7 +2201,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -1875,7 +2211,9 @@
      "openings": 25,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -1883,7 +2221,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 7,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -1891,7 +2231,9 @@
      "openings": 13,
      "successors": 0,
      "closures": 20,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -1899,7 +2241,9 @@
      "openings": 16,
      "successors": 0,
      "closures": 7,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -1907,7 +2251,9 @@
      "openings": 26,
      "successors": 2,
      "closures": 11,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -1915,7 +2261,9 @@
      "openings": 38,
      "successors": 1,
      "closures": 7,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -1923,7 +2271,9 @@
      "openings": 25,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -1931,7 +2281,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 21,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -1939,7 +2291,9 @@
      "openings": 12,
      "successors": 0,
      "closures": 31,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -1947,7 +2301,9 @@
      "openings": 8,
      "successors": 0,
      "closures": 64,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -1955,7 +2311,9 @@
      "openings": 23,
      "successors": 1,
      "closures": 49,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -1963,7 +2321,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 41,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -1971,7 +2331,9 @@
      "openings": 8,
      "successors": 1,
      "closures": 65,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -1979,7 +2341,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 127,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -1987,7 +2351,9 @@
      "openings": 7,
      "successors": 2,
      "closures": 23,
-     "mergers": 10
+     "mergers": 10,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -1995,7 +2361,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 16,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2003,7 +2371,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 19,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2011,7 +2381,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 5,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2019,7 +2391,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 18,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2027,7 +2401,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 9,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2035,7 +2411,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 27,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -2045,7 +2423,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2053,7 +2433,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2061,7 +2443,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2069,7 +2453,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2077,7 +2463,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2085,7 +2473,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2093,7 +2483,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2101,7 +2493,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -2109,7 +2503,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -2117,7 +2513,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -2125,7 +2523,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -2133,7 +2533,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 7,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -2141,7 +2543,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -2149,7 +2553,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -2157,7 +2563,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -2165,7 +2573,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -2173,7 +2583,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2181,7 +2593,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2189,7 +2603,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2197,7 +2613,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2205,7 +2623,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2213,7 +2633,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -2223,7 +2645,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2231,7 +2655,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2239,7 +2665,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2247,7 +2675,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2255,7 +2685,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2263,7 +2695,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2271,7 +2705,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2279,7 +2715,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -2287,7 +2725,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -2295,7 +2735,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -2303,7 +2745,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -2311,7 +2755,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -2319,7 +2765,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -2327,7 +2775,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -2335,7 +2785,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -2343,7 +2795,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -2351,7 +2805,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2359,7 +2815,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2367,7 +2825,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2375,7 +2835,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2383,7 +2845,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2391,7 +2855,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -2401,7 +2867,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2409,7 +2877,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 9,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2417,7 +2887,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2425,7 +2897,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2433,7 +2907,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2441,7 +2917,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2449,7 +2927,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2457,7 +2937,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -2465,7 +2947,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -2473,7 +2957,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -2481,7 +2967,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -2489,7 +2977,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -2497,7 +2987,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -2505,7 +2997,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -2513,7 +3007,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -2521,7 +3017,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -2529,7 +3027,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2537,7 +3037,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2545,7 +3047,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2553,7 +3057,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2561,7 +3067,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2569,7 +3077,9 @@
      "openings": 19,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -2581,7 +3091,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2589,7 +3101,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 18,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2597,7 +3111,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 18,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2605,7 +3121,9 @@
      "openings": 12,
      "successors": 0,
      "closures": 15,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2613,7 +3131,9 @@
      "openings": 13,
      "successors": 0,
      "closures": 13,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2621,7 +3141,9 @@
      "openings": 18,
      "successors": 1,
      "closures": 12,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2629,7 +3151,9 @@
      "openings": 19,
      "successors": 0,
      "closures": 10,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2637,7 +3161,9 @@
      "openings": 23,
      "successors": 1,
      "closures": 20,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -2645,7 +3171,9 @@
      "openings": 11,
      "successors": 0,
      "closures": 5,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -2653,7 +3181,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 12,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -2661,7 +3191,9 @@
      "openings": 12,
      "successors": 1,
      "closures": 15,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -2669,7 +3201,9 @@
      "openings": 17,
      "successors": 2,
      "closures": 13,
-     "mergers": 16
+     "mergers": 16,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -2677,7 +3211,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 10,
-     "mergers": 10
+     "mergers": 10,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -2685,7 +3221,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 25,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -2693,7 +3231,9 @@
      "openings": 20,
      "successors": 0,
      "closures": 28,
-     "mergers": 9
+     "mergers": 9,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -2701,7 +3241,9 @@
      "openings": 21,
      "successors": 1,
      "closures": 22,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -2709,7 +3251,9 @@
      "openings": 9,
      "successors": 1,
      "closures": 18,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2717,7 +3261,9 @@
      "openings": 8,
      "successors": 0,
      "closures": 25,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2725,7 +3271,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 13,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2733,7 +3281,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 25,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2741,7 +3291,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 29,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2749,7 +3301,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 23,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -2759,7 +3313,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2767,7 +3323,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2775,7 +3333,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 7,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2783,7 +3343,9 @@
      "openings": 10,
      "successors": 0,
      "closures": 14,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2791,7 +3353,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 10,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2799,7 +3363,9 @@
      "openings": 17,
      "successors": 1,
      "closures": 9,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2807,7 +3373,9 @@
      "openings": 17,
      "successors": 0,
      "closures": 8,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2815,7 +3383,9 @@
      "openings": 21,
      "successors": 1,
      "closures": 16,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -2823,7 +3393,9 @@
      "openings": 9,
      "successors": 0,
      "closures": 4,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -2831,7 +3403,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 11,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -2839,7 +3413,9 @@
      "openings": 11,
      "successors": 1,
      "closures": 13,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -2847,7 +3423,9 @@
      "openings": 16,
      "successors": 0,
      "closures": 12,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -2855,7 +3433,9 @@
      "openings": 10,
      "successors": 1,
      "closures": 10,
-     "mergers": 10
+     "mergers": 10,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -2863,7 +3443,9 @@
      "openings": 13,
      "successors": 1,
      "closures": 23,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -2871,7 +3453,9 @@
      "openings": 16,
      "successors": 0,
      "closures": 26,
-     "mergers": 7
+     "mergers": 7,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -2879,7 +3463,9 @@
      "openings": 17,
      "successors": 1,
      "closures": 21,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -2887,7 +3473,9 @@
      "openings": 8,
      "successors": 1,
      "closures": 13,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -2895,7 +3483,9 @@
      "openings": 7,
      "successors": 0,
      "closures": 21,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -2903,7 +3493,9 @@
      "openings": 15,
      "successors": 0,
      "closures": 11,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -2911,7 +3503,9 @@
      "openings": 6,
      "successors": 0,
      "closures": 21,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -2919,7 +3513,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 26,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -2927,7 +3523,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 19,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -2937,7 +3535,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -2945,7 +3545,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -2953,7 +3555,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -2961,7 +3565,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -2969,7 +3575,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -2977,7 +3585,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -2985,7 +3595,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -2993,7 +3605,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -3001,7 +3615,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -3009,7 +3625,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -3017,7 +3635,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3025,7 +3645,9 @@
      "openings": 0,
      "successors": 2,
      "closures": 0,
-     "mergers": 10
+     "mergers": 10,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -3033,7 +3655,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -3041,7 +3665,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3049,7 +3675,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -3057,7 +3685,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3065,7 +3695,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3073,7 +3705,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -3081,7 +3715,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3089,7 +3725,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3097,7 +3735,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3105,7 +3745,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -3115,7 +3757,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -3123,7 +3767,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -3131,7 +3777,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -3139,7 +3787,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -3147,7 +3797,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -3155,7 +3807,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -3163,7 +3817,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -3171,7 +3827,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -3179,7 +3837,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -3187,7 +3847,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -3195,7 +3857,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3203,7 +3867,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -3211,7 +3877,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -3219,7 +3887,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3227,7 +3897,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -3235,7 +3907,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3243,7 +3917,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3251,7 +3927,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -3259,7 +3937,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3267,7 +3947,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3275,7 +3957,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3283,7 +3967,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -3293,7 +3979,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -3301,7 +3989,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 18,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -3309,7 +3999,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 10,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -3317,7 +4009,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -3325,7 +4019,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -3333,7 +4029,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -3341,7 +4039,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -3349,7 +4049,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -3357,7 +4059,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -3365,7 +4069,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -3373,7 +4079,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3381,7 +4089,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -3389,7 +4099,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -3397,7 +4109,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3405,7 +4119,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -3413,7 +4129,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3421,7 +4139,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3429,7 +4149,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -3437,7 +4159,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3445,7 +4169,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3453,7 +4179,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3461,7 +4189,9 @@
      "openings": 11,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -3473,15 +4203,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
      "stock": 233,
-     "openings": 0,
+     "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -3489,7 +4223,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 17,
+     "reclassified out": 4
     },
     {
      "year": 2007,
@@ -3497,23 +4233,29 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 1
     },
     {
      "year": 2008,
      "stock": 242,
-     "openings": 0,
+     "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
      "stock": 241,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -3521,15 +4263,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 23,
+     "reclassified out": 40
     },
     {
      "year": 2011,
      "stock": 226,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2012,
@@ -3537,23 +4283,29 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 0
     },
     {
      "year": 2013,
      "stock": 224,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
      "stock": 223,
-     "openings": 0,
+     "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3561,7 +4313,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 22,
+     "reclassified out": 26
     },
     {
      "year": 2016,
@@ -3569,15 +4323,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 3
     },
     {
      "year": 2017,
      "stock": 216,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3585,7 +4343,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 16,
+     "reclassified out": 26
     },
     {
      "year": 2019,
@@ -3593,7 +4353,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3601,7 +4363,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3609,7 +4373,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 20,
+     "reclassified out": 24
     },
     {
      "year": 2022,
@@ -3617,7 +4383,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3625,7 +4393,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3633,7 +4403,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3641,7 +4413,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -3651,15 +4425,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
      "stock": 67,
-     "openings": 0,
+     "openings": 3,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -3667,7 +4445,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 4,
+     "reclassified out": 2
     },
     {
      "year": 2007,
@@ -3675,23 +4455,29 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
      "stock": 64,
-     "openings": 0,
+     "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
      "stock": 59,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -3699,15 +4485,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 13,
+     "reclassified out": 12
     },
     {
      "year": 2011,
      "stock": 62,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2012,
@@ -3715,23 +4505,29 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 0
     },
     {
      "year": 2013,
      "stock": 59,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
      "stock": 59,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3739,7 +4535,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 8,
+     "reclassified out": 11
     },
     {
      "year": 2016,
@@ -3747,15 +4545,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2017,
      "stock": 57,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3763,7 +4565,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 12,
+     "reclassified out": 14
     },
     {
      "year": 2019,
@@ -3771,7 +4575,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3779,7 +4585,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3787,7 +4595,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 14,
+     "reclassified out": 12
     },
     {
      "year": 2022,
@@ -3795,7 +4605,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3803,7 +4615,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3811,7 +4625,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3819,7 +4635,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -3829,7 +4647,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -3837,7 +4657,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -3845,7 +4667,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 13,
+     "reclassified out": 2
     },
     {
      "year": 2007,
@@ -3853,7 +4677,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 1
     },
     {
      "year": 2008,
@@ -3861,7 +4687,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -3869,7 +4697,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -3877,7 +4707,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 10,
+     "reclassified out": 27
     },
     {
      "year": 2011,
@@ -3885,7 +4717,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -3893,7 +4727,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -3901,15 +4737,19 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
      "stock": 164,
-     "openings": 0,
+     "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -3917,7 +4757,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 14,
+     "reclassified out": 14
     },
     {
      "year": 2016,
@@ -3925,7 +4767,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 2
     },
     {
      "year": 2017,
@@ -3933,7 +4777,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -3941,7 +4787,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 4,
+     "reclassified out": 12
     },
     {
      "year": 2019,
@@ -3949,7 +4797,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -3957,7 +4807,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -3965,7 +4817,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 5,
+     "reclassified out": 11
     },
     {
      "year": 2022,
@@ -3973,7 +4827,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -3981,7 +4837,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -3989,7 +4847,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -3997,7 +4857,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -4007,7 +4869,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4015,7 +4879,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4023,7 +4889,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4031,7 +4899,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4039,7 +4909,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4047,7 +4919,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4055,7 +4929,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2011,
@@ -4063,7 +4939,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4071,7 +4949,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4079,7 +4959,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4087,7 +4969,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4095,7 +4979,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -4103,7 +4989,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -4111,7 +4999,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -4119,7 +5009,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -4127,7 +5019,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -4135,7 +5029,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -4143,7 +5039,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2022,
@@ -4151,7 +5049,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -4159,7 +5059,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -4167,7 +5069,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -4175,7 +5079,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -4185,7 +5091,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4193,7 +5101,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4201,7 +5111,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4209,7 +5121,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4217,7 +5131,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4225,7 +5141,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4233,7 +5151,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -4241,7 +5161,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4249,7 +5171,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4257,7 +5181,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4265,7 +5191,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4273,7 +5201,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 1
     },
     {
      "year": 2016,
@@ -4281,7 +5211,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -4289,7 +5221,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -4297,7 +5231,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -4305,7 +5241,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -4313,7 +5251,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -4321,7 +5261,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 1,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -4329,7 +5271,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -4337,7 +5281,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -4345,7 +5291,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -4353,7 +5301,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -4365,7 +5315,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4373,7 +5325,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4381,7 +5335,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 5,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4389,7 +5345,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4397,7 +5355,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4405,7 +5365,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4413,7 +5375,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -4421,7 +5385,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4429,7 +5395,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4437,7 +5405,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4445,7 +5415,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4453,7 +5425,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -4461,7 +5435,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 8,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -4469,7 +5445,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 9,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -4477,7 +5455,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 14,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -4485,7 +5465,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -4493,7 +5475,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 6,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -4501,7 +5485,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 4,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -4509,7 +5495,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -4517,7 +5505,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 5,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -4525,7 +5515,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -4533,7 +5525,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -4543,7 +5537,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4551,7 +5547,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4559,7 +5557,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4567,7 +5567,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4575,7 +5577,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4583,7 +5587,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4591,7 +5597,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -4599,7 +5607,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4607,7 +5617,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 2,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4615,7 +5627,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4623,7 +5637,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4631,7 +5647,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -4639,7 +5657,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 8,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -4647,7 +5667,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 8,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -4655,7 +5677,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 14,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -4663,7 +5687,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -4671,7 +5697,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 6,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -4679,7 +5707,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 4,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -4687,7 +5717,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -4695,7 +5727,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -4703,7 +5737,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -4711,7 +5747,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -4721,7 +5759,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4729,7 +5769,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4737,7 +5779,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4745,7 +5789,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4753,7 +5799,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4761,7 +5809,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4769,7 +5819,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -4777,7 +5829,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4785,7 +5839,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4793,7 +5849,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4801,7 +5859,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4809,7 +5869,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -4817,7 +5879,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -4825,7 +5889,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -4833,7 +5899,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -4841,7 +5909,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -4849,7 +5919,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -4857,7 +5929,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -4865,7 +5939,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -4873,7 +5949,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -4881,7 +5959,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -4889,7 +5969,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -4899,7 +5981,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -4907,7 +5991,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -4915,7 +6001,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -4923,7 +6011,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -4931,7 +6021,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -4939,7 +6031,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -4947,7 +6041,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -4955,7 +6051,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -4963,7 +6061,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -4971,7 +6071,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -4979,7 +6081,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -4987,7 +6091,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -4995,7 +6101,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5003,7 +6111,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5011,7 +6121,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5019,7 +6131,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5027,7 +6141,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5035,7 +6151,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5043,7 +6161,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5051,7 +6171,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5059,7 +6181,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5067,7 +6191,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -5077,7 +6203,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5085,7 +6213,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5093,7 +6223,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5101,7 +6233,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -5109,7 +6243,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -5117,7 +6253,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -5125,7 +6263,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -5133,7 +6273,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -5141,7 +6283,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -5149,7 +6293,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -5157,7 +6303,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -5165,7 +6313,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -5173,7 +6323,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5181,7 +6333,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5189,7 +6343,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5197,7 +6353,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5205,7 +6363,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5213,7 +6373,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5221,7 +6383,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5229,7 +6393,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5237,7 +6403,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5245,7 +6413,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -5257,7 +6427,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5265,7 +6437,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5273,7 +6447,9 @@
      "openings": 2,
      "successors": 1,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5281,7 +6457,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -5289,7 +6467,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -5297,7 +6477,9 @@
      "openings": 4,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -5305,7 +6487,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -5313,7 +6497,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -5321,7 +6507,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -5329,7 +6517,9 @@
      "openings": 3,
      "successors": 5,
      "closures": 1,
-     "mergers": 8
+     "mergers": 8,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -5337,7 +6527,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 2,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -5345,7 +6537,9 @@
      "openings": 4,
      "successors": 1,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -5353,7 +6547,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5361,7 +6557,9 @@
      "openings": 2,
      "successors": 1,
      "closures": 0,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5369,7 +6567,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 1,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5377,7 +6577,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 11
+     "mergers": 11,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5385,7 +6587,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 1,
-     "mergers": 8
+     "mergers": 8,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5393,7 +6597,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5401,7 +6607,9 @@
      "openings": 0,
      "successors": 2,
      "closures": 0,
-     "mergers": 7
+     "mergers": 7,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5409,7 +6617,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5417,7 +6627,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5425,7 +6637,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -5435,7 +6649,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5443,7 +6659,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5451,7 +6669,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5459,7 +6679,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -5467,7 +6689,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -5475,7 +6699,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -5483,7 +6709,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -5491,7 +6719,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -5499,7 +6729,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -5507,7 +6739,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -5515,7 +6749,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -5523,7 +6759,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -5531,7 +6769,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5539,7 +6779,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5547,7 +6789,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5555,7 +6799,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 11
+     "mergers": 11,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5563,7 +6809,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5571,7 +6819,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5579,7 +6829,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5587,7 +6839,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5595,7 +6849,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5603,7 +6859,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -5613,7 +6871,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5621,7 +6881,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5629,7 +6891,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5637,7 +6901,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -5645,7 +6911,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -5653,7 +6921,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -5661,7 +6931,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -5669,7 +6941,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -5677,7 +6951,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -5685,7 +6961,9 @@
      "openings": 1,
      "successors": 1,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -5693,7 +6971,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -5701,7 +6981,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -5709,7 +6991,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5717,7 +7001,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5725,7 +7011,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5733,7 +7021,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5741,7 +7031,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5749,7 +7041,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5757,7 +7051,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5765,7 +7061,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5773,7 +7071,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5781,7 +7081,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -5791,7 +7093,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5799,7 +7103,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5807,7 +7113,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5815,7 +7123,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -5823,7 +7133,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -5831,7 +7143,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -5839,7 +7153,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -5847,7 +7163,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -5855,7 +7173,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -5863,7 +7183,9 @@
      "openings": 0,
      "successors": 4,
      "closures": 1,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -5871,7 +7193,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -5879,7 +7203,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -5887,7 +7213,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -5895,7 +7223,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -5903,7 +7233,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -5911,7 +7243,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -5919,7 +7253,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 1,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -5927,7 +7263,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -5935,7 +7273,9 @@
      "openings": 0,
      "successors": 2,
      "closures": 0,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -5943,7 +7283,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -5951,7 +7293,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -5959,7 +7303,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -5969,7 +7315,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -5977,7 +7325,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 4,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -5985,7 +7335,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -5993,7 +7345,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6001,7 +7355,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6009,7 +7365,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6017,7 +7375,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6025,7 +7385,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6033,7 +7395,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6041,7 +7405,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6049,7 +7415,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6057,7 +7425,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6065,7 +7435,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6073,7 +7445,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6081,7 +7455,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6089,7 +7465,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6097,7 +7475,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6105,7 +7485,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -6113,7 +7495,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -6121,7 +7505,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -6129,7 +7515,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -6137,7 +7525,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   },
@@ -6149,7 +7539,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -6157,7 +7549,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 3,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -6165,7 +7559,9 @@
      "openings": 5,
      "successors": 0,
      "closures": 0,
-     "mergers": 8
+     "mergers": 8,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -6173,7 +7569,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6181,7 +7579,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 4,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6189,7 +7589,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 4,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6197,7 +7599,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 27
+     "mergers": 27,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6205,7 +7609,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 5,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6213,7 +7619,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 13,
-     "mergers": 11
+     "mergers": 11,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6221,7 +7629,9 @@
      "openings": 2,
      "successors": 2,
      "closures": 0,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6229,7 +7639,9 @@
      "openings": 2,
      "successors": 2,
      "closures": 2,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6237,7 +7649,9 @@
      "openings": 0,
      "successors": 2,
      "closures": 1,
-     "mergers": 8
+     "mergers": 8,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6245,7 +7659,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6253,7 +7669,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6261,7 +7679,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6269,7 +7689,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6277,7 +7699,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 7
+     "mergers": 7,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6285,7 +7709,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -6293,7 +7719,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -6301,7 +7729,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 11
+     "mergers": 11,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -6309,7 +7739,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 3
+     "mergers": 3,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -6317,7 +7749,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "under 1,000": [
@@ -6327,7 +7761,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -6335,7 +7771,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -6343,7 +7781,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -6351,7 +7791,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6359,7 +7801,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6367,7 +7811,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6375,7 +7821,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 22
+     "mergers": 22,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6383,7 +7831,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6391,7 +7841,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6399,7 +7851,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6407,7 +7861,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6415,7 +7871,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6423,7 +7881,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6431,7 +7891,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6439,7 +7901,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6447,7 +7911,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6455,7 +7921,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6463,7 +7931,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -6471,7 +7941,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -6479,7 +7951,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -6487,7 +7961,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -6495,7 +7971,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "1,000 to 4,999": [
@@ -6505,7 +7983,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -6513,7 +7993,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -6521,7 +8003,9 @@
      "openings": 3,
      "successors": 0,
      "closures": 0,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -6529,7 +8013,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6537,7 +8023,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6545,7 +8033,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 4,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6553,7 +8043,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6561,7 +8053,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6569,7 +8063,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 7
+     "mergers": 7,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6577,7 +8073,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6585,7 +8083,9 @@
      "openings": 1,
      "successors": 1,
      "closures": 2,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6593,7 +8093,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 5
+     "mergers": 5,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6601,7 +8103,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6609,7 +8113,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6617,7 +8123,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6625,7 +8133,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6633,7 +8143,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6641,7 +8153,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -6649,7 +8163,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -6657,7 +8173,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 10
+     "mergers": 10,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -6665,7 +8183,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -6673,7 +8193,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "5,000 or more": [
@@ -6683,7 +8205,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -6691,7 +8215,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -6699,7 +8225,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -6707,7 +8235,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6715,7 +8245,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6723,7 +8255,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6731,7 +8265,9 @@
      "openings": 2,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6739,7 +8275,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 2,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6747,7 +8285,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 11,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6755,7 +8295,9 @@
      "openings": 1,
      "successors": 1,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6763,7 +8305,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6771,7 +8315,9 @@
      "openings": 0,
      "successors": 1,
      "closures": 0,
-     "mergers": 2
+     "mergers": 2,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6779,7 +8325,9 @@
      "openings": 1,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6787,7 +8335,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6795,7 +8345,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6803,7 +8355,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6811,7 +8365,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 6
+     "mergers": 6,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6819,7 +8375,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -6827,7 +8385,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -6835,7 +8395,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 1
+     "mergers": 1,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -6843,7 +8405,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -6851,7 +8415,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ],
    "unknown": [
@@ -6861,7 +8427,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2005,
@@ -6869,7 +8437,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 3,
-     "mergers": 4
+     "mergers": 4,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2006,
@@ -6877,7 +8447,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2007,
@@ -6885,7 +8457,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2008,
@@ -6893,7 +8467,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2009,
@@ -6901,7 +8477,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2010,
@@ -6909,7 +8487,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2011,
@@ -6917,7 +8497,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2012,
@@ -6925,7 +8507,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2013,
@@ -6933,7 +8517,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2014,
@@ -6941,7 +8527,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2015,
@@ -6949,7 +8537,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 1,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2016,
@@ -6957,7 +8547,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2017,
@@ -6965,7 +8557,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2018,
@@ -6973,7 +8567,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2019,
@@ -6981,7 +8577,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2020,
@@ -6989,7 +8587,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2021,
@@ -6997,7 +8597,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2022,
@@ -7005,7 +8607,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2023,
@@ -7013,7 +8617,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2024,
@@ -7021,7 +8627,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     },
     {
      "year": 2025,
@@ -7029,7 +8637,9 @@
      "openings": 0,
      "successors": 0,
      "closures": 0,
-     "mergers": 0
+     "mergers": 0,
+     "reclassified in": 0,
+     "reclassified out": 0
     }
    ]
   }
@@ -7040,6 +8650,7 @@
   "unrecorded disappearances first missing from the latest file": 41,
   "openings whose size is never reported": 70,
   "closures whose size is never reported": 117,
+  "liberal arts reclassifications": 226,
   "openings the file itself marks new": {
    "2004": {
     "marked new (ACT = N) in frame": 52,
