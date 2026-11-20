@@ -1,0 +1,195 @@
+{
+ "check": "Item 13 post hoc: professions restricted to the historic first-professional fields",
+ "label": "post hoc: decided after the protocol's results were seen",
+ "written at (UTC)": "2026-11-20T18:05:43.072132+00:00",
+ "fields used": {
+  "0180": "Veterinary Medicine.",
+  "2201": "Law.",
+  "3906": "Theological and Ministerial Studies.",
+  "5101": "Chiropractic.",
+  "5104": "Dentistry.",
+  "5112": "Medicine.",
+  "5117": "Optometry.",
+  "5120": "Pharmacy, Pharmaceutical Sciences, and Administration."
+ },
+ "predictions": {
+  "P1 early position lower for professions": {
+   "professions units": 8,
+   "trades units": 41,
+   "median, professions": 1.0234928949736664,
+   "median, trades": 0.8903536977491961,
+   "difference (professions - trades)": 0.1331391972244702,
+   "95% interval": [
+    -0.17654198638493168,
+    0.3368860759243866
+   ],
+   "verdict": "not supported"
+  },
+  "P2 occupational ladder higher for professions": {
+   "professions units": 8,
+   "trades units": 49,
+   "median, professions": 2.3274921199686074,
+   "median, trades": 1.9594391893676044,
+   "difference (professions - trades)": 0.36805293060100297,
+   "95% interval": [
+    0.05063904456333635,
+    0.8747075962174999
+   ],
+   "verdict": "supported"
+  },
+  "P1 early position lower for professions (top-coded occupations left out)": {
+   "professions units": 6,
+   "trades units": 41,
+   "median, professions": 1.0354523415474706,
+   "median, trades": 0.8904502407161048,
+   "difference (professions - trades)": 0.14500210083136578,
+   "95% interval": [
+    -0.021380249934793285,
+    0.2878292709474802
+   ],
+   "verdict": "not supported"
+  },
+  "P2 occupational ladder higher for professions (top-coded occupations left out)": {
+   "professions units": 6,
+   "trades units": 49,
+   "median, professions": 2.1554719283556514,
+   "median, trades": 1.9594391893676044,
+   "difference (professions - trades)": 0.19603273898804696,
+   "95% interval": [
+    0.08112603656503756,
+    0.5712772208291823
+   ],
+   "verdict": "supported"
+  },
+  "P3 graduates' growth higher for professions": {
+   "professions units": 8,
+   "trades units": 45,
+   "median, professions": 1.305077948619103,
+   "median, trades": 1.2245614968992042,
+   "difference (professions - trades)": 0.08051645171989885,
+   "95% interval": [
+    -0.03820969063288482,
+    0.32093198895284836
+   ],
+   "verdict": "in the predicted direction"
+  }
+ },
+ "payoff to cost, medians": {
+  "professions": 0.8172532175718331,
+  "trades": 5.415154672774246
+ },
+ "units": [
+  {
+   "cip": "0180",
+   "field": "Veterinary Medicine.",
+   "EARN_MDN_1YR_NAT": 113752.0,
+   "EARN_MDN_5YR_NAT": 135485.0,
+   "EARN_MDN_7YR_NAT": 139482.0,
+   "occupations' median wage": 110787.49057515708,
+   "early position": 1.2229268782659932,
+   "occupational ladder": 2.881487990984503,
+   "graduates' growth": 1.2261938251635136,
+   "median debt (weighted median of program medians)": 168667.0,
+   "payoff to cost": 0.6568415313911855,
+   "share of linked employment top-coded": 0.7401965522796842
+  },
+  {
+   "cip": "2201",
+   "field": "Law.",
+   "EARN_MDN_1YR_NAT": 80459.0,
+   "EARN_MDN_5YR_NAT": 114829.0,
+   "EARN_MDN_7YR_NAT": 124753.0,
+   "occupations' median wage": 147718.17203397964,
+   "early position": 0.7773518885244929,
+   "occupational ladder": 2.413091516444295,
+   "graduates' growth": 1.5505164120856585,
+   "median debt (weighted median of program medians)": 119956.0,
+   "payoff to cost": 1.2314362935908136,
+   "share of linked employment top-coded": 0.9245416586676906
+  },
+  {
+   "cip": "3906",
+   "field": "Theological and Ministerial Studies.",
+   "EARN_MDN_1YR_NAT": 58111.0,
+   "EARN_MDN_5YR_NAT": 66891.0,
+   "EARN_MDN_7YR_NAT": 69382.0,
+   "occupations' median wage": 62664.37589197497,
+   "early position": 1.0674485949610537,
+   "occupational ladder": 2.1478672462662716,
+   "graduates' growth": 1.1939563937980762,
+   "median debt (weighted median of program medians)": 33502.0,
+   "payoff to cost": 1.870466715180436,
+   "share of linked employment top-coded": 0.0
+  },
+  {
+   "cip": "5101",
+   "field": "Chiropractic.",
+   "EARN_MDN_1YR_NAT": 60046.0,
+   "EARN_MDN_5YR_NAT": 61748.0,
+   "EARN_MDN_7YR_NAT": 66884.0,
+   "occupations' median wage": 101873.18645969703,
+   "early position": 0.6061261274518853,
+   "occupational ladder": 3.1357427610644257,
+   "graduates' growth": 1.113879359157979,
+   "median debt (weighted median of program medians)": 191071.0,
+   "payoff to cost": 0.5331692745612732,
+   "share of linked employment top-coded": 0.8592481765475968
+  },
+  {
+   "cip": "5104",
+   "field": "Dentistry.",
+   "EARN_MDN_1YR_NAT": 126350.0,
+   "EARN_MDN_5YR_NAT": 171185.0,
+   "EARN_MDN_7YR_NAT": 178038.0,
+   "occupations' median wage": 127831.25054631276,
+   "early position": 1.3391482854811028,
+   "occupational ladder": 2.614423514502369,
+   "graduates' growth": 1.4090858725761772,
+   "median debt (weighted median of program medians)": 302418.0,
+   "payoff to cost": 0.42269722882339267,
+   "share of linked employment top-coded": 1.0
+  },
+  {
+   "cip": "5112",
+   "field": "Medicine.",
+   "EARN_MDN_1YR_NAT": 65104.0,
+   "EARN_MDN_5YR_NAT": 176126.0,
+   "EARN_MDN_7YR_NAT": 278686.0,
+   "occupations' median wage": 236217.95936496655,
+   "early position": 0.7456079989577677,
+   "occupational ladder": 1.7285788513923106,
+   "graduates' growth": 4.280627918407471,
+   "median debt (weighted median of program medians)": 230053.0,
+   "payoff to cost": 1.0267979959616547,
+   "share of linked employment top-coded": 1.0
+  },
+  {
+   "cip": "5117",
+   "field": "Optometry.",
+   "EARN_MDN_1YR_NAT": 107584.0,
+   "EARN_MDN_5YR_NAT": 132071.0,
+   "EARN_MDN_7YR_NAT": 128167.0,
+   "occupations' median wage": 134830.0,
+   "early position": 0.979537194986279,
+   "occupational ladder": 1.9669925467040945,
+   "graduates' growth": 1.191320270672219,
+   "median debt (weighted median of program medians)": 196418.0,
+   "payoff to cost": 0.6864442159068924,
+   "share of linked employment top-coded": 0.0
+  },
+  {
+   "cip": "5120",
+   "field": "Pharmacy, Pharmaceutical Sciences, and Administration.",
+   "EARN_MDN_1YR_NAT": 103143.0,
+   "EARN_MDN_5YR_NAT": 139293.0,
+   "EARN_MDN_7YR_NAT": 142746.0,
+   "occupations' median wage": 130458.10167807626,
+   "early position": 1.0677221131403942,
+   "occupational ladder": 2.24189272349292,
+   "graduates' growth": 1.3839620720746924,
+   "median debt (weighted median of program medians)": 137605.0,
+   "payoff to cost": 0.9480622192367738,
+   "share of linked employment top-coded": 0.38778287592111954
+  }
+ ]
+}
