@@ -11,7 +11,10 @@ outcome is read.
   B_cov(t)   = total revenues / total expenses, fiscal t
   wealth(t)  = endowment per FTE (private nonprofit), state appropriations
                per FTE (public); none for for-profit (pooled, flagged)
-  norms      fitted on staffing years 2013 and 2014 over every institution
+  norms      per comparability segment (Amendment 7): fitted on staffing
+             years 2013 and 2014 for the 2014 frame and 2016 and 2017 for the
+             2019 frame (IPEDS widened the new-hire window from July 1 to
+             October 31 to a full twelve months in 2016), over every institution
              in either frame, then frozen: wealth terciles by control;
              x_norm = median x_exit by control and band (m_min = 20, merge
              with the adjacent band holding more colleges, the lower on a
@@ -52,6 +55,7 @@ _s.loader.exec_module(s1)
 STAFF_YEARS = range(2012, 2020)
 FISCAL = range(2013, 2020)
 NORM_YEARS = (2013, 2014)
+NORM_YEARS_B = (2016, 2017)   # Amendment 7: the new-hire definition changed in 2016
 FRAMES = (2014, 2019)
 M_MIN, N_POS = 20, 20
 FIN = {"public": ("F1A", "F1D01", "F1D02"), "private nonprofit": ("F2", "F2B01", "F2B02"),
@@ -110,36 +114,47 @@ def main() -> None:
     if sum(1 for r in rows.values() if r["x_exit"] is not None) < 3000:
         raise SystemExit("Too few exit rates; staffing files misread. Nothing recorded.")
 
-    # ---------- norms, fixed on the norm years and frozen
+    # ---------- norms, fixed per comparability segment and frozen (Amendment 7)
     in_dev = {u for u, m in meta.items() if m[2014] or m[2019]}
-    fit = [r for (u, f), r in rows.items() if f in NORM_YEARS and u in in_dev and r["x_exit"] is not None]
-    norms = {"norm years": list(NORM_YEARS), "m_min": M_MIN, "n_pos": N_POS, "by control": {}}
-    for c in ("public", "private nonprofit", "for-profit"):
-        g = [r for r in fit if r["control"] == c]
-        nc = {"fit college-years": len(g)}
-        wv = [r["wealth per FTE"] for r in g if r["wealth per FTE"] is not None]
-        if c in WEALTH and len(wv) >= 3 * M_MIN:
-            cuts = [float(np.percentile(wv, 100 / 3)), float(np.percentile(wv, 200 / 3))]
-            nc["tercile cuts"] = cuts
-            band = lambda v, cuts=cuts: None if v is None else (0 if v <= cuts[0] else 1 if v <= cuts[1] else 2)
-            cells = {k: [r["x_exit"] for r in g if band(r["wealth per FTE"]) == k] for k in (0, 1, 2)}
-            final = {}
-            for k in (0, 1, 2):
-                if len(cells[k]) >= M_MIN:
-                    final[k] = {"bands": [k], "values": cells[k]}
-                    continue
-                adj = [j for j in (k - 1, k + 1) if j in cells]
-                j = max(adj, key=lambda j: (len(cells[j]), -j))
-                merged = cells[k] + cells[j]
-                final[k] = ({"bands": sorted([k, j]), "values": merged} if len(merged) >= M_MIN else
-                            {"bands": [0, 1, 2], "values": [r["x_exit"] for r in g]})
-            nc["cells"] = {str(k): {"bands merged": v["bands"], "n": len(v["values"]),
-                                    "x_norm": float(np.median(v["values"]))} for k, v in final.items()}
-        pooled = [r["x_exit"] for r in g]
-        nc["pooled"] = {"n": len(pooled), "x_norm": float(np.median(pooled)) if len(pooled) >= M_MIN else None}
-        norms["by control"][c] = nc
 
-    def x_norm(r):
+    def fit_norms(years):
+        fit = [r for (u, f), r in rows.items() if f in years and u in in_dev and r["x_exit"] is not None]
+        norms = {"norm years": list(years), "m_min": M_MIN, "n_pos": N_POS, "by control": {}}
+        for c in ("public", "private nonprofit", "for-profit"):
+            g = [r for r in fit if r["control"] == c]
+            nc = {"fit college-years": len(g)}
+            wv = [r["wealth per FTE"] for r in g if r["wealth per FTE"] is not None]
+            if c in WEALTH and len(wv) >= 3 * M_MIN:
+                cuts = [float(np.percentile(wv, 100 / 3)), float(np.percentile(wv, 200 / 3))]
+                nc["tercile cuts"] = cuts
+                band = lambda v, cuts=cuts: None if v is None else (0 if v <= cuts[0] else 1 if v <= cuts[1] else 2)
+                cells = {k: [r["x_exit"] for r in g if band(r["wealth per FTE"]) == k] for k in (0, 1, 2)}
+                final = {}
+                for k in (0, 1, 2):
+                    if len(cells[k]) >= M_MIN:
+                        final[k] = {"bands": [k], "values": cells[k]}
+                        continue
+                    adj = [j for j in (k - 1, k + 1) if j in cells]
+                    j = max(adj, key=lambda j: (len(cells[j]), -j))
+                    merged = cells[k] + cells[j]
+                    final[k] = ({"bands": sorted([k, j]), "values": merged} if len(merged) >= M_MIN else
+                                {"bands": [0, 1, 2], "values": [r["x_exit"] for r in g]})
+                nc["cells"] = {str(k): {"bands merged": v["bands"], "n": len(v["values"]),
+                                        "x_norm": float(np.median(v["values"]))} for k, v in final.items()}
+            pooled = [r["x_exit"] for r in g]
+            nc["pooled"] = {"n": len(pooled), "x_norm": float(np.median(pooled)) if len(pooled) >= M_MIN else None}
+            norms["by control"][c] = nc
+        for c in ("public", "private nonprofit", "for-profit"):
+            nc = norms["by control"][c]
+            ex = [max(0.0, r["x_exit"] - x_norm(r, norms)[0]) for r in fit
+                  if r["control"] == c and x_norm(r, norms)[0] is not None]
+            pos = [e for e in ex if e > 0]
+            nc["positive excess exit (fit)"] = len(pos)
+            for q in (90, 95, 97.5):
+                nc[f"x_ref p{q}"] = (float(np.percentile(ex, q)) if len(pos) >= N_POS and np.percentile(ex, q) > 0 else None)
+        return norms
+
+    def x_norm(r, norms):
         nc = norms["by control"][r["control"]]
         if "tercile cuts" in nc and r["wealth per FTE"] is not None:
             cuts = nc["tercile cuts"]
@@ -147,13 +162,9 @@ def main() -> None:
             return nc["cells"][str(k)]["x_norm"], "band"
         return nc["pooled"]["x_norm"], "pooled (no wealth band)"
 
-    for c in ("public", "private nonprofit", "for-profit"):
-        nc = norms["by control"][c]
-        ex = [max(0.0, r["x_exit"] - x_norm(r)[0]) for r in fit if r["control"] == c and x_norm(r)[0] is not None]
-        pos = [e for e in ex if e > 0]
-        nc["positive excess exit (fit)"] = len(pos)
-        for q in (90, 95, 97.5):
-            nc[f"x_ref p{q}"] = (float(np.percentile(ex, q)) if len(pos) >= N_POS and np.percentile(ex, q) > 0 else None)
+    segments = {"A (new hires July 1 to October 31; staffing years 2013-2015)": fit_norms(NORM_YEARS),
+                "B (new hires over twelve months; staffing years 2016 on)": fit_norms(NORM_YEARS_B)}
+    seg_for = {2014: list(segments)[0], 2019: list(segments)[1]}
 
     # ---------- readings at the scoring years
     out = []
@@ -168,7 +179,9 @@ def main() -> None:
             if r["B_cov"] is not None:
                 rec["s_p"] = min(1.0, max(0.0, r["B_cov"]))
                 rec["D_op_sound"] = gv.g_js(1 - rec["s_p"])
-            xn, how = x_norm(r) if r["x_exit"] is not None else (None, "")
+            norms = segments[seg_for[t]]
+            rec["exit segment"] = seg_for[t]
+            xn, how = x_norm(r, norms) if r["x_exit"] is not None else (None, "")
             xr = norms["by control"][m["control"]]["x_ref p95"]
             rec["norm used"] = how
             rec["meta available"] = int(r["x_exit"] is not None and xn is not None and xr is not None)
@@ -207,7 +220,7 @@ def main() -> None:
     (DIR / "soundness norms.json").write_text(json.dumps({
         "note": "v4 soundness dimension (Amendment 6): frozen norms and summary. No closure outcome was read.",
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "norms": norms, "summary at scoring years": summary, "files read": log,
+        "norms by comparability segment (Amendment 7)": segments, "segment used by frame": seg_for, "summary at scoring years": summary, "files read": log,
         "limitations": ["x_exit is a residual under a headcount model; new hires are counted July 1 to October 31 only",
                         "private revenue includes investment return, so coverage moves with markets"]},
         indent=1) + "\n", encoding="utf-8")
