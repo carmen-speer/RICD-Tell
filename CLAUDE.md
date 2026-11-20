@@ -65,3 +65,25 @@ grep -c '```' <file>
   confirm the specific plan with the maintainer first, even under general
   standing direction to keep working. Routine continuation of
   already-agreed work doesn't need to stall on this.
+
+## Waiting on workflow runs (hard rule)
+
+Never sit waiting on a running workflow, in any form: no polling loop, no
+`sleep`, no timer, no command that waits for a run to finish. Each of these
+blocks the conversation and spends the maintainer's usage on nothing.
+
+When the maintainer says a run has started:
+
+1. State the expected duration as a range (earliest and latest finish).
+2. Schedule exactly two checks, one at the earliest and one at the latest
+   expected finish (a scheduled check, such as `send_later`; or, if a
+   session is already doing other work at that moment, one instant API
+   call then). Say the two times in one line.
+3. Then either continue with the next piece of work or hand the
+   conversation back. Nothing runs in between.
+4. Each check is a single instant look at the run's status. If the run is
+   done at the first check, cancel the second. If it is still running at
+   the second, say so and schedule one later window; never keep checking.
+
+The maintainer saying "done" after a commit means the files are committed,
+not that the run has finished.
