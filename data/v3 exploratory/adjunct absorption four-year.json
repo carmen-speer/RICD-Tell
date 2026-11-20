@@ -1,0 +1,139 @@
+{
+ "test": "Item 17 follow-up (exploratory, descriptive): on-time completion of heavy adjunct absorbers at equal wealth",
+ "written at (UTC)": "2026-11-20T18:01:02.346635+00:00",
+ "inputs": [
+  "data/meta channel/adjunct absorption.json",
+  "data/v4 channels/gap values at scoring years.csv",
+  "data/v4 channels/inputs.csv",
+  "data/v4 channels/soundness inputs.csv",
+  "data/v4 channels/soundness norms.json"
+ ],
+ "frame": {
+  "2014 frame": 3199,
+  "with a pool share": 3089,
+  "with r_on": 2057,
+  "with D_4yr": 2057
+ },
+ "results": {
+  "on-time share of completers (r_on)": {
+   "overall": {
+    "heavy": 449,
+    "others": 1608,
+    "median, heavy": 0.6666666666666666,
+    "median, others": 0.6797011944070768,
+    "difference (heavy - others)": -0.01303452774041014,
+    "95% interval": [
+     -0.062019216739317866,
+     0.025002428596320465
+    ]
+   },
+   "within control and wealth cells": {
+    "cells used": 9,
+    "colleges in them": 2057,
+    "weighted mean of within-cell differences (heavy - others)": -0.008539471562183949,
+    "95% interval": [
+     -0.054878948849673814,
+     0.01748622575257647
+    ]
+   },
+   "by control": {
+    "public": {
+     "heavy": 115,
+     "others": 475,
+     "median, heavy": 0.4146341463414634,
+     "median, others": 0.5,
+     "difference (heavy - others)": -0.0853658536585366,
+     "95% interval": [
+      -0.13057215064140604,
+      -0.03096110238967381
+     ]
+    },
+    "private nonprofit": {
+     "heavy": 276,
+     "others": 901,
+     "median, heavy": 0.7395285873546743,
+     "median, others": 0.7757575757575758,
+     "difference (heavy - others)": -0.03622898840290145,
+     "95% interval": [
+      -0.07015110813432043,
+      -0.003921372313442806
+     ]
+    },
+    "for-profit": {
+     "heavy": 58,
+     "others": 232,
+     "median, heavy": 0.8409090909090909,
+     "median, others": 0.7842023172905526,
+     "difference (heavy - others)": 0.056706773618538375,
+     "95% interval": [
+      -0.1283882652655044,
+      0.12755991814576512
+     ]
+    }
+   }
+  },
+  "four-year gap (D_4yr)": {
+   "overall": {
+    "heavy": 449,
+    "others": 1608,
+    "median, heavy": 0.19087450462110955,
+    "median, others": 0.18231381736566477,
+    "difference (heavy - others)": 0.008560687255444788,
+    "95% interval": [
+     -0.015535130017481297,
+     0.04167547060928439
+    ]
+   },
+   "within control and wealth cells": {
+    "cells used": 9,
+    "colleges in them": 2057,
+    "weighted mean of within-cell differences (heavy - others)": -0.0006751207553505247,
+    "95% interval": [
+     -0.028811009104421137,
+     0.044074327857599266
+    ]
+   },
+   "by control": {
+    "public": {
+     "heavy": 115,
+     "others": 475,
+     "median, heavy": 0.3827268630877807,
+     "median, others": 0.31127812445913283,
+     "difference (heavy - others)": 0.07144873862864787,
+     "95% interval": [
+      0.025069520019523783,
+      0.11194835105392223
+     ]
+    },
+    "private nonprofit": {
+     "heavy": 276,
+     "others": 901,
+     "median, heavy": 0.14435584691811454,
+     "median, others": 0.1223618394086089,
+     "difference (heavy - others)": 0.021994007509505642,
+     "95% interval": [
+      0.002583402948744933,
+      0.04345626387593387
+     ]
+    },
+    "for-profit": {
+     "heavy": 58,
+     "others": 232,
+     "median, heavy": 0.08452377553598428,
+     "median, others": 0.11733571086963779,
+     "difference (heavy - others)": -0.03281193533365351,
+     "95% interval": [
+      -0.07301989657644237,
+      0.07262928954020209
+     ]
+    }
+   }
+  }
+ },
+ "reading": "Lower r_on and larger D_4yr at heavy absorbers would fit lower teaching quality; no difference fits either no effect or a measure too blunt to register one. No closure outcome is read.",
+ "limitations": [
+  "The four-year gap carried no closure information beyond size and sector in channel selection.",
+  "r_on is the share of six-year bachelor's completers who finished within four years, not the share of entrants who completed; two-year and certificate colleges are not covered.",
+  "The program-length check of the four-year gap is not made (Amendment 3)."
+ ]
+}
