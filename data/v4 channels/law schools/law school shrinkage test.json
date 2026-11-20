@@ -1,0 +1,295 @@
+{
+ "test": "Item 12, larger law-school test (Amendment 14): bottom-decile outcomes and severe enrollment collapse",
+ "written at (UTC)": "2026-11-20T19:11:08.808009+00:00",
+ "verdict (test period)": "supported",
+ "development (2012-2016; reported only)": {
+  "school-years": 992,
+  "schools": 205,
+  "flagged school-years": 131,
+  "flagged that shrank": 17,
+  "other school-years": 861,
+  "others that shrank": 15,
+  "shrinkage rate, flagged": 0.1297709923664122,
+  "shrinkage rate, others": 0.017421602787456445,
+  "rate ratio": 7.448854961832061,
+  "rate ratio 95% interval (schools resampled)": [
+   3.3928139400921657,
+   17.125292207792196
+  ],
+  "AUC of the continuous score": 0.8057617187499999,
+  "AUC 95% interval": [
+   0.6975370483415232,
+   0.8840388054873641
+  ]
+ },
+ "test (2017-2022)": {
+  "school-years": 1179,
+  "schools": 200,
+  "flagged school-years": 136,
+  "flagged that shrank": 14,
+  "other school-years": 1043,
+  "others that shrank": 10,
+  "shrinkage rate, flagged": 0.10294117647058823,
+  "shrinkage rate, others": 0.009587727708533078,
+  "rate ratio": 10.73676470588235,
+  "rate ratio 95% interval (schools resampled)": [
+   3.8408578649291067,
+   38.57919592030359
+  ],
+  "AUC of the continuous score": 0.8061327561327561,
+  "AUC 95% interval": [
+   0.6742706607448281,
+   0.9194492644584844
+  ]
+ },
+ "test, by first-year class size tercile": {
+  "smallest third": {
+   "school-years": 389,
+   "schools": 95,
+   "flagged school-years": 59,
+   "flagged that shrank": 5,
+   "other school-years": 330,
+   "others that shrank": 4,
+   "shrinkage rate, flagged": 0.0847457627118644,
+   "shrinkage rate, others": 0.012121212121212121,
+   "rate ratio": 6.991525423728813,
+   "rate ratio 95% interval (schools resampled)": [
+    1.5430442176870751,
+    40.35488095238094
+   ],
+   "AUC of the continuous score": 0.7814327485380117,
+   "AUC 95% interval": [
+    0.6183087760071652,
+    0.9562626030297684
+   ]
+  },
+  "middle third": {
+   "school-years": 391,
+   "schools": 115,
+   "flagged school-years": 37,
+   "flagged that shrank": 2,
+   "other school-years": 354,
+   "others that shrank": 2,
+   "shrinkage rate, flagged": 0.05405405405405406,
+   "shrinkage rate, others": 0.005649717514124294,
+   "rate ratio": 9.567567567567568,
+   "rate ratio 95% interval (schools resampled)": [
+    0.0,
+    39.44999999999999
+   ],
+   "AUC of the continuous score": 0.5768733850129198,
+   "AUC 95% interval": [
+    0.14318654646324555,
+    0.97863307382806
+   ]
+  },
+  "largest third": {
+   "school-years": 399,
+   "schools": 93,
+   "flagged school-years": 40,
+   "flagged that shrank": 7,
+   "other school-years": 359,
+   "others that shrank": 4,
+   "shrinkage rate, flagged": 0.175,
+   "shrinkage rate, others": 0.011142061281337047,
+   "rate ratio": 15.706249999999999,
+   "rate ratio 95% interval (schools resampled)": [
+    2.0547183794466406,
+    77.61500000000001
+   ],
+   "AUC of the continuous score": 0.8963214620431115,
+   "AUC 95% interval": [
+    0.7290559740174135,
+    0.976203620717401
+   ]
+  }
+ },
+ "test, without the closed schools' ending windows (check)": {
+  "school-years": 1173,
+  "schools": 197,
+  "flagged school-years": 134,
+  "flagged that shrank": 12,
+  "other school-years": 1039,
+  "others that shrank": 6,
+  "shrinkage rate, flagged": 0.08955223880597014,
+  "shrinkage rate, others": 0.005774783445620789,
+  "rate ratio": 15.507462686567164,
+  "rate ratio 95% interval (schools resampled)": [
+   4.3073787357484985,
+   60.18515972869418
+  ],
+  "AUC of the continuous score": 0.8227753727753727,
+  "AUC 95% interval": [
+   0.642854310841984,
+   0.9376669520644716
+  ]
+ },
+ "test-period collapses, by school and year": [
+  {
+   "school": "ARIZONA SUMMIT LAW SCHOOL",
+   "year": 2017,
+   "flagged": true,
+   "closure": true
+  },
+  {
+   "school": "CHARLESTON SCHOOL OF LAW",
+   "year": 2017,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "CONCORDIA LAW SCHOOL",
+   "year": 2017,
+   "flagged": false,
+   "closure": true
+  },
+  {
+   "school": "CONCORDIA LAW SCHOOL",
+   "year": 2018,
+   "flagged": false,
+   "closure": true
+  },
+  {
+   "school": "CONCORDIA LAW SCHOOL",
+   "year": 2019,
+   "flagged": false,
+   "closure": true
+  },
+  {
+   "school": "DISTRICT OF COLUMBIA",
+   "year": 2017,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "FLORIDA A&M UNIVERSITY",
+   "year": 2017,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "FLORIDA COASTAL SCHOOL OF LAW",
+   "year": 2018,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "FLORIDA COASTAL SCHOOL OF LAW",
+   "year": 2020,
+   "flagged": false,
+   "closure": true
+  },
+  {
+   "school": "FLORIDA STATE UNIVERSITY",
+   "year": 2019,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "GEORGE MASON UNIVERSITY",
+   "year": 2021,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "GOLDEN GATE UNIVERSITY",
+   "year": 2018,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "GOLDEN GATE UNIVERSITY",
+   "year": 2019,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "GOLDEN GATE UNIVERSITY",
+   "year": 2020,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "INTER AMERICAN UNIVERSITY OF PUERTO RICO",
+   "year": 2017,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "INTER AMERICAN UNIVERSITY OF PUERTO RICO",
+   "year": 2022,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "NORTHERN KENTUCKY UNIVERSITY",
+   "year": 2017,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "PUERTO RICO, UNIVERSITY OF",
+   "year": 2017,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "THOMAS M. COOLEY LAW SCHOOL",
+   "year": 2017,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "THOMAS M. COOLEY LAW SCHOOL",
+   "year": 2018,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "THOMAS M. COOLEY LAW SCHOOL",
+   "year": 2019,
+   "flagged": true,
+   "closure": false
+  },
+  {
+   "school": "VALPARAISO UNIVERSITY",
+   "year": 2017,
+   "flagged": true,
+   "closure": true
+  },
+  {
+   "school": "WAKE FOREST UNIVERSITY",
+   "year": 2017,
+   "flagged": false,
+   "closure": false
+  },
+  {
+   "school": "WESTERN STATE COLLEGE OF LAW",
+   "year": 2017,
+   "flagged": true,
+   "closure": false
+  }
+ ],
+ "closures counted as shrinkage": [
+  "ARIZONA SUMMIT LAW SCHOOL",
+  "CHARLOTTE SCHOOL OF LAW",
+  "CONCORDIA LAW SCHOOL",
+  "FLORIDA COASTAL SCHOOL OF LAW",
+  "INDIANA TECH",
+  "VALPARAISO UNIVERSITY"
+ ],
+ "new-style names with no old match (schools first appearing from 2023)": [
+  "High Point University",
+  "Wilmington University School of Law"
+ ],
+ "settings": {
+  "minimum first-year class": 25,
+  "relative shrink cut": 0.6,
+  "bootstrap": 2000,
+  "seed": 20261128
+ },
+ "limitations": [
+  "Missing years in the source (Amendment 13) are left out, which drops some of the last years before an ending.",
+  "School-years of one school are not independent; intervals resample schools."
+ ]
+}
