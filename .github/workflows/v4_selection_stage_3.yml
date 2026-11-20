@@ -1,0 +1,59 @@
+name: v4 selection stage 3 - confirm on the 2019 frame
+
+# Manual-only. Runs "src/v4 selection stage 3.py" under "channel selection
+# protocol.md" (section 4, Amendments 2 and 4): reads the committed stage 1
+# and 2 result and the 2019 frame's gap values, then the 2019 frame's closure
+# outcomes (HD2019 onward, primary coding of protocol v2), and confirms or
+# rejects (a) the price gap on the whole frame and (b) the four-year gap at
+# public and private nonprofit institutions. Commits
+# data/v4 channels/"selection stage 3.json".
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: v4-selection
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run stage 3
+        run: |
+          cd src
+          python "v4 selection stage 3.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/v4 channels/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "v4 selection stage 3 (2019 frame)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
