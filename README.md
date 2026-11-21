@@ -41,6 +41,15 @@ and collapse is guaranteed, absent a new anchor, once $\Delta_{PNR} \le 0$. Anch
 | Exchange $E_{exch}$, base $N$ | Net tuition and fees plus auxiliary sales; 12-month full-time-equivalent enrollment |
 | Anchor capacity $A$ | Federal, state and local appropriations, gifts, and the endowment draw |
 
+### How the theory is organized, and how to build a tracker in your domain
+
+The theory is split in two for readability, and both parts are computation-ready.
+
+- **The Spine** is the core engine: divergence, resource debt, coverage and the point of no return, as above. Most trackers run on the Spine alone. The standard collapse-causal tracker profile (C-CT) uses only the Spine's core quantities, with about 5 to 8 free parameters, and Tell is built this way.
+- **The Catalog** is not required reading for building a tracker. It serves two purposes: a list of diagnoses for when a tracker does not work as expected (edge cases, alternative mechanisms and audit protocols, so a failure can be traced to its cause), and a source of mechanisms for specialized trackers built for particular edge cases. The planned agent tracker (C-CAT), for example, runs on the Spine with a named set of Catalog mechanisms switched on. The two documents share section numbers, so a reference not found in one is in the other.
+
+The next version of RICD will state this in its tracker profiles (Part 15). The [adapter manual](<reports/RICD Adapter Instructional Manual.pdf>) is being updated with what building the higher-education tracker taught, and rewritten as a step-by-step guide to building a C-CT tracker in a new domain.
+
 ## What Tell does
 
 Tell is a reader of institutional distress in U.S. higher education. It works, and it does four things no simpler tool does.
