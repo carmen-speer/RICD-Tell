@@ -1,8 +1,12 @@
 # Tell
 
+## What this repository is
+
+This repository is the first empirical test of an original theory. Recursive Information-Container Dynamics (RICD) is a domain-independent mathematical theory of how systems drift from their own feedback, accumulate the cost of that drift, and either correct, are held up by an outside anchor, or collapse; its full statement is in the [Spine and Catalog](docs/). Tell is the instrument built to test it: a higher-education adapter that turns RICD's quantities into measurements from public federal data and puts the theory's predictions to pre-registered, falsifiable tests on colleges nobody chose, with every protocol committed before outcomes were looked up. The theory is passing: the tracker built from it passed its pre-registered test, beat every baseline, and the first test in a less-anchored domain (law schools) showed the theory's signal plainly where anchors are thin. Higher education is the first domain; four more adapters are planned, so the theory can be tested where anchoring is weaker and compared across domains.
+
 ## What Tell does
 
-Tell is a reader of institutional distress in U.S. higher education, built on Recursive Information-Container Dynamics (RICD). It works, and it does four things no simpler tool does.
+Tell is a reader of institutional distress in U.S. higher education. It works, and it does four things no simpler tool does.
 
 **It beats the baseline trackers and the obvious proxy.** Tracker v3 passed its pre-registered test on 987 held-out institutions, with closures from 2019 to 2025: it caught 32 of 56 closures while flagging 79 of 931 survivors (J 0.49). It beat the standard alternatives: flagging every for-profit college (J 0.31) and critical slowing down, the complex-systems early-warning method (J −0.02, no better than chance). At its committed flag cut points it also beat a frozen model of size and sector alone (J 0.49 against 0.38; difference +0.11, 95% interval +0.01 to +0.22), and among public and nonprofit colleges it did so roughly threefold (J 0.29 against 0.09; difference +0.20, interval +0.04 to +0.36), both intervals clear of zero ([exploratory comparison](<data/v3 exploratory/cut-point comparison.json>)).
 

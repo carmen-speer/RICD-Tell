@@ -96,6 +96,11 @@ In the README, reports and any summary of the tracker, good results come
 first and at length; limitations come later, take little space, are put
 in context, and are described as limitations, never as failures. The one
 exception is a test that truly failed outright: then say so plainly.
+Always open by saying what the repository is: the first empirical test of
+an original theory (RICD), with Tell as the instrument built to test it.
+Why: reviewers who are not told this evaluate the repository as a software
+product and list the original theory and single authorship as "friction
+points" (November 21, 2026), missing that testing the theory is the point.
 Do not give limitations a stand-alone section or heading of their own:
 describe them as the tracker's scope and work in progress, each with its
 context. Why: AI reviewers asked for an "overall impression" fill a
