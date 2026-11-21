@@ -1,0 +1,250 @@
+{
+ "note": "Exploratory: v3 test flags at the committed cut points against outcomes already known. The tracker's flag here is the anchored flag (its reading after the anchor sensor).",
+ "summary": {
+  "1. closures the tracker caught that size and sector missed": {
+   "colleges": 9,
+   "closed": 9
+  },
+  "2. closures size and sector caught that the tracker missed": {
+   "colleges": 1,
+   "closed": 1
+  },
+  "3. flagged by size and sector, not flagged by the tracker once anchors were counted": {
+   "colleges": 10,
+   "closed": 1
+  },
+  "4. flag cleared by the anchor sensor, closed anyway": {
+   "colleges": 0,
+   "closed": 0
+  }
+ },
+ "lists": {
+  "1. closures the tracker caught that size and sector missed": [
+   {
+    "unitid": "195562",
+    "name": "St. Joseph's College-Long Island",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "never short",
+    "anchored share, latest year": null
+   },
+   {
+    "unitid": "231086",
+    "name": "Southern Vermont College",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 2.1126074931938983
+   },
+   {
+    "unitid": "209533",
+    "name": "Oregon College of Art and Craft",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.8321989304762376
+   },
+   {
+    "unitid": "220312",
+    "name": "Hiwassee College",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 1.714249330830051
+   },
+   {
+    "unitid": "167251",
+    "name": "Newbury College",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.08136927044290583
+   },
+   {
+    "unitid": "392840",
+    "name": "Watkins College of Art Design & Film",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 1.1321882568284543
+   },
+   {
+    "unitid": "142887",
+    "name": "American Academy of Art",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "not measured (for-profit or no record)",
+    "anchored share, latest year": null
+   },
+   {
+    "unitid": "206330",
+    "name": "Urbana University",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "chronic",
+    "anchored share, latest year": 0.08955582232893157
+   },
+   {
+    "unitid": "439613",
+    "name": "College of Biblical Studies",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": true,
+    "anchored flag": true,
+    "size-and-sector flag": false,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.5083710260477788
+   }
+  ],
+  "2. closures size and sector caught that the tracker missed": [
+   {
+    "unitid": "212452",
+    "name": "Faith Theological Seminary",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.23512156256790362
+   }
+  ],
+  "3. flagged by size and sector, not flagged by the tracker once anchors were counted": [
+   {
+    "unitid": "223117",
+    "name": "Baptist Missionary Association Theological Seminary",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 1.2378075380584015
+   },
+   {
+    "unitid": "111966",
+    "name": "Charles R Drew University of Medicine and Science",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.8848895062653767
+   },
+   {
+    "unitid": "200873",
+    "name": "Allegheny Wesleyan College",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 1.974126202500068
+   },
+   {
+    "unitid": "181543",
+    "name": "Summit Christian College",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "chronic",
+    "anchored share, latest year": 1.0677437818520705
+   },
+   {
+    "unitid": "212452",
+    "name": "Faith Theological Seminary",
+    "sector": "private",
+    "closed or failed": true,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.23512156256790362
+   },
+   {
+    "unitid": "216047",
+    "name": "Saint Charles Borromeo Seminary-Overbrook",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "chronic",
+    "anchored share, latest year": null
+   },
+   {
+    "unitid": "363712",
+    "name": "Yeshivah Gedolah Rabbinical College",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 1.5543289535429377
+   },
+   {
+    "unitid": "123280",
+    "name": "Shasta Bible College and Graduate School",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "episodic",
+    "anchored share, latest year": 0.7815667088680074
+   },
+   {
+    "unitid": "366003",
+    "name": "South Florida Bible College and Theological Seminary",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": false,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "chronic",
+    "anchored share, latest year": 0.5238361953965514
+   },
+   {
+    "unitid": "154174",
+    "name": "Palmer College of Chiropractic",
+    "sector": "private",
+    "closed or failed": false,
+    "v3 flag": true,
+    "anchored flag": false,
+    "size-and-sector flag": true,
+    "overleverage class": "never short",
+    "anchored share, latest year": null
+   }
+  ],
+  "4. flag cleared by the anchor sensor, closed anyway": []
+ }
+}
