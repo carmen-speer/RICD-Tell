@@ -1,6 +1,6 @@
 """
 Item 15b (exploratory): the anchor-and-voice cases, under
-"anchor and voice protocol.md" (with Amendments 1 to 3, committed before
+"anchor and voice protocol.md" (with Amendments 1 to 5, committed before
 any case was classified or any voice record read).
 
 This script does the measuring half of the case study; the voice records
@@ -307,7 +307,7 @@ def main() -> None:
                                    "no year with data" if not states else "fails: not a case")
 
     # documented closures, classified the same way as in item 15 (end at the closure year)
-    closures = []
+    closures, converted = [], []
     for u, rows in frame.items():
         e = oc.exit_of(u, rows, years)
         if not e or "year" not in e or e["year"] < et.FIRST_HD:
@@ -316,6 +316,14 @@ def main() -> None:
         if "c" in g or not ("a" in g or "b" in g):
             continue
         if sector.get(u) not in ("public", "private nonprofit") or u in case_ids:
+            continue
+        # Amendment 5: a closure listed as for-profit in any header year (a conversion)
+        # has no observable anchor of the public or nonprofit kind; left out of the pool
+        if any(r.get("CONTROL", "") == "3" for r in rows.values()):
+            last = rows[max(rows)]
+            converted.append({"unitid": u, "name": last.get("INSTNM", ""), "sector at closure": sector[u],
+                              "for-profit header years": ";".join(str(y) for y in sorted(rows) if rows[y].get("CONTROL", "") == "3"),
+                              "closure year": e["year"]})
             continue
         # onset fallback for a closure: the end of its item-15 window (its closure year,
         # capped at the last finance year), standing in for the announcement date that
@@ -402,6 +410,10 @@ def main() -> None:
                             r["state"], r["anchored share"]]
                            + [(r["anchors"] or {}).get(s, "") if r["anchors"] else "" for s in et.SOURCES]
                            + ["; ".join(r["flags"])])
+    with open(DATA / "converted closures left out.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["unitid", "name", "sector at closure", "for-profit header years", "closure year"])
+        w.writeheader()
+        w.writerows(sorted(converted, key=lambda r: r["name"]))
     with open(DATA / "name matching.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["name", "state or region", "source", "match", "unitids", "names in the header files"])
@@ -417,7 +429,7 @@ def main() -> None:
         w.writerows(candidates)
     tally = Counter(c["match"].split(":")[0] for c in cases)
     results = {
-        "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 3). Measures only: "
+        "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 5). Measures only: "
                 "no outcome or voice record is read here.",
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "settings": {"seed": SEED, "matched closures per case": MATCHES_PER_CASE,
@@ -427,6 +439,7 @@ def main() -> None:
             (c["group"], c.get("distress check", "n/a")) for c in cases).items())},
         "eligible for the matched draw": len(eligible), "matched closures drawn": len(matched),
         "closure pool (public and nonprofit, classified, not a case)": len(closures),
+        "converted closures left out of the pool (Amendment 5)": len(converted),
         "cases by ending type (measure used)": dict(Counter(
             (c["window"][c["measure"]]["type"] if c.get("measure") else "not classified") for c in cases if c.get("window"))),
         "cases by anchoring at onset": dict(Counter(c.get("anchoring", "not measured") for c in cases)),
