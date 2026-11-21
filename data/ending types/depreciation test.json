@@ -1,0 +1,152 @@
+{
+ "note": "Item 15 diagnostic (exploratory; no rule changed): public colleges' apparent shortfall with and without depreciation in total expenses.",
+ "written at (UTC)": "2026-11-21T01:55:47.171925+00:00",
+ "files read": {
+  "F0405_F1A": 1962,
+  "F0405_F2": 1902,
+  "F0405_F3": 2504,
+  "F0506_F1A": 1971,
+  "F0506_F2": 1896,
+  "F0506_F3": 2577,
+  "F0607_F1A": 1971,
+  "F0607_F2": 1863,
+  "F0607_F3": 2622,
+  "F0708_F1A": 1960,
+  "F0708_F2": 1861,
+  "F0708_F3": 2718,
+  "F0809_F1A": 1973,
+  "F0809_F2": 1871,
+  "F0809_F3": 2798,
+  "F0910_F1A": 2012,
+  "F0910_F2": 1862,
+  "F0910_F3": 3021,
+  "F1011_F1A": 2018,
+  "F1011_F2": 1888,
+  "F1011_F3": 3184,
+  "F1112_F1A": 2004,
+  "F1112_F2": 1878,
+  "F1112_F3": 3246,
+  "F1213_F1A": 1995,
+  "F1213_F2": 1890,
+  "F1213_F3": 3214,
+  "F1314_F1A": 1988,
+  "F1314_F2": 1883,
+  "F1314_F3": 3176,
+  "F1415_F1A": 1986,
+  "F1415_F2": 1922,
+  "F1415_F3": 3020,
+  "F1516_F1A": 1986,
+  "F1516_F2": 1888,
+  "F1516_F3": 2782,
+  "F1617_F1A": 1978,
+  "F1617_F2": 1884,
+  "F1617_F3": 2657,
+  "F1718_F1A": 1964,
+  "F1718_F2": 1849,
+  "F1718_F3": 2379,
+  "F1819_F1A": 1961,
+  "F1819_F2": 1836,
+  "F1819_F3": 2272,
+  "F1920_F1A": 1949,
+  "F1920_F2": 1819,
+  "F1920_F3": 2244,
+  "F2021_F1A": 1946,
+  "F2021_F2": 1805,
+  "F2021_F3": 2173,
+  "F2122_F1A": 1936,
+  "F2122_F2": 1782,
+  "F2122_F3": 2120,
+  "F2223_F1A": 1916,
+  "F2223_F2": 1766,
+  "F2223_F3": 2090,
+  "F2324_F1A": 1911,
+  "F2324_F2": 1750,
+  "F2324_F3": 2046
+ },
+ "results": {
+  "public": {
+   "2005": {
+    "colleges": 1932,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.5429606625258799,
+    "share short beyond anchors, without depreciation": 0.2531055900621118,
+    "median g, with depreciation": 1.004954636357883,
+    "median g, without depreciation": 0.9631016250814908
+   },
+   "2010": {
+    "colleges": 1657,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.4103802051901026,
+    "share short beyond anchors, without depreciation": 0.18225709112854557,
+    "median g, with depreciation": 0.9871730151150113,
+    "median g, without depreciation": 0.9385925772905421
+   },
+   "2015": {
+    "colleges": 1489,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.5936870382807253,
+    "share short beyond anchors, without depreciation": 0.22364002686366688,
+    "median g, with depreciation": 1.0137404733699145,
+    "median g, without depreciation": 0.9548736483324515
+   },
+   "2020": {
+    "colleges": 1473,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.6334012219959266,
+    "share short beyond anchors, without depreciation": 0.2939579090291921,
+    "median g, with depreciation": 1.025675581162277,
+    "median g, without depreciation": 0.9622641509433962
+   },
+   "2024": {
+    "colleges": 1452,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.49793388429752067,
+    "share short beyond anchors, without depreciation": 0.18801652892561985,
+    "median g, with depreciation": 0.9992980768897545,
+    "median g, without depreciation": 0.9295475457101934
+   }
+  },
+  "private nonprofit": {
+   "2005": {
+    "colleges": 1892,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.3012684989429176,
+    "share short beyond anchors, without depreciation": 0.1876321353065539,
+    "median g, with depreciation": 0.9562631284180378,
+    "median g, without depreciation": 0.9038710208921421
+   },
+   "2010": {
+    "colleges": 1690,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.30532544378698223,
+    "share short beyond anchors, without depreciation": 0.15857988165680473,
+    "median g, with depreciation": 0.9603990774746591,
+    "median g, without depreciation": 0.903338197703266
+   },
+   "2015": {
+    "colleges": 1668,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.30755395683453235,
+    "share short beyond anchors, without depreciation": 0.17086330935251798,
+    "median g, with depreciation": 0.9566125153560863,
+    "median g, without depreciation": 0.8975611555022731
+   },
+   "2020": {
+    "colleges": 1618,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.34610630407911,
+    "share short beyond anchors, without depreciation": 0.17367119901112485,
+    "median g, with depreciation": 0.9682345701410275,
+    "median g, without depreciation": 0.9045778403312081
+   },
+   "2024": {
+    "colleges": 1565,
+    "depreciation not reported (left out)": 0,
+    "share short beyond anchors, with depreciation": 0.46773162939297125,
+    "share short beyond anchors, without depreciation": 0.28306709265175717,
+    "median g, with depreciation": 0.9922021311575546,
+    "median g, without depreciation": 0.9299161136333647
+   }
+  }
+ }
+}
