@@ -1,6 +1,6 @@
 {
  "note": "Item 15b, exploratory, under anchor and voice protocol.md (sections 6; Amendments 1 to 6). Voice read from voice coded.csv (fixed before outcomes were recorded); outcomes from case outcomes.csv.",
- "written at (UTC)": "2026-11-21T23:44:19.087029+00:00",
+ "written at (UTC)": "2026-11-21T23:52:14.243240+00:00",
  "rows": {
   "total": 128,
   "with a known outcome": 98,
@@ -1585,7 +1585,7 @@
     "margin": "gone",
     "fiscal year read": 2014,
     "window end": 2014,
-    "outcome": ""
+    "outcome": "lasting rescue"
    },
    {
     "name": "Dowling College",
@@ -1963,11 +1963,11 @@
  "S3": {
   "lasting rescues with a positive margin": {
    "count": 1,
-   "of": 1,
-   "share": 1.0,
+   "of": 2,
+   "share": 0.5,
    "exact 95% interval": [
-    0.025,
-    1.0
+    0.0126,
+    0.9874
    ]
   },
   "rescue attempts then closure with a positive margin": {
@@ -1979,7 +1979,7 @@
     0.5218
    ]
   },
-  "Fisher exact p, two-sided": 0.1667,
+  "Fisher exact p, two-sided": 0.2857,
   "pending, left out": [
    "Hampshire College",
    "Saint Augustine's University"
