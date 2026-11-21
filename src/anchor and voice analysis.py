@@ -128,6 +128,7 @@ def main() -> None:
     medians = {(r["sector"], int(r["fiscal year"])): float(r["median anchored share"])
                for r in read(DATA / "sector medians.csv")}
     converted = {r["unitid"] for r in read(DATA / "converted closures left out.csv")}
+    reversal_outcomes = {r["institution"]: r["outcome under Amendments 1 to 3"] for r in read(DATA / "reversal cases.csv")}
 
     bad = [k for k, r in outcomes.items() if r["outcome"] not in OUTCOMES]
     if bad:
@@ -246,7 +247,9 @@ def main() -> None:
         if c["group"] != "reversed closure or near-closure" or c["name"] in NO_QUALIFYING_STATEMENT or not c["window end (fiscal year)"]:
             continue
         mg, fy = margin(series.get(c["unitid"], {}), int(c["window end (fiscal year)"]))
-        o = outcomes.get(c["name"], {}).get("outcome", "")
+        # outcome from case outcomes.csv, else from reversal cases.csv (a reversal
+        # unclassified on ending type, such as Sweet Briar, is still an S1 and S3 case)
+        o = outcomes.get(c["name"], {}).get("outcome", "") or reversal_outcomes.get(c["name"], "")
         rev.append({"name": c["name"], "margin": mg, "fiscal year read": fy,
                     "window end": int(c["window end (fiscal year)"]), "outcome": o})
     s1_meas = [r for r in rev if r["margin"] != "unmeasured"]
