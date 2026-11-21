@@ -7,7 +7,9 @@ For every degree-granting college in the IPEDS header files from HD2005,
 and every fiscal year 2005 onward, reads:
 
   W       total expenses           F1D02 / F2B02 / F3B02 (F3D09 fallback, flagged)
-  E_exch  net tuition and fees     F1B01 / F2D01 / F3D01
+  E_exch  net tuition and fees plus sales and services of auxiliary
+          enterprises (protocol Amendment 1)
+                                   F1B01 + F1B05 / F2D01 + F2D12 / F3D01 + F3D07
   N       12-month FTE enrollment  EFTEUG + EFTEGD (EFIA, IPEDS-estimated)
   A       anchor capacity, by source (federal, state, local appropriations;
           gifts; endowment spending), as section 7 of the protocol fixes:
@@ -132,7 +134,7 @@ def finance(log: dict) -> dict:
                 r = rows[0]
                 rec = {"form": form, "flags": []}
                 if form == "F1A":
-                    rec |= {"W": num(r.get("F1D02")), "E": num(r.get("F1B01")),
+                    rec |= {"W": num(r.get("F1D02")), "E": first(r, "F1B01", "F1B05"),
                             "federal appropriations": num(r.get("F1B10")), "state appropriations": num(r.get("F1B11")),
                             "local appropriations": num(r.get("F1B12")), "gifts": num(r.get("F1B16")),
                             "endowment begin": None, "spending": None}
@@ -142,7 +144,7 @@ def finance(log: dict) -> dict:
                     else:
                         gifts = first(r, "F2D08", "F2D09")
                         rec["flags"].append("gifts include grants and contracts")
-                    rec |= {"W": num(r.get("F2B02")), "E": num(r.get("F2D01")),
+                    rec |= {"W": num(r.get("F2B02")), "E": first(r, "F2D01", "F2D12"),
                             "federal appropriations": num(r.get("F2D02")), "state appropriations": num(r.get("F2D03")),
                             "local appropriations": num(r.get("F2D04")), "gifts": gifts,
                             "endowment begin": num(r.get("F2H01")),
@@ -153,7 +155,7 @@ def finance(log: dict) -> dict:
                         w = num(r.get("F3D09"))
                         if w is not None:
                             rec["flags"].append("expenses from total revenues (F3D09)")
-                    rec |= {"W": w, "E": num(r.get("F3D01"))}
+                    rec |= {"W": w, "E": first(r, "F3D01", "F3D07")}
                 out[u][fy] = rec
         print("finance", fy, flush=True)
     return out
@@ -279,8 +281,8 @@ def windows(series: list[dict], end_cap: int, no_cross: str = "closed without cr
     """Primary and check windows (protocol section 4)."""
     valid = [r for r in series if r["valid"] and r["fy"] <= end_cap]
     if not valid:
-        return {"primary": {"type": "too short to classify", "reason": "no year with data"},
-                "check": {"type": "too short to classify", "reason": "no year with data"}}
+        return {"primary": {"type": "too short to classify", "group": "no year with data", "reason": "no year with data"},
+                "check": {"type": "too short to classify", "group": "no year with data", "reason": "no year with data"}}
     t0, last = valid[0]["fy"], valid[-1]["fy"]
     observable = any(r["g"] is not None for r in valid)
     ratio = "g" if observable else "c"
@@ -455,7 +457,7 @@ def main() -> None:
     measured = [c["unitid"] for c in closures] + (sb if len(sb) == 1 else []) + ph
     with open(OUT_DIR / "closures series.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["unitid", "fiscal year", "W total expenses", "E net tuition", "N FTE", "A anchors", "c", "g",
+        w.writerow(["unitid", "fiscal year", "W total expenses", "E net tuition and auxiliary sales", "N FTE", "A anchors", "c", "g",
                     "state", "anchored share"] + [f"share: {s}" for s in SOURCES] + ["flags"])
         for u in measured:
             for r in series_all.get(u, []):
