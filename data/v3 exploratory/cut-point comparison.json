@@ -1,0 +1,34 @@
+{
+ "note": "Exploratory: chosen after the v3 results were known, so not pre-registered. Flags and outcomes are the committed v3 test files, unchanged.",
+ "written at (UTC)": "2026-11-21T10:06:33.215896+00:00",
+ "resamples": 10000,
+ "seed": 20261121,
+ "all scored institutions": {
+  "institutions": 987,
+  "closed or failed": 56,
+  "J, tracker v3": 0.4865735767991407,
+  "J, size-and-sector model": 0.37593984962406013,
+  "difference": 0.11063372717508058,
+  "difference, paired 95% bootstrap": [
+   0.008658008658008698,
+   0.22291440953412778
+  ],
+  "share of resamples with difference at or below zero": 0.0159,
+  "closures caught by v3 and missed by size and sector": 9,
+  "closures caught by size and sector and missed by v3": 1
+ },
+ "public and private nonprofit": {
+  "institutions": 926,
+  "closed or failed": 36,
+  "J, tracker v3": 0.2895131086142322,
+  "J, size-and-sector model": 0.09313358302122346,
+  "difference": 0.19637952559300872,
+  "difference, paired 95% bootstrap": [
+   0.040997023809523775,
+   0.35881034027960956
+  ],
+  "share of resamples with difference at or below zero": 0.006,
+  "closures caught by v3 and missed by size and sector": 9,
+  "closures caught by size and sector and missed by v3": 1
+ }
+}
