@@ -6,7 +6,9 @@ any finance, enrollment or closure value was read).
 For every degree-granting college in the IPEDS header files from HD2005,
 and every fiscal year 2005 onward, reads:
 
-  W       total expenses           F1D02 / F2B02 / F3B02 (F3D09 fallback, flagged)
+  W       total expenses less depreciation (protocol Amendment 3)
+                                   F1D02 / F2B02 / F3B02 (F3D09 fallback, flagged), less
+                                   F1C194 or F1C19DP / F2E135 / F3E075 (flagged where missing)
   E_exch  net tuition and fees plus sales and services of auxiliary
           enterprises (protocol Amendment 1)
                                    F1B01 + F1B05 / F2D01 + F2D12 / F3D01 + F3D07
@@ -164,6 +166,14 @@ def finance(log: dict) -> dict:
                     tot = num(r.get("F3D09"))
                     rev = (tot - (num(r.get("F3D05")) or 0.0)) if tot is not None else None
                     rec |= {"W": w, "E": first(r, "F3D01", "F3D07"), "R": rev}
+                # Amendment 3: total expenses less depreciation (a non-cash cost)
+                dep_codes = {"F1A": ("F1C194", "F1C19DP"), "F2": ("F2E135",), "F3": ("F3E075",)}[form]
+                dep = next((v for c in dep_codes if (v := num(r.get(c))) is not None), None)
+                if rec.get("W") is not None:
+                    if dep is not None:
+                        rec["W"] = rec["W"] - dep
+                    else:
+                        rec["flags"].append("depreciation not reported; total expenses include it")
                 out[u][fy] = rec
         print("finance", fy, flush=True)
     return out
