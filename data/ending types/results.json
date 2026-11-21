@@ -1,6 +1,6 @@
 {
  "note": "Item 15, exploratory (outcomes known), under ending types protocol.md. Rule frozen for the retest.",
- "written at (UTC)": "2026-11-21T00:04:31.498557+00:00",
+ "written at (UTC)": "2026-11-21T00:20:29.936805+00:00",
  "settings": {
   "fiscal years": [
    2005,
@@ -217,65 +217,64 @@
  "documented closures classified": 1184,
  "types by measure and sector": {
   "check: for-profit": {
-   "drift-type": 224,
-   "too short to classify": 359,
-   "no rise over the window": 326,
-   "shock-type": 36,
+   "drift-type": 232,
+   "too short to classify": 360,
+   "no rise over the window": 319,
+   "shock-type": 34,
    "mixed": 2
   },
   "check: for-profit (group)": {
-   "past c = 1 at the start; window to the end": 577,
-   "crossed": 227,
-   "closed without crossing": 89,
-   "": 54
+   "past c = 1 at the start; window to the end": 539,
+   "crossed": 239,
+   "closed without crossing": 115,
+   "no year with data": 54
   },
   "check: private nonprofit": {
-   "drift-type": 97,
    "no rise over the window": 44,
-   "too short to classify": 74,
-   "shock-type": 13,
-   "mixed": 1
+   "drift-type": 96,
+   "too short to classify": 75,
+   "shock-type": 14
   },
   "check: private nonprofit (group)": {
-   "past c = 1 at the start; window to the end": 162,
-   "": 16,
-   "crossed": 42,
+   "past c = 1 at the start; window to the end": 157,
+   "no year with data": 16,
+   "crossed": 47,
    "closed without crossing": 9
   },
   "check: public": {
-   "no rise over the window": 4,
-   "drift-type": 1,
+   "no rise over the window": 3,
+   "drift-type": 2,
    "too short to classify": 3
   },
   "check: public (group)": {
    "past c = 1 at the start; window to the end": 7,
-   "": 1
+   "no year with data": 1
   },
   "primary: for-profit": {
-   "not classified": 577,
-   "too short to classify": 207,
-   "no rise over the window": 21,
-   "drift-type": 132,
-   "shock-type": 10
+   "not classified": 539,
+   "too short to classify": 223,
+   "no rise over the window": 26,
+   "drift-type": 148,
+   "shock-type": 11
   },
   "primary: for-profit (group)": {
-   "past the crossing at the start": 577,
-   "crossed": 227,
-   "closed without crossing": 89,
-   "": 54
+   "past the crossing at the start": 539,
+   "crossed": 239,
+   "closed without crossing": 115,
+   "no year with data": 54
   },
   "primary: private nonprofit": {
-   "not classified": 148,
-   "too short to classify": 50,
-   "drift-type": 28,
-   "shock-type": 2,
+   "not classified": 124,
+   "too short to classify": 68,
+   "drift-type": 32,
+   "shock-type": 4,
    "no rise over the window": 1
   },
   "primary: private nonprofit (group)": {
-   "past the crossing at the start": 148,
-   "": 16,
-   "crossed": 56,
-   "closed without crossing": 9
+   "past the crossing at the start": 124,
+   "crossed": 79,
+   "no year with data": 16,
+   "closed without crossing": 10
   },
   "primary: public": {
    "not classified": 6,
@@ -283,7 +282,7 @@
   },
   "primary: public (group)": {
    "past the crossing at the start": 6,
-   "": 1,
+   "no year with data": 1,
    "crossed": 1
   }
  },
@@ -317,11 +316,11 @@
      2014,
      2015
     ],
-    "total change in log": 0.2622138182430125,
-    "drift part": 0.05121173450612848,
+    "total change in log": 0.20980164383730282,
+    "drift part": 0.003376840262966474,
     "jump part by year": {
-     "2007": 0.00867078205406302,
-     "2015": 0.20233130168282099
+     "2007": -0.016630421362141656,
+     "2015": 0.223055224936478
     },
     "gap part": 0.0,
     "jump tests": {
@@ -338,9 +337,9 @@
      }
     },
     "shares of the whole change": {
-     "drift": 0.19530524687553602,
+     "drift": 0.016095394684253042,
      "gap": 0.0,
-     "largest single jump": 0.7716271516068842
+     "largest single jump": 1.0631719602228336
     },
     "type": "shock-type",
     "crossing": 2005,
