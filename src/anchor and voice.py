@@ -1,7 +1,7 @@
 """
 Item 15b (exploratory): the anchor-and-voice cases, under
 "anchor and voice protocol.md" (with Amendments 1 to 5, committed before
-any case was classified or any voice record read).
+any case was classified or any voice record read, and Amendment 6).
 
 This script does the measuring half of the case study; the voice records
 and outcomes are case research, recorded by hand afterwards. It:
@@ -31,6 +31,17 @@ and outcomes are case research, recorded by hand afterwards. It:
      (log distance), then nearest in onset year; exact ties are broken by
      the seeded draw. Closures that are themselves cases are left out of
      the pool.
+
+Amendment 6 (made during the voice searches, before any count): the
+first public announcement dates found by the searches are applied from
+data/anchor and voice/announcement corrections.csv (the tracker entries
+are left as collected), and the matched closures already drawn are kept
+as drawn (matched closures.csv is read, never redrawn or rewritten). The
+run writes, beside the usual files:
+  classification changes (Amendment 6).csv   every field of a case that
+      differs from the cases measured.csv already committed, old and new
+  matched closures after Amendment 6.csv     each kept match with the
+      case's onset, FTE and match distances at the draw and now
 
 Nothing here reads an outcome or a voice record.
 
@@ -154,12 +165,28 @@ def read_cases() -> list[dict]:
             cases.append({"group": "reversed closure or near-closure", "source": r["found in"], "name": r["institution"],
                           "state": r["state"], "announced": r["date of statement"], "event": r["reversal"],
                           "partner": "", "link": r["source"], "flags": r["flags"]})
+    # Amendment 6, part 6: earlier first public announcements found by the voice searches
+    path = DATA / CORRECTIONS
+    if path.exists():
+        with open(path, encoding="utf-8") as f:
+            fixes = {(r["source"], r["institution"]): r for r in csv.DictReader(f)}
+        for c in cases:
+            x = fixes.pop((c["source"], c["name"]), None)
+            if x:
+                if x["announced as listed"] != c["announced"]:
+                    raise SystemExit(f"Correction for {c['name']} expects {x['announced as listed']}, found {c['announced']}.")
+                c["announced"] = x["corrected announcement"]
+                c["flags"] = "; ".join(v for v in (c.get("flags", ""),
+                    f"Amendment 6: announcement corrected from {x['announced as listed']} ({x['why']})") if v)
+        if fixes:
+            raise SystemExit(f"Corrections matched no case: {sorted(fixes)}")
     return cases
 
 
 STOP = {"college", "university", "of", "and", "institute", "school", "state", "community", "st", "at",
         "county", "in", "for", "the", "center", "campus"}
 CROSSWALK = "name crosswalk.csv"
+CORRECTIONS = "announcement corrections.csv"   # Amendment 6, part 6
 
 
 def read_crosswalk() -> dict:
@@ -343,7 +370,22 @@ def main() -> None:
     eligible = [c for c in cases if len(c["unitids"]) == 1 and c.get("sector") in ("public", "private nonprofit")
                 and c.get("measure") and c.get("FTE at onset") and c.get("onset")
                 and c.get("distress check", "passes") == "passes"]
-    for c in sorted(eligible, key=lambda c: (c["name"], c["unitids"][0])):
+    # Amendment 6, part 7: the draw already made is kept as drawn
+    frozen_path = DATA / "matched closures.csv"
+    frozen = []
+    if frozen_path.exists():
+        with open(frozen_path, encoding="utf-8") as f:
+            frozen = list(csv.DictReader(f))
+    old_cases = {}
+    if (DATA / "cases measured.csv").exists():
+        with open(DATA / "cases measured.csv", encoding="utf-8") as f:
+            old_cases = {(r["source"], r["name"]): r for r in csv.DictReader(f)}
+    if frozen:
+        matched = frozen
+        eligible_draw = []
+    else:
+        eligible_draw = eligible
+    for c in sorted(eligible_draw, key=lambda c: (c["name"], c["unitids"][0])):
         cand = [k for k in closures if k["unitid"] not in used and k["sector"] == c["sector"] and k["measure"] == c["measure"]]
         keyed = [(abs(math.log(k["FTE at onset"]) - math.log(c["FTE at onset"])), abs(k["onset"] - c["onset"]), rng.random(), k)
                  for k in cand]
@@ -386,11 +428,44 @@ def main() -> None:
                         c.get("sector median") if c.get("sector median") is not None else "",
                         c.get("anchoring", ""), c.get("distress check", ""), n,
                         "; ".join(x for x in flags if x), c["link"]])
-    with open(DATA / "matched closures.csv", "w", newline="", encoding="utf-8") as f:
-        mcols = list(matched[0]) if matched else ["case"]
-        w = csv.DictWriter(f, fieldnames=mcols)
-        w.writeheader()
-        w.writerows(matched)
+    if not frozen:
+        with open(DATA / "matched closures.csv", "w", newline="", encoding="utf-8") as f:
+            mcols = list(matched[0]) if matched else ["case"]
+            w = csv.DictWriter(f, fieldnames=mcols)
+            w.writeheader()
+            w.writerows(matched)
+    else:
+        # Amendment 6: every field of a case that changed, and the kept matches beside the corrected onsets
+        with open(DATA / "cases measured.csv", encoding="utf-8") as f:
+            new_cases = {(r["source"], r["name"]): r for r in csv.DictReader(f)}
+        with open(DATA / "classification changes (Amendment 6).csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["source", "name", "field", "before Amendment 6", "after Amendment 6"])
+            for k, r in new_cases.items():
+                o = old_cases.get(k, {})
+                for col in cols:
+                    if col in ("flags", "link"):
+                        continue
+                    if str(o.get(col, "")) != str(r.get(col, "")):
+                        w.writerow([k[0], k[1], col, o.get(col, ""), r.get(col, "")])
+        by_case = {c["unitids"][0]: c for c in cases if len(c["unitids"]) == 1}
+        by_old = {r["unitid"]: r for r in old_cases.values() if r.get("unitid")}
+        with open(DATA / "matched closures after Amendment 6.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["case", "case unitid", "closure", "closure unitid", "closure onset", "closure FTE at onset",
+                        "case onset at the draw", "case onset now", "case FTE at the draw", "case FTE now",
+                        "log FTE distance at the draw", "log FTE distance now", "onset year distance at the draw",
+                        "onset year distance now", "case measure now", "case still eligible for a draw"])
+            for m in frozen:
+                c, o = by_case.get(m["case unitid"], {}), by_old.get(m["case unitid"], {})
+                kf = float(m["FTE at onset"]) if m["FTE at onset"] else None
+                cf = c.get("FTE at onset")
+                dist = round(abs(math.log(kf) - math.log(cf)), 4) if kf and cf else ""
+                dyear = abs(int(m["onset"]) - c["onset"]) if c.get("onset") and m["onset"] else ""
+                w.writerow([m["case"], m["case unitid"], m["closure"], m["closure unitid"], m["onset"], m["FTE at onset"],
+                            o.get("onset", ""), c.get("onset") or "", o.get("FTE at onset", ""),
+                            round(cf, 1) if cf else "", m["log FTE distance"], dist, m["onset year distance"], dyear,
+                            c.get("measure") or "", "yes" if c in eligible else "no"])
     with open(DATA / "sector medians.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["sector", "fiscal year", "colleges with c > 1 and an anchored share", "median anchored share"])
@@ -429,8 +504,9 @@ def main() -> None:
         w.writerows(candidates)
     tally = Counter(c["match"].split(":")[0] for c in cases)
     results = {
-        "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 5). Measures only: "
-                "no outcome or voice record is read here.",
+        "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 6). Measures only: "
+                "no outcome or voice record is read here. Amendment 6: announcement corrections applied; "
+                "matched closures kept as drawn" + (" (read from matched closures.csv, not redrawn)." if frozen else "."),
         "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "settings": {"seed": SEED, "matched closures per case": MATCHES_PER_CASE,
                      "distress check years": DISTRESS_YEARS, "ending-type rule": "ending types.py, unchanged"},
@@ -438,6 +514,7 @@ def main() -> None:
         "cases by group and distress check": {f"{g} | {d}": n for (g, d), n in sorted(Counter(
             (c["group"], c.get("distress check", "n/a")) for c in cases).items())},
         "eligible for the matched draw": len(eligible), "matched closures drawn": len(matched),
+        "matched closures kept as drawn (Amendment 6)": bool(frozen),
         "closure pool (public and nonprofit, classified, not a case)": len(closures),
         "converted closures left out of the pool (Amendment 5)": len(converted),
         "cases by ending type (measure used)": dict(Counter(
