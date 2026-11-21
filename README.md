@@ -2,9 +2,17 @@
 
 ## What this repository is
 
-This repository is the first empirical test of an original theory. Recursive Information-Container Dynamics (RICD) is a formal model of feedback divergence: it defines how far an institution's official, operational and meta layers of information diverge, how the cost of maintaining that divergence accumulates as resource debt, and how an outside anchor moves the point of no return. Its core equations are below, and its full statement is in the [Spine and Catalog](docs/). Tell is the instrument built to test it: a higher-education adapter that turns RICD's quantities into measurements from public federal data and puts the theory's predictions to pre-registered, falsifiable tests on colleges nobody chose, with every protocol committed before outcomes were looked up. The theory is passing: the tracker built from it passed its pre-registered test, beat every baseline, and the first test in a less-anchored domain (law schools) showed the theory's signal plainly where anchors are thin. Higher education is the first domain; four more adapters are planned, so the theory can be tested where anchoring is weaker and compared across domains.
+This repository is the first empirical test of an original theory. Recursive Information-Container Dynamics (RICD) is a formal model of feedback divergence: it defines how far an institution's official, operational and meta layers of information diverge, how the cost of maintaining that divergence accumulates as resource debt, and how an outside anchor moves the point of no return. Its core equations are below, and its full statement is in the [Spine and Catalog](docs/). Tell is the instrument built to test it: a higher-education adapter that turns RICD's quantities into measurements from public federal data and puts the theory's predictions to pre-registered, falsifiable tests on colleges nobody chose, with every protocol committed before outcomes were looked up. The theory is passing: the tracker built from it passed its pre-registered test, beat every baseline, and the first test in a less-anchored domain (law schools) showed the theory's signal plainly where anchors are thin. Higher education is the first domain; four more adapters are planned, so the theory can be tested where anchoring is weaker and compared across domains. To rerun anything here, start with [docs/QUICKSTART.md](docs/QUICKSTART.md); to build a tracker in your own domain, see the [adapter manual](<reports/RICD Adapter Instructional Manual.pdf>).
 
 **Dashboard status:** the public dashboard still shows the legacy v1 prototype; it is being rebuilt on v3, the version whose results are reported here.
+
+### Quick architecture: what you need to read
+
+You do not need to read the full manuscript to use RICD.
+
+- **To build a tracker:** read only the Spine and the [adapter manual](<reports/RICD Adapter Instructional Manual.pdf>). A standard tracker (the C-CT profile) has about 5 to 8 free parameters, and Tell is built this way. The manual is being rewritten as a step-by-step guide to building a C-CT tracker in a new domain, using what the higher-education tracker taught.
+- **To diagnose an edge case:** consult the Catalog, an optional reference listing what can go wrong when a tracker does not work as expected, and the mechanisms for specialized trackers.
+- **To check or rerun Tell's results:** [docs/QUICKSTART.md](docs/QUICKSTART.md).
 
 ### The mathematical core
 
@@ -41,14 +49,9 @@ and collapse is guaranteed, absent a new anchor, once $\Delta_{PNR} \le 0$. Anch
 | Exchange $E_{exch}$, base $N$ | Net tuition and fees plus auxiliary sales; 12-month full-time-equivalent enrollment |
 | Anchor capacity $A$ | Federal, state and local appropriations, gifts, and the endowment draw |
 
-### How the theory is organized, and how to build a tracker in your domain
+### How the Spine and Catalog fit together
 
-The theory is split in two for readability, and both parts are computation-ready.
-
-- **The Spine** is the core engine: divergence, resource debt, coverage and the point of no return, as above. Most trackers run on the Spine alone. The standard collapse-causal tracker profile (C-CT) uses only the Spine's core quantities, with about 5 to 8 free parameters, and Tell is built this way.
-- **The Catalog** is not required reading for building a tracker. It serves two purposes: a list of diagnoses for when a tracker does not work as expected (edge cases, alternative mechanisms and audit protocols, so a failure can be traced to its cause), and a source of mechanisms for specialized trackers built for particular edge cases. The planned agent tracker (C-CAT), for example, runs on the Spine with a named set of Catalog mechanisms switched on. The two documents share section numbers, so a reference not found in one is in the other.
-
-The next version of RICD will state this in its tracker profiles (Part 15). The [adapter manual](<reports/RICD Adapter Instructional Manual.pdf>) is being updated with what building the higher-education tracker taught, and rewritten as a step-by-step guide to building a C-CT tracker in a new domain.
+The theory is split in two for readability, and both parts are computation-ready. The Spine is the core engine, the quantities above, and most trackers run on it alone. The Catalog is a reference: a list of diagnoses for when a tracker does not work as expected (edge cases, alternative mechanisms and audit protocols, so a failure can be traced to its cause), and a source of mechanisms for specialized trackers built for particular edge cases. The planned agent tracker (C-CAT), for example, runs on the Spine with a named set of Catalog mechanisms switched on. The two share section numbers, so a reference not found in one is in the other. The next version of RICD will state this in its tracker profiles (Part 15).
 
 ## What Tell does
 
