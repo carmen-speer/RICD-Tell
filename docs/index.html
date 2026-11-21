@@ -2,670 +2,171 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tell — Higher-Education Collapse Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tell: reading distress in every U.S. four-year college (tracker v3)</title>
+<meta name="description" content="Tell, the instrument built to test Recursive Information-Container Dynamics (RICD), scores every U.S. four-year degree-granting college with tracker v3 on federal data for fiscal years 2014 to 2024. A flag marks risk of closure, not a forecast.">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
-  h1 { font-size: 1.6em; }
-  .scope-note { background: #f5f5f0; border-left: 4px solid #999; padding: 14px 18px; margin: 20px 0; font-size: 0.95em; }
-  .metric-row { display: flex; gap: 24px; margin: 24px 0; flex-wrap: wrap; }
-  .metric { background: #fafafa; border: 1px solid #ddd; border-radius: 6px; padding: 14px 20px; }
-  .metric .value { font-size: 1.8em; font-weight: 600; }
-  .metric .label { font-size: 0.85em; color: #666; }
-  table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.9em; }
-  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
-  th { background: #f5f5f0; cursor: pointer; }
-  .closure, .flagged { color: #a33; }
-  .stable { color: #2a6; }
-  #search { padding: 8px; width: 100%; margin-top: 16px; box-sizing: border-box; }
+  :root { --ink: #1a1a1a; --muted: #5f5f5f; --rule: #e4e4df; --panel: #f6f6f1; --flag: #a33a2c; --clear: #2f6f8f; --ok: #2e7d4f; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 1000px; margin: 40px auto; padding: 0 20px; color: var(--ink); line-height: 1.5; }
+  h1 { font-size: 1.7em; margin-bottom: 4px; }
+  h2 { font-size: 1.2em; margin-top: 36px; }
+  .lede { font-size: 1.02em; margin: 6px 0 18px; }
+  .note { background: var(--panel); border-left: 4px solid #999; padding: 12px 16px; margin: 18px 0; font-size: 0.95em; }
+  .metrics { display: flex; gap: 14px; flex-wrap: wrap; margin: 22px 0; }
+  .metric { flex: 1 1 150px; border: 1px solid var(--rule); border-radius: 6px; padding: 12px 16px; background: #fcfcfa; }
+  .metric .v { font-size: 1.7em; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .metric .l { font-size: 0.85em; color: var(--muted); }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .controls input, .controls select { padding: 7px 9px; font-size: 0.95em; border: 1px solid #ccc; border-radius: 4px; }
+  .controls input { flex: 1 1 260px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.9em; }
+  th, td { text-align: left; padding: 6px 9px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { background: var(--panel); cursor: pointer; user-select: none; white-space: nowrap; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .r-flag { color: var(--flag); font-weight: 600; }
+  .r-clear { color: var(--clear); font-weight: 600; }
+  .r-ok { color: var(--ok); }
+  .r-none { color: var(--muted); }
+  .small { font-size: 0.85em; color: var(--muted); }
+  #status { margin-top: 10px; }
+  footer { margin: 40px 0 20px; font-size: 0.85em; color: var(--muted); }
 </style>
 </head>
 <body>
   <h1>Tell</h1>
-  <p style="margin: 0 0 20px; font-size: 0.95em;">
-    A Bayesian state-space model and validated classifier for
-    institutional financial collapse risk and degree of financial
-    distress in U.S. higher education, built on the Recursive
-    Information-Container Dynamics (RICD) framework. It's called Tell
-    because what it reads is a poker tell: not a prediction of what
-    happens next, but a real, involuntary signal &mdash; the measured
-    divergence between how an institution represents itself and what its
-    own underlying financial data actually show &mdash; read directly
-    off the data itself. Developed under the working name "RICD
-    Higher-Education Collapse Tracker"; see the
-    <a href="https://github.com/carmen-speer/RICD-Tell">README</a>
-    for the full explanation of the name and the distress-vs-collapse
-    distinction it points to.
-  </p>
-  <div class="scope-note">
-    This panel was built to validate a classifier, not to survey the sector.
-    It is not a random or representative sample of U.S. degree-granting
-    institutions, and nothing here should be read as a prevalence estimate.
-    See the repository's <a href="https://github.com/carmen-speer/RICD-Tell">README</a> for the
-    full scope note and known gaps.
+  <p class="lede">Tell is the instrument built for the first empirical test of an original theory, Recursive Information-Container Dynamics (RICD): a formal model of how far an institution's official, operational and meta layers of information diverge, how the cost of keeping up that divergence accumulates as resource debt, and how an outside anchor moves the point of no return. Tracker v3 passed its pre-registered test (32 of 56 closures caught, Youden's J 0.49), beat every baseline tracker, and catches closures that size and sector miss. This page applies the frozen tracker v3 to every U.S. four-year degree-granting college on federal data for fiscal years 2014 to 2024.</p>
+
+  <div class="note"><strong>How to read a flag.</strong> A flag marks risk of closure: the college's records over the last eleven years resemble those of colleges that went on to close. It is not a forecast that the college will close, and the score is not a probability of closure. Many flagged colleges do not close: some are carried by anchors the federal records only partly show, or turn around.</div>
+
+  <div class="metrics" id="metrics" aria-live="polite">
+    <div class="metric"><div class="v" id="m-scored">—</div><div class="l">colleges scored</div></div>
+    <div class="metric"><div class="v" id="m-flag">—</div><div class="l">flagged after anchors are counted</div></div>
+    <div class="metric"><div class="v" id="m-clear">—</div><div class="l">flags cleared by anchors</div></div>
+    <div class="metric"><div class="v" id="m-ok">—</div><div class="l">not flagged</div></div>
   </div>
 
-  <p style="margin: -8px 0 20px;"><strong>Looking for real institutions scored live, right now?</strong>
-    That's further down this page — <a href="#live-section">jump to Live-scored institutions ↓</a>.
-    The table below is the fixed 54-institution validation panel used to test the classifier;
-    it does not update on its own.</p>
-
-  <div class="metric-row" id="metrics"></div>
-
-  <input id="search" type="text" placeholder="Filter by institution name...">
-  <table id="panel-table">
+  <h2>Every scored college</h2>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search by college name" aria-label="Search by college name">
+    <select id="f-reading" aria-label="Filter by reading">
+      <option value="">All readings</option>
+      <option value="flag">Flagged</option>
+      <option value="clear">Flag cleared by anchors</option>
+      <option value="ok">Not flagged</option>
+      <option value="none">Not scorable</option>
+    </select>
+    <select id="f-sector" aria-label="Filter by sector">
+      <option value="">All sectors</option>
+      <option value="public">Public</option>
+      <option value="private">Private nonprofit</option>
+      <option value="forprofit">For-profit</option>
+    </select>
+    <select id="f-state" aria-label="Filter by state"><option value="">All states</option></select>
+  </div>
+  <div id="status" class="small">Loading scores…</div>
+  <table id="t" style="display:none;">
     <thead>
       <tr>
-        <th onclick="sortBy('name')">Institution</th>
-        <th onclick="sortBy('outcome')">Real Outcome</th>
-        <th onclick="sortBy('delta_R_final')">δR (severity)</th>
-        <th onclick="sortBy('debt_spike')">Debt-spike</th>
-        <th onclick="sortBy('reserve_adequacy')">Reserve adequacy</th>
+        <th data-k="name">College</th>
+        <th data-k="state">State</th>
+        <th data-k="sector">Sector</th>
+        <th data-k="rank">Reading</th>
+        <th data-k="score" class="num">v3 score</th>
+        <th data-k="anch" class="num">After anchors</th>
+        <th data-k="anchors">Anchors counted</th>
       </tr>
     </thead>
-    <tbody id="panel-body"></tbody>
-  </table>
-
-  <h2 id="live-section" style="margin-top:40px;">Live-scored institutions</h2>
-  <div class="scope-note" id="live-version-note" style="border-left-color:#a33;">
-    <strong>These scores come from tracker v1, the original live pipeline, which did not pass its pre-registered test.</strong>
-    They are kept here as a record. The live tracker will be rebuilt once, on tracker v4, after v4 passes its own test.
-  </div>
-  <div class="scope-note" id="live-read-first-note" style="border-left-color:#a33;">
-    <strong>Before reading any score below: this tracker does not output a
-    probability of closure.</strong> It outputs a classifier's raw read of
-    an institution's internal financial dynamics -- whether they currently
-    resemble the panel's real closures. Whether that internal distress
-    converts into an actual closure is governed separately, by a
-    documented, pre-existing external-anchor mechanism (§10.5b.13), and the
-    classifier deliberately does not fold that mechanism into its own
-    number. That is not an unfinished integration waiting to happen;
-    merging the two would erase the distinction the two-layer design
-    exists to preserve. A tire-pressure sensor that reads 0 PSI after a
-    blowout is not wrong, and it is not "failing to account for" the car's
-    run-flat tires -- it is correctly reporting the tire, while a separate
-    system (the run-flat capability) determines whether that failure
-    actually stops the car. The classifier is the sensor; the anchor is
-    the run-flat capability. When a large public university scores
-    <code>high_risk</code> below, read it the same way: a correctly
-    identified internal shock, at an institution whose separate, real
-    anchor status is a documented fact about that institution (see the
-    Anchor column below), not a property this number was ever built to
-    include.
-  </div>
-  <!--
-    The section below is baked as real, static HTML by
-    src/render_dashboard.py every time the automated re-score workflow
-    runs (see .github/workflows/rescore.yml), reading directly from
-    docs/data/live_scores.json. This is deliberate: a tool that reads
-    only the raw page source -- an AI summarizer, a search-engine
-    crawler, a screen reader that skips JavaScript -- would otherwise
-    see nothing but the JavaScript-only placeholder state, since the
-    live table used to be populated exclusively by the script at the
-    bottom of this file. That script still runs for a real browser and
-    re-renders the same data client-side; that's harmless and
-    intentionally redundant. The static markup and the script are two
-    independent paths to the same real data, not two different sources
-    of truth -- both are generated from docs/data/live_scores.json.
-  -->
-  <div class="scope-note" id="live-scope-note" style="display:block;">
-    These institutions were scored automatically from real, current government
-    data by the live pipeline (separate from the 54-institution validation
-    panel above). "Insufficient data" means the pipeline ran but real data
-    for that institution was genuinely incomplete -- not a fabricated result.
-  </div>
-
-  <div class="scope-note" id="live-interpretation-note" style="border-left-color:#666;">
-    <strong>What the score means, and what it doesn't.</strong>
-    This number is the classifier's posterior estimate that an institution's
-    <em>current observed dynamics</em> sit inside the modeled collapse regime --
-    not a calibrated probability that the institution will actually close.
-    These scores reflect the directional-entropy fix (2026-09-20) -- the
-    prior gating fix has been superseded and fully re-run, not just written.
-    Below is what's currently known about each score, institution by
-    institution, not just a general caveat.
-    <p style="margin:12px 0 4px;"><strong>Read this first if you're forming a
-    judgment from an elevated flagship score.</strong> This is not a flaw in
-    the classifier, not a workaround, and not a patch added after the fact
-    to explain away an inconvenient result. The anchor eligibility
-    criterion (§10.5b.13) that explains why an anchored institution's real,
-    elevated distress does not convert to collapse was written into RICD's
-    core theory <em>before this tracker was ever built</em> -- the original
-    manuscript explicitly anticipated that a high-entropy, externally-
-    anchored system would show real divergence without collapsing, and gave
-    that pattern a name and a formal treatment well in advance of any
-    specific institution's live score triggering it. When the classifier
-    flags UCF or FSU as <code>high_risk</code>, it is doing exactly what it
-    was built to do: correctly detecting a real liability shock. The
-    theory, not a bolted-on exception, is what explains why that correctly-
-    detected shock doesn't mean the university is closing. Reading a score
-    like that as "the model is broken" or "the model doesn't apply to
-    flagships" gets it backwards -- collapse risk and distress are two
-    different, both-intentional things this project measures, not one
-    thing the project does well and a workaround for cases where it
-    doesn't.</p>
-    <p style="margin:12px 0 4px;"><strong>Distress, not collapse: FSU and UCF specifically.</strong>
-    The classifier's job is to catch collapse, not distress; a few
-    institutions which are not at risk of closing nevertheless score
-    elevated because they carry real financial strain, yet they have
-    structural support preventing their collapse (read on for further
-    detail). The anchor eligibility criterion is a pre-existing RICD
-    formalism (§10.5b.13) which describes how an external anchor may
-    prevent collapse even in high-entropy systems; the anchoring
-    mechanism was written into RICD's core theory prior to the building
-    of this tracker to catch precisely this pattern when assessing
-    collapse risk in systems showing divergence. Neither of us thought to
-    test this deliberately -- the public flagships below were suggested
-    as neutral picks off a public enrollment-size list, chosen
-    specifically to avoid cherry-picking, not because anyone expected the
-    classifier to behave differently on an institution type the training
-    panel had never included. The mismatch only became visible after the
-    results came back: there is no confirmed public four-year closure in
-    the panel to validate debt- and reserve-based features against,
-    because public flagships essentially don't close, so applying
-    features built and validated against small private colleges to this
-    population was always going to need an explanation the panel alone
-    couldn't supply. What these flagships' real data turned out to show
-    is distress, not imminent closure, standing in for the same external
-    anchoring described above -- and while that anchoring could in
-    principle be traced and measured directly for a given institution,
-    that work hasn't been done yet.
-    FSU (57.1%) and UCF (83.4%) below are real, currently-elevated
-    <code>high_risk</code> scores -- elevated relative to a stable flagship
-    like Michigan (5.8%), comparable instead to Houston's pre-fix reading --
-    driven by real, specific financial distress. But distress isn't the
-    target this classifier was built to predict. Collapse is: a small,
-    tuition-dependent private college's financial exigency closing it
-    outright, which is what these eight features were built and validated
-    against. In FSU's and UCF's case the classifier is working exactly as
-    intended -- correctly detecting a real, sizable jump in reported
-    liabilities -- and the reason that correctly-detected distress doesn't
-    mean closure is external to anything these features measure: each holds
-    what RICD's own framework (§10.5b.13, Anchor Eligibility) calls an
-    external anchor -- a structurally distinct system absorbing the shock so
-    the anchored institution doesn't have to. For a public flagship that
-    typically means direct state appropriations able to flex in a crisis,
-    state-backed borrowing, political stakes large enough to make
-    intervention likely rather than hypothetical, revenue diversified well
-    beyond tuition, system-level cross-subsidization across campuses, and a
-    large in-state applicant base insulated (though not immune -- see
-    CSU-Long Beach below) from the demographic pressure driving
-    small-college enrollment collapse -- none of which the training panel's
-    real closures had access to. FSU's athletics debt and UCF's housing bond
-    below are a further, confirmed instance of the same structural point:
-    each is secured only by its own project's revenue (athletics income and
-    Seminole Boosters funds for FSU, housing-system revenue for UCF), and
-    each bond program's own documentation states explicitly that it is not a
-    general obligation of the university and that the state's full faith and
-    credit isn't pledged to it -- a default there would stress that specific
-    auxiliary enterprise, not the institution's general credit. A score like
-    these should be read as "this institution's raw financial dynamics
-    resemble the ones that produced real closures," not as a probability of
-    actual collapse; whether distress converts to collapse depends on an
-    anchor this classifier doesn't measure at all.</p>
-    <p style="margin:12px 0 4px;"><strong>Measuring the degree of distress at
-    an anchored institution is useful in its own right</strong>, independently
-    of whether closure is ever on the table -- not as a consolation-prize
-    interpretation of a score that "should" have meant something else:</p>
-    <ul style="margin:4px 0 12px; padding-left:22px;">
-      <li><strong>It quantifies the load on the anchor itself.</strong>
-        Distress at an anchored institution doesn't disappear just because
-        it doesn't convert to closure -- it gets absorbed by something: a
-        state legislature, a multi-campus system's other institutions,
-        taxpayers. The degree of that strain is real, useful information
-        about how much the surrounding system is currently being asked to
-        absorb.</li>
-      <li><strong>It distinguishes real variation a binary can't.</strong>
-        "Stable" or "high_risk" alone would erase the real difference
-        between a genuinely unstressed flagship like Michigan (5.8%) and
-        one carrying serious, documented project-specific strain like UCF
-        (83.4%) or FSU (57.1%) -- both nominally "protected from collapse
-        by an anchor," but not remotely the same situation.</li>
-      <li><strong>It localizes exactly where the strain is
-        concentrated</strong> -- FSU's athletics-department debt, UCF's
-        student-housing bond -- specific, actionable information for
-        anyone actually responsible for managing these institutions,
-        independent of whether the institution as a whole is ever at
-        risk.</li>
-      <li><strong>It functions as an early-warning signal</strong> for the
-        real, non-closure consequences distress produces on the way to
-        being absorbed -- program cuts, tuition increases, deferred
-        maintenance, credit-rating pressure on the specific auxiliary
-        enterprise carrying the debt. Collapse is not the only outcome
-        worth tracking; these are real costs that land on real students,
-        staff, and programs well before -- and regardless of whether --
-        any anchor fully absorbs the shock.</li>
-    </ul>
-    <p style="margin:12px 0 4px;">Whether this model could also double as a
-    full stress-calculator for flagships -- cross-referencing specific
-    anchor types against the specific causes of distress the 8-feature
-    panel measures, to generate recommendations rather than just a score --
-    remains a real, open, not-yet-executed next step. But that future
-    capability is not a prerequisite for today's distress-degree readings
-    to already be useful, for the reasons just given.</p>
-    <p style="margin:12px 0 4px;"><strong>Clemson and West Virginia are a different case, not a milder version of
-    this one.</strong> Both carry real, seriously documented financial
-    distress, and both are currently scored <code>stable</code> (39.0% and
-    44.2%) -- the opposite direction from FSU and UCF, not another instance
-    of the anchor mechanism above. An anchor explains why a shock the
-    classifier <em>did</em> detect doesn't convert to collapse; Clemson's and
-    West Virginia's distress was never detected as elevated risk in the
-    first place -- a scale-mismatch and feature-weighting story, detailed in
-    their own paragraphs just below, not an anchor absorbing a detected
-    shock. (Buffalo, removed from this batch below, is a third, further
-    distinct case -- not a missing anchor either, but a kind of strain none
-    of these eight features were built to detect at all.)</p>
-    <p style="margin:12px 0 4px;"><strong>Fix confirmed working:</strong>
-    University of Houston is now <code>stable</code> (40.6%), down from 87.3%
-    before this fix. This is the case that motivated the fix: Houston
-    received a real $1.3B infusion from the Texas University Fund in this
-    same period -- S&amp;P upgraded its bond rating to AA+, citing a $287M
-    operating surplus and $3.3B in reserves -- the opposite of distress.
-    <code>frac_high_entropy</code> used to measure the <em>size</em> of a
-    resource swing, not its <em>direction</em>, so a large positive shock and
-    a destabilizing one looked alike; the fix (see repository Known Gaps)
-    resolved this case correctly.</p>
-    <p style="margin:12px 0 4px;"><strong>Resolved, 2026-09-20 -- real distress, correctly read as not disqualifying at this institution's scale:</strong>
-    Clemson University (39.0%) flipped to <code>stable</code> under the fix
-    despite real, documented financial distress (long-term liabilities up
-    $231.9M year-over-year to $2.65B, expenses outpacing revenue). A
-    two-step check resolved this rather than leaving it open. First, a
-    convergence recheck at 4x sampling precision reproduced the identical
-    <code>frac_high_entropy</code> (0.0000 at both settings) -- not a
-    sampling artifact. Second, comparing Clemson's full 8-feature vector
-    against the entire validated panel found its 4 nearest real neighbors
-    in feature space are all confirmed-stable large public flagships
-    (Florida, Michigan, UVA, UNC-Chapel Hill, distance 1.23-1.41), with the
-    nearest real closure (Northland) meaningfully farther away (1.57). This
-    isn't the classifier failing to explain Clemson's distress -- it's the
-    classifier correctly placing Clemson among the institutions it actually
-    resembles. A few hundred million dollars in new long-term liabilities is
-    a large number in isolation, but it's the ordinary cost of running a
-    research university Clemson's size (construction, athletics facilities,
-    research infrastructure financed against predictable state and tuition
-    revenue), not the kind of borrowing a small, tuition-dependent private
-    college takes on when it's out of options -- the same scale mismatch
-    already documented for <code>reserve_adequacy</code> in the repository's
-    Known Gaps: these debt- and reserve-based features were built against,
-    and remain most diagnostic for, small private colleges, where this
-    panel's real closures actually happened, not large public flagships,
-    where they didn't. Clemson's <code>stable</code> call is real, not a
-    suppressed signal, and its real distress isn't the kind these eight
-    features were ever positioned to catch at this institution's size.</p>
-    <p style="margin:12px 0 4px;"><strong>Resolved, 2026-09-21 -- feature-by-feature comparison, then the fitted classifier's own weighting:</strong>
-    West Virginia University (44.2%) also flipped to <code>stable</code>
-    despite its real, widely reported 2023 financial crisis and
-    program/faculty cuts. The same convergence recheck ruled out sampling
-    noise here too, but its feature-space comparison was genuinely mixed at
-    that point: its nearest real neighbor was Wisconsin (stable, distance
-    0.86), while its second-nearest was Trinity Christian -- a real,
-    confirmed closure -- at distance 1.10, closer than three of Clemson's
-    four stable comparisons. A dedicated feature-by-feature comparison
-    against both reference institutions followed. At production sampling
-    settings, the seven non-entropy features split evenly, three toward
-    Wisconsin and three toward Trinity Christian; two of the three leaning
-    toward Trinity Christian showed the same convergence warning ruled out
-    elsewhere on this page, and re-running at 4x precision flipped both,
-    moving the tally to 5 leaning Wisconsin against 1 --
-    <code>reserve_adequacy</code>, the model's single largest-magnitude
-    feature, which isn't sensitive to sampling precision and still leaned
-    toward Trinity Christian. Because that one holdout is the most
-    heavily-weighted feature in the fitted model, a raw tally of features
-    couldn't settle this on its own, so West Virginia's real, high-precision
-    feature vector was run directly through the fitted classifier instead of
-    counted by hand: it returns 40.6% probability of <code>high_risk</code>,
-    consistent with -- and slightly firmer than -- this table's own
-    production-settings 44.2%. The two numbers agreeing, with only a small,
-    explainable difference in margin, is corroboration, not a live
-    discrepancy needing its own fix. Full detail on both institutions in the
-    repository's
-    <a href="https://github.com/carmen-speer/RICD-Tell/blob/main/history%20of%20fixes/Known%20gaps%20and%20record%20of%20fixes.md#known-gaps--stated-honestly-not-smoothed-over">Known Gaps</a> section.</p>
-    <p style="margin:12px 0 4px;"><strong>Still high_risk, but the driver is identified and real -- not the classifier misreading a stable institution:</strong>
-    Florida State University's (57.1%) signal traces to a real, separate
-    financial strain from its core institutional finances: its athletics
-    department closed FY2025 with $437 million in athletics-related debt,
-    widely reported as the largest such debt load in college sports
-    (Sportico, Athletic Business, Feb. 2026). University of Central
-    Florida's (83.4%) signal traces to real, documented capital debt
-    strain as well -- a $144 million student-housing bond issue (priced
-    Dec. 2024) carrying a speculative-grade Ba1 rating from Moody's,
-    citing rising operating costs and revenue volatility. Both
-    institutions' overall university bond ratings remain stable (Florida
-    Board of Governors filing, 2/27/26) -- these scores are not the
-    classifier mistaking a stable university for a distressed one; they
-    are correctly picking up a real, narrower debt problem (athletics at
-    FSU, a specific bond issue at UCF) that sits alongside, not instead
-    of, the institution's overall stability. That distinction -- a real
-    signal from a real but bounded problem, versus the institution as a
-    whole being at risk -- is not something this classifier's single
-    probability number can express on its own.</p>
-    <p style="margin:12px 0 4px;"><strong>Likely genuine signal:</strong>
-    California State University-Long Beach (95.8%) has a real, documented
-    enrollment collapse (38,000 to 36,000 students, projected toward
-    33,000) alongside a real $42M budget cut. Nothing here contradicts
-    this score.</p>
-    <p style="margin:12px 0 4px;"><strong>Tested 2026-09-20, real but thin evidence -- not yet built into the classifier:</strong>
-    University of Phoenix-Arizona (100.0%) and Sweet Briar College (80.1%)
-    sit on a separate problem from the ones above: the model has no state
-    for "collapse, but already reset." A candidate within-window trend
-    feature was built and tested against both, with a convergence recheck
-    at 4x sampling precision to confirm any result wasn't noise. Sweet
-    Briar -- the real test case, with a confirmed 2015 crisis and 2016+
-    recovery -- came back with a real, reproducible negative trend
-    (identical at both sampling precisions), the predicted direction. But
-    the evidence is thin: that result is driven almost entirely by the
-    single most recent period flipping regime, not a multi-year decline
-    through the documented 2016-2022 recovery, which stayed classified
-    high-entropy the whole way through under this construction. Phoenix
-    came back flat (also confirmed real, not noise) -- no signal either
-    way, consistent with its restructuring not being independently
-    confirmed as complete. <u>Plan, not yet executed:</u> refine the
-    candidate to use a real multi-point trend across the full window
-    rather than a two-segment average, since the current construction is
-    too sensitive to a single endpoint; only a cleaner result from that
-    would justify the full panel re-validation a real 9th feature
-    requires.</p>
-    <p style="margin:12px 0 4px;"><strong>In progress, 2026-09-22:</strong>
-    a separate anchor-quantification sensor is now being built to measure
-    external support (state backing, rescue funding, ownership structure)
-    directly, as its own project cross-referenced against this panel
-    rather than folded into it as a 9th feature -- there's no real
-    anchor-failure/closure data to fit a coefficient against, the same
-    scarcity problem already documented for <code>reserve_adequacy</code>'s
-    public-sector gap. The combining math already exists in RICD (a
-    fitted additive correction, Proposition 10.5b.13.1), adapted here for
-    one-directional anchoring rather than the mutual case it was written
-    for -- what's still unbuilt is the data pipeline feeding it, not the
-    underlying mechanism. One thing it's specifically scoped to test:
-    whether it can explain the Sweet Briar/Phoenix pattern just described
-    -- checked directly for this note, Sweet Briar's 2015 rescue (a
-    Virginia Attorney General-brokered settlement plus a ~$44M alumnae-led
-    fundraising campaign) and Phoenix's stalled University of Idaho
-    acquisition followed by a planned IPO turn out to be genuinely
-    different kinds of "anchor," which is itself a reason real measurement
-    is needed. Full detail in the repository README's
-    <a href="https://github.com/carmen-speer/RICD-Tell/blob/main/history%20of%20fixes/Known%20gaps%20and%20record%20of%20fixes.md#tells-upcoming-project-as-written-before-the-confirmatory-test">Tell's Upcoming Project</a>
-    section.</p>
-    <p style="margin:12px 0 4px;"><strong>No longer live-scored:</strong>
-    University at Buffalo was removed from this batch on 2026-09-20 after
-    its score sat at a near-50/50 that didn't map to any mechanism this
-    model's eight features are built to detect -- its real financial strain
-    is a $47M federal research-funding cut, not debt, reserves, or
-    enrollment. See <code>score_batch.py</code>'s own docstring.</p>
-    <p style="margin:12px 0 4px;"><strong>A real bookkeeping gap, not a
-    scoring problem -- Thomas Aquinas College and Wittenberg University.</strong>
-    Neither institution's sampler has driven its own formal convergence
-    diagnostic (rhat) below PyMC's textbook threshold of 1.01, under any
-    fix tried. That doesn't mean either score is unreliable -- checked
-    directly, not assumed: Thomas Aquinas's classification came back
-    identical across 20 separate real runs (10 at this project's usual
-    fixed seed, 10 more at genuinely varied random seeds), regardless of
-    rhat ranging from 1.03 to 1.47. Wittenberg's production score (95.5%)
-    and an independent, higher-precision re-run (97.2%) agree closely as
-    well.</p>
-    <p style="margin:12px 0 4px;"><strong>Three specific fixes were
-    tested directly against Thomas Aquinas's worst-converging
-    parameter</strong>, a financial observation-noise scale historically
-    shared across all four of the model's financial channels. Splitting
-    that shared scale into four independent per-channel scales fully
-    resolved one channel and substantially improved two more, but left
-    the instructional-spending channel essentially unchanged, whose own
-    noise parameter then became the single worst in the model. A
-    hypothesis that this channel's real data was too volatile for its
-    fixed model parameters was tested directly against real IPEDS data
-    and rejected outright -- it's actually the least volatile of the
-    four channels, the opposite of the prediction. A follow-up check
-    found the strongest funnel-geometry signature of all four channels
-    specifically here, and applying the same non-centered
-    reparameterization already proven elsewhere in this model produced a
-    real, meaningful rhat improvement -- but also a large increase in
-    sampling divergences, trading one diagnostic problem for a different
-    one rather than resolving it cleanly.</p>
-    <p style="margin:12px 0 4px;"><strong>Testing stops here for now, as
-    a practical choice, not because the question is closed.</strong> If
-    this is picked back up, the concrete next step is direct: address the
-    new divergence problem the reparameterization introduced, or test the
-    most plausible remaining explanation -- not itself directly tested --
-    that this reflects how little real annual finance data exists per
-    institution (as few as 11 real years) relative to the model's
-    complexity, a genuine estimation-difficulty limit rather than a
-    single fixable bug. Neither institution's live score is affected by
-    any of this. Full detail on both institutions in the repository's
-    <a href="https://github.com/carmen-speer/RICD-Tell/blob/main/history%20of%20fixes/Known%20gaps%20and%20record%20of%20fixes.md#known-gaps--stated-honestly-not-smoothed-over">Known Gaps</a> section.</p>
-    None of this should be read as "this institution is X% likely to
-    close." Full detail is in the repository's
-    <a href="https://github.com/carmen-speer/RICD-Tell/blob/main/history%20of%20fixes/Known%20gaps%20and%20record%20of%20fixes.md#known-gaps--stated-honestly-not-smoothed-over">Known Gaps</a>
-    section.
-  </div>
-
-  <table id="live-table" style="display:table;">
-    <thead>
-      <tr>
-        <th>Institution</th>
-        <th>Classifier Flag</th>
-        <th>Collapse-regime score</th>
-        <th>Anchor (§10.5b.13)</th>
-        <th>Method</th>
-        <th>Last scored (UTC)</th>
-      </tr>
-    </thead>
-    <tbody id="live-body">
+    <tbody id="rows">
 <!-- STATIC_LIVE_ROWS_START -->
-        <tr>
-          <td>Augustana College</td>
-          <td class="stable">stable</td>
-          <td>43.9%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:50 UTC</td>
-        </tr>
-        <tr>
-          <td>Bucknell University</td>
-          <td class="stable">stable</td>
-          <td>9.5%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:47 UTC</td>
-        </tr>
-        <tr>
-          <td>California State University-Long Beach</td>
-          <td class="flagged">high_risk</td>
-          <td>96.3%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:43 UTC</td>
-        </tr>
-        <tr>
-          <td>Clemson University</td>
-          <td class="stable">stable</td>
-          <td>44.4%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:44 UTC</td>
-        </tr>
-        <tr>
-          <td>College of the Holy Cross</td>
-          <td class="stable">stable</td>
-          <td>4.9%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:51 UTC</td>
-        </tr>
-        <tr>
-          <td>Florida State University</td>
-          <td class="flagged">high_risk</td>
-          <td>53.3%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:46 UTC</td>
-        </tr>
-        <tr>
-          <td>Hampden-Sydney College</td>
-          <td class="stable">stable</td>
-          <td>32.3%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:49 UTC</td>
-        </tr>
-        <tr>
-          <td>Haverford College</td>
-          <td class="stable">stable</td>
-          <td>10.0%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:48 UTC</td>
-        </tr>
-        <tr>
-          <td>Sweet Briar College</td>
-          <td class="flagged">high_risk</td>
-          <td>80.9%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:39 UTC</td>
-        </tr>
-        <tr>
-          <td>Thomas Aquinas College</td>
-          <td class="flagged">high_risk</td>
-          <td>72.9%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:48 UTC</td>
-        </tr>
-        <tr>
-          <td>University of Central Florida</td>
-          <td class="flagged">high_risk</td>
-          <td>83.4%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:45 UTC</td>
-        </tr>
-        <tr>
-          <td>University of Houston</td>
-          <td class="stable">stable</td>
-          <td>38.6%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:42 UTC</td>
-        </tr>
-        <tr>
-          <td>University of Michigan-Ann Arbor</td>
-          <td class="stable">stable</td>
-          <td>6.0%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:39 UTC</td>
-        </tr>
-        <tr>
-          <td>University of Phoenix-Arizona</td>
-          <td class="flagged">high_risk</td>
-          <td>100.0%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:40 UTC</td>
-        </tr>
-        <tr>
-          <td>West Virginia University</td>
-          <td class="stable">stable</td>
-          <td>39.1%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:41 UTC</td>
-        </tr>
-        <tr>
-          <td>Wittenberg University</td>
-          <td class="flagged">high_risk</td>
-          <td>97.4%</td>
-          <td>—</td>
-          <td>statistical_classifier</td>
-          <td>2026-11-16 22:52 UTC</td>
-        </tr>
 <!-- STATIC_LIVE_ROWS_END -->
     </tbody>
   </table>
-  <p id="live-empty" style="color:#666; font-size:0.9em; display:none;">No institutions have been live-scored yet.</p>
+
+  <h2>What each column means</h2>
+  <p><strong>Reading</strong> is the tracker's verdict after its anchors are counted. <em>Flagged</em> means the v3 score is at or above the frozen cut point and the college's anchors do not bring it below. <em>Flag cleared by anchors</em> means v3 flagged the college but its anchors (state and local appropriations, gifts, membership in a public or nonprofit system) carry it below the cut, as RICD's anchor sensor predicts for anchored institutions. <em>Not flagged</em> means the v3 score is below the cut. <em>Not scorable</em> means the college's federal record is too short or too irregular to read, with the reason given.</p>
+  <p><strong>v3 score</strong> is the frozen classifier's output from the college's resource debt, the slide in its cost coverage toward break-even, drift and jumps in its enrollment, its reporting gaps and its size and sector. <strong>After anchors</strong> is the same score once the anchor sensor's frozen coefficients are applied; anchoring can only lower it. <strong>Anchors counted</strong> shows the anchor inputs: appropriations and gifts as shares of spending (fiscal 2022 to 2024), and system membership.</p>
+  <p class="small">Scope: four-year degree-granting colleges, the frame tracker v3 was trained and tested on; two-year colleges are not scored. Scores are redone once a year, when a new federal finance year is released. These are interim scores; the blind retest is committed separately before the next header file appears. Method, protocols and every result: <a href="https://github.com/carmen-speer/RICD-Tell">the repository</a> (<a href="https://github.com/carmen-speer/RICD-Tell/blob/main/live%20tracker%20protocol.md">live tracker protocol</a>).</p>
+
+  <footer>The original prototype dashboard (tracker v1, retired) is kept on record at <a href="v1.html">v1.html</a>.<br>Data: IPEDS (NCES) finance, enrollment and institutional characteristics files; College Scorecard. <span id="updated"></span></footer>
 
 <script>
-let panelData = [];
-let sortKey = 'name';
-let sortAsc = true;
+(function () {
+  const SECTOR = { public: "Public", private: "Private nonprofit", forprofit: "For-profit" };
+  const READING = { flag: "Flagged", clear: "Flag cleared by anchors", ok: "Not flagged", none: "Not scorable" };
+  const RANK = { flag: 0, clear: 1, ok: 2, none: 3 };
+  let all = [], sortKey = "rank", sortDir = 1;
 
-async function loadPanel() {
-  const resp = await fetch('data/panel.json');
-  panelData = await resp.json();
-  renderMetrics();
-  renderTable();
-}
-
-function renderMetrics() {
-  const closures = panelData.filter(d => d.outcome === 1).length;
-  const stable = panelData.filter(d => d.outcome === 0).length;
-  document.getElementById('metrics').innerHTML = `
-    <div class="metric"><div class="value">${panelData.length}</div><div class="label">Institutions in panel</div></div>
-    <div class="metric"><div class="value">${closures}</div><div class="label">Confirmed closures</div></div>
-    <div class="metric"><div class="value">${stable}</div><div class="label">Confirmed stable</div></div>
-  `;
-}
-
-function sortBy(key) {
-  if (sortKey === key) { sortAsc = !sortAsc; } else { sortKey = key; sortAsc = true; }
-  renderTable();
-}
-
-function renderTable() {
-  const filterVal = document.getElementById('search').value.toLowerCase();
-  let rows = panelData.filter(d => d.name.toLowerCase().includes(filterVal));
-  rows.sort((a, b) => {
-    const av = a[sortKey], bv = b[sortKey];
-    const cmp = typeof av === 'string' ? av.localeCompare(bv) : av - bv;
-    return sortAsc ? cmp : -cmp;
-  });
-  document.getElementById('panel-body').innerHTML = rows.map(d => `
-    <tr>
-      <td>${d.name}</td>
-      <td class="${d.outcome === 1 ? 'closure' : 'stable'}">${d.outcome === 1 ? 'Closure' : 'Stable'}</td>
-      <td>${d.delta_R_final.toFixed(3)}</td>
-      <td>${d.debt_spike.toFixed(3)}</td>
-      <td>${d.reserve_adequacy.toFixed(2)}</td>
-    </tr>
-  `).join('');
-}
-
-document.getElementById('search').addEventListener('input', renderTable);
-loadPanel();
-
-async function loadLiveScores() {
-  try {
-    const resp = await fetch('data/live_scores.json');
-    if (!resp.ok) return; // file doesn't exist yet -- leave the baked-in static state showing
-    const liveData = await resp.json();
-    if (!Array.isArray(liveData) || liveData.length === 0) return;
-    document.getElementById('live-empty').style.display = 'none';
-    document.getElementById('live-scope-note').style.display = 'block';
-    document.getElementById('live-table').style.display = 'table';
-    document.getElementById('live-body').innerHTML = liveData.map(d => {
-      // "closure" is reserved for the validation panel's real, historical,
-      // confirmed outcomes -- this is a live classifier flag, not a
-      // confirmed real-world outcome, so it gets its own class ("flagged")
-      // sharing the same red styling without asserting the disputed thing
-      // in the markup itself.
-      const predClass = d.prediction === 'high_risk' ? 'flagged' : (d.prediction === 'stable' ? 'stable' : '');
-      const prob = (typeof d.probability === 'number') ? (d.probability * 100).toFixed(1) + '%' : '—';
-      const scored = d.scored_at ? new Date(d.scored_at).toLocaleString() : '—';
-      return `
-        <tr>
-          <td>${d.name}</td>
-          <td class="${predClass}">${d.prediction}</td>
-          <td>${prob}</td>
-          <td>${d.anchor_status || '—'}</td>
-          <td>${d.method || '—'}</td>
-          <td>${scored}</td>
-        </tr>
-      `;
-    }).join('');
-  } catch (e) {
-    // a real failure to load -- leave the baked-in static state showing rather than break the page
+  function reading(d) {
+    if (d.status !== "scored" || d.score == null) return "none";
+    if (d["anchored flag"]) return "flag";
+    if (d.flag) return "clear";
+    return "ok";
   }
-}
-loadLiveScores();
+  function pct(x) { return (typeof x === "number") ? (x * 100).toFixed(1) + "%" : "—"; }
+  function anchorsText(a) {
+    if (!a) return "—";
+    const parts = [];
+    if (a.f_approp > 0) parts.push("appropriations " + (a.f_approp * 100).toFixed(0) + "%");
+    if (a.f_gift > 0) parts.push("gifts " + (a.f_gift * 100).toFixed(0) + "%");
+    if (a.S_par) parts.push("system member");
+    return parts.length ? parts.join(", ") : "none recorded";
+  }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+  function render() {
+    const q = document.getElementById("q").value.trim().toLowerCase();
+    const fr = document.getElementById("f-reading").value;
+    const fs = document.getElementById("f-sector").value;
+    const fst = document.getElementById("f-state").value;
+    const rows = all.filter(d => (!q || d.name.toLowerCase().includes(q)) && (!fr || d.r === fr)
+                              && (!fs || d.sector === fs) && (!fst || d.state === fst));
+    rows.sort((a, b) => {
+      let x = a[sortKey], y = b[sortKey];
+      if (x == null) x = sortDir > 0 ? Infinity : -Infinity;
+      if (y == null) y = sortDir > 0 ? Infinity : -Infinity;
+      if (typeof x === "string") return sortDir * x.localeCompare(y);
+      return sortDir * (x - y) || a.name.localeCompare(b.name);
+    });
+    document.getElementById("rows").innerHTML = rows.map(d =>
+      `<tr><td>${esc(d.name)}</td><td>${esc(d.state)}</td><td>${esc(SECTOR[d.sector] || d.sector)}</td>` +
+      `<td class="r-${d.r}">${READING[d.r]}${d.r === "none" && d.reason ? `<br><span class="small">${esc(d.reason)}</span>` : ""}</td>` +
+      `<td class="num">${pct(d.score)}</td><td class="num">${pct(d.anch)}</td><td>${esc(d.anchors)}</td></tr>`).join("");
+    document.getElementById("status").textContent = `Showing ${rows.length} of ${all.length} colleges.`;
+  }
+
+  async function load() {
+    let data;
+    try {
+      const resp = await fetch("data/live%20v3%20scores.json", { cache: "no-store" });
+      if (!resp.ok) throw new Error(resp.status);
+      data = await resp.json();
+    } catch (e) {
+      data = window.TELL_PREVIEW || null;
+      if (!data) { document.getElementById("status").textContent = "Scores are being computed; this page fills in when the first batch is merged."; return; }
+    }
+    all = (data.colleges || []).map(d => ({ ...d, r: reading(d), rank: RANK[reading(d)], anch: d["anchored score"],
+                                            anchors: anchorsText(d["anchor inputs"]) }));
+    const count = k => all.filter(d => d.r === k).length;
+    document.getElementById("m-scored").textContent = all.filter(d => d.r !== "none").length.toLocaleString();
+    document.getElementById("m-flag").textContent = count("flag").toLocaleString();
+    document.getElementById("m-clear").textContent = count("clear").toLocaleString();
+    document.getElementById("m-ok").textContent = count("ok").toLocaleString();
+    const states = [...new Set(all.map(d => d.state).filter(Boolean))].sort();
+    document.getElementById("f-state").insertAdjacentHTML("beforeend", states.map(s => `<option>${esc(s)}</option>`).join(""));
+    const total = data["colleges in the frame"];
+    document.getElementById("updated").textContent = `Window: ${data.window || "fiscal years 2014-2024"}. ` +
+      (total ? `${all.length.toLocaleString()} of ${total.toLocaleString()} colleges in the frame have a result. ` : "") +
+      (data["updated (UTC)"] ? `Updated ${data["updated (UTC)"].slice(0, 10)}.` : "");
+    document.getElementById("t").style.display = "table";
+    render();
+  }
+
+  document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.k; sortDir = (sortKey === k) ? -sortDir : 1; sortKey = k; render();
+  }));
+  ["q", "f-reading", "f-sector", "f-state"].forEach(id => document.getElementById(id).addEventListener("input", render));
+  load();
+})();
 </script>
 </body>
 </html>
