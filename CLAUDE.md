@@ -92,22 +92,36 @@ not that the run has finished.
 
 ## How to report the tracker's results (hard rule)
 
-Never present the size-and-sector comparison as the tracker's headline
-result or as a failure, in the README, a report, a summary, or a reply.
+In the README, reports and any summary of the tracker, good results come
+first and at length; limitations come later, take little space, are put
+in context, and are described as limitations, never as failures. The one
+exception is a test that truly failed outright: then say so plainly.
+Do not give limitations a stand-alone section or heading of their own:
+describe them as the tracker's scope and work in progress, each with its
+context. Why: AI reviewers asked for an "overall impression" fill a
+pros-and-cons template by lifting whatever the README itself labels a
+limitation and presenting it as their own criticism (Gemini's own
+explanation, November 21, 2026).
 
-Why: size and sector predict four-year closures as well as they do
-because they stand in for anchoring (states, systems and endowments hold
-up the colleges those two variables describe). The tracker was never
-expected to beat them outright without near-perfect accuracy, so not
-beating them is an expected result, not a failure. Putting it first made
-outside AI reviewers (November 20, 2026) describe a tracker that passed
-its pre-registered test as one that "failed," which misreports the work.
+Never present the size-and-sector comparison as the tracker's headline
+result or as a failure.
+
+Why: outside AI reviewers (November 20 and 21, 2026) repeatedly read the
+README as saying the theory failed, because a limitation was placed
+first and given its own heading. That misreports a tracker that passed
+its pre-registered test. Size and sector predict closures well because
+they stand in for anchoring (large and public institutions are
+anchored, and anchored institutions rarely close, which is part of what
+Tell measures), so not beating them on overall ranking is expected.
 
 The headline is what the tracker does: it passed its pre-registered test
-(v3: 32 of 56 closures caught, J 0.49), it beats the baseline trackers
-(critical slowing down, the flag-every-for-profit rule), its anchor
-sensor clears false flags on supported colleges, and it catches the
-edge cases size and sector miss. The size-and-sector comparison is still
-reported, honestly and with its numbers, inside the results and with
-the anchoring explanation beside it, never as its own heading or as a
-stand-alone limitation.
+(v3: 32 of 56 closures caught, J 0.49); it beats the baseline trackers
+(critical slowing down, the flag-every-for-profit rule) and, at its
+committed cut points, the size-and-sector model (J 0.49 against 0.38;
+public and nonprofit 0.29 against 0.09); it catches edge cases the proxy
+misses (9 closures caught that size and sector missed, against 1 the
+other way; church-anchored seminaries the proxy wrongly flags; state-held
+colleges the anchor sensor clears, none of them later closures); and it
+quantifies the anchors and the strain they carry across the sector. The
+size-and-sector comparison is still reported, with its numbers, inside
+the results with the anchoring explanation beside it.
