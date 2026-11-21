@@ -1,25 +1,25 @@
-name: Re-score panel and check for new data
+name: Weekly check for a new federal finance year
 
-# IPEDS is not live data -- it releases on a fixed institutional
-# schedule (provisional data a few times a year, final data
-# annually). Running weekly is cheap and just means most runs find
-# nothing new, which is the expected, normal outcome, not a failure.
+# Replaces the retired v1 weekly re-score (tracker v1's 15-college live
+# table now lives on record at docs/v1.html). Under "live tracker
+# protocol.md", section 4, the live v3 scores are redone once a year, when
+# NCES releases a new finance year. Each Monday this checks whether the
+# finance files for the fiscal year after the live window (fiscal 2025:
+# F2425) are served yet, re-bakes the dashboard's static rows from the
+# committed scores, and, when the new year is out, fails with a plain
+# message so GitHub notifies the maintainer that the live window can move
+# forward. Most weeks the new year is not out, which is the normal result.
 on:
   schedule:
     - cron: "0 13 * * 1"  # Every Monday, 13:00 UTC
-  workflow_dispatch: {}     # Allows a manual run from the Actions tab too
+  workflow_dispatch: {}
 
-# The automatic token GitHub Actions gives each run is read-only by
-# default -- this line is what lets the "Commit updated results" step
-# below actually push its commit back to the repository, rather than
-# failing with a 403 (confirmed real cause of a real failed run on
-# 2026-09-15, not a credentials or account problem).
 permissions:
   contents: write
 
 jobs:
-  rescore:
-    runs-on: ubuntu-latest
+  check:
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -27,102 +27,35 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Verify the validation panel still reproduces the validated result
-        run: |
-          cd src
-          python -c "
-          from classifier import RICDClassifier, load_panel
-          panel = load_panel('../data/panel/panel.json')
-          clf = RICDClassifier()
-          acc, misclassified = clf.leave_one_out_accuracy(panel)
-          print(f'Accuracy: {acc:.2%}')
-          print(f'Misclassified: {misclassified}')
-          if acc < 0.95:
-              raise SystemExit('Validation accuracy regressed below 95% -- investigate before proceeding.')
-          "
-
-      # Real, first end-to-end test of the live pipeline against one
-      # real, chosen institution -- University of Michigan-Ann Arbor
-      # (UNITID 170976), picked specifically for being large, stable,
-      # public, and unlikely to have missing-data edge cases, so a
-      # failure here is informative about the pipeline itself rather
-      # than about a hard institution. This never ran from the
-      # sandboxed environment the pipeline was originally built in,
-      # since that sandbox could not reach nces.ed.gov at all --
-      # GitHub Actions' own runners are not under that restriction,
-      # so this is the actual first real test of whether the live
-      # pipeline works, not a repeat of an already-known result.
-      # Requires the COLLEGE_SCORECARD_API_KEY repository secret to
-      # be set (Settings -> Secrets and variables -> Actions -> New
-      # repository secret) -- get a free key at
-      # https://api.data.gov/signup/. Runs with continue-on-error so
-      # a failure here is visible in the Actions log without blocking
-      # the panel-validation step above, since this is explicitly a
-      # test of new, unverified code, not the already-proven pipeline.
-      - name: Test live pipeline against one real institution (University of Michigan-Ann Arbor)
-        env:
-          COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
-        run: |
-          cd src
-          python score_institution.py 170976 University of Michigan-Ann Arbor --sector public
-        continue-on-error: true
-
-      # Real test against three genuinely new institutions (none in the
-      # original validation panel, unlike Michigan above), chosen for
-      # real diversity -- see score_batch.py's own docstring for why
-      # each one was picked. continue-on-error for the same reason as
-      # the Michigan step above: this is new, unverified-at-scale code,
-      # not the already-proven core pipeline.
-      - name: Score a small batch of new institutions (Sweet Briar, University of Phoenix, West Virginia University)
-        env:
-          COLLEGE_SCORECARD_API_KEY: ${{ secrets.COLLEGE_SCORECARD_API_KEY }}
-        run: |
-          cd src
-          python score_batch.py
-        continue-on-error: true
-
-      # Bakes docs/data/live_scores.json into docs/index.html as real,
-      # static HTML rows (not just the JavaScript-only placeholder), so
-      # anything that reads the raw page source instead of running its
-      # JavaScript -- an AI summarizer, a search crawler -- sees the
-      # actual live results too. See src/render_dashboard.py for why.
-      - name: Bake live scores into the dashboard's static HTML
+      - name: Re-bake the dashboard's static rows from the committed scores
         run: |
           cd src
           python render_dashboard.py
 
-      # Real fix, 2026-09-15: this used to end with
-      # `git push || echo "Nothing to push"`, which could not tell the
-      # difference between two very different situations -- "nothing
-      # changed, so there was nothing to push" and "something changed,
-      # a commit was made, but the push was REJECTED" (e.g. because a
-      # manual commit landed on main while this job was still running
-      # its several minutes of sampling, leaving this job's local main
-      # behind origin/main -- a real, confirmed cause of a real silent
-      # failure on 2026-09-15, not a hypothetical). The old line
-      # printed the same reassuring message either way, so a rejected
-      # push looked identical in the log to a normal no-op run.
-      # Now: a plain "nothing changed" case is detected explicitly and
-      # only prints a message, with no commit and no push attempted.
-      # When there IS something to commit, this fetches and rebases
-      # onto the current origin/main first, so a manual commit made
-      # during the run is absorbed instead of causing a conflict, and
-      # then pushes for real, with nothing left to swallow the error --
-      # if that push still fails, the step now fails loudly and shows
-      # red in the Actions log, instead of silently doing nothing.
-      - name: Commit updated results, if any
+      - name: Commit the dashboard, if it changed
         run: |
           git config user.name "ricd-tracker-bot"
           git config user.email "actions@github.com"
-          git add docs/data/live_scores.json docs/index.html
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit -- nothing new from this run."
+          git add docs/index.html
+          if git diff --staged --quiet; then
+            echo "Dashboard unchanged."
           else
-            git commit -m "Automated re-score run: update live scores"
-            git fetch origin main
-            git rebase origin/main
-            git push
+            git commit -m "Weekly: re-bake dashboard rows from the live v3 scores"
+            git fetch origin main && git rebase origin/main && git push
           fi
+
+      - name: Check whether fiscal 2025 finance files are served
+        run: |
+          found=""
+          for form in F1A F2 F3; do
+            for base in https://nces.ed.gov/ipeds/datacenter/data https://nces.ed.gov/ipeds/complete-data-files; do
+              code=$(curl -s -o /dev/null -w "%{http_code}" -I "$base/F2425_${form}.zip" || echo 000)
+              echo "F2425_${form} at $base: HTTP $code"
+              if [ "$code" = "200" ]; then found="$found F2425_${form}"; fi
+            done
+          done
+          if [ -n "$found" ]; then
+            echo "::error::A new federal finance year (fiscal 2025) is served:$found. The live window can move to fiscal 2015-2025 and the live v3 scores be redone (live tracker protocol.md, section 4)."
+            exit 1
+          fi
+          echo "Fiscal 2025 finance files are not served yet; nothing to do."

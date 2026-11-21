@@ -142,11 +142,16 @@ jobs:
           cd src
           python score_live.py merge --evals ../work/evals
 
+      - name: Bake the scores into the dashboard's static HTML
+        run: |
+          cd src
+          python render_dashboard.py
+
       - name: Commit the result
         run: |
           git config user.name "ricd-tracker-bot"
           git config user.email "actions@github.com"
-          git add "data/live/" "docs/data/live v3 scores.json"
+          git add "data/live/" "docs/data/live v3 scores.json" docs/index.html
           if git diff --staged --quiet; then
             echo "Nothing to commit."
           else
