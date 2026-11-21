@@ -1,0 +1,2032 @@
+{
+ "note": "Item 15b, exploratory, under anchor and voice protocol.md (sections 6; Amendments 1 to 6). Voice read from voice coded.csv (fixed before outcomes were recorded); outcomes from case outcomes.csv.",
+ "written at (UTC)": "2026-11-21T23:44:19.087029+00:00",
+ "rows": {
+  "total": 128,
+  "with a known outcome": 98,
+  "by role": {
+   "case": 70,
+   "matched closure": 58
+  },
+  "by ending type": {
+   "shock-type": 18,
+   "drift-type": 80
+  },
+  "by voice": {
+   "not searched": 17,
+   "silence or normalization": 73,
+   "aligned": 8
+  }
+ },
+ "P1": {
+  "cells": {
+   "shock-type, anchored": {
+    "rows": 1,
+    "rescue": {
+     "count": 0,
+     "of": 1,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.975
+     ]
+    },
+    "reorganization": {
+     "count": 1,
+     "of": 1,
+     "share": 1.0,
+     "exact 95% interval": [
+      0.025,
+      1.0
+     ]
+    },
+    "closure": {
+     "count": 0,
+     "of": 1,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.975
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 1,
+     "of": 1,
+     "share": 1.0,
+     "exact 95% interval": [
+      0.025,
+      1.0
+     ]
+    },
+    "colleges": [
+     "Bloomfield College (case; reorganization)"
+    ]
+   },
+   "shock-type, unanchored": {
+    "rows": 15,
+    "rescue": {
+     "count": 1,
+     "of": 15,
+     "share": 0.0667,
+     "exact 95% interval": [
+      0.0017,
+      0.3195
+     ]
+    },
+    "reorganization": {
+     "count": 4,
+     "of": 15,
+     "share": 0.2667,
+     "exact 95% interval": [
+      0.0779,
+      0.551
+     ]
+    },
+    "closure": {
+     "count": 10,
+     "of": 15,
+     "share": 0.6667,
+     "exact 95% interval": [
+      0.3838,
+      0.8818
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 5,
+     "of": 15,
+     "share": 0.3333,
+     "exact 95% interval": [
+      0.1182,
+      0.6162
+     ]
+    },
+    "colleges": [
+     "AIB College of Business (matched closure; closure)",
+     "American Academy of Dramatic Arts-Los Angeles (matched closure; closure)",
+     "Bainbridge State College (case; reorganization)",
+     "Bennett College (case; lasting rescue)",
+     "California State University Maritime Academy (case; reorganization)",
+     "Delaware College of Art and Design (matched closure; closure)",
+     "Green Mountain College (matched closure; closure)",
+     "Holy Names University (matched closure; closure)",
+     "Kilian Community College (matched closure; closure)",
+     "Lincoln Christian University (matched closure; closure)",
+     "Marlboro College (case; closure)",
+     "Missio Theological Seminary (matched closure; closure)",
+     "Pacific Northwest College of Art (case; reorganization)",
+     "Saint Josephs College (matched closure; closure)",
+     "School of the Museum of Fine Arts (case; reorganization)"
+    ]
+   },
+   "drift-type, anchored": {
+    "rows": 2,
+    "rescue": {
+     "count": 0,
+     "of": 2,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.8419
+     ]
+    },
+    "reorganization": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "closure": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "colleges": [
+     "Compass College of Film & Media (case; closure)",
+     "Indiana University-Purdue University Indianapolis (case; reorganization)"
+    ]
+   },
+   "drift-type, unanchored": {
+    "rows": 77,
+    "rescue": {
+     "count": 0,
+     "of": 77,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.0468
+     ]
+    },
+    "reorganization": {
+     "count": 14,
+     "of": 77,
+     "share": 0.1818,
+     "exact 95% interval": [
+      0.1031,
+      0.2862
+     ]
+    },
+    "closure": {
+     "count": 63,
+     "of": 77,
+     "share": 0.8182,
+     "exact 95% interval": [
+      0.7138,
+      0.8969
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 14,
+     "of": 77,
+     "share": 0.1818,
+     "exact 95% interval": [
+      0.1031,
+      0.2862
+     ]
+    },
+    "colleges": [
+     "Alderson Broaddus University (matched closure; closure)",
+     "Alliance University (matched closure; closure)",
+     "American Conservatory Theater (matched closure; closure)",
+     "Ancilla College (case; reorganization)",
+     "Andover Newton Theological School (matched closure; closure)",
+     "Bangor Theological Seminary (matched closure; closure)",
+     "Birmingham-Southern College (case; rescue attempt then closure)",
+     "Birthingway College of Midwifery (matched closure; closure)",
+     "Boulder College of Massage Therapy (matched closure; closure)",
+     "Bramson ORT College (matched closure; closure)",
+     "Burlington College (matched closure; closure)",
+     "Cabrini University (matched closure; closure)",
+     "California Christian College (matched closure; closure)",
+     "California College San Diego (matched closure; closure)",
+     "Cardinal Stritch University (matched closure; closure)",
+     "Cincinnati Christian University (matched closure; closure)",
+     "Clarks Summit University (matched closure; closure)",
+     "Clearwater Christian College (matched closure; closure)",
+     "Cleveland Chiropractic College of Los Angeles (matched closure; closure)",
+     "College of St Joseph (matched closure; closure)",
+     "College of Visual Arts (matched closure; closure)",
+     "Concordia College (matched closure; closure)",
+     "Concordia University-Portland (matched closure; closure)",
+     "Cornish College of the Arts (case; reorganization)",
+     "Cumberland County College (case; reorganization)",
+     "Dowling College (case; rescue attempt then closure)",
+     "East San Gabriel Valley Regional Occupational Program (matched closure; closure)",
+     "Eastern Gateway Community College (matched closure; closure)",
+     "Episcopal Divinity School (case; closure)",
+     "Evangelical Theological Seminary (matched closure; closure)",
+     "Finlandia University (matched closure; closure)",
+     "Goddard College (matched closure; closure)",
+     "Hodges University (matched closure; closure)",
+     "Holy Family College (matched closure; closure)",
+     "Institute of Design and Construction (matched closure; closure)",
+     "Iowa Wesleyan University (case; rescue attempt then closure)",
+     "John F. Kennedy University (matched closure; closure)",
+     "John Wesley College (case; closure)",
+     "Jones College-Jacksonville (matched closure; closure)",
+     "Judson College (matched closure; closure)",
+     "Keystone College (case; reorganization)",
+     "Marian Court College (matched closure; closure)",
+     "Marygrove College (matched closure; closure)",
+     "Marylhurst University (matched closure; closure)",
+     "Marymount Manhattan College (case; reorganization)",
+     "Medaille University (matched closure; closure)",
+     "Mills College (case; reorganization)",
+     "Multnomah University (case; closure)",
+     "New Jersey City University (case; reorganization)",
+     "Northland College (case; rescue attempt then closure)",
+     "Ohio Mid-Western College (matched closure; closure)",
+     "Ohio Valley University (matched closure; closure)",
+     "Oregon College of Art and Craft (case; closure)",
+     "Oregon College of Oriental Medicine (matched closure; closure)",
+     "Peirce College (case; reorganization)",
+     "Phillips Graduate University (matched closure; closure)",
+     "Presentation College (matched closure; closure)",
+     "Presidio Graduate School (case; reorganization)",
+     "Robert Morris University Illinois (case; reorganization)",
+     "Saint Catharine College (matched closure; closure)",
+     "San Francisco Art Institute (case; rescue attempt then closure)",
+     "Sanford College of Nursing (matched closure; closure)",
+     "Shimer College (case; closure)",
+     "Sierra Nevada University (case; reorganization)",
+     "Southeastern Bible College (case; closure)",
+     "Southern Vermont College (matched closure; closure)",
+     "Springfield College in Illinois (matched closure; closure)",
+     "St. Augustine College (case; reorganization)",
+     "St. Louis Christian College (case; closure)",
+     "The College of Saint Rose (matched closure; closure)",
+     "Trinity Lutheran College (matched closure; closure)",
+     "Union Graduate College (case; closure)",
+     "University of Wisconsin-Baraboo/Sauk County (case; closure)",
+     "University of the Sciences (case; closure)",
+     "Watkins College of Art (case; closure)",
+     "Wesley College (case; reorganization)",
+     "Wheelock College (case; reorganization)"
+    ]
+   }
+  },
+  "other rows (own rows)": {
+   "drift-type, unclassified on anchoring": {
+    "rows": 1,
+    "rescue": {
+     "count": 0,
+     "of": 1,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.975
+     ]
+    },
+    "reorganization": {
+     "count": 0,
+     "of": 1,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.975
+     ]
+    },
+    "closure": {
+     "count": 1,
+     "of": 1,
+     "share": 1.0,
+     "exact 95% interval": [
+      0.025,
+      1.0
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 0,
+     "of": 1,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.975
+     ]
+    },
+    "colleges": [
+     "Martin University (matched closure; closure)"
+    ]
+   },
+   "shock-type, unclassified on anchoring": {
+    "rows": 2,
+    "rescue": {
+     "count": 0,
+     "of": 2,
+     "share": 0.0,
+     "exact 95% interval": [
+      0.0,
+      0.8419
+     ]
+    },
+    "reorganization": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "closure": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "rescue or reorganization": {
+     "count": 1,
+     "of": 2,
+     "share": 0.5,
+     "exact 95% interval": [
+      0.0126,
+      0.9874
+     ]
+    },
+    "colleges": [
+     "Salus University (case; reorganization)",
+     "Trinity College of Puerto Rico (matched closure; closure)"
+    ]
+   }
+  },
+  "supported": true
+ },
+ "P2": {
+  "all drift-type rows": {
+   "with aligned voice": {
+    "count": 2,
+    "of": 8,
+    "share": 0.25,
+    "exact 95% interval": [
+     0.0319,
+     0.6509
+    ]
+   },
+   "without (silence or normalization)": {
+    "count": 13,
+    "of": 72,
+    "share": 0.1806,
+    "exact 95% interval": [
+     0.0998,
+     0.2889
+    ]
+   },
+   "Fisher exact p, two-sided": 0.6397,
+   "colleges with aligned voice": [
+    "Burlington College (matched closure; closure; unanchored)",
+    "Eastern Gateway Community College (matched closure; closure; unanchored)",
+    "Episcopal Divinity School (case; closure; unanchored)",
+    "Finlandia University (matched closure; closure; unanchored)",
+    "Goddard College (matched closure; closure; unanchored)",
+    "Medaille University (matched closure; closure; unanchored)",
+    "New Jersey City University (case; reorganization; unanchored)",
+    "Sierra Nevada University (case; reorganization; unanchored)"
+   ]
+  },
+  "report-only: without Martin University (unclassified on anchoring)": {
+   "with aligned voice": {
+    "count": 2,
+    "of": 8,
+    "share": 0.25,
+    "exact 95% interval": [
+     0.0319,
+     0.6509
+    ]
+   },
+   "without (silence or normalization)": {
+    "count": 13,
+    "of": 71,
+    "share": 0.1831,
+    "exact 95% interval": [
+     0.1013,
+     0.2927
+    ]
+   },
+   "Fisher exact p, two-sided": 0.6428,
+   "colleges with aligned voice": [
+    "Burlington College (matched closure; closure; unanchored)",
+    "Eastern Gateway Community College (matched closure; closure; unanchored)",
+    "Episcopal Divinity School (case; closure; unanchored)",
+    "Finlandia University (matched closure; closure; unanchored)",
+    "Goddard College (matched closure; closure; unanchored)",
+    "Medaille University (matched closure; closure; unanchored)",
+    "New Jersey City University (case; reorganization; unanchored)",
+    "Sierra Nevada University (case; reorganization; unanchored)"
+   ]
+  },
+  "report-only: anchored only": {
+   "with aligned voice": {
+    "count": 0,
+    "of": 0,
+    "share": null,
+    "exact 95% interval": null
+   },
+   "without (silence or normalization)": {
+    "count": 1,
+    "of": 2,
+    "share": 0.5,
+    "exact 95% interval": [
+     0.0126,
+     0.9874
+    ]
+   },
+   "Fisher exact p, two-sided": null,
+   "colleges with aligned voice": []
+  },
+  "report-only: unanchored only": {
+   "with aligned voice": {
+    "count": 2,
+    "of": 8,
+    "share": 0.25,
+    "exact 95% interval": [
+     0.0319,
+     0.6509
+    ]
+   },
+   "without (silence or normalization)": {
+    "count": 12,
+    "of": 69,
+    "share": 0.1739,
+    "exact 95% interval": [
+     0.0932,
+     0.2841
+    ]
+   },
+   "Fisher exact p, two-sided": 0.6319,
+   "colleges with aligned voice": [
+    "Burlington College (matched closure; closure; unanchored)",
+    "Eastern Gateway Community College (matched closure; closure; unanchored)",
+    "Episcopal Divinity School (case; closure; unanchored)",
+    "Finlandia University (matched closure; closure; unanchored)",
+    "Goddard College (matched closure; closure; unanchored)",
+    "Medaille University (matched closure; closure; unanchored)",
+    "New Jersey City University (case; reorganization; unanchored)",
+    "Sierra Nevada University (case; reorganization; unanchored)"
+   ]
+  },
+  "drift-type rows left out as pending": [
+   "California College of the Arts",
+   "Hampshire College",
+   "Mount Mercy University",
+   "Phoenix Seminary",
+   "Saint Augustine's University",
+   "Ursuline College"
+  ]
+ },
+ "P3 (report-only)": {
+  "by ending type": {
+   "shock-type": {
+    "cases with both periods": 6,
+    "median after over before": 1.103
+   },
+   "drift-type": {
+    "cases with both periods": 18,
+    "median after over before": 0.934
+   },
+   "mixed": {
+    "cases with both periods": 0,
+    "median after over before": null
+   }
+  },
+  "cases": [
+   {
+    "name": "Alabama Southern Community College",
+    "ending type": "not classified",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 8195208,
+    "mean after": 7374396,
+    "after over before": 0.9
+   },
+   {
+    "name": "Armstrong State University",
+    "ending type": "not classified",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 30375184,
+    "mean after": 32746361,
+    "after over before": 1.078
+   },
+   {
+    "name": "Bainbridge State College",
+    "ending type": "shock-type",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 8106990,
+    "mean after": 6953679,
+    "after over before": 0.858
+   },
+   {
+    "name": "Cumberland County College",
+    "ending type": "drift-type",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 10558564,
+    "mean after": 13294726,
+    "after over before": 1.259
+   },
+   {
+    "name": "Episcopal Divinity School",
+    "ending type": "drift-type",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 299435,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Faulkner State Community College",
+    "ending type": "not classified",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 13353304,
+    "mean after": 21338731,
+    "after over before": 1.598
+   },
+   {
+    "name": "Georgia Perimeter College",
+    "ending type": "not classified",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 55331240,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Jefferson Davis Community College",
+    "ending type": "not classified",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 5986027,
+    "mean after": 6180053,
+    "after over before": 1.032
+   },
+   {
+    "name": "John Wesley College",
+    "ending type": "drift-type",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 36704,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Mercy College of Ohio",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 8457102,
+    "mean after": 6352169,
+    "after over before": 0.751
+   },
+   {
+    "name": "Nebraska Christian College",
+    "ending type": "not classified",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 1270050,
+    "mean after": 658921,
+    "after over before": 0.519
+   },
+   {
+    "name": "New Hampshire Institute of Art",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 638032,
+    "mean after": 2006214,
+    "after over before": 3.144
+   },
+   {
+    "name": "O'More College of Design",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 115662,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Oregon College of Art and Craft",
+    "ending type": "drift-type",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 1315322,
+    "mean after": 1684468,
+    "after over before": 1.281
+   },
+   {
+    "name": "Rowan College at Gloucester County",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 13838084,
+    "mean after": 18466203,
+    "after over before": 1.334
+   },
+   {
+    "name": "School of the Museum of Fine Arts",
+    "ending type": "shock-type",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 2950806,
+    "mean after": 2229361,
+    "after over before": 0.756
+   },
+   {
+    "name": "Shimer College",
+    "ending type": "drift-type",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 933259,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Southeastern Bible College",
+    "ending type": "drift-type",
+    "years before": [
+     2015,
+     2016
+    ],
+    "years after": [
+     2017,
+     2018
+    ],
+    "mean before": 496752,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "St. Vincent's College",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 410156,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "The Boston Conservatory",
+    "ending type": "not classified",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 4042434,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Union Graduate College",
+    "ending type": "drift-type",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 401863,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "University of Wisconsin-Baraboo/Sauk County",
+    "ending type": "drift-type",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 30656001,
+    "mean after": 29763901,
+    "after over before": 0.971
+   },
+   {
+    "name": "Wheelock College",
+    "ending type": "drift-type",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 2426661,
+    "mean after": 830319,
+    "after over before": 0.342
+   },
+   {
+    "name": "Wichita Area Technical College",
+    "ending type": "not classified",
+    "years before": [
+     2016,
+     2017
+    ],
+    "years after": [
+     2018,
+     2019
+    ],
+    "mean before": 6786838,
+    "mean after": 6923826,
+    "after over before": 1.02
+   },
+   {
+    "name": "Marian University",
+    "ending type": "shock-type",
+    "years before": [
+     2025,
+     2026
+    ],
+    "years after": [
+     2027,
+     2028
+    ],
+    "mean before": null,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Phoenix Seminary",
+    "ending type": "drift-type",
+    "years before": [
+     2024,
+     2025
+    ],
+    "years after": [
+     2026,
+     2027
+    ],
+    "mean before": 3338255,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Queens University of Charlotte",
+    "ending type": "shock-type",
+    "years before": [
+     2024,
+     2025
+    ],
+    "years after": [
+     2026,
+     2027
+    ],
+    "mean before": 8318081,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Keystone College",
+    "ending type": "drift-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 1768270,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "New Jersey City University",
+    "ending type": "drift-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 57712940,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Albany College of Pharmacy and Health Sciences",
+    "ending type": "shock-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 895319,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "East Georgia State College",
+    "ending type": "not classified",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 13770865,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Rosemont College",
+    "ending type": "shock-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 3166120,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Cornish College of the Arts",
+    "ending type": "drift-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 3067126,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "California State University Maritime Academy",
+    "ending type": "shock-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 49787882,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Ursuline College",
+    "ending type": "drift-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 3833115,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Peirce College",
+    "ending type": "drift-type",
+    "years before": [
+     2023,
+     2024
+    ],
+    "years after": [
+     2025,
+     2026
+    ],
+    "mean before": 312556,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Mount Mercy University",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 4438152,
+    "mean after": 3707141,
+    "after over before": 0.835
+   },
+   {
+    "name": "Marymount Manhattan College",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 3219980,
+    "mean after": 929783,
+    "after over before": 0.289
+   },
+   {
+    "name": "Cambridge College",
+    "ending type": "not classified",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 8355282,
+    "mean after": 400991,
+    "after over before": 0.048
+   },
+   {
+    "name": "Multnomah University",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 2340000,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Maryland University of Integrative Health",
+    "ending type": "not classified",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 68956,
+    "mean after": 0,
+    "after over before": 0.0
+   },
+   {
+    "name": "Compass College of Film & Media",
+    "ending type": "drift-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 119158,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Salus University",
+    "ending type": "shock-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 1165366,
+    "mean after": 1119900,
+    "after over before": 0.961
+   },
+   {
+    "name": "St. Augustine College",
+    "ending type": "drift-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 277950,
+    "mean after": 45278,
+    "after over before": 0.163
+   },
+   {
+    "name": "Pennsylvania College of Health Sciences",
+    "ending type": "not classified",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 2033928,
+    "mean after": 1793177,
+    "after over before": 0.882
+   },
+   {
+    "name": "Presidio Graduate School",
+    "ending type": "drift-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 819460,
+    "mean after": 104246,
+    "after over before": 0.127
+   },
+   {
+    "name": "Bloomfield College",
+    "ending type": "shock-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 1696565,
+    "mean after": 9006526,
+    "after over before": 5.309
+   },
+   {
+    "name": "Indiana University-Purdue University Indianapolis",
+    "ending type": "drift-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 515202354,
+    "mean after": 346720126,
+    "after over before": 0.673
+   },
+   {
+    "name": "Mills College",
+    "ending type": "drift-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 9032352,
+    "mean after": 5030633,
+    "after over before": 0.557
+   },
+   {
+    "name": "St. Louis Christian College",
+    "ending type": "drift-type",
+    "years before": [
+     2020,
+     2021
+    ],
+    "years after": [
+     2022,
+     2023
+    ],
+    "mean before": 1913526,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Sierra Nevada University",
+    "ending type": "drift-type",
+    "years before": [
+     2020,
+     2021
+    ],
+    "years after": [
+     2022,
+     2023
+    ],
+    "mean before": 6455548,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "University of the Sciences",
+    "ending type": "drift-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 1566228,
+    "mean after": 1873618,
+    "after over before": 1.196
+   },
+   {
+    "name": "Pacific Northwest College of Art",
+    "ending type": "shock-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 1258752,
+    "mean after": 1566229,
+    "after over before": 1.244
+   },
+   {
+    "name": "Martin Methodist College",
+    "ending type": "not classified",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 3357192,
+    "mean after": 6469474,
+    "after over before": 1.927
+   },
+   {
+    "name": "Ancilla College",
+    "ending type": "drift-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 1482606,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Marlboro College",
+    "ending type": "shock-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 4611361,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Wesley College",
+    "ending type": "drift-type",
+    "years before": [
+     2019,
+     2020
+    ],
+    "years after": [
+     2021,
+     2022
+    ],
+    "mean before": 1545361,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Pine Manor College",
+    "ending type": "not classified",
+    "years before": [
+     2018,
+     2019
+    ],
+    "years after": [
+     2020,
+     2021
+    ],
+    "mean before": 1652439,
+    "mean after": 3769514,
+    "after over before": 2.281
+   },
+   {
+    "name": "Robert Morris University Illinois",
+    "ending type": "drift-type",
+    "years before": [
+     2018,
+     2019
+    ],
+    "years after": [
+     2020,
+     2021
+    ],
+    "mean before": 987448,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Watkins College of Art",
+    "ending type": "drift-type",
+    "years before": [
+     2018,
+     2019
+    ],
+    "years after": [
+     2020,
+     2021
+    ],
+    "mean before": 283408,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Sweet Briar College",
+    "ending type": "not classified",
+    "years before": [
+     2013,
+     2014
+    ],
+    "years after": [
+     2015,
+     2016
+    ],
+    "mean before": 6019495,
+    "mean after": 14425038,
+    "after over before": 2.396
+   },
+   {
+    "name": "Dowling College",
+    "ending type": "drift-type",
+    "years before": [
+     2014,
+     2015
+    ],
+    "years after": [
+     2016,
+     2017
+    ],
+    "mean before": 486790,
+    "mean after": null,
+    "after over before": null
+   },
+   {
+    "name": "Iowa Wesleyan University",
+    "ending type": "drift-type",
+    "years before": [
+     2017,
+     2018
+    ],
+    "years after": [
+     2019,
+     2020
+    ],
+    "mean before": 2724542,
+    "mean after": 3185158,
+    "after over before": 1.169
+   },
+   {
+    "name": "Bennett College",
+    "ending type": "shock-type",
+    "years before": [
+     2017,
+     2018
+    ],
+    "years after": [
+     2019,
+     2020
+    ],
+    "mean before": 3157271,
+    "mean after": 6680802,
+    "after over before": 2.116
+   },
+   {
+    "name": "Hampshire College",
+    "ending type": "drift-type",
+    "years before": [
+     2017,
+     2018
+    ],
+    "years after": [
+     2019,
+     2020
+    ],
+    "mean before": 8030443,
+    "mean after": 7310876,
+    "after over before": 0.91
+   },
+   {
+    "name": "San Francisco Art Institute",
+    "ending type": "drift-type",
+    "years before": [
+     2018,
+     2019
+    ],
+    "years after": [
+     2020,
+     2021
+    ],
+    "mean before": 2269143,
+    "mean after": 1871023,
+    "after over before": 0.825
+   },
+   {
+    "name": "Birmingham-Southern College",
+    "ending type": "drift-type",
+    "years before": [
+     2021,
+     2022
+    ],
+    "years after": [
+     2023,
+     2024
+    ],
+    "mean before": 6143696,
+    "mean after": 5889302,
+    "after over before": 0.959
+   },
+   {
+    "name": "Northland College",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 4277676,
+    "mean after": 7074738,
+    "after over before": 1.654
+   },
+   {
+    "name": "California College of the Arts",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 9897001,
+    "mean after": 13637863,
+    "after over before": 1.378
+   },
+   {
+    "name": "Saint Augustine's University",
+    "ending type": "drift-type",
+    "years before": [
+     2022,
+     2023
+    ],
+    "years after": [
+     2024,
+     2025
+    ],
+    "mean before": 1793302,
+    "mean after": 1791054,
+    "after over before": 0.999
+   }
+  ]
+ },
+ "S1": {
+  "positive margin": {
+   "count": 3,
+   "of": 9,
+   "share": 0.3333,
+   "exact 95% interval": [
+    0.0749,
+    0.7007
+   ]
+  },
+  "margin gone": {
+   "count": 6,
+   "of": 9,
+   "share": 0.6667,
+   "exact 95% interval": [
+    0.2993,
+    0.9251
+   ]
+  },
+  "unmeasured": [],
+  "cases": [
+   {
+    "name": "Sweet Briar College",
+    "margin": "gone",
+    "fiscal year read": 2014,
+    "window end": 2014,
+    "outcome": ""
+   },
+   {
+    "name": "Dowling College",
+    "margin": "gone",
+    "fiscal year read": 2015,
+    "window end": 2015,
+    "outcome": "rescue attempt then closure"
+   },
+   {
+    "name": "Iowa Wesleyan University",
+    "margin": "gone",
+    "fiscal year read": 2018,
+    "window end": 2018,
+    "outcome": "rescue attempt then closure"
+   },
+   {
+    "name": "Bennett College",
+    "margin": "positive",
+    "fiscal year read": 2018,
+    "window end": 2018,
+    "outcome": "lasting rescue"
+   },
+   {
+    "name": "Hampshire College",
+    "margin": "positive",
+    "fiscal year read": 2018,
+    "window end": 2018,
+    "outcome": "pending"
+   },
+   {
+    "name": "San Francisco Art Institute",
+    "margin": "gone",
+    "fiscal year read": 2019,
+    "window end": 2019,
+    "outcome": "rescue attempt then closure"
+   },
+   {
+    "name": "Birmingham-Southern College",
+    "margin": "gone",
+    "fiscal year read": 2022,
+    "window end": 2022,
+    "outcome": "rescue attempt then closure"
+   },
+   {
+    "name": "Northland College",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "window end": 2023,
+    "outcome": "rescue attempt then closure"
+   },
+   {
+    "name": "Saint Augustine's University",
+    "margin": "positive",
+    "fiscal year read": 2023,
+    "window end": 2023,
+    "outcome": "pending"
+   }
+  ],
+  "left out (no qualifying statement, Amendment 6)": [
+   "California College of the Arts"
+  ]
+ },
+ "S2": {
+  "margin gone": {
+   "count": 27,
+   "of": 48,
+   "share": 0.5625,
+   "exact 95% interval": [
+    0.4118,
+    0.7052
+   ]
+  },
+  "S1 margin gone, for comparison": {
+   "count": 6,
+   "of": 9,
+   "share": 0.6667,
+   "exact 95% interval": [
+    0.2993,
+    0.9251
+   ]
+  },
+  "Fisher exact p, two-sided (descriptive)": 0.7197,
+  "unmeasured": [],
+  "closures": [
+   {
+    "name": "Clearwater Christian College",
+    "margin": "positive",
+    "fiscal year read": 2014,
+    "closure year": 2015
+   },
+   {
+    "name": "Judson College",
+    "margin": "positive",
+    "fiscal year read": 2020,
+    "closure year": 2021
+   },
+   {
+    "name": "Finlandia University",
+    "margin": "positive",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "East San Gabriel Valley Regional Occupational Program",
+    "margin": "gone",
+    "fiscal year read": 2019,
+    "closure year": 2020
+   },
+   {
+    "name": "Clarks Summit University",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "closure year": 2024
+   },
+   {
+    "name": "Presentation College",
+    "margin": "positive",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "Concordia University-Portland",
+    "margin": "gone",
+    "fiscal year read": 2019,
+    "closure year": 2020
+   },
+   {
+    "name": "John F. Kennedy University",
+    "margin": "positive",
+    "fiscal year read": 2019,
+    "closure year": 2020
+   },
+   {
+    "name": "Concordia College",
+    "margin": "positive",
+    "fiscal year read": 2020,
+    "closure year": 2021
+   },
+   {
+    "name": "American Conservatory Theater",
+    "margin": "positive",
+    "fiscal year read": 2021,
+    "closure year": 2022
+   },
+   {
+    "name": "Institute of Design and Construction",
+    "margin": "gone",
+    "fiscal year read": 2014,
+    "closure year": 2015
+   },
+   {
+    "name": "Alderson Broaddus University",
+    "margin": "gone",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "Eastern Gateway Community College",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "closure year": 2025
+   },
+   {
+    "name": "Cardinal Stritch University",
+    "margin": "gone",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "Marygrove College",
+    "margin": "positive",
+    "fiscal year read": 2018,
+    "closure year": 2019
+   },
+   {
+    "name": "Andover Newton Theological School",
+    "margin": "gone",
+    "fiscal year read": 2018,
+    "closure year": 2019
+   },
+   {
+    "name": "Bangor Theological Seminary",
+    "margin": "gone",
+    "fiscal year read": 2012,
+    "closure year": 2013
+   },
+   {
+    "name": "Bramson ORT College",
+    "margin": "gone",
+    "fiscal year read": 2016,
+    "closure year": 2017
+   },
+   {
+    "name": "California College San Diego",
+    "margin": "gone",
+    "fiscal year read": 2020,
+    "closure year": 2021
+   },
+   {
+    "name": "Goddard College",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "closure year": 2024
+   },
+   {
+    "name": "Cabrini University",
+    "margin": "positive",
+    "fiscal year read": 2023,
+    "closure year": 2024
+   },
+   {
+    "name": "Alliance University",
+    "margin": "gone",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "Medaille University",
+    "margin": "positive",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "The College of Saint Rose",
+    "margin": "positive",
+    "fiscal year read": 2023,
+    "closure year": 2025
+   },
+   {
+    "name": "Burlington College",
+    "margin": "gone",
+    "fiscal year read": 2014,
+    "closure year": 2015
+   },
+   {
+    "name": "Marylhurst University",
+    "margin": "gone",
+    "fiscal year read": 2017,
+    "closure year": 2018
+   },
+   {
+    "name": "Hodges University",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "closure year": 2024
+   },
+   {
+    "name": "Cleveland Chiropractic College of Los Angeles",
+    "margin": "gone",
+    "fiscal year read": 2011,
+    "closure year": 2011
+   },
+   {
+    "name": "Cincinnati Christian University",
+    "margin": "gone",
+    "fiscal year read": 2018,
+    "closure year": 2019
+   },
+   {
+    "name": "Saint Catharine College",
+    "margin": "gone",
+    "fiscal year read": 2015,
+    "closure year": 2016
+   },
+   {
+    "name": "Southern Vermont College",
+    "margin": "positive",
+    "fiscal year read": 2018,
+    "closure year": 2019
+   },
+   {
+    "name": "Jones College-Jacksonville",
+    "margin": "gone",
+    "fiscal year read": 2016,
+    "closure year": 2017
+   },
+   {
+    "name": "Ohio Valley University",
+    "margin": "gone",
+    "fiscal year read": 2020,
+    "closure year": 2021
+   },
+   {
+    "name": "Holy Family College",
+    "margin": "positive",
+    "fiscal year read": 2019,
+    "closure year": 2020
+   },
+   {
+    "name": "Sanford College of Nursing",
+    "margin": "gone",
+    "fiscal year read": 2014,
+    "closure year": 2014
+   },
+   {
+    "name": "Oregon College of Oriental Medicine",
+    "margin": "gone",
+    "fiscal year read": 2023,
+    "closure year": 2024
+   },
+   {
+    "name": "College of St Joseph",
+    "margin": "positive",
+    "fiscal year read": 2018,
+    "closure year": 2019
+   },
+   {
+    "name": "Evangelical Theological Seminary",
+    "margin": "positive",
+    "fiscal year read": 2021,
+    "closure year": 2022
+   },
+   {
+    "name": "Ohio Mid-Western College",
+    "margin": "positive",
+    "fiscal year read": 2014,
+    "closure year": 2015
+   },
+   {
+    "name": "Birthingway College of Midwifery",
+    "margin": "gone",
+    "fiscal year read": 2021,
+    "closure year": 2022
+   },
+   {
+    "name": "Trinity Lutheran College",
+    "margin": "positive",
+    "fiscal year read": 2015,
+    "closure year": 2016
+   },
+   {
+    "name": "College of Visual Arts",
+    "margin": "positive",
+    "fiscal year read": 2012,
+    "closure year": 2013
+   },
+   {
+    "name": "California Christian College",
+    "margin": "positive",
+    "fiscal year read": 2022,
+    "closure year": 2023
+   },
+   {
+    "name": "Springfield College in Illinois",
+    "margin": "positive",
+    "fiscal year read": 2011,
+    "closure year": 2012
+   },
+   {
+    "name": "Phillips Graduate University",
+    "margin": "gone",
+    "fiscal year read": 2017,
+    "closure year": 2018
+   },
+   {
+    "name": "Boulder College of Massage Therapy",
+    "margin": "gone",
+    "fiscal year read": 2012,
+    "closure year": 2013
+   },
+   {
+    "name": "Marian Court College",
+    "margin": "gone",
+    "fiscal year read": 2014,
+    "closure year": 2015
+   },
+   {
+    "name": "Martin University",
+    "margin": "positive",
+    "fiscal year read": 2024,
+    "closure year": 2025
+   }
+  ]
+ },
+ "S3": {
+  "lasting rescues with a positive margin": {
+   "count": 1,
+   "of": 1,
+   "share": 1.0,
+   "exact 95% interval": [
+    0.025,
+    1.0
+   ]
+  },
+  "rescue attempts then closure with a positive margin": {
+   "count": 0,
+   "of": 5,
+   "share": 0.0,
+   "exact 95% interval": [
+    0.0,
+    0.5218
+   ]
+  },
+  "Fisher exact p, two-sided": 0.1667,
+  "pending, left out": [
+   "Hampshire College",
+   "Saint Augustine's University"
+  ]
+ },
+ "S4": {
+  "converted colleges left out": {
+   "anchored closures, drift-type share": {
+    "count": 0,
+    "of": 0,
+    "share": null,
+    "exact 95% interval": null
+   },
+   "unanchored closures, drift-type share": {
+    "count": 56,
+    "of": 66,
+    "share": 0.8485,
+    "exact 95% interval": [
+     0.739,
+     0.9249
+    ]
+   },
+   "Fisher exact p, two-sided": null
+  },
+  "report-only: converted colleges included": {
+   "anchored closures, drift-type share": {
+    "count": 0,
+    "of": 0,
+    "share": null,
+    "exact 95% interval": null
+   },
+   "unanchored closures, drift-type share": {
+    "count": 88,
+    "of": 99,
+    "share": 0.8889,
+    "exact 95% interval": [
+     0.8099,
+     0.9432
+    ]
+   },
+   "Fisher exact p, two-sided": null
+  },
+  "mixed closures (own row)": {},
+  "unclassified on anchoring": 32,
+  "check against the matched closures measured by anchor and voice.py": {
+   "matched closures compared": 58,
+   "disagreements": []
+  }
+ }
+}
