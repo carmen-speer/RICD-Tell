@@ -20,7 +20,8 @@ and every fiscal year 2005 onward, reads:
                               0.045 x F2H01 before (flagged: estimate)
             for-profit        not observable (missing, never zero)
 
-and computes coverage c = W / E_exch, gap coverage g = W / (E_exch + A),
+and computes coverage c = W / E_exch, gap coverage g = W / (E_exch + A + O),
+with O other operating income (protocol Amendment 2),
 each college-year's state (self-covering, held up by anchors, short beyond
 its anchors), the anchored share A / (W - E_exch) and its split by source
 (who carries the strain), and the sectors' totals by source each year.
@@ -134,7 +135,9 @@ def finance(log: dict) -> dict:
                 r = rows[0]
                 rec = {"form": form, "flags": []}
                 if form == "F1A":
-                    rec |= {"W": num(r.get("F1D02")), "E": first(r, "F1B01", "F1B05"),
+                    tot, oth = num(r.get("F1B25")), num(r.get("F1B24"))
+                    rev = (tot - (oth or 0.0) - (num(r.get("F1B17")) or 0.0)) if tot is not None else None
+                    rec |= {"W": num(r.get("F1D02")), "E": first(r, "F1B01", "F1B05"), "R": rev,
                             "federal appropriations": num(r.get("F1B10")), "state appropriations": num(r.get("F1B11")),
                             "local appropriations": num(r.get("F1B12")), "gifts": num(r.get("F1B16")),
                             "endowment begin": None, "spending": None}
@@ -144,18 +147,23 @@ def finance(log: dict) -> dict:
                     else:
                         gifts = first(r, "F2D08", "F2D09")
                         rec["flags"].append("gifts include grants and contracts")
-                    rec |= {"W": num(r.get("F2B02")), "E": first(r, "F2D01", "F2D12"),
+                    tot = num(r.get("F2D16"))
+                    rev = (tot - (num(r.get("F2D10")) or 0.0)) if tot is not None else None
+                    rec |= {"W": num(r.get("F2B02")), "E": first(r, "F2D01", "F2D12"), "R": rev,
                             "federal appropriations": num(r.get("F2D02")), "state appropriations": num(r.get("F2D03")),
                             "local appropriations": num(r.get("F2D04")), "gifts": gifts,
                             "endowment begin": num(r.get("F2H01")),
-                            "spending": num(r.get("F2H03C")) if fy >= SPENDING_FROM else None}
+                            "spending": (abs(num(r.get("F2H03C"))) if num(r.get("F2H03C")) is not None else None)
+                                        if fy >= SPENDING_FROM else None}
                 else:
                     w = num(r.get("F3B02"))
                     if w is None or w == 0:
                         w = num(r.get("F3D09"))
                         if w is not None:
                             rec["flags"].append("expenses from total revenues (F3D09)")
-                    rec |= {"W": w, "E": first(r, "F3D01", "F3D07")}
+                    tot = num(r.get("F3D09"))
+                    rev = (tot - (num(r.get("F3D05")) or 0.0)) if tot is not None else None
+                    rec |= {"W": w, "E": first(r, "F3D01", "F3D07"), "R": rev}
                 out[u][fy] = rec
         print("finance", fy, flush=True)
     return out
@@ -208,14 +216,25 @@ def year_record(u: str, fy: int, fin: dict, ef: dict, sector: str) -> dict | Non
     parts, flags = anchors(rec, sector)
     flags = rec["flags"] + flags
     A = sum(parts.values()) if parts is not None else None
+    # other operating income (Amendment 2): operating revenue less exchange and the anchors inside it
+    R = rec.get("R")
+    O = None
+    if R is not None:
+        inside = (A - parts["endowment spending"]) if parts is not None else 0.0
+        O = R - E - inside
+        if O < 0:
+            flags.append("other operating income below zero, set to zero")
+            O = 0.0
+    else:
+        flags.append("total revenue missing; other operating income not counted")
     c = W / E
-    g = W / (E + A) if A is not None else None
+    g = W / (E + A + (O or 0.0)) if A is not None else None
     state = ("self-covering" if c <= 1 else
              None if g is None else "held up by anchors" if g <= 1 else "short beyond its anchors")
-    gap = W - E
+    gap = W - E - (O or 0.0)
     share = (A / gap) if (A is not None and gap > 0) else None
     by_source = {s: parts[s] / gap for s in SOURCES} if (parts is not None and gap > 0) else None
-    return {"fy": fy, "W": W, "E": E, "N": N, "A": A, "anchors": parts, "c": c, "g": g, "state": state,
+    return {"fy": fy, "W": W, "E": E, "N": N, "A": A, "O": O, "anchors": parts, "c": c, "g": g, "state": state,
             "anchored share": share, "anchored share by source": by_source, "flags": flags, "valid": True}
 
 
@@ -355,6 +374,7 @@ def main() -> None:
             totals[k]["colleges"] += 1
             totals[k]["W"] += r["W"]
             totals[k]["E"] += r["E"]
+            totals[k]["O"] += r["O"] or 0.0
             if r["anchors"] is not None:
                 for s in SOURCES:
                     totals[k][s] += r["anchors"][s]
@@ -457,23 +477,23 @@ def main() -> None:
     measured = [c["unitid"] for c in closures] + (sb if len(sb) == 1 else []) + ph
     with open(OUT_DIR / "closures series.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["unitid", "fiscal year", "W total expenses", "E net tuition and auxiliary sales", "N FTE", "A anchors", "c", "g",
+        w.writerow(["unitid", "fiscal year", "W total expenses", "E net tuition and auxiliary sales", "N FTE", "A anchors", "O other operating income", "c", "g",
                     "state", "anchored share"] + [f"share: {s}" for s in SOURCES] + ["flags"])
         for u in measured:
             for r in series_all.get(u, []):
                 if not r["valid"]:
                     continue
                 bs = r["anchored share by source"] or {}
-                w.writerow([u, r["fy"], r["W"], r["E"], r["N"], r["A"], r["c"], r["g"], r["state"] or "",
+                w.writerow([u, r["fy"], r["W"], r["E"], r["N"], r["A"], r["O"], r["c"], r["g"], r["state"] or "",
                             r["anchored share"] if r["anchored share"] is not None else ""]
                            + [bs.get(s, "") for s in SOURCES] + ["; ".join(r["flags"])])
 
     with open(OUT_DIR / "strain by source, sector totals.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        cols = ["colleges", "W", "E"] + list(SOURCES) + ["self-covering", "held up by anchors", "short beyond its anchors"]
-        w.writerow(["sector", "fiscal year"] + cols + ["gap W - E"] + [f"share of gap: {s}" for s in SOURCES])
+        cols = ["colleges", "W", "E", "O"] + list(SOURCES) + ["self-covering", "held up by anchors", "short beyond its anchors"]
+        w.writerow(["sector", "fiscal year"] + cols + ["gap W - E - O"] + [f"share of gap: {s}" for s in SOURCES])
         for (sec, fy), t in sorted(totals.items()):
-            gap = t["W"] - t["E"]
+            gap = t["W"] - t["E"] - t["O"]
             w.writerow([sec, fy] + [int(t.get(c, 0)) if c in ("colleges", "self-covering", "held up by anchors",
                         "short beyond its anchors") else t.get(c, 0) for c in cols] + [gap]
                        + [(t[s] / gap if gap > 0 and sec != "for-profit" else "") for s in SOURCES])
