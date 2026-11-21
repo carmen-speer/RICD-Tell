@@ -1,0 +1,60 @@
+name: item 15c - anchor efficiency
+
+# Manual-only. Runs "src/anchor efficiency.py" under "anchor efficiency
+# protocol.md": the frozen item-15 rule on every public and private
+# nonprofit college, fiscal 2005-2024; overleverage classes, episodes and
+# what anchors buy, strain by source, and the edge-case lists from the v3
+# test. Commits data/anchor efficiency/.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: anchor-efficiency
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1
+
+      - name: Measure overleverage, anchor efficiency, strain and edge cases
+        run: |
+          cd src
+          python "anchor efficiency.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/anchor efficiency/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 15c: overleverage, anchor efficiency, strain and edge cases (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
