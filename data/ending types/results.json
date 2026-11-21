@@ -1,6 +1,6 @@
 {
  "note": "Item 15, exploratory (outcomes known), under ending types protocol.md. Rule frozen for the retest.",
- "written at (UTC)": "2026-11-21T00:52:46.116007+00:00",
+ "written at (UTC)": "2026-11-21T02:53:11.663326+00:00",
  "settings": {
   "fiscal years": [
    2005,
@@ -217,29 +217,29 @@
  "documented closures classified": 1184,
  "types by measure and sector": {
   "check: for-profit": {
-   "drift-type": 232,
-   "too short to classify": 360,
-   "no rise over the window": 319,
-   "shock-type": 34,
+   "drift-type": 223,
+   "too short to classify": 361,
+   "no rise over the window": 330,
+   "shock-type": 31,
    "mixed": 2
   },
   "check: for-profit (group)": {
-   "past c = 1 at the start; window to the end": 539,
-   "crossed": 239,
-   "closed without crossing": 115,
+   "past c = 1 at the start; window to the end": 523,
+   "crossed": 241,
+   "closed without crossing": 129,
    "no year with data": 54
   },
   "check: private nonprofit": {
-   "no rise over the window": 44,
+   "no rise over the window": 43,
    "drift-type": 96,
-   "too short to classify": 75,
+   "too short to classify": 76,
    "shock-type": 14
   },
   "check: private nonprofit (group)": {
-   "past c = 1 at the start; window to the end": 157,
+   "past c = 1 at the start; window to the end": 152,
    "no year with data": 16,
-   "crossed": 47,
-   "closed without crossing": 9
+   "crossed": 50,
+   "closed without crossing": 11
   },
   "check: public": {
    "no rise over the window": 3,
@@ -251,41 +251,41 @@
    "no year with data": 1
   },
   "primary: for-profit": {
-   "not classified": 539,
-   "too short to classify": 223,
-   "no rise over the window": 26,
-   "drift-type": 148,
+   "not classified": 523,
+   "too short to classify": 239,
+   "no rise over the window": 29,
+   "drift-type": 145,
    "shock-type": 11
   },
   "primary: for-profit (group)": {
-   "past the crossing at the start": 539,
-   "crossed": 239,
-   "closed without crossing": 115,
+   "past the crossing at the start": 523,
+   "crossed": 241,
+   "closed without crossing": 129,
    "no year with data": 54
   },
   "primary: private nonprofit": {
-   "not classified": 69,
-   "too short to classify": 96,
-   "drift-type": 55,
-   "no rise over the window": 3,
-   "shock-type": 6
+   "not classified": 53,
+   "too short to classify": 91,
+   "drift-type": 69,
+   "no rise over the window": 4,
+   "shock-type": 12
   },
   "primary: private nonprofit (group)": {
-   "past the crossing at the start": 69,
-   "crossed": 122,
-   "closed without crossing": 22,
+   "past the crossing at the start": 53,
+   "crossed": 128,
+   "closed without crossing": 32,
    "no year with data": 16
   },
   "primary: public": {
-   "not classified": 4,
-   "too short to classify": 2,
+   "too short to classify": 5,
+   "not classified": 1,
    "drift-type": 2
   },
   "primary: public (group)": {
-   "past the crossing at the start": 4,
+   "crossed": 4,
    "no year with data": 1,
-   "closed without crossing": 2,
-   "crossed": 1
+   "past the crossing at the start": 1,
+   "closed without crossing": 2
   }
  },
  "named cases": {
@@ -318,11 +318,11 @@
      2014,
      2015
     ],
-    "total change in log": 0.20980164383730282,
-    "drift part": 0.003376840262966474,
+    "total change in log": 0.21706960655401253,
+    "drift part": -0.002873046605767815,
     "jump part by year": {
-     "2007": -0.016630421362141656,
-     "2015": 0.223055224936478
+     "2007": -0.015870806349751354,
+     "2015": 0.2358134595095317
     },
     "gap part": 0.0,
     "jump tests": {
@@ -339,9 +339,9 @@
      }
     },
     "shares of the whole change": {
-     "drift": 0.016095394684253042,
+     "drift": -0.01323560055862969,
      "gap": 0.0,
-     "largest single jump": 1.0631719602228336
+     "largest single jump": 1.0863495044427383
     },
     "type": "shock-type",
     "crossing": 2005,
@@ -497,8 +497,8 @@
      2023,
      2024
     ],
-    "total change in log": 0.3491312676634617,
-    "drift part": 0.3491312676634616,
+    "total change in log": 0.3229800162878387,
+    "drift part": 0.3229800162878388,
     "jump part by year": {},
     "gap part": 0.0,
     "jump tests": {
@@ -512,7 +512,7 @@
      }
     },
     "shares of the whole change": {
-     "drift": 0.9999999999999997,
+     "drift": 1.0000000000000004,
      "gap": 0.0,
      "largest single jump": 0.0
     },
