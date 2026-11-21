@@ -40,6 +40,7 @@ Outputs, in data/anchor and voice/:
   sector medians.csv     median anchored share by sector and fiscal year (c > 1)
   case series.csv        every fiscal year of every matched case (for P3, report-only)
   name matching.csv      every case name, its match status and unit ID(s)
+  name candidates.csv    for each unresolved name, header-file units sharing its distinctive words
   results.json           counts, settings, files read
 
 Usage (GitHub Actions only, via anchor_and_voice.yml):
@@ -156,12 +157,41 @@ def read_cases() -> list[dict]:
     return cases
 
 
-def match_names(cases: list[dict], frame: dict) -> None:
+STOP = {"college", "university", "of", "and", "institute", "school", "state", "community", "st", "at",
+        "county", "in", "for", "the", "center", "campus"}
+CROSSWALK = "name crosswalk.csv"
+
+
+def read_crosswalk() -> dict:
+    """Hand resolutions of names the automatic match could not settle (unit ID, or a reason there is none)."""
+    path = DATA / CROSSWALK
+    out = {}
+    if path.exists():
+        with open(path, encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                out[(r["source"], r["name"])] = r
+    return out
+
+
+def match_names(cases: list[dict], frame: dict) -> list[dict]:
     index = defaultdict(set)
+    names_of = defaultdict(set)
     for u, rows in frame.items():
         for r in rows.values():
-            index[norm(r.get("INSTNM", ""))].add(u)
+            n = r.get("INSTNM", "")
+            index[norm(n)].add(u)
+            names_of[u].add(n)
+    cross = read_crosswalk()
+    candidates = []
     for c in cases:
+        x = cross.get((c["source"], c["name"]))
+        if x:
+            ids = [i for i in (x["unitid"] or "").split(";") if i]
+            c["match"] = "resolved by hand (name crosswalk.csv)" + (f": {x['note']}" if x.get("note") else "")
+            c["unitids"] = ids if all(i in frame for i in ids) else []
+            if ids and not c["unitids"]:
+                c["match"] += "; unit ID not in the frame"
+            continue
         if program_not_institution(c["name"]):
             c["match"], c["unitids"] = "a campus or program, not a separate institution in IPEDS", []
             continue
@@ -172,10 +202,23 @@ def match_names(cases: list[dict], frame: dict) -> None:
             hits = in_state or hits
         if len(hits) == 1:
             c["match"], c["unitids"] = "matched by name" + (" and state" if st else ""), sorted(hits)
-        elif hits:
+            continue
+        if hits:
             c["match"], c["unitids"] = "ambiguous: more than one unit ID; to be resolved by hand", sorted(hits)
         else:
             c["match"], c["unitids"] = "not found by name; to be resolved by hand", []
+        # candidates for the hand resolution: units whose name holds every distinctive word, else any
+        words = [w for w in norm(c["name"]).split() if w not in STOP and len(w) > 2]
+        pool = [u for u, ns in names_of.items() if words and any(all(w in norm(n).split() for w in words) for n in ns)]
+        if not pool:
+            pool = [u for u, ns in names_of.items() if any(w in norm(n).split() for n in ns for w in words)]
+        for u in sorted(pool)[:40]:
+            yrs = sorted(frame[u])
+            stabbr = sorted({r.get("STABBR", "") for r in frame[u].values()})
+            candidates.append({"case": c["name"], "case state or region": c["state"], "source": c["source"],
+                               "candidate unitid": u, "candidate names": " | ".join(sorted(names_of[u])),
+                               "state": ";".join(stabbr), "first header year": yrs[0], "last header year": yrs[-1]})
+    return candidates
 
 
 # ------------------------------------------------------------------ main
@@ -241,7 +284,7 @@ def main() -> None:
 
     # cases
     cases = read_cases()
-    match_names(cases, frame)
+    candidates = match_names(cases, frame)
     case_ids = set()
     for c in cases:
         ann = c["announced"]
@@ -366,6 +409,12 @@ def main() -> None:
             names = sorted({frame[u][y].get("INSTNM", "") for u in c["unitids"] for y in frame[u]})
             w.writerow([c["name"], c["state"], c["source"], c["match"], ";".join(c["unitids"]), " | ".join(names)])
 
+    with open(DATA / "name candidates.csv", "w", newline="", encoding="utf-8") as f:
+        cc = ["case", "case state or region", "source", "candidate unitid", "candidate names", "state",
+              "first header year", "last header year"]
+        w = csv.DictWriter(f, fieldnames=cc)
+        w.writeheader()
+        w.writerows(candidates)
     tally = Counter(c["match"].split(":")[0] for c in cases)
     results = {
         "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 3). Measures only: "
