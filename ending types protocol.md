@@ -9,7 +9,7 @@ Was a college's approach to collapse drift-type (a slow slide) or shock-type (a 
 ## 2. Measures, for each college and fiscal year t
 
 - **Total work** W(t): total expenses (IPEDS finance).
-- **Exchange** E_exch(t): net tuition and fees only, what students actually pay.
+- **Exchange** E_exch(t): what students actually pay: net tuition and fees plus sales and services of auxiliary enterprises (room, board and other services students buy), each net of allowances (Amendment 1).
 - **Exchange base** N(t): 12-month full-time-equivalent enrollment. **Per-partner exchange** ē(t) = E_exch(t) / N(t).
 - **Coverage** c(t) = W(t) / E_exch(t).
 - **Anchor capacity** A(t) (Spine Definition 10.3a.7), in dollars of outside support per year:
@@ -53,6 +53,7 @@ Checked against the data dictionaries for every year (data/ending types/field ch
 | Measure | Public (F1A) | Private nonprofit (F2) | For-profit (F3) |
 |---|---|---|---|
 | Net tuition and fees, E_exch | F1B01 (after discounts and allowances) | F2D01 (net of allowances) | F3D01 |
+| Sales and services of auxiliary enterprises, added to E_exch (Amendment 1) | F1B05 | F2D12 | F3D07 |
 | Total expenses, W | F1D02 | F2B02 | F3B02 (F3D09 total revenues only where F3B02 is missing, as in src/v3_anchors.py, flagged) |
 | Appropriations | F1B10 + F1B11 + F1B12 | F2D02 + F2D03 + F2D04 | not used (anchor not observable) |
 | Gifts | F1B16 | F2D08A + F2D09 from fiscal 2008; fiscal 2005 to 2007, F2D08 (gifts, grants and contracts combined) + F2D09, every value flagged as including grants and contracts, and any crossing it could affect flagged | not used |
@@ -69,3 +70,11 @@ Script src/ending types.py; workflow ending_types.yml ("item 15 - measure ending
 ## 9. Afterwards (not part of this protocol)
 
 The anchor-and-voice prediction (to-do item 15, November 18) needs case-level information (whether a rescue or reorganization followed each ending) that IPEDS does not hold; it is done afterwards as case studies, using the types fixed here.
+
+## Amendment 1 (November 20, 2026, after the first run): exchange includes auxiliary income; two reporting labels
+
+**What the first run showed.** Total expenses W include what a college spends on housing, dining and its other auxiliary enterprises, but E_exch counted only tuition and fees, so the income students pay for those services (room and board above all) appeared nowhere. Most residential colleges therefore read as short beyond their anchors from fiscal 2005 on: Sweet Briar's g was 1.56 in 2005, with about $12 million of a $34 million budget looking uncovered, and 148 of 229 private nonprofit closures read as past the crossing at the start, so the primary measure could classify only 30 of them. The third state was measuring the missing auxiliary income, not collapse risk.
+
+**The change.** E_exch now adds sales and services of auxiliary enterprises (F1B05, F2D12, F3D07; present on every form in every year, fiscal 2005 to 2024, per data/ending types/field check.json), since students pay it too. Total expenses are unchanged. Everything else is unchanged, and the first run's outputs are kept in the history (commit e7f3858) as the record of the error.
+
+**Reporting labels, fixed now (they occurred in the first run and are not new rules).** **Past the crossing at the start:** a college already in the crossing state in its first year with data has no primary window; the check measure reads it from that year to its closure. **No rise over the window:** where the ratio fell or held flat over the window, drift and jump shares are undefined and no type is given. **No year with data:** a closure with no finance year that can be read is reported as such.
