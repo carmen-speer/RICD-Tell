@@ -1,0 +1,59 @@
+name: item 15 diagnostic - public shortfall with and without depreciation
+
+# Manual-only. Runs "src/ending types depreciation test.py": recomputes
+# gap coverage for public and private nonprofit colleges in fiscal 2005,
+# 2010, 2015, 2020 and 2024 with and without depreciation in total
+# expenses, to test whether the public colleges' apparent shortfall is an
+# accounting effect. Exploratory; changes no rule.
+# Commits data/ending types/depreciation test.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ending-types-depreciation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+
+      - name: Run the depreciation test
+        run: |
+          cd src
+          python "ending types depreciation test.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/ending types/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 15 diagnostic: public shortfall with and without depreciation (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
