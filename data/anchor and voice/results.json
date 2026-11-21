@@ -1,6 +1,6 @@
 {
- "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 5). Measures only: no outcome or voice record is read here.",
- "written at (UTC)": "2026-11-21T15:27:36.870671+00:00",
+ "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 6). Measures only: no outcome or voice record is read here. Amendment 6: announcement corrections applied; matched closures kept as drawn (read from matched closures.csv, not redrawn).",
+ "written at (UTC)": "2026-11-21T23:37:15.838574+00:00",
  "settings": {
   "seed": 20261121,
   "matched closures per case": 2,
@@ -23,6 +23,7 @@
  },
  "eligible for the matched draw": 50,
  "matched closures drawn": 58,
+ "matched closures kept as drawn (Amendment 6)": true,
  "closure pool (public and nonprofit, classified, not a case)": 58,
  "converted closures left out of the pool (Amendment 5)": 57,
  "cases by ending type (measure used)": {

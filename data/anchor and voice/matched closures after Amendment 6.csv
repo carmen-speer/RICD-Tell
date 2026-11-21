@@ -1,0 +1,59 @@
+case,case unitid,closure,closure unitid,closure onset,closure FTE at onset,case onset at the draw,case onset now,case FTE at the draw,case FTE now,log FTE distance at the draw,log FTE distance now,onset year distance at the draw,onset year distance now,case measure now,case still eligible for a draw
+Albany College of Pharmacy and Health Sciences,188526,Green Mountain College,230898,2018,566.0,2024,2024,589.0,589.0,0.0398,0.0398,6,6,primary,yes
+Albany College of Pharmacy and Health Sciences,188526,Clearwater Christian College,133085,2012,547.0,2024,2024,589.0,589.0,0.074,0.074,12,12,primary,yes
+Ancilla College,150048,Judson College,101541,2007,282.0,2020,2020,315.0,315.0,0.1107,0.1107,13,13,check,yes
+Ancilla College,150048,Finlandia University,172440,2006,271.0,2020,2020,315.0,315.0,0.1505,0.1505,14,14,check,yes
+Bainbridge State College,139010,East San Gabriel Valley Regional Occupational Program,413802,2010,775.0,2016,2016,1699.0,1699.0,0.7849,0.7849,6,6,primary,yes
+Bennett College,197993,Clarks Summit University,211024,2010,757.0,2010,2010,731.0,731.0,0.0349,0.0349,0,0,primary,yes
+Bennett College,197993,Presentation College,219295,2018,698.0,2010,2010,731.0,731.0,0.0462,0.0462,8,8,primary,yes
+Birmingham-Southern College,100937,Concordia University-Portland,208488,2009,1529.0,2022,2022,1095.0,1095.0,0.3339,0.3339,13,13,check,yes
+Birmingham-Southern College,100937,John F. Kennedy University,116712,2007,745.0,2022,2022,1095.0,1095.0,0.3851,0.3851,15,15,check,yes
+California College of the Arts,110370,Concordia College,190248,2019,1811.0,2023,2023,1479.0,1479.0,0.2025,0.2025,4,4,primary,yes
+California College of the Arts,110370,Saint Josephs College,152363,2013,1149.0,2023,2023,1479.0,1479.0,0.2525,0.2525,10,10,primary,yes
+Compass College of Film & Media,459417,American Conservatory Theater,109086,2019,85.0,2022,2022,70.0,70.0,0.1942,0.1942,3,3,primary,yes
+Compass College of Film & Media,459417,Institute of Design and Construction,191764,2011,87.0,2022,2022,70.0,70.0,0.2174,0.2174,11,11,primary,yes
+Cornish College of the Arts,235024,Holy Names University,115728,2018,769.0,2014,2014,790.0,790.0,0.0269,0.0269,4,4,primary,yes
+Cornish College of the Arts,235024,Alderson Broaddus University,237118,2010,858.0,2014,2014,790.0,790.0,0.0826,0.0826,4,4,primary,yes
+Cumberland County College,184205,Eastern Gateway Community College,203331,2006,1223.0,2006,2006,2191.0,2191.0,0.5831,0.5831,0,0,check,yes
+Dowling College,190770,Cardinal Stritch University,238430,2008,4227.0,2007,2007,4097.0,4097.0,0.0312,0.0312,1,1,check,yes
+Dowling College,190770,Marygrove College,170842,2006,2376.0,2007,2007,4097.0,4097.0,0.5448,0.5448,1,1,check,yes
+Episcopal Divinity School,165705,Andover Newton Theological School,164474,2008,42.0,2006,2006,24.0,24.0,0.5596,0.5596,2,2,check,yes
+Episcopal Divinity School,165705,Bangor Theological Seminary,160968,2009,63.0,2006,2006,24.0,24.0,0.9651,0.9651,3,3,check,yes
+Hampshire College,166018,AIB College of Business,152822,2014,1086.0,2018,2018,1226.0,1226.0,0.1213,0.1213,4,4,primary,yes
+Hampshire College,166018,Bramson ORT College,189422,2013,1070.0,2018,2018,1226.0,1226.0,0.1361,0.1361,5,5,primary,yes
+Iowa Wesleyan University,153621,California College San Diego,485263,2020,545.0,2013,2013,595.0,595.0,0.0878,0.0878,7,7,primary,yes
+Iowa Wesleyan University,153621,Goddard College,230889,2013,651.0,2013,2013,595.0,595.0,0.0899,0.0899,0,0,primary,yes
+John Wesley College,198747,Missio Theological Seminary,211130,2008,74.0,2008,2008,85.0,85.0,0.1386,0.1386,0,0,check,yes
+John Wesley College,198747,Trinity College of Puerto Rico,431929,2021,69.0,2008,2008,85.0,85.0,0.2085,0.2085,13,13,check,yes
+Keystone College,213303,Cabrini University,211352,2014,1996.0,2019,2019,1502.0,1502.0,0.2843,0.2843,5,5,primary,yes
+Keystone College,213303,Alliance University,194161,2016,2054.0,2019,2019,1502.0,1502.0,0.313,0.313,3,3,primary,yes
+Marian University,239080,Medaille University,192925,2014,2165.0,2013,2013,2045.0,2045.0,0.057,0.057,1,1,primary,yes
+Marian University,239080,The College of Saint Rose,195234,2019,3518.0,2013,2013,2045.0,2045.0,0.5425,0.5425,6,6,primary,yes
+Marlboro College,230940,Kilian Community College,219055,2013,227.0,2015,2015,208.0,208.0,0.0874,0.0874,2,2,primary,yes
+Marlboro College,230940,Burlington College,230825,2012,173.0,2015,2015,208.0,208.0,0.1842,0.1842,3,3,primary,yes
+Marymount Manhattan College,192864,Marylhurst University,209108,2013,1053.0,2023,2023,1491.0,1491.0,0.3478,0.3478,10,10,primary,yes
+Marymount Manhattan College,192864,Hodges University,367884,2019,1015.0,2023,2023,1491.0,1491.0,0.3846,0.3846,4,4,primary,yes
+Mills College,118888,Cleveland Chiropractic College of Los Angeles,112312,2010,686.0,2010,2010,1526.0,1526.0,0.7995,0.7995,0,0,primary,yes
+Mills College,118888,Cincinnati Christian University,201858,2015,680.0,2010,2010,1526.0,1526.0,0.8083,0.8083,5,5,primary,yes
+Mount Mercy University,154013,Saint Catharine College,157632,2015,666.0,2024,2023,1291.0,1370.0,0.6619,0.7213,9,8,primary,yes
+Mount Mercy University,154013,Southern Vermont College,231086,2015,503.0,2024,2023,1291.0,1370.0,0.9426,1.002,9,8,primary,yes
+Multnomah University,209287,American Academy of Dramatic Arts-Los Angeles,108852,2006,555.0,2009,2009,768.0,768.0,0.3248,0.3248,3,3,check,yes
+Multnomah University,209287,Jones College-Jacksonville,135063,2006,544.0,2009,2009,768.0,768.0,0.3448,0.3448,3,3,check,yes
+Northland College,239512,Ohio Valley University,237640,2009,501.0,2009,2009,669.0,669.0,0.2892,0.2892,0,0,check,yes
+Northland College,239512,Holy Family College,239743,2008,486.0,2009,2009,669.0,669.0,0.3196,0.3196,1,1,check,yes
+Oregon College of Art and Craft,209533,Sanford College of Nursing,200244,2013,122.0,2011,2011,114.0,114.0,0.0678,0.0678,2,2,primary,yes
+Oregon College of Art and Craft,209533,Lincoln Christian University,146667,2023,145.0,2011,2011,114.0,114.0,0.2405,0.2405,12,12,primary,yes
+Pacific Northwest College of Art,209603,Oregon College of Oriental Medicine,369659,2013,400.0,2016,2016,491.0,491.0,0.205,0.205,3,3,primary,yes
+Pacific Northwest College of Art,209603,College of St Joseph,231077,2015,274.0,2016,2016,491.0,491.0,0.5833,0.5833,1,1,primary,yes
+Peirce College,214883,Delaware College of Art and Design,432524,2016,167.0,2011,2011,1387.0,1387.0,2.1169,2.1169,5,5,primary,yes
+Peirce College,214883,Evangelical Theological Seminary,212443,2013,89.0,2011,2011,1387.0,1387.0,2.7463,2.7463,2,2,primary,yes
+Phoenix Seminary,381459,Ohio Mid-Western College,206002,2010,49.0,2012,2012,120.0,120.0,0.8957,0.8957,2,2,primary,yes
+Phoenix Seminary,381459,Birthingway College of Midwifery,442949,2014,46.0,2012,2012,120.0,120.0,0.9589,0.9589,2,2,primary,yes
+Presidio Graduate School,486433,Trinity Lutheran College,235769,2007,138.0,2022,2022,114.0,114.0,0.1911,0.1911,15,15,check,yes
+Presidio Graduate School,486433,College of Visual Arts,174932,2006,173.0,2022,2022,114.0,114.0,0.4171,0.4171,16,16,check,yes
+Queens University of Charlotte,199412,California Christian College,110918,2013,22.0,2023,2023,1760.0,1760.0,4.382,4.382,10,10,primary,yes
+Rosemont College,215691,Springfield College in Illinois,149019,2007,457.0,2024,2024,687.0,687.0,0.4077,0.4077,17,17,check,yes
+Rosemont College,215691,Phillips Graduate University,110307,2007,371.0,2024,2024,687.0,687.0,0.6161,0.6161,17,17,check,yes
+San Francisco Art Institute,122454,Boulder College of Massage Therapy,126410,2006,242.0,2006,2006,596.0,596.0,0.9013,0.9013,0,0,check,yes
+San Francisco Art Institute,122454,Marian Court College,166601,2006,203.0,2006,2006,596.0,596.0,1.077,1.077,0,0,check,yes
+School of the Museum of Fine Arts,166984,Martin University,151810,2024,178.0,2015,2015,592.0,592.0,1.2017,1.2017,9,9,check,yes
