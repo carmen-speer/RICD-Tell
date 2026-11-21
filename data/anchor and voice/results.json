@@ -1,0 +1,230 @@
+{
+ "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 3). Measures only: no outcome or voice record is read here.",
+ "written at (UTC)": "2026-11-21T12:23:30.423452+00:00",
+ "settings": {
+  "seed": 20261121,
+  "matched closures per case": 2,
+  "distress check years": 3,
+  "ending-type rule": "ending types.py, unchanged"
+ },
+ "cases": 86,
+ "name matching": {
+  "matched by name": 24,
+  "not found by name; to be resolved by hand": 16,
+  "ambiguous": 3,
+  "matched by name and state": 43
+ },
+ "cases by group and distress check": {
+  "merger or acquisition | fails: not a case": 1,
+  "merger or acquisition | n/a": 19,
+  "merger or acquisition | no year with data": 3,
+  "merger or acquisition | passes": 53,
+  "reversed closure or near-closure | n/a": 10
+ },
+ "eligible for the matched draw": 45,
+ "matched closures drawn": 71,
+ "closure pool (public and nonprofit, classified, not a case)": 93,
+ "cases by ending type (measure used)": {
+  "not classified": 22,
+  "shock-type": 10,
+  "drift-type": 35
+ },
+ "cases by anchoring at onset": {
+  "unanchored": 55,
+  "anchored": 6,
+  "not measured": 19,
+  "unclassified on anchoring": 6
+ },
+ "header files used": {
+  "HD2005": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2005.zip",
+   "zip sha256": "b6c9c0e4634f4404d0670c907e22964ea96932eb2cebbc2efb0759fe055ecbb7",
+   "institutions read": 7018
+  },
+  "HD2006": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2006.zip",
+   "zip sha256": "2fe089ae93b3df0085e31ee76471db2cedbc8d2d1d08a6497f460d5cec68cab6",
+   "institutions read": 7052
+  },
+  "HD2007": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2007.zip",
+   "zip sha256": "ee66cd0e6676b63dd051d4469d93ddf9492b1d6a2983105a061d2ddc0ac0717d",
+   "institutions read": 7052
+  },
+  "HD2008": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2008.zip",
+   "zip sha256": "eb760d8fd5fa8591e2e4149af1c1954e52ba9a8aacbb5327d066511ff8d7d25b",
+   "institutions read": 7126
+  },
+  "HD2009": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2009.zip",
+   "zip sha256": "6639ed79d93a4313e0be5830d8250709924811f8dec3fb664a9dea56f7dc1774",
+   "institutions read": 7316
+  },
+  "HD2010": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2010.zip",
+   "zip sha256": "72874b792f3c17c143002261af505340742f361645814f120216bda0ccaddb9c",
+   "institutions read": 7503
+  },
+  "HD2011": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2011.zip",
+   "zip sha256": "cc25e07c20380b1254f3a2d000d118cb1ec920d989a3071058c21ac8732548b6",
+   "institutions read": 7643
+  },
+  "HD2012": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2012.zip",
+   "zip sha256": "8d806d818194ccefdc594204025d4c17610338770a0ff130d28f251eec05691e",
+   "institutions read": 7735
+  },
+  "HD2013": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2013.zip",
+   "zip sha256": "d9690d6c37c1616f5c7e9f5ea845a9a9a72ea06665db2626bfb07c5c5dff809f",
+   "institutions read": 7764
+  },
+  "HD2014": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  "HD2015": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  "HD2016": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  "HD2017": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  "HD2018": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  "HD2019": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  "HD2020": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  "HD2021": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  "HD2022": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  "HD2023": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  "HD2024": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  "HD2025": {
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ },
+ "header files not served": [
+  "HD2026"
+ ],
+ "finance and enrollment files": {
+  "F0405_F1A": 1962,
+  "F0405_F2": 1902,
+  "F0405_F3": 2504,
+  "F0506_F1A": 1971,
+  "F0506_F2": 1896,
+  "F0506_F3": 2577,
+  "F0607_F1A": 1971,
+  "F0607_F2": 1863,
+  "F0607_F3": 2622,
+  "F0708_F1A": 1960,
+  "F0708_F2": 1861,
+  "F0708_F3": 2718,
+  "F0809_F1A": 1973,
+  "F0809_F2": 1871,
+  "F0809_F3": 2798,
+  "F0910_F1A": 2012,
+  "F0910_F2": 1862,
+  "F0910_F3": 3021,
+  "F1011_F1A": 2018,
+  "F1011_F2": 1888,
+  "F1011_F3": 3184,
+  "F1112_F1A": 2004,
+  "F1112_F2": 1878,
+  "F1112_F3": 3246,
+  "F1213_F1A": 1995,
+  "F1213_F2": 1890,
+  "F1213_F3": 3214,
+  "F1314_F1A": 1988,
+  "F1314_F2": 1883,
+  "F1314_F3": 3176,
+  "F1415_F1A": 1986,
+  "F1415_F2": 1922,
+  "F1415_F3": 3020,
+  "F1516_F1A": 1986,
+  "F1516_F2": 1888,
+  "F1516_F3": 2782,
+  "F1617_F1A": 1978,
+  "F1617_F2": 1884,
+  "F1617_F3": 2657,
+  "F1718_F1A": 1964,
+  "F1718_F2": 1849,
+  "F1718_F3": 2379,
+  "F1819_F1A": 1961,
+  "F1819_F2": 1836,
+  "F1819_F3": 2272,
+  "F1920_F1A": 1949,
+  "F1920_F2": 1819,
+  "F1920_F3": 2244,
+  "F2021_F1A": 1946,
+  "F2021_F2": 1805,
+  "F2021_F3": 2173,
+  "F2122_F1A": 1936,
+  "F2122_F2": 1782,
+  "F2122_F3": 2120,
+  "F2223_F1A": 1916,
+  "F2223_F2": 1766,
+  "F2223_F3": 2090,
+  "F2324_F1A": 1911,
+  "F2324_F2": 1750,
+  "F2324_F3": 2046,
+  "EFIA2005": 6673,
+  "EFIA2006": 6715,
+  "EFIA2007": 6720,
+  "EFIA2008": 6868,
+  "EFIA2009": 7000,
+  "EFIA2010": 7246,
+  "EFIA2011": 7479,
+  "EFIA2012": 7544,
+  "EFIA2013": 7514,
+  "EFIA2014": 7429,
+  "EFIA2015": 7322,
+  "EFIA2016": 6951,
+  "EFIA2017": 6785,
+  "EFIA2018": 6562,
+  "EFIA2019": 6272,
+  "EFIA2020": 6169,
+  "EFIA2021": 6086,
+  "EFIA2022": 6036,
+  "EFIA2023": 5959,
+  "EFIA2024": 5861
+ }
+}

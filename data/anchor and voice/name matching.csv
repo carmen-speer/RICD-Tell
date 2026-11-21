@@ -1,0 +1,87 @@
+name,state or region,source,match,unitids,names in the header files
+Alabama Southern Community College,South,reprint 2018-11-20,matched by name,101949,Alabama Southern Community College
+Armstrong State University,South,reprint 2018-11-20,matched by name,138789,Armstrong Atlantic State University | Armstrong State University
+Bainbridge State College,South,reprint 2018-11-20,matched by name,139010,Bainbridge College | Bainbridge State College
+Bridgeport Hospital School of Nursing,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Cumberland County College,Northeast,reprint 2018-11-20,matched by name,184205,Cumberland County College | Rowan College South Jersey Cumberland Campus | Rowan College of South Jersey-Cumberland Campus
+Episcopal Divinity School,Northeast,reprint 2018-11-20,matched by name,165705,Episcopal Divinity School
+Faulkner State Community College,South,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Georgia Perimeter College,South,reprint 2018-11-20,matched by name,244437,Georgia Perimeter College | Georgia State University-Perimeter College
+Jefferson Davis Community College,South,reprint 2018-11-20,matched by name,101499,Jefferson Davis Community College
+John Wesley College,South,reprint 2018-11-20,matched by name,198747,John Wesley College | John Wesley University | Laurel University
+Johnson State College,Northeast,reprint 2018-11-20,matched by name,230913,Johnson State College | Northern Vermont University
+Lyndon State College,Northeast,reprint 2018-11-20,matched by name,230931,Lyndon State College
+Mercy College of Ohio,Midwest,reprint 2018-11-20,matched by name,203960,Mercy College of Northwest Ohio | Mercy College of Ohio
+Nebraska Christian College,Midwest,reprint 2018-11-20,matched by name,181376,Nebraska Christian College | Nebraska Christian College of Hope International University
+New Hampshire Institute of Art,Northeast,reprint 2018-11-20,matched by name,430810,New Hampshire Institute of Art
+O'More College of Design,South,reprint 2018-11-20,matched by name,221254,O'More College of Design
+Oregon College of Art and Craft,West,reprint 2018-11-20,matched by name,209533,Oregon College of Art and Craft
+Philadelphia University,Northeast,reprint 2018-11-20,matched by name,215099,Jefferson (Philadelphia University + Thomas Jefferson University) | Philadelphia University
+Rowan College at Gloucester County,Northeast,reprint 2018-11-20,matched by name,184791,Gloucester County College | Rowan College at Gloucester County | Rowan College of South Jersey Gloucester Campus | Rowan College of South Jersey-Gloucester Campus
+Salt Institute of Documentary Studies,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
+School of the Museum of Fine Arts,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Shimer College,Midwest,reprint 2018-11-20,matched by name,148849,Shimer College
+Southeastern Bible College,South,reprint 2018-11-20,matched by name,102261,Southeastern Bible College
+St. Vincent's College,Northeast,reprint 2018-11-20,matched by name,130448,St Vincent's College
+The Boston Conservatory,Northeast,reprint 2018-11-20,matched by name,164933,The Boston Conservatory
+Union Graduate College,Northeast,reprint 2018-11-20,matched by name,446932,Graduate College of Union University | Union Graduate College
+University of Wisconsin-Baraboo/Sauk County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Barron County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Fond du Lac,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Fox Valley,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Marathon County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Marshfield,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Richland,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Rock County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Washington County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Waukesha,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Wheelock College,Northeast,reprint 2018-11-20,matched by name,168290,Wheelock College
+Wichita Area Technical College,Midwest,reprint 2018-11-20,matched by name,156107,Wichita Area Technical College | Wichita State University-Campus of Applied Sciences and Technology
+Marian University,Wisconsin,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,151786;239080,Marian College | Marian College of Fond du Lac | Marian University | Marian University-Wisconsin
+Phoenix Seminary,Arizona,live 2026-11-21,matched by name and state,381459,Phoenix Seminary
+Queens University of Charlotte,North Carolina,live 2026-11-21,matched by name and state,199412,Queens University of Charlotte
+St. Luke's College,Iowa,live 2026-11-21,matched by name and state,154262,St Luke's College
+Keystone College,Pennsylvania,live 2026-11-21,matched by name and state,213303,Keystone College
+New Jersey City University,New Jersey,live 2026-11-21,matched by name and state,185129,New Jersey City University
+Albany College of Pharmacy and Health Sciences,New York,live 2026-11-21,matched by name and state,188526,Albany College of Pharmacy | Albany College of Pharmacy and Health Sciences
+East Georgia State College,Georgia,live 2026-11-21,matched by name and state,139621,East Georgia College | East Georgia State College
+Rosemont College,Pennsylvania,live 2026-11-21,matched by name and state,215691,Rosemont College
+Cornish College of the Arts,Washington,live 2026-11-21,matched by name and state,235024,Cornish College of the Arts
+California State University Maritime Academy,California,live 2026-11-21,matched by name and state,111188,Cal Poly Maritime Academy | California Maritime Academy | California State University Maritime Academy | The California Maritime Academy
+Ursuline College,Ohio,live 2026-11-21,matched by name and state,206349,Ursuline College
+Peirce College,Pennsylvania,live 2026-11-21,matched by name and state,214883,Peirce College
+Mount Mercy University,Iowa,live 2026-11-21,matched by name and state,154013,Mount Mercy College | Mount Mercy University
+Marymount Manhattan College,New York,live 2026-11-21,matched by name and state,192864,Marymount Manhattan College
+Cambridge College,Massachusetts,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,165167;410539,Anthem College-Denver | Cambridge College
+Multnomah University,Oregon,live 2026-11-21,matched by name and state,209287,Multnomah Bible College and Biblical Seminary | Multnomah University
+Maryland University of Integrative Health,Maryland,live 2026-11-21,matched by name and state,164085,Maryland University of Integrative Health | Tai Sophia Institute
+Compass College of Film & Media,Michigan,live 2026-11-21,matched by name and state,459417,Compass College of Cinematic Arts | Compass College of Film and Media | Compass Film Academy
+Salus University,Pennsylvania,live 2026-11-21,matched by name and state,214564,Pennsylvania College of Optometry | Salus University
+St. Augustine College,Illinois,live 2026-11-21,matched by name and state,148876,Saint Augustine College | St. Augustine College
+B. H. Carroll Theological Institute,Texas,live 2026-11-21,not found by name; to be resolved by hand,,
+Pennsylvania College of Health Sciences,Pennsylvania,live 2026-11-21,matched by name and state,442356,Lancaster General College of Nursing & Health Sciences | Pennsylvania College of Health Sciences | Saint Joseph's University - Lancaster
+Presidio Graduate School,California,live 2026-11-21,matched by name and state,486433,Presidio Graduate School
+Bloomfield College,New Jersey,live 2026-11-21,matched by name and state,183822,Bloomfield College | Bloomfield College of Montclair State University
+Indiana University-Purdue University Indianapolis,Indiana,live 2026-11-21,matched by name and state,151111,Indiana University-Indianapolis | Indiana University-Purdue University-Indianapolis
+Mills College,California,live 2026-11-21,matched by name and state,118888,Mills College | Mills College at Northeastern University | Northeastern University Oakland
+St. Louis Christian College,Missouri,live 2026-11-21,matched by name and state,179256,Saint Louis Christian College
+Sierra Nevada University,Nevada,live 2026-11-21,matched by name and state,182458,Sierra Nevada College | Sierra Nevada University
+University of the Sciences,Pennsylvania,live 2026-11-21,matched by name and state,215132,University of the Sciences | University of the Sciences in Philadelphia
+Pacific Northwest College of Art,Oregon,live 2026-11-21,matched by name and state,209603,Pacific Northwest College of Art
+Martin Methodist College,Tennessee,live 2026-11-21,matched by name and state,220701,Martin Methodist College | The University of Tennessee Southern
+Ancilla College,Indiana,live 2026-11-21,matched by name and state,150048,Ancilla College
+Marlboro College,Vermont,live 2026-11-21,matched by name and state,230940,Marlboro College
+Wesley College,Delaware,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,131098;176460,Wesley College
+Pine Manor College,Massachusetts,live 2026-11-21,matched by name and state,167455,Pine Manor College
+Robert Morris University Illinois,Illinois,live 2026-11-21,matched by name and state,148335,Robert Morris College | Robert Morris University Illinois
+Watkins College of Art,Tennessee,live 2026-11-21,not found by name; to be resolved by hand,,
+Sweet Briar College,Virginia,named case (protocol section 2),matched by name and state,233718,Sweet Briar College
+Dowling College,New York,general search,matched by name and state,190770,Dowling College
+Iowa Wesleyan University,Iowa,general search,matched by name and state,153621,Iowa Wesleyan College | Iowa Wesleyan University
+Bennett College,North Carolina,general search,matched by name and state,197993,Bennett College | Bennett College for Women
+Hampshire College,Massachusetts,general search,matched by name and state,166018,Hampshire College
+San Francisco Art Institute,California,general search,matched by name and state,122454,San Francisco Art Institute
+Birmingham-Southern College,Alabama,general search,matched by name and state,100937,Birmingham Southern College | Birmingham-Southern College
+Northland College,Wisconsin,Bryan Alexander (bryanalexander.org) and Inside Higher Ed,matched by name and state,239512,Northland College
+California College of the Arts,California,general search,matched by name and state,110370,California College of the Arts
+Saint Augustine's University,North Carolina,general search,matched by name and state,199582,Saint Augustine's University | Saint Augustines College
