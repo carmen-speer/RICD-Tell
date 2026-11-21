@@ -101,6 +101,11 @@ an original theory (RICD), with Tell as the instrument built to test it.
 Why: reviewers who are not told this evaluate the repository as a software
 product and list the original theory and single authorship as "friction
 points" (November 21, 2026), missing that testing the theory is the point.
+Describe RICD concretely, as a formal model of feedback divergence,
+resource debt and anchoring, with its equations, never with broad
+phrases such as "domain-independent theory". Why: broad descriptors made
+reviewers pattern-match it to a "grand theory of everything" and call the
+mathematics overhead without reading it (November 21, 2026).
 Do not give limitations a stand-alone section or heading of their own:
 describe them as the tracker's scope and work in progress, each with its
 context. Why: AI reviewers asked for an "overall impression" fill a

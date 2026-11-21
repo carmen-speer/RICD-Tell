@@ -2,7 +2,44 @@
 
 ## What this repository is
 
-This repository is the first empirical test of an original theory. Recursive Information-Container Dynamics (RICD) is a domain-independent mathematical theory of how systems drift from their own feedback, accumulate the cost of that drift, and either correct, are held up by an outside anchor, or collapse; its full statement is in the [Spine and Catalog](docs/). Tell is the instrument built to test it: a higher-education adapter that turns RICD's quantities into measurements from public federal data and puts the theory's predictions to pre-registered, falsifiable tests on colleges nobody chose, with every protocol committed before outcomes were looked up. The theory is passing: the tracker built from it passed its pre-registered test, beat every baseline, and the first test in a less-anchored domain (law schools) showed the theory's signal plainly where anchors are thin. Higher education is the first domain; four more adapters are planned, so the theory can be tested where anchoring is weaker and compared across domains.
+This repository is the first empirical test of an original theory. Recursive Information-Container Dynamics (RICD) is a formal model of feedback divergence: it defines how far an institution's official, operational and meta layers of information diverge, how the cost of maintaining that divergence accumulates as resource debt, and how an outside anchor moves the point of no return. Its core equations are below, and its full statement is in the [Spine and Catalog](docs/). Tell is the instrument built to test it: a higher-education adapter that turns RICD's quantities into measurements from public federal data and puts the theory's predictions to pre-registered, falsifiable tests on colleges nobody chose, with every protocol committed before outcomes were looked up. The theory is passing: the tracker built from it passed its pre-registered test, beat every baseline, and the first test in a less-anchored domain (law schools) showed the theory's signal plainly where anchors are thin. Higher education is the first domain; four more adapters are planned, so the theory can be tested where anchoring is weaker and compared across domains.
+
+**Dashboard status:** the public dashboard still shows the legacy v1 prototype; it is being rebuilt on v3, the version whose results are reported here.
+
+### The mathematical core
+
+Each quantity below is defined in the RICD 17.7 Spine; the right-hand column is how Tell measures it from federal data.
+
+**Divergence** (Definition 6.2; §6.3.3). Each institution has three layers of information, official $P_o$, operational $P_p$ and meta $P_m$, and their pairwise divergences $D_{op}$, $D_{om}$, $D_{pm}$ are Jensen–Shannon distances. The messaging divergence is
+
+$$D_{msg}(t) = D_{op}(t) + D_{om}(t) + D_{pm}(t),$$
+
+reducing to $D_{op}(t)$ where the meta layer has no reading (the two-channel read-out).
+
+**Resource debt** (§7.9). Work beyond sustainable inflow accumulates as
+
+$$\delta R(t) = \int_0^t \left(W + U - P_{prod} - E_{exch}\right) ds.$$
+
+**Coverage and the slide** (Definitions 10.3a.1 and 10.3a.3; Proposition 10.3a.1). With exchange $E_{exch} = \bar e \cdot N$ (per-partner exchange times the exchange base), coverage is $c(t) = W(t)/E_{exch}(t)$, break-even is $c = 1$, and between jumps the slide toward it decomposes as
+
+$$\frac{d \log c}{dt} = \mu_W - \mu_e - \mu_N.$$
+
+An approach is drift-type or shock-type by whether the slide or a single jump carries the change (Definition 10.3a.6).
+
+**The point of no return** (Definitions 10.3a.7 and 10.3a.8). Past break-even,
+
+$$\Delta_{PNR}(t) = R_{avail}(t) + A(t) - \delta R(t),$$
+
+and collapse is guaranteed, absent a new anchor, once $\Delta_{PNR} \le 0$. Anchors do not move the tipping point; they move the point of no return, which is why an anchored institution can carry a deficit that would close an unanchored one.
+
+| RICD quantity | Tell's measurement (IPEDS and College Scorecard) |
+|---|---|
+| Official layer $P_o$ | Published price (sticker tuition) |
+| Operational layer $P_p$ | Completion |
+| Meta layer $P_m$ | Abnormal staff exit with governance voice (AAUP censures, accreditor actions); pre-registered for the blind retest |
+| Work $W$ | Total expenses (less depreciation in the strain measure) |
+| Exchange $E_{exch}$, base $N$ | Net tuition and fees plus auxiliary sales; 12-month full-time-equivalent enrollment |
+| Anchor capacity $A$ | Federal, state and local appropriations, gifts, and the endowment draw |
 
 ## What Tell does
 
@@ -22,7 +59,7 @@ Tell is a reader of institutional distress in U.S. higher education. It works, a
 
 - **The dashboard** still runs the original tracker (v1); it will be rebuilt on v3.
 - **To check or rerun anything:** [docs/QUICKSTART.md](docs/QUICKSTART.md). Every protocol is at the top level, every result in [data/](data/), and every error with its fix in [history of fixes/](<history of fixes/>).
-- **Software and theory.** Tell is software: the higher-education adapter in [src/](src/), which implements part of RICD against IPEDS and College Scorecard data. RICD is the theory, domain-independent, in [docs/](docs/) (the RICD 17.7 Spine and Catalog); a result about Tell tests this adapter's implementation, so a gap in Tell is not by itself a gap in RICD.
+- **Software and theory.** Tell is software: the higher-education adapter in [src/](src/), which implements part of RICD against IPEDS and College Scorecard data. RICD is the theory, in [docs/](docs/), and higher education is its first test domain (the RICD 17.7 Spine and Catalog); a result about Tell tests this adapter's implementation, so a gap in Tell is not by itself a gap in RICD.
 
 Built to measure feedback divergence (an institution's official metrics versus its operational reality), Tell tracks institutional distress -- financial distress, upheaval, recovery, and the anchoring metrics which determine distress risk vs. collapse risk -- in higher ed institutions.
 
@@ -53,7 +90,7 @@ name now that what it actually reads -- a real signal in the data, not a
 prediction of an outcome -- is the more accurate description of what it
 does.
 
-**The full RICD manuscript (the complete, domain-independent theory) is in two
+**The full RICD manuscript (the complete formal model) is in two
 documents: the Spine, which holds the core engine,
 [`docs/RICD 17.7 Spine.docx`](<docs/RICD 17.7 Spine.docx>)
 (also available as [`.tex`](<docs/RICD 17.7 Spine.tex>)), and the Catalog of
@@ -63,7 +100,7 @@ Mechanisms, which holds every further mechanism, edge case and audit protocol,
 The two share section numbers, so a reference to a section not in one is in the
 other. Everything in this repository's code implements a real subset of that
 framework (Parts 6, 7, 8, and 10.5b specifically) against U.S. higher-education
-data; the manuscript itself is domain-independent and covers considerably more
+data; the manuscript itself is written to apply beyond higher education and covers considerably more
 than the tracker uses.
 
 ## Related and future work
