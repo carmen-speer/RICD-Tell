@@ -2,10 +2,10 @@ name,state or region,source,match,unitids,names in the header files
 Alabama Southern Community College,South,reprint 2018-11-20,matched by name,101949,Alabama Southern Community College
 Armstrong State University,South,reprint 2018-11-20,matched by name,138789,Armstrong Atlantic State University | Armstrong State University
 Bainbridge State College,South,reprint 2018-11-20,matched by name,139010,Bainbridge College | Bainbridge State College
-Bridgeport Hospital School of Nursing,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Bridgeport Hospital School of Nursing,Northeast,reprint 2018-11-20,resolved by hand (name crosswalk.csv): not in the header files under any Bridgeport name (a hospital diploma school outside IPEDS),,
 Cumberland County College,Northeast,reprint 2018-11-20,matched by name,184205,Cumberland County College | Rowan College South Jersey Cumberland Campus | Rowan College of South Jersey-Cumberland Campus
 Episcopal Divinity School,Northeast,reprint 2018-11-20,matched by name,165705,Episcopal Divinity School
-Faulkner State Community College,South,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Faulkner State Community College,South,reprint 2018-11-20,resolved by hand (name crosswalk.csv): James H Faulkner State Community College; the unit continues as Coastal Alabama Community College after the 2017 consolidation,101161,Coastal Alabama Community College | James H Faulkner State Community College
 Georgia Perimeter College,South,reprint 2018-11-20,matched by name,244437,Georgia Perimeter College | Georgia State University-Perimeter College
 Jefferson Davis Community College,South,reprint 2018-11-20,matched by name,101499,Jefferson Davis Community College
 John Wesley College,South,reprint 2018-11-20,matched by name,198747,John Wesley College | John Wesley University | Laurel University
@@ -18,26 +18,26 @@ O'More College of Design,South,reprint 2018-11-20,matched by name,221254,O'More 
 Oregon College of Art and Craft,West,reprint 2018-11-20,matched by name,209533,Oregon College of Art and Craft
 Philadelphia University,Northeast,reprint 2018-11-20,matched by name,215099,Jefferson (Philadelphia University + Thomas Jefferson University) | Philadelphia University
 Rowan College at Gloucester County,Northeast,reprint 2018-11-20,matched by name,184791,Gloucester County College | Rowan College at Gloucester County | Rowan College of South Jersey Gloucester Campus | Rowan College of South Jersey-Gloucester Campus
-Salt Institute of Documentary Studies,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
-School of the Museum of Fine Arts,Northeast,reprint 2018-11-20,not found by name; to be resolved by hand,,
+Salt Institute of Documentary Studies,Northeast,reprint 2018-11-20,resolved by hand (name crosswalk.csv): not in the header files under any Salt or Documentary name,,
+School of the Museum of Fine Arts,Northeast,reprint 2018-11-20,resolved by hand (name crosswalk.csv): School of the Museum of Fine Arts-Boston (later at Tufts University),166984,School of the Museum of Fine Arts at Tufts University | School of the Museum of Fine Arts-Boston
 Shimer College,Midwest,reprint 2018-11-20,matched by name,148849,Shimer College
 Southeastern Bible College,South,reprint 2018-11-20,matched by name,102261,Southeastern Bible College
 St. Vincent's College,Northeast,reprint 2018-11-20,matched by name,130448,St Vincent's College
 The Boston Conservatory,Northeast,reprint 2018-11-20,matched by name,164933,The Boston Conservatory
 Union Graduate College,Northeast,reprint 2018-11-20,matched by name,446932,Graduate College of Union University | Union Graduate College
-University of Wisconsin-Baraboo/Sauk County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Barron County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Fond du Lac,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Fox Valley,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Marathon County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Marshfield,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Richland,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Rock County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Washington County,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
-University of Wisconsin-Waukesha,Midwest,reprint 2018-11-20,not found by name; to be resolved by hand,,
+University of Wisconsin-Baraboo/Sauk County,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): the thirteen UW two-year campuses reported to IPEDS as one unit, University of Wisconsin Colleges (2005 to 2018); counted once, as this row",240055,University of Wisconsin Colleges
+University of Wisconsin-Barron County,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Fond du Lac,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Fox Valley,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Marathon County,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Marshfield,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Richland,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Rock County,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Washington County,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
+University of Wisconsin-Waukesha,Midwest,reprint 2018-11-20,"resolved by hand (name crosswalk.csv): a campus of University of Wisconsin Colleges, not a separate institution; the system is counted once (Baraboo/Sauk County row)",,
 Wheelock College,Northeast,reprint 2018-11-20,matched by name,168290,Wheelock College
 Wichita Area Technical College,Midwest,reprint 2018-11-20,matched by name,156107,Wichita Area Technical College | Wichita State University-Campus of Applied Sciences and Technology
-Marian University,Wisconsin,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,151786;239080,Marian College | Marian College of Fond du Lac | Marian University | Marian University-Wisconsin
+Marian University,Wisconsin,live 2026-11-21,resolved by hand (name crosswalk.csv): Marian University-Wisconsin (Fond du Lac); 151786 is Marian University in Indiana,239080,Marian College of Fond du Lac | Marian University | Marian University-Wisconsin
 Phoenix Seminary,Arizona,live 2026-11-21,matched by name and state,381459,Phoenix Seminary
 Queens University of Charlotte,North Carolina,live 2026-11-21,matched by name and state,199412,Queens University of Charlotte
 St. Luke's College,Iowa,live 2026-11-21,matched by name and state,154262,St Luke's College
@@ -52,7 +52,7 @@ Ursuline College,Ohio,live 2026-11-21,matched by name and state,206349,Ursuline 
 Peirce College,Pennsylvania,live 2026-11-21,matched by name and state,214883,Peirce College
 Mount Mercy University,Iowa,live 2026-11-21,matched by name and state,154013,Mount Mercy College | Mount Mercy University
 Marymount Manhattan College,New York,live 2026-11-21,matched by name and state,192864,Marymount Manhattan College
-Cambridge College,Massachusetts,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,165167;410539,Anthem College-Denver | Cambridge College
+Cambridge College,Massachusetts,live 2026-11-21,resolved by hand (name crosswalk.csv): Cambridge College (Massachusetts); 410539 is a Denver campus once named Cambridge College,165167,Cambridge College
 Multnomah University,Oregon,live 2026-11-21,matched by name and state,209287,Multnomah Bible College and Biblical Seminary | Multnomah University
 Maryland University of Integrative Health,Maryland,live 2026-11-21,matched by name and state,164085,Maryland University of Integrative Health | Tai Sophia Institute
 Compass College of Film & Media,Michigan,live 2026-11-21,matched by name and state,459417,Compass College of Cinematic Arts | Compass College of Film and Media | Compass Film Academy
@@ -71,10 +71,10 @@ Pacific Northwest College of Art,Oregon,live 2026-11-21,matched by name and stat
 Martin Methodist College,Tennessee,live 2026-11-21,matched by name and state,220701,Martin Methodist College | The University of Tennessee Southern
 Ancilla College,Indiana,live 2026-11-21,matched by name and state,150048,Ancilla College
 Marlboro College,Vermont,live 2026-11-21,matched by name and state,230940,Marlboro College
-Wesley College,Delaware,live 2026-11-21,ambiguous: more than one unit ID; to be resolved by hand,131098;176460,Wesley College
+Wesley College,Delaware,live 2026-11-21,resolved by hand (name crosswalk.csv): Wesley College (Delaware); 176460 is Wesley College in Mississippi (2005 to 2010),131098,Wesley College
 Pine Manor College,Massachusetts,live 2026-11-21,matched by name and state,167455,Pine Manor College
 Robert Morris University Illinois,Illinois,live 2026-11-21,matched by name and state,148335,Robert Morris College | Robert Morris University Illinois
-Watkins College of Art,Tennessee,live 2026-11-21,not found by name; to be resolved by hand,,
+Watkins College of Art,Tennessee,live 2026-11-21,resolved by hand (name crosswalk.csv): listed in the header files as Watkins College of Art and Design,392840,Watkins College of Art & Design | Watkins College of Art Design & Film | Watkins College of Art and Design
 Sweet Briar College,Virginia,named case (protocol section 2),matched by name and state,233718,Sweet Briar College
 Dowling College,New York,general search,matched by name and state,190770,Dowling College
 Iowa Wesleyan University,Iowa,general search,matched by name and state,153621,Iowa Wesleyan College | Iowa Wesleyan University

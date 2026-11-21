@@ -1,6 +1,6 @@
 {
  "note": "Item 15b, exploratory, under anchor and voice protocol.md (Amendments 1 to 3). Measures only: no outcome or voice record is read here.",
- "written at (UTC)": "2026-11-21T12:53:11.152688+00:00",
+ "written at (UTC)": "2026-11-21T14:53:27.782545+00:00",
  "settings": {
   "seed": 20261121,
   "matched closures per case": 2,
@@ -10,29 +10,29 @@
  "cases": 86,
  "name matching": {
   "matched by name": 24,
-  "not found by name; to be resolved by hand": 16,
-  "ambiguous": 3,
-  "matched by name and state": 43
+  "resolved by hand (name crosswalk.csv)": 18,
+  "matched by name and state": 43,
+  "not found by name; to be resolved by hand": 1
  },
  "cases by group and distress check": {
   "merger or acquisition | fails: not a case": 1,
-  "merger or acquisition | n/a": 19,
+  "merger or acquisition | n/a": 12,
   "merger or acquisition | no year with data": 3,
-  "merger or acquisition | passes": 53,
+  "merger or acquisition | passes": 60,
   "reversed closure or near-closure | n/a": 10
  },
- "eligible for the matched draw": 45,
- "matched closures drawn": 71,
- "closure pool (public and nonprofit, classified, not a case)": 93,
+ "eligible for the matched draw": 50,
+ "matched closures drawn": 74,
+ "closure pool (public and nonprofit, classified, not a case)": 91,
  "cases by ending type (measure used)": {
-  "not classified": 22,
-  "shock-type": 10,
-  "drift-type": 35
+  "not classified": 24,
+  "shock-type": 12,
+  "drift-type": 38
  },
  "cases by anchoring at onset": {
-  "unanchored": 55,
-  "anchored": 6,
-  "not measured": 19,
+  "unanchored": 61,
+  "anchored": 7,
+  "not measured": 12,
   "unclassified on anchoring": 6
  },
  "header files used": {
