@@ -1,6 +1,6 @@
 {
  "note": "Item 15, exploratory (outcomes known), under ending types protocol.md. Rule frozen for the retest.",
- "written at (UTC)": "2026-11-21T00:20:29.936805+00:00",
+ "written at (UTC)": "2026-11-21T00:52:46.116007+00:00",
  "settings": {
   "fiscal years": [
    2005,
@@ -264,25 +264,27 @@
    "no year with data": 54
   },
   "primary: private nonprofit": {
-   "not classified": 124,
-   "too short to classify": 68,
-   "drift-type": 32,
-   "shock-type": 4,
-   "no rise over the window": 1
+   "not classified": 69,
+   "too short to classify": 96,
+   "drift-type": 55,
+   "no rise over the window": 3,
+   "shock-type": 6
   },
   "primary: private nonprofit (group)": {
-   "past the crossing at the start": 124,
-   "crossed": 79,
-   "no year with data": 16,
-   "closed without crossing": 10
+   "past the crossing at the start": 69,
+   "crossed": 122,
+   "closed without crossing": 22,
+   "no year with data": 16
   },
   "primary: public": {
-   "not classified": 6,
-   "too short to classify": 2
+   "not classified": 4,
+   "too short to classify": 2,
+   "drift-type": 2
   },
   "primary: public (group)": {
-   "past the crossing at the start": 6,
+   "past the crossing at the start": 4,
    "no year with data": 1,
+   "closed without crossing": 2,
    "crossed": 1
   }
  },

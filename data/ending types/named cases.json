@@ -8,6 +8,7 @@
     "E": 17265025.0,
     "N": 736.0,
     "A": 11360702.185,
+    "O": 2671738.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -16,15 +17,15 @@
      "endowment spending": 4183294.185
     },
     "c": 1.9526099730524573,
-    "g": 1.1776769820424038,
+    "g": 1.077143461961806,
     "state": "short beyond its anchors",
-    "anchored share": 0.6907530953523885,
+    "anchored share": 0.824727563442929,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.4364005597429536,
-     "endowment spending": 0.2543525356094349
+     "gifts": 0.5210422837675843,
+     "endowment spending": 0.3036852796753446
     },
     "flags": [
      "gifts include grants and contracts",
@@ -38,6 +39,7 @@
     "E": 19288295.0,
     "N": 725.0,
     "A": 12945909.585,
+    "O": 1686479.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -46,15 +48,15 @@
      "endowment spending": 4129335.585
     },
     "c": 1.8443784689108083,
-    "g": 1.1036387110527486,
+    "g": 1.0487676615023027,
     "state": "short beyond its anchors",
-    "anchored share": 0.7948800174695537,
+    "anchored share": 0.8866975119146102,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.5413384396923094,
-     "endowment spending": 0.2535415777772443
+     "gifts": 0.6038690582598443,
+     "endowment spending": 0.28282845365476583
     },
     "flags": [
      "gifts include grants and contracts",
@@ -68,6 +70,7 @@
     "E": 20292449.0,
     "N": 622.0,
     "A": 9584432.774999999,
+    "O": 2893814.000000001,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -76,15 +79,15 @@
      "endowment spending": 4215815.774999999
     },
     "c": 1.8139593205334654,
-    "g": 1.2320454750669843,
+    "g": 1.1232497855013883,
     "state": "short beyond its anchors",
-    "anchored share": 0.5802688426290415,
+    "anchored share": 0.7035265004058453,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.32503135514022086,
-     "endowment spending": 0.25523748748882075
+     "gifts": 0.3940728073007251,
+     "endowment spending": 0.30945369310512033
     },
     "flags": [
      "gifts include grants and contracts",
@@ -98,6 +101,7 @@
     "E": 22449062.0,
     "N": 674.0,
     "A": 4641119.505,
+    "O": 9006800.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -106,15 +110,15 @@
      "endowment spending": 4641119.505
     },
     "c": 1.7948407822117467,
-    "g": 1.4873466976425858,
+    "g": 1.1162288457393277,
     "state": "short beyond its anchors",
-    "anchored share": 0.2601024301381517,
+    "anchored share": 0.5252137415507948,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 0.0,
-     "endowment spending": 0.2601024301381517
+     "endowment spending": 0.5252137415507948
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -127,6 +131,7 @@
     "E": 23580953.0,
     "N": 691.0,
     "A": 12373528.315,
+    "O": 222959.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -135,15 +140,15 @@
      "endowment spending": 4294755.3149999995
     },
     "c": 1.6777771449695014,
-    "g": 1.100379773341197,
+    "g": 1.093598210805313,
     "state": "short beyond its anchors",
-    "anchored share": 0.7741859469195028,
+    "anchored share": 0.7851386954626974,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.5054720339848927,
-     "endowment spending": 0.26871391293461006
+     "gifts": 0.5126231688070666,
+     "endowment spending": 0.2725155266556309
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -156,6 +161,7 @@
     "E": 22597030.0,
     "N": 642.0,
     "A": 11157829.629999999,
+    "O": 2451368.000000001,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -164,15 +170,15 @@
      "endowment spending": 3370671.63
     },
     "c": 1.701239410665915,
-    "g": 1.1388866202196677,
+    "g": 1.0617775039382087,
     "state": "short beyond its anchors",
-    "anchored share": 0.7041449153372399,
+    "anchored share": 0.8330120310036312,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.49142959629754723,
-     "endowment spending": 0.2127153190396927
+     "gifts": 0.5813672117635816,
+     "endowment spending": 0.25164481924004967
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -185,6 +191,7 @@
     "E": 22713781.0,
     "N": 639.0,
     "A": 9659248.94,
+    "O": 3010467.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -193,15 +200,15 @@
      "endowment spending": 3684515.94
     },
     "c": 1.687897932977341,
-    "g": 1.1842741958678706,
+    "g": 1.0835148392769345,
     "state": "short beyond its anchors",
-    "anchored share": 0.6182013090374554,
+    "anchored share": 0.7657382496811553,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.3823887120719847,
-     "endowment spending": 0.23581259696547077
+     "gifts": 0.4736477564820106,
+     "endowment spending": 0.2920904931991448
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -214,6 +221,7 @@
     "E": 20264511.0,
     "N": 653.0,
     "A": 10557345.64,
+    "O": 1689375.999999999,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -222,15 +230,15 @@
      "endowment spending": 4221503.64
     },
     "c": 1.8314548522784488,
-    "g": 1.2041304790132201,
+    "g": 1.1415604388477594,
     "state": "short beyond its anchors",
-    "anchored share": 0.6265849218821313,
+    "anchored share": 0.6964109092228383,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.3760360984664633,
-     "endowment spending": 0.25054882341566803
+     "gifts": 0.41794117938079045,
+     "endowment spending": 0.27846972984204776
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -243,6 +251,7 @@
     "E": 19774680.0,
     "N": 664.0,
     "A": 10085418.86,
+    "O": 1968517.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -251,15 +260,15 @@
      "endowment spending": 3812647.86
     },
     "c": 1.760587073975407,
-    "g": 1.1659387386234528,
+    "g": 1.0938284640820068,
     "state": "short beyond its anchors",
-    "anchored share": 0.6705567444302885,
+    "anchored share": 0.7715372829046602,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.41706239063597256,
-     "endowment spending": 0.2534943537943159
+     "gifts": 0.47986868575363745,
+     "endowment spending": 0.2916685971510228
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -272,6 +281,7 @@
     "E": 18392560.0,
     "N": 678.0,
     "A": 9728838.0,
+    "O": 2836409.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -280,15 +290,15 @@
      "endowment spending": 3962619.0
     },
     "c": 1.9269016384886062,
-    "g": 1.260273546855672,
+    "g": 1.1448050567664563,
     "state": "short beyond its anchors",
-    "anchored share": 0.5706701288718844,
+    "anchored share": 0.6845661158405918,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.33823247337796236,
-     "endowment spending": 0.2324376554939221
+     "gifts": 0.4057378840017915,
+     "endowment spending": 0.27882823183880023
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -301,6 +311,7 @@
     "E": 18824355.0,
     "N": 610.0,
     "A": 18926300.89,
+    "O": 485048.0,
     "anchors": {
      "federal appropriations": 383454.0,
      "state appropriations": 25650.0,
@@ -309,15 +320,15 @@
      "endowment spending": 4231702.89
     },
     "c": 2.4084143122035258,
-    "g": 1.2009551869007276,
+    "g": 1.185720187875427,
     "state": "short beyond its anchors",
-    "anchored share": 0.7138635479404783,
+    "anchored share": 0.7271671247152477,
     "anchored share by source": {
-     "federal appropriations": 0.014463144937984137,
-     "state appropriations": 0.0009674685038082616,
+     "federal appropriations": 0.014732680425042137,
+     "state appropriations": 0.0009854982681164646,
      "local appropriations": 0.0,
-     "gifts": 0.5388212673037777,
-     "endowment spending": 0.15961166719490824
+     "gifts": 0.5488627522880369,
+     "endowment spending": 0.16258619373405217
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -330,6 +341,7 @@
     "E": 8520717.0,
     "N": 246.0,
     "A": 17640419.345,
+    "O": 1101973.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -338,15 +350,15 @@
      "endowment spending": 3484941.3449999997
     },
     "c": 3.316421493637214,
-    "g": 1.0801629037570768,
+    "g": 1.0365027936618139,
     "state": "short beyond its anchors",
-    "anchored share": 0.8937481948134248,
+    "anchored share": 0.9465979250251091,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.7171843628993475,
-     "endowment spending": 0.17656383191407737
+     "gifts": 0.7595933997077314,
+     "endowment spending": 0.18700452531737777
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -359,6 +371,7 @@
     "E": 9780984.0,
     "N": 332.0,
     "A": 21608395.09,
+    "O": 3919239.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -367,15 +380,15 @@
      "endowment spending": 3379293.09
     },
     "c": 3.1935771492929548,
-    "g": 0.9951240803597559,
+    "g": 0.8846658036964254,
     "state": "held up by anchors",
-    "anchored share": 1.0071335186764434,
+    "anchored share": 1.232223251527249,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.8496299499849524,
-     "endowment spending": 0.15750356869149096
+     "gifts": 1.0395183559586554,
+     "endowment spending": 0.1927048955685938
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -388,6 +401,7 @@
     "E": 8778051.0,
     "N": 289.0,
     "A": 17600457.33,
+    "O": 1403444.0000000019,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -396,15 +410,15 @@
      "endowment spending": 3459378.33
     },
     "c": 3.39415606038288,
-    "g": 1.1294829346402242,
+    "g": 1.0724255317300806,
     "state": "short beyond its anchors",
-    "anchored share": 0.8374779801355384,
+    "anchored share": 0.8974065283608785,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.6728712814564735,
-     "endowment spending": 0.16460669867906508
+     "gifts": 0.721020844784317,
+     "endowment spending": 0.1763856835765616
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -417,6 +431,7 @@
     "E": 9003497.0,
     "N": 318.0,
     "A": 11834122.615,
+    "O": 787574.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
@@ -425,15 +440,15 @@
      "endowment spending": 3366780.6149999998
     },
     "c": 3.1059639382342215,
-    "g": 1.342021666422477,
+    "g": 1.2931462024276539,
     "state": "short beyond its anchors",
-    "anchored share": 0.6241283502909123,
+    "anchored share": 0.6511758744864629,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.44656527279094393,
-     "endowment spending": 0.17756307749996833
+     "gifts": 0.4659178386775533,
+     "endowment spending": 0.18525803580890954
     },
     "flags": [
      "endowment spending estimated (4.5% of beginning value)"
@@ -445,24 +460,25 @@
     "W": 27965482.0,
     "E": 8757654.0,
     "N": 361.0,
-    "A": 14068628.0,
+    "A": 20568628.0,
+    "O": 3183156.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 17318628.0,
-     "endowment spending": -3250000.0
+     "endowment spending": 3250000.0
     },
     "c": 3.193261802761333,
-    "g": 1.2251439809601932,
-    "state": "short beyond its anchors",
-    "anchored share": 0.7324424187888396,
+    "g": 0.8602265594379085,
+    "state": "held up by anchors",
+    "anchored share": 1.2835600004792609,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.9016442671185936,
-     "endowment spending": -0.16920184832975388
+     "gifts": 1.0807477369895622,
+     "endowment spending": 0.20281226348969889
     },
     "flags": [],
     "valid": true
@@ -472,24 +488,25 @@
     "W": 28086145.0,
     "E": 8760771.0,
     "N": 375.0,
-    "A": 8979054.0,
+    "A": 14979054.0,
+    "O": 4643508.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 11979054.0,
-     "endowment spending": -3000000.0
+     "endowment spending": 3000000.0
     },
     "c": 3.2058987730646082,
-    "g": 1.5832255955174304,
-    "state": "short beyond its anchors",
-    "anchored share": 0.46462510893708964,
+    "g": 0.9895294890138518,
+    "state": "held up by anchors",
+    "anchored share": 1.0202418411937557,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.6198614319184715,
-     "endowment spending": -0.15523632298138187
+     "gifts": 0.8159081413765797,
+     "endowment spending": 0.20433369981717583
     },
     "flags": [],
     "valid": true
@@ -499,24 +516,25 @@
     "W": 30816180.0,
     "E": 11263616.0,
     "N": 424.0,
-    "A": 15338530.0,
+    "A": 22538530.0,
+    "O": 1925161.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 18938530.0,
-     "endowment spending": -3600000.0
+     "endowment spending": 3600000.0
     },
     "c": 2.735904704137641,
-    "g": 1.1584095508685652,
-    "state": "short beyond its anchors",
-    "anchored share": 0.7844766548264462,
+    "g": 0.8625385618904889,
+    "state": "held up by anchors",
+    "anchored share": 1.2786075180785281,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.968595729951325,
-     "endowment spending": -0.18411907512487877
+     "gifts": 1.0743800433903963,
+     "endowment spending": 0.20422747468813188
     },
     "flags": [],
     "valid": true
@@ -526,24 +544,25 @@
     "W": 33748938.0,
     "E": 11755166.0,
     "N": 464.0,
-    "A": 19589112.0,
+    "A": 27422252.0,
+    "O": 1046978.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 23505682.0,
-     "endowment spending": -3916570.0
+     "endowment spending": 3916570.0
     },
     "c": 2.8709877852852097,
-    "g": 1.076717670765937,
-    "state": "short beyond its anchors",
-    "anchored share": 0.8906663213567914,
+    "g": 0.8390166504924027,
+    "state": "held up by anchors",
+    "anchored share": 1.3091383817494935,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 1.0687426422352655,
-     "endowment spending": -0.17807632087847414
+     "gifts": 1.1221613197704623,
+     "endowment spending": 0.18697706197903124
     },
     "flags": [],
     "valid": true
@@ -553,24 +572,25 @@
     "W": 34888844.0,
     "E": 12311338.0,
     "N": 468.0,
-    "A": 14690906.0,
+    "A": 21505106.0,
+    "O": 2196059.0,
     "anchors": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
      "gifts": 18098006.0,
-     "endowment spending": -3407100.0
+     "endowment spending": 3407100.0
     },
     "c": 2.833879144573888,
-    "g": 1.2920720218660346,
-    "state": "short beyond its anchors",
-    "anchored share": 0.650687724321721,
+    "g": 0.9687980865978685,
+    "state": "held up by anchors",
+    "anchored share": 1.0551314634333862,
     "anchored share by source": {
      "federal appropriations": 0.0,
      "state appropriations": 0.0,
      "local appropriations": 0.0,
-     "gifts": 0.8015945605329482,
-     "endowment spending": -0.15090683621122722
+     "gifts": 0.8879647259588586,
+     "endowment spending": 0.1671667374745277
     },
     "flags": [],
     "valid": true
