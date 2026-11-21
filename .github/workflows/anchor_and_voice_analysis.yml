@@ -1,0 +1,57 @@
+name: item 15b - anchor and voice analysis
+
+# Manual-only. Runs "src/anchor and voice analysis.py" under "anchor and
+# voice protocol.md" (section 6, Amendments 1 to 6): P1 to P3 and S1 to S4
+# from the committed files in data/anchor and voice/ and data/ending types/.
+# Downloads nothing. Needs voice coded.csv and case outcomes.csv.
+# Commits analysis rows.csv and analysis results.json.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: anchor-and-voice
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the anchor-and-voice analysis
+        run: |
+          cd src
+          python "anchor and voice analysis.py"
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/anchor and voice/analysis rows.csv" "data/anchor and voice/analysis results.json"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 15b: anchor-and-voice analysis (exploratory)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
