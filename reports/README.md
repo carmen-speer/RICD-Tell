@@ -26,6 +26,12 @@ tracker in a new domain.
   to know what produced it; C-CAT, seeded in
   [`future-projects/`](<../future-projects/Collapse-Causal Agent Tracker (C-CAT) Seed Note.pdf>),
   is the planned tracker that goes looking for the specific agent that did.
+- [`Anchor and voice results (exploratory).pdf`](<Anchor and voice results (exploratory).pdf>) —
+  the write-up of item 15b, how anchors and aligned voice shape the end of
+  a collapse: none of the closed colleges whose anchoring could be measured
+  was anchored when its trouble began; slow, unanchored decline ends in
+  closure most often; and anchors move toward sudden crises and away from
+  slow ones, the normalization RICD 17.8 formalizes (§10.5a).
 - [`Model evolution.md`](<Model evolution.md>) — the record of tracker v1
   and v2, the first two pre-registered tests, and the exploratory search
   for the meta channel's first readings: how the tracker was built into
