@@ -1,0 +1,230 @@
+{
+ "note": "Item 22a, step one: pass-rate files downloaded or attempted, under protocols/nursing and pharmacy protocol.md, section 7. Nothing parsed; no pass rate read.",
+ "written at (UTC)": "2026-11-22T01:32:23.772471+00:00",
+ "files": [
+  {
+   "source": "Oklahoma",
+   "file": "oklahoma rn 2015-2025.pdf",
+   "url": "https://www.oklahoma.gov/content/dam/ok/en/nursing/documents/nclexpass1.pdf",
+   "status": "downloaded",
+   "bytes": 237824,
+   "sha256": "0770ec1f0f5f78d4541eeac7de1b38190a5c1907e3a323a4243fc5b7406b5452"
+  },
+  {
+   "source": "Oklahoma",
+   "file": "oklahoma nclexpass (board copy).pdf",
+   "url": "https://www.oklahoma.gov/content/dam/ok/en/nursing/documents/nclexpass.pdf",
+   "status": "downloaded",
+   "bytes": 301907,
+   "sha256": "5017518462547fe1e835e680f0ece0d452d8fff19d741da294c60eec79a60e5e"
+  },
+  {
+   "source": "Oklahoma",
+   "file": "oklahoma rn 2014-2024 (swosu copy).pdf",
+   "url": "https://swosu.edu/nursing/files/2024nclexpass1.pdf",
+   "status": "downloaded",
+   "bytes": 790473,
+   "sha256": "44bfc3c41c7abfc6f6b2ee74cb7692142134480f11bbca8fd052cae7b92e9ef0"
+  },
+  {
+   "source": "Oklahoma",
+   "file": "oklahoma rn 2012-2022 (swosu copy).pdf",
+   "url": "https://www.swosu.edu/nursing/files/2023.nclexpass1.pdf",
+   "status": "downloaded",
+   "bytes": 200795,
+   "sha256": "23afc4797f21f58c4449c2baa94eeffa6f3f0b5af05b8ff1181f3a0f8c2d2f28"
+  },
+  {
+   "source": "Oklahoma",
+   "file": "oklahoma nclexpass (swosu copy).pdf",
+   "url": "https://www.swosu.edu/nursing/files/nclexpass.pdf",
+   "status": "downloaded",
+   "bytes": 227211,
+   "sha256": "c5b29a1fcaf8fb5eb02cec72e5b507c2802bd9757f1d355e54150466d54c8ac8"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana bsn 2015-2025.pdf",
+   "url": "https://secure.in.gov/pla/files/BSN-2015-2025.pdf",
+   "status": "downloaded",
+   "bytes": 664877,
+   "sha256": "a7a46c7c990ec603f37bf492c275ac498a6b48b1421ecea13a00ee01c15e4527"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana asn 2015-2025.pdf",
+   "url": "https://secure.in.gov/pla/files/ASN-2015-2025.pdf",
+   "status": "downloaded",
+   "bytes": 690672,
+   "sha256": "146cf30ec2c41f3271ff98a6772ee17aa00e1f16f2af2bce23a3ed032b908fa4"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana bsn 2014-2024.pdf",
+   "url": "https://www.in.gov/pla/files/BSN-2014-2024.pdf",
+   "status": "downloaded",
+   "bytes": 214142,
+   "sha256": "297568c6e5fdd2ed1abb7492364a855d2c0b6a7b51dd2319b5e9ca4c855eaea9"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana asn 2014-2024.pdf",
+   "url": "https://www.in.gov/pla/files/ASN-2014-2024.pdf",
+   "status": "downloaded",
+   "bytes": 236494,
+   "sha256": "a1c60ed6b9ba85e7d4174717dcbe7cbde78ecc81e585ea7635f16fb06793ef65"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana bsn 2013-2023.pdf",
+   "url": "https://www.in.gov/pla/files/BSN-2013-2023.pdf",
+   "status": "downloaded",
+   "bytes": 205679,
+   "sha256": "3ff8f610ddb4dcc69d429fd8a92f394f7c0a61cd60bc42b7b30bf7e90157b8b9"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana asn 2013-2023.pdf",
+   "url": "https://secure.in.gov/pla/files/ASN-2013-2023.pdf",
+   "status": "downloaded",
+   "bytes": 225672,
+   "sha256": "7e852761697877c7fa9356aba7c1d1755c299921cde29f6e7504c26769567d12"
+  },
+  {
+   "source": "Indiana",
+   "file": "indiana asn 2010-2020.pdf",
+   "url": "https://www.in.gov/pla/files/ASN-pass-rates-2010-2020.pdf",
+   "status": "downloaded",
+   "bytes": 230053,
+   "sha256": "170138500a4f9a328381ba0d6a501bdf81452b2e816379e21d12b5012e21112a"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn 2024 (board report).pdf",
+   "url": "https://www.bon.texas.gov/pdfs/board_meetings_pdfs/2025/Apr/3-2-12.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn 2015 (board report).pdf",
+   "url": "https://www.bon.texas.gov/pdfs/board_meetings_pdfs/2016/January/3-2-5.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn 2013-2017 (shsu copy).pdf",
+   "url": "https://sacscoc.shsu.edu/Support%20Docs/8.1/9%20-%20Texas%20Board%20of%20Nursing%20NCLEX%20Pass%20Rates.pdf",
+   "status": "downloaded",
+   "bytes": 375749,
+   "sha256": "285efb3081069c9f2902df2be15a924249c56ba085d0d3c66920b763e5e02273"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2016.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-16.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2017.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-17.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2018.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-18.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2019.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-19.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2020.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-20.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2021.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-21.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2022.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-22.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2023.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-23.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2024.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-24.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Texas",
+   "file": "texas rn five-year 2025.pdf",
+   "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-25.pdf",
+   "status": "failed (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>); download by hand"
+  },
+  {
+   "source": "Florida",
+   "file": "florida rn 4q 2020.pdf",
+   "url": "https://floridasnursing.gov/forms/rn-pass-rate-4q-2020.pdf",
+   "status": "downloaded",
+   "bytes": 2042356,
+   "sha256": "b3a037ebd14f1bd4dbbb39a38f2e6f881d5ee1db88cc1e749590e54f0a59928b"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2014-2024 ten-year.pdf",
+   "url": "https://nabp.pharmacy/wp-content/uploads/2025/10/Ten-Year-NAPLEX-and-MPJE-Pass-Rates.pdf",
+   "status": "failed (HTTP 403); download by hand"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2023-2025 (nabp).pdf",
+   "url": "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Pass-Rates.pdf",
+   "status": "failed (HTTP 403); download by hand"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2023-2025 (duquesne copy).pdf",
+   "url": "https://www.duq.edu/documents/academics/colleges-and-schools/pharmacy/naplex-2023-2025-pass-rates.pdf",
+   "status": "downloaded",
+   "bytes": 7329101,
+   "sha256": "3ea89c38f0d3e26d087a072b32676c77e9b409523e1be38ed17548821e46055c"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2022-2024 (duquesne copy).pdf",
+   "url": "https://www.duq.edu/documents/academics/colleges-and-schools/pharmacy/naplex-pass-rates-acc.pdf",
+   "status": "refused: not a PDF (content type 'text/html; charset=UTF-8'); download by hand"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2021-2023 (siue copy).pdf",
+   "url": "https://siue.edu/pharmacy/about/pdf/NAPLEX-Pass-Rates-2023.pdf",
+   "status": "downloaded",
+   "bytes": 855823,
+   "sha256": "cadbe7be3aaf5af14226cd6b5595bfacadf203622eb254cf45034be95c3098aa"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex 2020-2022 (siue copy).pdf",
+   "url": "https://www.siue.edu/pharmacy/about/pdf/NAPLEXPassRates2022.pdf",
+   "status": "not found (HTTP 404)"
+  }
+ ]
+}
