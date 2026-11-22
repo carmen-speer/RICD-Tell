@@ -1,6 +1,6 @@
 {
  "note": "Item 22a, step one: pass-rate files downloaded or attempted, under protocols/nursing and pharmacy protocol.md, section 7. Nothing parsed; no pass rate read.",
- "written at (UTC)": "2026-11-22T05:01:07.285148+00:00",
+ "written at (UTC)": "2026-11-22T05:58:52.062623+00:00",
  "files": [
   {
    "source": "Oklahoma",
@@ -201,6 +201,68 @@
    "status": "already present (hashed, not re-fetched)",
    "bytes": 2042356,
    "sha256": "b3a037ebd14f1bd4dbbb39a38f2e6f881d5ee1db88cc1e749590e54f0a59928b"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2016_4q.pdf",
+   "url": "https://floridasnursing.gov/forms/rn-pass-rate-4q-2016.pdf",
+   "status": "downloaded",
+   "bytes": 1099233,
+   "sha256": "dc295b6a91d17f9639bf0e22f618bf891e72c64dfe62e7d6fd81199c7d2df3e3"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2016_report_4.pdf",
+   "url": "https://floridasnursing.gov/forms/RN-2016-Report-4.pdf",
+   "status": "not found (HTTP 404)"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2017_4q.pdf",
+   "url": "https://floridasnursing.gov/forms/rn-pass-rate-4q-2017.pdf",
+   "status": "downloaded",
+   "bytes": 1159082,
+   "sha256": "776ecdacca170ad687db97e8aa7188c6b672c7c8a7438c8a68d77354913b0f29"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2017_report_4.pdf",
+   "url": "https://floridasnursing.gov/forms/RN-2017-Report-4.pdf",
+   "status": "not found (HTTP 404)"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2018_4q.pdf",
+   "url": "https://floridasnursing.gov/forms/rn-pass-rate-4q-2018.pdf",
+   "status": "not found (HTTP 404)"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2018_report_4.pdf",
+   "url": "https://floridasnursing.gov/forms/RN-2018-Report-4.pdf",
+   "status": "downloaded",
+   "bytes": 1254731,
+   "sha256": "add81a0dd95b057e868439a2189faded662efe7fd44bd1b3d0a16180b66ae868"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2019_4q.pdf",
+   "url": "https://floridasnursing.gov/forms/rn-pass-rate-4q-2019.pdf",
+   "status": "downloaded",
+   "bytes": 1311865,
+   "sha256": "381fd6618ef497425a72ae1a2d2a8ec801dc81c2f4eda57adf8e9707f4f7ac63"
+  },
+  {
+   "source": "Florida",
+   "file": "florida_rn_2019_report_4.pdf",
+   "url": "https://floridasnursing.gov/forms/RN-2019-Report-4.pdf",
+   "status": "not found (HTTP 404)"
+  },
+  {
+   "source": "NABP",
+   "file": "naplex_2020_2022_siue.pdf",
+   "url": "https://WWW.SIUE.EDU/pharmacy/about/pdf/NAPLEXPassRates2022.pdf",
+   "status": "not found (HTTP 404)"
   },
   {
    "source": "NABP",
