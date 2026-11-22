@@ -69,7 +69,7 @@ Full detail -- including the live panel's own institution count (15
 scored so far of 50 planned, distinct from the 54-institution validated
 backtest panel below) and exactly what's not yet built -- is in the seed
 note:
-[`Anchor-Quantification Sensor - Seed Note.md`](<../future-projects/Anchor-Quantification Sensor - Seed Note.md>).
+[`Anchor-Quantification Sensor - Seed Note.md`](<../archive/Anchor-Quantification Sensor - Seed Note.md>).
 
 
 ## Documentation standard for this section (and the live dashboard)
@@ -618,7 +618,7 @@ investigating the specific real decisions and agents behind a collapse --
 board minutes, depositions, investigative findings -- rather than the
 aggregate financial and enrollment effects the higher-ed tracker measures),
 and
-[`Anchor-Quantification Sensor - Seed Note.md`](<../future-projects/Anchor-Quantification Sensor - Seed Note.md>)
+[`Anchor-Quantification Sensor - Seed Note.md`](<../archive/Anchor-Quantification Sensor - Seed Note.md>)
 (a proposed quantification of anchor-eligibility -- external support
 capable of preventing collapse without appearing in the classifier's own
 math -- planned to run alongside the validated 8-feature panel and
