@@ -3,7 +3,7 @@
 > The first empirical test of Recursive Information-Container Dynamics (RICD), a theory of system health built to apply across domains and tested one domain at a time. Tell is the instrument: a pre-registered distress tracker for U.S. higher education built from public federal data (IPEDS, College Scorecard).
 
 ## What RICD is
-- A formal model with defined quantities, in docs/ (the RICD 17.7 Spine, the core engine, and the Catalog, an optional reference for edge cases and specialized trackers).
+- A formal model with defined quantities, in docs/ (the RICD 17.8 Spine, the core engine, and the Catalog, an optional reference for edge cases and specialized trackers).
 - Divergence between an institution's official, operational and meta layers (Spine Definition 6.2, section 6.3.3); resource debt (section 7.9); coverage, break-even and the drift-type or shock-type slide (section 10.3a); anchors that move the point of no return (Definitions 10.3a.7 and 10.3a.8).
 - Not statistical risk modeling and not a "grand theory": its quantities are defined before any test, and it makes claims about a domain only after an adapter for that domain is built and tested.
 
@@ -11,7 +11,9 @@
 - Tracker v3 passed its pre-registered test on 987 held-out institutions (closures 2019 to 2025): 32 of 56 closures caught, J 0.49.
 - It beat every baseline: flagging every for-profit (J 0.31), critical slowing down (J -0.02), and, at its committed flag cut points, a size-and-sector model (J 0.49 against 0.38; public and nonprofit 0.29 against 0.09; both difference intervals above zero).
 - It catches edge cases the size-and-sector proxy misses (9 closures against 1) and its anchor sensor cleared 14 flags on supported colleges, none of which closed.
-- It measures the anchors and the strain they carry across the sector, and finds that most closures are slow drifts, not sudden shocks.
+- Measured directly, anchoring explains survival: of 98 colleges in the anchor-and-voice study with a known outcome, only 3 were anchored when their trouble began, and none of the 98 public or nonprofit closures with a measured ending was anchored (data/anchor and voice/).
+- It measures the anchors and the strain they carry across the sector (chronically short private nonprofits closed about five times as often as those never short; data/anchor efficiency/), and finds that most closures are slow drifts, not sudden shocks.
+- The live dashboard (https://carmen-speer.github.io/RICD-Tell/) runs tracker v3 on all 2,780 colleges in the current frame.
 - In law schools, which report outcomes directly, schools in the bottom tenth on bar passage or employment collapsed ten times as often.
 
 ## How to read it
