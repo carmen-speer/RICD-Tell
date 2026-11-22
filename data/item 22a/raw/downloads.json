@@ -1,6 +1,6 @@
 {
  "note": "Item 22a, step one: pass-rate files downloaded or attempted, under protocols/nursing and pharmacy protocol.md, section 7. Nothing parsed; no pass rate read.",
- "written at (UTC)": "2026-11-22T01:39:06.728135+00:00",
+ "written at (UTC)": "2026-11-22T05:01:07.285148+00:00",
  "files": [
   {
    "source": "Oklahoma",
@@ -102,7 +102,7 @@
    "source": "Texas",
    "file": "texas rn 2024 (board report).pdf",
    "url": "https://www.bon.texas.gov/pdfs/board_meetings_pdfs/2025/Apr/3-2-12.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 238727,
    "sha256": "fb7d3b8726977124b2ee604a24477a324067ef6ef7ab37f81f83b9fdefe70032"
   },
@@ -110,7 +110,7 @@
    "source": "Texas",
    "file": "texas rn 2015 (board report).pdf",
    "url": "https://www.bon.texas.gov/pdfs/board_meetings_pdfs/2016/January/3-2-5.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 41650,
    "sha256": "da3103fd8e6276cc0198b6996cd3e0d3ab2bbfdee8e9f814b5573ced6c876aba"
   },
@@ -150,7 +150,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2020.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-20.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 693504,
    "sha256": "611164e7f0acc74a0a68ec19473658c8d7366e0be12711baa54d3794f549dc54"
   },
@@ -158,7 +158,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2021.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-21.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 346597,
    "sha256": "b40258aa2e27f6cfa9b1753f24cda00aa8b317cf21d951748ab9c39ab9e1b9fd"
   },
@@ -166,7 +166,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2022.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-22.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 774236,
    "sha256": "83e8e19c462420c973fd0665b257783a11f1d67b4ae6e5b9ce805f680dc5fa92"
   },
@@ -174,7 +174,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2023.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-23.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 281725,
    "sha256": "669a540943457c618b45d19be2faee194592c04289704d0d02da9b631975d6c0"
   },
@@ -182,7 +182,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2024.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-24.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 284117,
    "sha256": "45dd7ff0a9d8fce1dd33315c6f01ff1066a06b2206e00219ce23d1f98ddc926c"
   },
@@ -190,7 +190,7 @@
    "source": "Texas",
    "file": "texas rn five-year 2025.pdf",
    "url": "https://www.bon.texas.gov/pdfs/education_pdfs/education_programs/RN%205YR-25.pdf",
-   "status": "downloaded",
+   "status": "already present (hashed, not re-fetched)",
    "bytes": 410349,
    "sha256": "163829c0711de5616c4fd718ca3d3880bdfcf0cd10b5e7780bbe57603c919f13"
   },
@@ -206,7 +206,6 @@
    "source": "NABP",
    "file": "naplex 2014-2024 ten-year.pdf",
    "url": "https://nabp.pharmacy/wp-content/uploads/2025/10/Ten-Year-NAPLEX-and-MPJE-Pass-Rates.pdf",
-   "placed by hand": true,
    "status": "already present (hashed, not re-fetched)",
    "bytes": 220567,
    "sha256": "234ef9c139433489ef07a01783f72cd95f8341dcf40f176b5d054ef81f675756"
