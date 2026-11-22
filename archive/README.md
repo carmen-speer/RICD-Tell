@@ -1,7 +1,7 @@
 # Archive
 
-One-off diagnostics, kept as a record. Nothing in the current pipeline runs
-or imports any file here.
+One-off diagnostics and finished records, kept as a record. Nothing in the
+current pipeline runs or imports any file here.
 
 ## What is here
 
@@ -18,6 +18,15 @@ or imports any file here.
   (`common_cause.py`, `legacy_peer_density_reference.py`).
 - `diagnostics/docker/Dockerfile.thomas_aquinas_pinned`: the pinned
   environment used by the Thomas Aquinas investigation.
+- [`Texas transfer test.md`](<Texas transfer test.md>): the write-up of
+  the transfer test (adjunct reliance and transfer students' outcomes,
+  under `transfer test protocol.md`), which was not supported; moved here
+  from the root README.
+- [`Anchor-Quantification Sensor - Seed Note.md`](<Anchor-Quantification Sensor - Seed Note.md>):
+  the seed note that proposed the anchor sensor, kept as a record now that
+  the sensor is built (tested in tracker v3, then quantified in the ending
+  types, anchor efficiency and anchor-and-voice studies; see the root
+  README).
 
 What each diagnostic found is recorded in
 [Known gaps and record of fixes](<../history of fixes/Known gaps and record of fixes.md>).
@@ -31,9 +40,10 @@ hash.
 Everything that reproduces a reported result stays in place and runnable
 from the Actions tab: the confirmatory, v2 and v3 pipelines, the
 equivalence, reproducibility and convergence checks, the reanalysis, the
-meta-channel tests, the anchor cross-reference and the transfer test.
-`src/diagnose_v2_finance_codes.py` and its workflow also stay, because the
-current pipeline imports that script.
+meta-channel tests, the anchor cross-reference, the transfer test, the
+ending types, anchor efficiency and anchor-and-voice studies, and the live
+tracker. `src/diagnose_v2_finance_codes.py` and its workflow also stay,
+because the current pipeline imports that script.
 
 ## Running an archived workflow
 
