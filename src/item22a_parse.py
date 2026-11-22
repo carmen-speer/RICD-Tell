@@ -288,8 +288,8 @@ def texas_file(fname):
         if not any(c[1] for c in cells):
             if re.fullmatch(r"\d{1,3}\.\d{2}%", s):
                 report["texas lone rate lines"].append([fname, s])
-            elif len(cells) == 5:
-                pass                      # a program with no candidates in any year
+            elif cells or re.search(r"(-\s+){3,}", s):
+                pending = ""              # a program with no candidates in the years shown
             else:
                 pending = (pending + " " + s).strip()
             continue
@@ -332,9 +332,10 @@ def oklahoma_file(fname):
         if not yrs or not s or s.startswith("Page ") or "Board of Nursing" in s or "BOARD OF NURSING" in s \
                 or "Pass Rate" in s or "PASS RATE" in s:
             continue
-        m = re.match(r"(.*?)\s+((?:" + OK_VAL + r"\s+){11})([\d,.]+|N/A)\s*$", s)
+        m = re.match(r"(.*?)\s+((?:" + OK_VAL + r"\s+){10}" + OK_VAL + r")(?:\s+([\d,.]+|N/A))?\s*$", s)
         if not m:
-            pending = (pending + " " + s).strip()
+            if not re.fullmatch(r"[\d\s.,]+", s):      # a stray number is not part of a name
+                pending = (pending + " " + s).strip()
             continue
         name = tidy(pending + " " + m[1])
         pending = ""
