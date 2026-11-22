@@ -8,6 +8,8 @@ Every attempt is recorded, including files that fail or are refused, so a
 file that must be downloaded by hand is listed with its URL. Hand-downloaded
 files go in data/item 22a/raw/ under the same name and are recorded the same
 way by rerunning this script (an existing file is hashed, not re-fetched).
+A hand-downloaded file may keep its browser name (the last part of its URL);
+it is renamed to the name used here.
 
 Run from the repository root:  python "src/item 22a downloads.py"
 """
@@ -16,6 +18,7 @@ import json
 import os
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
@@ -84,6 +87,12 @@ def main():
     for source, name, url in SOURCES:
         path = os.path.join(RAW, name)
         rec = {"source": source, "file": name, "url": url}
+        # A file downloaded by hand keeps the name the browser gave it (the
+        # last part of its URL); it is renamed to the name used here.
+        hand = os.path.join(RAW, urllib.parse.unquote(url.rsplit("/", 1)[-1]))
+        if not os.path.exists(path) and os.path.exists(hand) and hand != path:
+            os.rename(hand, path)
+            rec["placed by hand"] = True
         if os.path.exists(path):
             data = open(path, "rb").read()
             rec.update(status="already present (hashed, not re-fetched)", bytes=len(data), sha256=sha256(data))
