@@ -5,7 +5,7 @@ README explains what Tell is; the protocols explain what was fixed in advance.
 
 ## 1. Read the result (no running needed)
 
-- **The pre-registered test and its rules:** [`sampling protocol v3.md`](<../sampling protocol v3.md>),
+- **The pre-registered test and its rules:** [`sampling protocol v3.md`](<../protocols/sampling protocol v3.md>),
   committed before any test outcome was read.
 - **The verdicts and numbers:** [`data/v3/test results.json`](<../data/v3/test results.json>)
   (tracker v3 on 987 held-out institutions, closures 2019 to 2025).
@@ -14,7 +14,7 @@ README explains what Tell is; the protocols explain what was fixed in advance.
 - **The comparator (critical slowing down):** [`data/v3/comparator flags.json`](<../data/v3/comparator flags.json>).
 - **Exploratory follow-ups** (reanalysis, anchor cross-reference, meta-channel
   candidates, the Texas transfer test, openings against closures):
-  [`data/`](<../data/>), one folder each, with the protocol for each at the top level.
+  [`data/`](<../data/>), one folder each, with the protocol for each in [`protocols/`](<../protocols/>).
 - **Errors and their fixes:** [`history of fixes/`](<../history of fixes/>) and the errata
   recorded in each protocol.
 

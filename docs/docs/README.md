@@ -24,7 +24,7 @@ process record (see [`reports/`](../../reports/) and [`src/`](../../src/) for th
   GitHub Pages at
   [carmen-speer.github.io/RICD-Tell](https://carmen-speer.github.io/RICD-Tell/).
   It shows tracker v3 on all 2,780 colleges in the current frame, scored
-  under [`live tracker protocol.md`](<../../live tracker protocol.md>):
+  under [`live tracker protocol.md`](<../../protocols/live tracker protocol.md>):
   each college's anchored flag, its v3 flag and probability, and the
   anchors that clear a flag. A flag marks risk of closure, not a forecast
   that a college will close (see

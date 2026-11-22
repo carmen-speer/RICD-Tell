@@ -9,7 +9,7 @@ hand-picked.** The 54-institution panel above was designed to be
 representative, not random, so its 100% leave-one-out accuracy shows the
 classifier is internally consistent; it does not show how the classifier
 performs on institutions no one chose. The rules for that test were fixed
-in [`sampling protocol.md`](<../sampling protocol.md>) and committed before any
+in [`sampling protocol.md`](<../protocols/sampling protocol.md>) and committed before any
 institution was drawn or scored: systematic sampling from the IPEDS 2019
 institutional header file (public, private nonprofit, and private for-profit
 four-year, degree-granting institutions, ordered by UNITID); a collision rule
