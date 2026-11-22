@@ -600,8 +600,9 @@ the findings document, the narrative account of how each result was actually
 reached, and the consolidated process log -- alongside
 [`Higher Ed Sector Findings.pdf`](<../reports/Higher Ed Sector Findings.pdf>) (a
 separate analysis of what the results imply about the U.S. higher-education
-sector as a whole), and [`RICD Adapter Instructional Manual.pdf`](<../reports/RICD Adapter Instructional Manual.pdf>) (an instructional manual for
-engineers working with the RICD adapter contract directly).
+sector as a whole), and `RICD Adapter Instructional Manual.pdf` (an instructional manual for
+engineers working with the RICD adapter contract directly; since replaced by
+[`Building a C-CT Tracker in Your Domain.pdf`](<../reports/Building a C-CT Tracker in Your Domain.pdf>)).
 
 **Not-yet-built or not-yet-funded work lives in [`future-projects/`](../future-projects/):**
 [`Next Project for RICD - Four Adapter Build Roadmap.pdf`](<../future-projects/Next Project for RICD - Four Adapter Build Roadmap.pdf>)
