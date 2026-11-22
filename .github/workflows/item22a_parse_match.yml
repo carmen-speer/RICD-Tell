@@ -1,0 +1,63 @@
+name: item 22a - read pass rates and match names
+
+# Steps two and three of item 22a (protocols/nursing and pharmacy
+# protocol.md, sections 2, 3 and 7, and Amendment 1). Reads the nursing
+# pass-rate files already in data/item 22a/raw/ into
+# data/item 22a/pass_rates.csv (src/item22a_parse.py), then matches each
+# program to its IPEDS unit ID by name and state, keeping the hand list in
+# data/item 22a/name crosswalk.csv (src/item22a_match.py). Only the IPEDS
+# directory files are read; no completions file is opened, so no outcome
+# is seen.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q poppler-utils
+          pip install -r "requirements v2 lock.txt"
+          pip install pdfplumber==0.11.10
+
+      - name: Read the pass-rate files
+        run: python src/item22a_parse.py
+
+      - name: Match programs to IPEDS unit IDs
+        run: |
+          cd src
+          python item22a_match.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/item 22a/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 22a: pass rates read and names matched (no completions read)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
