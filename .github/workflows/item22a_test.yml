@@ -1,0 +1,56 @@
+name: item 22a - nursing and pharmacy test
+
+# Step four of item 22a (protocols/nursing and pharmacy protocol.md,
+# sections 2 to 5, Amendments 1 and 2). Reads the committed pass rates and
+# name crosswalk, downloads the IPEDS Completions files C2008_A to C2024_A
+# and the header files from HD2013, sets levels, thresholds and flags before
+# any outcome is computed, then runs the nursing test (src/item22a_test.py).
+# The 2025 completions file is never opened; whether NCES serves it is
+# recorded by a HEAD request. Pharmacy is prospective (Amendment 2,
+# decision 4) and is not run here.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: pip install -r "requirements v2 lock.txt"
+
+      - name: Run the nursing test
+        run: |
+          cd src
+          python item22a_test.py
+
+      - name: Commit the result
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/item 22a/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 22a: nursing test results"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
