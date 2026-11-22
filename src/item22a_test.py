@@ -64,7 +64,8 @@ C_FIRST, C_LAST = 2008, 2024              # completions years read (section 5); 
 HD_FIRST, HD_LAST = 2013, 2026            # header files for the closure rule; files from 2025 may not be served
 LEVEL_YEARS = range(2014, 2021)           # Amendment 2, decision 1
 DEV, TEST = range(2015, 2018), range(2018, 2022)
-AWLEVEL = {"3": "associate", "5": "bachelor"}
+AWLEVEL = {3: "associate", 5: "bachelor"}
+diagnostics: dict = {}          # completions years that read as empty, with raw values to see why
 MIN_C_ROWS, MIN_HD_ROWS = 100000, 3000
 
 
@@ -72,10 +73,41 @@ def rn_code(year: int) -> float:
     return 51.3801 if year >= 2010 else 51.1601
 
 
+def clean(v: str) -> str:
+    """A cell with any spreadsheet quoting removed (="51.3801", '51.3801)."""
+    return (v or "").strip().lstrip("=").strip().strip('"').strip("'").strip()
+
+
+def cip_digits(v: str) -> str:
+    """A CIP code as six digits, whatever its written form (51.3801, 51.380100, 513801)."""
+    v = clean(v)
+    if "." in v:
+        a, b = v.split(".", 1)
+        return (a.zfill(2) + (b + "0000")[:4]) if a.isdigit() and b.isdigit() else ""
+    return v[:6] if v.isdigit() and len(v) >= 6 else ""
+
+
+def code_int(v: str) -> int | None:
+    v = clean(v)
+    try:
+        return int(float(v))
+    except ValueError:
+        return None
+
+
+def value(v: str) -> float | None:
+    v = clean(v)
+    try:
+        return float(v)
+    except ValueError:
+        return None
+
+
 # ------------------------------------------------------------------ reading IPEDS
 def completions() -> tuple[dict, dict, list]:
     """For each year: the set of unit IDs in the file, and first-major RN completions by (unit, level)."""
     present, rn, files = {}, {}, []
+    diagnostics.clear()
     for y in range(C_FIRST, C_LAST + 1):
         got = mc.fetch(f"C{y}_A.zip", True)
         name, text = mc.first_csv(got[0])
@@ -83,25 +115,28 @@ def completions() -> tuple[dict, dict, list]:
         if len(rows) < MIN_C_ROWS:
             raise SystemExit(f"C{y}_A yielded {len(rows)} rows; misread. Nothing recorded.")
         code = rn_code(y)
-        ids, by = set(), defaultdict(float)
+        target = cip_digits(f"{code:.4f}")
+        ids, by, sample = set(), defaultdict(float), []
         for r in rows:
             u = r.get("UNITID", "")
             if not u:
                 continue
             ids.add(u)
-            try:
-                cip = round(float(r.get("CIPCODE", "")), 4)
-            except ValueError:
+            cip, major, aw = cip_digits(r.get("CIPCODE", "")), code_int(r.get("MAJORNUM", "")), code_int(r.get("AWLEVEL", ""))
+            if cip == target and len(sample) < 25:
+                sample.append({k: r.get(k, "") for k in ("UNITID", "CIPCODE", "MAJORNUM", "AWLEVEL", "CTOTALT", "CTOTALM", "CTOTALW")})
+            if cip != target or major != 1 or aw not in AWLEVEL:
                 continue
-            if cip != code or r.get("MAJORNUM", "") != "1" or r.get("AWLEVEL", "") not in AWLEVEL:
-                continue
-            t = mc.number(r.get("CTOTALT", ""))
+            t = value(r.get("CTOTALT", ""))
             if t is None:      # 2008 and 2009 give men and women only
-                m, w = mc.number(r.get("CTOTALM", "")), mc.number(r.get("CTOTALW", ""))
+                m, w = value(r.get("CTOTALM", "")), value(r.get("CTOTALW", ""))
                 t = None if m is None and w is None else (m or 0) + (w or 0)
             if t is not None:
-                by[(u, AWLEVEL[r["AWLEVEL"]])] += t
+                by[(u, AWLEVEL[aw])] += t
         present[y], rn[y] = ids, dict(by)
+        if len(by) < 1000:     # every year has well over 1,000 RN programs nationally; fewer is a misread
+            diagnostics[str(y)] = {"csv": name, "headings": sorted(rows[0]) if rows else [],
+                                   "unit-levels read": len(by), "rows with the RN code (first 25)": sample}
         files.append({"file": f"C{y}_A", "url": got[1], "csv": name, "zip sha256": hashlib.sha256(got[0]).hexdigest(),
                       "rows": len(rows), "CIP code": f"{code:.4f}", "units with RN first-major completions": len(by)})
         print(f"C{y}_A", len(rows), "rows;", len(by), "unit-levels with RN completions", flush=True)
@@ -175,7 +210,17 @@ def main() -> None:
     cw = {(r["state"], r["level"], r["board_section"], r["board_program"]): r
           for r in csv.DictReader(open(DIR / "name crosswalk.csv", encoding="utf-8"))}
 
+    for stale in ("results.json", "program_years.csv", "level_assignments.csv", "completions_read_check.json"):
+        (DIR / stale).unlink(missing_ok=True)      # no earlier output survives a new run
     present, rn, c_files = completions()
+    if diagnostics:
+        (DIR / "completions_read_check.json").write_text(json.dumps({
+            "note": "Completions years that read as empty or nearly so. The test was not run and no result "
+                    "was written; the raw values below show how these files write the fields the test reads.",
+            "written at (UTC)": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "years": diagnostics, "sources": c_files}, indent=1) + "\n", encoding="utf-8")
+        print("Completions misread in", sorted(diagnostics), "; test not run. See completions_read_check.json.")
+        return
     served = c2025_served()
 
     def comp(unit: str, level: str, y: int):
@@ -359,6 +404,9 @@ def main() -> None:
 
     dev = [r for r in rows if r["base year"] in DEV]
     test = [r for r in rows if r["base year"] in TEST]
+    if not test or not dev:
+        raise SystemExit(f"Development has {len(dev)} and test {len(test)} program-years; something upstream "
+                         "misread. No result written.")
     t = summary(test)
     ci = t.get("rate ratio 95% interval (programs resampled)")
     verdict = ("supported" if ci and ci[0] > 1 else "in the predicted direction" if (t.get("rate ratio") or 0) > 1
