@@ -24,6 +24,25 @@ jobs:
         with:
           python-version: "3.11.18"
 
+      # The Texas Board of Nursing's server does not send its intermediate
+      # certificate, so verification fails with "unable to get local issuer
+      # certificate". This fetches the intermediate from the address the
+      # server's own certificate names (its Authority Information Access
+      # field) and adds it to the trusted bundle. Verification stays on.
+      - name: Complete the Texas board's certificate chain
+        continue-on-error: true
+        run: |
+          set -e
+          echo | openssl s_client -connect www.bon.texas.gov:443 -servername www.bon.texas.gov 2>/dev/null | openssl x509 > leaf.pem
+          url=$(openssl x509 -in leaf.pem -noout -ext authorityInfoAccess | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+          echo "Issuer certificate: $url"
+          curl -fsSL "$url" -o issuer.bin
+          openssl x509 -inform DER -in issuer.bin -out issuer.pem 2>/dev/null \
+            || openssl x509 -in issuer.bin -out issuer.pem 2>/dev/null \
+            || openssl pkcs7 -inform DER -in issuer.bin -print_certs -out issuer.pem
+          cat /etc/ssl/certs/ca-certificates.crt issuer.pem > "$RUNNER_TEMP/bundle.pem"
+          echo "SSL_CERT_FILE=$RUNNER_TEMP/bundle.pem" >> "$GITHUB_ENV"
+
       - name: Download the pass-rate files
         run: python "src/item 22a downloads.py"
 
