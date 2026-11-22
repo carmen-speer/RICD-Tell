@@ -22,6 +22,6 @@ abstract: >-
   show (its operational channel), and combines it with institutional size,
   sector and anchoring to flag distress. Tracker v3 passed a pre-registered,
   out-of-sample test on 987 held-out U.S. institutions (closures 2019 to
-  2025). The theory it implements, RICD, is in docs/ (the RICD 17.7 Spine
+  2025). The theory it implements, RICD, is in docs/ (the RICD 17.8 Spine
   and Catalog). Every protocol, run, result and erratum is in this
   repository.
