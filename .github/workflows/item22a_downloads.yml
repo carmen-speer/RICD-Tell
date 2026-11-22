@@ -1,0 +1,47 @@
+name: item 22a - download pass-rate files
+
+# Step one of item 22a (protocols/nursing and pharmacy protocol.md,
+# section 7): downloads the nursing and pharmacy pass-rate PDFs, records
+# each file's URL and sha256 in data/item 22a/raw/downloads.json, and lists
+# any file that must be downloaded by hand. Nothing is parsed here.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Download the pass-rate files
+        run: python "src/item 22a downloads.py"
+
+      - name: Commit the files
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add "data/item 22a/raw/"
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 22a: pass-rate files downloaded (nothing parsed)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
