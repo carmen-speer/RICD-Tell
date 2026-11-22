@@ -1,0 +1,609 @@
+state,level,board_section,board_program,unitid,ipeds_name,how,note
+FL,,,ACTIVA TRAINING CENTER (US70415600),,,unmatched,
+FL,,,ADVENTHEALTH UNIVERSITY (US70502200),133872,AdventHealth University,auto,whole name
+FL,,,ALTIERUS CAREER COLLEGE (US70403000),,,unmatched,
+FL,,,ATA CAREER EDUCATION (US70411700),446127,ATA Career Education,auto,whole name
+FL,,,"AZURE COLLEGE, INC - MIAMI GARDENS - ADN (US70707200)",,,unmatched,
+FL,,,BRECKENRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - ORLANDO (US70701700),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECH INSTITUTE - ST PETERSBURG (US70409600),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECH INSTITUTE - WEST PALM BEACH (US70700600),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - FT LAUDERDA (US70404800),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - FT MYERS (US70408800),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - JACKSONVILL (US70403500),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - LAKE MARY (US70403400),,,unmatched,
+FL,,,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - TALLAHASSEE (US70404500),,,unmatched,
+FL,,,"CARLEEN HOME HEALTH SCHOOL, INC (US70207200)",,,unmatched,
+FL,,,CLOSED PROGRAM (US70900000),,,unmatched,
+FL,,,COLLEGE OF HEALTH AND ALLIED DEVELOPMENT (US70512300),,,unmatched,
+FL,,,CONCORDE CAREER INSTITUTE (US70402100),,,unmatched,
+FL,,,DADE MEDICAL COLLEGE - HOLLYWOOD (US70403100),458797,Dade Medical College-Hollywood,auto,whole name
+FL,,,DADE MEDICAL COLLEGE - HOMESTEAD (US70403200),458247,Dade Medical College-Homestead,auto,whole name
+FL,,,DADE MEDICAL COLLEGE - MIAMI LAKES (US70405200),454175,Dade Medical College-Miami Lakes,auto,whole name
+FL,,,FLORIDA NATIONAL UNIVERSITY - MAIN CAMPUS - HIALEAH (US70405300),408844,Florida National University-Main Campus,auto,name without its last part
+FL,,,FORTIS COLLEGE (US70705700),480143,Fortis College-Cutler Bay,auto,whole name
+FL,,,FORTIS INSTITUTE (US70402200),442745,Fortis Institute,auto,whole name
+FL,,,HCI COLLEGE (US70413500),490054,HCI College,auto,whole name
+FL,,,"INTERNATIONAL INSTITUTE FOR HEALTHCARE PROFESSIONALS, INC (US70201700)",,,unmatched,
+FL,,,MEDWORLD ACADEMY (US70414700),,,unmatched,
+FL,,,MERCY HOSPITAL COLLEGE OF NURSING PN TO RN ADN (US70400900),,,unmatched,
+FL,,,NORTHWEST FLORIDA STATE COLLEGE (US70405000),136233,Northwest Florida State College,auto,whole name
+FL,,,NOVA SOUTHEASTERN UNIVERSITY (US70509600),136215,Nova Southeastern University,auto,whole name
+FL,,,SIGMA COLLEGE - OAKLAND PARK (US70101200),,,unmatched,
+FL,,,SOUTH FLORIDA COLLEGE OF NURSING (US70412800),,,unmatched,
+FL,,,THE COLLEGE OF THE FLORIDA KEYS (US70407400),133960,The College of the Florida Keys,auto,whole name
+FL,,,UNIVERSAL CAREER SCHOOL - DPL (US70302100),446589,Universal Career School,auto,name without its last part
+FL,,,UNIVERSIDAD ANA G. MENDEZ - GURABO - MIAMI LAKES (US70503200),,,unmatched,
+FL,,,UNIVERSIDAD ANA G. MENDEZ - GURABO - ORLANDO (US70503300),,,unmatched,
+FL,,,UNIVERSIDAD ANA G. MENDEZ - GURABO - TAMPA (US70503400),,,unmatched,
+FL,,,VIRGINIA COLLEGE (US70402400),,,unmatched,
+FL,associate,ADN,ACADEMY FOR NURSING AND HEALTH OCCUPATIONS - ADN (US70406300),412173,Academy for Nursing and Health Occupations,auto,whole name
+FL,associate,ADN,ACTIVE HEALTH INSTITUTE - ADN (US70410400),,,unmatched,
+FL,associate,ADN,ADVANCE SCIENCE COLLEGE - ADN (US70410000),444334,Advance Science International College,auto,whole name
+FL,associate,ADN,ADVANCE SCIENCE INTERNATIONAL COLLEGE - ADN (US70410000),444334,Advance Science International College,auto,whole name
+FL,associate,ADN,ADVENTIST UNIVERSITY OF HEALTH SCIENCES - ADN (US70401000),133872,AdventHealth University,auto,whole name
+FL,associate,ADN,AGAPE ACADEMY OF SCIENCES - ADN (US70412500),,,unmatched,
+FL,associate,ADN,AGAPE UNIVERSITY - ADN (US70413700),,,unmatched,
+FL,associate,ADN,AMERICAN COLLEGE OF HEALTH & SCIENCES - ADN (US70411500),,,unmatched,
+FL,associate,ADN,AMERICAN MEDICAL ACADEMY - ADN (US70706700),475714,American Medical Academy,auto,whole name
+FL,associate,ADN,ANTIGUA COLLEGE INTERNATIONAL - ADN (US70706900),496636,Antigua College International,auto,whole name
+FL,associate,ADN,"ANTIGUA COLLEGE INTERNATIONAL, INC. - ADN (US70706900)",,,unmatched,
+FL,associate,ADN,ATA COLLEGE - ADN (US70411700),,,unmatched,
+FL,associate,ADN,ATLANTIS EDUCATIONAL CENTER - ADN (US70704800),,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC - ADN (US70405800)",,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC - ADN (US70405900)",,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC - ADN (US70701200)",,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC - LAUDERDALE LAKES - ADN (US70701200)",,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC - ORLANDO - ADN (US70707300)",,,unmatched,
+FL,associate,ADN,"AZURE COLLEGE, INC. - SEBRING - ADN (US70707300)",,,unmatched,
+FL,associate,ADN,BETHESDA COLLEGE OF HEALTH SCIENCES NURSING PROGRAM - ADN (US70701600),,,unmatched,
+FL,associate,ADN,BRECKINRIDGE SCHOOL OF NURSING - ITT TECH INSTITUTE - BRADENTON - ADN (US70700700),,,unmatched,
+FL,associate,ADN,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - MIAMI - ADN (US70404600),,,unmatched,
+FL,associate,ADN,BRECKINRIDGE SCHOOL OF NURSING - ITT TECHNICAL INSTITUTE - TAMPA - ADN (US70409800),,,unmatched,
+FL,associate,ADN,BRIGHTMED HEALTH INSTITUTE - ADN (US70412100),,,unmatched,
+FL,associate,ADN,BROWARD COLLEGE - ADN (US70407500),132709,Broward College,auto,whole name
+FL,associate,ADN,BROWN MACKIE COLLEGE - ADN (US70406600),,,unmatched,
+FL,associate,ADN,BURNETT INTERNATIONAL COLLEGE - ADN (US70700000),484181,Burnett International College,auto,whole name
+FL,associate,ADN,CAMBRIDGE COLLEGE OF HEALTHCARE AND TECHNOLOGY - ADN (US70410900),454865,Cambridge College of Healthcare & Technology,auto,whole name
+FL,associate,ADN,CAMBRIDGE INSTITUTE OF ALLIED HEALTH AND TECHNOLOGY - ADN (US70410300),,,unmatched,more than one unit ID: 446109;454865
+FL,associate,ADN,CAMBRIDGE MEDICAL INSTITUTE - ADN (US70402900),,,unmatched,
+FL,associate,ADN,CAPSCARE ACADEMY FOR HEALTHCARE EDUCATION - ADN (US70704400),,,unmatched,
+FL,associate,ADN,CARE HOPE COLLEGE - ADN (US70414400),,,unmatched,
+FL,associate,ADN,CARE HOPE COLLEGE - ADN (US70702800),,,unmatched,
+FL,associate,ADN,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - PALM BAY - ADN (US70706400),,,unmatched,
+FL,associate,ADN,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - WEST PALM BEACH - ADN (US70706500),,,unmatched,
+FL,associate,ADN,CARLEEN HOME HEALTH SCHOOL - ADN (US70407900),,,unmatched,
+FL,associate,ADN,CENSA INTERNATIONAL COLLEGE - ADN (US70410700),,,unmatched,
+FL,associate,ADN,CENSA INTERNATIONAL COLLEGE - ADN (US70705200),,,unmatched,
+FL,associate,ADN,CHIPOLA COLLEGE - ADN (US70400100),133021,Chipola College,auto,whole name
+FL,associate,ADN,CITY COLLEGE - ADN (US70403700),,,unmatched,
+FL,associate,ADN,CITY COLLEGE - ADN (US70704300),,,unmatched,
+FL,associate,ADN,CITY COLLEGE - MIAMI - ADN (US70404900),434539,City College-Miami,auto,whole name
+FL,associate,ADN,COLLEGE OF CENTRAL FLORIDA - ADN (US70405100),132851,College of Central Florida,auto,whole name
+FL,associate,ADN,COLLEGE OF CENTRAL FLORIDA - ADN (US70408200),132851,College of Central Florida,auto,whole name
+FL,associate,ADN,CONCORDE CAREER INSTITUTE - ADN (US70403300),,,unmatched,
+FL,associate,ADN,CONCORDE CAREER INSTITUTE - ADN (US70412000),,,unmatched,
+FL,associate,ADN,CONCORDE CAREER INSTITUTE - MIRAMAR - ADN (US70409900),133854,Concorde Career Institute-Miramar,auto,whole name
+FL,associate,ADN,CONCORDE CAREER INSTITUTE - ORLANDO - ADN (US70401900),460190,Concorde Career Institute-Orlando,auto,whole name
+FL,associate,ADN,DADE MEDICAL COLLEGE - ADN (US70400800),,,unmatched,
+FL,associate,ADN,DADE MEDICAL COLLEGE - JACKSONVILLE - ADN (US70702400),476391,Dade Medical College-Jacksonville,auto,whole name
+FL,associate,ADN,DADE MEDICAL COLLEGE - WEST PALM BEACH - ADN (US70702300),476382,Dade Medical College-West Palm Beach,auto,whole name
+FL,associate,ADN,DAYTONA COLLEGE - ADN (US70411900),447014,Daytona College,auto,whole name
+FL,associate,ADN,DAYTONA STATE COLLEGE - ADN (US70408300),133386,Daytona State College,auto,whole name
+FL,associate,ADN,EASTERN FLORIDA STATE COLLEGE - ADN (US70403800),132693,Eastern Florida State College,auto,whole name
+FL,associate,ADN,EASTERN FLORIDA STATE COLLEGE - ADN (US70407000),132693,Eastern Florida State College,auto,whole name
+FL,associate,ADN,EMERGENCY EDUCATION INSTITUTE - ADN (US70705600),,,unmatched,
+FL,associate,ADN,EMERGENCY EDUCATIONAL INSTITUTE - ADN (US70705600),,,unmatched,
+FL,associate,ADN,EMIRAZA COLLEGE - ADN (US70702900),,,unmatched,
+FL,associate,ADN,ESSENTIAL SCHOOL OF NURSING - ADN (US70415500),,,unmatched,
+FL,associate,ADN,EVEREST UNIVERSITY - BRANDON - ADN (US70403000),260293,Everest University-Brandon,auto,whole name
+FL,associate,ADN,EVOLUTION HEALTH ACADEMY - ADN (US70415300),,,unmatched,
+FL,associate,ADN,"EXPRESS TRAINING SERVICES, LLC - ADN (US70707900)",,,unmatched,
+FL,associate,ADN,FERNANDINA BEACH COLLEGE OF ALLIED HEALTH - ADN (US70704500),,,unmatched,
+FL,associate,ADN,FLORIDA ACADEMY OF NURSING - ADN (US70705800),496681,Florida Academy of Nursing,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - ADN (US70401700),487384,Florida Career College-Pembroke Pines,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - ADN (US70410800),487384,Florida Career College-Pembroke Pines,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - JACKSONVILLE - ADN (US70412700),487436,Florida Career College-Jacksonville,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - JACKSONVILLE - ADN (US70702500),487436,Florida Career College-Jacksonville,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - KENDALL CAMPUS - ADN (US70702600),487384,Florida Career College-Pembroke Pines,auto,name without its last part
+FL,associate,ADN,FLORIDA CAREER COLLEGE - LAUDERDALE - ADN (US70702200),487384,Florida Career College-Pembroke Pines,auto,name without its last part
+FL,associate,ADN,FLORIDA CAREER COLLEGE - ORLANDO - ADN (US70707700),487472,Florida Career College-Orlando,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - PEMBROKE PINES - ADN (US70703000),487384,Florida Career College-Pembroke Pines,auto,whole name
+FL,associate,ADN,FLORIDA CAREER COLLEGE - WEST PALM BEACH - ADN (US70707600),487393,Florida Career College-West Palm Beach,auto,whole name
+FL,associate,ADN,"FLORIDA COLLEGE OF HEALTH SCIENCE, INC - ADN (US70706200)",,,unmatched,
+FL,associate,ADN,"FLORIDA COLLEGE OF HEALTH SCIENCE, INC. - ADN (US70704100)",,,unmatched,
+FL,associate,ADN,FLORIDA GATEWAY COLLEGE - ADN (US70407800),135160,Florida Gateway College,auto,whole name
+FL,associate,ADN,FLORIDA KEYS COMMUNITY COLLEGE - ADN (US70407400),133960,The College of the Florida Keys,auto,whole name
+FL,associate,ADN,FLORIDA NATIONAL UNIVERSITY - ADN (US70411000),,,unmatched,
+FL,associate,ADN,FLORIDA NATIONAL UNIVERSITY - HIALEAH - TRAINING CENTER - ADN (US70413400),,,unmatched,
+FL,associate,ADN,FLORIDA NATIONAL UNIVERSITY - MIAMI - SOUTH CAMPUS - ADN (US70405400),,,unmatched,
+FL,associate,ADN,FLORIDA NATIONAL UNIVERSITY - SOUTH CAMPUS - ADN (US70411800),,,unmatched,
+FL,associate,ADN,FLORIDA NATIONAL UNIVERSITY - TRAINING CENTER CAMPUS - HIALEAH - ADN (US70404300),,,unmatched,
+FL,associate,ADN,FLORIDA SOUTH WESTERN STATE COLLEGE - ADN (US70407200),,,unmatched,
+FL,associate,ADN,FLORIDA SOUTHWESTERN STATE COLLEGE - ADN (US70407200),133508,Florida SouthWestern State College,auto,whole name
+FL,associate,ADN,FLORIDA STATE COLLEGE AT JACKSONVILLE - ADN (US70407300),133702,Florida State College at Jacksonville,auto,whole name
+FL,associate,ADN,FMI CAREER SCHOOL - ADN (US70707400),,,unmatched,
+FL,associate,ADN,FORTIS COLLEGE - ADN (US70401200),480143,Fortis College-Cutler Bay,auto,whole name
+FL,associate,ADN,FORTIS COLLEGE - ADN (US70404700),480143,Fortis College-Cutler Bay,auto,whole name
+FL,associate,ADN,FORTIS COLLEGE - CUTLER BAY - ADN (US70700400),,,unmatched,more than one unit ID: 480143;490975
+FL,associate,ADN,FORTIS INSTITUTE - PORT ST LUCIE - ADN (US70700900),445744,Fortis Institute-Port Saint Lucie,auto,whole name
+FL,associate,ADN,FUTURE TECH INSTITUTE - ADN (US70412200),459310,Future-Tech Institute,auto,whole name
+FL,associate,ADN,GALEN COLLEGE OF NURSING - ADN (US70401100),,,unmatched,
+FL,associate,ADN,GULF COAST STATE COLLEGE - ADN (US70408100),134343,Gulf Coast State College,auto,whole name
+FL,associate,ADN,GWINNETT INSTITUTE - ADN (US70706000),490559,Gwinnett Institute,auto,whole name
+FL,associate,ADN,HCI COLLEGE - WEST PALM BEACH - ADN (US70414600),490054,HCI College,auto,name without its last part
+FL,associate,ADN,HCI COLLEGE - WEST PALM BEACH - ADN (US70705500),490054,HCI College,auto,name without its last part
+FL,associate,ADN,HEALTH CAREER INSTITUTE - ADN (US70705500),490054,HCI College,auto,whole name
+FL,associate,ADN,HEALTH EDUCATION TRAINING SCHOOL - ADN (US70411100),,,unmatched,
+FL,associate,ADN,HEBRON TECHNICAL INSTITUTE - MIAMI GARDENS - ADN (US70702100),,,unmatched,
+FL,associate,ADN,"HEBRON TECHNICAL INSTITUTE, INC - MIAMI GARDENS - ADN (US70702100)",,,unmatched,
+FL,associate,ADN,HERZING UNIVERSITY - ADN (US70404400),,,unmatched,
+FL,associate,ADN,HILLSBOROUGH COMMUNITY COLLEGE - ADN (US70406900),134495,Hillsborough Community College,auto,whole name
+FL,associate,ADN,HOPE COLLEGE OF ARTS AND SCIENCE - ADN (US70700200),,,unmatched,
+FL,associate,ADN,HOPE COLLEGE OF ARTS AND SCIENCES - ADN (US70415800),488332,Hope College of Arts and Sciences,auto,whole name
+FL,associate,ADN,HOSANNA COLLEGE OF HEALTH - ADN (US70706100),,,unmatched,
+FL,associate,ADN,"IDEAL PROFESSIONAL INSTITUTE, INC - ADN (US70706300)",,,unmatched,
+FL,associate,ADN,INDIAN RIVER STATE COLLEGE - ADN (US70407700),134608,Indian River State College,auto,whole name
+FL,associate,ADN,INTERNATIONAL COLLEGE OF HEALTH SCIENCES - ADN (US70705900),,,unmatched,
+FL,associate,ADN,"INTERNATIONAL INSTITUTE FOR HEALTHCARE PROFESSIONALS,INC. - ADN (US70703200)",,,unmatched,
+FL,associate,ADN,"JAY COLLEGE OF HEALTH SCIENCES, INC. - ADN (US70706400)",,,unmatched,
+FL,associate,ADN,JERSEY COLLEGE - ADN (US70400400),,,unmatched,more than one unit ID: 495466;495484;495493;495509
+FL,associate,ADN,JERSEY COLLEGE - ADN (US70405600),,,unmatched,more than one unit ID: 495466;495484;495493;495509
+FL,associate,ADN,JERSEY COLLEGE - ADN (US70703500),,,unmatched,more than one unit ID: 495466;495484;495493;495509
+FL,associate,ADN,JERSEY COLLEGE - LARGO - ADN (US70412400),,,unmatched,more than one unit ID: 495466;495484;495493;495509
+FL,associate,ADN,KAPLAN COLLEGE - ADN (US70404200),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - ADN (US70404000),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - CLEARWATER - ADN (US70411600),487700,Keiser University - Clearwater,auto,whole name
+FL,associate,ADN,KEISER UNIVERSITY - DAYTONA BEACH - ADN (US70413600),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - FT LAUDERDALE - ADN (US70402300),135081,Keiser University-Ft Lauderdale,auto,whole name
+FL,associate,ADN,KEISER UNIVERSITY - JACKSONVILLE - ADN (US70409000),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - LAKELAND - ADN (US70400300),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - MELBOURNE - ADN (US70401500),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - MIAMI - ADN (US70400700),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - NEW PORT RICHEY - ADN (US70411400),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - ORLANDO - ADN (US70405500),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - SARASOTA - ADN (US70402000),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - TALLAHASSEE - ADN (US70402600),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - TAMPA - ADN (US70401800),,,unmatched,
+FL,associate,ADN,KEISER UNIVERSITY - WEST PALM BEACH - ADN (US70400600),,,unmatched,
+FL,associate,ADN,LAKE - SUMTER STATE COLLEGE - ADN (US70400500),135188,Lake-Sumter State College,auto,whole name
+FL,associate,ADN,LARKIN SCHOOL OF NURSING - ADN (US70703600),,,unmatched,
+FL,associate,ADN,LINCOLN COLLEGE OF TECHNOLOGY - ADN (US70705000),,,unmatched,
+FL,associate,ADN,LINCOLN MEMORIAL UNIVERSITY CAYLOR SCHOOL OF NURSING - ADN (US70412600),,,unmatched,
+FL,associate,ADN,LINCOLN TECHNICAL INSTITUTE - ADN (US70701100),,,unmatched,
+FL,associate,ADN,MATTIA COLLEGE - ADN (US70401400),436702,Mattia College,auto,whole name
+FL,associate,ADN,MED - LIFE INSTITUTE - KISSIMMEE - ADN (US70703700),489821,Med-Life Institute-Kissimmee,auto,whole name
+FL,associate,ADN,MED - LIFE INSTITUTE - LAUDERDALE LAKES - ADN (US70701900),487843,Med-Life Institute-Lauderdale Lakes,auto,whole name
+FL,associate,ADN,MED - LIFE INSTITUTE - MIRAMAR - ADN (US70703900),,,unmatched,
+FL,associate,ADN,MED - LIFE INSTITUTE - NAPLES - ADN (US70704900),487834,Med-Life Institute-Naples,auto,whole name
+FL,associate,ADN,MED - LIFE INSTITUTE - POMPANO BEACH - ADN (US70701900),,,unmatched,
+FL,associate,ADN,MEDICAL PREP INSTITUTE OF TAMPA BAY - ADN (US70703300),490179,Medical Prep Institute of Tampa Bay,auto,whole name
+FL,associate,ADN,MIAMI DADE COLLEGE - ADN (US70408400),135717,Miami Dade College,auto,whole name
+FL,associate,ADN,MIAMI DADE COMMUNITY COLLEGE - ADN (US70408400),135717,Miami Dade College,auto,whole name
+FL,associate,ADN,MIAMI REGIONAL COLLEGE - ADN (US70701300),451103,Miami Regional University,auto,whole name
+FL,associate,ADN,MIAMI REGIONAL UNIVERSITY - ADN (US70411200),451103,Miami Regional University,auto,whole name
+FL,associate,ADN,MIAMI REGIONAL UNIVERSITY - ADN (US70419500),451103,Miami Regional University,auto,whole name
+FL,associate,ADN,MIAMI REGIONAL UNIVERSITY - ADN (US70701300),451103,Miami Regional University,auto,whole name
+FL,associate,ADN,NORTH BROWARD TECHNICAL CENTER - ADN (US70410100),,,unmatched,
+FL,associate,ADN,NORTH FLORIDA COLLEGE - ADN (US70401600),136145,North Florida College,auto,whole name
+FL,associate,ADN,NORTH FLORIDA COMMUNITY COLLEGE - ADN (US70401600),136145,North Florida College,auto,whole name
+FL,associate,ADN,NRI INSTITUTE OF HEALTH SCIENCES - ADN (US70410500),481252,Ultrasound Medical Institute,auto,whole name
+FL,associate,ADN,NURSING BRIDGES INSTITUTE - ADN (US70415000),,,unmatched,
+FL,associate,ADN,ORION COLLEGE - ADN (US70702700),454883,Orion College,auto,whole name
+FL,associate,ADN,ORLANDO MEDICAL INSTITUTE - ADN (US70706600),,,unmatched,
+FL,associate,ADN,PALM BEACH INTERNATIONAL COLLEGE - ADN (US70417300),,,unmatched,
+FL,associate,ADN,"PALM BEACH SCHOOL OF NURSING, LLC - ADN (US70703800)",,,unmatched,
+FL,associate,ADN,PALM BEACH STATE COLLEGE - ADN (US70408600),136358,Palm Beach State College,auto,whole name
+FL,associate,ADN,PALM BEACH STATE COLLEGE - BELLE GLADE - ADN (US70409200),136358,Palm Beach State College,auto,name without its last part
+FL,associate,ADN,PASCO - HERNANDO STATE COLLEGE - ADN (US70406400),136400,Pasco-Hernando State College,auto,whole name
+FL,associate,ADN,PASCO HERNANDO COMMUNITY COLLEGE - ADN (US70406400),136400,Pasco-Hernando State College,auto,whole name
+FL,associate,ADN,PENSACOLA STATE COLLEGE - ADN (US70408700),136473,Pensacola State College,auto,whole name
+FL,associate,ADN,POLK STATE COLLEGE - ADN (US70407600),136516,Polk State College,auto,whole name
+FL,associate,ADN,PREMIERE INTERNATIONAL COLLEGE - ADN (US70705100),493488,Premiere International College,auto,whole name
+FL,associate,ADN,RASMUSSEN COLLEGE - ADN (US70403600),,,unmatched,
+FL,associate,ADN,RASMUSSEN COLLEGE - ADN (US70409100),,,unmatched,
+FL,associate,ADN,RASMUSSEN COLLEGE - CENTRAL PASCO - ADN (US70409100),,,unmatched,
+FL,associate,ADN,RASMUSSEN COLLEGE - OCALA SCHOOL OF NURSING - ADN (US70409500),,,unmatched,
+FL,associate,ADN,RASMUSSEN COLLEGE - TAMPA - ADN (US70409400),,,unmatched,
+FL,associate,ADN,RENAISSANCE HEALTH INSTITUTE - ADN (US70414200),,,unmatched,
+FL,associate,ADN,SABER COLLEGE - ADN (US70416800),449506,SABER College,auto,whole name
+FL,associate,ADN,"SABER, INC. - ADN (US70409300)",,,unmatched,
+FL,associate,ADN,SANTA FE COLLEGE - ADN (US70407100),137096,Santa Fe College,auto,whole name
+FL,associate,ADN,SCHILLER INTERNATIONAL UNIVERSITY - ADN (US70700500),404338,Schiller International University,auto,whole name
+FL,associate,ADN,SEMINOLE STATE COLLEGE OF FLORIDA - ADN (US70406200),137209,Seminole State College of Florida,auto,whole name
+FL,associate,ADN,"SIENA EDUCATION CENTER, LLC - ADN (US70411300)",,,unmatched,
+FL,associate,ADN,"SIENA EDUCATION CENTER, LLC - ADN (US70707000)",,,unmatched,
+FL,associate,ADN,SIGMA COLLEGE - OAKLAND PARK - ADN (US70700100),,,unmatched,
+FL,associate,ADN,SIGMA INSTITUTE OF HEALTH CAREERS - ADN (US70701800),,,unmatched,
+FL,associate,ADN,SOUTH FLORIDA MEDICAL COLLEGE - ADN (US70704800),,,unmatched,
+FL,associate,ADN,SOUTH FLORIDA STATE COLLEGE - ADN (US70400000),137315,South Florida State College,auto,whole name
+FL,associate,ADN,SOUTHEASTERN COLLEGE - ADN (US70401300),,,unmatched,
+FL,associate,ADN,SOUTHEASTERN COLLEGE - NEW PORT RICHEY - ADN (US70701000),,,unmatched,
+FL,associate,ADN,SOUTHEASTERN COLLEGE - ST PETERSBURG - ADN (US70403900),,,unmatched,
+FL,associate,ADN,SOUTHEASTERN COLLEGE - WEST PALM BEACH - ADN (US70414900),428170,Southeastern College-West Palm Beach,auto,whole name
+FL,associate,ADN,SOUTHERN TECHNICAL COLLEGE - ADN (US70701400),,,unmatched,more than one unit ID: 366553;446552
+FL,associate,ADN,SOUTHERN TECHNICAL COLLEGE - ADN (US70703400),,,unmatched,more than one unit ID: 366553;446552
+FL,associate,ADN,SOVEREIGN SCHOOL OF NURSING - ADN (US70413200),,,unmatched,
+FL,associate,ADN,ST JOHNS RIVER STATE COLLEGE - ADN (US70402500),137281,Saint Johns River State College,auto,whole name
+FL,associate,ADN,ST PETERSBURG COLLEGE - ADN (US70408900),137078,St Petersburg College,auto,whole name
+FL,associate,ADN,STATE COLLEGE OF FLORIDA - MANATEE - SARASOTA - ADN (US70408000),135391,State College of Florida-Manatee-Sarasota,auto,whole name
+FL,associate,ADN,SUNCOAST COLLEGE OF HEALTH - ADN (US70412900),,,unmatched,
+FL,associate,ADN,SUNCOAST COLLEGE OF HEALTH - ADN (US70703100),,,unmatched,
+FL,associate,ADN,TALLAHASSEE COMMUNITY COLLEGE - ADN (US70406800),137759,Tallahassee Community College,auto,whole name
+FL,associate,ADN,TAYLOR COLLEGE - ADN (US70402700),449524,Taylor College,auto,whole name
+FL,associate,ADN,TAYLOR COLLEGE - ADN (US70405700),449524,Taylor College,auto,whole name
+FL,associate,ADN,TECHNI - PRO INSTITUTE - BOCA RATON - ADN (US70415700),,,unmatched,
+FL,associate,ADN,"TECHNI - PRO INSTITUTE, LLC - BOCA RATON - ADN (US70704000)",,,unmatched,
+FL,associate,ADN,ULTIMATE MEDICAL ACADEMY LLC - ADN (US70409700),,,unmatched,
+FL,associate,ADN,UNIVERSAL CAREER SCHOOL - ADN (US70707100),446589,Universal Career School,auto,whole name
+FL,associate,ADN,UNIVERSITY OF SOUTHERNMOST FLORIDA - ADN (US70705400),134121,University of Southernmost Florida,auto,whole name
+FL,associate,ADN,VALENCIA COLLEGE - ADN (US70406700),138187,Valencia College,auto,whole name
+FL,associate,ADN,"VICTORIA MEDICAL COLLEGE, LLC - ADN (US70700300)",,,unmatched,
+FL,bachelor,BS,ADVENTIST UNIVERSITY OF HEALTH SCIENCES - BS (US70502200),133872,AdventHealth University,auto,whole name
+FL,bachelor,BS,ANTIGUA COLLEGE INTERNATIONAL - BS (US70502300),496636,Antigua College International,auto,whole name
+FL,bachelor,BS,"ANTIGUA COLLEGE INTERNATIONAL, INC. - BS (US70502300)",,,unmatched,
+FL,bachelor,BS,"AZURE COLLEGE, INC - BS (US70502600)",,,unmatched,
+FL,bachelor,BS,"AZURE COLLEGE, INC - MIAMI GARDENS - BS (US70502800)",,,unmatched,
+FL,bachelor,BS,BARRY UNIVERSITY COLLEGE OF NURSING AND HEALTH SCIENCES - BS (US70509200),,,unmatched,
+FL,bachelor,BS,BETHUNE - COOKMAN UNIVERSITY - BS (US70506900),132602,Bethune-Cookman University,auto,whole name
+FL,bachelor,BS,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - LAUDERHILL - BS (US70501200),,,unmatched,
+FL,bachelor,BS,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - PALM BAY - BS (US70501900),,,unmatched,
+FL,bachelor,BS,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - PLANTATION - BS (US70501200),,,unmatched,
+FL,bachelor,BS,CARLEEN HEALTH INSTITUTE OF SOUTH FLORIDA - WEST PALM BEACH - BS (US70502100),,,unmatched,
+FL,bachelor,BS,CENSA INTERNATIONAL COLLEGE - BS (US70510900),,,unmatched,
+FL,bachelor,BS,CHAMBERLAIN COLLEGE - BS (US70504000),,,unmatched,
+FL,bachelor,BS,CHAMBERLAIN COLLEGE OF NURSING - BS (US70502500),,,unmatched,
+FL,bachelor,BS,CHAMBERLAIN COLLEGE OF NURSING - JACKSONVILLE - BS (US70502500),457129,Chamberlain University-Florida,auto,whole name
+FL,bachelor,BS,CHAMBERLAIN COLLEGE OF NURSING - MIRAMAR - BS (US70504000),457129,Chamberlain University-Florida,auto,whole name
+FL,bachelor,BS,COLLEGE OF NURSING AND HEALTH SCIENCES AT BARRY UNIVERSITY - BS (US70509200),,,unmatched,
+FL,bachelor,BS,DADE MEDICAL COLLEGE - MIAMI - BS (US70501400),444574,Dade Medical College-Miami,auto,whole name
+FL,bachelor,BS,ECPI UNIVERSITY - BS (US70513800),,,unmatched,
+FL,bachelor,BS,ECPI UNIVERSITY COLLEGE OF NURSING - BS (US70512000),,,unmatched,
+FL,bachelor,BS,FLORIDA A & M UNIVERSITY - BS (US70509800),133650,Florida Agricultural and Mechanical University,auto,whole name
+FL,bachelor,BS,FLORIDA ATLANTIC UNIVERSITY - BS (US70506600),133669,Florida Atlantic University,auto,whole name
+FL,bachelor,BS,FLORIDA GULF COAST UNIVERSITY - BS (US70500300),433660,Florida Gulf Coast University,auto,whole name
+FL,bachelor,BS,FLORIDA INTERNATIONAL UNIVERSITY - BS (US70508900),133951,Florida International University,auto,whole name
+FL,bachelor,BS,FLORIDA NATIONAL UNIVERSITY - HIALEAH - BS (US70501100),,,unmatched,
+FL,bachelor,BS,FLORIDA NATIONAL UNIVERSITY - MIAMI - BS (US70511400),,,unmatched,
+FL,bachelor,BS,FLORIDA SOUTHERN COLLEGE - BS (US70502000),134079,Florida Southern College,auto,whole name
+FL,bachelor,BS,FLORIDA STATE UNIVERSITY - BS (US70509000),134097,Florida State University,auto,whole name
+FL,bachelor,BS,FORTIS COLLEGE - CUTLER BAY - BS (US70500100),,,unmatched,more than one unit ID: 480143;490975
+FL,bachelor,BS,FORTIS COLLEGE - LARGO - BS (US70500200),447360,Fortis College-Largo,auto,whole name
+FL,bachelor,BS,HEBRON TECHNICAL INSTITUTE - MIAMI GARDENS - BS (US70510600),,,unmatched,
+FL,bachelor,BS,HERZING UNIVERSITY - BS (US70500900),,,unmatched,
+FL,bachelor,BS,HODGES UNIVERSITY - BS (US70512700),367884,Hodges University,auto,whole name
+FL,bachelor,BS,HOPE COLLEGE OF ARTS AND SCIENCES - BS (US70502900),488332,Hope College of Arts and Sciences,auto,whole name
+FL,bachelor,BS,HOSANNA COLLEGE OF HEALTH - BS (US70501700),,,unmatched,
+FL,bachelor,BS,INTERNATIONAL COLLEGE OF HEALTH SCIENCES - BS (US70514300),,,unmatched,
+FL,bachelor,BS,"INTERNATIONAL INSTITUTE FOR HEALTHCARE PROFESSIONALS, INC - BS (US70513200)",,,unmatched,
+FL,bachelor,BS,JACKSONVILLE UNIVERSITY - BS (US70506000),134945,Jacksonville University,auto,whole name
+FL,bachelor,BS,"JAY COLLEGE OF HEALTH SCIENCES, INC. - BS (US70501900)",,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - FT LAUDERDALE - BS (US70511600),135081,Keiser University-Ft Lauderdale,auto,whole name
+FL,bachelor,BS,KEISER UNIVERSITY - FT MYERS - BS (US70513100),,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - ORLANDO - BS (US70513600),,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - PORT ST LUCIE - BS (US70513900),,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - SARASOTA - BS (US70511000),,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - WEST PALM BEACH - BS (US70511500),,,unmatched,
+FL,bachelor,BS,KEISER UNIVERSITY - WEST PALM BEACH - BS (US70513500),,,unmatched,
+FL,bachelor,BS,LINCOLN MEMORIAL UNIVERSITY CAYLOR SCHOOL OF NURSING - BS (US70512100),,,unmatched,
+FL,bachelor,BS,MATTIA COLLEGE - BS (US70501300),436702,Mattia College,auto,whole name
+FL,bachelor,BS,MIAMI REGIONAL COLLEGE - BS (US70511900),451103,Miami Regional University,auto,whole name
+FL,bachelor,BS,MIAMI REGIONAL UNIVERSITY - BS (US70510800),451103,Miami Regional University,auto,whole name
+FL,bachelor,BS,MIAMI REGIONAL UNIVERSITY - BS (US70511900),451103,Miami Regional University,auto,whole name
+FL,bachelor,BS,MILLER'S COLLEGE OF NURSING - BS (US70500800),,,unmatched,
+FL,bachelor,BS,NOVA SOUTHEASTERN UNIVERSITY - BS (US70507800),136215,Nova Southeastern University,auto,whole name
+FL,bachelor,BS,NOVA SOUTHEASTERN UNIVERSITY - BS (US70510700),136215,Nova Southeastern University,auto,whole name
+FL,bachelor,BS,PALM BEACH ATLANTIC UNIVERSITY - BS (US70503000),136330,Palm Beach Atlantic University,auto,whole name
+FL,bachelor,BS,PENSACOLA CHRISTIAN COLLEGE - BS (US70506800),,,unmatched,
+FL,bachelor,BS,RASMUSSEN COLLEGE - CENTRAL PASCO - BS (US70511100),,,unmatched,
+FL,bachelor,BS,RASMUSSEN COLLEGE - OCALA SCHOOL OF NURSING - BS (US70512200),,,unmatched,
+FL,bachelor,BS,RASMUSSEN COLLEGE - TAMPA - BS (US70511700),,,unmatched,
+FL,bachelor,BS,"RASMUSSEN COLLEGE, INC - BS (US70511100)",,,unmatched,
+FL,bachelor,BS,"RASMUSSEN COLLEGE, INC - FT MYERS - BS (US70511800)",,,unmatched,
+FL,bachelor,BS,REMINGTON COLLEGE OF NURSING - BS (US70501500),,,unmatched,
+FL,bachelor,BS,SOUTH UNIVERSITY - BS (US70507000),,,unmatched,
+FL,bachelor,BS,SOUTH UNIVERSITY - TAMPA - BS (US70500400),449898,South University-Tampa,auto,whole name
+FL,bachelor,BS,SOUTHEASTERN UNIVERSITY - BS (US70503600),137564,Southeastern University,auto,whole name
+FL,bachelor,BS,ST THOMAS UNIVERSITY - BS (US70511200),137476,St. Thomas University,auto,whole name
+FL,bachelor,BS,UNIVERSIDAD DEL TURABO - MIRAMAR - BS (US70503200),,,unmatched,
+FL,bachelor,BS,UNIVERSIDAD DEL TURABO - ORLANDO - BS (US70503300),,,unmatched,
+FL,bachelor,BS,UNIVERSIDAD DEL TURABO - TAMPA - BS (US70503400),,,unmatched,
+FL,bachelor,BS,UNIVERSITY OF CENTRAL FLORIDA - BS (US70506700),132903,University of Central Florida,auto,whole name
+FL,bachelor,BS,UNIVERSITY OF FLORIDA - BS (US70508500),134130,University of Florida,auto,whole name
+FL,bachelor,BS,UNIVERSITY OF FLORIDA - JACKSONVILLE - BS (US70500700),134130,University of Florida,auto,name without its last part
+FL,bachelor,BS,UNIVERSITY OF MIAMI - BS (US70509100),135726,University of Miami,auto,whole name
+FL,bachelor,BS,UNIVERSITY OF NORTH FLORIDA - BS (US70509400),136172,University of North Florida,auto,whole name
+FL,bachelor,BS,UNIVERSITY OF SOUTH FLORIDA COLLEGE OF NURSING - BS (US70506500),,,unmatched,
+FL,bachelor,BS,UNIVERSITY OF TAMPA - BS (US70501000),137847,The University of Tampa,auto,whole name
+FL,bachelor,BS,UNIVERSITY OF WEST FLORIDA - BS (US70500500),138354,The University of West Florida,auto,whole name
+FL,bachelor,BS,UTICA COLLEGE - BS (US70512600),,,unmatched,
+FL,bachelor,BS,WEST COAST UNIVERSITY - BS (US70501800),,,unmatched,
+FL,bachelor,BS,WESTERN GOVERNORS UNIVERSITY - BS (US70510100),,,unmatched,
+FL,bachelor,BSN,AVE MARIA UNIVERSITY - BSN (US70510200),446048,Ave Maria University,auto,whole name
+FL,bachelor,BSN,UTICA COLLEGE - BSN (US70510300),,,unmatched,
+IN,associate,associate,Ancilla College,150048,Ancilla College,auto,whole name
+IN,associate,associate,Bethel University,150145,Bethel University,auto,whole name
+IN,associate,associate,Brown Mackie College - Fort Wayne,408039,Brown Mackie College-Fort Wayne,auto,whole name
+IN,associate,associate,Brown Mackie College - Indianapolis,451699,Brown Mackie College-Indianapolis,auto,whole name
+IN,associate,associate,Brown Mackie College - South Bend,151944,Brown Mackie College-South Bend,auto,whole name
+IN,associate,associate,Fortis College,,,unmatched,
+IN,associate,associate,Harrison College - Indianapolis,151166,Harrison College-Indianapolis,auto,whole name
+IN,associate,associate,ITT Technical Institute - Fort Wayne,151500,ITT Technical Institute-Fort Wayne,auto,whole name
+IN,associate,associate,ITT Technical Institute - Indianapolis,151519,ITT Technical Institute-Indianapolis,auto,whole name
+IN,associate,associate,ITT Technical Institute - Merrillville,459587,ITT Technical Institute-Merrillville,auto,whole name
+IN,associate,associate,ITT Technical Institute - Newburgh,251251,ITT Technical Institute-Newburgh,auto,whole name
+IN,associate,associate,ITT Technical Institute - South Bend,450270,ITT Technical Institute-South Bend,auto,whole name
+IN,associate,associate,Indiana University Purdue University - Fort Wayne,151102,Purdue University Fort Wayne,auto,whole name
+IN,associate,associate,Ivy Tech Community College Anderson,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Bloomington,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Columbus,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Evansville,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Fort Wayne,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Greencastle,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Indianapolis,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Kokomo,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Lafayette,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Lake County,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Lawrenceburg,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Madison,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Marion,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Muncie,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Richmond,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Sellersburg,,,unmatched,
+IN,associate,associate,Ivy Tech Community College South Bend,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Terre Haute,,,unmatched,
+IN,associate,associate,Ivy Tech Community College Valparaiso,,,unmatched,
+IN,associate,associate,MJS School of Nursing,,,unmatched,
+IN,associate,associate,Marian University,151786,Marian University,auto,whole name
+IN,associate,associate,Medtech College - Fort Wayne,448415,MedTech College,auto,name without its last part
+IN,associate,associate,Medtech College - Greenwood,448415,MedTech College,auto,name without its last part
+IN,associate,associate,Medtech College - Indianapolis,448415,MedTech College,auto,name without its last part
+IN,associate,associate,Purdue University - Calumet,,,unmatched,
+IN,associate,associate,Purdue University - North Central,,,unmatched,
+IN,associate,associate,University of Indianapolis,151263,University of Indianapolis,auto,whole name
+IN,associate,associate,University of Saint Francis - Crown Point,152336,University of Saint Francis-Fort Wayne,auto,name without its last part
+IN,associate,associate,University of Saint Francis - Fort Wayne,152336,University of Saint Francis-Fort Wayne,auto,whole name
+IN,associate,associate,Vincennes University,152637,Vincennes University,auto,whole name
+IN,associate,associate,Vincennes University - Jasper,152637,Vincennes University,auto,name without its last part
+IN,bachelor,bachelor,Anderson University,150066,Anderson University,auto,whole name
+IN,bachelor,bachelor,Ball State University,150136,Ball State University,auto,whole name
+IN,bachelor,bachelor,Bethel University,150145,Bethel University,auto,whole name
+IN,bachelor,bachelor,Chamberlain University,,,unmatched,
+IN,bachelor,bachelor,Goshen College,150668,Goshen College,auto,whole name
+IN,bachelor,bachelor,Huntington University,150941,Huntington University,auto,whole name
+IN,bachelor,bachelor,Indiana State University,151324,Indiana State University,auto,whole name
+IN,bachelor,bachelor,Indiana University East,151388,Indiana University-East,auto,whole name
+IN,bachelor,bachelor,Indiana University Kokomo,151333,Indiana University-Kokomo,auto,whole name
+IN,bachelor,bachelor,Indiana University Northwest,151360,Indiana University-Northwest,auto,whole name
+IN,bachelor,bachelor,Indiana University Purdue University Columbus,,,unmatched,
+IN,bachelor,bachelor,"Indiana University School of Nursing (Indy, Ft. Wayne & Bloomington)",,,unmatched,
+IN,bachelor,bachelor,Indiana University South Bend,151342,Indiana University-South Bend,auto,whole name
+IN,bachelor,bachelor,Indiana University Southeast,151379,Indiana University-Southeast,auto,whole name
+IN,bachelor,bachelor,Indiana Wesleyan University,151801,Indiana Wesleyan University-Marion,auto,whole name
+IN,bachelor,bachelor,Marian University,151786,Marian University,auto,whole name
+IN,bachelor,bachelor,Purdue Northwest,490805,Purdue University Northwest,auto,whole name
+IN,bachelor,bachelor,Purdue University,,,unmatched,
+IN,bachelor,bachelor,St. Elizabeth School of Nursing BSN/diploma,,,unmatched,
+IN,bachelor,bachelor,St. Mary of the Woods College,152381,Saint Mary-of-the-Woods College,auto,whole name
+IN,bachelor,bachelor,St. Mary's College,152390,Saint Mary's College,auto,whole name
+IN,bachelor,bachelor,University of Evansville,150534,University of Evansville,auto,whole name
+IN,bachelor,bachelor,University of Indianapolis,151263,University of Indianapolis,auto,whole name
+IN,bachelor,bachelor,University of Southern Indiana,151306,University of Southern Indiana,auto,whole name
+IN,bachelor,bachelor,University of St. Francis,152336,University of Saint Francis-Fort Wayne,auto,whole name
+IN,bachelor,bachelor,Valparaiso University,152600,Valparaiso University,auto,whole name
+IN,bachelor,bachelor,Western Governors University (WGU),,,unmatched,
+OK,,RN,1 Oklahoma Christian University - Oklahoma City,,,unmatched,
+OK,,RN,Bacone College - Muskogee,206817,Bacone College,auto,name without its last part
+OK,,RN,Brown - Mackie College - Oklahoma City,475042,Brown Mackie College-Oklahoma City,auto,whole name
+OK,,RN,Brown - Mackie College - Tulsa,455619,Brown Mackie College-Tulsa,auto,whole name
+OK,,RN,Carl Albert State College - Poteau,206923,Carl Albert State College,auto,name without its last part
+OK,,RN,Carl Albert State College - Sallisaw,206923,Carl Albert State College,auto,name without its last part
+OK,,RN,Connors State College - Muskogee,206996,Connors State College,auto,name without its last part
+OK,,RN,Connors State College - Warner,206996,Connors State College,auto,name without its last part
+OK,,RN,East Central University - Ada,207041,East Central University,auto,name without its last part
+OK,,RN,East Central University - Ardmore,207041,East Central University,auto,name without its last part
+OK,,RN,East Central University - Durant,207041,East Central University,auto,name without its last part
+OK,,RN,Eastern Oklahoma State College - Idabel,207050,Eastern Oklahoma State College,auto,name without its last part
+OK,,RN,Eastern Oklahoma State College - McAlester,207050,Eastern Oklahoma State College,auto,name without its last part
+OK,,RN,Eastern Oklahoma State College - Wilburton,207050,Eastern Oklahoma State College,auto,name without its last part
+OK,,RN,ITT Technical Institute - Oklahoma City,448503,ITT Technical Institute-Oklahoma City,auto,whole name
+OK,,RN,ITT Technical Institute - Tulsa,448512,ITT Technical Institute-Tulsa,auto,whole name
+OK,,RN,Langston University - Langston,207209,Langston University,auto,name without its last part
+OK,,RN,Langston University - Tulsa,207209,Langston University,auto,name without its last part
+OK,,RN,Murray State College - Ardmore,207236,Murray State College,auto,name without its last part
+OK,,RN,Murray State College - Internet,207236,Murray State College,auto,name without its last part
+OK,,RN,Murray State College - Tishomingo,207236,Murray State College,auto,name without its last part
+OK,,RN,Northeastern Oklahoma A&M College - Grove,207290,Northeastern Oklahoma A&M College,auto,name without its last part
+OK,,RN,Northeastern Oklahoma A&M College - Grove - Closed 100.00 88.23 75.00 85.00 N/A N/A 100.00 N/A N/A N/A N/A Northern Oklahoma College - Enid,,,unmatched,
+OK,,RN,Northeastern Oklahoma A&M College - Miami,207290,Northeastern Oklahoma A&M College,auto,name without its last part
+OK,,RN,Northern Oklahoma College - Enid,207281,Northern Oklahoma College,auto,name without its last part
+OK,,RN,Northern Oklahoma College - Stillwater,207281,Northern Oklahoma College,auto,name without its last part
+OK,,RN,Northern Oklahoma College - Tonkawa,207281,Northern Oklahoma College,auto,name without its last part
+OK,,RN,Northwestern Oklahoma State University - Alva,207306,Northwestern Oklahoma State University,auto,name without its last part
+OK,,RN,Northwestern Oklahoma State University - Enid,207306,Northwestern Oklahoma State University,auto,name without its last part
+OK,,RN,Northwestern Oklahoma State University - Ponca City,207306,Northwestern Oklahoma State University,auto,name without its last part
+OK,,RN,Northwestern Oklahoma State University - Woodward,207306,Northwestern Oklahoma State University,auto,name without its last part
+OK,,RN,Oklahoma Baptist University - Shawnee,207403,Oklahoma Baptist University,auto,name without its last part
+OK,,RN,Oklahoma Christian University - Oklahoma City,207324,Oklahoma Christian University,auto,name without its last part
+OK,,RN,Oklahoma City Community College - Oklahoma City,207449,Oklahoma City Community College,auto,name without its last part
+OK,,RN,Oklahoma City University - Oklahoma City,207458,Oklahoma City University,auto,name without its last part
+OK,,RN,Oklahoma State University - Goodwell,,,unmatched,
+OK,,RN,Oklahoma State University - Oklahoma City,207397,Oklahoma State University-Oklahoma City,auto,whole name
+OK,,RN,Oklahoma State University IT - Okmulgee,,,unmatched,
+OK,,RN,Oklahoma Wesleyan University - Bartlesville,206835,Oklahoma Wesleyan University,auto,name without its last part
+OK,,RN,Oral Roberts University - Tulsa,207582,Oral Roberts University,auto,name without its last part
+OK,,RN,Platt College - Oklahoma City,245962,Miller-Motte College-Platt College-Tulsa,auto,name without its last part
+OK,,RN,Platt College - Tulsa,245962,Miller-Motte College-Platt College-Tulsa,auto,whole name
+OK,,RN,Redlands Community College - El Reno,207069,Redlands Community College,auto,name without its last part
+OK,,RN,Rose State College - Internet,207670,Rose State College,auto,name without its last part
+OK,,RN,Rose State College - Midwest City,207670,Rose State College,auto,name without its last part
+OK,,RN,Seminole State College - Seminole,207740,Seminole State College,auto,name without its last part
+OK,,RN,Southern Nazarene University - Bethany,206862,Southern Nazarene University,auto,name without its last part
+OK,,RN,Southwestern Oklahoma State University - Weatherford,207865,Southwestern Oklahoma State University,auto,name without its last part
+OK,,RN,St. Gregory's University - Shawnee,207689,St. Gregory's University,auto,name without its last part
+OK,,RN,Tulsa Community College - Owasso,207935,Tulsa Community College,auto,name without its last part
+OK,,RN,Tulsa Community College - Tulsa,207935,Tulsa Community College,auto,name without its last part
+OK,,RN,University of Central Oklahoma - Edmond,206941,University of Central Oklahoma,auto,name without its last part
+OK,,RN,University of Oklahoma - Duncan,207500,University of Oklahoma-Norman Campus,auto,name without its last part
+OK,,RN,University of Oklahoma - Lawton,207500,University of Oklahoma-Norman Campus,auto,name without its last part
+OK,,RN,University of Oklahoma - Oklahoma City,207500,University of Oklahoma-Norman Campus,auto,name without its last part
+OK,,RN,University of Oklahoma - Tulsa,207500,University of Oklahoma-Norman Campus,auto,name without its last part
+OK,,RN,University of Tulsa - Tulsa,207971,University of Tulsa,auto,name without its last part
+OK,,RN,Western Oklahoma State College - Altus,208035,Western Oklahoma State College,auto,name without its last part
+OK,,RN,Western Oklahoma State College - Elk City,208035,Western Oklahoma State College,auto,name without its last part
+OK,,RN,Western Oklahoma State College - Internet,208035,Western Oklahoma State College,auto,name without its last part
+OK,,RN,Western Oklahoma State College - Lawton,208035,Western Oklahoma State College,auto,name without its last part
+OK,associate,RN,Murray State College - Online LPN to ADN,207236,Murray State College,auto,name without its last part
+OK,associate,RN,Rogers State University ADN - Bartlesville,,,unmatched,
+OK,associate,RN,Rogers State University ADN - Claremore,,,unmatched,
+OK,associate,RN,Rose State College - Online LPN to ADN,207670,Rose State College,auto,name without its last part
+OK,associate,RN,Western Oklahoma State College - Online LPN to ADN,208035,Western Oklahoma State College,auto,name without its last part
+TX,,DIPLOMA,Covenant School of Nursing,226675,Covenant School of Nursing and Allied Health,auto,whole name
+TX,,MSN,UT @ Austin Alternate Entry MSN,,,unmatched,
+TX,,MSN,UT at Austin Alternate Entry MSN,,,unmatched,
+TX,associate,ADN,Alvin Community College,222567,Alvin Community College,auto,whole name
+TX,associate,ADN,Amarillo College,222576,Amarillo College,auto,whole name
+TX,associate,ADN,Angelina College,222822,Angelina College,auto,whole name
+TX,associate,ADN,Austin Community College,,,unmatched,
+TX,associate,ADN,Baptist Health System School of Health Professions,223083,Baptist Health System School of Health Professions,auto,whole name
+TX,associate,ADN,Blinn College,223427,Blinn College,auto,whole name
+TX,associate,ADN,Brazosport College,223506,Brazosport College,auto,whole name
+TX,associate,ADN,Brookhaven College,223524,Brookhaven College,auto,whole name
+TX,associate,ADN,Career Point College,,,unmatched,more than one unit ID: 224439;476300
+TX,associate,ADN,Carrington College,,,unmatched,
+TX,associate,ADN,Central Texas College,223816,Central Texas College,auto,whole name
+TX,associate,ADN,Cisco College,223898,Cisco College,auto,whole name
+TX,associate,ADN,Clarendon College,223922,Clarendon College,auto,whole name
+TX,associate,ADN,Coastal Bend College,223320,Coastal Bend College,auto,whole name
+TX,associate,ADN,College of Nursing and Advanced Health Professions (formerly Dallas Nursing Institute),,,unmatched,
+TX,associate,ADN,College of the Mainland,226408,College of the Mainland,auto,whole name
+TX,associate,ADN,Collin College,247834,Collin County Community College District,auto,whole name
+TX,associate,ADN,Concorde Career College,,,unmatched,
+TX,associate,ADN,Dallas College at Brookhaven (formerly Brookhaven College),,,unmatched,
+TX,associate,ADN,Dallas College at El Centro (formerly El Centro College),,,unmatched,
+TX,associate,ADN,Dallas College at Mountain View (formerly Mountain View College),,,unmatched,
+TX,associate,ADN,Dallas Nursing Institute,437732,Chicago School of Professional Psychology-College of Nursing,auto,whole name
+TX,associate,ADN,Del Mar College,224350,Del Mar College,auto,whole name
+TX,associate,ADN,El Centro College,224615,Dallas College,auto,whole name
+TX,associate,ADN,El Paso Community College,224642,El Paso Community College,auto,whole name
+TX,associate,ADN,Galen College of Nursing,497116,Galen Health Institutes-Austin Campus,auto,whole name
+TX,associate,ADN,Galveston College,224961,Galveston College,auto,whole name
+TX,associate,ADN,Grayson College,225070,Grayson College,auto,whole name
+TX,associate,ADN,Grayson County College,,,unmatched,
+TX,associate,ADN,Hallmark College,225201,Hallmark University,auto,whole name
+TX,associate,ADN,Hill College,225371,Hill College,auto,whole name
+TX,associate,ADN,Houston Community College,225423,Houston Community College,auto,whole name
+TX,associate,ADN,Howard College - Big Springs,225520,Howard College,auto,name without its last part
+TX,associate,ADN,Howard College - San Angelo,225520,Howard College,auto,name without its last part
+TX,associate,ADN,ITT Technical Institute,,,unmatched,
+TX,associate,ADN,Kilgore College,226019,Kilgore College,auto,whole name
+TX,associate,ADN,Lamar State College - Orange,226107,Lamar State College-Orange,auto,whole name
+TX,associate,ADN,Lamar State College - Port Arthur,226116,Lamar State College-Port Arthur,auto,whole name
+TX,associate,ADN,Lamar State College @ Orange,,,unmatched,
+TX,associate,ADN,Lamar State College @ Port Arthur,,,unmatched,
+TX,associate,ADN,Laredo College,226134,Laredo College,auto,whole name
+TX,associate,ADN,Laredo Community College,226134,Laredo College,auto,whole name
+TX,associate,ADN,Lee College,226204,Lee College,auto,whole name
+TX,associate,ADN,Lone Star - Cy - Fair,,,unmatched,
+TX,associate,ADN,Lone Star - CyFair,,,unmatched,
+TX,associate,ADN,Lone Star - Kingwood,,,unmatched,
+TX,associate,ADN,Lone Star - Montgomery,,,unmatched,
+TX,associate,ADN,Lone Star - North Harris,,,unmatched,
+TX,associate,ADN,Lone Star - Tomball,,,unmatched,
+TX,associate,ADN,McLennan Community College,226578,McLennan Community College,auto,whole name
+TX,associate,ADN,Midland College,226806,Midland College,auto,whole name
+TX,associate,ADN,Mountain View College,226930,Mountain View College,auto,whole name
+TX,associate,ADN,Navarro College,227146,Navarro College,auto,whole name
+TX,associate,ADN,North Central Texas College,224110,North Central Texas College,auto,whole name
+TX,associate,ADN,Northeast Texas Community College,227225,Northeast Texas Community College,auto,whole name
+TX,associate,ADN,Odessa College,227304,Odessa College,auto,whole name
+TX,associate,ADN,Panola College,227386,Panola College,auto,whole name
+TX,associate,ADN,Paris Junior College,227401,Paris Junior College,auto,whole name
+TX,associate,ADN,Ranger College,227687,Ranger College,auto,whole name
+TX,associate,ADN,Rio Grande Valley College,476726,Rio Grande Valley College,auto,whole name
+TX,associate,ADN,San Antonio College,227924,San Antonio College,auto,whole name
+TX,associate,ADN,San Jacinto College - Central,227979,San Jacinto Community College,auto,name without its last part
+TX,associate,ADN,San Jacinto College - South,227979,San Jacinto Community College,auto,name without its last part
+TX,associate,ADN,South Plains College,228158,South Plains College,auto,whole name
+TX,associate,ADN,South Texas College,409315,South Texas College,auto,whole name
+TX,associate,ADN,Southwest Texas Junior College,228316,Southwest Texas Junior College,auto,whole name
+TX,associate,ADN,Southwest University at El Paso,451556,Southwest University at El Paso,auto,whole name
+TX,associate,ADN,St. Philip's College,227854,St Philip's College,auto,whole name
+TX,associate,ADN,Tarrant County College,228547,Tarrant County College District,auto,whole name
+TX,associate,ADN,Temple College,228608,Temple College,auto,whole name
+TX,associate,ADN,Texarkana College,228699,Texarkana College,auto,whole name
+TX,associate,ADN,Texas Southmost College,227377,Texas Southmost College,auto,whole name
+TX,associate,ADN,Texas State Technical College - Harlingen,229319,Texas State Technical College-Harlingen,auto,whole name
+TX,associate,ADN,Texas State Technical College - West Texas,229328,Texas State Technical College-West Texas,auto,whole name
+TX,associate,ADN,The College of Health Care Professions,379746,College of Health Care Professions,auto,whole name
+TX,associate,ADN,Trinity Valley Community College,225308,Trinity Valley Community College,auto,whole name
+TX,associate,ADN,Tyler Junior College,229355,Tyler Junior College,auto,whole name
+TX,associate,ADN,Vernon College,229504,Vernon College,auto,whole name
+TX,associate,ADN,Victoria College,229540,Victoria College,auto,whole name
+TX,associate,ADN,Weatherford College,229799,Weatherford College,auto,whole name
+TX,associate,ADN,Wharton County Junior College,229841,Wharton County Junior College,auto,whole name
+TX,bachelor,BSN,Abilene Christian University,222178,Abilene Christian University,auto,whole name
+TX,bachelor,BSN,Angelo State University,222831,Angelo State University,auto,whole name
+TX,bachelor,BSN,Baylor University,223232,Baylor University,auto,whole name
+TX,bachelor,BSN,Chamberlain College of Nursing - Houston,466930,Chamberlain University-Texas,auto,whole name
+TX,bachelor,BSN,Chamberlain College of Nursing - Irving,466930,Chamberlain University-Texas,auto,whole name
+TX,bachelor,BSN,Chamberlain College of Nursing - Pearland,466930,Chamberlain University-Texas,auto,whole name
+TX,bachelor,BSN,Concordia University,,,unmatched,
+TX,bachelor,BSN,Concordia University Texas,224004,Concordia University Texas,auto,whole name
+TX,bachelor,BSN,East Texas Baptist University,224527,East Texas Baptist University,auto,whole name
+TX,bachelor,BSN,Galen College of Nursing,497116,Galen Health Institutes-Austin Campus,auto,whole name
+TX,bachelor,BSN,Houston Baptist University,225399,Houston Baptist University,auto,whole name
+TX,bachelor,BSN,Lamar University,226091,Lamar University,auto,whole name
+TX,bachelor,BSN,Lamar University @ Beaumont,,,unmatched,
+TX,bachelor,BSN,LeTourneau University,226231,LeTourneau University,auto,whole name
+TX,bachelor,BSN,Midwestern State University,226833,Midwestern State University,auto,whole name
+TX,bachelor,BSN,National American University,,,unmatched,
+TX,bachelor,BSN,Patty Hanks Shelton School of Nursing,,,unmatched,
+TX,bachelor,BSN,Prairie View A&M University,227526,Prairie View A & M University,auto,whole name
+TX,bachelor,BSN,Sam Houston State University,227881,Sam Houston State University,auto,whole name
+TX,bachelor,BSN,Schreiner University,228042,Schreiner University,auto,whole name
+TX,bachelor,BSN,Schreiner University - NEW,228042,Schreiner University,auto,name without its last part
+TX,bachelor,BSN,South University,,,unmatched,
+TX,bachelor,BSN,Southwestern Adventist University,228468,Southwestern Adventist University,auto,whole name
+TX,bachelor,BSN,Stephen F. Austin State University,228431,Stephen F Austin State University,auto,whole name
+TX,bachelor,BSN,Tarleton State University,228529,Tarleton State University,auto,whole name
+TX,bachelor,BSN,Texas A&M International University,226152,Texas A & M International University,auto,whole name
+TX,bachelor,BSN,Texas A&M University - Corpus Christi,224147,Texas A & M University-Corpus Christi,auto,whole name
+TX,bachelor,BSN,Texas A&M University - Texarkana,224545,Texas A&M University-Texarkana,auto,whole name
+TX,bachelor,BSN,Texas A&M University Commerce,224554,Texas A & M University-Commerce,auto,whole name
+TX,bachelor,BSN,Texas A&M University HSC College of Nursing,,,unmatched,
+TX,bachelor,BSN,Texas A&M University HSC School of Nursing,,,unmatched,
+TX,bachelor,BSN,Texas Christian University,228875,Texas Christian University,auto,whole name
+TX,bachelor,BSN,Texas Lutheran University,228981,Texas Lutheran University,auto,whole name
+TX,bachelor,BSN,Texas State University,228459,Texas State University,auto,whole name
+TX,bachelor,BSN,Texas State University - St. David School of Nursing,228459,Texas State University,auto,name without its last part
+TX,bachelor,BSN,Texas Tech University HSC - Gayle Greve Hunt SON,,,unmatched,
+TX,bachelor,BSN,Texas Tech University HSC - Gayle Greve Hunt School of Nursing,,,unmatched,
+TX,bachelor,BSN,Texas Tech University HSC School of Nursing,,,unmatched,
+TX,bachelor,BSN,Texas Woman's University,229179,Texas Woman's University,auto,whole name
+TX,bachelor,BSN,UT Health Science Center at Houston,229300,The University of Texas Health Science Center at Houston,auto,whole name
+TX,bachelor,BSN,UT Health Science Center at San Antonio,228644,The University of Texas Health Science Center at San Antonio,auto,whole name
+TX,bachelor,BSN,UT Medical Branch at Galveston,228653,The University of Texas Medical Branch at Galveston,auto,whole name
+TX,bachelor,BSN,UTHSC @ Houston,,,unmatched,
+TX,bachelor,BSN,UTHSC @ San Antonio,,,unmatched,
+TX,bachelor,BSN,UTMB @ Galveston,,,unmatched,
+TX,bachelor,BSN,University of Houston College of Nursing,,,unmatched,
+TX,bachelor,BSN,University of Mary Hardin - Baylor,226471,University of Mary Hardin-Baylor,auto,whole name
+TX,bachelor,BSN,University of St. Thomas,227863,University of St Thomas,auto,whole name
+TX,bachelor,BSN,University of St. Thomas SON,,,unmatched,
+TX,bachelor,BSN,University of Texas @ Arlington,228769,The University of Texas at Arlington,auto,whole name
+TX,bachelor,BSN,University of Texas @ Austin,228778,The University of Texas at Austin,auto,whole name
+TX,bachelor,BSN,University of Texas @ El Paso,228796,The University of Texas at El Paso,auto,whole name
+TX,bachelor,BSN,University of Texas @ Rio Grande Valley (formerly Pan American),,,unmatched,
+TX,bachelor,BSN,University of Texas @ Tyler,228802,The University of Texas at Tyler,auto,whole name
+TX,bachelor,BSN,University of Texas Rio Grande Valley,227368,The University of Texas Rio Grande Valley,auto,whole name
+TX,bachelor,BSN,University of Texas at Arlington,228769,The University of Texas at Arlington,auto,whole name
+TX,bachelor,BSN,University of Texas at Austin,228778,The University of Texas at Austin,auto,whole name
+TX,bachelor,BSN,University of Texas at El Paso,228796,The University of Texas at El Paso,auto,whole name
+TX,bachelor,BSN,University of Texas at Tyler,228802,The University of Texas at Tyler,auto,whole name
+TX,bachelor,BSN,University of Texas of the Permian Basin,229018,The University of Texas Permian Basin,auto,whole name
+TX,bachelor,BSN,University of the Incarnate Word,225627,University of the Incarnate Word,auto,whole name
+TX,bachelor,BSN,Wayland Baptist University,229780,Wayland Baptist University,auto,whole name
+TX,bachelor,BSN,Wayland Baptist University New Program - - - - - - - - - - - - - - - - - - - West Coast University,,,unmatched,
+TX,bachelor,BSN,West Coast University,,,unmatched,
+TX,bachelor,BSN,West Texas A&M University,229814,West Texas A & M University,auto,whole name
+TX,bachelor,BSN,Western Governors University,,,unmatched,

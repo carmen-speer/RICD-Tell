@@ -1,0 +1,1537 @@
+{
+ "indiana unreadable tokens": [
+  [
+   "indiana bsn 2015-2025.pdf",
+   0,
+   359,
+   2021,
+   "(20/21))"
+  ],
+  [
+   "indiana bsn 2015-2025.pdf",
+   0,
+   413,
+   2017,
+   "(11/12))"
+  ],
+  [
+   "indiana asn 2015-2025.pdf",
+   0,
+   482,
+   2025,
+   "(162/"
+  ],
+  [
+   "indiana bsn 2014-2024.pdf",
+   0,
+   227,
+   2014,
+   "(31/33))"
+  ],
+  [
+   "indiana bsn 2014-2024.pdf",
+   0,
+   347,
+   2021,
+   "(20/21))"
+  ],
+  [
+   "indiana bsn 2014-2024.pdf",
+   0,
+   400,
+   2017,
+   "(11/12))"
+  ],
+  [
+   "indiana bsn 2013-2023.pdf",
+   0,
+   204,
+   2014,
+   "(31/33))"
+  ],
+  [
+   "indiana bsn 2013-2023.pdf",
+   0,
+   286,
+   2021,
+   "(20/21))"
+  ],
+  [
+   "indiana bsn 2013-2023.pdf",
+   0,
+   328,
+   2017,
+   "(11/12))"
+  ],
+  [
+   "indiana asn 2013-2023.pdf",
+   2,
+   219,
+   2013,
+   "77.8(21/"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   0,
+   495,
+   2013,
+   "95.8(69/"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   0,
+   565,
+   2013,
+   "*N/A-"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   1,
+   565,
+   2013,
+   "*N/A-"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   2,
+   565,
+   2013,
+   "*N/A-"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   3,
+   336,
+   2019,
+   "N/a"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   3,
+   565,
+   2013,
+   "*N/A-"
+  ]
+ ],
+ "indiana names without figures": [
+  [
+   "indiana bsn 2015-2025.pdf",
+   0,
+   330,
+   "Butler University"
+  ],
+  [
+   "indiana bsn 2015-2025.pdf",
+   0,
+   384,
+   "Grace College"
+  ],
+  [
+   "indiana bsn 2015-2025.pdf",
+   2,
+   320,
+   "Taylor University"
+  ],
+  [
+   "indiana asn 2015-2025.pdf",
+   0,
+   261,
+   "Caris College"
+  ],
+  [
+   "indiana bsn 2014-2024.pdf",
+   0,
+   253,
+   "Butler University"
+  ],
+  [
+   "indiana bsn 2014-2024.pdf",
+   2,
+   386,
+   "Taylor University"
+  ],
+  [
+   "indiana asn 2014-2024.pdf",
+   3,
+   280,
+   "Trine University"
+  ],
+  [
+   "indiana asn 2013-2023.pdf",
+   2,
+   423,
+   "Everest College"
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   2,
+   286,
+   "Everest College"
+  ]
+ ],
+ "counts not matching the printed rate": [
+  {
+   "state": "IN",
+   "name": "Bethel University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 28,
+   "tested": 30,
+   "printed_rate": 96.6,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Indiana State University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 164,
+   "tested": 194,
+   "printed_rate": 87.1,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Indiana University South Bend",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2015,
+   "passed": 51,
+   "tested": 53,
+   "printed_rate": 87.9,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Purdue University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 131,
+   "tested": 165,
+   "printed_rate": 97.5,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "St. Mary of the Woods College",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 26,
+   "tested": 29,
+   "printed_rate": 87.6,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Indianapolis",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2019,
+   "passed": 91,
+   "tested": 112,
+   "printed_rate": 85.7,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Southern Indiana",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2017,
+   "passed": 114,
+   "tested": 11,
+   "printed_rate": 95.8,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "University of Southern Indiana",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2018,
+   "passed": 111,
+   "tested": 1154,
+   "printed_rate": 96.5,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Valparaiso University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2019,
+   "passed": 123,
+   "tested": 136,
+   "printed_rate": 91.1,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Western Governors University (WGU)",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2018,
+   "passed": 15,
+   "tested": 17,
+   "printed_rate": 98.2,
+   "source": "indiana bsn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Anderson",
+   "level": "associate",
+   "section": "associate",
+   "year": 2020,
+   "passed": 35,
+   "tested": 51,
+   "printed_rate": 66.6,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Bloomington",
+   "level": "associate",
+   "section": "associate",
+   "year": 2016,
+   "passed": 70,
+   "tested": 740,
+   "printed_rate": 94.5,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 107,
+   "tested": 111,
+   "printed_rate": 91.8,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 203,
+   "tested": 206,
+   "printed_rate": 89.8,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Lafayette",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 51,
+   "tested": 63,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Muncie",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 108,
+   "tested": 13,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Sellersburg",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 90,
+   "tested": 103,
+   "printed_rate": 88.3,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Terre Haute",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 86,
+   "tested": 95,
+   "printed_rate": 89.5,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Vincennes University",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 61,
+   "tested": 80,
+   "printed_rate": 79.2,
+   "source": "indiana asn 2015-2025.pdf",
+   "where": "page 4",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Bethel University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 28,
+   "tested": 30,
+   "printed_rate": 96.6,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Indiana State University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 164,
+   "tested": 194,
+   "printed_rate": 87.1,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Indiana University South Bend",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2015,
+   "passed": 51,
+   "tested": 53,
+   "printed_rate": 87.9,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Purdue University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 131,
+   "tested": 165,
+   "printed_rate": 97.5,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "St. Mary of the Woods College",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 26,
+   "tested": 29,
+   "printed_rate": 87.6,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Indianapolis",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2014,
+   "passed": 85,
+   "tested": 92,
+   "printed_rate": 86.9,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Indianapolis",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2019,
+   "passed": 91,
+   "tested": 112,
+   "printed_rate": 85.7,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Western Governors University (WGU)",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2018,
+   "passed": 15,
+   "tested": 17,
+   "printed_rate": 98.2,
+   "source": "indiana bsn 2014-2024.pdf",
+   "where": "page 4",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Anderson",
+   "level": "associate",
+   "section": "associate",
+   "year": 2020,
+   "passed": 35,
+   "tested": 51,
+   "printed_rate": 66.6,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 107,
+   "tested": 111,
+   "printed_rate": 91.8,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 203,
+   "tested": 206,
+   "printed_rate": 89.8,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2020,
+   "passed": 194,
+   "tested": 204,
+   "printed_rate": 81.5,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Kokomo",
+   "level": "associate",
+   "section": "associate",
+   "year": 2014,
+   "passed": 59,
+   "tested": 75,
+   "printed_rate": 81.9,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Lafayette",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 51,
+   "tested": 63,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Sellersburg",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 90,
+   "tested": 103,
+   "printed_rate": 88.3,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Terre Haute",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 86,
+   "tested": 95,
+   "printed_rate": 89.5,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 4",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Saint Francis - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 52,
+   "tested": 56,
+   "printed_rate": 91.2,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 4",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Vincennes University",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 61,
+   "tested": 80,
+   "printed_rate": 79.2,
+   "source": "indiana asn 2014-2024.pdf",
+   "where": "page 4",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Bethel University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 28,
+   "tested": 30,
+   "printed_rate": 96.6,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Indiana State University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 164,
+   "tested": 194,
+   "printed_rate": 87.1,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "South Bend",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2015,
+   "passed": 51,
+   "tested": 53,
+   "printed_rate": 87.9,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Purdue University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2020,
+   "passed": 131,
+   "tested": 165,
+   "printed_rate": 97.5,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "University of Indianapolis",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2014,
+   "passed": 85,
+   "tested": 92,
+   "printed_rate": 86.9,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Indianapolis",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2019,
+   "passed": 91,
+   "tested": 112,
+   "printed_rate": 85.7,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Southern Indiana",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2018,
+   "passed": 111,
+   "tested": 1154,
+   "printed_rate": 96.5,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Valparaiso University",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2019,
+   "passed": 123,
+   "tested": 136,
+   "printed_rate": 91.1,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Western Governors University (WGU)",
+   "level": "bachelor",
+   "section": "bachelor",
+   "year": 2018,
+   "passed": 15,
+   "tested": 17,
+   "printed_rate": 98.2,
+   "source": "indiana bsn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Anderson",
+   "level": "associate",
+   "section": "associate",
+   "year": 2020,
+   "passed": 35,
+   "tested": 51,
+   "printed_rate": 66.6,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Bloomington",
+   "level": "associate",
+   "section": "associate",
+   "year": 2016,
+   "passed": 70,
+   "tested": 740,
+   "printed_rate": 94.5,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 106,
+   "tested": 11,
+   "printed_rate": 90.5,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 107,
+   "tested": 111,
+   "printed_rate": 91.8,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 203,
+   "tested": 206,
+   "printed_rate": 89.8,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Lafayette",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 51,
+   "tested": 63,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Sellersburg",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 90,
+   "tested": 103,
+   "printed_rate": 88.3,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Saint Francis - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 52,
+   "tested": 56,
+   "printed_rate": 91.2,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Vincennes University",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 61,
+   "tested": 80,
+   "printed_rate": 79.2,
+   "source": "indiana asn 2013-2023.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Anderson",
+   "level": "associate",
+   "section": "associate",
+   "year": 2020,
+   "passed": 35,
+   "tested": 51,
+   "printed_rate": 66.6,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 106,
+   "tested": 1,
+   "printed_rate": 90.5,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 99,
+   "tested": 11,
+   "printed_rate": 88.3,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 107,
+   "tested": 11,
+   "printed_rate": 91.8,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 216,
+   "tested": 2,
+   "printed_rate": 90.3,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 180,
+   "tested": 1,
+   "printed_rate": 91.3,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2019,
+   "passed": 203,
+   "tested": 206,
+   "printed_rate": 89.8,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Kokomo",
+   "level": "associate",
+   "section": "associate",
+   "year": 2014,
+   "passed": 59,
+   "tested": 75,
+   "printed_rate": 81.9,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Lafayette",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 51,
+   "tested": 63,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 1",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Muncie",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 84,
+   "tested": 10,
+   "printed_rate": 82.3,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Muncie",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 108,
+   "tested": 1,
+   "printed_rate": 80.0,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College - Sellersburg",
+   "level": "associate",
+   "section": "associate",
+   "year": 2014,
+   "passed": 71,
+   "tested": 8,
+   "printed_rate": null,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College South Bend",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 58,
+   "tested": 6,
+   "printed_rate": 89.2,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College South Bend",
+   "level": "associate",
+   "section": "associate",
+   "year": 2017,
+   "passed": 55,
+   "tested": 6,
+   "printed_rate": 90.1,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "Ivy Tech Community College Terre Haute",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 86,
+   "tested": 95,
+   "printed_rate": 89.5,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "University of Saint Francis - Fort Wayne",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 52,
+   "tested": 56,
+   "printed_rate": 91.2,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Vincennes University",
+   "level": "associate",
+   "section": "associate",
+   "year": 2018,
+   "passed": 61,
+   "tested": 80,
+   "printed_rate": 79.2,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 2",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Brown Mackie College - South Bend",
+   "level": "associate",
+   "section": "associate",
+   "year": 2014,
+   "passed": 14,
+   "tested": 22,
+   "printed_rate": 83.3,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 3",
+   "status": "broken"
+  },
+  {
+   "state": "IN",
+   "name": "ITT Technical Institute - Newburgh",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 22,
+   "tested": 28,
+   "printed_rate": 75.8,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 3",
+   "status": "disagree"
+  },
+  {
+   "state": "IN",
+   "name": "Medtech College - Indianapolis",
+   "level": "associate",
+   "section": "associate",
+   "year": 2015,
+   "passed": 58,
+   "tested": 10,
+   "printed_rate": 53.2,
+   "source": "indiana asn 2010-2020.pdf",
+   "where": "page 4",
+   "status": "broken"
+  },
+  {
+   "state": "TX",
+   "name": "Weatherford College",
+   "level": "associate",
+   "section": "ADN",
+   "year": 2020,
+   "passed": 138,
+   "tested": 155,
+   "printed_rate": 89.68,
+   "source": "texas rn five-year 2020.pdf",
+   "where": "",
+   "status": "disagree"
+  },
+  {
+   "state": "TX",
+   "name": "Weatherford College",
+   "level": "associate",
+   "section": "ADN",
+   "year": 2020,
+   "passed": 138,
+   "tested": 155,
+   "printed_rate": 89.68,
+   "source": "texas rn five-year 2021.pdf",
+   "where": "",
+   "status": "disagree"
+  }
+ ],
+ "indiana unnamed rows": [
+  [
+   "indiana bsn 2013-2023.pdf",
+   1,
+   281,
+   [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+   ]
+  ],
+  [
+   "indiana bsn 2013-2023.pdf",
+   1,
+   511,
+   [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+   ]
+  ],
+  [
+   "indiana asn 2013-2023.pdf",
+   1,
+   118,
+   [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+   ]
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   1,
+   229,
+   [
+    2011,
+    2013
+   ]
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   1,
+   298,
+   [
+    2011,
+    2013,
+    2015,
+    2017
+   ]
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   1,
+   338,
+   [
+    2011,
+    2013
+   ]
+  ],
+  [
+   "indiana asn 2010-2020.pdf",
+   1,
+   444,
+   [
+    2011,
+    2013
+   ]
+  ]
+ ],
+ "texas lone rate lines": [
+  [
+   "texas rn five-year 2020.pdf",
+   "78.95%"
+  ]
+ ],
+ "texas rows not read in full": [
+  [
+   "texas rn five-year 2020.pdf",
+   "College of Nursing and Advanced Health Professions (formerly Dallas Nursing Institute)",
+   "Professions (formerly Dallas Nursing Institute)    53.85%      28/52      61.70%        29/47      90.91%      50/55         91.18%       31/34                     15/19"
+  ]
+ ],
+ "editions disagreeing": [
+  {
+   "program": "Ivy Tech Community College Columbus",
+   "state": "IN",
+   "level": "associate",
+   "year": 2020,
+   "tie": false,
+   "values": {
+    "32 38": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2014-2024.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "35 41": [
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Fort Wayne",
+   "state": "IN",
+   "level": "associate",
+   "year": 2018,
+   "tie": false,
+   "values": {
+    "None 111 91.8": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2014-2024.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "None None 91.8": [
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Indianapolis",
+   "state": "IN",
+   "level": "associate",
+   "year": 2014,
+   "tie": false,
+   "values": {
+    "216 239": [
+     "indiana asn 2014-2024.pdf"
+    ],
+    "128 139": [
+     "indiana asn 2013-2023.pdf",
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Indianapolis",
+   "state": "IN",
+   "level": "associate",
+   "year": 2015,
+   "tie": false,
+   "values": {
+    "216 239": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "157 179": [
+     "indiana asn 2014-2024.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Indianapolis",
+   "state": "IN",
+   "level": "associate",
+   "year": 2016,
+   "tie": false,
+   "values": {
+    "157 179": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2013-2023.pdf",
+     "indiana asn 2010-2020.pdf"
+    ],
+    "180 197": [
+     "indiana asn 2014-2024.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Indianapolis",
+   "state": "IN",
+   "level": "associate",
+   "year": 2017,
+   "tie": false,
+   "values": {
+    "180 197": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "155 173": [
+     "indiana asn 2014-2024.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Indianapolis",
+   "state": "IN",
+   "level": "associate",
+   "year": 2020,
+   "tie": false,
+   "values": {
+    "210 237": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "220 253": [
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College Muncie",
+   "state": "IN",
+   "level": "associate",
+   "year": 2020,
+   "tie": false,
+   "values": {
+    "65 87": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2014-2024.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "63 84": [
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Ivy Tech Community College South Bend",
+   "state": "IN",
+   "level": "associate",
+   "year": 2020,
+   "tie": false,
+   "values": {
+    "48 59": [
+     "indiana asn 2015-2025.pdf",
+     "indiana asn 2014-2024.pdf",
+     "indiana asn 2013-2023.pdf"
+    ],
+    "48 58": [
+     "indiana asn 2010-2020.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Marian University",
+   "state": "IN",
+   "level": "bachelor",
+   "year": 2015,
+   "tie": false,
+   "values": {
+    "232 250": [
+     "indiana bsn 2015-2025.pdf",
+     "indiana bsn 2013-2023.pdf"
+    ],
+    "207 241": [
+     "indiana bsn 2014-2024.pdf"
+    ]
+   }
+  },
+  {
+   "program": "University of Southern Indiana",
+   "state": "IN",
+   "level": "bachelor",
+   "year": 2020,
+   "tie": false,
+   "values": {
+    "92 95": [
+     "indiana bsn 2015-2025.pdf",
+     "indiana bsn 2013-2023.pdf"
+    ],
+    "97 97": [
+     "indiana bsn 2014-2024.pdf"
+    ]
+   }
+  },
+  {
+   "program": "Lamar State College @ Port Arthur",
+   "state": "TX",
+   "level": "associate",
+   "year": 2017,
+   "tie": false,
+   "values": {
+    "21 27": [
+     "texas rn five-year 2020.pdf",
+     "texas rn 2013-2017 (shsu copy).pdf"
+    ],
+    "1 6": [
+     "texas rn 2013-2017 (shsu copy).pdf"
+    ]
+   }
+  }
+ ],
+ "summary": {
+  "FL associate 2016": 137,
+  "FL associate 2017": 142,
+  "FL associate 2018": 144,
+  "FL associate 2019": 152,
+  "FL associate 2020": 146,
+  "FL bachelor 2016": 44,
+  "FL bachelor 2017": 49,
+  "FL bachelor 2018": 52,
+  "FL bachelor 2019": 53,
+  "FL bachelor 2020": 61,
+  "FL no level 2016": 22,
+  "FL no level 2017": 23,
+  "FL no level 2018": 16,
+  "FL no level 2019": 20,
+  "FL no level 2020": 27,
+  "IN associate 2014": 39,
+  "IN associate 2015": 39,
+  "IN associate 2016": 35,
+  "IN associate 2017": 36,
+  "IN associate 2018": 35,
+  "IN associate 2019": 37,
+  "IN associate 2020": 35,
+  "IN bachelor 2014": 22,
+  "IN bachelor 2015": 25,
+  "IN bachelor 2016": 25,
+  "IN bachelor 2017": 24,
+  "IN bachelor 2018": 27,
+  "IN bachelor 2019": 27,
+  "IN bachelor 2020": 27,
+  "OK associate 2014": 2,
+  "OK associate 2015": 4,
+  "OK associate 2016": 4,
+  "OK associate 2017": 4,
+  "OK associate 2018": 4,
+  "OK associate 2019": 5,
+  "OK associate 2020": 5,
+  "OK no level 2014": 54,
+  "OK no level 2015": 54,
+  "OK no level 2016": 55,
+  "OK no level 2017": 56,
+  "OK no level 2018": 49,
+  "OK no level 2019": 49,
+  "OK no level 2020": 47,
+  "TX associate 2014": 63,
+  "TX associate 2015": 65,
+  "TX associate 2016": 69,
+  "TX associate 2017": 78,
+  "TX associate 2018": 73,
+  "TX associate 2019": 74,
+  "TX associate 2020": 75,
+  "TX bachelor 2014": 39,
+  "TX bachelor 2015": 42,
+  "TX bachelor 2016": 49,
+  "TX bachelor 2017": 61,
+  "TX bachelor 2018": 57,
+  "TX bachelor 2019": 58,
+  "TX bachelor 2020": 61,
+  "TX no level 2014": 2,
+  "TX no level 2015": 2,
+  "TX no level 2016": 2,
+  "TX no level 2017": 3,
+  "TX no level 2018": 3,
+  "TX no level 2019": 3,
+  "TX no level 2020": 3
+ }
+}
