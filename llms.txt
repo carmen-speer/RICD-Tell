@@ -11,7 +11,7 @@
 - Tracker v3 passed its pre-registered test on 987 held-out institutions (closures 2019 to 2025): 32 of 56 closures caught, J 0.49.
 - It beat every baseline: flagging every for-profit (J 0.31), critical slowing down (J -0.02), and, at its committed flag cut points, a size-and-sector model (J 0.49 against 0.38; public and nonprofit 0.29 against 0.09; both difference intervals above zero).
 - It catches edge cases the size-and-sector proxy misses (9 closures against 1) and its anchor sensor cleared 14 flags on supported colleges, none of which closed.
-- Measured directly, anchoring explains survival: of 98 colleges in the anchor-and-voice study with a known outcome, only 3 were anchored when their trouble began, and none of the 98 public or nonprofit closures with a measured ending was anchored (data/anchor and voice/).
+- Measured directly, anchoring shows the protection the theory predicts: none of the 66 public and nonprofit closures whose anchoring could be measured was anchored when its trouble began, though about half of colleges past break-even are anchored by definition (data/anchor and voice/).
 - It measures the anchors and the strain they carry across the sector (chronically short private nonprofits closed about five times as often as those never short; data/anchor efficiency/), and finds that most closures are slow drifts, not sudden shocks.
 - The live dashboard (https://carmen-speer.github.io/RICD-Tell/) runs tracker v3 on all 2,780 colleges in the current frame.
 - In law schools, which report outcomes directly, schools in the bottom tenth on bar passage or employment collapsed ten times as often.
