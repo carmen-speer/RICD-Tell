@@ -125,13 +125,28 @@ def main() -> None:
     if not rows:
         raise SystemExit("No 90/10 rows parsed. Nothing recorded.")
 
-    hd, hd_used, _ = et.headers()
-    unit_to_ope = {}
-    for y in sorted(hd):
-        for u, r in hd[y].items():
+    # OPEID by campus: the item-15 header reader keeps only the fields it needs, so read OPEID from each file
+    import csv as _csv
+    import io as _io
+    unit_to_ope, hd_used = {}, {}
+    for y in range(2008, 2026):
+        try:
+            hd = et.coding.download_hd(y)
+        except SystemExit:
+            continue
+        n = 0
+        rd = _csv.DictReader(_io.StringIO(hd["csv"]))
+        rd.fieldnames = [f.strip().lstrip("\ufeff").lstrip("\u00ef\u00bb\u00bf").upper() for f in rd.fieldnames]
+        for r in rd:
             o = opeid(r.get("OPEID", ""))
-            if o:
+            u = (r.get("UNITID") or "").strip()
+            if o and u:
                 unit_to_ope[u] = o                    # latest header file wins
+                n += 1
+        hd_used[f"HD{y}"] = {"url": hd["url"], "campuses with an OPEID": n}
+        print("header", y, n, flush=True)
+    if not unit_to_ope:
+        raise SystemExit("No OPEID read from the header files. Nothing recorded.")
 
     ours = defaultdict(lambda: defaultdict(float))
     with open(PAYERS, encoding="utf-8") as f:
@@ -168,7 +183,8 @@ def main() -> None:
         w.writerows(rows)
     if comp:
         with open(OUT / "comparison.csv", "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=list(comp[0]))
+            keys = list(dict.fromkeys(k for c in comp for k in c))
+            w = csv.DictWriter(f, fieldnames=keys)
             w.writeheader()
             w.writerows(comp)
 
