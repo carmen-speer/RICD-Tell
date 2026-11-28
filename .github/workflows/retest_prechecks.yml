@@ -1,0 +1,66 @@
+name: item 23 - blind retest prechecks (staffing dictionaries and Penn State York)
+
+# Manual-only. Runs "src/retest_prechecks.py": reads the layouts and category
+# codes of the fall 2024 staffing files (EAP2024, S2024_NH, with EAP2023 as
+# the reference year that resolved), and whether Penn State York reports its
+# finances to IPEDS separately (header, flags and public finance files).
+# No staff count, finance value or outcome is recorded.
+# Commits data/retest/prechecks.json.
+# Expected run time: about 3 to 8 minutes (downloads only).
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: retest-prechecks
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+
+      - name: Read the staffing dictionaries and Penn State York's reporting
+        run: |
+          cd src
+          python retest_prechecks.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          if [ ! -f data/retest/prechecks.json ]; then
+            echo "Nothing written."
+            exit 0
+          fi
+          git add data/retest/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 23: blind retest prechecks (staffing dictionary layouts and Penn State York's finance reporting; no values)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
