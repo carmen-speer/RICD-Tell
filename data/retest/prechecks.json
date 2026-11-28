@@ -1,0 +1,2494 @@
+{
+ "note": "Blind-retest prechecks: dictionary layouts, category codes and reporting relationships only; no staff count, finance value or outcome is recorded.",
+ "written at (UTC)": "2026-11-28T09:27:11.632638+00:00",
+ "check 1: fall 2024 staffing dictionaries (item 23d)": [
+  {
+   "table": "EAP2023",
+   "dictionary": {
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/EAP2023_Dict.zip",
+    "files in zip": [
+     "eap2023.xlsx"
+    ],
+    "sheets": {
+     "Introduction": {
+      "rows": 12,
+      "first rows": [
+       [
+        "File Documentation for number of full- and part-time staff by tenure status, medical school status, and occupational category, 2023",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "(Provisional release)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Filename",
+        "EAP2023"
+       ],
+       [
+        "Overview",
+        "This file contains the number of staff classified by full- and part-time status, medical school status, occupational category and faculty and tenure status for applicable occupations.  Faculty and tenure status categories include tenured, on-tenured-track, not-on-tenure track/no tenure system and without faculty status. Staff that are not on tenure track are further disaggregated by contract length (multi-year, indefinite, annual and less-than-annual). The multi-year and indefinite contracts were new categories beginning in 2016. From 2012 through 2015 the multi-year and indefinite contract lengths were combined as one category and often referred to as multi-year in past documentation. This data file has multiple records for each institution.   Each record is uniquely defined by the variables IPEDS ID (UNITID), and the variable EAPCAT which defines occupational category and tenure status of staff.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "varlist": {
+      "rows": 14,
+      "first rows": [
+       [
+        "varnumber",
+        "varname",
+        "DataType",
+        "Fieldwidth",
+        "format",
+        "imputationvar",
+        "varTitle"
+       ],
+       [
+        "90171",
+        "UNITID",
+        "N",
+        "6",
+        "Cont",
+        "",
+        "Unique identification number of the institution"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "N",
+        "5",
+        "Disc",
+        "",
+        "Occupation and faculty/tenure status"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "N",
+        "2",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "90106",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "N",
+        "2",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ]
+     },
+     "Description": {
+      "rows": 14,
+      "first rows": [
+       [
+        "varnumber",
+        "varname",
+        "longDescription"
+       ],
+       [
+        "90171",
+        "UNITID",
+        "Unique identification number of the institution"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "This variable identifies employees/staff by human resource occupation categories and faculty/tenure status\n\nOccupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories \n\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting.\n\nFaculty and tenure status\n\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category \n\nTenure-Status of a personnel position with respect to permanence of the position.  \nTenure track - Personnel positions that lead to consideration for tenure.  \nNot on tenure track - Personnel positions that are considered non-tenure earning positions \n\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). \nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course.\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "Occupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories \n\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "Faculty and tenure status\n\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category \n\nTenure-Status of a personnel position with respect to permanence of the position.  \nTenure track - Personnel positions that lead to consideration for tenure.  \nNot on tenure track - Personnel positions that are considered non-tenure earning positions \n\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). \nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course.\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "90106",
+        "OCCUPCAT",
+        "Occupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories \n\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "Faculty and tenure status\n\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category \n\nTenure-Status of a personnel position with respect to permanence of the position.  \nTenure track - Personnel positions that lead to consideration for tenure.  \nNot on tenure track - Personnel positions that are considered non-tenure earning positions \n\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). \nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course.\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ]
+     },
+     "Frequencies": {
+      "rows": 306,
+      "first rows": [
+       [
+        "varnumber",
+        "varname",
+        "codevalue",
+        "valuelabel",
+        "frequency",
+        "percent"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "10000",
+        "All staff",
+        "5924",
+        "2.06"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "10010",
+        "All staff, With faculty status",
+        "3499",
+        "1.21"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "10020",
+        "All staff, Tenured",
+        "2043",
+        "0.71"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "10030",
+        "All staff, On Tenure Track",
+        "1938",
+        "0.67"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "90106",
+        "OCCUPCAT",
+        "100",
+        "All staff",
+        "34778",
+        "12.07"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "200",
+        "Instructional, research and public service staff",
+        "28624",
+        "9.93"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "210",
+        "Instructional staff, total",
+        "28209",
+        "9.7899999999999991"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "211",
+        "Instructional staff, primarily instruction",
+        "26445",
+        "9.18"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "212",
+        "Instructional staff, primarily instruction, exclusively credit",
+        "24987",
+        "8.67"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "213",
+        "Instructional staff, primarily instruction, exclusively not-for-credit",
+        "3000",
+        "1.04"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "214",
+        "Instructional staff, primarily instruction, combined credit/not-for-credit",
+        "4312",
+        "1.5"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "215",
+        "Instructional staff - Instruction/research/public service",
+        "5104",
+        "1.77"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "220",
+        "Research",
+        "2624",
+        "0.91"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "230",
+        "Public service",
+        "1390",
+        "0.48"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "250",
+        "Librarians/Library Technicians/Archivists and Curators, and Museum technicians/Student and Academic Affairs and Other Education Services",
+        "13943",
+        "4.84"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "260",
+        "Librarians, Curators, and Archivists",
+        "9771",
+        "3.39"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "261",
+        "Archivists, Curators, and Museum Technicians",
+        "1876",
+        "0.65"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "262",
+        "Librarians",
+        "8273",
+        "2.87"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "263",
+        "Library Technicians",
+        "4083",
+        "1.42"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "264",
+        "Detailed library occupations not available for non-degree-granting institutions",
+        "442",
+        "0.15"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "270",
+        "Student and Academic Affairs and Other Education Services",
+        "11148",
+        "3.87"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "300",
+        "Management",
+        "16538",
+        "5.74"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "310",
+        "Business and Financial Operations",
+        "10479",
+        "3.64"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "320",
+        "Computer, Engineering, and Science",
+        "7752",
+        "2.69"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "330",
+        "Community Social Service, Legal, Arts, Design, Entertainment, Sports and Media",
+        "8121",
+        "2.82"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "340",
+        "Healthcare Practioners and Technical",
+        "4287",
+        "1.49"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "350",
+        "Service Occupations",
+        "7108",
+        "2.4700000000000002"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "360",
+        "Sales and Related Occupations",
+        "3802",
+        "1.32"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "370",
+        "Office and Administrative Support",
+        "10506",
+        "3.65"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "380",
+        "Natural Resources, Construction, and Maintenance",
+        "5078",
+        "1.76"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "390",
+        "Production, Transportation, and Material Moving",
+        "2596",
+        "0.9"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "400",
+        "Graduate Assistants Total",
+        "1046",
+        "0.36"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "410",
+        "Graduate Assistants Teaching",
+        "635",
+        "0.22"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "420",
+        "Graduate Assistants Research",
+        "494",
+        "0.17"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "490",
+        "Graduate Assistants Other",
+        "741",
+        "0.26"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "0",
+        "All staff",
+        "86242",
+        "29.93"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "10",
+        "With faculty status, total",
+        "26644",
+        "9.25"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "20",
+        "With faculty status, tenured",
+        "13536",
+        "4.7"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "30",
+        "With faculty status, on tenure track",
+        "11332",
+        "3.93"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "40",
+        "With faculty status not on tenure track/No tenure system, total",
+        "24279",
+        "8.42"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "41",
+        "With faculty status not on tenure track/No tenure system, multi-year and indefinite contract",
+        "11674",
+        "4.05"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "44",
+        "With faculty status not on tenure track/No tenure system, multi-year contract",
+        "6114",
+        "2.12"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "45",
+        "With faculty status not on tenure track/No tenure system, indefinite contract",
+        "6621",
+        "2.2999999999999998"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "42",
+        "With faculty status not on tenure track/No tenure system, annual contract",
+        "15417",
+        "5.35"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "43",
+        "With faculty status not on tenure track/No tenure system, less-than-annual contract",
+        "12527",
+        "4.3499999999999996"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "50",
+        "Without faculty status",
+        "37887",
+        "13.15"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "60",
+        "Faculty/tenure status not applicable, nondegree-granting institutions",
+        "35919",
+        "12.46"
+       ]
+      ]
+     },
+     "Statistics": {
+      "rows": 10,
+      "first rows": [
+       [
+        "varnumber",
+        "varname",
+        "n",
+        "sum",
+        "mean",
+        "min",
+        "max",
+        "varTitle"
+       ],
+       [
+        "90141",
+        "EAPTOT",
+        "288192",
+        "36957099",
+        "128.23776857095271",
+        "1",
+        "318020",
+        "Total employees"
+       ],
+       [
+        "90131",
+        "EAPTYP",
+        "286366",
+        "32839381",
+        "114.67625695787908",
+        "1",
+        "318020",
+        "Institution employees (excluding medical school)"
+       ],
+       [
+        "90136",
+        "EAPMED",
+        "13417",
+        "4117718",
+        "306.90303346500707",
+        "1",
+        "22136",
+        "Medical school employees"
+       ],
+       [
+        "90146",
+        "EAPFT",
+        "259537",
+        "21558993",
+        "83.067127230414158",
+        "0",
+        "33271",
+        "Full-time employees"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "Imputation values": {
+      "rows": 15,
+      "first rows": [
+       [
+        "Code values for item imputation variables Xvarname"
+       ],
+       [
+        "CodeValue",
+        "ValueLabel"
+       ],
+       [
+        "A",
+        "Not applicable"
+       ],
+       [
+        "B",
+        "Institution left item blank"
+       ],
+       [
+        "C",
+        "Analyst corrected reported value"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     }
+    },
+    "labels, whole-number codes only": {
+     "OCCUPCAT": {
+      "100": "All staff",
+      "200": "Instructional, research and public service staff",
+      "210": "Instructional staff, total",
+      "211": "Instructional staff, primarily instruction",
+      "212": "Instructional staff, primarily instruction, exclusively credit",
+      "213": "Instructional staff, primarily instruction, exclusively not-for-credit",
+      "214": "Instructional staff, primarily instruction, combined credit/not-for-credit",
+      "215": "Instructional staff - Instruction/research/public service",
+      "220": "Research",
+      "230": "Public service",
+      "250": "Librarians/Library Technicians/Archivists and Curators, and Museum technicians/Student and Academic Affairs and Other Education Services",
+      "260": "Librarians, Curators, and Archivists",
+      "261": "Archivists, Curators, and Museum Technicians",
+      "262": "Librarians",
+      "263": "Library Technicians",
+      "264": "Detailed library occupations not available for non-degree-granting institutions",
+      "270": "Student and Academic Affairs and Other Education Services",
+      "300": "Management",
+      "310": "Business and Financial Operations",
+      "320": "Computer, Engineering, and Science",
+      "330": "Community Social Service, Legal, Arts, Design, Entertainment, Sports and Media",
+      "340": "Healthcare Practioners and Technical",
+      "350": "Service Occupations",
+      "360": "Sales and Related Occupations",
+      "370": "Office and Administrative Support",
+      "380": "Natural Resources, Construction, and Maintenance",
+      "390": "Production, Transportation, and Material Moving",
+      "400": "Graduate Assistants Total",
+      "410": "Graduate Assistants Teaching",
+      "420": "Graduate Assistants Research",
+      "490": "Graduate Assistants Other"
+     },
+     "FACSTAT": {
+      "0": "All staff",
+      "10": "With faculty status, total",
+      "20": "With faculty status, tenured",
+      "30": "With faculty status, on tenure track",
+      "40": "With faculty status not on tenure track/No tenure system, total",
+      "41": "With faculty status not on tenure track/No tenure system, multi-year and indefinite contract",
+      "44": "With faculty status not on tenure track/No tenure system, multi-year contract",
+      "45": "With faculty status not on tenure track/No tenure system, indefinite contract",
+      "42": "With faculty status not on tenure track/No tenure system, annual contract",
+      "43": "With faculty status not on tenure track/No tenure system, less-than-annual contract",
+      "50": "Without faculty status",
+      "60": "Faculty/tenure status not applicable, nondegree-granting institutions"
+     }
+    },
+    "labels, '.0' codes accepted": {
+     "OCCUPCAT": {
+      "100": "All staff",
+      "200": "Instructional, research and public service staff",
+      "210": "Instructional staff, total",
+      "211": "Instructional staff, primarily instruction",
+      "212": "Instructional staff, primarily instruction, exclusively credit",
+      "213": "Instructional staff, primarily instruction, exclusively not-for-credit",
+      "214": "Instructional staff, primarily instruction, combined credit/not-for-credit",
+      "215": "Instructional staff - Instruction/research/public service",
+      "220": "Research",
+      "230": "Public service",
+      "250": "Librarians/Library Technicians/Archivists and Curators, and Museum technicians/Student and Academic Affairs and Other Education Services",
+      "260": "Librarians, Curators, and Archivists",
+      "261": "Archivists, Curators, and Museum Technicians",
+      "262": "Librarians",
+      "263": "Library Technicians",
+      "264": "Detailed library occupations not available for non-degree-granting institutions",
+      "270": "Student and Academic Affairs and Other Education Services",
+      "300": "Management",
+      "310": "Business and Financial Operations",
+      "320": "Computer, Engineering, and Science",
+      "330": "Community Social Service, Legal, Arts, Design, Entertainment, Sports and Media",
+      "340": "Healthcare Practioners and Technical",
+      "350": "Service Occupations",
+      "360": "Sales and Related Occupations",
+      "370": "Office and Administrative Support",
+      "380": "Natural Resources, Construction, and Maintenance",
+      "390": "Production, Transportation, and Material Moving",
+      "400": "Graduate Assistants Total",
+      "410": "Graduate Assistants Teaching",
+      "420": "Graduate Assistants Research",
+      "490": "Graduate Assistants Other"
+     },
+     "FACSTAT": {
+      "0": "All staff",
+      "10": "With faculty status, total",
+      "20": "With faculty status, tenured",
+      "30": "With faculty status, on tenure track",
+      "40": "With faculty status not on tenure track/No tenure system, total",
+      "41": "With faculty status not on tenure track/No tenure system, multi-year and indefinite contract",
+      "44": "With faculty status not on tenure track/No tenure system, multi-year contract",
+      "45": "With faculty status not on tenure track/No tenure system, indefinite contract",
+      "42": "With faculty status not on tenure track/No tenure system, annual contract",
+      "43": "With faculty status not on tenure track/No tenure system, less-than-annual contract",
+      "50": "Without faculty status",
+      "60": "Faculty/tenure status not applicable, nondegree-granting institutions"
+     }
+    }
+   },
+   "resolution, whole-number codes only": {
+    "resolved": {
+     "occupation": "210",
+     "all": "0",
+     "faculty total": "10",
+     "tenured": "20",
+     "track": "30",
+     "off track": "40",
+     "annual": "42",
+     "less than annual": "43",
+     "no faculty status": "50"
+    },
+    "unresolved": {}
+   },
+   "resolution, '.0' codes accepted": {
+    "resolved": {
+     "occupation": "210",
+     "all": "0",
+     "faculty total": "10",
+     "tenured": "20",
+     "track": "30",
+     "off track": "40",
+     "annual": "42",
+     "less than annual": "43",
+     "no faculty status": "50"
+    },
+    "unresolved": {}
+   },
+   "data file": {
+    "url": "https://nces.ed.gov/ipeds/datacenter/data/EAP2023.zip",
+    "csv": "eap2023.csv",
+    "rows": 288192,
+    "columns": [
+     "UNITID",
+     "EAPCAT",
+     "OCCUPCAT",
+     "FACSTAT",
+     "XEAPTOT",
+     "EAPTOT",
+     "XEAPTYP",
+     "EAPTYP",
+     "XEAPMED",
+     "EAPMED",
+     "XEAPFT",
+     "EAPFT",
+     "XEAPFTTY",
+     "EAPFTTYP",
+     "XEAPFTMD",
+     "EAPFTMED",
+     "XEAPPT",
+     "EAPPT",
+     "XEAPPTTY",
+     "EAPPTTYP",
+     "XEAPPTMD",
+     "EAPPTMED"
+    ],
+    "codes": {
+     "OCCUPCAT": {
+      "100": 34778,
+      "200": 28624,
+      "210": 28209,
+      "211": 26445,
+      "212": 24987,
+      "213": 3000,
+      "214": 4312,
+      "215": 5104,
+      "220": 2624,
+      "230": 1390,
+      "250": 13943,
+      "260": 9771,
+      "261": 1876,
+      "262": 8273,
+      "263": 4083,
+      "264": 442,
+      "270": 11148,
+      "300": 16538,
+      "310": 10479,
+      "320": 7752,
+      "330": 8121,
+      "340": 4287,
+      "350": 7108,
+      "360": 3802,
+      "370": 10506,
+      "380": 5078,
+      "390": 2596,
+      "400": 1046,
+      "410": 635,
+      "420": 494,
+      "490": 741
+     },
+     "FACSTAT": {
+      "0": 86242,
+      "10": 26644,
+      "20": 13536,
+      "30": 11332,
+      "40": 24279,
+      "41": 11674,
+      "42": 15417,
+      "43": 12527,
+      "44": 6114,
+      "45": 6621,
+      "50": 37887,
+      "60": 35919
+     }
+    }
+   }
+  },
+  {
+   "table": "EAP2024",
+   "dictionary": {
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/EAP2024_Dict.zip",
+    "files in zip": [
+     "eap2024.xlsx"
+    ],
+    "sheets": {
+     "Introduction": {
+      "rows": 12,
+      "first rows": [
+       [
+        "File Documentation for number of full- and part-time staff by tenure status, medical school status, and occupational category, 2024",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "(Provisional release)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Filename",
+        "EAP2024"
+       ],
+       [
+        "Overview",
+        "This file contains the number of staff classified by full- and part-time status, medical school status, occupational category and faculty and tenure status for applicable occupations.  Faculty and tenure status categories include tenured, on-tenured-track, not-on-tenure track/no tenure system and without faculty status. Staff that are not on tenure track are further disaggregated by contract length (multi-year, indefinite, annual and less-than-annual). The multi-year and indefinite contracts were new categories beginning in 2016. From 2012 through 2015 the multi-year and indefinite contract lengths were combined as one category and often referred to as multi-year in past documentation. This data file has multiple records for each institution.   Each record is uniquely defined by the variables IPEDS ID (UNITID), and the variable EAPCAT which defines occupational category and tenure status of staff.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "Varlist": {
+      "rows": 14,
+      "first rows": [
+       [
+        "varNumber",
+        "varName",
+        "DataType",
+        "FieldWidth",
+        "format",
+        "imputationvar",
+        "varTitle"
+       ],
+       [
+        "1",
+        "UNITID",
+        "N",
+        "6",
+        "Cont",
+        "",
+        "Unique identification number of the institution"
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "N",
+        "5",
+        "Disc",
+        "",
+        "Occupation and faculty/tenure status"
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "N",
+        "2",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "90106",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "N",
+        "2",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ]
+     },
+     "Description": {
+      "rows": 14,
+      "first rows": [
+       [
+        "varNumber",
+        "varName",
+        "longDescription"
+       ],
+       [
+        "1",
+        "UNITID",
+        ""
+       ],
+       [
+        "90101",
+        "EAPCAT",
+        "This variable identifies employees/staff by human resource occupation categories and faculty/tenure status_x000D_\n_x000D_\nOccupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting._x000D_\n_x000D_\nFaculty and tenure status_x000D_\n_x000D_\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category _x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ],
+       [
+        "90106",
+        "OCCUPCAT",
+        "Occupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "Faculty and tenure status_x000D_\n_x000D_\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category _x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "90106",
+        "OCCUPCAT",
+        "Occupation code -  This variable identifies postsecondary staff by IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "90111",
+        "FACSTAT",
+        "Faculty and tenure status_x000D_\n_x000D_\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category _x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ]
+     },
+     "Frequencies": {
+      "rows": 306,
+      "first rows": [
+       [
+        "VarName",
+        "VarNumber",
+        "TableName",
+        "CodeValue",
+        "valuelabel",
+        "Frequency",
+        "Percent"
+       ],
+       [
+        "EAPCAT",
+        "90101",
+        "EAP2024",
+        "10000",
+        "All staff",
+        "5,837",
+        "2.046"
+       ],
+       [
+        "EAPCAT",
+        "90101",
+        "EAP2024",
+        "10010",
+        "All staff, With faculty status",
+        "3,464",
+        "1.214"
+       ],
+       [
+        "EAPCAT",
+        "90101",
+        "EAP2024",
+        "10020",
+        "All staff, Tenured",
+        "2,025",
+        "0.71"
+       ],
+       [
+        "EAPCAT",
+        "90101",
+        "EAP2024",
+        "10030",
+        "All staff, On Tenure Track",
+        "1,910",
+        "0.67"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "100",
+        "All staff",
+        "34,458",
+        "12.08"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "200",
+        "Instructional, research and public service staff",
+        "28,349",
+        "9.938"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "210",
+        "Instructional staff, total",
+        "27,943",
+        "9.796"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "211",
+        "Instructional staff, primarily instruction",
+        "26,228",
+        "9.194"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "212",
+        "Instructional staff, primarily instruction, exclusively credit",
+        "24,712",
+        "8.663"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "213",
+        "Instructional staff, primarily instruction, exclusively not-for-credit",
+        "3,000",
+        "1.052"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "214",
+        "Instructional staff, primarily instruction, combined credit/not-for-credit",
+        "4,317",
+        "1.513"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "215",
+        "Instructional staff - Instruction/research/public service",
+        "5,060",
+        "1.774"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "220",
+        "Research",
+        "2,650",
+        "0.929"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "230",
+        "Public service",
+        "1,409",
+        "0.494"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "250",
+        "Librarians/Library Technicians/Archivists and Curators, and Museum technicians/Student and Academic Affairs and Other Education Services",
+        "13,772",
+        "4.828"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "260",
+        "Librarians, Curators, and Archivists",
+        "9,709",
+        "3.404"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "261",
+        "Archivists, Curators, and Museum Technicians",
+        "1,860",
+        "0.652"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "262",
+        "Librarians",
+        "8,214",
+        "2.879"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "263",
+        "Library Technicians",
+        "3,995",
+        "1.4"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "264",
+        "Detailed library occupations not available for non-degree-granting institutions",
+        "434",
+        "0.152"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "270",
+        "Student and Academic Affairs and Other Education Services",
+        "10,941",
+        "3.835"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "300",
+        "Management",
+        "16,302",
+        "5.715"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "310",
+        "Business and Financial Operations",
+        "10,263",
+        "3.598"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "320",
+        "Computer, Engineering, and Science",
+        "7,650",
+        "2.682"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "330",
+        "Community Social Service, Legal, Arts, Design, Entertainment, Sports and Media",
+        "8,223",
+        "2.883"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "340",
+        "Healthcare Practioners and Technical",
+        "4,208",
+        "1.475"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "350",
+        "Service Occupations",
+        "7,052",
+        "2.472"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "360",
+        "Sales and Related Occupations",
+        "3,702",
+        "1.298"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "370",
+        "Office and Administrative Support",
+        "10,348",
+        "3.628"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "380",
+        "Natural Resources, Construction, and Maintenance",
+        "4,952",
+        "1.736"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "390",
+        "Production, Transportation, and Material Moving",
+        "2,616",
+        "0.917"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "400",
+        "Graduate Assistants Total",
+        "1,034",
+        "0.362"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "410",
+        "Graduate Assistants Teaching",
+        "633",
+        "0.222"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "420",
+        "Graduate Assistants Research",
+        "478",
+        "0.168"
+       ],
+       [
+        "OCCUPCAT",
+        "90106",
+        "EAP2024",
+        "490",
+        "Graduate Assistants Other",
+        "747",
+        "0.262"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "0",
+        "All staff",
+        "85,091",
+        "29.829"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "10",
+        "With faculty status, total",
+        "26,430",
+        "9.265"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "20",
+        "With faculty status, tenured",
+        "13,452",
+        "4.716"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "30",
+        "With faculty status, on tenure track",
+        "11,156",
+        "3.911"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "40",
+        "With faculty status not on tenure track/No tenure system, total",
+        "24,026",
+        "8.423"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "41",
+        "With faculty status not on tenure track/No tenure system, multi-year and indefinite contract",
+        "11,894",
+        "4.17"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "44",
+        "With faculty status not on tenure track/No tenure system, multi-year contract",
+        "6,192",
+        "2.171"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "45",
+        "With faculty status not on tenure track/No tenure system, indefinite contract",
+        "6,695",
+        "2.347"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "42",
+        "With faculty status not on tenure track/No tenure system, annual contract",
+        "15,149",
+        "5.311"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "43",
+        "With faculty status not on tenure track/No tenure system, less-than-annual contract",
+        "12,470",
+        "4.371"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "50",
+        "Without faculty status",
+        "37,498",
+        "13.145"
+       ],
+       [
+        "FACSTAT",
+        "90111",
+        "EAP2024",
+        "60",
+        "Faculty/tenure status not applicable, nondegree-granting institutions",
+        "35,206",
+        "12.342"
+       ]
+      ]
+     },
+     "Statistics": {
+      "rows": 10,
+      "first rows": [
+       [
+        "VarNumber",
+        "VarName",
+        "N",
+        "SUM",
+        "MEAN",
+        "MIN",
+        "MAX",
+        "varTitle"
+       ],
+       [
+        "90141",
+        "EAPTOT",
+        "285259",
+        "36289990",
+        "127.218",
+        "1",
+        "38506",
+        "Total employees"
+       ],
+       [
+        "90131",
+        "EAPTYP",
+        "283432",
+        "32063604",
+        "113.126",
+        "1",
+        "19320",
+        "Institution employees (excluding medical school)"
+       ],
+       [
+        "90136",
+        "EAPMED",
+        "13593",
+        "4226386",
+        "310.924",
+        "1",
+        "23172",
+        "Medical school employees"
+       ],
+       [
+        "90146",
+        "EAPFT",
+        "256947",
+        "21938788",
+        "85.383",
+        "0",
+        "34565",
+        "Full-time employees"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "Imputation values": {
+      "rows": 14,
+      "first rows": [
+       [
+        "CodeValue",
+        "ValueLabel"
+       ],
+       [
+        "A",
+        "Not applicable"
+       ],
+       [
+        "B",
+        "Institution left item blank"
+       ],
+       [
+        "C",
+        "Analyst corrected reported value"
+       ],
+       [
+        "D",
+        "Do not know"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     }
+    },
+    "labels, whole-number codes only": {
+     "OCCUPCAT": {
+      "90106": "EAP2024"
+     },
+     "FACSTAT": {
+      "90111": "EAP2024"
+     }
+    },
+    "labels, '.0' codes accepted": {
+     "OCCUPCAT": {
+      "90106": "EAP2024"
+     },
+     "FACSTAT": {
+      "90111": "EAP2024"
+     }
+    }
+   },
+   "resolution, whole-number codes only": {
+    "resolved": {},
+    "unresolved": {
+     "occupation": [],
+     "all": [],
+     "faculty total": [],
+     "tenured": [],
+     "track": [],
+     "off track": [],
+     "annual": [],
+     "less than annual": [],
+     "no faculty status": []
+    }
+   },
+   "resolution, '.0' codes accepted": {
+    "resolved": {},
+    "unresolved": {
+     "occupation": [],
+     "all": [],
+     "faculty total": [],
+     "tenured": [],
+     "track": [],
+     "off track": [],
+     "annual": [],
+     "less than annual": [],
+     "no faculty status": []
+    }
+   },
+   "data file": {
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/EAP2024.zip",
+    "csv": "eap2024.csv",
+    "rows": 285259,
+    "columns": [
+     "UNITID",
+     "EAPCAT",
+     "OCCUPCAT",
+     "FACSTAT",
+     "XEAPTOT",
+     "EAPTOT",
+     "XEAPTYP",
+     "EAPTYP",
+     "XEAPMED",
+     "EAPMED",
+     "XEAPFT",
+     "EAPFT",
+     "XEAPFTTY",
+     "EAPFTTYP",
+     "XEAPFTMD",
+     "EAPFTMED",
+     "XEAPPT",
+     "EAPPT",
+     "XEAPPTTY",
+     "EAPPTTYP",
+     "XEAPPTMD",
+     "EAPPTMED"
+    ],
+    "codes": {
+     "OCCUPCAT": {
+      "100": 34458,
+      "200": 28349,
+      "210": 27943,
+      "211": 26228,
+      "212": 24712,
+      "213": 3000,
+      "214": 4317,
+      "215": 5060,
+      "220": 2650,
+      "230": 1409,
+      "250": 13772,
+      "260": 9709,
+      "261": 1860,
+      "262": 8214,
+      "263": 3995,
+      "264": 434,
+      "270": 10941,
+      "300": 16302,
+      "310": 10263,
+      "320": 7650,
+      "330": 8223,
+      "340": 4208,
+      "350": 7052,
+      "360": 3702,
+      "370": 10348,
+      "380": 4952,
+      "390": 2616,
+      "400": 1034,
+      "410": 633,
+      "420": 478,
+      "490": 747
+     },
+     "FACSTAT": {
+      "0": 85091,
+      "10": 26430,
+      "20": 13452,
+      "30": 11156,
+      "40": 24026,
+      "41": 11894,
+      "42": 15149,
+      "43": 12470,
+      "44": 6192,
+      "45": 6695,
+      "50": 37498,
+      "60": 35206
+     }
+    }
+   }
+  },
+  {
+   "table": "S2024_NH",
+   "dictionary": {
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/S2024_NH_Dict.zip",
+    "files in zip": [
+     "s2024_nh.xlsx"
+    ],
+    "sheets": {
+     "Introduction": {
+      "rows": 14,
+      "first rows": [
+       [
+        "File documentation for new hires by occupational category, race/ethnicity, and gender (Degree-granting institutions with 15 or more full-time employees): Fall 2024",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "(Provisional release)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Filename",
+        "S2024_NH"
+       ],
+       [
+        "Overview",
+        "This file contains the number of full-time new hires by primary occupation, race/ethnicity and gender.  New hires include persons who were hired for full-time permanent employment for the first time, or after a break in service, between November 1, 2023 - October 31, 2024. All new hire data prior to the Fall 2018 data file, used the four month period of July 1st - October 31st to define a new hire.  \n\nNew hires for instructional staff occupation are also reported by faculty/tenure status. Beginning with 2016, instructional staff that are not on tenure track are further disaggregated by contract length (multi-year, indefinite, annual and less-than-annual).  From 2012 through 2015 the multi-year and indefinite contract lengths were combined as one category and often referred to as multi-year in past documentation This file has multiple records per institution.  Each record is uniquely defined by the variables IPEDS ID (UNITID), and the variable SNHCAT which defines the primary occupation and faculty/tenure status for instructional staff. These data are applicable to degree-granting institutions with 15 or more full-time employees and related administrative offices.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "Varlist": {
+      "rows": 36,
+      "first rows": [
+       [
+        "varNumber",
+        "varName",
+        "DataType",
+        "FieldWidth",
+        "format",
+        "imputationvar",
+        "varTitle"
+       ],
+       [
+        "1",
+        "UNITID",
+        "N",
+        "6",
+        "Cont",
+        "",
+        "Unique identification number of the institution"
+       ],
+       [
+        "53036",
+        "SNHCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Staff category"
+       ],
+       [
+        "53041",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "53046",
+        "FACSTAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "53041",
+        "OCCUPCAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Occupation"
+       ],
+       [
+        "53046",
+        "FACSTAT",
+        "N",
+        "3",
+        "Disc",
+        "",
+        "Faculty and tenure status"
+       ]
+      ]
+     },
+     "Description": {
+      "rows": 36,
+      "first rows": [
+       [
+        "varNumber",
+        "varName",
+        "longDescription"
+       ],
+       [
+        "1",
+        "UNITID",
+        ""
+       ],
+       [
+        "53036",
+        "SNHCAT",
+        "This variable classifies Full-time new hires by occupational category.  Instructional staff  are also classified by faculty and tenure status. _x000D_\n_x000D_\nNEW HIRES - Persons who were hired for full-time permanent employment for the first time, or after a break in service, between July 1 and September 30 of the survey year. These do not include persons who have returned from sabbatical leave. PRIMARY OCCUPATIONAL ACTIVITY - The principal activity of a staff member as determined by the institution. If an individual participates in two or more activities, the primary activity is normally determined by the amount of time spent in each activity. _x000D_\n_x000D_\n_x000D_\nFULL-TIME STAFF (EMPLOYEES) _x000D_\nAs defined by the institution. The type of appointment at the snapshot date determines whether an employee is full time or part time. The employee's term of contract is not considered in making the determination of full or part time. _x000D_\n_x000D_\nOccupation - IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2010, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2010 SOC information. The new IPEDS occupational categories are effective with 2012-13 Human Resources reporting._x000D_\n_x000D_\nFACULTY _x000D_\nPersons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category_x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ],
+       [
+        "53041",
+        "OCCUPCAT",
+        "Occupation - This variable identifies postsecondary staff by IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "53046",
+        "FACSTAT",
+        "Faculty and tenure status_x000D_\n_x000D_\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category _x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "53041",
+        "OCCUPCAT",
+        "Occupation - This variable identifies postsecondary staff by IPEDS Human Resource occupation categories _x000D_\n_x000D_\nThe IPEDS HR survey component uses the Standard Occupational Classification (SOC) system to assist institutions in classifying employees for IPEDS reporting purposes. The SOC is a system used by Federal statistical agencies to classify workers and jobs into occupational categories for the purpose of collecting, calculating, analyzing, or disseminating data. In 2018, an updated version of the SOC system (http://www.bls.gov/soc/) was released. Consequently, the IPEDS HR survey was revised to incorporate the 2018 SOC information. The new IPEDS occupational categories are effective with 2018-19 Human Resources reporting."
+       ],
+       [
+        "53046",
+        "FACSTAT",
+        "Faculty and tenure status_x000D_\n_x000D_\nFaculty Persons identified by the institution as such and typically those whose initial assignments are made for the purpose of conducting instruction, research or public service as a principal activity (or activities). They may hold academic rank titles of professor, associate professor, assistant professor, instructor, lecturer or the equivalent of any of those academic ranks. Faculty may also include the chancellor/president, provost, vice provosts, deans, directors or the equivalent, as well as associate deans, assistant deans and executive officers of academic departments (chairpersons, heads or the equivalent) if their principal activity is instruction combined with research and/or public service. The designation as \"faculty\" is separate from the activities to which they may be currently assigned. For example, a newly appointed president of an institution may also be appointed as a faculty member. Graduate, instruction, and research assistants are not included in this category _x000D_\n_x000D_\nTenure-Status of a personnel position with respect to permanence of the position.  _x000D_\nTenure track - Personnel positions that lead to consideration for tenure.  _x000D_\nNot on tenure track - Personnel positions that are considered non-tenure earning positions _x000D_\n_x000D_\nMulti-year contract - a contract or employment agreement that is in effect for more than one year (e.g., more than 365 days) where subsequent years of the contract may be contingent upon other factors such as the appropriation of funds. The renewal period of a multi-year contract is not on an annual basis (e.g., a 5-year multi-year contract is renewed every 5 years NOT annually). _x000D_\nAnnual contract - An annually-renewable contract or employment agreement that is in effect for a stated annual period within one year of execution, and may be equal to a period of 365 days, or a standard academic year, or the equivalent. Does not include contracts for partial year periods such as a single semester, quarter, term, block, or course._x000D_\nLess-than-annual-contract - A contract or employment agreement that is in effect for a partial year period of less than 365 days, or less than a standard academic year or the equivalent. Includes contracts for partial year periods such as a single semester, quarter, term, block, or course."
+       ]
+      ]
+     },
+     "Frequencies": {
+      "rows": 57,
+      "first rows": [
+       [
+        "VarName",
+        "VarNumber",
+        "TableName",
+        "CodeValue",
+        "valuelabel",
+        "Frequency",
+        "Percent"
+       ],
+       [
+        "SNHCAT",
+        "53036",
+        "S2024_NH",
+        "10000",
+        "All full-time new hires",
+        "3,302",
+        "8.117"
+       ],
+       [
+        "SNHCAT",
+        "53036",
+        "S2024_NH",
+        "20000",
+        "Instructional, research and public service",
+        "2,981",
+        "7.328"
+       ],
+       [
+        "SNHCAT",
+        "53036",
+        "S2024_NH",
+        "21000",
+        "Instructional staff",
+        "2,969",
+        "7.299"
+       ],
+       [
+        "SNHCAT",
+        "53036",
+        "S2024_NH",
+        "21010",
+        "Instructional staff with faculty status, total",
+        "2,892",
+        "7.109"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": [
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "100",
+        "All full-time new hires",
+        "3,302",
+        "8.117"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "200",
+        "Instructional, research and public service staff",
+        "2,981",
+        "7.328"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "210",
+        "Instructional staff",
+        "14,635",
+        "35.978"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "220",
+        "Research",
+        "347",
+        "0.853"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "230",
+        "Public service",
+        "154",
+        "0.379"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "250",
+        "Librarians/Library Technicians/Archivists and Curators, and Museum technicians/Student and Academic Affairs and Other Education Services",
+        "2,310",
+        "5.679"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "300",
+        "Management",
+        "2,625",
+        "6.453"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "310",
+        "Business and Financial Operations",
+        "2,262",
+        "5.561"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "320",
+        "Computer, Engineering, and Science",
+        "1,838",
+        "4.518"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "330",
+        "Community, Social Service, Legal, Arts,Design, Entertainment, Sports and Media",
+        "2,257",
+        "5.548"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "340",
+        "Healthcare Practioners and Technical",
+        "856",
+        "2.104"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "350",
+        "Service Occupations",
+        "2,194",
+        "5.394"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "360",
+        "Sales and Related Occupations",
+        "451",
+        "1.109"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "370",
+        "Office and Administrative Support",
+        "2,702",
+        "6.642"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "380",
+        "Natural Resources, Construction, and Maintenance",
+        "1,305",
+        "3.208"
+       ],
+       [
+        "OCCUPCAT",
+        "53041",
+        "S2024_NH",
+        "390",
+        "Production, Transportation, and Material Moving",
+        "459",
+        "1.128"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "0",
+        "All full-time new hires",
+        "29,012",
+        "71.321"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "10",
+        "With faculty status, total",
+        "2,892",
+        "7.109"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "20",
+        "With faculty status, tenured",
+        "514",
+        "1.264"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "30",
+        "With faculty status, on tenure track",
+        "1,543",
+        "3.793"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "40",
+        "With faculty status not on tenure track/No tenure system, total",
+        "2,485",
+        "6.109"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "41",
+        "With faculty status not on tenure track/No tenure system, multi-year and indefinite contract",
+        "965",
+        "2.372"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "44",
+        "With faculty status not on tenure track/No tenure system, multi-year contract",
+        "470",
+        "1.155"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "45",
+        "With faculty status not on tenure track/No tenure system, indefinite contract",
+        "520",
+        "1.278"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "42",
+        "With faculty status not on tenure track/No tenure system, annual contract",
+        "1,723",
+        "4.236"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "43",
+        "With faculty status not on tenure track/No tenure system, less-than-annual contract",
+        "345",
+        "0.848"
+       ],
+       [
+        "FACSTAT",
+        "53046",
+        "S2024_NH",
+        "50",
+        "Without faculty status",
+        "209",
+        "0.514"
+       ]
+      ]
+     },
+     "Statistics": {
+      "rows": 31,
+      "first rows": [
+       [
+        "VarNumber",
+        "VarName",
+        "N",
+        "SUM",
+        "MEAN",
+        "MIN",
+        "MAX",
+        "varTitle"
+       ],
+       [
+        "50701",
+        "HRTOTLT",
+        "40678",
+        "901503",
+        "22.162",
+        "1",
+        "4024",
+        "Grand total"
+       ],
+       [
+        "50656",
+        "HRTOTLM",
+        "40678",
+        "384946",
+        "9.463",
+        "0",
+        "1598",
+        "Grand total men"
+       ],
+       [
+        "50661",
+        "HRTOTLW",
+        "40678",
+        "516557",
+        "12.699",
+        "0",
+        "2569",
+        "Grand total women"
+       ],
+       [
+        "52232",
+        "HRAIANT",
+        "40678",
+        "4730",
+        "0.116",
+        "0",
+        "43",
+        "American Indian or Alaska Native total"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     },
+     "Imputation values": {
+      "rows": 14,
+      "first rows": [
+       [
+        "CodeValue",
+        "ValueLabel"
+       ],
+       [
+        "A",
+        "Not applicable"
+       ],
+       [
+        "B",
+        "Institution left item blank"
+       ],
+       [
+        "C",
+        "Analyst corrected reported value"
+       ],
+       [
+        "D",
+        "Do not know"
+       ]
+      ],
+      "rows mentioning OCCUPCAT or FACSTAT": []
+     }
+    },
+    "labels, whole-number codes only": {
+     "OCCUPCAT": {
+      "53041": "S2024_NH"
+     },
+     "FACSTAT": {
+      "53046": "S2024_NH"
+     }
+    },
+    "labels, '.0' codes accepted": {
+     "OCCUPCAT": {
+      "53041": "S2024_NH"
+     },
+     "FACSTAT": {
+      "53046": "S2024_NH"
+     }
+    }
+   },
+   "resolution, whole-number codes only": {
+    "resolved": {},
+    "unresolved": {
+     "occupation": [],
+     "all": [],
+     "faculty total": [],
+     "tenured": [],
+     "track": [],
+     "off track": [],
+     "annual": [],
+     "less than annual": [],
+     "no faculty status": []
+    }
+   },
+   "resolution, '.0' codes accepted": {
+    "resolved": {},
+    "unresolved": {
+     "occupation": [],
+     "all": [],
+     "faculty total": [],
+     "tenured": [],
+     "track": [],
+     "off track": [],
+     "annual": [],
+     "less than annual": [],
+     "no faculty status": []
+    }
+   },
+   "data file": {
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/S2024_NH.zip",
+    "csv": "s2024_nh.csv",
+    "rows": 40678,
+    "columns": [
+     "UNITID",
+     "SNHCAT",
+     "OCCUPCAT",
+     "FACSTAT",
+     "SGTYPE",
+     "XHRTOTLT",
+     "HRTOTLT",
+     "XHRTOTLM",
+     "HRTOTLM",
+     "XHRTOTLW",
+     "HRTOTLW",
+     "XHRAIANT",
+     "HRAIANT",
+     "XHRAIANM",
+     "HRAIANM",
+     "XHRAIANW",
+     "HRAIANW",
+     "XHRASIAT",
+     "HRASIAT",
+     "XHRASIAM",
+     "HRASIAM",
+     "XHRASIAW",
+     "HRASIAW",
+     "XHRBKAAT",
+     "HRBKAAT",
+     "XHRBKAAM",
+     "HRBKAAM",
+     "XHRBKAAW",
+     "HRBKAAW",
+     "XHRHISPT",
+     "HRHISPT",
+     "XHRHISPM",
+     "HRHISPM",
+     "XHRHISPW",
+     "HRHISPW",
+     "XHRNHPIT",
+     "HRNHPIT",
+     "XHRNHPIM",
+     "HRNHPIM",
+     "XHRNHPIW",
+     "HRNHPIW",
+     "XHRWHITT",
+     "HRWHITT",
+     "XHRWHITM",
+     "HRWHITM",
+     "XHRWHITW",
+     "HRWHITW",
+     "XHR2MORT",
+     "HR2MORT",
+     "XHR2MORM",
+     "HR2MORM",
+     "XHR2MORW",
+     "HR2MORW",
+     "XHRUNKNT",
+     "HRUNKNT",
+     "XHRUNKNM",
+     "HRUNKNM",
+     "XHRUNKNW",
+     "HRUNKNW",
+     "XHRNRALT",
+     "HRNRALT",
+     "XHRNRALM",
+     "HRNRALM",
+     "XHRNRALW",
+     "HRNRALW"
+    ],
+    "codes": {
+     "OCCUPCAT": {
+      "100": 3302,
+      "200": 2981,
+      "210": 14635,
+      "220": 347,
+      "230": 154,
+      "250": 2310,
+      "300": 2625,
+      "310": 2262,
+      "320": 1838,
+      "330": 2257,
+      "340": 856,
+      "350": 2194,
+      "360": 451,
+      "370": 2702,
+      "380": 1305,
+      "390": 459
+     },
+     "FACSTAT": {
+      "0": 29012,
+      "10": 2892,
+      "20": 514,
+      "30": 1543,
+      "40": 2485,
+      "41": 965,
+      "42": 1723,
+      "43": 345,
+      "44": 470,
+      "45": 520,
+      "50": 209
+     }
+    }
+   }
+  }
+ ],
+ "check 2: Penn State York's finance reporting": {
+  "header files": {
+   "HD2023": [
+    {
+     "UNITID": "214829",
+     "INSTNM": "Pennsylvania State University-Penn State York",
+     "SECTOR": "1",
+     "CYACTIVE": "1",
+     "CLOSEDAT": "-2",
+     "DEATHYR": "-2",
+     "NEWID": "-2",
+     "F1SYSNAM": "The Pennsylvania State University",
+     "F1SYSCOD": "142060"
+    }
+   ],
+   "HD2024": [
+    {
+     "UNITID": "214829",
+     "INSTNM": "Pennsylvania State University-Penn State York",
+     "SECTOR": "1",
+     "CYACTIVE": "1",
+     "CLOSEDAT": "-2",
+     "DEATHYR": "-2",
+     "NEWID": "-2",
+     "F1SYSNAM": "The Pennsylvania State University",
+     "F1SYSCOD": "142060"
+    }
+   ],
+   "HD2025": [
+    {
+     "UNITID": "214829",
+     "INSTNM": "Pennsylvania State University-Penn State York",
+     "SECTOR": "1",
+     "CYACTIVE": "1",
+     "CLOSEDAT": "-2",
+     "DEATHYR": "-2",
+     "NEWID": "-2",
+     "F1SYSNAM": "The Pennsylvania State University",
+     "F1SYSCOD": "142060"
+    }
+   ]
+  },
+  "flags files": {
+   "FLAGS2022": [
+    {
+     "UNITID": "214829",
+     "PRCH_C": "-2",
+     "IDX_C": "-2",
+     "PRCH_E12": "-2",
+     "IDX_E12": "-2",
+     "PRCH_SFA": "-2",
+     "IDX_SFA": "-2",
+     "PRCH_GR": "-2",
+     "IDX_GR": "-2",
+     "PRCH_GR2": "-2",
+     "IDX_GR2": "-2",
+     "PRCH_OM": "-2",
+     "IDX_OM": "-2",
+     "PRCH_ADM": "-2",
+     "IDX_ADM": "-2",
+     "PRCH_HR": "-2",
+     "IDX_HR": "-2",
+     "PRCH_EF": "-2",
+     "IDX_EF": "-2",
+     "PRCH_F": "2",
+     "IDX_F": "214777",
+     "PRCHTP_F": "1",
+     "PRCH_AL": "2",
+     "IDX_AL": "214777"
+    }
+   ],
+   "FLAGS2023": [
+    {
+     "UNITID": "214829",
+     "PRCH_C": "-2",
+     "IDX_C": "-2",
+     "PRCH_E12": "-2",
+     "IDX_E12": "-2",
+     "PRCH_SFA": "-2",
+     "IDX_SFA": "-2",
+     "PRCH_GR": "-2",
+     "IDX_GR": "-2",
+     "PRCH_GR2": "-2",
+     "IDX_GR2": "-2",
+     "PRCH_OM": "-2",
+     "IDX_OM": "-2",
+     "PRCH_ADM": "-2",
+     "IDX_ADM": "-2",
+     "PRCH_HR": "-2",
+     "IDX_HR": "-2",
+     "PRCH_EF": "-2",
+     "IDX_EF": "-2",
+     "PRCH_F": "2",
+     "IDX_F": "214777",
+     "PRCHTP_F": "1",
+     "PRCH_AL": "2",
+     "IDX_AL": "214777"
+    }
+   ],
+   "FLAGS2024": [
+    {
+     "UNITID": "214829",
+     "PRCH_C": "-2",
+     "IDX_C": "-2",
+     "PRCH_E12": "-2",
+     "IDX_E12": "-2"
+    }
+   ]
+  },
+  "public finance files": {
+   "F2122_F1A": {
+    "214829": false
+   },
+   "F2223_F1A": {
+    "214829": false
+   },
+   "F2324_F1A": {
+    "214829": false
+   }
+  },
+  "unit IDs found": [
+   "214829"
+  ]
+ }
+}
