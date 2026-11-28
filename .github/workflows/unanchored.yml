@@ -1,0 +1,68 @@
+name: unanchored against anchored - how colleges would fare without their anchors
+
+# Manual-only. Runs "src/unanchored.py": for every college, from fiscal
+# 2008 (for-profits from 2014), its expendable reserves less every external
+# anchor dollar received since then (government appropriations, government
+# student grants and gifts; item 23k's payer accounting), and the year it
+# would reach its point of no return without its anchors, in dollars and
+# in years of spending; set beside actual reserves and documented closures
+# (exploratory where outcomes are known). Descriptive; nothing is fitted.
+# Commits data/unanchored/. Expected run time: about 7 to 10 minutes.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: unanchored
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1 openpyxl==3.1.5
+
+      - name: Compare each college with and without its anchors
+        run: |
+          cd src
+          python unanchored.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          if [ ! -d data/unanchored ]; then
+            echo "Nothing written."
+            exit 0
+          fi
+          git add data/unanchored/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "unanchored against anchored: how colleges would fare without their anchors (descriptive)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
