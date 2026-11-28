@@ -36,11 +36,16 @@ Data decisions (approved November 27, 2026, before anything was built):
                  across the functions using the college's own per-function
                  plant columns where it reported them, and its spending
                  shares where it did not (decision 6)
-  depreciation,  from fiscal 2016 reported only as totals, so they are taken
-  interest       out of the functions in proportion to each function's
-                 share; the same rule is used in every year so no break is
-                 created at 2016, and fiscal 2015 is checked against the
-                 per-function figures colleges reported then (diagnostic)
+  depreciation,  taken out of the functions as each college reported them by
+  interest       function through fiscal 2015 (with the plant line's own
+                 share spread with it); from fiscal 2016, when only totals
+                 are reported, by the college's own mean shares from its
+                 last three reported years, so each college's lines stay
+                 continuous across 2016; with no reported shares, by each
+                 function's size (approved November 27, after the first run
+                 showed the size rule gave auxiliaries too little
+                 depreciation); the earlier size rule's fiscal 2015 check
+                 is kept as a diagnostic
   discounting    tuition and auxiliary discounts are already netted out of
                  income, so they are not spending; the part funded by the
                  college's own grants (estimated pro rata from the grant
@@ -192,6 +197,28 @@ DEP_COLS = {
            "academic support": "F3E03A5", "student services": "F3E03B5", "institutional support": "F3E03C5",
            "auxiliaries": "F3E045", "hospitals": "F3E105", "other": "F3E065"},
 }
+DEP_COLS["F1A"]["student aid paid out"] = "F1C104"      # to fiscal 2009
+DEP_COLS["F2"]["student aid paid out"] = "F2E085"       # to fiscal 2009
+# Per-function interest columns, before fiscal 2016 (public from fiscal 2009).
+INT_COLS = {
+    "F1A": {"instruction": "F1C017", "research": "F1C027", "public service": "F1C037",
+            "academic support": "F1C057", "student services": "F1C067", "institutional support": "F1C077",
+            "auxiliaries": "F1C117", "hospitals": "F1C127", "independent operations": "F1C137", "other": "F1C147"},
+    "F2": {"instruction": "F2E016", "research": "F2E026", "public service": "F2E036",
+           "academic support": "F2E046", "student services": "F2E056", "institutional support": "F2E066",
+           "auxiliaries": "F2E076", "student aid paid out": "F2E086", "hospitals": "F2E096",
+           "independent operations": "F2E106", "other": "F2E126"},
+    "F3": {"instruction": "F3E016", "research": "F3E02A6", "public service": "F3E02B6",
+           "academic support": "F3E03A6", "student services": "F3E03B6", "institutional support": "F3E03C6",
+           "auxiliaries": "F3E046", "hospitals": "F3E106", "other": "F3E066"},
+}
+# The plant row's own depreciation and interest, spread with the plant row before fiscal 2016.
+PLANT_ROW_DEP = {"F1A": "F1C084", "F2": "F2E115", "F3": "F3E115"}
+PLANT_ROW_INT = {"F1A": "F1C087", "F2": "F2E116", "F3": "F3E116"}
+SHARE_YEARS = 3                  # a college's own shares: the mean of its last three reported years
+OWN_SHARES: dict = {}            # (unitid, "depreciation" | "interest") -> list of share dicts, latest last
+SPLIT_LOG: Counter = Counter()
+
 TOTAL = {"F1A": ("F1C191",), "F2": ("F2E131",), "F3": ("F3E071",)}
 DEP_TOTAL = {"F1A": ("F1C194", "F1C19DP"), "F2": ("F2E135",), "F3": ("F3E075",)}   # same as item 15
 DEP_ROW = {"F1A": ("F1C094", "F1C091")}           # public depreciation reported as its own row (to fiscal 2009)
@@ -220,7 +247,38 @@ def first_of(r: dict, codes) -> float | None:
     return None
 
 
-def college_lines(r: dict, form: str, fy: int) -> dict | None:
+def split_amount(total: float, gross: dict, reported: dict | None, key: tuple, fy: int) -> tuple[dict, str]:
+    """Spread a depreciation or interest total over the functions.
+
+    Through fiscal 2015: each function's reported amount (any remainder spread by size), and the
+    college's shares are kept. From 2016, when only totals are reported: the college's own mean
+    shares from its last three reported years; with none, by each function's size."""
+    out = {f: 0.0 for f in FUNCTIONS}
+    if total <= 0:
+        return out, "none"
+    base = sum(gross.values())
+    if reported and sum(v for v in reported.values() if v > 0) > 0:
+        for f, v in reported.items():
+            out[f] += max(v, 0.0)
+        rem = total - sum(out.values())
+        if base > 0:
+            for f in FUNCTIONS:
+                out[f] += rem * gross[f] / base
+        OWN_SHARES.setdefault(key, []).append({f: out[f] / total for f in FUNCTIONS})
+        OWN_SHARES[key] = OWN_SHARES[key][-SHARE_YEARS:]
+        return out, "reported by function"
+    hist = OWN_SHARES.get(key)
+    if fy >= PLANT_ALLOCATED_FROM and hist:
+        for f in FUNCTIONS:
+            out[f] = total * sum(h[f] for h in hist) / len(hist)
+        return out, "college's own earlier shares"
+    if base > 0:
+        for f in FUNCTIONS:
+            out[f] = total * gross[f] / base
+    return out, "by size"
+
+
+def college_lines(r: dict, form: str, fy: int, u: str = "") -> dict | None:
     """Every line for one college-year, before deflating. None when the expense table is blank."""
     gross_total = first_of(r, TOTAL[form])
     if gross_total is None or gross_total <= 0:
@@ -245,6 +303,7 @@ def college_lines(r: dict, form: str, fy: int) -> dict | None:
     # decision 6: before fiscal 2016, spread the remaining plant line back across the functions
     plant_row = max(num(r.get(PLANT_ROW[form])) or 0.0, 0.0) if fy < PLANT_ALLOCATED_FROM else 0.0
     plant_spread = "none"
+    pw = {}
     if plant_row > 0:
         own = {f: max(num(r.get(c)) or 0.0, 0.0) for f, c in PLANT_COLS[form].items()}
         if sum(own.values()) > 0:
@@ -253,19 +312,35 @@ def college_lines(r: dict, form: str, fy: int) -> dict | None:
             weights, plant_spread = {f: gross[f] for f in PLANT_USERS}, "spending shares"
         wsum = sum(weights.values())
         if wsum > 0:
-            for f, w in weights.items():
-                gross[f] += plant_row * w / wsum
+            pw = {f: w / wsum for f, w in weights.items()}
+            for f, w in pw.items():
+                gross[f] += plant_row * w
         else:
             gross["other"] += plant_row
             plant_spread = "into other (no functions to spread over)"
 
-    # decision 7 and debt service: take depreciation and interest out of the functions, by share
+    # decision 7 and debt service: take depreciation and interest out of the functions (approved
+    # November 27: as each college reported them by function through fiscal 2015, and from 2016 by
+    # the college's own earlier shares, so no break is created at 2016)
     inside_int = int_col
     base = sum(gross.values())
-    net = {}
-    for f in FUNCTIONS:
-        share = gross[f] / base if base > 0 else 0.0
-        net[f] = gross[f] - share * (dep_inside + inside_int)
+
+    def reported_by_function(cols: dict, row_code: str) -> dict | None:
+        if fy >= PLANT_ALLOCATED_FROM:
+            return None
+        rep = {f: (num(r.get(c)) or 0.0) for f, c in cols.get(form, {}).items()}
+        prow = max(num(r.get(row_code)) or 0.0, 0.0)
+        for f, w in pw.items():
+            rep[f] = rep.get(f, 0.0) + prow * w
+        return rep if any(v > 0 for v in rep.values()) else None
+
+    dep_split, dep_how = split_amount(dep_inside, gross, reported_by_function(DEP_COLS, PLANT_ROW_DEP[form]),
+                                      (u, "depreciation"), fy)
+    int_split, int_how = split_amount(inside_int, gross, reported_by_function(INT_COLS, PLANT_ROW_INT[form]),
+                                      (u, "interest"), fy)
+    SPLIT_LOG[("depreciation", form, fy, dep_how)] += 1
+    SPLIT_LOG[("interest", form, fy, int_how)] += 1
+    net = {f: gross[f] - dep_split[f] - int_split[f] for f in FUNCTIONS}
     net["interest"] = interest
     # tie the lines to the expense total less depreciation (any remainder goes to other)
     accounted = sum(net.values())
@@ -407,7 +482,7 @@ def hooked_table(orig):
             return t
         fy = 2000 + int(stem[3:5])
         for u, rows in t.items():
-            got = college_lines(rows[0], form, fy)
+            got = college_lines(rows[0], form, fy, u)
             if got is not None:
                 STORE[u][fy] = got
                 SPREAD_LOG[(form, fy, got["plant spread"])] += 1
@@ -521,6 +596,13 @@ def top_driver(c: dict) -> str | None:
     d["other operating income (O), falling"] = -(l["other operating income (O)"] / l["N"] - e["other operating income (O)"] / e["N"])
     gap = l["gap"] / l["N"] - e["gap"] / e["N"]
     return max(d, key=d.get) if gap > 0 else "gap did not grow"
+
+
+def split_log() -> dict:
+    out = defaultdict(dict)
+    for (what, form, fy, how), n in sorted(SPLIT_LOG.items()):
+        out[f"{what} | {form} {fy}"][how] = n
+    return dict(out)
 
 
 # ------------------------------------------------------------------ main
@@ -722,6 +804,7 @@ def main() -> None:
             "depreciation by function, fiscal 2015: reported against the proportional rule": dep_out,
             "plant line spread before fiscal 2016 (colleges, by method)": {k: dict(v) for k, v in sorted(spread.items())},
             "flags (college-years)": dict(flags),
+            "depreciation and interest taken out of the functions (college-years, by method)": split_log(),
             "colleges with lines": Counter(c["sector"] for c in per_college.values()),
             "hospital colleges": Counter(c["sector"] for c in per_college.values() if c["hospital college"]),
         },
