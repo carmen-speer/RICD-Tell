@@ -1,0 +1,66 @@
+name: item 23k follow-up step 0 - field check of the 90-10 files
+
+# Manual-only. Runs "src/ninety_ten_field_check.py": downloads the
+# Department of Education's proprietary-school 90/10 revenue percentage
+# spreadsheets (award years 2008-09 to 2024-25), keeps exact copies with
+# their SHA-256, and records each file's layout. Nothing is parsed into
+# figures, matched or compared. Commits data/ninety_ten/.
+# Expected run time: about 2 minutes.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ninety-ten-field-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1 openpyxl==3.1.5
+
+      - name: Download the 90-10 files and record their layouts
+        run: |
+          cd src
+          python ninety_ten_field_check.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          if [ ! -d data/ninety_ten ]; then
+            echo "Nothing written."
+            exit 0
+          fi
+          git add data/ninety_ten/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 23k follow-up step 0: field check of the 90/10 files (downloads and layouts only)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
