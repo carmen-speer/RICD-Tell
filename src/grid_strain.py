@@ -150,7 +150,7 @@ def hooked_table(orig):
         fy = 2000 + int(stem[3:5])
         for u, rows in t.items():
             r = rows[0]
-            rec = {"flags": []}
+            rec = {"flags": [], "form": form}
             for level, codes in GRANTS[form].items():
                 rec[f"{level} student grants"] = total_of(r, codes) or 0.0
             if form == "F3" and fy < 2014:
@@ -273,9 +273,13 @@ def payer_record(rec: dict, ex: dict, sec: str, loan: float | None, cdr: float |
     anchors = rec["anchors"] or {}
     flags = list(rec["flags"]) + list(ex["flags"])
     sg = {lv: ex[f"{lv} student grants"] for lv in ("federal", "state", "local")}
+    # a college's sector is its latest header-file control; in some years it may have filed another sector's form
+    usual = {"public": "F1A", "private nonprofit": "F2", "for-profit": "F3"}[sec]
+    if ex.get("form") != usual:
+        flags.append(f"filed the {ex.get('form')} form this year (sector read from the latest header file)")
     if sec == "for-profit":
-        appro = {lv: ex[f"{lv} appropriations (for-profit form)"] for lv in ("federal", "state", "local")}
-        gifts, endow = ex["gifts (for-profit form)"], 0.0
+        appro = {lv: ex.get(f"{lv} appropriations (for-profit form)", 0.0) for lv in ("federal", "state", "local")}
+        gifts, endow = ex.get("gifts (for-profit form)", 0.0), 0.0
         flags.append("for-profit gifts include private grants and contracts")
         # item 15 counts these inside O for for-profits (no anchors); take them out so nothing is counted twice
         inside_O = sum(appro.values()) + gifts
@@ -301,11 +305,11 @@ def payer_record(rec: dict, ex: dict, sec: str, loan: float | None, cdr: float |
            "memo: default estimate (lower bound)": (cdr * loan) if (cdr is not None and loan is not None) else None,
            "memo: depreciation": ex["depreciation"], "flags": flags}
     if sec == "public":
-        cap = ex["capital appropriations"] + ex["capital grants and gifts"]
+        cap = ex.get("capital appropriations", 0.0) + ex.get("capital grants and gifts", 0.0)
         dep = ex["depreciation"] or 0.0
         out |= {"full cost: spending with depreciation": W + dep,
-                "full cost: capital appropriations": ex["capital appropriations"],
-                "full cost: capital grants and gifts": ex["capital grants and gifts"],
+                "full cost: capital appropriations": ex.get("capital appropriations", 0.0),
+                "full cost: capital grants and gifts": ex.get("capital grants and gifts", 0.0),
                 "full cost: uncovered": paid["uncovered"] + dep - cap}
     return out
 

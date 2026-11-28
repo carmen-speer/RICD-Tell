@@ -146,8 +146,8 @@ def anchors_of(p: dict, rec: dict, ex: dict, sec: str) -> dict:
     """External anchor dollars, both variants, from item 23k's payer record."""
     ext = p["paid by federal"] + p["paid by state"] + p["paid by local"] + p["paid by gifts"]
     if sec == "for-profit":
-        appro_gifts = (sum(ex[f"{lv} appropriations (for-profit form)"] for lv in ("federal", "state", "local"))
-                       + ex["gifts (for-profit form)"])
+        appro_gifts = (sum(ex.get(f"{lv} appropriations (for-profit form)", 0.0) for lv in ("federal", "state", "local"))
+                       + ex.get("gifts (for-profit form)", 0.0))
     else:
         a = rec["anchors"] or {}
         appro_gifts = (a.get("federal appropriations", 0.0) + a.get("state appropriations", 0.0)
