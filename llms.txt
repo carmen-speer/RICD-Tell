@@ -9,12 +9,13 @@
 - Sort claims as tested (Tell's results), derived (the Spine) or hypothesis (labelled Catalog items); full rules are in AGENTS.md.
 
 ## Read first
-- docs/RICD 17.8 Spine.docx (also .tex): the theory's definitions and propositions.
+- docs/RICD 17.9 Spine.docx (also .tex): the theory's core thesis, definitions and propositions, opening with How to Read RICD.
 - protocols/sampling protocol v3.md: the pre-registered test of tracker v3.
 - data/v3/test results.json: that test's committed result.
 
 ## What RICD is
-- A formal model with defined quantities, in docs/ (the RICD 17.8 Spine, the core engine, and the Catalog, an optional reference for edge cases and specialized trackers).
+- A formal model with defined quantities, in docs/ (the RICD 17.9 Spine, the core engine, and the Catalog, an optional reference for edge cases and specialized trackers).
+- The Catalog's mechanisms are off by default and never estimated together; no tracker built from RICD is meant to carry more free parameters than the general tracker (C-CT), about five to eight. Its quantities are not the parameters of one fitted model.
 - Divergence between an institution's official, operational and meta layers (Spine Definition 6.2, section 6.3.3); resource debt (section 7.9); coverage, break-even and the drift-type or shock-type slide (section 10.3a); anchors that move the point of no return (Definitions 10.3a.7 and 10.3a.8).
 - Not statistical risk modeling and not a "grand theory": its quantities are defined before any test, and it makes claims about a domain only after an adapter for that domain is built and tested.
 
