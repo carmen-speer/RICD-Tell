@@ -1,0 +1,217 @@
+{
+ "note": "Outside check on item 23k's for-profit federal share. The Department's 90/10 share counts all Title IV aid, loans included, over the institution's total revenue; 23k's headline federal share counts federal appropriations and federal student grants, and the second figure adds undergraduate federal loans (graduate and parent loans are not in IPEDS student aid). Award year t-1 to t is set against IPEDS fiscal year t; 90/10 reports are per OPEID, so 23k's campuses sharing one are summed. The 90/10 numerator widened for institutional fiscal years beginning on or after January 1, 2023 (American Rescue Plan Act of 2021: all federal education funds, including veterans' and military benefits, count), so award years 2023-24 and 2024-25 are not comparable with earlier years on that line.",
+ "written at (UTC)": "2026-11-28T06:14:19.790217+00:00",
+ "by fiscal year": {
+  "2009": {
+   "institutions in the report": 1851,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 71.86
+  },
+  "2010": {
+   "institutions in the report": 1944,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 75.92
+  },
+  "2011": {
+   "institutions in the report": 2041,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 75.0
+  },
+  "2012": {
+   "institutions in the report": 2057,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 76.61
+  },
+  "2013": {
+   "institutions in the report": 1948,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 75.53
+  },
+  "2014": {
+   "institutions in the report": 1947,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 74.6
+  },
+  "2015": {
+   "institutions in the report": 1897,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 72.59
+  },
+  "2016": {
+   "institutions in the report": 1872,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 71.31
+  },
+  "2017": {
+   "institutions in the report": 1764,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 69.83
+  },
+  "2018": {
+   "institutions in the report": 1655,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 68.73
+  },
+  "2019": {
+   "institutions in the report": 1667,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 67.76
+  },
+  "2020": {
+   "institutions in the report": 1651,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 67.6
+  },
+  "2021": {
+   "institutions in the report": 1654,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 69.38
+  },
+  "2022": {
+   "institutions in the report": 1622,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 66.02
+  },
+  "2023": {
+   "institutions in the report": 1566,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 64.51
+  },
+  "2024": {
+   "institutions in the report": 1431,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 68.96
+  },
+  "2025": {
+   "institutions in the report": 1170,
+   "matched to 23k": 0,
+   "median 90/10 percentage, all reported": 69.66
+  }
+ },
+ "rows parsed by file": {
+  "2008-2009.xls": 1851,
+  "2009-2010.xls": 1944,
+  "2010-2011.xls": 2041,
+  "2011-2012.xls": 2057,
+  "2012-2013.xls": 1948,
+  "2013-2014.xls": 1947,
+  "2014-2015.xls": 1897,
+  "2015-2016.xlsx": 1872,
+  "2016-2017.xls": 1764,
+  "2017-2018.xls": 1655,
+  "2018-2019.xls": 1667,
+  "2019-2020.xlsx": 1651,
+  "2020-2021.xlsx": 1654,
+  "2021-2022.xlsx": 1622,
+  "2022-2023.xlsx": 1566,
+  "2023-2024.xlsx": 1431,
+  "2024-2025.xlsx": 1170
+ },
+ "header files used": {
+  "HD2005": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2005.zip",
+   "zip sha256": "b6c9c0e4634f4404d0670c907e22964ea96932eb2cebbc2efb0759fe055ecbb7",
+   "institutions read": 7018
+  },
+  "HD2006": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2006.zip",
+   "zip sha256": "2fe089ae93b3df0085e31ee76471db2cedbc8d2d1d08a6497f460d5cec68cab6",
+   "institutions read": 7052
+  },
+  "HD2007": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2007.zip",
+   "zip sha256": "ee66cd0e6676b63dd051d4469d93ddf9492b1d6a2983105a061d2ddc0ac0717d",
+   "institutions read": 7052
+  },
+  "HD2008": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2008.zip",
+   "zip sha256": "eb760d8fd5fa8591e2e4149af1c1954e52ba9a8aacbb5327d066511ff8d7d25b",
+   "institutions read": 7126
+  },
+  "HD2009": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2009.zip",
+   "zip sha256": "6639ed79d93a4313e0be5830d8250709924811f8dec3fb664a9dea56f7dc1774",
+   "institutions read": 7316
+  },
+  "HD2010": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2010.zip",
+   "zip sha256": "72874b792f3c17c143002261af505340742f361645814f120216bda0ccaddb9c",
+   "institutions read": 7503
+  },
+  "HD2011": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2011.zip",
+   "zip sha256": "cc25e07c20380b1254f3a2d000d118cb1ec920d989a3071058c21ac8732548b6",
+   "institutions read": 7643
+  },
+  "HD2012": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2012.zip",
+   "zip sha256": "8d806d818194ccefdc594204025d4c17610338770a0ff130d28f251eec05691e",
+   "institutions read": 7735
+  },
+  "HD2013": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2013.zip",
+   "zip sha256": "d9690d6c37c1616f5c7e9f5ea845a9a9a72ea06665db2626bfb07c5c5dff809f",
+   "institutions read": 7764
+  },
+  "HD2014": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  "HD2015": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  "HD2016": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  "HD2017": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  "HD2018": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  "HD2019": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  "HD2020": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  "HD2021": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  "HD2022": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  "HD2023": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  "HD2024": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  "HD2025": {
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ }
+}
