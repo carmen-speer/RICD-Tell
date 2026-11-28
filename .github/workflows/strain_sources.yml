@@ -1,0 +1,69 @@
+name: item 23f - where the strain comes from inside a college
+
+# Manual-only. Runs "src/strain_sources.py": splits the growth in each
+# college's gap (item 15's frozen gap: total expenses less depreciation,
+# less exchange income, less other operating income) into the spending
+# lines and income parts that drove it, per college and sector, fiscal
+# 2005-2024 (for-profits from fiscal 2014), in HECA dollars per FTE with
+# CPI-U as the check. Reads the same IPEDS files as item 15 (one download
+# each) and SHEEO's HECA workbook, checked against SHEEO's published
+# values before anything is computed. Descriptive; nothing is fitted.
+# Commits data/strain_sources/. Expected run time: about 10 to 20 minutes.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: strain-sources
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1 openpyxl==3.1.5
+
+      - name: Split the growth in the gap into its spending lines
+        run: |
+          cd src
+          python strain_sources.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          if [ ! -d data/strain_sources ]; then
+            echo "Nothing written."
+            exit 0
+          fi
+          git add data/strain_sources/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 23f: where the strain comes from inside a college (descriptive)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
