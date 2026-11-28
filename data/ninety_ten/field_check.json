@@ -1,0 +1,1604 @@
+{
+ "note": "Field check for the 90/10 outside check on item 23k: downloads and layouts only; nothing parsed, matched or compared.",
+ "written at (UTC)": "2026-11-28T05:18:22.461781+00:00",
+ "source page": "https://studentaid.gov/data-center/school/proprietary",
+ "files read": 7,
+ "files listed": 17,
+ "by award year": {
+  "2024-2025": {
+   "url": "https://studentaid.gov/sites/default/files/2024-2025-Proprietary-School-Revenue-Percentages-Report.xlsx",
+   "HTTP status": 200,
+   "bytes": 113181,
+   "sha256": "830e2e0167a0ad910036dec9f4e37f6c3faf0438e74b7a79b4f3a27bf2f3b83d",
+   "copy": "data/ninety_ten/raw/2024-2025.xlsx",
+   "layout": {
+    "Summary": {
+     "rows": 14,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary and Foreign For Profit  School 90/10 Revenue Attestation Percentages\nfrom Financial Statements with Fiscal Y"
+      ],
+      [
+       "Summary",
+       "Total"
+      ],
+      [
+       "Between 0 and 10 from Title IV Sources",
+       "4"
+      ],
+      [
+       "Greater than 10 and up to 20 from Title IV Sources",
+       "11"
+      ],
+      [
+       "Greater than 20 and up to 30 from Title IV Sources",
+       "21"
+      ],
+      [
+       "Greater than 30 and up to 40 from Title IV Sources",
+       "56"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "120"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "154"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "228"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "239"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "152"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "181"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "AY24-25": {
+     "rows": 1172,
+     "columns": 9,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/2024 "
+      ],
+      [
+       "Item #",
+       "OPEID",
+       "Institution Name",
+       "City",
+       "State/Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "04168700",
+       "Maestro College",
+       "Dallas",
+       "TX",
+       "2024-12-31 00:00:00",
+       "96.97",
+       "1725138",
+       "1778860"
+      ],
+      [
+       "2",
+       "04256200",
+       "Kenny's Academy of Barbering",
+       "Indianapolis",
+       "IN",
+       "2024-12-31 00:00:00",
+       "93.27",
+       "1534131",
+       "1644790"
+      ],
+      [
+       "3",
+       "02340500",
+       "St. Louis College of Health Careers",
+       "Fenton",
+       "MO",
+       "2025-06-30 00:00:00",
+       "91.52",
+       "7540196",
+       "8238265"
+      ],
+      [
+       "4",
+       "03039900",
+       "Fremont University",
+       "Cerritos",
+       "CA",
+       "2024-12-31 00:00:00",
+       "90.6",
+       "2804052",
+       "3094655"
+      ],
+      [
+       "5",
+       "03005700",
+       "Detroit Business Institute",
+       "Detroit",
+       "MI",
+       "2025-06-30 00:00:00",
+       "89.97",
+       "2265685",
+       "2518183"
+      ],
+      [
+       "6",
+       "02204200",
+       "Chattanooga College - Medical, Dental and Technical Careers",
+       "Chattanooga",
+       "TN",
+       "2024-12-31 00:00:00",
+       "89.91",
+       "7053475",
+       "7844468"
+      ],
+      [
+       "7",
+       "01072700",
+       "DeVry University",
+       "Lisle",
+       "IL",
+       "2025-06-30 00:00:00",
+       "89.9",
+       "395021376",
+       "439374401"
+      ],
+      [
+       "8",
+       "02303800",
+       "American Educational College",
+       "Bayamon",
+       "PR",
+       "2024-12-31 00:00:00",
+       "89.87",
+       "2201936",
+       "2450008"
+      ],
+      [
+       "9",
+       "04304800",
+       "Jazz Barber and Hairstyling Academy",
+       "Petersburg",
+       "VA",
+       "2024-12-31 00:00:00",
+       "89.86",
+       "365002",
+       "406185"
+      ],
+      [
+       "10",
+       "02189100",
+       "CEM College",
+       "San Juan",
+       "PR",
+       "2025-06-30 00:00:00",
+       "89.86",
+       "4177664",
+       "4648844"
+      ]
+     ],
+     "heading row (first naming an OPEID)": 1,
+     "headings": [
+      "Item #",
+      "OPEID",
+      "Institution Name",
+      "City",
+      "State/Country",
+      "Fiscal Year Ending Date",
+      "90/10 Revenue Percentage",
+      "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+      "Institutional Fiscal Year's Total Revenue (Denominator)"
+     ],
+     "first data rows": [
+      [
+       "1",
+       "04168700",
+       "Maestro College",
+       "Dallas",
+       "TX",
+       "2024-12-31 00:00:00",
+       "96.97",
+       "1725138",
+       "1778860"
+      ],
+      [
+       "2",
+       "04256200",
+       "Kenny's Academy of Barbering",
+       "Indianapolis",
+       "IN",
+       "2024-12-31 00:00:00",
+       "93.27",
+       "1534131",
+       "1644790"
+      ],
+      [
+       "3",
+       "02340500",
+       "St. Louis College of Health Careers",
+       "Fenton",
+       "MO",
+       "2025-06-30 00:00:00",
+       "91.52",
+       "7540196",
+       "8238265"
+      ]
+     ]
+    },
+    "Sheet4": {
+     "rows": 2,
+     "columns": 1,
+     "first rows": [
+      [
+       "Keep"
+      ],
+      [
+       "Remove"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    }
+   }
+  },
+  "2023-2024": {
+   "url": "https://studentaid.gov/sites/default/files/2023-2024-proprietary-school-revenue-percentages-report.xlsx",
+   "HTTP status": 200,
+   "bytes": 137557,
+   "sha256": "92a7d30a2860dff3caa75ae21f299154af12854f4d7f28e5d064b85cd7778bb6",
+   "copy": "data/ninety_ten/raw/2023-2024.xlsx",
+   "layout": {
+    "Summary": {
+     "rows": 14,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary and Foreign For Profit  School 90/10 Revenue Attestation Percentages\nfrom Financial Statements with Fiscal Y"
+      ],
+      [
+       "Summary",
+       "Total"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "16"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "206"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "170"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "289"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "294"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "196"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "132"
+      ],
+      [
+       "Greater than 30 and up to 40 from Title IV Sources",
+       "70"
+      ],
+      [
+       "Greater than 20 and up to 30 from Title IV Sources",
+       "32"
+      ],
+      [
+       "Greater than 10 and up to 20 from Title IV Sources",
+       "18"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "AY23-24": {
+     "rows": 1433,
+     "columns": 9,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/2023 "
+      ],
+      [
+       "Item #",
+       "OPEID",
+       "Institution Name",
+       "City",
+       "State/Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "04242900",
+       "Martinsburg College",
+       "Cheyenne",
+       "WY",
+       "2023-12-31 00:00:00",
+       "98.73",
+       "15273101",
+       "15469087"
+      ],
+      [
+       "2",
+       "03104300",
+       "Career Technical Institute",
+       "Washington",
+       "DC",
+       "2023-12-31 00:00:00",
+       "98.68",
+       "4004608",
+       "4058138"
+      ],
+      [
+       "3",
+       "04255100",
+       "U.S. Truck Driver Training School",
+       "Sterling Heights",
+       "MI",
+       "2023-12-31 00:00:00",
+       "98.3",
+       "1420440",
+       "1444922"
+      ],
+      [
+       "4",
+       "03804400",
+       "Gwinnett College",
+       "Marietta",
+       "GA",
+       "2023-12-31 00:00:00",
+       "97.48",
+       "2387678",
+       "2449229"
+      ],
+      [
+       "5",
+       "02553500",
+       "Associated Technical College",
+       "San Diego",
+       "CA",
+       "2023-12-31 00:00:00",
+       "96.81",
+       "1092104",
+       "1128088"
+      ],
+      [
+       "6",
+       "04121000",
+       "MyComputerCareer at Indianapolis",
+       "Indianapolis",
+       "IN",
+       "2024-06-30 00:00:00",
+       "96.59",
+       "20626103",
+       "21352971"
+      ],
+      [
+       "7",
+       "04203800",
+       "Woodruff Medical and Wellness Training",
+       "Tucker",
+       "GA",
+       "2023-12-31 00:00:00",
+       "96.04",
+       "899700",
+       "936734"
+      ],
+      [
+       "8",
+       "04287100",
+       "Webb's Barber School of Arts",
+       "Macon",
+       "GA",
+       "2023-12-31 00:00:00",
+       "95.53",
+       "275213",
+       "288068"
+      ],
+      [
+       "9",
+       "04264800",
+       "J's Barber College",
+       "New Iberia",
+       "LA",
+       "2023-12-31 00:00:00",
+       "95.04",
+       "361188",
+       "380017"
+      ],
+      [
+       "10",
+       "03071600",
+       "CBT Technology Institute",
+       "Miami",
+       "FL",
+       "2024-06-30 00:00:00",
+       "94.54",
+       "16646265",
+       "17607163"
+      ]
+     ],
+     "heading row (first naming an OPEID)": 1,
+     "headings": [
+      "Item #",
+      "OPEID",
+      "Institution Name",
+      "City",
+      "State/Country",
+      "Fiscal Year Ending Date",
+      "90/10 Revenue Percentage",
+      "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+      "Institutional Fiscal Year's Total Revenue (Denominator)"
+     ],
+     "first data rows": [
+      [
+       "1",
+       "04242900",
+       "Martinsburg College",
+       "Cheyenne",
+       "WY",
+       "2023-12-31 00:00:00",
+       "98.73",
+       "15273101",
+       "15469087"
+      ],
+      [
+       "2",
+       "03104300",
+       "Career Technical Institute",
+       "Washington",
+       "DC",
+       "2023-12-31 00:00:00",
+       "98.68",
+       "4004608",
+       "4058138"
+      ],
+      [
+       "3",
+       "04255100",
+       "U.S. Truck Driver Training School",
+       "Sterling Heights",
+       "MI",
+       "2023-12-31 00:00:00",
+       "98.3",
+       "1420440",
+       "1444922"
+      ]
+     ]
+    }
+   }
+  },
+  "2022-2023": {
+   "url": "https://studentaid.gov/sites/default/files/2022-2023-proprietary-school-revenue-percentages-report.xlsx",
+   "HTTP status": 200,
+   "bytes": 140539,
+   "sha256": "285325bfec130a125fa0962ccfdd5a5b9d3a99a45536bf2566e45b0c7fe34469",
+   "copy": "data/ninety_ten/raw/2022-2023.xlsx",
+   "layout": {
+    "Summary": {
+     "rows": 14,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary and Foreign For Profit  School 90/10 Revenue Attestation Percentages\nfrom Financial Statements with Fiscal Y"
+      ],
+      [
+       "Summary",
+       "Total"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "5"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "121"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "151"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "308"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "341"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "273"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "155"
+      ],
+      [
+       "Greater than 30 and up to 40 from Title IV Sources",
+       "94"
+      ],
+      [
+       "Greater than 20 and up to 30 from Title IV Sources",
+       "53"
+      ],
+      [
+       "Greater than 10 and up to 20 from Title IV Sources",
+       "23"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "AY22-23": {
+     "rows": 1568,
+     "columns": 9,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/2022 "
+      ],
+      [
+       "Item #",
+       "OPEID",
+       "Institution Name",
+       "City",
+       "State/Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "04106300",
+       "Palm Beach Academy of Health & Beauty",
+       "West Palm Beach",
+       "FL",
+       "2022-12-31 00:00:00",
+       "94.45",
+       "1194659",
+       "1264828"
+      ],
+      [
+       "2",
+       "03781400",
+       "Industrial Technical College",
+       "Humacao",
+       "PR",
+       "2022-12-31 00:00:00",
+       "93.92",
+       "1198644",
+       "1276153"
+      ],
+      [
+       "3",
+       "03010400",
+       "Crescent City School of Gaming & Bartending",
+       "New Orleans",
+       "LA",
+       "2022-12-31 00:00:00",
+       "92.18",
+       "4054108",
+       "4397881"
+      ],
+      [
+       "4",
+       "04280900",
+       "Houston Barber School",
+       "Houston",
+       "TX",
+       "2022-12-31 00:00:00",
+       "92.18",
+       "2582609",
+       "2801630"
+      ],
+      [
+       "5",
+       "02189300",
+       "Emma's Beauty Academy",
+       "Mayaguez",
+       "PR",
+       "2023-06-30 00:00:00",
+       "91.28",
+       "1146797",
+       "1256315"
+      ],
+      [
+       "6",
+       "03479300",
+       "PCI College",
+       "Cerritos",
+       "CA",
+       "2022-12-31 00:00:00",
+       "89.97",
+       "2366976",
+       "2630682"
+      ],
+      [
+       "7",
+       "04285300",
+       "Hollywood Cultural College",
+       "Los Angeles",
+       "CA",
+       "2022-12-31 00:00:00",
+       "89.97",
+       "249667",
+       "277482"
+      ],
+      [
+       "8",
+       "04267200",
+       "Allgood Beauty Institute",
+       "Frisco",
+       "TX",
+       "2022-12-31 00:00:00",
+       "89.88",
+       "419616",
+       "466842"
+      ],
+      [
+       "9",
+       "03608300",
+       "Caribbean Forensic & Technical College",
+       "San Juan",
+       "PR",
+       "2022-12-31 00:00:00",
+       "89.86",
+       "1202264",
+       "1337856"
+      ],
+      [
+       "10",
+       "03727500",
+       "Moore Career College",
+       "Baton Rouge",
+       "LA",
+       "2022-12-31 00:00:00",
+       "89.65",
+       "725248",
+       "808931"
+      ]
+     ],
+     "heading row (first naming an OPEID)": 1,
+     "headings": [
+      "Item #",
+      "OPEID",
+      "Institution Name",
+      "City",
+      "State/Country",
+      "Fiscal Year Ending Date",
+      "90/10 Revenue Percentage",
+      "Institutional Fiscal Year's  Title IV Revenue (Numerator)",
+      "Institutional Fiscal Year's Total Revenue (Denominator)"
+     ],
+     "first data rows": [
+      [
+       "1",
+       "04106300",
+       "Palm Beach Academy of Health & Beauty",
+       "West Palm Beach",
+       "FL",
+       "2022-12-31 00:00:00",
+       "94.45",
+       "1194659",
+       "1264828"
+      ],
+      [
+       "2",
+       "03781400",
+       "Industrial Technical College",
+       "Humacao",
+       "PR",
+       "2022-12-31 00:00:00",
+       "93.92",
+       "1198644",
+       "1276153"
+      ],
+      [
+       "3",
+       "03010400",
+       "Crescent City School of Gaming & Bartending",
+       "New Orleans",
+       "LA",
+       "2022-12-31 00:00:00",
+       "92.18",
+       "4054108",
+       "4397881"
+      ]
+     ]
+    }
+   }
+  },
+  "2021-2022": {
+   "url": "https://studentaid.gov/sites/default/files/2021-2022-Proprietary-School-Revenue-Percentages-Report.xlsx",
+   "HTTP status": 200,
+   "bytes": 147970,
+   "sha256": "a3adbd9b6698e3b65eecae6aab944318907c31debdeab316a9ea5c90a5ef878c",
+   "copy": "data/ninety_ten/raw/2021-2022.xlsx",
+   "layout": {
+    "AY 21-22 ": {
+     "rows": 1624,
+     "columns": 9,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/2021 "
+      ],
+      [
+       "Item #",
+       "OPE ID",
+       "Institution Name",
+       "City",
+       "State/Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's \nTitle IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "03750300",
+       "Prospect College",
+       "Washington",
+       "DC",
+       "2021-09-30 00:00:00",
+       "96.29",
+       "3926420",
+       "4077656"
+      ],
+      [
+       "2",
+       "03727500",
+       "Moore Career College",
+       "Baton Rouge",
+       "LA",
+       "2021-12-31 00:00:00",
+       "91.79",
+       "1025161",
+       "1116849"
+      ],
+      [
+       "3",
+       "03070500",
+       "D'Mart Institute",
+       "Barranquitas",
+       "PR",
+       "2021-12-31 00:00:00",
+       "90.35",
+       "1681173",
+       "1860701"
+      ],
+      [
+       "4",
+       "03608300",
+       "Caribbean Forensic & Technical College",
+       "San Juan",
+       "PR",
+       "2021-12-31 00:00:00",
+       "89.76",
+       "1278645",
+       "1424416"
+      ],
+      [
+       "5",
+       "04233400",
+       "Lee Professional Institute",
+       "Fort Myers",
+       "FL",
+       "2022-06-30 00:00:00",
+       "89.69",
+       "502352",
+       "560089"
+      ],
+      [
+       "6",
+       "04243300",
+       "Garden State Science and Technology Institute",
+       "Jersey City",
+       "NJ",
+       "2021-12-31 00:00:00",
+       "89.67",
+       "1066219",
+       "1188940"
+      ],
+      [
+       "7",
+       "03075600",
+       "Emma's Beauty Academy",
+       "Juana Díaz",
+       "PR",
+       "2021-12-31 00:00:00",
+       "89.66",
+       "1852322",
+       "2065890"
+      ],
+      [
+       "8",
+       "04235000",
+       "Felbry College-School of Nursing",
+       "Columbus",
+       "OH",
+       "2021-12-31 00:00:00",
+       "89.63",
+       "3876818",
+       "4325133"
+      ],
+      [
+       "9",
+       "04276500",
+       "Global Medical & Technical Training Institute",
+       "Miami",
+       "FL",
+       "2021-12-31 00:00:00",
+       "89.41",
+       "1303255",
+       "1457601"
+      ],
+      [
+       "10",
+       "02548800",
+       "South Texas Vocational Technical Institute",
+       "Weslaco",
+       "TX",
+       "2021-12-31 00:00:00",
+       "89.29",
+       "8769377",
+       "9820291"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "Summary": {
+     "rows": 14,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary and Foreign For Profit  School 90/10 Revenue Attestation Percentages\nfrom Financial Statements with Fiscal Y"
+      ],
+      [
+       "Revenue Attestation Percentage",
+       "Number of Schools"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "3"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "112"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "181"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "377"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "337"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "264"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "158"
+      ],
+      [
+       "Greater than 30 and up to 40 from Title IV Sources",
+       "78"
+      ],
+      [
+       "Greater than 20 and up to 30 from Title IV Sources",
+       "47"
+      ],
+      [
+       "Greater than 10 and up to 20 from Title IV Sources",
+       "30"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    }
+   }
+  },
+  "2020-2021": {
+   "url": "https://studentaid.gov/sites/default/files/2020-2021-Proprietary-School-Revenue-Percentages-Report.xlsx",
+   "HTTP status": 200,
+   "bytes": 157473,
+   "sha256": "f5580e1bd28fe5fe9bc0e34c7e55ec84e3998df7cd358431b296f34c8ecd2f63",
+   "copy": "data/ninety_ten/raw/2020-2021.xlsx",
+   "layout": {
+    "AY 20-21 ": {
+     "rows": 1656,
+     "columns": 10,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/2020 "
+      ],
+      [
+       "Item #",
+       "OPE ID",
+       "Institution Name",
+       "City",
+       "State",
+       "Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's \nTitle IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "04127500",
+       "CDE Career Institute",
+       "Tannersville",
+       "PA",
+       "2020-12-31 00:00:00",
+       "99.27",
+       "3355704",
+       "3380061"
+      ],
+      [
+       "2",
+       "03608300",
+       "Caribbean Forensic & Technical College",
+       "San Juan",
+       "PR",
+       "2020-12-31 00:00:00",
+       "97.21",
+       "758571",
+       "780305"
+      ],
+      [
+       "3",
+       "03638300",
+       "Rosslyn Training Academy of Cosmetology",
+       "Aguada",
+       "PR",
+       "2020-12-31 00:00:00",
+       "96.45",
+       "81527",
+       "84522"
+      ],
+      [
+       "4",
+       "03400300",
+       "Quest College",
+       "San Antonio",
+       "TX",
+       "2020-12-31 00:00:00",
+       "96.2",
+       "4008977",
+       "4167014"
+      ],
+      [
+       "5",
+       "02494700",
+       "Baltimore Studio of Hair Design",
+       "Baltimore",
+       "MD",
+       "2021-06-30 00:00:00",
+       "96.05",
+       "341530",
+       "355543"
+      ],
+      [
+       "6",
+       "02303800",
+       "American Educational College",
+       "Bayamón",
+       "PR",
+       "2020-12-31 00:00:00",
+       "95.96",
+       "2878737",
+       "2999910"
+      ],
+      [
+       "7",
+       "04245500",
+       "Universal Healthcare Careers College",
+       "Los Angeles",
+       "CA",
+       "2020-12-31 00:00:00",
+       "95.34",
+       "1168028",
+       "1225050"
+      ],
+      [
+       "8",
+       "03104400",
+       "Advantage Technical College",
+       "Manatí",
+       "PR",
+       "2020-12-31 00:00:00",
+       "95.21",
+       "4818836",
+       "5060949"
+      ],
+      [
+       "9",
+       "02504500",
+       "Mayagüez Institute of Technology",
+       "Mayagüez",
+       "PR",
+       "2020-12-31 00:00:00",
+       "94.8",
+       "619467",
+       "653441"
+      ],
+      [
+       "10",
+       "02562500",
+       "International Technical College",
+       "Hato Rey",
+       "PR",
+       "2020-12-31 00:00:00",
+       "94.65",
+       "678804",
+       "717133"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "Summary": {
+     "rows": 17,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary School 90/10 Revenue Attestation Percentages"
+      ],
+      [
+       "from Financial Statements with Fiscal Year Ending Dates"
+      ],
+      [
+       "Between 7/1/2020 and 6/30/2021"
+      ],
+      [
+       "Source:  eZ-Audit as of 06/14/2022"
+      ],
+      [
+       "Revenue Attestation Percentage",
+       "Number of Schools"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "21"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "177"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "203"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "396"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "330"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "225"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "127"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    }
+   }
+  },
+  "2019-2020": {
+   "url": "https://studentaid.gov/sites/default/files/2019-2020-Proprietary-School-Revenue-Percentages-Report.xlsx",
+   "HTTP status": 200,
+   "bytes": 157664,
+   "sha256": "8c299594eade0cf01aed18f32df02124c87c99d05bbbf255e8f172d79d2176a3",
+   "copy": "data/ninety_ten/raw/2019-2020.xlsx",
+   "layout": {
+    "AY19-20": {
+     "rows": 1653,
+     "columns": 10,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/19 – "
+      ],
+      [
+       "Item #",
+       "OPE ID",
+       "Institution Name",
+       "City",
+       "State",
+       "Country",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's \nTitle IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "1",
+       "04168700",
+       "Peloton College",
+       "Dallas",
+       "TX",
+       "2019-12-31 00:00:00",
+       "97.68333091385631",
+       "2462798",
+       "2521206"
+      ],
+      [
+       "2",
+       "03963300",
+       "Institute of Health and Technology",
+       "Hattiesburg",
+       "MS",
+       "2019-12-31 00:00:00",
+       "95.11",
+       "1031711",
+       "1084706"
+      ],
+      [
+       "3",
+       "03781400",
+       "Industrial Technical College",
+       "Humacao",
+       "PR",
+       "2019-12-31 00:00:00",
+       "94.94",
+       "2052927",
+       "2162337"
+      ],
+      [
+       "4",
+       "03104300",
+       "Career Technical Institute",
+       "Washington",
+       "DC",
+       "2019-12-31 00:00:00",
+       "93.83531955087858",
+       "3613083",
+       "3850451"
+      ],
+      [
+       "5",
+       "03277300",
+       "Pathway Vocational Academy",
+       "Beaumont",
+       "TX",
+       "2020-05-31 00:00:00",
+       "92.05754141238012",
+       "116149",
+       "126170"
+      ],
+      [
+       "6",
+       "02562500",
+       "International Technical College",
+       "Hato Rey",
+       "PR",
+       "2019-12-31 00:00:00",
+       "91.62",
+       "472521",
+       "515703"
+      ],
+      [
+       "7",
+       "00372600",
+       "American National University",
+       "Salem",
+       "VA",
+       "2019-11-30 00:00:00",
+       "91.2409475656608",
+       "13402150.16",
+       "14688745.04"
+      ],
+      [
+       "8",
+       "01048900",
+       "American National University",
+       "Pikeville",
+       "KY",
+       "2019-11-30 00:00:00",
+       "91.20527383253808",
+       "3917697",
+       "4295472"
+      ],
+      [
+       "9",
+       "04038300",
+       "ATA College",
+       "Louisville",
+       "KY",
+       "2020-06-30 00:00:00",
+       "90.81996742963402",
+       "15662016",
+       "17245124"
+      ],
+      [
+       "10",
+       "03735400",
+       "Charlie's Guard, Detective Bureau, and Academy",
+       "Aguadilla",
+       "PR",
+       "2019-12-31 00:00:00",
+       "90.76",
+       "320305",
+       "352877"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "Summary": {
+     "rows": 17,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary School 90/10 Revenue Attestation Percentages"
+      ],
+      [
+       "from Financial Statements with Fiscal Year Ending Dates"
+      ],
+      [
+       "Between 7/1/2019 and 6/30/2020"
+      ],
+      [
+       "Source:  eZ-Audit as of September 2, 2021"
+      ],
+      [
+       "Revenue Attestation Percentage",
+       "Number of Schools"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "11"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "178"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "174"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "375"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "346"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "235"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "139"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    }
+   }
+  },
+  "2018-2019": {
+   "url": "https://studentaid.gov/sites/default/files/2018-2019%20Proprietary%20School%20Revenue%20Percentages%20Report.xls",
+   "HTTP status": 200,
+   "bytes": 330240,
+   "sha256": "323f6e9ea1f7af057d9691f6308b5d86061fa45a2d7f332fbbf2fe32e144e9d7",
+   "copy": "data/ninety_ten/raw/2018-2019.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2017-2018": {
+   "url": "https://studentaid.gov/sites/default/files/2017-2018-data.xls",
+   "HTTP status": 200,
+   "bytes": 371200,
+   "sha256": "ac6acfc0bc2bb1555e3e77062ce4ba2383da372f5d182583a9c94f8db8a38c7d",
+   "copy": "data/ninety_ten/raw/2017-2018.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2016-2017": {
+   "url": "https://studentaid.gov/sites/default/files/fsawg/datacenter/library/20162017Data.xls",
+   "HTTP status": 200,
+   "bytes": 350720,
+   "sha256": "e9d17ac17dea753135280af6d60b8bbfb90c0040993e00c4633b39e82968e3e9",
+   "copy": "data/ninety_ten/raw/2016-2017.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2015-2016": {
+   "url": "https://studentaid.gov/sites/default/files/fsawg/datacenter/library/AY15-16-90-10.xlsx",
+   "HTTP status": 200,
+   "bytes": 199518,
+   "sha256": "1da28859f7cd6acbab6c323c83a987c53dd906c66d3d8fa77d45981e53527d4e",
+   "copy": "data/ninety_ten/raw/2015-2016.xlsx",
+   "layout": {
+    "2017 9010 REPORT": {
+     "rows": 1874,
+     "columns": 8,
+     "first rows": [
+      [
+       "Proprietary School Revenue Percentages Report for Financial Statements with Fiscal Year Ending Dates between 07/01/15 – "
+      ],
+      [
+       "OPE ID",
+       "Institution Name",
+       "City",
+       "State",
+       "Fiscal Year Ending Date",
+       "90/10 Revenue Percentage",
+       "Institutional Fiscal Year's \nTitle IV Revenue (Numerator)",
+       "Institutional Fiscal Year's Total Revenue (Denominator)"
+      ],
+      [
+       "03849300",
+       "Xtreme Career Institute",
+       "Aguadilla",
+       "PR",
+       "2015-12-31 00:00:00",
+       "95.1568374145414",
+       "327782",
+       "344465"
+      ],
+      [
+       "03005100",
+       "Arkansas Beauty School- Little Rock",
+       "Little Rock",
+       "AR",
+       "2015-12-31 00:00:00",
+       "91.87331846388041",
+       "710958",
+       "773846"
+      ],
+      [
+       "02202300",
+       "Pittsburgh Career Institute",
+       "Pittsburgh",
+       "PA",
+       "2015-12-31 00:00:00",
+       "90.79020605470393",
+       "2267302",
+       "2497298"
+      ],
+      [
+       "02601000",
+       "American School of Business",
+       "Shreveport",
+       "LA",
+       "2015-07-31 00:00:00",
+       "90.1853763806008",
+       "658622",
+       "730298"
+      ],
+      [
+       "02170300",
+       "Instituto de Educacion Tecnica Ocupacional la Reine-Manati",
+       "Manati",
+       "PR",
+       "2016-06-30 00:00:00",
+       "89.97791078851864",
+       "1704455.91",
+       "1894304.83"
+      ],
+      [
+       "03479300",
+       "PCI College",
+       "Cerritos",
+       "CA",
+       "2015-12-31 00:00:00",
+       "89.96521045459079",
+       "811999",
+       "902570"
+      ],
+      [
+       "03608300",
+       "Caribbean Forensic & Technical College",
+       "Rio Piedras",
+       "PR",
+       "2015-12-31 00:00:00",
+       "89.92434692098739",
+       "425058",
+       "472684"
+      ],
+      [
+       "01287900",
+       "Pat Goins Benton Road Beauty School",
+       "Bossier City",
+       "LA",
+       "2015-12-31 00:00:00",
+       "89.89026847531838",
+       "366257",
+       "407449"
+      ],
+      [
+       "04203800",
+       "Woodruff Medical Training and Testing",
+       "Tucker",
+       "GA",
+       "2015-12-31 00:00:00",
+       "89.88881197857846",
+       "1233679",
+       "1372450"
+      ],
+      [
+       "02614200",
+       "Miller - Motte Technical College",
+       "Clarksville",
+       "TN",
+       "2016-06-30 00:00:00",
+       "89.88246876876683",
+       "78823568",
+       "87696265"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    },
+    "Percentage Summary": {
+     "rows": 17,
+     "columns": 2,
+     "first rows": [
+      [
+       "Proprietary School 90/10 Revenue Attestation Percentages"
+      ],
+      [
+       "from Financial Statements with Fiscal Year Ending Dates"
+      ],
+      [
+       "Between 7/1/2015 and 6/30/2016"
+      ],
+      [
+       "Source:  eZ-Audit as of June 13, 2017"
+      ],
+      [
+       "Revenue Attestation Percentage",
+       "Number of Schools"
+      ],
+      [
+       "Greater than 90 from Title IV Sources",
+       "4"
+      ],
+      [
+       "Greater than 85 and up to 90 from Title IV Sources",
+       "252"
+      ],
+      [
+       "Greater than 80 and up to 85 from Title IV Sources",
+       "259"
+      ],
+      [
+       "Greater than 70 and up to 80 from Title IV Sources",
+       "458"
+      ],
+      [
+       "Greater than 60 and up to 70 from Title IV Sources",
+       "370"
+      ],
+      [
+       "Greater than 50 and up to 60 from Title IV Sources",
+       "239"
+      ],
+      [
+       "Greater than 40 and up to 50 from Title IV Sources",
+       "144"
+      ]
+     ],
+     "heading row (first naming an OPEID)": null,
+     "headings": null,
+     "first data rows": null
+    }
+   }
+  },
+  "2014-2015": {
+   "url": "https://studentaid.gov/sites/default/files/90-10-Attestation-Report-AY15.xls",
+   "HTTP status": 200,
+   "bytes": 381952,
+   "sha256": "800e1b939f0ea3936f3ad9c644c715151408e5935fc9c93f4911a812138e837b",
+   "copy": "data/ninety_ten/raw/2014-2015.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2013-2014": {
+   "url": "https://studentaid.gov/sites/default/files/9010Report091815.xls",
+   "HTTP status": 200,
+   "bytes": 432640,
+   "sha256": "f8ba360d82d61737b23f89602cc956d85c107fa8777faa3ccdd5588615526db0",
+   "copy": "data/ninety_ten/raw/2013-2014.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2012-2013": {
+   "url": "https://studentaid.gov/sites/default/files/9010Report20122013.xls",
+   "HTTP status": 200,
+   "bytes": 354304,
+   "sha256": "8f2612206bd9a0670f0ae3e5e079f4f75854692dfccf4de3f6b023fbac045cc2",
+   "copy": "data/ninety_ten/raw/2012-2013.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2011-2012": {
+   "url": "https://studentaid.gov/sites/default/files/9010Report20112012.xls",
+   "HTTP status": 200,
+   "bytes": 367616,
+   "sha256": "a01cc4cf695f6137acac54f7ab399743cb0d62aae5b33c9e9f8af965da239d96",
+   "copy": "data/ninety_ten/raw/2011-2012.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2010-2011": {
+   "url": "https://studentaid.gov/sites/default/files/2010-2011Report.xls",
+   "HTTP status": 200,
+   "bytes": 357888,
+   "sha256": "f1e0b7304de7bb35f94aba93498244842e4e0bbef81436714e68bbe007bdd9f2",
+   "copy": "data/ninety_ten/raw/2010-2011.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2009-2010 (summary chart)": {
+   "url": "https://studentaid.gov/sites/default/files/110557SummaryPercentagesandTitleIVFunding.xls",
+   "HTTP status": 200,
+   "bytes": 352256,
+   "sha256": "d442751a0d2ee56d261bd90b23121f87d606b8c640f03dfc461e7b7906816e40",
+   "copy": "data/ninety_ten/raw/2009-2010.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  },
+  "2008-2009": {
+   "url": "https://studentaid.gov/sites/default/files/PropSch90-10PercentageswithFYEDatesin2008-2009AY.xls",
+   "HTTP status": 200,
+   "bytes": 325632,
+   "sha256": "d383e82e2d8bde9974de6ad7786e81c8913d67f58a10cf3e1975069fdcca943e",
+   "copy": "data/ninety_ten/raw/2008-2009.xls",
+   "layout error": "ImportError: Pandas requires version '2.0.2' or newer of 'xlrd' (version '2.0.1' currently installed)."
+  }
+ }
+}
