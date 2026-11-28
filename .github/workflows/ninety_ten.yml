@@ -1,0 +1,62 @@
+name: item 23k follow-up - the 90-10 outside check
+
+# Manual-only. Runs "src/ninety_ten.py": parses the Department of
+# Education's 90/10 revenue shares from the copies committed by the field
+# check (data/ninety_ten/raw/) and sets them beside item 23k's for-profit
+# federal share, matched by OPEID through the IPEDS header files. Needs
+# data/grid_strain/college_payers.csv (run item 23k first). Descriptive.
+# Commits data/ninety_ten/. Expected run time: about 3 to 5 minutes.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ninety-ten
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install "xlrd==2.0.2" openpyxl==3.1.5
+
+      - name: Parse the 90-10 files and compare them with 23k
+        run: |
+          cd src
+          python ninety_ten.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add data/ninety_ten/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 23k follow-up: the 90/10 outside check (descriptive)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
