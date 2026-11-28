@@ -311,7 +311,8 @@ def heca() -> tuple[dict, dict]:
     sheets = pd.read_excel(io.BytesIO(r.content), sheet_name=None, header=None)
     found, seen = {}, {}
     for name, df in sheets.items():
-        grid = df.astype(str).values.tolist()
+        # every cell as text; blank cells as "" (pandas may keep a blank as a float NaN)
+        grid = [["" if pd.isna(c) else str(c) for c in row] for row in df.values.tolist()]
         seen[name] = grid[:6]
         for i, row in enumerate(grid):
             for j, cell in enumerate(row):
