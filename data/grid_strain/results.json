@@ -1,0 +1,2473 @@
+{
+ "note": "Item 23k, descriptive. Fiscal 2024 dollars (CPI-U headline; HECA rows in sector_payers.csv as the check). The payer-view gap is spending less the college's own earned income, with student grants moved to the government that paid them; item 15's frozen gap is kept alongside. Gifts are donors and alumni together. Local property-tax exemption is unmeasured (no national or per-college source).",
+ "for-profit note": "For-profit colleges use the same federal channels as the other sectors (appropriations and student grants, plus the default estimate as a memo). Tuition paid with federal loans stays in their own earned income, so their federal share reads lower than the Department's 90/10 revenue share, which counts loans.",
+ "written at (UTC)": "2026-11-28T06:01:32.192156+00:00",
+ "headline (CPI-U, fiscal 2005, 2019 and 2024)": {
+  "public": {
+   "all colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1645,
+      "spending (W)": 314749646192,
+      "own earned income": 199896346852,
+      "gap (payer view)": 114853299341,
+      "frozen gap (item 15)": 92818002333,
+      "paid by": {
+       "federal": 18132189204,
+       "state": 94175996381,
+       "local": 11720766543,
+       "gifts": 7390094229,
+       "endowment": 0,
+       "uncovered": -16565747017
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1579,
+       "state": 0.82,
+       "local": 0.102,
+       "gifts": 0.0643,
+       "endowment": 0.0,
+       "uncovered": -0.1442
+      },
+      "uncovered shortfall (colleges short only)": 1792210830,
+      "of federal: Pell": 13766542940,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -11436095796
+     },
+     "2019": {
+      "colleges": 1465,
+      "spending (W)": 390355892494,
+      "own earned income": 266884343514,
+      "gap (payer view)": 123471548980,
+      "frozen gap (item 15)": 90579380218,
+      "paid by": {
+       "federal": 24252720852,
+       "state": 90764468237,
+       "local": 13308516643,
+       "gifts": 9951733100,
+       "endowment": 0,
+       "uncovered": -14805889852
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1964,
+       "state": 0.7351,
+       "local": 0.1078,
+       "gifts": 0.0806,
+       "endowment": 0.0,
+       "uncovered": -0.1199
+      },
+      "uncovered shortfall (colleges short only)": 5339451697,
+      "of federal: Pell": 22225527606,
+      "memo: undergraduate federal loans": 25584198115,
+      "memo: default estimate (lower bound)": 2048204560,
+      "full cost (public only): uncovered": -1224015706
+     },
+     "2024": {
+      "colleges": 1433,
+      "spending (W)": 403148302890,
+      "own earned income": 281817426894,
+      "gap (payer view)": 121330875996,
+      "frozen gap (item 15)": 89518392113,
+      "paid by": {
+       "federal": 21551114412,
+       "state": 97788452713,
+       "local": 14199333262,
+       "gifts": 10688049293,
+       "endowment": 0,
+       "uncovered": -22896073684
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1776,
+       "state": 0.806,
+       "local": 0.117,
+       "gifts": 0.0881,
+       "endowment": 0.0,
+       "uncovered": -0.1887
+      },
+      "uncovered shortfall (colleges short only)": 4580117663,
+      "of federal: Pell": 19237925410,
+      "memo: undergraduate federal loans": 15420634276,
+      "memo: default estimate (lower bound)": 199765,
+      "full cost (public only): uncovered": -9931832460
+     }
+    },
+    "episodic": {
+     "2005": {
+      "colleges": 692,
+      "spending (W)": 112075825104,
+      "own earned income": 67052290288,
+      "gap (payer view)": 45023534816,
+      "frozen gap (item 15)": 35887675655,
+      "paid by": {
+       "federal": 7250191487,
+       "state": 37141832958,
+       "local": 3772629986,
+       "gifts": 2347718658,
+       "endowment": 0,
+       "uncovered": -5488838273
+      },
+      "share of the payer-view gap": {
+       "federal": 0.161,
+       "state": 0.8249,
+       "local": 0.0838,
+       "gifts": 0.0521,
+       "endowment": 0.0,
+       "uncovered": -0.1219
+      },
+      "uncovered shortfall (colleges short only)": 476313403,
+      "of federal: Pell": 5593159380,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -4358651560
+     },
+     "2019": {
+      "colleges": 638,
+      "spending (W)": 142345128077,
+      "own earned income": 93237460504,
+      "gap (payer view)": 49107667573,
+      "frozen gap (item 15)": 34904073098,
+      "paid by": {
+       "federal": 10079152586,
+       "state": 37187068614,
+       "local": 4556564017,
+       "gifts": 3635692338,
+       "endowment": 0,
+       "uncovered": -6350809980
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2052,
+       "state": 0.7573,
+       "local": 0.0928,
+       "gifts": 0.074,
+       "endowment": 0.0,
+       "uncovered": -0.1293
+      },
+      "uncovered shortfall (colleges short only)": 1006940278,
+      "of federal: Pell": 9378513904,
+      "memo: undergraduate federal loans": 10762011918,
+      "memo: default estimate (lower bound)": 888776855,
+      "full cost (public only): uncovered": -1328195420
+     },
+     "2024": {
+      "colleges": 627,
+      "spending (W)": 144000828537,
+      "own earned income": 94612199610,
+      "gap (payer view)": 49388628927,
+      "frozen gap (item 15)": 35792828033,
+      "paid by": {
+       "federal": 8812244310,
+       "state": 39645618467,
+       "local": 4897229615,
+       "gifts": 3753454131,
+       "endowment": 0,
+       "uncovered": -7719917596
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1784,
+       "state": 0.8027,
+       "local": 0.0992,
+       "gifts": 0.076,
+       "endowment": 0.0,
+       "uncovered": -0.1563
+      },
+      "uncovered shortfall (colleges short only)": 1652712966,
+      "of federal: Pell": 7931787306,
+      "memo: undergraduate federal loans": 6383479520,
+      "memo: default estimate (lower bound)": 113291,
+      "full cost (public only): uncovered": -2430226161
+     }
+    },
+    "never short": {
+     "2005": {
+      "colleges": 392,
+      "spending (W)": 115516547601,
+      "own earned income": 81457382549,
+      "gap (payer view)": 34059165053,
+      "frozen gap (item 15)": 28291322136,
+      "paid by": {
+       "federal": 5582237349,
+       "state": 29723402363,
+       "local": 4573823887,
+       "gifts": 3377670590,
+       "endowment": 0,
+       "uncovered": -9197969136
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1639,
+       "state": 0.8727,
+       "local": 0.1343,
+       "gifts": 0.0992,
+       "endowment": 0.0,
+       "uncovered": -0.2701
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 3533766380,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -5948123052
+     },
+     "2019": {
+      "colleges": 313,
+      "spending (W)": 136048093070,
+      "own earned income": 106131484132,
+      "gap (payer view)": 29916608938,
+      "frozen gap (item 15)": 21963058886,
+      "paid by": {
+       "federal": 6000239064,
+       "state": 26198979007,
+       "local": 4522912545,
+       "gifts": 4013804724,
+       "endowment": 0,
+       "uncovered": -10819326402
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2006,
+       "state": 0.8757,
+       "local": 0.1512,
+       "gifts": 0.1342,
+       "endowment": 0.0,
+       "uncovered": -0.3616
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 5365648678,
+      "memo: undergraduate federal loans": 7899643135,
+      "memo: default estimate (lower bound)": 538258010,
+      "full cost (public only): uncovered": -5080764702
+     },
+     "2024": {
+      "colleges": 306,
+      "spending (W)": 146661527161,
+      "own earned income": 115085759179,
+      "gap (payer view)": 31575767982,
+      "frozen gap (item 15)": 23513114732,
+      "paid by": {
+       "federal": 5558690883,
+       "state": 29260341295,
+       "local": 4905457813,
+       "gifts": 4317854502,
+       "endowment": 0,
+       "uncovered": -12466576511
+      },
+      "share of the payer-view gap": {
+       "federal": 0.176,
+       "state": 0.9267,
+       "local": 0.1554,
+       "gifts": 0.1367,
+       "endowment": 0.0,
+       "uncovered": -0.3948
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 4805674009,
+      "memo: undergraduate federal loans": 4678559342,
+      "memo: default estimate (lower bound)": 65876,
+      "full cost (public only): uncovered": -7494623566
+     }
+    },
+    "chronic": {
+     "2005": {
+      "colleges": 542,
+      "spending (W)": 84653858784,
+      "own earned income": 49579121018,
+      "gap (payer view)": 35074737766,
+      "frozen gap (item 15)": 27982417391,
+      "paid by": {
+       "federal": 5267075835,
+       "state": 26633165325,
+       "local": 3337974290,
+       "gifts": 1627048492,
+       "endowment": 0,
+       "uncovered": -1790526176
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1502,
+       "state": 0.7593,
+       "local": 0.0952,
+       "gifts": 0.0464,
+       "endowment": 0.0,
+       "uncovered": -0.051
+      },
+      "uncovered shortfall (colleges short only)": 1307287399,
+      "of federal: Pell": 4610726787,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -1103486148
+     },
+     "2019": {
+      "colleges": 514,
+      "spending (W)": 111962671347,
+      "own earned income": 67515398878,
+      "gap (payer view)": 44447272469,
+      "frozen gap (item 15)": 33712248234,
+      "paid by": {
+       "federal": 8173329202,
+       "state": 27378420617,
+       "local": 4229040081,
+       "gifts": 2302236038,
+       "endowment": 0,
+       "uncovered": 2364246530
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1839,
+       "state": 0.616,
+       "local": 0.0951,
+       "gifts": 0.0518,
+       "endowment": 0.0,
+       "uncovered": 0.0532
+      },
+      "uncovered shortfall (colleges short only)": 4332511419,
+      "of federal: Pell": 7481365024,
+      "memo: undergraduate federal loans": 6922543062,
+      "memo: default estimate (lower bound)": 621169694,
+      "full cost (public only): uncovered": 5184944416
+     },
+     "2024": {
+      "colleges": 498,
+      "spending (W)": 112013049217,
+      "own earned income": 71825373960,
+      "gap (payer view)": 40187675257,
+      "frozen gap (item 15)": 30099777620,
+      "paid by": {
+       "federal": 7128358471,
+       "state": 28614217782,
+       "local": 4396639334,
+       "gifts": 2582495762,
+       "endowment": 0,
+       "uncovered": -2534036092
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1774,
+       "state": 0.712,
+       "local": 0.1094,
+       "gifts": 0.0643,
+       "endowment": 0.0,
+       "uncovered": -0.0631
+      },
+      "uncovered shortfall (colleges short only)": 2927404697,
+      "of federal: Pell": 6464149564,
+      "memo: undergraduate federal loans": 4295104798,
+      "memo: default estimate (lower bound)": 20598,
+      "full cost (public only): uncovered": 121921476
+     }
+    },
+    "too short to classify": {
+     "2005": {
+      "colleges": 19,
+      "spending (W)": 2503414703,
+      "own earned income": 1807552996,
+      "gap (payer view)": 695861706,
+      "frozen gap (item 15)": 656587151,
+      "paid by": {
+       "federal": 32684533,
+       "state": 677595735,
+       "local": 36338381,
+       "gifts": 37656489,
+       "endowment": 0,
+       "uncovered": -88413431
+      },
+      "share of the payer-view gap": {
+       "federal": 0.047,
+       "state": 0.9738,
+       "local": 0.0522,
+       "gifts": 0.0541,
+       "endowment": 0.0,
+       "uncovered": -0.1271
+      },
+      "uncovered shortfall (colleges short only)": 8610028,
+      "of federal: Pell": 28890394,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -25835037
+     },
+     "2024": {
+      "colleges": 2,
+      "spending (W)": 472897975,
+      "own earned income": 294094145,
+      "gap (payer view)": 178803830,
+      "frozen gap (item 15)": 112671728,
+      "paid by": {
+       "federal": 51820748,
+       "state": 268275169,
+       "local": 6500,
+       "gifts": 34244898,
+       "endowment": 0,
+       "uncovered": -175543485
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2898,
+       "state": 1.5004,
+       "local": 0.0,
+       "gifts": 0.1915,
+       "endowment": 0.0,
+       "uncovered": -0.9818
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 36314531,
+      "memo: undergraduate federal loans": 63490616,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -128904209
+     }
+    }
+   },
+   "without hospital colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1583,
+      "spending (W)": 208536036145,
+      "own earned income": 114563741694,
+      "gap (payer view)": 93972294452,
+      "frozen gap (item 15)": 74385670778,
+      "paid by": {
+       "federal": 15005326391,
+       "state": 74484352398,
+       "local": 11699255616,
+       "gifts": 4218899699,
+       "endowment": 0,
+       "uncovered": -11435539653
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1597,
+       "state": 0.7926,
+       "local": 0.1245,
+       "gifts": 0.0449,
+       "endowment": 0.0,
+       "uncovered": -0.1217
+      },
+      "uncovered shortfall (colleges short only)": 1084860681,
+      "of federal: Pell": 12918113179,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -10118284490
+     },
+     "2019": {
+      "colleges": 1413,
+      "spending (W)": 260164730049,
+      "own earned income": 152945529938,
+      "gap (payer view)": 107219200111,
+      "frozen gap (item 15)": 77061728914,
+      "paid by": {
+       "federal": 22356241060,
+       "state": 75328229561,
+       "local": 13145601752,
+       "gifts": 6334795838,
+       "endowment": 0,
+       "uncovered": -9945668102
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2085,
+       "state": 0.7026,
+       "local": 0.1226,
+       "gifts": 0.0591,
+       "endowment": 0.0,
+       "uncovered": -0.0928
+      },
+      "uncovered shortfall (colleges short only)": 3918726016,
+      "of federal: Pell": 20807539461,
+      "memo: undergraduate federal loans": 22992875184,
+      "memo: default estimate (lower bound)": 1938112067,
+      "full cost (public only): uncovered": -2127076592
+     },
+     "2024": {
+      "colleges": 1383,
+      "spending (W)": 253305622260,
+      "own earned income": 147631416410,
+      "gap (payer view)": 105674205850,
+      "frozen gap (item 15)": 76722007654,
+      "paid by": {
+       "federal": 19710934213,
+       "state": 81839861011,
+       "local": 14019016049,
+       "gifts": 6878928092,
+       "endowment": 0,
+       "uncovered": -16774533515
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1865,
+       "state": 0.7745,
+       "local": 0.1327,
+       "gifts": 0.0651,
+       "endowment": 0.0,
+       "uncovered": -0.1587
+      },
+      "uncovered shortfall (colleges short only)": 2705860836,
+      "of federal: Pell": 17863180424,
+      "memo: undergraduate federal loans": 13824635524,
+      "memo: default estimate (lower bound)": 199765,
+      "full cost (public only): uncovered": -9384477420
+     }
+    },
+    "episodic": {
+     "2005": {
+      "colleges": 674,
+      "spending (W)": 84352229733,
+      "own earned income": 46333665825,
+      "gap (payer view)": 38018563907,
+      "frozen gap (item 15)": 29788738231,
+      "paid by": {
+       "federal": 6195730777,
+       "state": 30772729516,
+       "local": 3772529263,
+       "gifts": 1741335807,
+       "endowment": 0,
+       "uncovered": -4463761456
+      },
+      "share of the payer-view gap": {
+       "federal": 0.163,
+       "state": 0.8094,
+       "local": 0.0992,
+       "gifts": 0.0458,
+       "endowment": 0.0,
+       "uncovered": -0.1174
+      },
+      "uncovered shortfall (colleges short only)": 323244159,
+      "of federal: Pell": 5359301554,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -4297618392
+     },
+     "2019": {
+      "colleges": 622,
+      "spending (W)": 106480874598,
+      "own earned income": 62393280058,
+      "gap (payer view)": 44087594540,
+      "frozen gap (item 15)": 30810044703,
+      "paid by": {
+       "federal": 9627052947,
+       "state": 31971099583,
+       "local": 4556564017,
+       "gifts": 2838590569,
+       "endowment": 0,
+       "uncovered": -4905712576
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2184,
+       "state": 0.7252,
+       "local": 0.1034,
+       "gifts": 0.0644,
+       "endowment": 0.0,
+       "uncovered": -0.1113
+      },
+      "uncovered shortfall (colleges short only)": 756663128,
+      "of federal: Pell": 8969432634,
+      "memo: undergraduate federal loans": 9969735847,
+      "memo: default estimate (lower bound)": 852587784,
+      "full cost (public only): uncovered": -1452600857
+     },
+     "2024": {
+      "colleges": 612,
+      "spending (W)": 103564103677,
+      "own earned income": 59298733928,
+      "gap (payer view)": 44265369749,
+      "frozen gap (item 15)": 31468876127,
+      "paid by": {
+       "federal": 8381040838,
+       "state": 34573910549,
+       "local": 4897229615,
+       "gifts": 3055869211,
+       "endowment": 0,
+       "uncovered": -6642680464
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1893,
+       "state": 0.7811,
+       "local": 0.1106,
+       "gifts": 0.069,
+       "endowment": 0.0,
+       "uncovered": -0.1501
+      },
+      "uncovered shortfall (colleges short only)": 775075142,
+      "of federal: Pell": 7546139794,
+      "memo: undergraduate federal loans": 5890068440,
+      "memo: default estimate (lower bound)": 113291,
+      "full cost (public only): uncovered": -3201348267
+     }
+    },
+    "never short": {
+     "2005": {
+      "colleges": 370,
+      "spending (W)": 66502556473,
+      "own earned income": 39507577754,
+      "gap (payer view)": 26994978719,
+      "frozen gap (item 15)": 22166824446,
+      "paid by": {
+       "federal": 3918668842,
+       "state": 22339645687,
+       "local": 4552507238,
+       "gifts": 1570374670,
+       "endowment": 0,
+       "uncovered": -5386217719
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1452,
+       "state": 0.8275,
+       "local": 0.1686,
+       "gifts": 0.0582,
+       "endowment": 0.0,
+       "uncovered": -0.1995
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 3181749780,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -3903150149
+     },
+     "2019": {
+      "colleges": 297,
+      "spending (W)": 81561750218,
+      "own earned income": 54308398959,
+      "gap (payer view)": 27253351258,
+      "frozen gap (item 15)": 20124776231,
+      "paid by": {
+       "federal": 5357840382,
+       "state": 21968379453,
+       "local": 4489096044,
+       "gifts": 2218457419,
+       "endowment": 0,
+       "uncovered": -6780422040
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1966,
+       "state": 0.8061,
+       "local": 0.1647,
+       "gifts": 0.0814,
+       "endowment": 0.0,
+       "uncovered": -0.2488
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 4906037089,
+      "memo: undergraduate federal loans": 6836165778,
+      "memo: default estimate (lower bound)": 494659703,
+      "full cost (public only): uncovered": -3537849226
+     },
+     "2024": {
+      "colleges": 290,
+      "spending (W)": 82173128005,
+      "own earned income": 53367380988,
+      "gap (payer view)": 28805747017,
+      "frozen gap (item 15)": 21645663771,
+      "paid by": {
+       "federal": 4919049734,
+       "state": 24561702981,
+       "local": 4866224206,
+       "gifts": 2404811979,
+       "endowment": 0,
+       "uncovered": -7946041883
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1708,
+       "state": 0.8527,
+       "local": 0.1689,
+       "gifts": 0.0835,
+       "endowment": 0.0,
+       "uncovered": -0.2758
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 4389874505,
+      "memo: undergraduate federal loans": 4088133804,
+      "memo: default estimate (lower bound)": 65876,
+      "full cost (public only): uncovered": -5126035940
+     }
+    },
+    "chronic": {
+     "2005": {
+      "colleges": 522,
+      "spending (W)": 56595958999,
+      "own earned income": 28135478851,
+      "gap (payer view)": 28460480148,
+      "frozen gap (item 15)": 21970686712,
+      "paid by": {
+       "federal": 4858666506,
+       "state": 20949455154,
+       "local": 3337880734,
+       "gifts": 871958400,
+       "endowment": 0,
+       "uncovered": -1557480646
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1707,
+       "state": 0.7361,
+       "local": 0.1173,
+       "gifts": 0.0306,
+       "endowment": 0.0,
+       "uncovered": -0.0547
+      },
+      "uncovered shortfall (colleges short only)": 753006494,
+      "of federal: Pell": 4348595719,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -1920704442
+     },
+     "2019": {
+      "colleges": 494,
+      "spending (W)": 72122105233,
+      "own earned income": 36243850921,
+      "gap (payer view)": 35878254312,
+      "frozen gap (item 15)": 26126907980,
+      "paid by": {
+       "federal": 7371347731,
+       "state": 21388750526,
+       "local": 4099941692,
+       "gifts": 1277747850,
+       "endowment": 0,
+       "uncovered": 1740466514
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2055,
+       "state": 0.5961,
+       "local": 0.1143,
+       "gifts": 0.0356,
+       "endowment": 0.0,
+       "uncovered": 0.0485
+      },
+      "uncovered shortfall (colleges short only)": 3162062887,
+      "of federal: Pell": 6932069738,
+      "memo: undergraduate federal loans": 6186973559,
+      "memo: default estimate (lower bound)": 590864580,
+      "full cost (public only): uncovered": 2863373491
+     },
+     "2024": {
+      "colleges": 479,
+      "spending (W)": 67095492603,
+      "own earned income": 34671207349,
+      "gap (payer view)": 32424285254,
+      "frozen gap (item 15)": 23494796028,
+      "paid by": {
+       "federal": 6359022893,
+       "state": 22435972312,
+       "local": 4255555728,
+       "gifts": 1384002004,
+       "endowment": 0,
+       "uncovered": -2010267683
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1961,
+       "state": 0.6919,
+       "local": 0.1312,
+       "gifts": 0.0427,
+       "endowment": 0.0,
+       "uncovered": -0.062
+      },
+      "uncovered shortfall (colleges short only)": 1930785694,
+      "of federal: Pell": 5890851594,
+      "memo: undergraduate federal loans": 3782942664,
+      "memo: default estimate (lower bound)": 20598,
+      "full cost (public only): uncovered": -928189004
+     }
+    },
+    "too short to classify": {
+     "2005": {
+      "colleges": 17,
+      "spending (W)": 1085290940,
+      "own earned income": 587019263,
+      "gap (payer view)": 498271677,
+      "frozen gap (item 15)": 459421390,
+      "paid by": {
+       "federal": 32260266,
+       "state": 422522041,
+       "local": 36338381,
+       "gifts": 35230822,
+       "endowment": 0,
+       "uncovered": -28079832
+      },
+      "share of the payer-view gap": {
+       "federal": 0.0647,
+       "state": 0.848,
+       "local": 0.0729,
+       "gifts": 0.0707,
+       "endowment": 0.0,
+       "uncovered": -0.0564
+      },
+      "uncovered shortfall (colleges short only)": 8610028,
+      "of federal: Pell": 28466126,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": 3188493
+     },
+     "2024": {
+      "colleges": 2,
+      "spending (W)": 472897975,
+      "own earned income": 294094145,
+      "gap (payer view)": 178803830,
+      "frozen gap (item 15)": 112671728,
+      "paid by": {
+       "federal": 51820748,
+       "state": 268275169,
+       "local": 6500,
+       "gifts": 34244898,
+       "endowment": 0,
+       "uncovered": -175543485
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2898,
+       "state": 1.5004,
+       "local": 0.0,
+       "gifts": 0.1915,
+       "endowment": 0.0,
+       "uncovered": -0.9818
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 36314531,
+      "memo: undergraduate federal loans": 63490616,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": -128904209
+     }
+    }
+   }
+  },
+  "private nonprofit": {
+   "all colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1722,
+      "spending (W)": 168949510687,
+      "own earned income": 142619467617,
+      "gap (payer view)": 26330043070,
+      "frozen gap (item 15)": 18814793564,
+      "paid by": {
+       "federal": 5784990799,
+       "state": 3002033223,
+       "local": 195250378,
+       "gifts": 27287689490,
+       "endowment": 14665317917,
+       "uncovered": -24605238738
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2197,
+       "state": 0.114,
+       "local": 0.0074,
+       "gifts": 1.0364,
+       "endowment": 0.557,
+       "uncovered": -0.9345
+      },
+      "uncovered shortfall (colleges short only)": 490738088,
+      "of federal: Pell": 3471951457,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 1630,
+      "spending (W)": 253012416281,
+      "own earned income": 219432397038,
+      "gap (payer view)": 33580019242,
+      "frozen gap (item 15)": 24113383414,
+      "paid by": {
+       "federal": 7789950552,
+       "state": 3070160571,
+       "local": 55342271,
+       "gifts": 32624621068,
+       "endowment": 24190847044,
+       "uncovered": -34150902264
+      },
+      "share of the payer-view gap": {
+       "federal": 0.232,
+       "state": 0.0914,
+       "local": 0.0016,
+       "gifts": 0.9715,
+       "endowment": 0.7204,
+       "uncovered": -1.017
+      },
+      "uncovered shortfall (colleges short only)": 1336897898,
+      "of federal: Pell": 5825028717,
+      "memo: undergraduate federal loans": 12649713829,
+      "memo: default estimate (lower bound)": 809491595,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 1557,
+      "spending (W)": 269457293309,
+      "own earned income": 229271194306,
+      "gap (payer view)": 40186099003,
+      "frozen gap (item 15)": 31215868906,
+      "paid by": {
+       "federal": 7296661313,
+       "state": 3052705446,
+       "local": 31650636,
+       "gifts": 28558885638,
+       "endowment": 29159811515,
+       "uncovered": -27913615545
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1816,
+       "state": 0.076,
+       "local": 0.0008,
+       "gifts": 0.7107,
+       "endowment": 0.7256,
+       "uncovered": -0.6946
+      },
+      "uncovered shortfall (colleges short only)": 2278534500,
+      "of federal: Pell": 5500928736,
+      "memo: undergraduate federal loans": 8657338133,
+      "memo: default estimate (lower bound)": 311447,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "episodic": {
+     "2005": {
+      "colleges": 712,
+      "spending (W)": 55344504237,
+      "own earned income": 45082863448,
+      "gap (payer view)": 10261640789,
+      "frozen gap (item 15)": 7411566218,
+      "paid by": {
+       "federal": 2369455813,
+       "state": 1052053018,
+       "local": 68038541,
+       "gifts": 10157208210,
+       "endowment": 4393741223,
+       "uncovered": -7778856016
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2309,
+       "state": 0.1025,
+       "local": 0.0066,
+       "gifts": 0.9898,
+       "endowment": 0.4282,
+       "uncovered": -0.7581
+      },
+      "uncovered shortfall (colleges short only)": 197425927,
+      "of federal: Pell": 1330656364,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 700,
+      "spending (W)": 86479074422,
+      "own earned income": 72231933417,
+      "gap (payer view)": 14247141005,
+      "frozen gap (item 15)": 10488981732,
+      "paid by": {
+       "federal": 3145196977,
+       "state": 1003030233,
+       "local": 30294056,
+       "gifts": 10521057521,
+       "endowment": 7428945525,
+       "uncovered": -7881383307
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2208,
+       "state": 0.0704,
+       "local": 0.0021,
+       "gifts": 0.7385,
+       "endowment": 0.5214,
+       "uncovered": -0.5532
+      },
+      "uncovered shortfall (colleges short only)": 231345465,
+      "of federal: Pell": 2310167943,
+      "memo: undergraduate federal loans": 4644967779,
+      "memo: default estimate (lower bound)": 313912370,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 656,
+      "spending (W)": 93395984806,
+      "own earned income": 76803833613,
+      "gap (payer view)": 16592151193,
+      "frozen gap (item 15)": 13299696547,
+      "paid by": {
+       "federal": 2713727734,
+       "state": 979019907,
+       "local": 10566435,
+       "gifts": 8636851554,
+       "endowment": 8993237812,
+       "uncovered": -4741252249
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1636,
+       "state": 0.059,
+       "local": 0.0006,
+       "gifts": 0.5205,
+       "endowment": 0.542,
+       "uncovered": -0.2858
+      },
+      "uncovered shortfall (colleges short only)": 1278588341,
+      "of federal: Pell": 1940047001,
+      "memo: undergraduate federal loans": 2869851218,
+      "memo: default estimate (lower bound)": 117999,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "chronic": {
+     "2005": {
+      "colleges": 455,
+      "spending (W)": 11758751555,
+      "own earned income": 9103543271,
+      "gap (payer view)": 2655208284,
+      "frozen gap (item 15)": 1509030788,
+      "paid by": {
+       "federal": 782423161,
+       "state": 388678596,
+       "local": 7474786,
+       "gifts": 2251003914,
+       "endowment": 816663356,
+       "uncovered": -1591035528
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2947,
+       "state": 0.1464,
+       "local": 0.0028,
+       "gifts": 0.8478,
+       "endowment": 0.3076,
+       "uncovered": -0.5992
+      },
+      "uncovered shortfall (colleges short only)": 261463027,
+      "of federal: Pell": 614213527,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 422,
+      "spending (W)": 13067930096,
+      "own earned income": 8994104076,
+      "gap (payer view)": 4073826020,
+      "frozen gap (item 15)": 2909637463,
+      "paid by": {
+       "federal": 888533508,
+       "state": 288416762,
+       "local": 7745091,
+       "gifts": 1467327126,
+       "endowment": 959431824,
+       "uncovered": 462371708
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2181,
+       "state": 0.0708,
+       "local": 0.0019,
+       "gifts": 0.3602,
+       "endowment": 0.2355,
+       "uncovered": 0.1135
+      },
+      "uncovered shortfall (colleges short only)": 1097912461,
+      "of federal: Pell": 787682031,
+      "memo: undergraduate federal loans": 1528199480,
+      "memo: default estimate (lower bound)": 152329089,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 365,
+      "spending (W)": 10776371726,
+      "own earned income": 7129255006,
+      "gap (payer view)": 3647116720,
+      "frozen gap (item 15)": 2703853059,
+      "paid by": {
+       "federal": 722679411,
+       "state": 237269492,
+       "local": 4958070,
+       "gifts": 1342763223,
+       "endowment": 1130834971,
+       "uncovered": 208611553
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1982,
+       "state": 0.0651,
+       "local": 0.0014,
+       "gifts": 0.3682,
+       "endowment": 0.3101,
+       "uncovered": 0.0572
+      },
+      "uncovered shortfall (colleges short only)": 976855708,
+      "of federal: Pell": 645664146,
+      "memo: undergraduate federal loans": 809040300,
+      "memo: default estimate (lower bound)": 76934,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "never short": {
+     "2005": {
+      "colleges": 510,
+      "spending (W)": 101509945590,
+      "own earned income": 88231879503,
+      "gap (payer view)": 13278066087,
+      "frozen gap (item 15)": 9787931636,
+      "paid by": {
+       "federal": 2608026194,
+       "state": 1555204980,
+       "local": 119577323,
+       "gifts": 14795281016,
+       "endowment": 9423721271,
+       "uncovered": -15223744697
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1964,
+       "state": 0.1171,
+       "local": 0.009,
+       "gifts": 1.1143,
+       "endowment": 0.7097,
+       "uncovered": -1.1465
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 1511410872,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 503,
+      "spending (W)": 153381755781,
+      "own earned income": 138137521030,
+      "gap (payer view)": 15244234751,
+      "frozen gap (item 15)": 10709716267,
+      "paid by": {
+       "federal": 3747918055,
+       "state": 1777246074,
+       "local": 17303125,
+       "gifts": 20635424535,
+       "endowment": 15802240918,
+       "uncovered": -26735897956
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2459,
+       "state": 0.1166,
+       "local": 0.0011,
+       "gifts": 1.3537,
+       "endowment": 1.0366,
+       "uncovered": -1.7538
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 2719304650,
+      "memo: undergraduate federal loans": 6461675292,
+      "memo: default estimate (lower bound)": 342209147,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 501,
+      "spending (W)": 165081960452,
+      "own earned income": 145208599958,
+      "gap (payer view)": 19873360494,
+      "frozen gap (item 15)": 15162726695,
+      "paid by": {
+       "federal": 3838198304,
+       "state": 1834625457,
+       "local": 16094171,
+       "gifts": 18528668698,
+       "endowment": 19027666464,
+       "uncovered": -23371892600
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1931,
+       "state": 0.0923,
+       "local": 0.0008,
+       "gifts": 0.9323,
+       "endowment": 0.9574,
+       "uncovered": -1.176
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 2898601529,
+      "memo: undergraduate federal loans": 4967482723,
+      "memo: default estimate (lower bound)": 116514,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "too short to classify": {
+     "2005": {
+      "colleges": 45,
+      "spending (W)": 336309304,
+      "own earned income": 201181395,
+      "gap (payer view)": 135127909,
+      "frozen gap (item 15)": 106264921,
+      "paid by": {
+       "federal": 25085631,
+       "state": 6096629,
+       "local": 159729,
+       "gifts": 84196351,
+       "endowment": 31192066,
+       "uncovered": -11602497
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1856,
+       "state": 0.0451,
+       "local": 0.0012,
+       "gifts": 0.6231,
+       "endowment": 0.2308,
+       "uncovered": -0.0859
+      },
+      "uncovered shortfall (colleges short only)": 31849133,
+      "of federal: Pell": 15670693,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 5,
+      "spending (W)": 83655982,
+      "own earned income": 68838516,
+      "gap (payer view)": 14817467,
+      "frozen gap (item 15)": 5047953,
+      "paid by": {
+       "federal": 8302012,
+       "state": 1467502,
+       "local": 0,
+       "gifts": 811886,
+       "endowment": 228776,
+       "uncovered": 4007291
+      },
+      "share of the payer-view gap": {
+       "federal": 0.5603,
+       "state": 0.099,
+       "local": 0.0,
+       "gifts": 0.0548,
+       "endowment": 0.0154,
+       "uncovered": 0.2704
+      },
+      "uncovered shortfall (colleges short only)": 7639972,
+      "of federal: Pell": 7874093,
+      "memo: undergraduate federal loans": 14871277,
+      "memo: default estimate (lower bound)": 1040989,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 35,
+      "spending (W)": 202976325,
+      "own earned income": 129505729,
+      "gap (payer view)": 73470596,
+      "frozen gap (item 15)": 49592605,
+      "paid by": {
+       "federal": 22055864,
+       "state": 1790590,
+       "local": 31960,
+       "gifts": 50602163,
+       "endowment": 8072268,
+       "uncovered": -9082249
+      },
+      "share of the payer-view gap": {
+       "federal": 0.3002,
+       "state": 0.0244,
+       "local": 0.0004,
+       "gifts": 0.6887,
+       "endowment": 0.1099,
+       "uncovered": -0.1236
+      },
+      "uncovered shortfall (colleges short only)": 23090451,
+      "of federal: Pell": 16616060,
+      "memo: undergraduate federal loans": 10963892,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     }
+    }
+   },
+   "without hospital colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1685,
+      "spending (W)": 128982896117,
+      "own earned income": 105556120025,
+      "gap (payer view)": 23426776092,
+      "frozen gap (item 15)": 16175282024,
+      "paid by": {
+       "federal": 5198670189,
+       "state": 2763786636,
+       "local": 187869871,
+       "gifts": 21856201905,
+       "endowment": 12326821049,
+       "uncovered": -18906573558
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2219,
+       "state": 0.118,
+       "local": 0.008,
+       "gifts": 0.933,
+       "endowment": 0.5262,
+       "uncovered": -0.807
+      },
+      "uncovered shortfall (colleges short only)": 490738088,
+      "of federal: Pell": 3384879342,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 1595,
+      "spending (W)": 178258313005,
+      "own earned income": 148655754780,
+      "gap (payer view)": 29602558225,
+      "frozen gap (item 15)": 20471808927,
+      "paid by": {
+       "federal": 7217330662,
+       "state": 2943769007,
+       "local": 55053308,
+       "gifts": 27491031758,
+       "endowment": 19824855220,
+       "uncovered": -27929481731
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2438,
+       "state": 0.0994,
+       "local": 0.0019,
+       "gifts": 0.9287,
+       "endowment": 0.6697,
+       "uncovered": -0.9435
+      },
+      "uncovered shortfall (colleges short only)": 1329870051,
+      "of federal: Pell": 5694722993,
+      "memo: undergraduate federal loans": 12363794302,
+      "memo: default estimate (lower bound)": 801703822,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 1522,
+      "spending (W)": 178925380503,
+      "own earned income": 144333910205,
+      "gap (payer view)": 34591470298,
+      "frozen gap (item 15)": 25956582000,
+      "paid by": {
+       "federal": 6732771285,
+       "state": 2922064701,
+       "local": 30811112,
+       "gifts": 24379974055,
+       "endowment": 23479537670,
+       "uncovered": -22953688525
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1946,
+       "state": 0.0845,
+       "local": 0.0009,
+       "gifts": 0.7048,
+       "endowment": 0.6788,
+       "uncovered": -0.6636
+      },
+      "uncovered shortfall (colleges short only)": 1811858940,
+      "of federal: Pell": 5349826249,
+      "memo: undergraduate federal loans": 8444731510,
+      "memo: default estimate (lower bound)": 311447,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "episodic": {
+     "2005": {
+      "colleges": 693,
+      "spending (W)": 36902542023,
+      "own earned income": 29361351029,
+      "gap (payer view)": 7541190994,
+      "frozen gap (item 15)": 4806110197,
+      "paid by": {
+       "federal": 1879794394,
+       "state": 949646419,
+       "local": 68038541,
+       "gifts": 6550118173,
+       "endowment": 2998516973,
+       "uncovered": -4904923505
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2493,
+       "state": 0.1259,
+       "local": 0.009,
+       "gifts": 0.8686,
+       "endowment": 0.3976,
+       "uncovered": -0.6504
+      },
+      "uncovered shortfall (colleges short only)": 197425927,
+      "of federal: Pell": 1285093707,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 682,
+      "spending (W)": 47661752774,
+      "own earned income": 37599127368,
+      "gap (payer view)": 10062625406,
+      "frozen gap (item 15)": 6484339567,
+      "paid by": {
+       "federal": 2688319088,
+       "state": 986311755,
+       "local": 30294056,
+       "gifts": 7283027894,
+       "endowment": 4842784584,
+       "uncovered": -5768111970
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2672,
+       "state": 0.098,
+       "local": 0.003,
+       "gifts": 0.7238,
+       "endowment": 0.4813,
+       "uncovered": -0.5732
+      },
+      "uncovered shortfall (colleges short only)": 230500125,
+      "of federal: Pell": 2233138306,
+      "memo: undergraduate federal loans": 4485147649,
+      "memo: default estimate (lower bound)": 308244184,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 638,
+      "spending (W)": 45688825094,
+      "own earned income": 34401403751,
+      "gap (payer view)": 11287421343,
+      "frozen gap (item 15)": 8177780123,
+      "paid by": {
+       "federal": 2265527803,
+       "state": 925961796,
+       "local": 10566435,
+       "gifts": 5895737172,
+       "endowment": 5638857240,
+       "uncovered": -3449229103
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2007,
+       "state": 0.082,
+       "local": 0.0009,
+       "gifts": 0.5223,
+       "endowment": 0.4996,
+       "uncovered": -0.3056
+      },
+      "uncovered shortfall (colleges short only)": 816663214,
+      "of federal: Pell": 1849212992,
+      "memo: undergraduate federal loans": 2743906427,
+      "memo: default estimate (lower bound)": 117999,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "chronic": {
+     "2005": {
+      "colleges": 453,
+      "spending (W)": 11728524677,
+      "own earned income": 9073996845,
+      "gap (payer view)": 2654527832,
+      "frozen gap (item 15)": 1509654100,
+      "paid by": {
+       "federal": 781265086,
+       "state": 388387218,
+       "local": 7474786,
+       "gifts": 2250446047,
+       "endowment": 816663356,
+       "uncovered": -1589708661
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2943,
+       "state": 0.1463,
+       "local": 0.0028,
+       "gifts": 0.8478,
+       "endowment": 0.3076,
+       "uncovered": -0.5989
+      },
+      "uncovered shortfall (colleges short only)": 261463027,
+      "of federal: Pell": 614059266,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 420,
+      "spending (W)": 13037082314,
+      "own earned income": 8969836863,
+      "gap (payer view)": 4067245451,
+      "frozen gap (item 15)": 2903200502,
+      "paid by": {
+       "federal": 888389900,
+       "state": 288358179,
+       "local": 7745091,
+       "gifts": 1467177643,
+       "endowment": 959385436,
+       "uncovered": 456189201
+      },
+      "share of the payer-view gap": {
+       "federal": 0.2184,
+       "state": 0.0709,
+       "local": 0.0019,
+       "gifts": 0.3607,
+       "endowment": 0.2359,
+       "uncovered": 0.1122
+      },
+      "uncovered shortfall (colleges short only)": 1091729954,
+      "of federal: Pell": 787596210,
+      "memo: undergraduate federal loans": 1528199480,
+      "memo: default estimate (lower bound)": 152329089,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 363,
+      "spending (W)": 10752535215,
+      "own earned income": 7110265271,
+      "gap (payer view)": 3642269944,
+      "frozen gap (item 15)": 2699054407,
+      "paid by": {
+       "federal": 722631287,
+       "state": 237226773,
+       "local": 4958070,
+       "gifts": 1342761223,
+       "endowment": 1130831471,
+       "uncovered": 203861120
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1984,
+       "state": 0.0651,
+       "local": 0.0014,
+       "gifts": 0.3687,
+       "endowment": 0.3105,
+       "uncovered": 0.056
+      },
+      "uncovered shortfall (colleges short only)": 972105275,
+      "of federal: Pell": 645627762,
+      "memo: undergraduate federal loans": 809040300,
+      "memo: default estimate (lower bound)": 76934,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "never short": {
+     "2005": {
+      "colleges": 494,
+      "spending (W)": 80015520113,
+      "own earned income": 66919590757,
+      "gap (payer view)": 13095929356,
+      "frozen gap (item 15)": 9753252807,
+      "paid by": {
+       "federal": 2512525078,
+       "state": 1419656371,
+       "local": 112196815,
+       "gifts": 12971441335,
+       "endowment": 8480448653,
+       "uncovered": -12400338895
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1919,
+       "state": 0.1084,
+       "local": 0.0086,
+       "gifts": 0.9905,
+       "endowment": 0.6476,
+       "uncovered": -0.9469
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 1470055676,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 488,
+      "spending (W)": 117475821934,
+      "own earned income": 102017952034,
+      "gap (payer view)": 15457869901,
+      "frozen gap (item 15)": 11079220905,
+      "paid by": {
+       "federal": 3632319662,
+       "state": 1667631572,
+       "local": 17014161,
+       "gifts": 18740014335,
+       "endowment": 14022456424,
+       "uncovered": -22621566253
+      },
+      "share of the payer-view gap": {
+       "federal": 0.235,
+       "state": 0.1079,
+       "local": 0.0011,
+       "gifts": 1.2123,
+       "endowment": 0.9071,
+       "uncovered": -1.4634
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 2666114384,
+      "memo: undergraduate federal loans": 6335575896,
+      "memo: default estimate (lower bound)": 340089559,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 486,
+      "spending (W)": 122281043869,
+      "own earned income": 102692735454,
+      "gap (payer view)": 19588308415,
+      "frozen gap (item 15)": 15030154865,
+      "paid by": {
+       "federal": 3722556331,
+       "state": 1757085542,
+       "local": 15254647,
+       "gifts": 17090873497,
+       "endowment": 16701776691,
+       "uncovered": -19699238293
+      },
+      "share of the payer-view gap": {
+       "federal": 0.19,
+       "state": 0.0897,
+       "local": 0.0008,
+       "gifts": 0.8725,
+       "endowment": 0.8526,
+       "uncovered": -1.0057
+      },
+      "uncovered shortfall (colleges short only)": 0,
+      "of federal: Pell": 2838369435,
+      "memo: undergraduate federal loans": 4880820891,
+      "memo: default estimate (lower bound)": 116514,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "too short to classify": {
+     "2005": {
+      "colleges": 45,
+      "spending (W)": 336309304,
+      "own earned income": 201181395,
+      "gap (payer view)": 135127909,
+      "frozen gap (item 15)": 106264921,
+      "paid by": {
+       "federal": 25085631,
+       "state": 6096629,
+       "local": 159729,
+       "gifts": 84196351,
+       "endowment": 31192066,
+       "uncovered": -11602497
+      },
+      "share of the payer-view gap": {
+       "federal": 0.1856,
+       "state": 0.0451,
+       "local": 0.0012,
+       "gifts": 0.6231,
+       "endowment": 0.2308,
+       "uncovered": -0.0859
+      },
+      "uncovered shortfall (colleges short only)": 31849133,
+      "of federal: Pell": 15670693,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 5,
+      "spending (W)": 83655982,
+      "own earned income": 68838516,
+      "gap (payer view)": 14817467,
+      "frozen gap (item 15)": 5047953,
+      "paid by": {
+       "federal": 8302012,
+       "state": 1467502,
+       "local": 0,
+       "gifts": 811886,
+       "endowment": 228776,
+       "uncovered": 4007291
+      },
+      "share of the payer-view gap": {
+       "federal": 0.5603,
+       "state": 0.099,
+       "local": 0.0,
+       "gifts": 0.0548,
+       "endowment": 0.0154,
+       "uncovered": 0.2704
+      },
+      "uncovered shortfall (colleges short only)": 7639972,
+      "of federal: Pell": 7874093,
+      "memo: undergraduate federal loans": 14871277,
+      "memo: default estimate (lower bound)": 1040989,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 35,
+      "spending (W)": 202976325,
+      "own earned income": 129505729,
+      "gap (payer view)": 73470596,
+      "frozen gap (item 15)": 49592605,
+      "paid by": {
+       "federal": 22055864,
+       "state": 1790590,
+       "local": 31960,
+       "gifts": 50602163,
+       "endowment": 8072268,
+       "uncovered": -9082249
+      },
+      "share of the payer-view gap": {
+       "federal": 0.3002,
+       "state": 0.0244,
+       "local": 0.0004,
+       "gifts": 0.6887,
+       "endowment": 0.1099,
+       "uncovered": -0.1236
+      },
+      "uncovered shortfall (colleges short only)": 23090451,
+      "of federal: Pell": 16616060,
+      "memo: undergraduate federal loans": 10963892,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     }
+    }
+   }
+  },
+  "for-profit": {
+   "all colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1035,
+      "spending (W)": 14995299138,
+      "own earned income": 15028444807,
+      "gap (payer view)": -33145669,
+      "frozen gap (item 15)": -3562659293,
+      "paid by": {
+       "federal": 2928579426,
+       "state": 591499701,
+       "local": 2073551,
+       "gifts": 10444009,
+       "endowment": 0,
+       "uncovered": -3565742356
+      },
+      "share of the payer-view gap": {
+       "federal": null,
+       "state": null,
+       "local": null,
+       "gifts": null,
+       "endowment": null,
+       "uncovered": null
+      },
+      "uncovered shortfall (colleges short only)": 281312018,
+      "of federal: Pell": 2708125308,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 737,
+      "spending (W)": 14485351035,
+      "own earned income": 11789316508,
+      "gap (payer view)": 2696034527,
+      "frozen gap (item 15)": -699481684,
+      "paid by": {
+       "federal": 3164301063,
+       "state": 197825486,
+       "local": 12491378,
+       "gifts": 20965756,
+       "endowment": 0,
+       "uncovered": -699549155
+      },
+      "share of the payer-view gap": {
+       "federal": 1.1737,
+       "state": 0.0734,
+       "local": 0.0046,
+       "gifts": 0.0078,
+       "endowment": 0.0,
+       "uncovered": -0.2595
+      },
+      "uncovered shortfall (colleges short only)": 977409312,
+      "of federal: Pell": 2913251027,
+      "memo: undergraduate federal loans": 4456824421,
+      "memo: default estimate (lower bound)": 552727356,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 631,
+      "spending (W)": 13880452404,
+      "own earned income": 11551266305,
+      "gap (payer view)": 2329186099,
+      "frozen gap (item 15)": -1102267348,
+      "paid by": {
+       "federal": 3249300594,
+       "state": 149613126,
+       "local": 11160706,
+       "gifts": 21379021,
+       "endowment": 0,
+       "uncovered": -1102267348
+      },
+      "share of the payer-view gap": {
+       "federal": 1.395,
+       "state": 0.0642,
+       "local": 0.0048,
+       "gifts": 0.0092,
+       "endowment": 0.0,
+       "uncovered": -0.4732
+      },
+      "uncovered shortfall (colleges short only)": 943808388,
+      "of federal: Pell": 3126165802,
+      "memo: undergraduate federal loans": 3823467016,
+      "memo: default estimate (lower bound)": 110007,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "not classified": {
+     "2005": {
+      "colleges": 1035,
+      "spending (W)": 14995299138,
+      "own earned income": 15028444807,
+      "gap (payer view)": -33145669,
+      "frozen gap (item 15)": -3562659293,
+      "paid by": {
+       "federal": 2928579426,
+       "state": 591499701,
+       "local": 2073551,
+       "gifts": 10444009,
+       "endowment": 0,
+       "uncovered": -3565742356
+      },
+      "share of the payer-view gap": {
+       "federal": null,
+       "state": null,
+       "local": null,
+       "gifts": null,
+       "endowment": null,
+       "uncovered": null
+      },
+      "uncovered shortfall (colleges short only)": 281312018,
+      "of federal: Pell": 2708125308,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 737,
+      "spending (W)": 14485351035,
+      "own earned income": 11789316508,
+      "gap (payer view)": 2696034527,
+      "frozen gap (item 15)": -699481684,
+      "paid by": {
+       "federal": 3164301063,
+       "state": 197825486,
+       "local": 12491378,
+       "gifts": 20965756,
+       "endowment": 0,
+       "uncovered": -699549155
+      },
+      "share of the payer-view gap": {
+       "federal": 1.1737,
+       "state": 0.0734,
+       "local": 0.0046,
+       "gifts": 0.0078,
+       "endowment": 0.0,
+       "uncovered": -0.2595
+      },
+      "uncovered shortfall (colleges short only)": 977409312,
+      "of federal: Pell": 2913251027,
+      "memo: undergraduate federal loans": 4456824421,
+      "memo: default estimate (lower bound)": 552727356,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 631,
+      "spending (W)": 13880452404,
+      "own earned income": 11551266305,
+      "gap (payer view)": 2329186099,
+      "frozen gap (item 15)": -1102267348,
+      "paid by": {
+       "federal": 3249300594,
+       "state": 149613126,
+       "local": 11160706,
+       "gifts": 21379021,
+       "endowment": 0,
+       "uncovered": -1102267348
+      },
+      "share of the payer-view gap": {
+       "federal": 1.395,
+       "state": 0.0642,
+       "local": 0.0048,
+       "gifts": 0.0092,
+       "endowment": 0.0,
+       "uncovered": -0.4732
+      },
+      "uncovered shortfall (colleges short only)": 943808388,
+      "of federal: Pell": 3126165802,
+      "memo: undergraduate federal loans": 3823467016,
+      "memo: default estimate (lower bound)": 110007,
+      "full cost (public only): uncovered": null
+     }
+    }
+   },
+   "without hospital colleges": {
+    "all classes": {
+     "2005": {
+      "colleges": 1035,
+      "spending (W)": 14995299138,
+      "own earned income": 15028444807,
+      "gap (payer view)": -33145669,
+      "frozen gap (item 15)": -3562659293,
+      "paid by": {
+       "federal": 2928579426,
+       "state": 591499701,
+       "local": 2073551,
+       "gifts": 10444009,
+       "endowment": 0,
+       "uncovered": -3565742356
+      },
+      "share of the payer-view gap": {
+       "federal": null,
+       "state": null,
+       "local": null,
+       "gifts": null,
+       "endowment": null,
+       "uncovered": null
+      },
+      "uncovered shortfall (colleges short only)": 281312018,
+      "of federal: Pell": 2708125308,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 736,
+      "spending (W)": 14482969244,
+      "own earned income": 11786926263,
+      "gap (payer view)": 2696042981,
+      "frozen gap (item 15)": -699473230,
+      "paid by": {
+       "federal": 3164301063,
+       "state": 197825486,
+       "local": 12491378,
+       "gifts": 20965756,
+       "endowment": 0,
+       "uncovered": -699540701
+      },
+      "share of the payer-view gap": {
+       "federal": 1.1737,
+       "state": 0.0734,
+       "local": 0.0046,
+       "gifts": 0.0078,
+       "endowment": 0.0,
+       "uncovered": -0.2595
+      },
+      "uncovered shortfall (colleges short only)": 977409312,
+      "of federal: Pell": 2913251027,
+      "memo: undergraduate federal loans": 4456824421,
+      "memo: default estimate (lower bound)": 552727356,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 630,
+      "spending (W)": 13879037397,
+      "own earned income": 11549735888,
+      "gap (payer view)": 2329301509,
+      "frozen gap (item 15)": -1102151938,
+      "paid by": {
+       "federal": 3249300594,
+       "state": 149613126,
+       "local": 11160706,
+       "gifts": 21379021,
+       "endowment": 0,
+       "uncovered": -1102151938
+      },
+      "share of the payer-view gap": {
+       "federal": 1.395,
+       "state": 0.0642,
+       "local": 0.0048,
+       "gifts": 0.0092,
+       "endowment": 0.0,
+       "uncovered": -0.4732
+      },
+      "uncovered shortfall (colleges short only)": 943808388,
+      "of federal: Pell": 3126165802,
+      "memo: undergraduate federal loans": 3823467016,
+      "memo: default estimate (lower bound)": 110007,
+      "full cost (public only): uncovered": null
+     }
+    },
+    "not classified": {
+     "2005": {
+      "colleges": 1035,
+      "spending (W)": 14995299138,
+      "own earned income": 15028444807,
+      "gap (payer view)": -33145669,
+      "frozen gap (item 15)": -3562659293,
+      "paid by": {
+       "federal": 2928579426,
+       "state": 591499701,
+       "local": 2073551,
+       "gifts": 10444009,
+       "endowment": 0,
+       "uncovered": -3565742356
+      },
+      "share of the payer-view gap": {
+       "federal": null,
+       "state": null,
+       "local": null,
+       "gifts": null,
+       "endowment": null,
+       "uncovered": null
+      },
+      "uncovered shortfall (colleges short only)": 281312018,
+      "of federal: Pell": 2708125308,
+      "memo: undergraduate federal loans": 0,
+      "memo: default estimate (lower bound)": 0,
+      "full cost (public only): uncovered": null
+     },
+     "2019": {
+      "colleges": 736,
+      "spending (W)": 14482969244,
+      "own earned income": 11786926263,
+      "gap (payer view)": 2696042981,
+      "frozen gap (item 15)": -699473230,
+      "paid by": {
+       "federal": 3164301063,
+       "state": 197825486,
+       "local": 12491378,
+       "gifts": 20965756,
+       "endowment": 0,
+       "uncovered": -699540701
+      },
+      "share of the payer-view gap": {
+       "federal": 1.1737,
+       "state": 0.0734,
+       "local": 0.0046,
+       "gifts": 0.0078,
+       "endowment": 0.0,
+       "uncovered": -0.2595
+      },
+      "uncovered shortfall (colleges short only)": 977409312,
+      "of federal: Pell": 2913251027,
+      "memo: undergraduate federal loans": 4456824421,
+      "memo: default estimate (lower bound)": 552727356,
+      "full cost (public only): uncovered": null
+     },
+     "2024": {
+      "colleges": 630,
+      "spending (W)": 13879037397,
+      "own earned income": 11549735888,
+      "gap (payer view)": 2329301509,
+      "frozen gap (item 15)": -1102151938,
+      "paid by": {
+       "federal": 3249300594,
+       "state": 149613126,
+       "local": 11160706,
+       "gifts": 21379021,
+       "endowment": 0,
+       "uncovered": -1102151938
+      },
+      "share of the payer-view gap": {
+       "federal": 1.395,
+       "state": 0.0642,
+       "local": 0.0048,
+       "gifts": 0.0092,
+       "endowment": 0.0,
+       "uncovered": -0.4732
+      },
+      "uncovered shortfall (colleges short only)": 943808388,
+      "of federal: Pell": 3126165802,
+      "memo: undergraduate federal loans": 3823467016,
+      "memo: default estimate (lower bound)": 110007,
+      "full cost (public only): uncovered": null
+     }
+    }
+   }
+  }
+ },
+ "student aid fields resolved, by fiscal year": {
+  "2005": {
+   "status": "no field resolved",
+   "candidates": {}
+  },
+  "2006": {
+   "status": "no field resolved",
+   "candidates": {}
+  },
+  "2007": {
+   "status": "no field resolved",
+   "candidates": {}
+  },
+  "2008": {
+   "status": "no field resolved",
+   "candidates": {}
+  },
+  "2009": {
+   "table": "SFA0809",
+   "variable": "UFLOANT",
+   "title": "Total amount of Federal student loan aid received by undergraduate students",
+   "colleges with a value": 6632
+  },
+  "2010": {
+   "table": "SFA0910",
+   "variable": "UFLOANT",
+   "title": "Total amount of Federal student loan aid received by undergraduate students",
+   "colleges with a value": 6852
+  },
+  "2011": {
+   "table": "SFA1011",
+   "variable": "UFLOANT",
+   "title": "Total amount of Federal student loan aid received by undergraduate students",
+   "colleges with a value": 7081
+  },
+  "2012": {
+   "table": "SFA1112",
+   "variable": "UFLOANT",
+   "title": "Total amount of Federal student loan aid received by undergraduate students",
+   "colleges with a value": 7137
+  },
+  "2013": {
+   "table": "SFA1213",
+   "variable": "UFLOANT",
+   "title": "Total amount of Federal student loan aid received by undergraduate students",
+   "colleges with a value": 7156
+  },
+  "2014": {
+   "table": "SFA1314",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 7075
+  },
+  "2015": {
+   "table": "SFA1415",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 6959
+  },
+  "2016": {
+   "table": "SFA1516",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 6544
+  },
+  "2017": {
+   "table": "SFA1617",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 6394
+  },
+  "2018": {
+   "table": "SFA1718",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 6114
+  },
+  "2019": {
+   "table": "SFA1819",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5909
+  },
+  "2020": {
+   "table": "SFA1920",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5859
+  },
+  "2021": {
+   "table": "SFA2021",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5779
+  },
+  "2022": {
+   "table": "SFA2122",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5709
+  },
+  "2023": {
+   "table": "SFA2223",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5653
+  },
+  "2024": {
+   "table": "SFA2324",
+   "variable": "UFLOANT",
+   "title": "Total amount of federal student loans awarded to undergraduate students",
+   "colleges with a value": 5575
+  }
+ },
+ "default rates": {
+  "source": "https://github.com/carmen-speer/RICD-Tell/releases/download/scorecard-raw-data-2026-11-02/College_Scorecard_Raw_Data_11022026.zip",
+  "sha256": "ec66842e4c788a77818b81f23f2262020127d0524cc7132cf96e3207da463ec7",
+  "colleges with a rate, by fiscal year": {
+   "2005": 0,
+   "2006": 0,
+   "2007": 0,
+   "2008": 0,
+   "2009": 0,
+   "2010": 0,
+   "2011": 0,
+   "2012": 7470,
+   "2013": 7730,
+   "2014": 6969,
+   "2015": 6791,
+   "2016": 6629,
+   "2017": 6380,
+   "2018": 6209,
+   "2019": 5943,
+   "2020": 5925,
+   "2021": 5807,
+   "2022": 5802,
+   "2023": 5808,
+   "2024": 5687
+  },
+  "first fiscal year used (three-year rates exist)": 2012
+ },
+ "flags (college-years)": {
+  "endowment spending estimated (4.5% of beginning value)": 19873,
+  "gifts include grants and contracts": 5074,
+  "for-profit state and local student grants reported together (counted as state)": 11822,
+  "depreciation not reported; total expenses include it": 11822,
+  "for-profit gifts include private grants and contracts": 20744,
+  "filed the F3 form this year (sector read from the latest header file)": 1200,
+  "filed the F2 form this year (sector read from the latest header file)": 540,
+  "expenses from total revenues (F3D09)": 4245,
+  "other operating income below zero, set to zero": 165,
+  "student grants exceed exchange and other income (own earned income set to zero)": 271,
+  "filed the F1A form this year (sector read from the latest header file)": 5
+ },
+ "colleges": {
+  "public": 1718,
+  "private nonprofit": 2018,
+  "for-profit": 1827
+ },
+ "deflators": {
+  "HECA": {
+   "url": "https://shef.sheeo.org/wp-content/uploads/2026/04/SHEEO_SHEF_FY25_Data_Adjustments.xlsx",
+   "values (fiscal 2025 = 1)": {
+    "1980": 0.2216,
+    "1981": 0.2421,
+    "1982": 0.261,
+    "1983": 0.2762,
+    "1984": 0.2914,
+    "1985": 0.304,
+    "1986": 0.3155,
+    "1987": 0.3263,
+    "1988": 0.3406,
+    "1989": 0.3568,
+    "1990": 0.3753,
+    "1991": 0.3918,
+    "1992": 0.4045,
+    "1993": 0.4182,
+    "1994": 0.4303,
+    "1995": 0.442,
+    "1996": 0.4535,
+    "1997": 0.4647,
+    "1998": 0.4779,
+    "1999": 0.4906,
+    "2000": 0.5095,
+    "2001": 0.5295,
+    "2002": 0.5455,
+    "2003": 0.5631,
+    "2004": 0.582,
+    "2005": 0.6014,
+    "2006": 0.6207,
+    "2007": 0.6427,
+    "2008": 0.6615,
+    "2009": 0.6718,
+    "2010": 0.682,
+    "2011": 0.6964,
+    "2012": 0.7089,
+    "2013": 0.7219,
+    "2014": 0.7368,
+    "2015": 0.7491,
+    "2016": 0.7619,
+    "2017": 0.7788,
+    "2018": 0.7971,
+    "2019": 0.8153,
+    "2020": 0.8303,
+    "2021": 0.8533,
+    "2022": 0.8973,
+    "2023": 0.9351,
+    "2024": 0.9689,
+    "2025": 1.0
+   },
+   "check against SHEF FY 2025 Table 2.1": {
+    "2015": [
+     0.7491,
+     0.7491
+    ],
+    "2020": [
+     0.8303,
+     0.8303
+    ],
+    "2024": [
+     0.9689,
+     0.9689
+    ]
+   }
+  },
+  "CPI-U": {
+   "2005": 192.10000000000002,
+   "2006": 198.45,
+   "2007": 204.471,
+   "2008": 211.3225,
+   "2009": 214.92000000000002,
+   "2010": 216.2965,
+   "2011": 221.4975,
+   "2012": 227.2665,
+   "2013": 231.2755,
+   "2014": 234.8465,
+   "2015": 236.8765,
+   "2016": 238.512,
+   "2017": 242.5635,
+   "2018": 248.1135,
+   "2019": 253.382,
+   "2020": 257.234,
+   "2021": 264.8905,
+   "2022": 281.8125,
+   "2023": 298.6785,
+   "2024": 309.19550000000004
+  }
+ },
+ "header files used": {
+  "HD2005": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2005.zip",
+   "zip sha256": "b6c9c0e4634f4404d0670c907e22964ea96932eb2cebbc2efb0759fe055ecbb7",
+   "institutions read": 7018
+  },
+  "HD2006": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2006.zip",
+   "zip sha256": "2fe089ae93b3df0085e31ee76471db2cedbc8d2d1d08a6497f460d5cec68cab6",
+   "institutions read": 7052
+  },
+  "HD2007": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2007.zip",
+   "zip sha256": "ee66cd0e6676b63dd051d4469d93ddf9492b1d6a2983105a061d2ddc0ac0717d",
+   "institutions read": 7052
+  },
+  "HD2008": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2008.zip",
+   "zip sha256": "eb760d8fd5fa8591e2e4149af1c1954e52ba9a8aacbb5327d066511ff8d7d25b",
+   "institutions read": 7126
+  },
+  "HD2009": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2009.zip",
+   "zip sha256": "6639ed79d93a4313e0be5830d8250709924811f8dec3fb664a9dea56f7dc1774",
+   "institutions read": 7316
+  },
+  "HD2010": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2010.zip",
+   "zip sha256": "72874b792f3c17c143002261af505340742f361645814f120216bda0ccaddb9c",
+   "institutions read": 7503
+  },
+  "HD2011": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2011.zip",
+   "zip sha256": "cc25e07c20380b1254f3a2d000d118cb1ec920d989a3071058c21ac8732548b6",
+   "institutions read": 7643
+  },
+  "HD2012": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2012.zip",
+   "zip sha256": "8d806d818194ccefdc594204025d4c17610338770a0ff130d28f251eec05691e",
+   "institutions read": 7735
+  },
+  "HD2013": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2013.zip",
+   "zip sha256": "d9690d6c37c1616f5c7e9f5ea845a9a9a72ea06665db2626bfb07c5c5dff809f",
+   "institutions read": 7764
+  },
+  "HD2014": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2014.zip",
+   "zip sha256": "ff890e8305d3576c9ab9a0f3c6837ebce4fe5ce5c0d92374a0773f0a9f4150b8",
+   "institutions read": 7687
+  },
+  "HD2015": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2015.zip",
+   "zip sha256": "17db8753dd1dc404899d8a40fbc4c1eb3d96dd07d06b4b21e6ad994c778351df",
+   "institutions read": 7647
+  },
+  "HD2016": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2016.zip",
+   "zip sha256": "a09e91d3e3b7ef63fb30b5372402f3805c5da1c74959925486036745f2fb664e",
+   "institutions read": 7521
+  },
+  "HD2017": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2017.zip",
+   "zip sha256": "4dbb7905c0436ed97920d4d876e4c598f5f18c2c742dab9972b804b6ee133e57",
+   "institutions read": 7153
+  },
+  "HD2018": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2018.zip",
+   "zip sha256": "4e632bc76441c12e8e42b4e66dd6af99aa332342c4879920c09d7d8317cf9b29",
+   "institutions read": 6857
+  },
+  "HD2019": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2019.zip",
+   "zip sha256": "727cb3484666e5fea8669ce0fb2ad4606ed19531b47cf428d6748072d7e7ab26",
+   "institutions read": 6559
+  },
+  "HD2020": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2020.zip",
+   "zip sha256": "cfbdf04201f4be4ae6f98b3800424b6fffd498ec2932f34d287b3d9f17aa3475",
+   "institutions read": 6440
+  },
+  "HD2021": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2021.zip",
+   "zip sha256": "6ea1a974e2994cfcf066b4910bcdad7b0df6f927e6871f3d55532af94b965389",
+   "institutions read": 6289
+  },
+  "HD2022": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2022.zip",
+   "zip sha256": "e36389b793741bf6886b8d85fa9b42614644162b0d0b1d024a663a9c1865c782",
+   "institutions read": 6256
+  },
+  "HD2023": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2023.zip",
+   "zip sha256": "e11d35af6f50fbe2f51d8ddd5a9d4f49860abbab7d73beae1f8524f13ad8945b",
+   "institutions read": 6163
+  },
+  "HD2024": {
+   "url": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+   "zip sha256": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+   "institutions read": 6072
+  },
+  "HD2025": {
+   "url": "https://nces.ed.gov/ipeds/complete-data-files/HD2025.zip",
+   "zip sha256": "aadad9277a2255c85813b6d206475ddbf8a7330d79cc0236c2ecae685b00f1bf",
+   "institutions read": 5985
+  }
+ },
+ "header files not served": [
+  "HD2026"
+ ],
+ "finance and enrollment files": {
+  "F0405_F1A": 1962,
+  "F0405_F2": 1902,
+  "F0405_F3": 2504,
+  "F0506_F1A": 1971,
+  "F0506_F2": 1896,
+  "F0506_F3": 2577,
+  "F0607_F1A": 1971,
+  "F0607_F2": 1863,
+  "F0607_F3": 2622,
+  "F0708_F1A": 1960,
+  "F0708_F2": 1861,
+  "F0708_F3": 2718,
+  "F0809_F1A": 1973,
+  "F0809_F2": 1871,
+  "F0809_F3": 2798,
+  "F0910_F1A": 2012,
+  "F0910_F2": 1862,
+  "F0910_F3": 3021,
+  "F1011_F1A": 2018,
+  "F1011_F2": 1888,
+  "F1011_F3": 3184,
+  "F1112_F1A": 2004,
+  "F1112_F2": 1878,
+  "F1112_F3": 3246,
+  "F1213_F1A": 1995,
+  "F1213_F2": 1890,
+  "F1213_F3": 3214,
+  "F1314_F1A": 1988,
+  "F1314_F2": 1883,
+  "F1314_F3": 3176,
+  "F1415_F1A": 1986,
+  "F1415_F2": 1922,
+  "F1415_F3": 3020,
+  "F1516_F1A": 1986,
+  "F1516_F2": 1888,
+  "F1516_F3": 2782,
+  "F1617_F1A": 1978,
+  "F1617_F2": 1884,
+  "F1617_F3": 2657,
+  "F1718_F1A": 1964,
+  "F1718_F2": 1849,
+  "F1718_F3": 2379,
+  "F1819_F1A": 1961,
+  "F1819_F2": 1836,
+  "F1819_F3": 2272,
+  "F1920_F1A": 1949,
+  "F1920_F2": 1819,
+  "F1920_F3": 2244,
+  "F2021_F1A": 1946,
+  "F2021_F2": 1805,
+  "F2021_F3": 2173,
+  "F2122_F1A": 1936,
+  "F2122_F2": 1782,
+  "F2122_F3": 2120,
+  "F2223_F1A": 1916,
+  "F2223_F2": 1766,
+  "F2223_F3": 2090,
+  "F2324_F1A": 1911,
+  "F2324_F2": 1750,
+  "F2324_F3": 2046,
+  "EFIA2005": 6673,
+  "EFIA2006": 6715,
+  "EFIA2007": 6720,
+  "EFIA2008": 6868,
+  "EFIA2009": 7000,
+  "EFIA2010": 7246,
+  "EFIA2011": 7479,
+  "EFIA2012": 7544,
+  "EFIA2013": 7514,
+  "EFIA2014": 7429,
+  "EFIA2015": 7322,
+  "EFIA2016": 6951,
+  "EFIA2017": 6785,
+  "EFIA2018": 6562,
+  "EFIA2019": 6272,
+  "EFIA2020": 6169,
+  "EFIA2021": 6086,
+  "EFIA2022": 6036,
+  "EFIA2023": 5959,
+  "EFIA2024": 5861
+ }
+}
