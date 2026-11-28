@@ -1,7 +1,7 @@
 {
  "note": "Item 23f, descriptive. The gap is item 15's frozen gap (total expenses less depreciation, less exchange income, less other operating income), imported unchanged. Contributions are per FTE in fiscal 2024 dollars and add exactly to the change in the gap; a positive contribution widened the gap. Sector decompositions use the same colleges in both windows. HECA is the headline deflator, CPI-U the check.",
  "for-profit note": "For-profit colleges are included from fiscal 2014. Their own earned income in IPEDS includes tuition paid with federal student aid (up to 90% of revenue), so their gap reads lower than a public or private nonprofit college with the same finances would, and is not directly comparable across sectors. They are kept because their spending lines, measured the same way on the same forms from fiscal 2014, are directly comparable, and the sector is where the federal share of revenue is highest; what is lost is comparability of the gap's level across sectors, not of the drivers within the sector. Item 23k moves the federal share out of earned income for every sector.",
- "written at (UTC)": "2026-11-28T04:36:08.757112+00:00",
+ "written at (UTC)": "2026-11-28T05:23:17.252083+00:00",
  "settings": {
   "early window": [
    2005,
@@ -75,32 +75,6 @@
        "administration": {
         "institutional support (headline)": 738.38,
         "administrative layer (institutional plus academic support)": 1557.93
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 20371.51,
-         "late per FTE": 25175.14,
-         "change per FTE": 4803.62,
-         "colleges": 1383
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2685.26,
-         "change per FTE": 2685.26,
-         "colleges": 1383
-        },
-        "interest (natural)": {
-         "early per FTE": 445.92,
-         "late per FTE": 686.28,
-         "change per FTE": 240.36,
-         "colleges": 1383
-        },
-        "all other (natural)": {
-         "early per FTE": 10791.31,
-         "late per FTE": 13031.86,
-         "change per FTE": 2240.55,
-         "colleges": 1383
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1690.47,
@@ -249,32 +223,6 @@
         "institutional support (headline)": 715.12,
         "administrative layer (institutional plus academic support)": 1387.56
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18739.58,
-         "late per FTE": 22320.53,
-         "change per FTE": 3580.96,
-         "colleges": 598
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2517.25,
-         "change per FTE": 2517.25,
-         "colleges": 598
-        },
-        "interest (natural)": {
-         "early per FTE": 422.75,
-         "late per FTE": 611.38,
-         "change per FTE": 188.63,
-         "colleges": 598
-        },
-        "all other (natural)": {
-         "early per FTE": 9888.97,
-         "late per FTE": 11752.69,
-         "change per FTE": 1863.73,
-         "colleges": 598
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1533.41,
         "late per FTE": 2556.39,
@@ -422,32 +370,6 @@
         "institutional support (headline)": 826.35,
         "administrative layer (institutional plus academic support)": 1820.64
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 24117.43,
-         "late per FTE": 30598.53,
-         "change per FTE": 6481.11,
-         "colleges": 299
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2929.05,
-         "change per FTE": 2929.05,
-         "colleges": 299
-        },
-        "interest (natural)": {
-         "early per FTE": 570.78,
-         "late per FTE": 727.0,
-         "change per FTE": 156.22,
-         "colleges": 299
-        },
-        "all other (natural)": {
-         "early per FTE": 12779.66,
-         "late per FTE": 15886.21,
-         "change per FTE": 3106.55,
-         "colleges": 299
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2176.93,
         "late per FTE": 3426.27,
@@ -594,32 +516,6 @@
        "administration": {
         "institutional support (headline)": 671.11,
         "administrative layer (institutional plus academic support)": 1475.52
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 19081.73,
-         "late per FTE": 23446.8,
-         "change per FTE": 4365.06,
-         "colleges": 486
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2659.83,
-         "change per FTE": 2659.83,
-         "colleges": 486
-        },
-        "interest (natural)": {
-         "early per FTE": 361.68,
-         "late per FTE": 743.72,
-         "change per FTE": 382.04,
-         "colleges": 486
-        },
-        "all other (natural)": {
-         "early per FTE": 10154.37,
-         "late per FTE": 11828.28,
-         "change per FTE": 1673.91,
-         "colleges": 486
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1450.5,
@@ -770,32 +666,6 @@
         "institutional support (headline)": 598.58,
         "administrative layer (institutional plus academic support)": 1126.0
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15910.78,
-         "late per FTE": 17772.78,
-         "change per FTE": 1862.0,
-         "colleges": 1336
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2352.28,
-         "change per FTE": 2352.28,
-         "colleges": 1336
-        },
-        "interest (natural)": {
-         "early per FTE": 365.95,
-         "late per FTE": 570.69,
-         "change per FTE": 204.75,
-         "colleges": 1336
-        },
-        "all other (natural)": {
-         "early per FTE": 8392.9,
-         "late per FTE": 8697.28,
-         "change per FTE": 304.37,
-         "colleges": 1336
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1298.01,
         "late per FTE": 2178.67,
@@ -942,32 +812,6 @@
        "administration": {
         "institutional support (headline)": 691.95,
         "administrative layer (institutional plus academic support)": 1167.15
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15837.6,
-         "late per FTE": 17502.03,
-         "change per FTE": 1664.43,
-         "colleges": 584
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2346.54,
-         "change per FTE": 2346.54,
-         "colleges": 584
-        },
-        "interest (natural)": {
-         "early per FTE": 353.73,
-         "late per FTE": 529.87,
-         "change per FTE": 176.14,
-         "colleges": 584
-        },
-        "all other (natural)": {
-         "early per FTE": 8334.68,
-         "late per FTE": 8848.48,
-         "change per FTE": 513.8,
-         "colleges": 584
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1295.81,
@@ -1116,32 +960,6 @@
         "institutional support (headline)": 565.51,
         "administrative layer (institutional plus academic support)": 1218.27
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 17518.94,
-         "late per FTE": 19784.31,
-         "change per FTE": 2265.38,
-         "colleges": 284
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2512.08,
-         "change per FTE": 2512.08,
-         "colleges": 284
-        },
-        "interest (natural)": {
-         "early per FTE": 460.47,
-         "late per FTE": 565.6,
-         "change per FTE": 105.13,
-         "colleges": 284
-        },
-        "all other (natural)": {
-         "early per FTE": 9143.46,
-         "late per FTE": 9387.79,
-         "change per FTE": 244.33,
-         "colleges": 284
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1588.3,
         "late per FTE": 2508.06,
@@ -1288,32 +1106,6 @@
        "administration": {
         "institutional support (headline)": 505.25,
         "administrative layer (institutional plus academic support)": 960.91
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 14556.34,
-         "late per FTE": 16099.24,
-         "change per FTE": 1542.9,
-         "colleges": 468
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2197.3,
-         "change per FTE": 2197.3,
-         "colleges": 468
-        },
-        "interest (natural)": {
-         "early per FTE": 297.26,
-         "late per FTE": 632.97,
-         "change per FTE": 335.71,
-         "colleges": 468
-        },
-        "all other (natural)": {
-         "early per FTE": 7794.02,
-         "late per FTE": 7781.36,
-         "change per FTE": -12.66,
-         "colleges": 468
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1038.31,
@@ -1470,32 +1262,6 @@
         "institutional support (headline)": 1381.22,
         "administrative layer (institutional plus academic support)": 2489.0
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 34415.12,
-         "late per FTE": 43880.26,
-         "change per FTE": 9465.14,
-         "colleges": 1302
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4709.46,
-         "change per FTE": 4709.46,
-         "colleges": 1302
-        },
-        "interest (natural)": {
-         "early per FTE": 1371.05,
-         "late per FTE": 1662.71,
-         "change per FTE": 291.66,
-         "colleges": 1302
-        },
-        "all other (natural)": {
-         "early per FTE": 23030.16,
-         "late per FTE": 23859.32,
-         "change per FTE": 829.16,
-         "colleges": 1302
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3695.04,
         "late per FTE": 4624.87,
@@ -1646,32 +1412,6 @@
        "administration": {
         "institutional support (headline)": 2351.17,
         "administrative layer (institutional plus academic support)": 4405.68
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 32884.19,
-         "late per FTE": 51308.45,
-         "change per FTE": 18424.25,
-         "colleges": 552
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 5256.3,
-         "change per FTE": 5256.3,
-         "colleges": 552
-        },
-        "interest (natural)": {
-         "early per FTE": 1333.59,
-         "late per FTE": 1960.51,
-         "change per FTE": 626.91,
-         "colleges": 552
-        },
-        "all other (natural)": {
-         "early per FTE": 21807.93,
-         "late per FTE": 28288.54,
-         "change per FTE": 6480.61,
-         "colleges": 552
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3434.73,
@@ -1824,32 +1564,6 @@
         "institutional support (headline)": 1740.14,
         "administrative layer (institutional plus academic support)": 2655.44
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18701.97,
-         "late per FTE": 21359.79,
-         "change per FTE": 2657.82,
-         "colleges": 299
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4114.1,
-         "change per FTE": 4114.1,
-         "colleges": 299
-        },
-        "interest (natural)": {
-         "early per FTE": 864.17,
-         "late per FTE": 1197.02,
-         "change per FTE": 332.86,
-         "colleges": 299
-        },
-        "all other (natural)": {
-         "early per FTE": 12923.91,
-         "late per FTE": 11065.95,
-         "change per FTE": -1857.96,
-         "colleges": 299
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1931.36,
         "late per FTE": 2631.65,
@@ -1996,32 +1710,6 @@
        "administration": {
         "institutional support (headline)": 854.38,
         "administrative layer (institutional plus academic support)": 1274.13
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 38448.37,
-         "late per FTE": 43022.94,
-         "change per FTE": 4574.57,
-         "colleges": 451
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4526.04,
-         "change per FTE": 4526.04,
-         "colleges": 451
-        },
-        "interest (natural)": {
-         "early per FTE": 1493.92,
-         "late per FTE": 1578.84,
-         "change per FTE": 84.92,
-         "colleges": 451
-        },
-        "all other (natural)": {
-         "early per FTE": 25768.48,
-         "late per FTE": 23276.22,
-         "change per FTE": -2492.26,
-         "colleges": 451
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 4201.45,
@@ -2176,32 +1864,6 @@
         "institutional support (headline)": 858.07,
         "administrative layer (institutional plus academic support)": 1971.97
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 27130.34,
-         "late per FTE": 30608.64,
-         "change per FTE": 3478.3,
-         "colleges": 1271
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4195.89,
-         "change per FTE": 4195.89,
-         "colleges": 1271
-        },
-        "interest (natural)": {
-         "early per FTE": 1218.43,
-         "late per FTE": 1411.44,
-         "change per FTE": 193.0,
-         "colleges": 1271
-        },
-        "all other (natural)": {
-         "early per FTE": 18873.85,
-         "late per FTE": 16351.1,
-         "change per FTE": -2522.75,
-         "colleges": 1271
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3072.99,
         "late per FTE": 3673.24,
@@ -2352,32 +2014,6 @@
        "administration": {
         "institutional support (headline)": 1172.9,
         "administrative layer (institutional plus academic support)": 3373.87
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 22763.61,
-         "late per FTE": 26605.07,
-         "change per FTE": 3841.46,
-         "colleges": 537
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4034.06,
-         "change per FTE": 4034.06,
-         "colleges": 537
-        },
-        "interest (natural)": {
-         "early per FTE": 1112.18,
-         "late per FTE": 1379.95,
-         "change per FTE": 267.77,
-         "colleges": 537
-        },
-        "all other (natural)": {
-         "early per FTE": 16207.96,
-         "late per FTE": 15457.73,
-         "change per FTE": -750.24,
-         "colleges": 537
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2506.09,
@@ -2530,32 +2166,6 @@
         "institutional support (headline)": 1726.24,
         "administrative layer (institutional plus academic support)": 2639.65
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18732.82,
-         "late per FTE": 21366.0,
-         "change per FTE": 2633.19,
-         "colleges": 298
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4113.79,
-         "change per FTE": 4113.79,
-         "colleges": 298
-        },
-        "interest (natural)": {
-         "early per FTE": 865.74,
-         "late per FTE": 1197.71,
-         "change per FTE": 331.98,
-         "colleges": 298
-        },
-        "all other (natural)": {
-         "early per FTE": 12943.45,
-         "late per FTE": 11071.03,
-         "change per FTE": -1872.43,
-         "colleges": 298
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1935.13,
         "late per FTE": 2633.18,
@@ -2702,32 +2312,6 @@
        "administration": {
         "institutional support (headline)": 519.12,
         "administrative layer (institutional plus academic support)": 955.91
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 31412.5,
-         "late per FTE": 33415.24,
-         "change per FTE": 2002.73,
-         "colleges": 436
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4274.7,
-         "change per FTE": 4274.7,
-         "colleges": 436
-        },
-        "interest (natural)": {
-         "early per FTE": 1353.49,
-         "late per FTE": 1450.27,
-         "change per FTE": 96.78,
-         "colleges": 436
-        },
-        "all other (natural)": {
-         "early per FTE": 21655.29,
-         "late per FTE": 17359.68,
-         "change per FTE": -4295.61,
-         "colleges": 436
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3638.83,
@@ -2880,32 +2464,6 @@
         "institutional support (headline)": -467.01,
         "administrative layer (institutional plus academic support)": -929.27
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7494.9,
-         "late per FTE": 6753.23,
-         "change per FTE": -741.66,
-         "colleges": 551
-        },
-        "plant upkeep": {
-         "early per FTE": 485.72,
-         "late per FTE": 1444.61,
-         "change per FTE": 958.9,
-         "colleges": 551
-        },
-        "interest (natural)": {
-         "early per FTE": 73.36,
-         "late per FTE": 182.53,
-         "change per FTE": 109.17,
-         "colleges": 551
-        },
-        "all other (natural)": {
-         "early per FTE": 7671.65,
-         "late per FTE": 5487.02,
-         "change per FTE": -2184.63,
-         "colleges": 551
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 603.88,
         "late per FTE": 459.15,
@@ -3054,32 +2612,6 @@
        "administration": {
         "institutional support (headline)": -466.67,
         "administrative layer (institutional plus academic support)": -928.78
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7495.09,
-         "late per FTE": 6753.03,
-         "change per FTE": -742.06,
-         "colleges": 550
-        },
-        "plant upkeep": {
-         "early per FTE": 485.44,
-         "late per FTE": 1444.79,
-         "change per FTE": 959.35,
-         "colleges": 550
-        },
-        "interest (natural)": {
-         "early per FTE": 73.38,
-         "late per FTE": 182.54,
-         "change per FTE": 109.16,
-         "colleges": 550
-        },
-        "all other (natural)": {
-         "early per FTE": 7672.25,
-         "late per FTE": 5486.96,
-         "change per FTE": -2185.29,
-         "colleges": 550
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 603.94,
@@ -3234,32 +2766,6 @@
         "institutional support (headline)": 350.92,
         "administrative layer (institutional plus academic support)": 876.61
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 20293.77,
-         "late per FTE": 23425.96,
-         "change per FTE": 3132.18,
-         "colleges": 1413
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2492.23,
-         "change per FTE": 2492.23,
-         "colleges": 1413
-        },
-        "interest (natural)": {
-         "early per FTE": 442.86,
-         "late per FTE": 679.95,
-         "change per FTE": 237.09,
-         "colleges": 1413
-        },
-        "all other (natural)": {
-         "early per FTE": 10734.15,
-         "late per FTE": 10652.37,
-         "change per FTE": -81.78,
-         "colleges": 1413
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1680.86,
         "late per FTE": 2357.73,
@@ -3407,32 +2913,6 @@
         "institutional support (headline)": 307.19,
         "administrative layer (institutional plus academic support)": 805.62
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18697.21,
-         "late per FTE": 21181.75,
-         "change per FTE": 2484.54,
-         "colleges": 605
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2385.47,
-         "change per FTE": 2385.47,
-         "colleges": 605
-        },
-        "interest (natural)": {
-         "early per FTE": 420.88,
-         "late per FTE": 629.84,
-         "change per FTE": 208.96,
-         "colleges": 605
-        },
-        "all other (natural)": {
-         "early per FTE": 9861.78,
-         "late per FTE": 9626.96,
-         "change per FTE": -234.82,
-         "colleges": 605
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1527.1,
         "late per FTE": 2106.23,
@@ -3579,32 +3059,6 @@
        "administration": {
         "institutional support (headline)": 455.72,
         "administrative layer (institutional plus academic support)": 966.75
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 23891.43,
-         "late per FTE": 27917.41,
-         "change per FTE": 4025.98,
-         "colleges": 306
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2831.53,
-         "change per FTE": 2831.53,
-         "colleges": 306
-        },
-        "interest (natural)": {
-         "early per FTE": 564.7,
-         "late per FTE": 739.61,
-         "change per FTE": 174.91,
-         "colleges": 306
-        },
-        "all other (natural)": {
-         "early per FTE": 12642.51,
-         "late per FTE": 12910.93,
-         "change per FTE": 268.42,
-         "colleges": 306
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2152.35,
@@ -3757,32 +3211,6 @@
         "institutional support (headline)": 304.37,
         "administrative layer (institutional plus academic support)": 869.33
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 19070.46,
-         "late per FTE": 22064.92,
-         "change per FTE": 2994.46,
-         "colleges": 502
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2307.95,
-         "change per FTE": 2307.95,
-         "colleges": 502
-        },
-        "interest (natural)": {
-         "early per FTE": 359.25,
-         "late per FTE": 688.2,
-         "change per FTE": 328.94,
-         "colleges": 502
-        },
-        "all other (natural)": {
-         "early per FTE": 10118.74,
-         "late per FTE": 9834.19,
-         "change per FTE": -284.55,
-         "colleges": 502
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1447.65,
         "late per FTE": 2154.96,
@@ -3932,32 +3360,6 @@
         "institutional support (headline)": 248.71,
         "administrative layer (institutional plus academic support)": 586.46
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15870.25,
-         "late per FTE": 17397.91,
-         "change per FTE": 1527.65,
-         "colleges": 1365
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2214.71,
-         "change per FTE": 2214.71,
-         "colleges": 1365
-        },
-        "interest (natural)": {
-         "early per FTE": 363.55,
-         "late per FTE": 586.24,
-         "change per FTE": 222.69,
-         "colleges": 1365
-        },
-        "all other (natural)": {
-         "early per FTE": 8348.83,
-         "late per FTE": 7324.79,
-         "change per FTE": -1024.04,
-         "colleges": 1365
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1292.15,
         "late per FTE": 1802.17,
@@ -4105,32 +3507,6 @@
         "institutional support (headline)": 255.0,
         "administrative layer (institutional plus academic support)": 589.68
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15812.54,
-         "late per FTE": 17117.71,
-         "change per FTE": 1305.17,
-         "colleges": 591
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2211.97,
-         "change per FTE": 2211.97,
-         "colleges": 591
-        },
-        "interest (natural)": {
-         "early per FTE": 352.22,
-         "late per FTE": 556.15,
-         "change per FTE": 203.93,
-         "colleges": 591
-        },
-        "all other (natural)": {
-         "early per FTE": 8316.47,
-         "late per FTE": 7451.15,
-         "change per FTE": -865.31,
-         "colleges": 591
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1290.73,
         "late per FTE": 1766.52,
@@ -4277,32 +3653,6 @@
        "administration": {
         "institutional support (headline)": 270.41,
         "administrative layer (institutional plus academic support)": 657.71
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 17377.58,
-         "late per FTE": 19221.72,
-         "change per FTE": 1844.14,
-         "colleges": 291
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2453.01,
-         "change per FTE": 2453.01,
-         "colleges": 291
-        },
-        "interest (natural)": {
-         "early per FTE": 455.51,
-         "late per FTE": 610.68,
-         "change per FTE": 155.17,
-         "colleges": 291
-        },
-        "all other (natural)": {
-         "early per FTE": 9051.31,
-         "late per FTE": 8046.26,
-         "change per FTE": -1005.05,
-         "colleges": 291
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1570.69,
@@ -4455,32 +3805,6 @@
         "institutional support (headline)": 220.97,
         "administrative layer (institutional plus academic support)": 513.01
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 14578.86,
-         "late per FTE": 16054.2,
-         "change per FTE": 1475.34,
-         "colleges": 483
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 1993.01,
-         "change per FTE": 1993.01,
-         "colleges": 483
-        },
-        "interest (natural)": {
-         "early per FTE": 295.49,
-         "late per FTE": 604.12,
-         "change per FTE": 308.63,
-         "colleges": 483
-        },
-        "all other (natural)": {
-         "early per FTE": 7754.5,
-         "late per FTE": 6470.08,
-         "change per FTE": -1284.42,
-         "colleges": 483
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1040.81,
         "late per FTE": 1530.53,
@@ -4631,32 +3955,6 @@
        "administration": {
         "institutional support (headline)": 874.38,
         "administrative layer (institutional plus academic support)": 1608.03
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 34022.13,
-         "late per FTE": 40746.09,
-         "change per FTE": 6723.96,
-         "colleges": 1376
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4601.88,
-         "change per FTE": 4601.88,
-         "colleges": 1376
-        },
-        "interest (natural)": {
-         "early per FTE": 1357.05,
-         "late per FTE": 1658.76,
-         "change per FTE": 301.71,
-         "colleges": 1376
-        },
-        "all other (natural)": {
-         "early per FTE": 22773.41,
-         "late per FTE": 21132.81,
-         "change per FTE": -1640.6,
-         "colleges": 1376
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3648.92,
@@ -4809,32 +4107,6 @@
         "institutional support (headline)": 918.57,
         "administrative layer (institutional plus academic support)": 2012.51
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 32686.76,
-         "late per FTE": 43498.56,
-         "change per FTE": 10811.8,
-         "colleges": 585
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4728.54,
-         "change per FTE": 4728.54,
-         "colleges": 585
-        },
-        "interest (natural)": {
-         "early per FTE": 1328.8,
-         "late per FTE": 1699.4,
-         "change per FTE": 370.6,
-         "colleges": 585
-        },
-        "all other (natural)": {
-         "early per FTE": 21693.41,
-         "late per FTE": 21971.71,
-         "change per FTE": 278.3,
-         "colleges": 585
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3403.99,
         "late per FTE": 4606.98,
@@ -4986,32 +4258,6 @@
         "institutional support (headline)": 1207.31,
         "administrative layer (institutional plus academic support)": 1957.96
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18101.5,
-         "late per FTE": 20707.65,
-         "change per FTE": 2606.15,
-         "colleges": 335
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3557.44,
-         "change per FTE": 3557.44,
-         "colleges": 335
-        },
-        "interest (natural)": {
-         "early per FTE": 836.37,
-         "late per FTE": 1166.86,
-         "change per FTE": 330.5,
-         "colleges": 335
-        },
-        "all other (natural)": {
-         "early per FTE": 12501.13,
-         "late per FTE": 10235.7,
-         "change per FTE": -2265.43,
-         "colleges": 335
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1874.95,
         "late per FTE": 2589.27,
@@ -5158,32 +4404,6 @@
        "administration": {
         "institutional support (headline)": 745.07,
         "administrative layer (institutional plus academic support)": 1083.97
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 38351.72,
-         "late per FTE": 42206.96,
-         "change per FTE": 3855.24,
-         "colleges": 456
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4687.16,
-         "change per FTE": 4687.16,
-         "colleges": 456
-        },
-        "interest (natural)": {
-         "early per FTE": 1489.14,
-         "late per FTE": 1709.28,
-         "change per FTE": 220.14,
-         "colleges": 456
-        },
-        "all other (natural)": {
-         "early per FTE": 25701.55,
-         "late per FTE": 22285.49,
-         "change per FTE": -3416.06,
-         "colleges": 456
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 4190.61,
@@ -5333,32 +4553,6 @@
        "administration": {
         "institutional support (headline)": 552.95,
         "administrative layer (institutional plus academic support)": 1338.16
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 26876.13,
-         "late per FTE": 29962.13,
-         "change per FTE": 3086.0,
-         "colleges": 1345
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4160.68,
-         "change per FTE": 4160.68,
-         "colleges": 1345
-        },
-        "interest (natural)": {
-         "early per FTE": 1206.97,
-         "late per FTE": 1451.48,
-         "change per FTE": 244.51,
-         "colleges": 1345
-        },
-        "all other (natural)": {
-         "early per FTE": 18694.2,
-         "late per FTE": 15580.97,
-         "change per FTE": -3113.22,
-         "colleges": 1345
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3037.92,
@@ -5511,32 +4705,6 @@
         "institutional support (headline)": 225.83,
         "administrative layer (institutional plus academic support)": 1505.97
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 22755.39,
-         "late per FTE": 25269.71,
-         "change per FTE": 2514.33,
-         "colleges": 570
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3750.55,
-         "change per FTE": 3750.55,
-         "colleges": 570
-        },
-        "interest (natural)": {
-         "early per FTE": 1111.48,
-         "late per FTE": 1264.42,
-         "change per FTE": 152.94,
-         "colleges": 570
-        },
-        "all other (natural)": {
-         "early per FTE": 16197.61,
-         "late per FTE": 13172.36,
-         "change per FTE": -3025.25,
-         "colleges": 570
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2491.42,
         "late per FTE": 3079.32,
@@ -5688,32 +4856,6 @@
         "institutional support (headline)": 1197.59,
         "administrative layer (institutional plus academic support)": 1948.59
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18127.65,
-         "late per FTE": 20725.06,
-         "change per FTE": 2597.41,
-         "colleges": 334
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3559.19,
-         "change per FTE": 3559.19,
-         "colleges": 334
-        },
-        "interest (natural)": {
-         "early per FTE": 837.7,
-         "late per FTE": 1168.57,
-         "change per FTE": 330.87,
-         "colleges": 334
-        },
-        "all other (natural)": {
-         "early per FTE": 12517.6,
-         "late per FTE": 10243.6,
-         "change per FTE": -2274.0,
-         "colleges": 334
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1878.19,
         "late per FTE": 2592.63,
@@ -5860,32 +5002,6 @@
        "administration": {
         "institutional support (headline)": 552.97,
         "administrative layer (institutional plus academic support)": 926.68
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 31338.68,
-         "late per FTE": 33824.14,
-         "change per FTE": 2485.46,
-         "colleges": 441
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4466.3,
-         "change per FTE": 4466.3,
-         "colleges": 441
-        },
-        "interest (natural)": {
-         "early per FTE": 1349.01,
-         "late per FTE": 1592.2,
-         "change per FTE": 243.19,
-         "colleges": 441
-        },
-        "all other (natural)": {
-         "early per FTE": 21601.13,
-         "late per FTE": 17655.77,
-         "change per FTE": -3945.36,
-         "colleges": 441
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3629.64,
@@ -6042,32 +5158,6 @@
         "institutional support (headline)": 18.7,
         "administrative layer (institutional plus academic support)": 57.68
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7307.08,
-         "late per FTE": 7275.7,
-         "change per FTE": -31.38,
-         "colleges": 742
-        },
-        "plant upkeep": {
-         "early per FTE": 509.24,
-         "late per FTE": 1698.73,
-         "change per FTE": 1189.48,
-         "colleges": 742
-        },
-        "interest (natural)": {
-         "early per FTE": 78.24,
-         "late per FTE": 90.97,
-         "change per FTE": 12.73,
-         "colleges": 742
-        },
-        "all other (natural)": {
-         "early per FTE": 7729.55,
-         "late per FTE": 6590.7,
-         "change per FTE": -1138.85,
-         "colleges": 742
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 630.68,
         "late per FTE": 570.82,
@@ -6220,32 +5310,6 @@
        "administration": {
         "institutional support (headline)": 18.5,
         "administrative layer (institutional plus academic support)": 57.68
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7307.19,
-         "late per FTE": 7275.61,
-         "change per FTE": -31.58,
-         "colleges": 741
-        },
-        "plant upkeep": {
-         "early per FTE": 509.02,
-         "late per FTE": 1698.62,
-         "change per FTE": 1189.6,
-         "colleges": 741
-        },
-        "interest (natural)": {
-         "early per FTE": 78.26,
-         "late per FTE": 90.98,
-         "change per FTE": 12.72,
-         "colleges": 741
-        },
-        "all other (natural)": {
-         "early per FTE": 7730.05,
-         "late per FTE": 6591.23,
-         "change per FTE": -1138.82,
-         "colleges": 741
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 630.73,
@@ -6402,32 +5466,6 @@
         "institutional support (headline)": 756.36,
         "administrative layer (institutional plus academic support)": 1591.89
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 20374.28,
-         "late per FTE": 25296.6,
-         "change per FTE": 4922.32,
-         "colleges": 1383
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2698.42,
-         "change per FTE": 2698.42,
-         "colleges": 1383
-        },
-        "interest (natural)": {
-         "early per FTE": 446.02,
-         "late per FTE": 689.72,
-         "change per FTE": 243.71,
-         "colleges": 1383
-        },
-        "all other (natural)": {
-         "early per FTE": 10792.53,
-         "late per FTE": 13098.8,
-         "change per FTE": 2306.26,
-         "colleges": 1383
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1690.7,
         "late per FTE": 2859.92,
@@ -6574,32 +5612,6 @@
        "administration": {
         "institutional support (headline)": 732.82,
         "administrative layer (institutional plus academic support)": 1420.52
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18741.98,
-         "late per FTE": 22428.28,
-         "change per FTE": 3686.3,
-         "colleges": 598
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2529.18,
-         "change per FTE": 2529.18,
-         "colleges": 598
-        },
-        "interest (natural)": {
-         "early per FTE": 422.82,
-         "late per FTE": 614.45,
-         "change per FTE": 191.63,
-         "colleges": 598
-        },
-        "all other (natural)": {
-         "early per FTE": 9890.11,
-         "late per FTE": 11814.46,
-         "change per FTE": 1924.35,
-         "colleges": 598
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1533.6,
@@ -6748,32 +5760,6 @@
         "institutional support (headline)": 844.99,
         "administrative layer (institutional plus academic support)": 1857.52
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 24120.86,
-         "late per FTE": 30745.86,
-         "change per FTE": 6625.0,
-         "colleges": 299
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2943.71,
-         "change per FTE": 2943.71,
-         "colleges": 299
-        },
-        "interest (natural)": {
-         "early per FTE": 570.9,
-         "late per FTE": 730.67,
-         "change per FTE": 159.77,
-         "colleges": 299
-        },
-        "all other (natural)": {
-         "early per FTE": 12780.96,
-         "late per FTE": 15965.54,
-         "change per FTE": 3184.58,
-         "colleges": 299
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2177.22,
         "late per FTE": 3442.94,
@@ -6920,32 +5906,6 @@
        "administration": {
         "institutional support (headline)": 688.81,
         "administrative layer (institutional plus academic support)": 1507.86
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 19084.38,
-         "late per FTE": 23560.15,
-         "change per FTE": 4475.77,
-         "colleges": 486
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2673.09,
-         "change per FTE": 2673.09,
-         "colleges": 486
-        },
-        "interest (natural)": {
-         "early per FTE": 361.79,
-         "late per FTE": 747.42,
-         "change per FTE": 385.63,
-         "colleges": 486
-        },
-        "all other (natural)": {
-         "early per FTE": 10155.63,
-         "late per FTE": 11889.47,
-         "change per FTE": 1733.85,
-         "colleges": 486
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1450.72,
@@ -7096,32 +6056,6 @@
         "institutional support (headline)": 614.93,
         "administrative layer (institutional plus academic support)": 1155.52
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15912.95,
-         "late per FTE": 17859.35,
-         "change per FTE": 1946.4,
-         "colleges": 1336
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2363.78,
-         "change per FTE": 2363.78,
-         "colleges": 1336
-        },
-        "interest (natural)": {
-         "early per FTE": 366.03,
-         "late per FTE": 573.6,
-         "change per FTE": 207.57,
-         "colleges": 1336
-        },
-        "all other (natural)": {
-         "early per FTE": 8393.88,
-         "late per FTE": 8744.32,
-         "change per FTE": 350.44,
-         "colleges": 1336
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1298.18,
         "late per FTE": 2189.27,
@@ -7268,32 +6202,6 @@
        "administration": {
         "institutional support (headline)": 708.83,
         "administrative layer (institutional plus academic support)": 1197.52
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15839.63,
-         "late per FTE": 17587.16,
-         "change per FTE": 1747.53,
-         "colleges": 584
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2357.6,
-         "change per FTE": 2357.6,
-         "colleges": 584
-        },
-        "interest (natural)": {
-         "early per FTE": 353.8,
-         "late per FTE": 532.55,
-         "change per FTE": 178.75,
-         "colleges": 584
-        },
-        "all other (natural)": {
-         "early per FTE": 8335.6,
-         "late per FTE": 8897.08,
-         "change per FTE": 561.48,
-         "colleges": 584
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1295.97,
@@ -7442,32 +6350,6 @@
         "institutional support (headline)": 581.59,
         "administrative layer (institutional plus academic support)": 1248.61
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 17521.55,
-         "late per FTE": 19880.84,
-         "change per FTE": 2359.29,
-         "colleges": 284
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2524.59,
-         "change per FTE": 2524.59,
-         "colleges": 284
-        },
-        "interest (natural)": {
-         "early per FTE": 460.56,
-         "late per FTE": 568.51,
-         "change per FTE": 107.95,
-         "colleges": 284
-        },
-        "all other (natural)": {
-         "early per FTE": 9144.32,
-         "late per FTE": 9437.03,
-         "change per FTE": 292.71,
-         "colleges": 284
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1588.52,
         "late per FTE": 2520.34,
@@ -7614,32 +6496,6 @@
        "administration": {
         "institutional support (headline)": 521.15,
         "administrative layer (institutional plus academic support)": 988.41
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 14558.32,
-         "late per FTE": 16177.69,
-         "change per FTE": 1619.37,
-         "colleges": 468
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2208.37,
-         "change per FTE": 2208.37,
-         "colleges": 468
-        },
-        "interest (natural)": {
-         "early per FTE": 297.35,
-         "late per FTE": 636.21,
-         "change per FTE": 338.86,
-         "colleges": 468
-        },
-        "all other (natural)": {
-         "early per FTE": 7795.17,
-         "late per FTE": 7823.98,
-         "change per FTE": 28.82,
-         "colleges": 468
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1038.46,
@@ -7796,32 +6652,6 @@
         "institutional support (headline)": 1422.88,
         "administrative layer (institutional plus academic support)": 2559.53
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 34419.45,
-         "late per FTE": 44094.32,
-         "change per FTE": 9674.87,
-         "colleges": 1302
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4732.46,
-         "change per FTE": 4732.46,
-         "colleges": 1302
-        },
-        "interest (natural)": {
-         "early per FTE": 1371.3,
-         "late per FTE": 1670.92,
-         "change per FTE": 299.62,
-         "colleges": 1302
-        },
-        "all other (natural)": {
-         "early per FTE": 23033.23,
-         "late per FTE": 23974.43,
-         "change per FTE": 941.2,
-         "colleges": 1302
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3695.51,
         "late per FTE": 4648.33,
@@ -7972,32 +6802,6 @@
        "administration": {
         "institutional support (headline)": 2399.18,
         "administrative layer (institutional plus academic support)": 4484.24
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 32888.51,
-         "late per FTE": 51559.32,
-         "change per FTE": 18670.81,
-         "colleges": 552
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 5282.62,
-         "change per FTE": 5282.62,
-         "colleges": 552
-        },
-        "interest (natural)": {
-         "early per FTE": 1333.86,
-         "late per FTE": 1970.21,
-         "change per FTE": 636.35,
-         "colleges": 552
-        },
-        "all other (natural)": {
-         "early per FTE": 21810.87,
-         "late per FTE": 28422.89,
-         "change per FTE": 6612.02,
-         "colleges": 552
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3435.2,
@@ -8150,32 +6954,6 @@
         "institutional support (headline)": 1781.47,
         "administrative layer (institutional plus academic support)": 2715.71
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18704.29,
-         "late per FTE": 21471.92,
-         "change per FTE": 2767.63,
-         "colleges": 299
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4135.09,
-         "change per FTE": 4135.09,
-         "colleges": 299
-        },
-        "interest (natural)": {
-         "early per FTE": 864.31,
-         "late per FTE": 1203.02,
-         "change per FTE": 338.7,
-         "colleges": 299
-        },
-        "all other (natural)": {
-         "early per FTE": 12925.46,
-         "late per FTE": 11124.94,
-         "change per FTE": -1800.52,
-         "colleges": 299
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1931.58,
         "late per FTE": 2645.34,
@@ -8322,32 +7100,6 @@
        "administration": {
         "institutional support (headline)": 893.16,
         "administrative layer (institutional plus academic support)": 1342.1
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 38453.1,
-         "late per FTE": 43231.65,
-         "change per FTE": 4778.55,
-         "colleges": 451
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4547.74,
-         "change per FTE": 4547.74,
-         "colleges": 451
-        },
-        "interest (natural)": {
-         "early per FTE": 1494.17,
-         "late per FTE": 1586.62,
-         "change per FTE": 92.45,
-         "colleges": 451
-        },
-        "all other (natural)": {
-         "early per FTE": 25771.94,
-         "late per FTE": 23388.87,
-         "change per FTE": -2383.06,
-         "colleges": 451
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 4201.97,
@@ -8502,32 +7254,6 @@
         "institutional support (headline)": 895.33,
         "administrative layer (institutional plus academic support)": 2035.26
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 27133.62,
-         "late per FTE": 30758.88,
-         "change per FTE": 3625.27,
-         "colleges": 1271
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4216.39,
-         "change per FTE": 4216.39,
-         "colleges": 1271
-        },
-        "interest (natural)": {
-         "early per FTE": 1218.66,
-         "late per FTE": 1418.49,
-         "change per FTE": 199.83,
-         "colleges": 1271
-        },
-        "all other (natural)": {
-         "early per FTE": 18876.28,
-         "late per FTE": 16431.78,
-         "change per FTE": -2444.51,
-         "colleges": 1271
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3073.36,
         "late per FTE": 3691.87,
@@ -8678,32 +7404,6 @@
        "administration": {
         "institutional support (headline)": 1210.92,
         "administrative layer (institutional plus academic support)": 3440.18
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 22766.43,
-         "late per FTE": 26738.52,
-         "change per FTE": 3972.09,
-         "colleges": 537
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4054.39,
-         "change per FTE": 4054.39,
-         "colleges": 537
-        },
-        "interest (natural)": {
-         "early per FTE": 1112.41,
-         "late per FTE": 1386.98,
-         "change per FTE": 274.57,
-         "colleges": 537
-        },
-        "all other (natural)": {
-         "early per FTE": 16210.04,
-         "late per FTE": 15533.84,
-         "change per FTE": -676.19,
-         "colleges": 537
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2506.38,
@@ -8856,32 +7556,6 @@
         "institutional support (headline)": 1767.56,
         "administrative layer (institutional plus academic support)": 2699.91
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18735.14,
-         "late per FTE": 21478.17,
-         "change per FTE": 2743.02,
-         "colleges": 298
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4134.77,
-         "change per FTE": 4134.77,
-         "colleges": 298
-        },
-        "interest (natural)": {
-         "early per FTE": 865.88,
-         "late per FTE": 1203.71,
-         "change per FTE": 337.82,
-         "colleges": 298
-        },
-        "all other (natural)": {
-         "early per FTE": 12945.01,
-         "late per FTE": 11130.04,
-         "change per FTE": -1814.98,
-         "colleges": 298
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1935.34,
         "late per FTE": 2646.87,
@@ -9028,32 +7702,6 @@
        "administration": {
         "institutional support (headline)": 555.57,
         "administrative layer (institutional plus academic support)": 1018.24
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 31416.24,
-         "late per FTE": 33577.18,
-         "change per FTE": 2160.93,
-         "colleges": 436
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4295.21,
-         "change per FTE": 4295.21,
-         "colleges": 436
-        },
-        "interest (natural)": {
-         "early per FTE": 1353.73,
-         "late per FTE": 1457.45,
-         "change per FTE": 103.73,
-         "colleges": 436
-        },
-        "all other (natural)": {
-         "early per FTE": 21658.11,
-         "late per FTE": 17444.88,
-         "change per FTE": -4213.24,
-         "colleges": 436
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3639.27,
@@ -9206,32 +7854,6 @@
         "institutional support (headline)": -492.68,
         "administrative layer (institutional plus academic support)": -967.43
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7566.55,
-         "late per FTE": 6787.15,
-         "change per FTE": -779.4,
-         "colleges": 551
-        },
-        "plant upkeep": {
-         "early per FTE": 495.14,
-         "late per FTE": 1451.26,
-         "change per FTE": 956.12,
-         "colleges": 551
-        },
-        "interest (natural)": {
-         "early per FTE": 74.1,
-         "late per FTE": 182.8,
-         "change per FTE": 108.69,
-         "colleges": 551
-        },
-        "all other (natural)": {
-         "early per FTE": 7743.38,
-         "late per FTE": 5515.79,
-         "change per FTE": -2227.59,
-         "colleges": 551
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 609.8,
         "late per FTE": 461.57,
@@ -9380,32 +8002,6 @@
        "administration": {
         "institutional support (headline)": -492.34,
         "administrative layer (institutional plus academic support)": -966.93
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7566.74,
-         "late per FTE": 6786.95,
-         "change per FTE": -779.79,
-         "colleges": 550
-        },
-        "plant upkeep": {
-         "early per FTE": 494.86,
-         "late per FTE": 1451.44,
-         "change per FTE": 956.58,
-         "colleges": 550
-        },
-        "interest (natural)": {
-         "early per FTE": 74.13,
-         "late per FTE": 182.81,
-         "change per FTE": 108.69,
-         "colleges": 550
-        },
-        "all other (natural)": {
-         "early per FTE": 7743.99,
-         "late per FTE": 5515.72,
-         "change per FTE": -2228.27,
-         "colleges": 550
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 609.86,
@@ -9560,32 +8156,6 @@
         "institutional support (headline)": 433.98,
         "administrative layer (institutional plus academic support)": 1037.27
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 20296.53,
-         "late per FTE": 24024.54,
-         "change per FTE": 3728.01,
-         "colleges": 1413
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2555.91,
-         "change per FTE": 2555.91,
-         "colleges": 1413
-        },
-        "interest (natural)": {
-         "early per FTE": 442.95,
-         "late per FTE": 697.33,
-         "change per FTE": 254.38,
-         "colleges": 1413
-        },
-        "all other (natural)": {
-         "early per FTE": 10735.37,
-         "late per FTE": 10924.66,
-         "change per FTE": 189.29,
-         "colleges": 1413
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1681.08,
         "late per FTE": 2418.0,
@@ -9733,32 +8303,6 @@
         "institutional support (headline)": 386.87,
         "administrative layer (institutional plus academic support)": 960.74
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18699.61,
-         "late per FTE": 21722.81,
-         "change per FTE": 3023.19,
-         "colleges": 605
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2446.41,
-         "change per FTE": 2446.41,
-         "colleges": 605
-        },
-        "interest (natural)": {
-         "early per FTE": 420.95,
-         "late per FTE": 645.94,
-         "change per FTE": 224.98,
-         "colleges": 605
-        },
-        "all other (natural)": {
-         "early per FTE": 9862.92,
-         "late per FTE": 9873.01,
-         "change per FTE": 10.09,
-         "colleges": 605
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1527.29,
         "late per FTE": 2160.06,
@@ -9905,32 +8449,6 @@
        "administration": {
         "institutional support (headline)": 543.34,
         "administrative layer (institutional plus academic support)": 1139.84
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 23894.82,
-         "late per FTE": 28631.05,
-         "change per FTE": 4736.23,
-         "colleges": 306
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2903.87,
-         "change per FTE": 2903.87,
-         "colleges": 306
-        },
-        "interest (natural)": {
-         "early per FTE": 564.82,
-         "late per FTE": 758.51,
-         "change per FTE": 193.69,
-         "colleges": 306
-        },
-        "all other (natural)": {
-         "early per FTE": 12643.79,
-         "late per FTE": 13241.07,
-         "change per FTE": 597.28,
-         "colleges": 306
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2152.63,
@@ -10083,32 +8601,6 @@
         "institutional support (headline)": 387.48,
         "administrative layer (institutional plus academic support)": 1025.33
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 19073.1,
-         "late per FTE": 22628.7,
-         "change per FTE": 3555.6,
-         "colleges": 502
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2366.93,
-         "change per FTE": 2366.93,
-         "colleges": 502
-        },
-        "interest (natural)": {
-         "early per FTE": 359.36,
-         "late per FTE": 705.82,
-         "change per FTE": 346.46,
-         "colleges": 502
-        },
-        "all other (natural)": {
-         "early per FTE": 10119.99,
-         "late per FTE": 10085.47,
-         "change per FTE": -34.52,
-         "colleges": 502
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1447.87,
         "late per FTE": 2210.05,
@@ -10258,32 +8750,6 @@
         "institutional support (headline)": 324.06,
         "administrative layer (institutional plus academic support)": 726.67
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15872.42,
-         "late per FTE": 17842.36,
-         "change per FTE": 1969.94,
-         "colleges": 1365
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2271.31,
-         "change per FTE": 2271.31,
-         "colleges": 1365
-        },
-        "interest (natural)": {
-         "early per FTE": 363.63,
-         "late per FTE": 601.23,
-         "change per FTE": 237.61,
-         "colleges": 1365
-        },
-        "all other (natural)": {
-         "early per FTE": 8349.8,
-         "late per FTE": 7511.98,
-         "change per FTE": -837.82,
-         "colleges": 1365
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1292.32,
         "late per FTE": 1848.23,
@@ -10431,32 +8897,6 @@
         "institutional support (headline)": 330.21,
         "administrative layer (institutional plus academic support)": 732.2
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 15814.57,
-         "late per FTE": 17554.93,
-         "change per FTE": 1740.37,
-         "colleges": 591
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2268.47,
-         "change per FTE": 2268.47,
-         "colleges": 591
-        },
-        "interest (natural)": {
-         "early per FTE": 352.29,
-         "late per FTE": 570.37,
-         "change per FTE": 218.08,
-         "colleges": 591
-        },
-        "all other (natural)": {
-         "early per FTE": 8317.38,
-         "late per FTE": 7641.52,
-         "change per FTE": -675.86,
-         "colleges": 591
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1290.89,
         "late per FTE": 1811.67,
@@ -10603,32 +9043,6 @@
        "administration": {
         "institutional support (headline)": 345.27,
         "administrative layer (institutional plus academic support)": 801.61
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 17380.17,
-         "late per FTE": 19712.91,
-         "change per FTE": 2332.74,
-         "colleges": 291
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2515.71,
-         "change per FTE": 2515.71,
-         "colleges": 291
-        },
-        "interest (natural)": {
-         "early per FTE": 455.59,
-         "late per FTE": 626.28,
-         "change per FTE": 170.69,
-         "colleges": 291
-        },
-        "all other (natural)": {
-         "early per FTE": 9052.17,
-         "late per FTE": 8251.98,
-         "change per FTE": -800.19,
-         "colleges": 291
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1570.91,
@@ -10781,32 +9195,6 @@
         "institutional support (headline)": 296.99,
         "administrative layer (institutional plus academic support)": 646.6
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 14580.84,
-         "late per FTE": 16464.27,
-         "change per FTE": 1883.44,
-         "colleges": 483
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 2043.94,
-         "change per FTE": 2043.94,
-         "colleges": 483
-        },
-        "interest (natural)": {
-         "early per FTE": 295.58,
-         "late per FTE": 619.58,
-         "change per FTE": 324.01,
-         "colleges": 483
-        },
-        "all other (natural)": {
-         "early per FTE": 7755.64,
-         "late per FTE": 6635.41,
-         "change per FTE": -1120.22,
-         "colleges": 483
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1040.96,
         "late per FTE": 1569.64,
@@ -10957,32 +9345,6 @@
        "administration": {
         "institutional support (headline)": 1087.19,
         "administrative layer (institutional plus academic support)": 1964.66
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 34026.42,
-         "late per FTE": 41788.09,
-         "change per FTE": 7761.67,
-         "colleges": 1376
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4719.46,
-         "change per FTE": 4719.46,
-         "colleges": 1376
-        },
-        "interest (natural)": {
-         "early per FTE": 1357.29,
-         "late per FTE": 1701.17,
-         "change per FTE": 343.87,
-         "colleges": 1376
-        },
-        "all other (natural)": {
-         "early per FTE": 22776.44,
-         "late per FTE": 21673.37,
-         "change per FTE": -1103.07,
-         "colleges": 1376
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3649.39,
@@ -11135,32 +9497,6 @@
         "institutional support (headline)": 1139.48,
         "administrative layer (institutional plus academic support)": 2370.24
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 32691.05,
-         "late per FTE": 44610.65,
-         "change per FTE": 11919.6,
-         "colleges": 585
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4849.32,
-         "change per FTE": 4849.32,
-         "colleges": 585
-        },
-        "interest (natural)": {
-         "early per FTE": 1329.08,
-         "late per FTE": 1742.87,
-         "change per FTE": 413.79,
-         "colleges": 585
-        },
-        "all other (natural)": {
-         "early per FTE": 21696.32,
-         "late per FTE": 22533.72,
-         "change per FTE": 837.4,
-         "colleges": 585
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3404.46,
         "late per FTE": 4724.73,
@@ -11312,32 +9648,6 @@
         "institutional support (headline)": 1401.88,
         "administrative layer (institutional plus academic support)": 2244.11
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18103.7,
-         "late per FTE": 21236.26,
-         "change per FTE": 3132.56,
-         "colleges": 335
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3648.24,
-         "change per FTE": 3648.24,
-         "colleges": 335
-        },
-        "interest (natural)": {
-         "early per FTE": 836.5,
-         "late per FTE": 1196.66,
-         "change per FTE": 360.16,
-         "colleges": 335
-        },
-        "all other (natural)": {
-         "early per FTE": 12502.57,
-         "late per FTE": 10497.01,
-         "change per FTE": -2005.56,
-         "colleges": 335
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1875.15,
         "late per FTE": 2655.36,
@@ -11484,32 +9794,6 @@
        "administration": {
         "institutional support (headline)": 956.16,
         "administrative layer (institutional plus academic support)": 1450.4
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 38356.46,
-         "late per FTE": 43286.62,
-         "change per FTE": 4930.16,
-         "colleges": 456
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4806.97,
-         "change per FTE": 4806.97,
-         "colleges": 456
-        },
-        "interest (natural)": {
-         "early per FTE": 1489.39,
-         "late per FTE": 1752.98,
-         "change per FTE": 263.59,
-         "colleges": 456
-        },
-        "all other (natural)": {
-         "early per FTE": 25705.01,
-         "late per FTE": 22855.61,
-         "change per FTE": -2849.4,
-         "colleges": 456
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 4191.13,
@@ -11659,32 +9943,6 @@
        "administration": {
         "institutional support (headline)": 745.15,
         "administrative layer (institutional plus academic support)": 1660.5
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 26879.39,
-         "late per FTE": 30728.09,
-         "change per FTE": 3848.7,
-         "colleges": 1345
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4266.99,
-         "change per FTE": 4266.99,
-         "colleges": 1345
-        },
-        "interest (natural)": {
-         "early per FTE": 1207.19,
-         "late per FTE": 1488.59,
-         "change per FTE": 281.4,
-         "colleges": 1345
-        },
-        "all other (natural)": {
-         "early per FTE": 18696.6,
-         "late per FTE": 15979.31,
-         "change per FTE": -2717.29,
-         "colleges": 1345
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3038.29,
@@ -11837,32 +10095,6 @@
         "institutional support (headline)": 400.16,
         "administrative layer (institutional plus academic support)": 1806.61
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 22758.21,
-         "late per FTE": 25915.26,
-         "change per FTE": 3157.05,
-         "colleges": 570
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3846.31,
-         "change per FTE": 3846.31,
-         "colleges": 570
-        },
-        "interest (natural)": {
-         "early per FTE": 1111.71,
-         "late per FTE": 1296.77,
-         "change per FTE": 185.05,
-         "colleges": 570
-        },
-        "all other (natural)": {
-         "early per FTE": 16199.66,
-         "late per FTE": 13508.98,
-         "change per FTE": -2690.68,
-         "colleges": 570
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 2491.71,
         "late per FTE": 3157.99,
@@ -12014,32 +10246,6 @@
         "institutional support (headline)": 1392.16,
         "administrative layer (institutional plus academic support)": 2234.84
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 18129.85,
-         "late per FTE": 21254.11,
-         "change per FTE": 3124.26,
-         "colleges": 334
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 3650.03,
-         "change per FTE": 3650.03,
-         "colleges": 334
-        },
-        "interest (natural)": {
-         "early per FTE": 837.84,
-         "late per FTE": 1198.42,
-         "change per FTE": 360.58,
-         "colleges": 334
-        },
-        "all other (natural)": {
-         "early per FTE": 12519.04,
-         "late per FTE": 10505.11,
-         "change per FTE": -2013.93,
-         "colleges": 334
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 1878.39,
         "late per FTE": 2658.81,
@@ -12186,32 +10392,6 @@
        "administration": {
         "institutional support (headline)": 754.04,
         "administrative layer (institutional plus academic support)": 1265.82
-       },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 31342.43,
-         "late per FTE": 34689.18,
-         "change per FTE": 3346.74,
-         "colleges": 441
-        },
-        "plant upkeep": {
-         "early per FTE": 0.0,
-         "late per FTE": 4580.47,
-         "change per FTE": 4580.47,
-         "colleges": 441
-        },
-        "interest (natural)": {
-         "early per FTE": 1349.25,
-         "late per FTE": 1632.9,
-         "change per FTE": 283.66,
-         "colleges": 441
-        },
-        "all other (natural)": {
-         "early per FTE": 21603.95,
-         "late per FTE": 18107.28,
-         "change per FTE": -3496.68,
-         "colleges": 441
-        }
        },
        "memo: depreciation, not in the gap": {
         "early per FTE": 3630.09,
@@ -12368,32 +10548,6 @@
         "institutional support (headline)": 103.94,
         "administrative layer (institutional plus academic support)": 173.88
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7376.3,
-         "late per FTE": 7461.37,
-         "change per FTE": 85.07,
-         "colleges": 742
-        },
-        "plant upkeep": {
-         "early per FTE": 519.13,
-         "late per FTE": 1742.04,
-         "change per FTE": 1222.92,
-         "colleges": 742
-        },
-        "interest (natural)": {
-         "early per FTE": 79.0,
-         "late per FTE": 93.28,
-         "change per FTE": 14.28,
-         "colleges": 742
-        },
-        "all other (natural)": {
-         "early per FTE": 7800.49,
-         "late per FTE": 6758.61,
-         "change per FTE": -1041.88,
-         "colleges": 742
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 636.72,
         "late per FTE": 585.36,
@@ -12547,32 +10701,6 @@
         "institutional support (headline)": 103.73,
         "administrative layer (institutional plus academic support)": 173.88
        },
-       "people against plant (natural classes; colleges reporting them)": {
-        "people (salaries and benefits)": {
-         "early per FTE": 7376.41,
-         "late per FTE": 7461.28,
-         "change per FTE": 84.87,
-         "colleges": 741
-        },
-        "plant upkeep": {
-         "early per FTE": 518.9,
-         "late per FTE": 1741.93,
-         "change per FTE": 1223.03,
-         "colleges": 741
-        },
-        "interest (natural)": {
-         "early per FTE": 79.02,
-         "late per FTE": 93.29,
-         "change per FTE": 14.28,
-         "colleges": 741
-        },
-        "all other (natural)": {
-         "early per FTE": 7801.0,
-         "late per FTE": 6759.15,
-         "change per FTE": -1041.85,
-         "colleges": 741
-        }
-       },
        "memo: depreciation, not in the gap": {
         "early per FTE": 636.77,
         "late per FTE": 585.37,
@@ -12676,6 +10804,1992 @@
          "change per FTE": 44.75,
          "colleges": 741
         }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "people against plant (natural classes, fiscal 2016-2018 against 2022-2024)": {
+  "HECA": {
+   "public": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1421,
+      "change per FTE": {
+       "people (salaries and benefits)": 2084.07,
+       "plant upkeep": 208.15,
+       "interest (natural)": 15.96,
+       "all other (natural)": 2478.29,
+       "gap": -299.72
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 22933.6,
+        "late per FTE": 25017.67,
+        "change per FTE": 2084.07,
+        "colleges": 1421
+       },
+       "plant upkeep": {
+        "early per FTE": 2472.17,
+        "late per FTE": 2680.31,
+        "change per FTE": 208.15,
+        "colleges": 1421
+       },
+       "interest (natural)": {
+        "early per FTE": 664.12,
+        "late per FTE": 680.08,
+        "change per FTE": 15.96,
+        "colleges": 1421
+       },
+       "all other (natural)": {
+        "early per FTE": 10435.62,
+        "late per FTE": 12913.91,
+        "change per FTE": 2478.29,
+        "colleges": 1421
+       },
+       "gap": {
+        "early per FTE": 8527.11,
+        "late per FTE": 8227.39,
+        "change per FTE": -299.72,
+        "colleges": 1421
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 624,
+      "change per FTE": {
+       "people (salaries and benefits)": 1319.19,
+       "plant upkeep": 160.61,
+       "interest (natural)": -12.47,
+       "all other (natural)": 2174.56,
+       "gap": -68.83
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 20916.95,
+        "late per FTE": 22236.13,
+        "change per FTE": 1319.19,
+        "colleges": 624
+       },
+       "plant upkeep": {
+        "early per FTE": 2365.03,
+        "late per FTE": 2525.64,
+        "change per FTE": 160.61,
+        "colleges": 624
+       },
+       "interest (natural)": {
+        "early per FTE": 615.27,
+        "late per FTE": 602.8,
+        "change per FTE": -12.47,
+        "colleges": 624
+       },
+       "all other (natural)": {
+        "early per FTE": 9433.83,
+        "late per FTE": 11608.39,
+        "change per FTE": 2174.56,
+        "colleges": 624
+       },
+       "gap": {
+        "early per FTE": 8177.79,
+        "late per FTE": 8108.96,
+        "change per FTE": -68.83,
+        "colleges": 624
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 304,
+      "change per FTE": {
+       "people (salaries and benefits)": 2836.92,
+       "plant upkeep": 73.39,
+       "interest (natural)": -28.47,
+       "all other (natural)": 3041.28,
+       "gap": -311.26
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 27414.17,
+        "late per FTE": 30251.1,
+        "change per FTE": 2836.92,
+        "colleges": 304
+       },
+       "plant upkeep": {
+        "early per FTE": 2832.37,
+        "late per FTE": 2905.76,
+        "change per FTE": 73.39,
+        "colleges": 304
+       },
+       "interest (natural)": {
+        "early per FTE": 749.08,
+        "late per FTE": 720.61,
+        "change per FTE": -28.47,
+        "colleges": 304
+       },
+       "all other (natural)": {
+        "early per FTE": 12663.02,
+        "late per FTE": 15704.3,
+        "change per FTE": 3041.28,
+        "colleges": 304
+       },
+       "gap": {
+        "early per FTE": 7152.09,
+        "late per FTE": 6840.82,
+        "change per FTE": -311.26,
+        "colleges": 304
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 493,
+      "change per FTE": {
+       "people (salaries and benefits)": 2017.83,
+       "plant upkeep": 381.03,
+       "interest (natural)": 93.6,
+       "all other (natural)": 2150.14,
+       "gap": -464.3
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 21413.58,
+        "late per FTE": 23431.42,
+        "change per FTE": 2017.83,
+        "colleges": 493
+       },
+       "plant upkeep": {
+        "early per FTE": 2277.86,
+        "late per FTE": 2658.89,
+        "change per FTE": 381.03,
+        "colleges": 493
+       },
+       "interest (natural)": {
+        "early per FTE": 649.2,
+        "late per FTE": 742.8,
+        "change per FTE": 93.6,
+        "colleges": 493
+       },
+       "all other (natural)": {
+        "early per FTE": 9679.03,
+        "late per FTE": 11829.16,
+        "change per FTE": 2150.14,
+        "colleges": 493
+       },
+       "gap": {
+        "early per FTE": 10263.24,
+        "late per FTE": 9798.94,
+        "change per FTE": -464.3,
+        "colleges": 493
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1372,
+      "change per FTE": {
+       "people (salaries and benefits)": 587.89,
+       "plant upkeep": 159.79,
+       "interest (natural)": -7.24,
+       "all other (natural)": 1376.62,
+       "gap": -32.95
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 17112.12,
+        "late per FTE": 17700.01,
+        "change per FTE": 587.89,
+        "colleges": 1372
+       },
+       "plant upkeep": {
+        "early per FTE": 2189.47,
+        "late per FTE": 2349.26,
+        "change per FTE": 159.79,
+        "colleges": 1372
+       },
+       "interest (natural)": {
+        "early per FTE": 573.49,
+        "late per FTE": 566.25,
+        "change per FTE": -7.24,
+        "colleges": 1372
+       },
+       "all other (natural)": {
+        "early per FTE": 7278.32,
+        "late per FTE": 8654.94,
+        "change per FTE": 1376.62,
+        "colleges": 1372
+       },
+       "gap": {
+        "early per FTE": 7969.06,
+        "late per FTE": 7936.11,
+        "change per FTE": -32.95,
+        "colleges": 1372
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 609,
+      "change per FTE": {
+       "people (salaries and benefits)": 579.85,
+       "plant upkeep": 160.88,
+       "interest (natural)": -20.26,
+       "all other (natural)": 1356.81,
+       "gap": 71.89
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 16848.02,
+        "late per FTE": 17427.87,
+        "change per FTE": 579.85,
+        "colleges": 609
+       },
+       "plant upkeep": {
+        "early per FTE": 2190.07,
+        "late per FTE": 2350.95,
+        "change per FTE": 160.88,
+        "colleges": 609
+       },
+       "interest (natural)": {
+        "early per FTE": 544.37,
+        "late per FTE": 524.11,
+        "change per FTE": -20.26,
+        "colleges": 609
+       },
+       "all other (natural)": {
+        "early per FTE": 7412.83,
+        "late per FTE": 8769.65,
+        "change per FTE": 1356.81,
+        "colleges": 609
+       },
+       "gap": {
+        "early per FTE": 7842.36,
+        "late per FTE": 7914.25,
+        "change per FTE": 71.89,
+        "colleges": 609
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 289,
+      "change per FTE": {
+       "people (salaries and benefits)": 544.06,
+       "plant upkeep": 69.89,
+       "interest (natural)": -60.39,
+       "all other (natural)": 1346.97,
+       "gap": -2.32
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 19053.58,
+        "late per FTE": 19597.64,
+        "change per FTE": 544.06,
+        "colleges": 289
+       },
+       "plant upkeep": {
+        "early per FTE": 2423.76,
+        "late per FTE": 2493.64,
+        "change per FTE": 69.89,
+        "colleges": 289
+       },
+       "interest (natural)": {
+        "early per FTE": 621.84,
+        "late per FTE": 561.45,
+        "change per FTE": -60.39,
+        "colleges": 289
+       },
+       "all other (natural)": {
+        "early per FTE": 7959.14,
+        "late per FTE": 9306.12,
+        "change per FTE": 1346.97,
+        "colleges": 289
+       },
+       "gap": {
+        "early per FTE": 7333.11,
+        "late per FTE": 7330.8,
+        "change per FTE": -2.32,
+        "colleges": 289
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 474,
+      "change per FTE": {
+       "people (salaries and benefits)": 451.9,
+       "plant upkeep": 225.79,
+       "interest (natural)": 62.54,
+       "all other (natural)": 1355.59,
+       "gap": -139.77
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 15683.37,
+        "late per FTE": 16135.27,
+        "change per FTE": 451.9,
+        "colleges": 474
+       },
+       "plant upkeep": {
+        "early per FTE": 1972.37,
+        "late per FTE": 2198.16,
+        "change per FTE": 225.79,
+        "colleges": 474
+       },
+       "interest (natural)": {
+        "early per FTE": 568.92,
+        "late per FTE": 631.46,
+        "change per FTE": 62.54,
+        "colleges": 474
+       },
+       "all other (natural)": {
+        "early per FTE": 6464.75,
+        "late per FTE": 7820.34,
+        "change per FTE": 1355.59,
+        "colleges": 474
+       },
+       "gap": {
+        "early per FTE": 8730.43,
+        "late per FTE": 8590.66,
+        "change per FTE": -139.77,
+        "colleges": 474
+       }
+      }
+     }
+    }
+   },
+   "private nonprofit": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1468,
+      "change per FTE": {
+       "people (salaries and benefits)": 2770.38,
+       "plant upkeep": -16.17,
+       "interest (natural)": -17.89,
+       "all other (natural)": 2510.99,
+       "gap": 1312.76
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 38835.82,
+        "late per FTE": 41606.2,
+        "change per FTE": 2770.38,
+        "colleges": 1468
+       },
+       "plant upkeep": {
+        "early per FTE": 4553.02,
+        "late per FTE": 4536.85,
+        "change per FTE": -16.17,
+        "colleges": 1468
+       },
+       "interest (natural)": {
+        "early per FTE": 1600.97,
+        "late per FTE": 1583.08,
+        "change per FTE": -17.89,
+        "colleges": 1468
+       },
+       "all other (natural)": {
+        "early per FTE": 20190.56,
+        "late per FTE": 22701.55,
+        "change per FTE": 2510.99,
+        "colleges": 1468
+       },
+       "gap": {
+        "early per FTE": 5616.38,
+        "late per FTE": 6929.14,
+        "change per FTE": 1312.76,
+        "colleges": 1468
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 626,
+      "change per FTE": {
+       "people (salaries and benefits)": 5888.58,
+       "plant upkeep": 244.78,
+       "interest (natural)": 222.87,
+       "all other (natural)": 5058.45,
+       "gap": 2968.88
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 38931.22,
+        "late per FTE": 44819.8,
+        "change per FTE": 5888.58,
+        "colleges": 626
+       },
+       "plant upkeep": {
+        "early per FTE": 4555.58,
+        "late per FTE": 4800.36,
+        "change per FTE": 244.78,
+        "colleges": 626
+       },
+       "interest (natural)": {
+        "early per FTE": 1512.4,
+        "late per FTE": 1735.27,
+        "change per FTE": 222.87,
+        "colleges": 626
+       },
+       "all other (natural)": {
+        "early per FTE": 19670.41,
+        "late per FTE": 24728.86,
+        "change per FTE": 5058.45,
+        "colleges": 626
+       },
+       "gap": {
+        "early per FTE": 6794.77,
+        "late per FTE": 9763.64,
+        "change per FTE": 2968.88,
+        "colleges": 626
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 363,
+      "change per FTE": {
+       "people (salaries and benefits)": -774.07,
+       "plant upkeep": 298.26,
+       "interest (natural)": -62.13,
+       "all other (natural)": -363.25,
+       "gap": 770.39
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 20291.34,
+        "late per FTE": 19517.27,
+        "change per FTE": -774.07,
+        "colleges": 363
+       },
+       "plant upkeep": {
+        "early per FTE": 3426.4,
+        "late per FTE": 3724.66,
+        "change per FTE": 298.26,
+        "colleges": 363
+       },
+       "interest (natural)": {
+        "early per FTE": 1136.62,
+        "late per FTE": 1074.49,
+        "change per FTE": -62.13,
+        "colleges": 363
+       },
+       "all other (natural)": {
+        "early per FTE": 11062.81,
+        "late per FTE": 10699.56,
+        "change per FTE": -363.25,
+        "colleges": 363
+       },
+       "gap": {
+        "early per FTE": 7964.67,
+        "late per FTE": 8735.06,
+        "change per FTE": 770.39,
+        "colleges": 363
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 479,
+      "change per FTE": {
+       "people (salaries and benefits)": 1175.04,
+       "plant upkeep": -223.13,
+       "interest (natural)": -157.88,
+       "all other (natural)": 1292.7,
+       "gap": 639.7
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 41689.83,
+        "late per FTE": 42864.87,
+        "change per FTE": 1175.04,
+        "colleges": 479
+       },
+       "plant upkeep": {
+        "early per FTE": 4728.39,
+        "late per FTE": 4505.26,
+        "change per FTE": -223.13,
+        "colleges": 479
+       },
+       "interest (natural)": {
+        "early per FTE": 1728.05,
+        "late per FTE": 1570.17,
+        "change per FTE": -157.88,
+        "colleges": 479
+       },
+       "all other (natural)": {
+        "early per FTE": 21942.07,
+        "late per FTE": 23234.78,
+        "change per FTE": 1292.7,
+        "colleges": 479
+       },
+       "gap": {
+        "early per FTE": 4527.06,
+        "late per FTE": 5166.76,
+        "change per FTE": 639.7,
+        "colleges": 479
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1434,
+      "change per FTE": {
+       "people (salaries and benefits)": 200.06,
+       "plant upkeep": -70.64,
+       "interest (natural)": -51.88,
+       "all other (natural)": 471.52,
+       "gap": 1015.04
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 28913.22,
+        "late per FTE": 29113.28,
+        "change per FTE": 200.06,
+        "colleges": 1434
+       },
+       "plant upkeep": {
+        "early per FTE": 4118.27,
+        "late per FTE": 4047.63,
+        "change per FTE": -70.64,
+        "colleges": 1434
+       },
+       "interest (natural)": {
+        "early per FTE": 1396.41,
+        "late per FTE": 1344.53,
+        "change per FTE": -51.88,
+        "colleges": 1434
+       },
+       "all other (natural)": {
+        "early per FTE": 15171.52,
+        "late per FTE": 15643.04,
+        "change per FTE": 471.52,
+        "colleges": 1434
+       },
+       "gap": {
+        "early per FTE": 5215.28,
+        "late per FTE": 6230.32,
+        "change per FTE": 1015.04,
+        "colleges": 1434
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 608,
+      "change per FTE": {
+       "people (salaries and benefits)": 234.81,
+       "plant upkeep": 57.04,
+       "interest (natural)": 123.48,
+       "all other (natural)": 1459.12,
+       "gap": 1799.16
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 23274.52,
+        "late per FTE": 23509.33,
+        "change per FTE": 234.81,
+        "colleges": 608
+       },
+       "plant upkeep": {
+        "early per FTE": 3672.97,
+        "late per FTE": 3730.0,
+        "change per FTE": 57.04,
+        "colleges": 608
+       },
+       "interest (natural)": {
+        "early per FTE": 1104.09,
+        "late per FTE": 1227.57,
+        "change per FTE": 123.48,
+        "colleges": 608
+       },
+       "all other (natural)": {
+        "early per FTE": 12185.24,
+        "late per FTE": 13644.36,
+        "change per FTE": 1459.12,
+        "colleges": 608
+       },
+       "gap": {
+        "early per FTE": 4740.26,
+        "late per FTE": 6539.42,
+        "change per FTE": 1799.16,
+        "colleges": 608
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 362,
+      "change per FTE": {
+       "people (salaries and benefits)": -793.07,
+       "plant upkeep": 294.74,
+       "interest (natural)": -63.53,
+       "all other (natural)": -372.71,
+       "gap": 757.58
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 20314.29,
+        "late per FTE": 19521.22,
+        "change per FTE": -793.07,
+        "colleges": 362
+       },
+       "plant upkeep": {
+        "early per FTE": 3429.4,
+        "late per FTE": 3724.14,
+        "change per FTE": 294.74,
+        "colleges": 362
+       },
+       "interest (natural)": {
+        "early per FTE": 1138.51,
+        "late per FTE": 1074.98,
+        "change per FTE": -63.53,
+        "colleges": 362
+       },
+       "all other (natural)": {
+        "early per FTE": 11076.26,
+        "late per FTE": 10703.55,
+        "change per FTE": -372.71,
+        "colleges": 362
+       },
+       "gap": {
+        "early per FTE": 7977.96,
+        "late per FTE": 8735.53,
+        "change per FTE": 757.58,
+        "colleges": 362
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 464,
+      "change per FTE": {
+       "people (salaries and benefits)": -337.7,
+       "plant upkeep": -239.56,
+       "interest (natural)": -169.07,
+       "all other (natural)": -249.29,
+       "gap": 679.43
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 33652.42,
+        "late per FTE": 33314.72,
+        "change per FTE": -337.7,
+        "colleges": 464
+       },
+       "plant upkeep": {
+        "early per FTE": 4494.15,
+        "late per FTE": 4254.59,
+        "change per FTE": -239.56,
+        "colleges": 464
+       },
+       "interest (natural)": {
+        "early per FTE": 1611.11,
+        "late per FTE": 1442.04,
+        "change per FTE": -169.07,
+        "colleges": 464
+       },
+       "all other (natural)": {
+        "early per FTE": 17605.75,
+        "late per FTE": 17356.46,
+        "change per FTE": -249.29,
+        "colleges": 464
+       },
+       "gap": {
+        "early per FTE": 5039.4,
+        "late per FTE": 5718.83,
+        "change per FTE": 679.43,
+        "colleges": 464
+       }
+      }
+     }
+    }
+   },
+   "for-profit": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 581,
+      "change per FTE": {
+       "people (salaries and benefits)": -669.18,
+       "plant upkeep": -155.94,
+       "interest (natural)": 90.68,
+       "all other (natural)": -1479.83,
+       "gap": -616.3
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 7414.25,
+        "late per FTE": 6745.07,
+        "change per FTE": -669.18,
+        "colleges": 581
+       },
+       "plant upkeep": {
+        "early per FTE": 1593.07,
+        "late per FTE": 1437.13,
+        "change per FTE": -155.94,
+        "colleges": 581
+       },
+       "interest (natural)": {
+        "early per FTE": 87.5,
+        "late per FTE": 178.18,
+        "change per FTE": 90.68,
+        "colleges": 581
+       },
+       "all other (natural)": {
+        "early per FTE": 6946.68,
+        "late per FTE": 5466.85,
+        "change per FTE": -1479.83,
+        "colleges": 581
+       },
+       "gap": {
+        "early per FTE": -345.31,
+        "late per FTE": -961.61,
+        "change per FTE": -616.3,
+        "colleges": 581
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 580,
+      "change per FTE": {
+       "people (salaries and benefits)": -669.15,
+       "plant upkeep": -155.35,
+       "interest (natural)": 90.67,
+       "all other (natural)": -1480.82,
+       "gap": -617.27
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 7414.02,
+        "late per FTE": 6744.87,
+        "change per FTE": -669.15,
+        "colleges": 580
+       },
+       "plant upkeep": {
+        "early per FTE": 1592.65,
+        "late per FTE": 1437.3,
+        "change per FTE": -155.35,
+        "colleges": 580
+       },
+       "interest (natural)": {
+        "early per FTE": 87.52,
+        "late per FTE": 178.19,
+        "change per FTE": 90.67,
+        "colleges": 580
+       },
+       "all other (natural)": {
+        "early per FTE": 6947.6,
+        "late per FTE": 5466.78,
+        "change per FTE": -1480.82,
+        "colleges": 580
+       },
+       "gap": {
+        "early per FTE": -344.49,
+        "late per FTE": -961.75,
+        "change per FTE": -617.27,
+        "colleges": 580
+       }
+      }
+     }
+    }
+   }
+  },
+  "CPI-U": {
+   "public": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1421,
+      "change per FTE": {
+       "people (salaries and benefits)": 1674.63,
+       "plant upkeep": 164.22,
+       "interest (natural)": 4.04,
+       "all other (natural)": 2303.56,
+       "gap": -464.45
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 23463.73,
+        "late per FTE": 25138.36,
+        "change per FTE": 1674.63,
+        "colleges": 1421
+       },
+       "plant upkeep": {
+        "early per FTE": 2529.26,
+        "late per FTE": 2693.48,
+        "change per FTE": 164.22,
+        "colleges": 1421
+       },
+       "interest (natural)": {
+        "early per FTE": 679.45,
+        "late per FTE": 683.48,
+        "change per FTE": 4.04,
+        "colleges": 1421
+       },
+       "all other (natural)": {
+        "early per FTE": 10676.81,
+        "late per FTE": 12980.37,
+        "change per FTE": 2303.56,
+        "colleges": 1421
+       },
+       "gap": {
+        "early per FTE": 8724.59,
+        "late per FTE": 8260.14,
+        "change per FTE": -464.45,
+        "colleges": 1421
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 624,
+      "change per FTE": {
+       "people (salaries and benefits)": 943.0,
+       "plant upkeep": 117.96,
+       "interest (natural)": -23.64,
+       "all other (natural)": 2017.82,
+       "gap": -227.16
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 21400.53,
+        "late per FTE": 22343.53,
+        "change per FTE": 943.0,
+        "colleges": 624
+       },
+       "plant upkeep": {
+        "early per FTE": 2419.72,
+        "late per FTE": 2537.68,
+        "change per FTE": 117.96,
+        "colleges": 624
+       },
+       "interest (natural)": {
+        "early per FTE": 629.47,
+        "late per FTE": 605.83,
+        "change per FTE": -23.64,
+        "colleges": 624
+       },
+       "all other (natural)": {
+        "early per FTE": 9651.68,
+        "late per FTE": 11669.51,
+        "change per FTE": 2017.82,
+        "colleges": 624
+       },
+       "gap": {
+        "early per FTE": 8367.37,
+        "late per FTE": 8140.21,
+        "change per FTE": -227.16,
+        "colleges": 624
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 304,
+      "change per FTE": {
+       "people (salaries and benefits)": 2348.76,
+       "plant upkeep": 22.5,
+       "interest (natural)": -42.1,
+       "all other (natural)": 2827.14,
+       "gap": -452.41
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 28047.96,
+        "late per FTE": 30396.72,
+        "change per FTE": 2348.76,
+        "colleges": 304
+       },
+       "plant upkeep": {
+        "early per FTE": 2897.81,
+        "late per FTE": 2920.32,
+        "change per FTE": 22.5,
+        "colleges": 304
+       },
+       "interest (natural)": {
+        "early per FTE": 766.35,
+        "late per FTE": 724.25,
+        "change per FTE": -42.1,
+        "colleges": 304
+       },
+       "all other (natural)": {
+        "early per FTE": 12955.65,
+        "late per FTE": 15782.79,
+        "change per FTE": 2827.14,
+        "colleges": 304
+       },
+       "gap": {
+        "early per FTE": 7317.26,
+        "late per FTE": 6864.85,
+        "change per FTE": -452.41,
+        "colleges": 304
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 493,
+      "change per FTE": {
+       "people (salaries and benefits)": 1636.18,
+       "plant upkeep": 341.8,
+       "interest (natural)": 82.27,
+       "all other (natural)": 1987.57,
+       "gap": -658.52
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 21908.42,
+        "late per FTE": 23544.61,
+        "change per FTE": 1636.18,
+        "colleges": 493
+       },
+       "plant upkeep": {
+        "early per FTE": 2330.35,
+        "late per FTE": 2672.15,
+        "change per FTE": 341.8,
+        "colleges": 493
+       },
+       "interest (natural)": {
+        "early per FTE": 664.22,
+        "late per FTE": 746.48,
+        "change per FTE": 82.27,
+        "colleges": 493
+       },
+       "all other (natural)": {
+        "early per FTE": 9903.0,
+        "late per FTE": 11890.57,
+        "change per FTE": 1987.57,
+        "colleges": 493
+       },
+       "gap": {
+        "early per FTE": 10501.09,
+        "late per FTE": 9842.57,
+        "change per FTE": -658.52,
+        "colleges": 493
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1372,
+      "change per FTE": {
+       "people (salaries and benefits)": 278.63,
+       "plant upkeep": 120.75,
+       "interest (natural)": -17.6,
+       "all other (natural)": 1255.59,
+       "gap": -185.03
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 17507.55,
+        "late per FTE": 17786.19,
+        "change per FTE": 278.63,
+        "colleges": 1372
+       },
+       "plant upkeep": {
+        "early per FTE": 2240.02,
+        "late per FTE": 2360.77,
+        "change per FTE": 120.75,
+        "colleges": 1372
+       },
+       "interest (natural)": {
+        "early per FTE": 586.72,
+        "late per FTE": 569.12,
+        "change per FTE": -17.6,
+        "colleges": 1372
+       },
+       "all other (natural)": {
+        "early per FTE": 7446.27,
+        "late per FTE": 8701.86,
+        "change per FTE": 1255.59,
+        "colleges": 1372
+       },
+       "gap": {
+        "early per FTE": 8153.59,
+        "late per FTE": 7968.56,
+        "change per FTE": -185.03,
+        "colleges": 1372
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 609,
+      "change per FTE": {
+       "people (salaries and benefits)": 275.04,
+       "plant upkeep": 121.41,
+       "interest (natural)": -30.18,
+       "all other (natural)": 1234.08,
+       "gap": -78.02
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 17237.61,
+        "late per FTE": 17512.65,
+        "change per FTE": 275.04,
+        "colleges": 609
+       },
+       "plant upkeep": {
+        "early per FTE": 2240.7,
+        "late per FTE": 2362.1,
+        "change per FTE": 121.41,
+        "colleges": 609
+       },
+       "interest (natural)": {
+        "early per FTE": 556.93,
+        "late per FTE": 526.75,
+        "change per FTE": -30.18,
+        "colleges": 609
+       },
+       "all other (natural)": {
+        "early per FTE": 7583.81,
+        "late per FTE": 8817.89,
+        "change per FTE": 1234.08,
+        "colleges": 609
+       },
+       "gap": {
+        "early per FTE": 8024.33,
+        "late per FTE": 7946.31,
+        "change per FTE": -78.02,
+        "colleges": 609
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 289,
+      "change per FTE": {
+       "people (salaries and benefits)": 199.4,
+       "plant upkeep": 26.3,
+       "interest (natural)": -71.84,
+       "all other (natural)": 1212.03,
+       "gap": -144.04
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 19493.81,
+        "late per FTE": 19693.21,
+        "change per FTE": 199.4,
+        "colleges": 289
+       },
+       "plant upkeep": {
+        "early per FTE": 2479.78,
+        "late per FTE": 2506.08,
+        "change per FTE": 26.3,
+        "colleges": 289
+       },
+       "interest (natural)": {
+        "early per FTE": 636.17,
+        "late per FTE": 564.33,
+        "change per FTE": -71.84,
+        "colleges": 289
+       },
+       "all other (natural)": {
+        "early per FTE": 8142.95,
+        "late per FTE": 9354.98,
+        "change per FTE": 1212.03,
+        "colleges": 289
+       },
+       "gap": {
+        "early per FTE": 7502.68,
+        "late per FTE": 7358.64,
+        "change per FTE": -144.04,
+        "colleges": 289
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 474,
+      "change per FTE": {
+       "people (salaries and benefits)": 168.3,
+       "plant upkeep": 191.46,
+       "interest (natural)": 52.6,
+       "all other (natural)": 1249.45,
+       "gap": -303.89
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 16045.49,
+        "late per FTE": 16213.8,
+        "change per FTE": 168.3,
+        "colleges": 474
+       },
+       "plant upkeep": {
+        "early per FTE": 2017.78,
+        "late per FTE": 2209.24,
+        "change per FTE": 191.46,
+        "colleges": 474
+       },
+       "interest (natural)": {
+        "early per FTE": 582.07,
+        "late per FTE": 634.67,
+        "change per FTE": 52.6,
+        "colleges": 474
+       },
+       "all other (natural)": {
+        "early per FTE": 6613.92,
+        "late per FTE": 7863.37,
+        "change per FTE": 1249.45,
+        "colleges": 474
+       },
+       "gap": {
+        "early per FTE": 8932.31,
+        "late per FTE": 8628.42,
+        "change per FTE": -303.89,
+        "colleges": 474
+       }
+      }
+     }
+    }
+   },
+   "private nonprofit": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1468,
+      "change per FTE": {
+       "people (salaries and benefits)": 2075.39,
+       "plant upkeep": -98.96,
+       "interest (natural)": -47.0,
+       "all other (natural)": 2153.92,
+       "gap": 1206.63
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 39733.87,
+        "late per FTE": 41809.25,
+        "change per FTE": 2075.39,
+        "colleges": 1468
+       },
+       "plant upkeep": {
+        "early per FTE": 4658.01,
+        "late per FTE": 4559.05,
+        "change per FTE": -98.96,
+        "colleges": 1468
+       },
+       "interest (natural)": {
+        "early per FTE": 1637.9,
+        "late per FTE": 1590.91,
+        "change per FTE": -47.0,
+        "colleges": 1468
+       },
+       "all other (natural)": {
+        "early per FTE": 20657.31,
+        "late per FTE": 22811.22,
+        "change per FTE": 2153.92,
+        "colleges": 1468
+       },
+       "gap": {
+        "early per FTE": 5745.63,
+        "late per FTE": 6952.26,
+        "change per FTE": 1206.63,
+        "colleges": 1468
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 626,
+      "change per FTE": {
+       "people (salaries and benefits)": 5207.14,
+       "plant upkeep": 163.88,
+       "interest (natural)": 196.58,
+       "all other (natural)": 4721.49,
+       "gap": 2850.62
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 39831.97,
+        "late per FTE": 45039.11,
+        "change per FTE": 5207.14,
+        "colleges": 626
+       },
+       "plant upkeep": {
+        "early per FTE": 4660.62,
+        "late per FTE": 4824.5,
+        "change per FTE": 163.88,
+        "colleges": 626
+       },
+       "interest (natural)": {
+        "early per FTE": 1547.29,
+        "late per FTE": 1743.86,
+        "change per FTE": 196.58,
+        "colleges": 626
+       },
+       "all other (natural)": {
+        "early per FTE": 20125.02,
+        "late per FTE": 24846.51,
+        "change per FTE": 4721.49,
+        "colleges": 626
+       },
+       "gap": {
+        "early per FTE": 6951.55,
+        "late per FTE": 9802.18,
+        "change per FTE": 2850.62,
+        "colleges": 626
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 363,
+      "change per FTE": {
+       "people (salaries and benefits)": -1139.76,
+       "plant upkeep": 238.17,
+       "interest (natural)": -83.03,
+       "all other (natural)": -558.36,
+       "gap": 630.06
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 20759.48,
+        "late per FTE": 19619.71,
+        "change per FTE": -1139.76,
+        "colleges": 363
+       },
+       "plant upkeep": {
+        "early per FTE": 3505.46,
+        "late per FTE": 3743.63,
+        "change per FTE": 238.17,
+        "colleges": 363
+       },
+       "interest (natural)": {
+        "early per FTE": 1162.9,
+        "late per FTE": 1079.88,
+        "change per FTE": -83.03,
+        "colleges": 363
+       },
+       "all other (natural)": {
+        "early per FTE": 11315.53,
+        "late per FTE": 10757.18,
+        "change per FTE": -558.36,
+        "colleges": 363
+       },
+       "gap": {
+        "early per FTE": 8144.98,
+        "late per FTE": 8775.04,
+        "change per FTE": 630.06,
+        "colleges": 363
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 479,
+      "change per FTE": {
+       "people (salaries and benefits)": 419.06,
+       "plant upkeep": -310.57,
+       "interest (natural)": -190.0,
+       "all other (natural)": 897.34,
+       "gap": 547.89
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 42653.73,
+        "late per FTE": 43072.78,
+        "change per FTE": 419.06,
+        "colleges": 479
+       },
+       "plant upkeep": {
+        "early per FTE": 4837.42,
+        "late per FTE": 4526.85,
+        "change per FTE": -310.57,
+        "colleges": 479
+       },
+       "interest (natural)": {
+        "early per FTE": 1767.91,
+        "late per FTE": 1577.91,
+        "change per FTE": -190.0,
+        "colleges": 479
+       },
+       "all other (natural)": {
+        "early per FTE": 22449.86,
+        "late per FTE": 23347.2,
+        "change per FTE": 897.34,
+        "colleges": 479
+       },
+       "gap": {
+        "early per FTE": 4631.46,
+        "late per FTE": 5179.35,
+        "change per FTE": 547.89,
+        "colleges": 479
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 1434,
+      "change per FTE": {
+       "people (salaries and benefits)": -324.78,
+       "plant upkeep": -145.79,
+       "interest (natural)": -77.37,
+       "all other (natural)": 198.62,
+       "gap": 916.78
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 29581.04,
+        "late per FTE": 29256.26,
+        "change per FTE": -324.78,
+        "colleges": 1434
+       },
+       "plant upkeep": {
+        "early per FTE": 4213.23,
+        "late per FTE": 4067.45,
+        "change per FTE": -145.79,
+        "colleges": 1434
+       },
+       "interest (natural)": {
+        "early per FTE": 1428.63,
+        "late per FTE": 1351.26,
+        "change per FTE": -77.37,
+        "colleges": 1434
+       },
+       "all other (natural)": {
+        "early per FTE": 15521.71,
+        "late per FTE": 15720.33,
+        "change per FTE": 198.62,
+        "colleges": 1434
+       },
+       "gap": {
+        "early per FTE": 5335.07,
+        "late per FTE": 6251.85,
+        "change per FTE": 916.78,
+        "colleges": 1434
+       }
+      }
+     },
+     "episodic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 608,
+      "change per FTE": {
+       "people (salaries and benefits)": -184.21,
+       "plant upkeep": -8.73,
+       "interest (natural)": 104.28,
+       "all other (natural)": 1245.79,
+       "gap": 1714.14
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 23811.47,
+        "late per FTE": 23627.27,
+        "change per FTE": -184.21,
+        "colleges": 608
+       },
+       "plant upkeep": {
+        "early per FTE": 3757.63,
+        "late per FTE": 3748.89,
+        "change per FTE": -8.73,
+        "colleges": 608
+       },
+       "interest (natural)": {
+        "early per FTE": 1129.54,
+        "late per FTE": 1233.82,
+        "change per FTE": 104.28,
+        "colleges": 608
+       },
+       "all other (natural)": {
+        "early per FTE": 12465.86,
+        "late per FTE": 13711.65,
+        "change per FTE": 1245.79,
+        "colleges": 608
+       },
+       "gap": {
+        "early per FTE": 4849.09,
+        "late per FTE": 6563.23,
+        "change per FTE": 1714.14,
+        "colleges": 608
+       }
+      }
+     },
+     "chronic": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 362,
+      "change per FTE": {
+       "people (salaries and benefits)": -1159.26,
+       "plant upkeep": 234.57,
+       "interest (natural)": -84.47,
+       "all other (natural)": -568.1,
+       "gap": 616.96
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 20782.95,
+        "late per FTE": 19623.69,
+        "change per FTE": -1159.26,
+        "colleges": 362
+       },
+       "plant upkeep": {
+        "early per FTE": 3508.53,
+        "late per FTE": 3743.11,
+        "change per FTE": 234.57,
+        "colleges": 362
+       },
+       "interest (natural)": {
+        "early per FTE": 1164.84,
+        "late per FTE": 1080.37,
+        "change per FTE": -84.47,
+        "colleges": 362
+       },
+       "all other (natural)": {
+        "early per FTE": 11329.29,
+        "late per FTE": 10761.18,
+        "change per FTE": -568.1,
+        "colleges": 362
+       },
+       "gap": {
+        "early per FTE": 8158.56,
+        "late per FTE": 8775.52,
+        "change per FTE": 616.96,
+        "colleges": 362
+       }
+      }
+     },
+     "never short": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 464,
+      "change per FTE": {
+       "people (salaries and benefits)": -954.02,
+       "plant upkeep": -322.79,
+       "interest (natural)": -199.09,
+       "all other (natural)": -571.33,
+       "gap": 580.98
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 34430.16,
+        "late per FTE": 33476.14,
+        "change per FTE": -954.02,
+        "colleges": 464
+       },
+       "plant upkeep": {
+        "early per FTE": 4597.79,
+        "late per FTE": 4275.0,
+        "change per FTE": -322.79,
+        "colleges": 464
+       },
+       "interest (natural)": {
+        "early per FTE": 1648.28,
+        "late per FTE": 1449.19,
+        "change per FTE": -199.09,
+        "colleges": 464
+       },
+       "all other (natural)": {
+        "early per FTE": 18012.94,
+        "late per FTE": 17441.61,
+        "change per FTE": -571.33,
+        "colleges": 464
+       },
+       "gap": {
+        "early per FTE": 5155.61,
+        "late per FTE": 5736.58,
+        "change per FTE": 580.98,
+        "colleges": 464
+       }
+      }
+     }
+    }
+   },
+   "for-profit": {
+    "all colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 581,
+      "change per FTE": {
+       "people (salaries and benefits)": -806.06,
+       "plant upkeep": -186.16,
+       "interest (natural)": 88.92,
+       "all other (natural)": -1610.72,
+       "gap": -614.0
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 7584.91,
+        "late per FTE": 6778.85,
+        "change per FTE": -806.06,
+        "colleges": 581
+       },
+       "plant upkeep": {
+        "early per FTE": 1629.91,
+        "late per FTE": 1443.75,
+        "change per FTE": -186.16,
+        "colleges": 581
+       },
+       "interest (natural)": {
+        "early per FTE": 89.52,
+        "late per FTE": 178.44,
+        "change per FTE": 88.92,
+        "colleges": 581
+       },
+       "all other (natural)": {
+        "early per FTE": 7106.13,
+        "late per FTE": 5495.41,
+        "change per FTE": -1610.72,
+        "colleges": 581
+       },
+       "gap": {
+        "early per FTE": -353.19,
+        "late per FTE": -967.19,
+        "change per FTE": -614.0,
+        "colleges": 581
+       }
+      }
+     }
+    },
+    "without hospital colleges": {
+     "all classes": {
+      "windows": [
+       [
+        2016,
+        2017,
+        2018
+       ],
+       [
+        2022,
+        2023,
+        2024
+       ]
+      ],
+      "colleges": 580,
+      "change per FTE": {
+       "people (salaries and benefits)": -806.03,
+       "plant upkeep": -185.55,
+       "interest (natural)": 88.92,
+       "all other (natural)": -1611.73,
+       "gap": -614.99
+      },
+      "levels per FTE": {
+       "people (salaries and benefits)": {
+        "early per FTE": 7584.68,
+        "late per FTE": 6778.66,
+        "change per FTE": -806.03,
+        "colleges": 580
+       },
+       "plant upkeep": {
+        "early per FTE": 1629.48,
+        "late per FTE": 1443.92,
+        "change per FTE": -185.55,
+        "colleges": 580
+       },
+       "interest (natural)": {
+        "early per FTE": 89.54,
+        "late per FTE": 178.46,
+        "change per FTE": 88.92,
+        "colleges": 580
+       },
+       "all other (natural)": {
+        "early per FTE": 7107.07,
+        "late per FTE": 5495.34,
+        "change per FTE": -1611.73,
+        "colleges": 580
+       },
+       "gap": {
+        "early per FTE": -352.35,
+        "late per FTE": -967.34,
+        "change per FTE": -614.99,
+        "colleges": 580
        }
       }
      }
@@ -13322,8 +13436,8 @@
   },
   "flags (college-years)": {
    "plant upkeep not reported as a natural class (counted in all other)": 15587,
-   "endowment spending estimated (4.5% of beginning value)": 19873,
    "gifts include grants and contracts": 4988,
+   "endowment spending estimated (4.5% of beginning value)": 19873,
    "lines differ from the expense total by more than 1%": 771,
    "expenses from total revenues (F3D09)": 2812,
    "other operating income below zero, set to zero": 133
