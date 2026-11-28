@@ -47,7 +47,14 @@ Data decisions (approved November 27, 2026, before anything was built):
                Spine's A, which counts the endowment); a second variant
                removes appropriations and gifts only
   base year    fiscal 2008 for public and private nonprofit colleges,
-               fiscal 2014 for for-profits
+               fiscal 2014 for for-profits; each college starts in its first
+               year from then with measurable reserves (approved November 27,
+               after the first run: many private colleges left the property
+               lines blank in 2008, their first year on the form)
+  gifts        gifts to permanent endowment (private: F2D084A + F2D094) are
+               not taken away, since they never enter expendable reserves
+               (approved November 27, after the first run); the public gifts
+               line already excludes additions to permanent endowments
   method       actual reserves less anchors received (headline); the
                Spine's literal form alongside
 
@@ -130,7 +137,9 @@ def bal_hook(orig):
                 if un is None or ppe is None:
                     continue
                 v = un + ((rt or 0.0) - (perm or 0.0)) - (ppe - (debt or 0.0))
-                rec |= {"reserves (unadjusted)": v, "reserves": v, "pension and retiree-health add-back": 0.0}
+                rec |= {"reserves (unadjusted)": v, "reserves": v, "pension and retiree-health add-back": 0.0,
+                        # gifts to permanent endowment never enter expendable reserves, so they are not taken away
+                        "permanently restricted gifts": (g("F2D084A") or 0.0) + (g("F2D094") or 0.0)}
             else:
                 eq, ppe, debt = g("F3A03"), g("F3A01B"), g("F3A02A")
                 if eq is None or ppe is None:
@@ -142,24 +151,26 @@ def bal_hook(orig):
     return table
 
 
-def anchors_of(p: dict, rec: dict, ex: dict, sec: str) -> dict:
-    """External anchor dollars, both variants, from item 23k's payer record."""
-    ext = p["paid by federal"] + p["paid by state"] + p["paid by local"] + p["paid by gifts"]
+def anchors_of(p: dict, rec: dict, ex: dict, bal: dict, sec: str) -> dict:
+    """External anchor dollars that could have reached expendable reserves, both variants (item 23k's payer record)."""
+    perm = bal.get("permanently restricted gifts", 0.0)
+    ext = p["paid by federal"] + p["paid by state"] + p["paid by local"] + max(p["paid by gifts"] - perm, 0.0)
     if sec == "for-profit":
         appro_gifts = (sum(ex.get(f"{lv} appropriations (for-profit form)", 0.0) for lv in ("federal", "state", "local"))
                        + ex.get("gifts (for-profit form)", 0.0))
     else:
         a = rec["anchors"] or {}
         appro_gifts = (a.get("federal appropriations", 0.0) + a.get("state appropriations", 0.0)
-                       + a.get("local appropriations", 0.0) + a.get("gifts", 0.0))
+                       + a.get("local appropriations", 0.0) + max(a.get("gifts", 0.0) - perm, 0.0))
     return {"external anchors (headline)": ext, "appropriations and gifts only": appro_gifts}
 
 
 def path_for(series: dict, sec: str) -> list[dict] | None:
     """Consecutive fiscal years from the base year; a missing year ends the path."""
-    b = BASE[sec]
-    if b not in series:
+    starts = [fy for fy in sorted(series) if fy >= BASE[sec]]
+    if not starts:
         return None
+    b = starts[0]                      # the first year from the base year with measurable reserves
     pts, fy = [], b
     while fy in series and fy <= LAST_FY:
         pts.append(series[fy])
@@ -243,7 +254,7 @@ def main() -> None:
             p = gs.payer_record(rec, ex, sec, None, None)
             series[fy] = {"fy": fy, "W": p["W"], "gap": p["gap (payer view)"], "reserves": bal["reserves"],
                           "reserves (unadjusted)": bal["reserves (unadjusted)"],
-                          "anchors": anchors_of(p, rec, ex, sec), "flags": p["flags"] + bal["flags"]}
+                          "anchors": anchors_of(p, rec, ex, bal, sec), "flags": p["flags"] + bal["flags"]}
         path = path_for(series, sec)
         if not path:
             continue
@@ -308,6 +319,7 @@ def main() -> None:
         alive = [c for c in cs if cross(c) and not closed(c)]
         return {
             "colleges": n,
+            "colleges by starting year": dict(sorted(Counter(c["base year"] for c in cs).items())),
             "would reach the point of no return without their anchors (headline)": rate(cross),
             "same, appropriations and gifts only": rate(lambda c: c["unanchored point of no return (appropriations and gifts only)"] != ""),
             "same, unadjusted public reserves": rate(lambda c: c["unanchored point of no return (unadjusted public reserves)"] != ""),
