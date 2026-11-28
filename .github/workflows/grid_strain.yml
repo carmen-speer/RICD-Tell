@@ -1,0 +1,70 @@
+name: item 23k - the strain on the wider grid
+
+# Manual-only. Runs "src/grid_strain.py": for every college and sector,
+# fiscal 2005-2024, the gap between what a college spends and what it earns
+# on its own, and who covers it (federal, state and local governments,
+# donors and alumni, the endowment, or no one), with student grants moved
+# to the government that paid them; item 15's frozen gap kept alongside.
+# Memo lines: undergraduate federal loans, a lower-bound default estimate
+# (College Scorecard release copy, checked by SHA-256), and a full-cost
+# view for public colleges. Descriptive; nothing is fitted.
+# Commits data/grid_strain/. Expected run time: about 15 to 30 minutes.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: grid-strain
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.18"
+
+      - name: Install dependencies (pinned)
+        run: |
+          pip install -r "requirements v2 lock.txt"
+          pip install xlrd==2.0.1 openpyxl==3.1.5
+
+      - name: Account for the strain by payer
+        run: |
+          cd src
+          python grid_strain.py
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "ricd-tracker-bot"
+          git config user.email "actions@github.com"
+          rm -f data/grid_strain/scorecard_tmp.zip
+          if [ ! -d data/grid_strain ]; then
+            echo "Nothing written."
+            exit 0
+          fi
+          git add data/grid_strain/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "item 23k: the strain on the wider grid, by payer (descriptive)"
+            for attempt in 1 2 3 4 5; do
+              if git fetch origin main && git rebase origin/main && git push; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; retrying."
+              sleep $((20 * attempt))
+            done
+            exit 1
+          fi
