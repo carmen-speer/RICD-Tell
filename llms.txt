@@ -26,6 +26,7 @@
 - It measures the anchors and the strain they carry across the sector (chronically short private nonprofits closed about five times as often as those never short; data/anchor efficiency/), and finds that most closures are slow drifts, not sudden shocks.
 - The live dashboard (https://carmen-speer.github.io/RICD-Tell/) runs tracker v3 on all 2,780 colleges in the current frame.
 - In law schools, which report outcomes directly, schools in the bottom tenth on bar passage or employment collapsed ten times as often.
+- It traces the strain anchors carry (reports/strain_on_the_grid.pdf; exploratory): inside colleges the gap grew in student services and administration, not instruction; states carry about two-thirds of the public gap and the federal government about two-thirds of the for-profit gap; without their anchors 99% of public and 83% of private nonprofit colleges would already be past the point of no return, and nearly all remain open.
 
 ## How to read it
 - Size and sector are the anchoring itself in higher education (large and public institutions are anchored and do not close), so they are a ceiling on overall ranking, not a bar the theory failed to clear.
