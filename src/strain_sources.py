@@ -51,7 +51,10 @@ Data decisions (approved November 27, 2026, before anything was built):
                  hospital (decision 10)
   people/plant   a second cut by natural class: people (salaries and
                  benefits), plant upkeep, interest, and all other
-                 (decision 11)
+                 (decision 11), compared within fiscal 2016-2018 against
+                 2022-2024 only, since plant upkeep is reported as its own
+                 natural class only from fiscal 2016 (approved November 27,
+                 after the first run showed the break)
   dollars        SHEEO's Higher Education Cost Adjustment (HECA) and dollars
                  per full-time-equivalent student as the headline; CPI-U
                  (approximately fiscal-year averages) as the check
@@ -115,6 +118,9 @@ PLANT_ALLOCATED_FROM = 2016                          # F1516: plant spread into 
 BASE_FY = 2024                                       # constant dollars of fiscal 2024
 EARLY, EARLY_FP = (2005, 2006, 2007), (2014, 2015, 2016)
 LATE = {"late (2022-2024)": (2022, 2023, 2024), "before pandemic relief (2017-2019)": (2017, 2018, 2019)}
+# people against plant: plant upkeep is reported as its own natural class only from fiscal 2016 (publics
+# from 2011, but the private and for-profit forms from 2016), so that cut compares within 2016-2024 only
+NATURAL_EARLY, NATURAL_LATE = (2016, 2017, 2018), (2022, 2023, 2024)
 MIN_WINDOW_YEARS = 2                                 # years with data needed in each window
 
 # ------------------------------------------------------------------ deflators
@@ -482,7 +488,6 @@ def decompose(colleges: list[dict]) -> dict | None:
     admin = {"institutional support (headline)": per["institutional support"]["change per FTE"],
              "administrative layer (institutional plus academic support)":
                  round(per["institutional support"]["change per FTE"] + per["academic support"]["change per FTE"], 2)}
-    nat = {k: per[k] for k in NATURAL}
     ranked = sorted(contrib.items(), key=lambda kv: -kv[1])
     ne, nl = sum(c["early"]["N"] for c in cs), sum(c["late"]["N"] for c in cs)
     return {"colleges": len(cs), "FTE early": round(ne), "FTE late": round(nl),
@@ -491,10 +496,20 @@ def decompose(colleges: list[dict]) -> dict | None:
             "share of the change in the gap": shares,
             "largest three drivers of a growing gap": [k for k, v in ranked[:3] if v > 0] if dgap > 0 else [],
             "administration": admin,
-            "people against plant (natural classes; colleges reporting them)": nat,
             "memo: depreciation, not in the gap": per["depreciation (not in the gap)"],
             "memo: forgone revenue from the college's own grants": per["forgone revenue (memo)"],
             "levels per FTE": {k: per[k] for k in core}}
+
+
+def natural_cut(colleges: list[dict]) -> dict | None:
+    """People against plant, fiscal 2016-2018 against 2022-2024 (the natural classes are comparable only from 2016)."""
+    cs = [c for c in colleges if c["early"] and c["late"] and c["early"]["N"] and c["late"]["N"]]
+    if len(cs) < 5:
+        return None
+    per = {k: _per_fte(cs, k) for k in NATURAL + ("gap",)}
+    return {"windows": [NATURAL_EARLY, NATURAL_LATE], "colleges": len(cs),
+            "change per FTE": {k: (per[k]["change per FTE"] if per[k] else None) for k in NATURAL + ("gap",)},
+            "levels per FTE": per}
 
 
 def top_driver(c: dict) -> str | None:
@@ -580,7 +595,7 @@ def main() -> None:
                                 sector_year[k][key + " | FTE base"] += v["N"]
 
     # windows per college, for both deflators and both late windows
-    decomp = {}
+    decomp, natural = {}, {}
     driver_rows = []
     for dname, d in defl.items():
         for lname, late in LATE.items():
@@ -602,6 +617,19 @@ def main() -> None:
                 res = decompose(cs)
                 if res:
                     decomp.setdefault(dname, {}).setdefault(lname, {}).setdefault(sec, {}).setdefault(scope, {})[cls] = res
+        ngroups = defaultdict(list)
+        for c in per_college.values():
+            cc = {"early": window_mean(c["series"], NATURAL_EARLY, d), "late": window_mean(c["series"], NATURAL_LATE, d)}
+            for scope in ("all colleges", "without hospital colleges"):
+                if scope == "without hospital colleges" and c["hospital college"]:
+                    continue
+                ngroups[(c["sector"], scope, "all classes")].append(cc)
+                if c["sector"] != "for-profit":
+                    ngroups[(c["sector"], scope, c["class"])].append(cc)
+        for (sec, scope, cls), cs in ngroups.items():
+            res = natural_cut(cs)
+            if res:
+                natural.setdefault(dname, {}).setdefault(sec, {}).setdefault(scope, {})[cls] = res
 
     driver_counts = defaultdict(lambda: defaultdict(Counter))
     for c in per_college.values():
@@ -687,6 +715,7 @@ def main() -> None:
                      "fewest years with data in each window": MIN_WINDOW_YEARS,
                      "constant dollars of fiscal year": BASE_FY, "plant line spread back before fiscal": PLANT_ALLOCATED_FROM},
         "decompositions": decomp,
+        "people against plant (natural classes, fiscal 2016-2018 against 2022-2024)": natural,
         "largest driver of a growing gap, colleges counted (HECA, per FTE)": {k: {g: dict(c) for g, c in v.items()}
                                                                               for k, v in driver_counts.items()},
         "diagnostics": {
