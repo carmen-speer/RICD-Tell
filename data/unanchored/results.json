@@ -1,6 +1,6 @@
 {
  "note": "Unanchored-against-anchored comparison, descriptive; exploratory where outcomes are known. A college reaches its unanchored point of no return in the first year its expendable reserves, less every external anchor dollar received since the base year, are at or below zero while it spends more than it earns on its own. The endowment draw counts as the college's own reserve, not an anchor, which differs from the Spine's A. Public reserves add back pension and retiree-health liabilities net of their deferrals (GASB 68 and 75); the unadjusted figure is alongside.",
- "written at (UTC)": "2026-11-28T05:59:14.711650+00:00",
+ "written at (UTC)": "2026-11-28T06:15:10.816970+00:00",
  "settings": {
   "base fiscal year": {
    "public": 2008,
@@ -16,784 +16,1041 @@
   "all colleges": {
    "public": {
     "all classes": {
-     "colleges": 1483,
+     "colleges": 1577,
+     "colleges by starting year": {
+      "2008": 1483,
+      "2009": 8,
+      "2010": 18,
+      "2011": 4,
+      "2012": 3,
+      "2013": 9,
+      "2014": 23,
+      "2015": 9,
+      "2016": 2,
+      "2017": 6,
+      "2018": 2,
+      "2020": 2,
+      "2021": 4,
+      "2022": 3,
+      "2024": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 1483,
-      "count": 1467,
-      "share": 0.9892
+      "colleges": 1577,
+      "count": 1552,
+      "share": 0.9841
      },
      "same, appropriations and gifts only": {
-      "colleges": 1483,
-      "count": 1444,
-      "share": 0.9737
+      "colleges": 1577,
+      "count": 1516,
+      "share": 0.9613
      },
      "same, unadjusted public reserves": {
-      "colleges": 1483,
-      "count": 1468,
-      "share": 0.9899
+      "colleges": 1577,
+      "count": 1554,
+      "share": 0.9854
      },
      "Spine literal form crosses": {
-      "colleges": 1483,
-      "count": 1460,
-      "share": 0.9845
+      "colleges": 1577,
+      "count": 1540,
+      "share": 0.9765
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 1483,
-      "count": 628,
-      "share": 0.4235
-     },
-     "median year of the unanchored point of no return": 2009,
-     "closure rate, colleges that would cross without anchors": {
-      "colleges": 1467,
-      "count": 4,
-      "share": 0.0027
-     },
-     "closure rate, colleges that would not": {
-      "colleges": 16,
-      "count": 0,
-      "share": 0.0
-     },
-     "past the unanchored point of no return and still open": 1463,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 2057692052565,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 711773759
-    },
-    "chronic": {
-     "colleges": 508,
-     "would reach the point of no return without their anchors (headline)": {
-      "colleges": 508,
-      "count": 505,
-      "share": 0.9941
-     },
-     "same, appropriations and gifts only": {
-      "colleges": 508,
-      "count": 500,
-      "share": 0.9843
-     },
-     "same, unadjusted public reserves": {
-      "colleges": 508,
-      "count": 506,
-      "share": 0.9961
-     },
-     "Spine literal form crosses": {
-      "colleges": 508,
-      "count": 507,
-      "share": 0.998
-     },
-     "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 508,
-      "count": 292,
-      "share": 0.5748
-     },
-     "median year of the unanchored point of no return": 2009,
-     "closure rate, colleges that would cross without anchors": {
-      "colleges": 505,
-      "count": 2,
-      "share": 0.004
-     },
-     "closure rate, colleges that would not": {
-      "colleges": 3,
-      "count": 0,
-      "share": 0.0
-     },
-     "past the unanchored point of no return and still open": 503,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 631493018278,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 713143524
-    },
-    "episodic": {
-     "colleges": 633,
-     "would reach the point of no return without their anchors (headline)": {
-      "colleges": 633,
-      "count": 630,
-      "share": 0.9953
-     },
-     "same, appropriations and gifts only": {
-      "colleges": 633,
-      "count": 616,
-      "share": 0.9731
-     },
-     "same, unadjusted public reserves": {
-      "colleges": 633,
-      "count": 630,
-      "share": 0.9953
-     },
-     "Spine literal form crosses": {
-      "colleges": 633,
-      "count": 626,
-      "share": 0.9889
-     },
-     "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 633,
-      "count": 260,
-      "share": 0.4107
+      "colleges": 1577,
+      "count": 661,
+      "share": 0.4192
      },
      "median year of the unanchored point of no return": 2009.0,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 630,
-      "count": 2,
+      "colleges": 1552,
+      "count": 5,
       "share": 0.0032
      },
      "closure rate, colleges that would not": {
-      "colleges": 3,
-      "count": 0,
-      "share": 0.0
+      "colleges": 25,
+      "count": 2,
+      "share": 0.08
      },
-     "past the unanchored point of no return and still open": 628,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 827667579046,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 640282411.0
+     "past the unanchored point of no return and still open": 1547,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 2094362435070,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 676584316
     },
-    "never short": {
-     "colleges": 333,
+    "chronic": {
+     "colleges": 533,
+     "colleges by starting year": {
+      "2008": 508,
+      "2009": 3,
+      "2010": 6,
+      "2012": 1,
+      "2013": 3,
+      "2014": 5,
+      "2015": 2,
+      "2017": 1,
+      "2021": 4
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 333,
-      "count": 329,
-      "share": 0.988
+      "colleges": 533,
+      "count": 529,
+      "share": 0.9925
      },
      "same, appropriations and gifts only": {
-      "colleges": 333,
-      "count": 325,
-      "share": 0.976
+      "colleges": 533,
+      "count": 522,
+      "share": 0.9794
      },
      "same, unadjusted public reserves": {
-      "colleges": 333,
-      "count": 329,
-      "share": 0.988
+      "colleges": 533,
+      "count": 530,
+      "share": 0.9944
      },
      "Spine literal form crosses": {
-      "colleges": 333,
-      "count": 324,
-      "share": 0.973
+      "colleges": 533,
+      "count": 531,
+      "share": 0.9962
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 333,
-      "count": 73,
-      "share": 0.2192
+      "colleges": 533,
+      "count": 302,
+      "share": 0.5666
      },
      "median year of the unanchored point of no return": 2009,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 329,
+      "colleges": 529,
+      "count": 2,
+      "share": 0.0038
+     },
+     "closure rate, colleges that would not": {
+      "colleges": 4,
+      "count": 1,
+      "share": 0.25
+     },
+     "past the unanchored point of no return and still open": 527,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 641003938085,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 686912327
+    },
+    "episodic": {
+     "colleges": 675,
+     "colleges by starting year": {
+      "2008": 633,
+      "2009": 3,
+      "2010": 9,
+      "2011": 4,
+      "2012": 2,
+      "2013": 6,
+      "2014": 7,
+      "2015": 6,
+      "2017": 3,
+      "2018": 1,
+      "2024": 1
+     },
+     "would reach the point of no return without their anchors (headline)": {
+      "colleges": 675,
+      "count": 669,
+      "share": 0.9911
+     },
+     "same, appropriations and gifts only": {
+      "colleges": 675,
+      "count": 654,
+      "share": 0.9689
+     },
+     "same, unadjusted public reserves": {
+      "colleges": 675,
+      "count": 669,
+      "share": 0.9911
+     },
+     "Spine literal form crosses": {
+      "colleges": 675,
+      "count": 666,
+      "share": 0.9867
+     },
+     "actual reserves reached zero past break-even (with anchors)": {
+      "colleges": 675,
+      "count": 279,
+      "share": 0.4133
+     },
+     "median year of the unanchored point of no return": 2009,
+     "closure rate, colleges that would cross without anchors": {
+      "colleges": 669,
+      "count": 2,
+      "share": 0.003
+     },
+     "closure rate, colleges that would not": {
+      "colleges": 6,
       "count": 0,
       "share": 0.0
+     },
+     "past the unanchored point of no return and still open": 667,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 847591442418,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 617009842
+    },
+    "never short": {
+     "colleges": 349,
+     "colleges by starting year": {
+      "2008": 333,
+      "2009": 1,
+      "2010": 1,
+      "2014": 10,
+      "2015": 1,
+      "2016": 1,
+      "2018": 1,
+      "2020": 1
+     },
+     "would reach the point of no return without their anchors (headline)": {
+      "colleges": 349,
+      "count": 345,
+      "share": 0.9885
+     },
+     "same, appropriations and gifts only": {
+      "colleges": 349,
+      "count": 332,
+      "share": 0.9513
+     },
+     "same, unadjusted public reserves": {
+      "colleges": 349,
+      "count": 345,
+      "share": 0.9885
+     },
+     "Spine literal form crosses": {
+      "colleges": 349,
+      "count": 333,
+      "share": 0.9542
+     },
+     "actual reserves reached zero past break-even (with anchors)": {
+      "colleges": 349,
+      "count": 75,
+      "share": 0.2149
+     },
+     "median year of the unanchored point of no return": 2009,
+     "closure rate, colleges that would cross without anchors": {
+      "colleges": 345,
+      "count": 1,
+      "share": 0.0029
      },
      "closure rate, colleges that would not": {
       "colleges": 4,
       "count": 0,
       "share": 0.0
      },
-     "past the unanchored point of no return and still open": 329,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 598496717179,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 931363128
+     "past the unanchored point of no return and still open": 344,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 604960604591,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 901134493.5
     }
    },
    "private nonprofit": {
     "all classes": {
-     "colleges": 465,
+     "colleges": 1890,
+     "colleges by starting year": {
+      "2008": 465,
+      "2009": 188,
+      "2010": 920,
+      "2011": 44,
+      "2012": 14,
+      "2013": 36,
+      "2014": 77,
+      "2015": 25,
+      "2016": 13,
+      "2017": 18,
+      "2018": 18,
+      "2019": 25,
+      "2020": 11,
+      "2021": 10,
+      "2022": 12,
+      "2023": 5,
+      "2024": 9
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 465,
-      "count": 393,
-      "share": 0.8452
+      "colleges": 1890,
+      "count": 1545,
+      "share": 0.8175
      },
      "same, appropriations and gifts only": {
-      "colleges": 465,
-      "count": 348,
-      "share": 0.7484
+      "colleges": 1890,
+      "count": 1321,
+      "share": 0.6989
      },
      "same, unadjusted public reserves": {
-      "colleges": 465,
-      "count": 393,
-      "share": 0.8452
+      "colleges": 1890,
+      "count": 1545,
+      "share": 0.8175
      },
      "Spine literal form crosses": {
-      "colleges": 465,
-      "count": 384,
-      "share": 0.8258
+      "colleges": 1890,
+      "count": 1561,
+      "share": 0.8259
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 465,
-      "count": 143,
-      "share": 0.3075
+      "colleges": 1890,
+      "count": 707,
+      "share": 0.3741
      },
-     "median year of the unanchored point of no return": 2010,
+     "median year of the unanchored point of no return": 2012,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 393,
-      "count": 17,
-      "share": 0.0433
+      "colleges": 1545,
+      "count": 159,
+      "share": 0.1029
      },
      "closure rate, colleges that would not": {
-      "colleges": 72,
-      "count": 0,
-      "share": 0.0
+      "colleges": 345,
+      "count": 15,
+      "share": 0.0435
      },
-     "past the unanchored point of no return and still open": 376,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 88500853615,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 134259202.5
+     "past the unanchored point of no return and still open": 1386,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 243940906130,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 77903989.5
     },
     "chronic": {
-     "colleges": 106,
+     "colleges": 494,
+     "colleges by starting year": {
+      "2008": 106,
+      "2009": 40,
+      "2010": 259,
+      "2011": 17,
+      "2012": 3,
+      "2013": 16,
+      "2014": 32,
+      "2015": 8,
+      "2016": 4,
+      "2017": 3,
+      "2018": 1,
+      "2019": 4,
+      "2021": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 106,
-      "count": 95,
-      "share": 0.8962
+      "colleges": 494,
+      "count": 436,
+      "share": 0.8826
      },
      "same, appropriations and gifts only": {
-      "colleges": 106,
-      "count": 87,
-      "share": 0.8208
+      "colleges": 494,
+      "count": 394,
+      "share": 0.7976
      },
      "same, unadjusted public reserves": {
-      "colleges": 106,
-      "count": 95,
-      "share": 0.8962
+      "colleges": 494,
+      "count": 436,
+      "share": 0.8826
      },
      "Spine literal form crosses": {
-      "colleges": 106,
-      "count": 100,
-      "share": 0.9434
+      "colleges": 494,
+      "count": 454,
+      "share": 0.919
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 106,
-      "count": 48,
-      "share": 0.4528
+      "colleges": 494,
+      "count": 269,
+      "share": 0.5445
      },
-     "median year of the unanchored point of no return": 2009,
+     "median year of the unanchored point of no return": 2011.0,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 95,
-      "count": 10,
-      "share": 0.1053
+      "colleges": 436,
+      "count": 72,
+      "share": 0.1651
      },
      "closure rate, colleges that would not": {
-      "colleges": 11,
-      "count": 0,
-      "share": 0.0
+      "colleges": 58,
+      "count": 5,
+      "share": 0.0862
      },
-     "past the unanchored point of no return and still open": 85,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 8908980775,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 48717381
+     "past the unanchored point of no return and still open": 364,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 30295660594,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 33762987.5
     },
     "episodic": {
-     "colleges": 195,
+     "colleges": 799,
+     "colleges by starting year": {
+      "2008": 195,
+      "2009": 79,
+      "2010": 408,
+      "2011": 23,
+      "2012": 5,
+      "2013": 11,
+      "2014": 33,
+      "2015": 9,
+      "2016": 6,
+      "2017": 8,
+      "2018": 8,
+      "2019": 9,
+      "2020": 4,
+      "2024": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 195,
-      "count": 181,
-      "share": 0.9282
+      "colleges": 799,
+      "count": 701,
+      "share": 0.8773
      },
      "same, appropriations and gifts only": {
-      "colleges": 195,
-      "count": 169,
-      "share": 0.8667
+      "colleges": 799,
+      "count": 620,
+      "share": 0.776
      },
      "same, unadjusted public reserves": {
-      "colleges": 195,
-      "count": 181,
-      "share": 0.9282
+      "colleges": 799,
+      "count": 701,
+      "share": 0.8773
      },
      "Spine literal form crosses": {
-      "colleges": 195,
-      "count": 178,
-      "share": 0.9128
+      "colleges": 799,
+      "count": 693,
+      "share": 0.8673
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 195,
-      "count": 80,
-      "share": 0.4103
-     },
-     "median year of the unanchored point of no return": 2010,
-     "closure rate, colleges that would cross without anchors": {
-      "colleges": 181,
-      "count": 5,
-      "share": 0.0276
-     },
-     "closure rate, colleges that would not": {
-      "colleges": 14,
-      "count": 0,
-      "share": 0.0
-     },
-     "past the unanchored point of no return and still open": 176,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 44357066429,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 133129628.0
-    },
-    "never short": {
-     "colleges": 163,
-     "would reach the point of no return without their anchors (headline)": {
-      "colleges": 163,
-      "count": 117,
-      "share": 0.7178
-     },
-     "same, appropriations and gifts only": {
-      "colleges": 163,
-      "count": 92,
-      "share": 0.5644
-     },
-     "same, unadjusted public reserves": {
-      "colleges": 163,
-      "count": 117,
-      "share": 0.7178
-     },
-     "Spine literal form crosses": {
-      "colleges": 163,
-      "count": 106,
-      "share": 0.6503
-     },
-     "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 163,
-      "count": 15,
-      "share": 0.092
+      "colleges": 799,
+      "count": 338,
+      "share": 0.423
      },
      "median year of the unanchored point of no return": 2011,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 117,
-      "count": 2,
-      "share": 0.0171
+      "colleges": 701,
+      "count": 74,
+      "share": 0.1056
      },
      "closure rate, colleges that would not": {
-      "colleges": 46,
-      "count": 0,
-      "share": 0.0
+      "colleges": 98,
+      "count": 1,
+      "share": 0.0102
      },
-     "past the unanchored point of no return and still open": 115,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 35234806411,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 186312377
+     "past the unanchored point of no return and still open": 627,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 103743556180,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 84437829
+    },
+    "never short": {
+     "colleges": 531,
+     "colleges by starting year": {
+      "2008": 163,
+      "2009": 67,
+      "2010": 251,
+      "2011": 3,
+      "2012": 3,
+      "2013": 5,
+      "2014": 7,
+      "2015": 6,
+      "2016": 1,
+      "2017": 6,
+      "2018": 8,
+      "2019": 7,
+      "2020": 4
+     },
+     "would reach the point of no return without their anchors (headline)": {
+      "colleges": 531,
+      "count": 370,
+      "share": 0.6968
+     },
+     "same, appropriations and gifts only": {
+      "colleges": 531,
+      "count": 271,
+      "share": 0.5104
+     },
+     "same, unadjusted public reserves": {
+      "colleges": 531,
+      "count": 370,
+      "share": 0.6968
+     },
+     "Spine literal form crosses": {
+      "colleges": 531,
+      "count": 379,
+      "share": 0.7137
+     },
+     "actual reserves reached zero past break-even (with anchors)": {
+      "colleges": 531,
+      "count": 77,
+      "share": 0.145
+     },
+     "median year of the unanchored point of no return": 2013.0,
+     "closure rate, colleges that would cross without anchors": {
+      "colleges": 370,
+      "count": 8,
+      "share": 0.0216
+     },
+     "closure rate, colleges that would not": {
+      "colleges": 161,
+      "count": 6,
+      "share": 0.0373
+     },
+     "past the unanchored point of no return and still open": 362,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 109638703765,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 135605173.5
     }
    },
    "for-profit": {
     "all classes": {
-     "colleges": 959,
+     "colleges": 1159,
+     "colleges by starting year": {
+      "2014": 959,
+      "2015": 31,
+      "2016": 46,
+      "2017": 21,
+      "2018": 18,
+      "2019": 28,
+      "2020": 8,
+      "2021": 16,
+      "2022": 19,
+      "2023": 7,
+      "2024": 6
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 959,
-      "count": 769,
-      "share": 0.8019
+      "colleges": 1159,
+      "count": 918,
+      "share": 0.7921
      },
      "same, appropriations and gifts only": {
-      "colleges": 959,
-      "count": 456,
-      "share": 0.4755
+      "colleges": 1159,
+      "count": 531,
+      "share": 0.4582
      },
      "same, unadjusted public reserves": {
-      "colleges": 959,
-      "count": 769,
-      "share": 0.8019
+      "colleges": 1159,
+      "count": 918,
+      "share": 0.7921
      },
      "Spine literal form crosses": {
-      "colleges": 959,
-      "count": 726,
-      "share": 0.757
+      "colleges": 1159,
+      "count": 863,
+      "share": 0.7446
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 959,
-      "count": 435,
-      "share": 0.4536
+      "colleges": 1159,
+      "count": 508,
+      "share": 0.4383
      },
-     "median year of the unanchored point of no return": 2015,
+     "median year of the unanchored point of no return": 2015.0,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 769,
-      "count": 392,
-      "share": 0.5098
+      "colleges": 918,
+      "count": 412,
+      "share": 0.4488
      },
      "closure rate, colleges that would not": {
-      "colleges": 190,
-      "count": 125,
-      "share": 0.6579
+      "colleges": 241,
+      "count": 130,
+      "share": 0.5394
      },
-     "past the unanchored point of no return and still open": 377,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 25391247471,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 18694865
+     "past the unanchored point of no return and still open": 506,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 27091105858,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 14089184.5
     }
    }
   },
   "without hospital colleges": {
    "public": {
     "all classes": {
-     "colleges": 1433,
+     "colleges": 1521,
+     "colleges by starting year": {
+      "2008": 1433,
+      "2009": 8,
+      "2010": 17,
+      "2011": 4,
+      "2012": 3,
+      "2013": 8,
+      "2014": 22,
+      "2015": 8,
+      "2016": 2,
+      "2017": 6,
+      "2018": 1,
+      "2020": 1,
+      "2021": 4,
+      "2022": 3,
+      "2024": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 1433,
-      "count": 1421,
-      "share": 0.9916
+      "colleges": 1521,
+      "count": 1501,
+      "share": 0.9869
      },
      "same, appropriations and gifts only": {
-      "colleges": 1433,
-      "count": 1399,
-      "share": 0.9763
+      "colleges": 1521,
+      "count": 1467,
+      "share": 0.9645
      },
      "same, unadjusted public reserves": {
-      "colleges": 1433,
-      "count": 1422,
-      "share": 0.9923
+      "colleges": 1521,
+      "count": 1503,
+      "share": 0.9882
      },
      "Spine literal form crosses": {
-      "colleges": 1433,
-      "count": 1413,
-      "share": 0.986
+      "colleges": 1521,
+      "count": 1488,
+      "share": 0.9783
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 1433,
-      "count": 617,
-      "share": 0.4306
+      "colleges": 1521,
+      "count": 648,
+      "share": 0.426
      },
      "median year of the unanchored point of no return": 2009,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 1421,
-      "count": 3,
-      "share": 0.0021
+      "colleges": 1501,
+      "count": 4,
+      "share": 0.0027
      },
      "closure rate, colleges that would not": {
-      "colleges": 12,
-      "count": 0,
-      "share": 0.0
+      "colleges": 20,
+      "count": 2,
+      "share": 0.1
      },
-     "past the unanchored point of no return and still open": 1418,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 1796528974254,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 687427705.5
+     "past the unanchored point of no return and still open": 1497,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 1827585091419,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 654007837
     },
     "chronic": {
-     "colleges": 491,
+     "colleges": 515,
+     "colleges by starting year": {
+      "2008": 491,
+      "2009": 3,
+      "2010": 6,
+      "2012": 1,
+      "2013": 3,
+      "2014": 4,
+      "2015": 2,
+      "2017": 1,
+      "2021": 4
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 491,
-      "count": 490,
-      "share": 0.998
+      "colleges": 515,
+      "count": 513,
+      "share": 0.9961
      },
      "same, appropriations and gifts only": {
-      "colleges": 491,
-      "count": 485,
-      "share": 0.9878
+      "colleges": 515,
+      "count": 506,
+      "share": 0.9825
      },
      "same, unadjusted public reserves": {
-      "colleges": 491,
-      "count": 491,
-      "share": 1.0
+      "colleges": 515,
+      "count": 514,
+      "share": 0.9981
      },
      "Spine literal form crosses": {
-      "colleges": 491,
-      "count": 490,
-      "share": 0.998
+      "colleges": 515,
+      "count": 513,
+      "share": 0.9961
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 491,
-      "count": 284,
-      "share": 0.5784
+      "colleges": 515,
+      "count": 293,
+      "share": 0.5689
      },
-     "median year of the unanchored point of no return": 2009.0,
+     "median year of the unanchored point of no return": 2009,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 490,
+      "colleges": 513,
       "count": 2,
-      "share": 0.0041
+      "share": 0.0039
      },
      "closure rate, colleges that would not": {
-      "colleges": 1,
-      "count": 0,
-      "share": 0.0
+      "colleges": 2,
+      "count": 1,
+      "share": 0.5
      },
-     "past the unanchored point of no return and still open": 488,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 540784977411,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 689200570.5
+     "past the unanchored point of no return and still open": 511,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 549577616470,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 650114955
     },
     "episodic": {
-     "colleges": 617,
+     "colleges": 657,
+     "colleges by starting year": {
+      "2008": 617,
+      "2009": 3,
+      "2010": 9,
+      "2011": 4,
+      "2012": 2,
+      "2013": 5,
+      "2014": 7,
+      "2015": 5,
+      "2017": 3,
+      "2018": 1,
+      "2024": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 617,
-      "count": 614,
-      "share": 0.9951
+      "colleges": 657,
+      "count": 651,
+      "share": 0.9909
      },
      "same, appropriations and gifts only": {
-      "colleges": 617,
-      "count": 600,
-      "share": 0.9724
+      "colleges": 657,
+      "count": 636,
+      "share": 0.968
      },
      "same, unadjusted public reserves": {
-      "colleges": 617,
-      "count": 614,
-      "share": 0.9951
+      "colleges": 657,
+      "count": 651,
+      "share": 0.9909
      },
      "Spine literal form crosses": {
-      "colleges": 617,
-      "count": 610,
-      "share": 0.9887
+      "colleges": 657,
+      "count": 648,
+      "share": 0.9863
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 617,
-      "count": 257,
-      "share": 0.4165
+      "colleges": 657,
+      "count": 275,
+      "share": 0.4186
      },
-     "median year of the unanchored point of no return": 2009.0,
+     "median year of the unanchored point of no return": 2009,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 614,
+      "colleges": 651,
       "count": 1,
-      "share": 0.0016
+      "share": 0.0015
      },
      "closure rate, colleges that would not": {
-      "colleges": 3,
+      "colleges": 6,
       "count": 0,
       "share": 0.0
      },
-     "past the unanchored point of no return and still open": 613,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 737352753303,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 625468841
+     "past the unanchored point of no return and still open": 650,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 753509073453,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 599084279.5
     },
     "never short": {
-     "colleges": 317,
+     "colleges": 331,
+     "colleges by starting year": {
+      "2008": 317,
+      "2009": 1,
+      "2014": 10,
+      "2015": 1,
+      "2016": 1,
+      "2020": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 317,
-      "count": 314,
-      "share": 0.9905
+      "colleges": 331,
+      "count": 328,
+      "share": 0.9909
      },
      "same, appropriations and gifts only": {
-      "colleges": 317,
-      "count": 311,
-      "share": 0.9811
+      "colleges": 331,
+      "count": 317,
+      "share": 0.9577
      },
      "same, unadjusted public reserves": {
-      "colleges": 317,
-      "count": 314,
-      "share": 0.9905
+      "colleges": 331,
+      "count": 328,
+      "share": 0.9909
      },
      "Spine literal form crosses": {
-      "colleges": 317,
-      "count": 310,
-      "share": 0.9779
+      "colleges": 331,
+      "count": 317,
+      "share": 0.9577
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 317,
-      "count": 73,
-      "share": 0.2303
+      "colleges": 331,
+      "count": 75,
+      "share": 0.2266
      },
      "median year of the unanchored point of no return": 2009.0,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 314,
-      "count": 0,
-      "share": 0.0
+      "colleges": 328,
+      "count": 1,
+      "share": 0.003
      },
      "closure rate, colleges that would not": {
       "colleges": 3,
       "count": 0,
       "share": 0.0
      },
-     "past the unanchored point of no return and still open": 314,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 518356505478,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 888763487.0
+     "past the unanchored point of no return and still open": 327,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 523691951520,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 862973604
     }
    },
    "private nonprofit": {
     "all classes": {
-     "colleges": 455,
+     "colleges": 1858,
+     "colleges by starting year": {
+      "2008": 455,
+      "2009": 186,
+      "2010": 902,
+      "2011": 44,
+      "2012": 14,
+      "2013": 36,
+      "2014": 77,
+      "2015": 25,
+      "2016": 12,
+      "2017": 17,
+      "2018": 18,
+      "2019": 25,
+      "2020": 11,
+      "2021": 10,
+      "2022": 12,
+      "2023": 5,
+      "2024": 9
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 455,
-      "count": 389,
-      "share": 0.8549
+      "colleges": 1858,
+      "count": 1533,
+      "share": 0.8251
      },
      "same, appropriations and gifts only": {
-      "colleges": 455,
-      "count": 344,
-      "share": 0.756
+      "colleges": 1858,
+      "count": 1311,
+      "share": 0.7056
      },
      "same, unadjusted public reserves": {
-      "colleges": 455,
-      "count": 389,
-      "share": 0.8549
+      "colleges": 1858,
+      "count": 1533,
+      "share": 0.8251
      },
      "Spine literal form crosses": {
-      "colleges": 455,
-      "count": 379,
-      "share": 0.833
+      "colleges": 1858,
+      "count": 1549,
+      "share": 0.8337
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 455,
-      "count": 140,
-      "share": 0.3077
+      "colleges": 1858,
+      "count": 701,
+      "share": 0.3773
      },
-     "median year of the unanchored point of no return": 2010,
+     "median year of the unanchored point of no return": 2012,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 389,
-      "count": 17,
-      "share": 0.0437
+      "colleges": 1533,
+      "count": 159,
+      "share": 0.1037
      },
      "closure rate, colleges that would not": {
-      "colleges": 66,
-      "count": 0,
-      "share": 0.0
+      "colleges": 325,
+      "count": 15,
+      "share": 0.0462
      },
-     "past the unanchored point of no return and still open": 372,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 75066233601,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 134259202.5
+     "past the unanchored point of no return and still open": 1374,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 219561765326,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 78075870.5
     },
     "chronic": {
-     "colleges": 104,
+     "colleges": 492,
+     "colleges by starting year": {
+      "2008": 104,
+      "2009": 40,
+      "2010": 259,
+      "2011": 17,
+      "2012": 3,
+      "2013": 16,
+      "2014": 32,
+      "2015": 8,
+      "2016": 4,
+      "2017": 3,
+      "2018": 1,
+      "2019": 4,
+      "2021": 1
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 104,
-      "count": 94,
-      "share": 0.9038
+      "colleges": 492,
+      "count": 435,
+      "share": 0.8841
      },
      "same, appropriations and gifts only": {
-      "colleges": 104,
-      "count": 86,
-      "share": 0.8269
+      "colleges": 492,
+      "count": 393,
+      "share": 0.7988
      },
      "same, unadjusted public reserves": {
-      "colleges": 104,
-      "count": 94,
-      "share": 0.9038
+      "colleges": 492,
+      "count": 435,
+      "share": 0.8841
      },
      "Spine literal form crosses": {
-      "colleges": 104,
-      "count": 98,
-      "share": 0.9423
+      "colleges": 492,
+      "count": 452,
+      "share": 0.9187
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 104,
-      "count": 47,
-      "share": 0.4519
-     },
-     "median year of the unanchored point of no return": 2009.0,
-     "closure rate, colleges that would cross without anchors": {
-      "colleges": 94,
-      "count": 10,
-      "share": 0.1064
-     },
-     "closure rate, colleges that would not": {
-      "colleges": 10,
-      "count": 0,
-      "share": 0.0
-     },
-     "past the unanchored point of no return and still open": 84,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 8906845539,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 50072666.5
-    },
-    "episodic": {
-     "colleges": 189,
-     "would reach the point of no return without their anchors (headline)": {
-      "colleges": 189,
-      "count": 178,
-      "share": 0.9418
-     },
-     "same, appropriations and gifts only": {
-      "colleges": 189,
-      "count": 166,
-      "share": 0.8783
-     },
-     "same, unadjusted public reserves": {
-      "colleges": 189,
-      "count": 178,
-      "share": 0.9418
-     },
-     "Spine literal form crosses": {
-      "colleges": 189,
-      "count": 175,
-      "share": 0.9259
-     },
-     "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 189,
-      "count": 78,
-      "share": 0.4127
-     },
-     "median year of the unanchored point of no return": 2010.0,
-     "closure rate, colleges that would cross without anchors": {
-      "colleges": 178,
-      "count": 5,
-      "share": 0.0281
-     },
-     "closure rate, colleges that would not": {
-      "colleges": 11,
-      "count": 0,
-      "share": 0.0
-     },
-     "past the unanchored point of no return and still open": 173,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 30924581651,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 133020257
-    },
-    "never short": {
-     "colleges": 161,
-     "would reach the point of no return without their anchors (headline)": {
-      "colleges": 161,
-      "count": 117,
-      "share": 0.7267
-     },
-     "same, appropriations and gifts only": {
-      "colleges": 161,
-      "count": 92,
-      "share": 0.5714
-     },
-     "same, unadjusted public reserves": {
-      "colleges": 161,
-      "count": 117,
-      "share": 0.7267
-     },
-     "Spine literal form crosses": {
-      "colleges": 161,
-      "count": 106,
-      "share": 0.6584
-     },
-     "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 161,
-      "count": 15,
-      "share": 0.0932
+      "colleges": 492,
+      "count": 268,
+      "share": 0.5447
      },
      "median year of the unanchored point of no return": 2011,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 117,
-      "count": 2,
-      "share": 0.0171
+      "colleges": 435,
+      "count": 72,
+      "share": 0.1655
      },
      "closure rate, colleges that would not": {
-      "colleges": 44,
-      "count": 0,
-      "share": 0.0
+      "colleges": 57,
+      "count": 5,
+      "share": 0.0877
      },
-     "past the unanchored point of no return and still open": 115,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 35234806411,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 186312377
+     "past the unanchored point of no return and still open": 363,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 30293525358,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 34194983
+    },
+    "episodic": {
+     "colleges": 784,
+     "colleges by starting year": {
+      "2008": 189,
+      "2009": 78,
+      "2010": 402,
+      "2011": 23,
+      "2012": 5,
+      "2013": 11,
+      "2014": 33,
+      "2015": 9,
+      "2016": 5,
+      "2017": 7,
+      "2018": 8,
+      "2019": 9,
+      "2020": 4,
+      "2024": 1
+     },
+     "would reach the point of no return without their anchors (headline)": {
+      "colleges": 784,
+      "count": 693,
+      "share": 0.8839
+     },
+     "same, appropriations and gifts only": {
+      "colleges": 784,
+      "count": 613,
+      "share": 0.7819
+     },
+     "same, unadjusted public reserves": {
+      "colleges": 784,
+      "count": 693,
+      "share": 0.8839
+     },
+     "Spine literal form crosses": {
+      "colleges": 784,
+      "count": 685,
+      "share": 0.8737
+     },
+     "actual reserves reached zero past break-even (with anchors)": {
+      "colleges": 784,
+      "count": 334,
+      "share": 0.426
+     },
+     "median year of the unanchored point of no return": 2011,
+     "closure rate, colleges that would cross without anchors": {
+      "colleges": 693,
+      "count": 74,
+      "share": 0.1068
+     },
+     "closure rate, colleges that would not": {
+      "colleges": 91,
+      "count": 1,
+      "share": 0.011
+     },
+     "past the unanchored point of no return and still open": 619,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 82432844980,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 84437829
+    },
+    "never short": {
+     "colleges": 516,
+     "colleges by starting year": {
+      "2008": 161,
+      "2009": 66,
+      "2010": 239,
+      "2011": 3,
+      "2012": 3,
+      "2013": 5,
+      "2014": 7,
+      "2015": 6,
+      "2016": 1,
+      "2017": 6,
+      "2018": 8,
+      "2019": 7,
+      "2020": 4
+     },
+     "would reach the point of no return without their anchors (headline)": {
+      "colleges": 516,
+      "count": 367,
+      "share": 0.7112
+     },
+     "same, appropriations and gifts only": {
+      "colleges": 516,
+      "count": 269,
+      "share": 0.5213
+     },
+     "same, unadjusted public reserves": {
+      "colleges": 516,
+      "count": 367,
+      "share": 0.7112
+     },
+     "Spine literal form crosses": {
+      "colleges": 516,
+      "count": 377,
+      "share": 0.7306
+     },
+     "actual reserves reached zero past break-even (with anchors)": {
+      "colleges": 516,
+      "count": 76,
+      "share": 0.1473
+     },
+     "median year of the unanchored point of no return": 2013,
+     "closure rate, colleges that would cross without anchors": {
+      "colleges": 367,
+      "count": 8,
+      "share": 0.0218
+     },
+     "closure rate, colleges that would not": {
+      "colleges": 149,
+      "count": 6,
+      "share": 0.0403
+     },
+     "past the unanchored point of no return and still open": 359,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 106572409397,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 136748785
     }
    },
    "for-profit": {
     "all classes": {
-     "colleges": 958,
+     "colleges": 1158,
+     "colleges by starting year": {
+      "2014": 958,
+      "2015": 31,
+      "2016": 46,
+      "2017": 21,
+      "2018": 18,
+      "2019": 28,
+      "2020": 8,
+      "2021": 16,
+      "2022": 19,
+      "2023": 7,
+      "2024": 6
+     },
      "would reach the point of no return without their anchors (headline)": {
-      "colleges": 958,
-      "count": 768,
-      "share": 0.8017
+      "colleges": 1158,
+      "count": 917,
+      "share": 0.7919
      },
      "same, appropriations and gifts only": {
-      "colleges": 958,
-      "count": 455,
-      "share": 0.4749
+      "colleges": 1158,
+      "count": 530,
+      "share": 0.4577
      },
      "same, unadjusted public reserves": {
-      "colleges": 958,
-      "count": 768,
-      "share": 0.8017
+      "colleges": 1158,
+      "count": 917,
+      "share": 0.7919
      },
      "Spine literal form crosses": {
-      "colleges": 958,
-      "count": 726,
-      "share": 0.7578
+      "colleges": 1158,
+      "count": 863,
+      "share": 0.7453
      },
      "actual reserves reached zero past break-even (with anchors)": {
-      "colleges": 958,
-      "count": 434,
-      "share": 0.453
+      "colleges": 1158,
+      "count": 507,
+      "share": 0.4378
      },
-     "median year of the unanchored point of no return": 2015.0,
+     "median year of the unanchored point of no return": 2015,
      "closure rate, colleges that would cross without anchors": {
-      "colleges": 768,
-      "count": 392,
-      "share": 0.5104
+      "colleges": 917,
+      "count": 412,
+      "share": 0.4493
      },
      "closure rate, colleges that would not": {
-      "colleges": 190,
-      "count": 125,
-      "share": 0.6579
+      "colleges": 241,
+      "count": 130,
+      "share": 0.5394
      },
-     "past the unanchored point of no return and still open": 376,
-     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 25391247471,
-     "anchors carried, per college still open (median, fiscal 2024 $)": 18775525.5
+     "past the unanchored point of no return and still open": 505,
+     "anchors carried from the unanchored point of no return on, total (fiscal 2024 $)": 27091105858,
+     "anchors carried, per college still open (median, fiscal 2024 $)": 14189426
     }
    }
   }
  },
  "flags (college-years)": {
-  "fiscal 2015 pension line is the additional pension liability": 1406,
-  "retiree-health liability on the books but not reported in IPEDS until fiscal 2019": 1395,
-  "for-profit gifts include private grants and contracts": 5729,
-  "endowment spending estimated (4.5% of beginning value)": 4702,
-  "student grants exceed exchange and other income (own earned income set to zero)": 50,
-  "filed the F2 form this year (sector read from the latest header file)": 118,
-  "other operating income below zero, set to zero": 49
+  "fiscal 2015 pension line is the additional pension liability": 1451,
+  "retiree-health liability on the books but not reported in IPEDS until fiscal 2019": 1443,
+  "endowment spending estimated (4.5% of beginning value)": 14124,
+  "for-profit gifts include private grants and contracts": 6850,
+  "filed the F3 form this year (sector read from the latest header file)": 283,
+  "filed the F2 form this year (sector read from the latest header file)": 282,
+  "other operating income below zero, set to zero": 81,
+  "student grants exceed exchange and other income (own earned income set to zero)": 149
  },
  "header files used": {
   "HD2005": {
